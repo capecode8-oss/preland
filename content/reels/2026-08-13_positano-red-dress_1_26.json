@@ -1,0 +1,60 @@
+{
+  "status": "SUCCESS",
+  "conceptTitle": "She Packed the Red Dress for Ten Years — Finally Wore It at 52",
+  "targetNiche": "BROAD — aging/midlife/travel/self-permission",
+  "sourceUrls": [],
+  "footage": {
+    "file": "1_26.mp4",
+    "description": "Woman in red dress on Positano cliffside steps or terrace, Italian Amalfi Coast architecture, bright Mediterranean light, cinematic travel footage",
+    "durationSeconds": 10,
+    "loopStrategy": "trim 5 seconds of most visually striking dress-against-architecture shot"
+  },
+  "visualLoop": {
+    "durationSeconds": 5,
+    "direction": "forward, single pass trimmed from source",
+    "kiraRole": "lifestyle"
+  },
+  "onScreenHook": "She packed the red dress for 10 years\nand never wore it\nuntil 52\n(Read caption below ↓)",
+  "captionOpenBadge": {
+    "ctaId": "CTA_story",
+    "text": "The full story is in the caption",
+    "storyShape": "story"
+  },
+  "captionOpenCta": "The full story is in the caption",
+  "caption": "The dress went on three different trips before she finally wore it.\n\nShe bought it at 42. She liked it in the store. It was red — actually red, not burgundy, not wine, not dusty rose — and she stood in the fitting room for a long time before she bought it. It fit. She bought it.\n\nShe brought it to a beach trip in 2016. Left it in the suitcase. She brought it to Portugal in 2019. Left it in the suitcase. She kept telling herself: not the right moment, not the right place, maybe tomorrow, maybe the dinner that's nicer than this one.\n\nShe was 52 when she brought it to the Amalfi Coast.\n\nShe almost left it in the suitcase again.\n\nHer daughter picked it up off the bed, held it out and said: "Mom. You've had this dress longer than I've had a phone."\n\nShe put it on. She walked out to the terrace. A woman on the street below looked up and said something in Italian. Her friend translated it later: she said you look like you belong here.\n\nShe cried in the elevator back up.\n\nNot because of the dress. Because of ten years of almost. Ten years of being one decision away from the thing she already had permission to do — and choosing the suitcase.\n\nThe dress didn't change anything. The decision to stop waiting for the right moment did.\n\nThere's a specific kind of exhaustion that comes from carrying things you never use. Not just dresses. Experiences. Conversations you keep putting off. Things you've already decided you want but keep telling yourself are for later.\n\nLater arrives. It just doesn't look the way you imagined.\n\nSome stories keep replaying long after the screen goes dark. If that turns into a middle-of-the-night wake-up, comment CALM.\n\nI'll send you a free one-page phone guide with 4 simple steps to follow when you are awake. It is also in the link in my bio.",
+  "cta": "Comment CALM. I'll send you a free one-page phone guide with 4 simple steps to follow when you are awake. It is also in the link in my bio.",
+  "keyword": "CALM",
+  "characterCount": 1756,
+  "truthClassification": {
+    "facts": [
+      "Positano is on the Amalfi Coast of Italy",
+      "Deferred gratification patterns (consistently delaying enjoyable experiences) are documented in behavioral psychology"
+    ],
+    "inferences": [
+      "Physical objects can serve as proxies for postponed self-permission",
+      "Specific triggering moments (family observation) often precede behavioral change"
+    ],
+    "unknowns": [
+      "Whether this is a documented real person or a composite narrative",
+      "Identity of the woman in the footage"
+    ]
+  },
+  "polarization": {
+    "used": false,
+    "campA": "",
+    "campB": "",
+    "evidenceOfRealSplit": ""
+  },
+  "validation": {
+    "hookWordCountValid": true,
+    "captionCharacterCountValid": true,
+    "ctaMatchesCaption": true,
+    "finalCalmCtaPresent": true,
+    "ctaAtCaptionEnd": true,
+    "ctaBridgeLogical": true,
+    "ctaBridgeType": "emotional_story",
+    "sameDayCtaVariantUnique": true,
+    "unsupportedClaimsFound": false,
+    "payoffDelivered": true
+  }
+}

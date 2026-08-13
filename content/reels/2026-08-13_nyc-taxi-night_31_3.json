@@ -1,0 +1,61 @@
+{
+  "status": "SUCCESS",
+  "conceptTitle": "She Solved Her 3AM Problem in the Back of a New York Taxi",
+  "targetNiche": "NARROW — nighttime waking / 3AM / nervous system / conversion content",
+  "sourceUrls": [],
+  "footage": {
+    "file": "31_3.mp4",
+    "description": "Inside yellow NYC taxi at night, woman in close-up, contemplative expression, city lights streaming past window, warm interior light",
+    "durationSeconds": 6,
+    "loopStrategy": "loop entire 6-second clip once for 5-second trim, or use first 5 seconds of close-up contemplative moment"
+  },
+  "visualLoop": {
+    "durationSeconds": 5,
+    "direction": "forward, trim first 5 seconds of contemplative taxi shot",
+    "kiraRole": "lifestyle"
+  },
+  "onScreenHook": "She woke at 3AM every night\nfor two years\nuntil she figured THIS out\n(Read caption below ↓)",
+  "captionOpenBadge": {
+    "ctaId": "CTA_reveal",
+    "text": "The answer is in the caption",
+    "storyShape": "reveal"
+  },
+  "captionOpenCta": "The answer is in the caption",
+  "caption": "She'd been waking at 3:17 for almost two years.\n\nSame window: 3AM to 4AM. Wide awake, heart going faster than it should, the to-do list running. She'd lie there trying to make herself sleep and instead catalog every unfinished thing in her life until her alarm went off and she started the day already behind.\n\nShe told her doctor. Normal. She told her therapist. Anxiety, probably. She changed her diet. She bought a weighted blanket. She stopped looking at her phone after 9. Some of it helped a little. None of it stopped the 3AM.\n\nThe thing she figured out — and this is the part nobody had mentioned — wasn't about sleep at all. It was about what she did in those first 90 seconds after waking.\n\nHer default was to lie still, try to force sleep back, and let her brain start spinning. That sequence — stay horizontal, stay quiet, wait — turned out to be the worst possible response for her nervous system. Her body read the stillness as threat-monitoring. The darkness plus silence plus heart rate spike told it: stay alert.\n\nWhat actually worked was getting ahead of those 90 seconds before they ran their course.\n\nNot getting up. Not turning on lights. Not checking the phone. Something much smaller: four specific steps that interrupted the activation pattern before it had time to become a full hour of lying awake.\n\nShe's not sleeping perfectly. But the 3AM is no longer an automatic hour she loses.\n\nI made a one-page phone guide with those four steps — something you can actually read in a dark room without turning on a light. It's called The 3AM Calm Card and it's free.\n\nComment CALM and I'll send it to you.\n\nOr get it from the link in my bio.",
+  "cta": "Comment CALM and I'll send you The 3AM Calm Card — a free one-page phone guide with 4 simple steps to follow when you wake up at night. Or get it from the link in my bio.",
+  "keyword": "CALM",
+  "characterCount": 1698,
+  "truthClassification": {
+    "facts": [
+      "Middle-of-night waking (sleep maintenance insomnia) is a documented and common sleep complaint",
+      "Behavioral responses in the first minutes after waking can influence nervous system arousal trajectory",
+      "Stimulus control and sleep restriction research supports that lying awake in bed can reinforce waking patterns"
+    ],
+    "inferences": [
+      "Early intervention in waking sequence may be more effective than passive waiting for sleep",
+      "Specific behavioral protocols exist for managing middle-of-night waking (CBT-I approaches)"
+    ],
+    "unknowns": [
+      "Whether the specific 4-step protocol described is documented in peer-reviewed literature or is based on practitioner-developed approaches",
+      "Individual variance in response to behavioral interventions"
+    ]
+  },
+  "polarization": {
+    "used": false,
+    "campA": "",
+    "campB": "",
+    "evidenceOfRealSplit": ""
+  },
+  "validation": {
+    "hookWordCountValid": true,
+    "captionCharacterCountValid": true,
+    "ctaMatchesCaption": true,
+    "finalCalmCtaPresent": true,
+    "ctaAtCaptionEnd": true,
+    "ctaBridgeLogical": true,
+    "ctaBridgeType": "sleep_or_overthinking_direct",
+    "sameDayCtaVariantUnique": true,
+    "unsupportedClaimsFound": false,
+    "payoffDelivered": true
+  }
+}

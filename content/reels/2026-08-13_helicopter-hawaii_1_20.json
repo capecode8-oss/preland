@@ -1,0 +1,60 @@
+{
+  "status": "SUCCESS",
+  "conceptTitle": "She Almost Said No to the Helicopter — Here's What She Would Have Missed",
+  "targetNiche": "BROAD — travel/life curiosity/regret/decision-making",
+  "sourceUrls": [],
+  "footage": {
+    "file": "1_20.mp4",
+    "description": "Helicopter flight over Hawaiian volcanic and coastal landscape, dramatic aerial perspective, passenger POV or window shot",
+    "durationSeconds": 10,
+    "loopStrategy": "trim 5 seconds of most dramatic aerial landscape pass"
+  },
+  "visualLoop": {
+    "durationSeconds": 5,
+    "direction": "forward, single pass trimmed from source",
+    "kiraRole": "lifestyle"
+  },
+  "onScreenHook": "She almost said no because\nshe was "too scared"\nThis is what she would have missed\n(Read caption below ↓)",
+  "captionOpenBadge": {
+    "ctaId": "CTA_hidden_detail",
+    "text": "One detail changes the whole story",
+    "storyShape": "hidden_detail"
+  },
+  "captionOpenCta": "One detail changes the whole story",
+  "caption": "She stood on the tarmac for four minutes and didn't move.\n\nThe helicopter blades were already spinning. The guide was waiting. Her friend was already buckled in. And she was standing twenty feet away doing the math: what if something goes wrong, what if I panic, what if I regret spending the money, what if I look foolish getting out mid-flight.\n\nThat's how her brain worked. It had worked that way for twenty years.\n\nThe thing she didn't say out loud — the thing she hadn't said to anyone — was that the hesitation wasn't really about the helicopter. It was about a pattern she had noticed but never named: she had a talent for arriving at the edge of something good and finding a reason not to step off.\n\nShe got on.\n\nThe lava fields stretched from the mountain to the ocean. Steam rose where molten rock met water a hundred feet below. From the ground, you see nothing. From up there, you see the actual shape of the island — what it is made of, how it was built, what's still moving underneath.\n\nShe said afterward: I've been to Hawaii four times. I had no idea what I was looking at until that moment.\n\nShe said it felt like a metaphor, and she was embarrassed to admit that.\n\nThe neuroscience on decision regret is consistent: people overestimate how much they'll regret action and underestimate how much they'll regret inaction. The things we didn't do stay with us longer than the things we did, even when the thing we did was imperfect.\n\nThe fear is usually loudest in the four minutes before the door closes.\n\nDifferent place. Different routine. Middle-of-the-night wake-up. Comment CALM and I'll send you a free one-page phone guide with 4 simple steps to keep nearby.\n\nYou can also get it from the link in my bio.",
+  "cta": "Comment CALM and I'll send you a free one-page phone guide with 4 simple steps to keep nearby. You can also get it from the link in my bio.",
+  "keyword": "CALM",
+  "characterCount": 1698,
+  "truthClassification": {
+    "facts": [
+      "Hawaii's volcanic coast is visible from helicopter in ways not accessible from ground level",
+      "Research on action vs inaction regret consistently shows inaction regret is more persistent long-term (Gilovich, Medvec et al.)"
+    ],
+    "inferences": [
+      "Decision hesitation patterns often reflect broader avoidance habits rather than situational fear",
+      "First-time aerial experiences frequently produce strong emotional reappraisal"
+    ],
+    "unknowns": [
+      "Identity of subject in footage",
+      "Whether the narrative individual is the footage subject"
+    ]
+  },
+  "polarization": {
+    "used": false,
+    "campA": "",
+    "campB": "",
+    "evidenceOfRealSplit": ""
+  },
+  "validation": {
+    "hookWordCountValid": true,
+    "captionCharacterCountValid": true,
+    "ctaMatchesCaption": true,
+    "finalCalmCtaPresent": true,
+    "ctaAtCaptionEnd": true,
+    "ctaBridgeLogical": true,
+    "ctaBridgeType": "travel_or_routine",
+    "sameDayCtaVariantUnique": true,
+    "unsupportedClaimsFound": false,
+    "payoffDelivered": true
+  }
+}

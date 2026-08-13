@@ -1,0 +1,60 @@
+{
+  "status": "SUCCESS",
+  "conceptTitle": "She Jumped Out of a Plane at 58 — and Called It the Best Decision She Made",
+  "targetNiche": "BROAD — aging/longevity/life curiosity",
+  "sourceUrls": [],
+  "footage": {
+    "file": "1_13.mp4",
+    "description": "Skydiving free-fall, text overlay 'SORRY MOM' visible, wide open sky, adrenaline lifestyle footage",
+    "durationSeconds": 10,
+    "loopStrategy": "trim first 5 seconds of free-fall descent with sky background"
+  },
+  "visualLoop": {
+    "durationSeconds": 5,
+    "direction": "forward, single pass trimmed from source",
+    "kiraRole": "lifestyle"
+  },
+  "onScreenHook": "She jumped out of a plane at 58\nEveryone told her she was too OLD\n(Read caption below ↓)",
+  "captionOpenBadge": {
+    "ctaId": "CTA_story",
+    "text": "The full story is in the caption",
+    "storyShape": "story"
+  },
+  "captionOpenCta": "The full story is in the caption",
+  "caption": "Her daughter texted her the night before and said: "Mom, please don't do this."\n\nShe did it anyway.\n\nShe had spent thirty years doing the reasonable thing. The safe thing. The age-appropriate thing. She raised three kids, held a career together, and somewhere in her late forties she started hearing herself say "I'm too old for that" before she had even decided whether she wanted to try.\n\nAt 58, she booked the jump.\n\nNot because she was brave. Not because she had something to prove. She booked it because she realized she had been running a quiet, invisible calculation her entire adult life — what's allowed now versus what I used to be allowed to do — and nobody had ever told her who made that rule.\n\nFree-fall lasts about sixty seconds.\n\nShe said the part that surprised her wasn't the drop. It was the moment before the door opened, when she realized the fear she was feeling was familiar. She had felt it before job changes, before moving cities, before every meaningful thing she had ever done. Fear didn't mean stop. It meant she was about to do something real.\n\nShe landed. She cried. She texted her daughter back: "SORRY MOM."\n\nThe research on this is more consistent than people expect. Adults who take on new physical challenges in their fifties and sixties report stronger sense of identity, better emotional regulation, and significantly less dread about aging than those who stop. Not because the activity itself rewires the brain — but because the decision to try does.\n\nThe ceiling isn't the body. The ceiling is the story we've been telling about what the body is allowed to do.\n\nDifferent place. Different routine. Middle-of-the-night wake-up. Comment CALM and I'll send you a free one-page phone guide with 4 simple steps to keep nearby.\n\nYou can also get it from the link in my bio.",
+  "cta": "Comment CALM and I'll send you a free one-page phone guide with 4 simple steps to keep nearby. You can also get it from the link in my bio.",
+  "keyword": "CALM",
+  "characterCount": 1714,
+  "truthClassification": {
+    "facts": [
+      "Fear response is physiologically similar across high-stakes situations regardless of age",
+      "Physical challenge-taking in midlife is associated with positive identity outcomes in behavioral research"
+    ],
+    "inferences": [
+      "The decision to attempt new challenges may have more psychological impact than the activity itself",
+      "Self-imposed age limits often precede chronological limitations"
+    ],
+    "unknowns": [
+      "Identity of the specific person depicted in the footage",
+      "Whether footage subject is the same person as the narrative character"
+    ]
+  },
+  "polarization": {
+    "used": false,
+    "campA": "",
+    "campB": "",
+    "evidenceOfRealSplit": ""
+  },
+  "validation": {
+    "hookWordCountValid": true,
+    "captionCharacterCountValid": true,
+    "ctaMatchesCaption": true,
+    "finalCalmCtaPresent": true,
+    "ctaAtCaptionEnd": true,
+    "ctaBridgeLogical": true,
+    "ctaBridgeType": "travel_or_routine",
+    "sameDayCtaVariantUnique": true,
+    "unsupportedClaimsFound": false,
+    "payoffDelivered": true
+  }
+}

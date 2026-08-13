@@ -1,0 +1,61 @@
+{
+  "status": "SUCCESS",
+  "conceptTitle": "Nobody Tells You What Happens to Your Body at 4AM Above the Clouds",
+  "targetNiche": "BROAD — travel/sleep/body curiosity/longevity",
+  "sourceUrls": [],
+  "footage": {
+    "file": "1_19.mp4",
+    "description": "Hot air balloon over Cappadocia, Turkey — hundreds of balloons visible at sunrise, pink-gold sky, fairy-chimney rock formations below",
+    "durationSeconds": 10,
+    "loopStrategy": "trim 5 seconds of sunrise balloon field with sky gradients"
+  },
+  "visualLoop": {
+    "durationSeconds": 5,
+    "direction": "forward, single pass trimmed from source",
+    "kiraRole": "lifestyle"
+  },
+  "onScreenHook": "Woke up at 4AM to do this\nMy body did something\nI didn't expect\n(Read caption below ↓)",
+  "captionOpenBadge": {
+    "ctaId": "CTA_hidden_detail",
+    "text": "One detail changes the whole story",
+    "storyShape": "hidden_detail"
+  },
+  "captionOpenCta": "One detail changes the whole story",
+  "caption": "The alarm went off at 3:45.\n\nNo snooze. No debate. She was dressed and out of the hotel before 4AM — which, for someone who hadn't gotten out of bed before 7 without a reason in three years, was already unusual.\n\nThe balloon launch is at sunrise. That's not a suggestion. Miss the window and you miss it.\n\nWhat nobody prepares you for is the silence.\n\nShe expected it to be loud. Wind, burners, other tourists. But once you're up — 300 meters above the rock formations — it's completely still. No road noise. No city hum. Just the occasional burst from the flame and the sound of your own breathing.\n\nShe said the first thing she noticed wasn't the view. It was that her body felt different. Calm in a way she hadn't felt at 4AM in years. She had been waking at that hour at home and lying there for an hour with her thoughts going in circles. Out here, at the same hour, everything was quiet — including her.\n\nShe started thinking about why.\n\nShe wasn't less tired. She was more tired. But the quality of the alertness was different. She was awake for a reason her whole system agreed with. A real one. Something she'd chosen.\n\nResearchers who study intrinsic versus extrinsic arousal — waking because you want to versus waking because your nervous system won't let you rest — note consistent differences in how each state feels and how quickly the body returns to baseline afterward. The body reads context. It knows when the alarm is a threat and when it's a gift.\n\nShe didn't solve her sleep at 4AM over Turkey.\n\nBut she learned what the difference felt like.\n\nFor middle-of-the-night wake-ups when you are awake and do not know what to do next: comment CALM.\n\nI'll send you The 3AM Calm Card — a free one-page phone guide with 4 simple steps to follow in that moment.\n\nPrefer not to comment? Get it from the link in my bio.",
+  "cta": "Comment CALM. I'll send you The 3AM Calm Card — a free one-page phone guide with 4 simple steps to follow in that moment. Prefer not to comment? Get it from the link in my bio.",
+  "keyword": "CALM",
+  "characterCount": 1742,
+  "truthClassification": {
+    "facts": [
+      "Cappadocia hot air balloon launches occur at sunrise, requiring pre-dawn wake-ups",
+      "Research distinguishes intrinsic arousal (purposeful waking) from stress-driven middle-of-night waking in sleep science literature",
+      "Sound levels at altitude are significantly lower than ground level in open terrain"
+    ],
+    "inferences": [
+      "Purposeful early waking may feel qualitatively different from involuntary middle-of-night arousal",
+      "Environmental context affects subjective experience of the same physiological state"
+    ],
+    "unknowns": [
+      "Whether the specific sleep comparison described reflects the footage subject's documented experience",
+      "Precise mechanisms linking contextual meaning to arousal quality"
+    ]
+  },
+  "polarization": {
+    "used": false,
+    "campA": "",
+    "campB": "",
+    "evidenceOfRealSplit": ""
+  },
+  "validation": {
+    "hookWordCountValid": true,
+    "captionCharacterCountValid": true,
+    "ctaMatchesCaption": true,
+    "finalCalmCtaPresent": true,
+    "ctaAtCaptionEnd": true,
+    "ctaBridgeLogical": true,
+    "ctaBridgeType": "sleep_or_overthinking",
+    "sameDayCtaVariantUnique": true,
+    "unsupportedClaimsFound": false,
+    "payoffDelivered": true
+  }
+}
