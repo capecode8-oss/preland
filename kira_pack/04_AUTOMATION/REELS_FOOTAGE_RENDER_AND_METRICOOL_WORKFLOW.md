@@ -119,6 +119,7 @@ Production safe zones must account for Instagram interface overlays. Keep essent
 - Different line widths are allowed, but their individual white backgrounds must remain centered around the same axis.
 - Do not use optical or asymmetric horizontal offsets. A block shifted even slightly left or right fails QA.
 - Validate every rendered text-block bounding box numerically before export: `abs((left + right) / 2 - 540) <= 2 px`.
+- **Hard canvas-width rule:** The white hook box width (`PAD_X*2 + max_line_pixel_width`) must never exceed 1080 px. If any single text line would cause the box to overflow the canvas, split that line into two shorter lines. Never allow a line to be clipped or hidden by the canvas edge. Validate `box_width <= 1060 px` (leaving at least 10 px margin each side) before rendering.
 
 ### Mandatory Face and Subject Clearance
 

@@ -1,0 +1,23 @@
+{
+  "status": "NEEDS_RERENDER",
+  "renderNote": "Previous render: first hook line overflowed canvas (box_w=1200px > 1080px). Hook topic changed to car-seat discovery per owner instruction. Re-render required with source footage 1_9.mp4.",
+  "conceptTitle": "She Got In His Car. The Seat Was Moved.",
+  "targetNiche": "BROAD — relationships/betrayal/marriage/shock",
+  "publicationDate": "2026-08-14",
+  "scheduledTime": "23:00",
+  "timezone": "America/New_York",
+  "footage": { "file": "1_9.mp4", "durationSeconds": 10, "loopStrategy": "trim first 5 seconds taxi night city" },
+  "onScreenHook": "She got in his car.\nThe passenger seat was moved.\nShe's 5'4\". He's 6'2\".\nNo one else has a key.\nShe drove home without a word.",
+  "hookRenderParams": {
+    "fontSizePx": 48,
+    "box_y": 1030,
+    "faceUnionY": "50-925",
+    "forbiddenY": "0-995",
+    "canvasCheck": "all lines ≤1060px wide"
+  },
+  "captionOpenCta": "(She checked his phone that night ↓)",
+  "caption": "She wasn't looking for anything.\n\nShe'd been in his car a hundred times. She grabbed her bag from the passenger seat and noticed the lever on the side.\n\nIt had been moved back. A lot.\n\nShe's 5'4\". He's 6'2\". She always moves the seat forward the moment she gets in. Always. It's automatic.\n\nThe seat was already moved forward — for someone shorter.\n\nNo one else has a key. No one had borrowed the car. She knew, because she would've known.\n\nShe got in the driver's seat. She adjusted the mirror. She drove home.\n\nShe said nothing.\n\nShe made dinner. She set the table. She asked about his day and he told her about a meeting and she nodded and passed the bread.\n\nAfter he went to bed she sat in the kitchen for a long time trying to decide if she was imagining it.\n\nShe wasn't imagining it.\n\nThe worst part wasn't the discovery. It was the conversation she'd had with herself on the way home — the one where she talked herself in and out of trusting her own eyes.\n\nIf that kind of knowing-but-not-knowing keeps you awake at night, comment CALM.\n\nI'll send you The 3AM Calm Card — a free one-page guide with 4 steps for when you're awake and can't settle. Also available from the link in bio.",
+  "cta": "Comment CALM. I'll send you The 3AM Calm Card — free, 4 steps for when you wake up and can't settle. Also in the link in bio.",
+  "keyword": "CALM",
+  "music": { "mood": "tense_cinematic_night", "style": "dark_ambient_or_strings", "metricool_route": "Instagram presets > Add audio" }
+}
