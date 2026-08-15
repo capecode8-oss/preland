@@ -24,21 +24,19 @@ reels = [
         "hook_lines": [
             "He Sent Her A Selfie From The Bar.",
             "She Zoomed Into His Sunglasses.",
-            "Someone Else's Legs Were In The Reflection.",
         ],
-        "cta_badge": "( She recognized the nail polish color ↓ )",
+        "cta_badge": "( Someone else's legs were in the reflection ↓ )",
     },
     {
         "name": "aug19_2",
         "footage": f"{BASE}/ffccfd5b-Traveler_waiting_at_airport_gate_202608142005.mp4",
         "face_union": (200, 430),
-        "text_y": 1100,
+        "text_y": 1150,
         "hook_lines": [
-            "Her Flight Was Delayed 3 Hours.",
-            "The Airline Owed Her €400.",
-            "She Almost Just Walked Away.",
+            "Your Flight Was Delayed 3 Hours.",
+            "The Airline Owes You €400.",
         ],
-        "cta_badge": "( EU law says they must pay. Most passengers never claim it ↓ )",
+        "cta_badge": "( EU law. Most passengers never claim it ↓ )",
     },
     {
         "name": "aug19_3",
@@ -48,9 +46,8 @@ reels = [
         "hook_lines": [
             "She Was At Work. He Was Home.",
             "The Smart Mattress Sent An Alert.",
-            "His Heart Rate Spiked For 47 Minutes.",
         ],
-        "cta_badge": "( She was still in the parking lot when she called him ↓ )",
+        "cta_badge": "( His heart rate spiked for 47 minutes ↓ )",
     },
     {
         "name": "aug19_4",
@@ -58,11 +55,10 @@ reels = [
         "face_union": (200, 540),
         "text_y": 1200,
         "hook_lines": [
-            "She Flies Economy. Every Time.",
-            "One Box She Checks At Booking.",
-            "She Gets Fed First. Every Single Flight.",
+            "One Checkbox At Booking.",
+            "She Gets Fed First. Every Flight.",
         ],
-        "cta_badge": "( Order the special meal. It's a one-second checkbox ↓ )",
+        "cta_badge": "( 90% of travelers don't know it exists ↓ )",
     },
     {
         "name": "aug19_5",
@@ -70,8 +66,7 @@ reels = [
         "face_union": (290, 770),
         "text_y": 1200,
         "hook_lines": [
-            "He Asked Her To Delete Find My Friends.",
-            "Said It Felt Controlling.",
+            "He Said Delete Find My Friends.",
             "She Checked His Location First.",
         ],
         "cta_badge": "( He was not where he said he was ↓ )",
@@ -82,11 +77,10 @@ reels = [
         "face_union": (210, 830),
         "text_y": 1200,
         "hook_lines": [
-            "The Gate Agent Asked For A Volunteer.",
-            "She Raised Her Hand.",
-            "She Got $400 And A Free Hotel Night.",
+            "She Raised Her Hand At The Gate.",
+            "She Left With $400 And A Free Hotel.",
         ],
-        "cta_badge": "( She does this on purpose now. Every time ↓ )",
+        "cta_badge": "( She does this on purpose. Every time ↓ )",
     },
 ]
 
@@ -121,7 +115,7 @@ def make_overlay(r):
     img = Image.new("RGBA", (CANVAS_W, CANVAS_H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
 
-    font, fsize = auto_font(FONT_PATH, 64, MAX_TEXT_W, r["hook_lines"])
+    font, fsize = auto_font(FONT_PATH, 80, MAX_TEXT_W, r["hook_lines"])
     # CTA: same font, same size, word-wrap if needed
     cta_font = ImageFont.truetype(FONT_PATH, fsize)
     cta_lines = wrap_text(cta_font, r["cta_badge"], MAX_TEXT_W)
