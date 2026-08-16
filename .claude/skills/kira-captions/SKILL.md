@@ -19,11 +19,16 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 6. SAVE LINE         — always last
 ```
 
-Length: 1200–1800 characters total.
+Length: **1700–1900 characters total** (including CTA and save line). Always hit this range — too short = no value, too long = scroll fatigue.
+
+**ОБЯЗАТЕЛЬНО: суть рилса — содержательный блок**
+После second hook — раскрыть тему полностью. Не просто намекнуть — объяснить ПОЧЕМУ, КАК, ЧТО конкретно нужно знать. Это главное тело описания. Читатель должен уйти с реальными знаниями, а не только с желанием досмотреть. Без этого блока капшен не выходит.
 
 ---
 
 ## THE PRODUCTION TEAM — run every caption through all 5 before finalizing
+
+**Команда пишет ВСЁ**: и хук, и суть рилса (содержательный блок), и CTA, и save line. Не просто проверяет — участвует в написании каждой части. Без полного аудита команды капшен не выходит. Никогда. Без исключений.
 
 Same team as hooks. Same roles. Now applied to caption copy.
 
