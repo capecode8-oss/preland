@@ -71,7 +71,7 @@
 - Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
 - Шрифт: `Montserrat-BlackItalic` — путь `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Размер шрифта: auto_font(max_size=100) → целевой результат 60–80px
+- Размер шрифта: auto_font(max_size=100) → **МИНИМУМ 60px, цель 60–80px** — если результат < 60px, сокращать строки хука пока шрифт не станет 60px+. Никогда не публиковать если шрифт ниже 60px.
 - FILL: (255, 255, 255, 245), RADIUS: 14, PAD_X: 32, PAD_Y: 22, BOX_GAP: 20
 - CENTER_X: 540, MAX_BOX_W: 860px, MAX_TEXT_W: 796px
 - Всегда рендерить JPG-превью из финального MP4 и показывать перед публикацией

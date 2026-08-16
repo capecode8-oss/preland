@@ -22,7 +22,7 @@ reels = [
         "text_y": 1060,
         "hook_lines": [
             "I Ate Pasta Every Day.",
-            "Lost 4 Pounds. Here's Why.",
+            "Lost 4 Pounds.",
         ],
         "cta_badge": "( The difference is how they make it ↓ )",
     },
@@ -33,7 +33,7 @@ reels = [
         "text_y": 1060,
         "hook_lines": [
             "My Flight Was Delayed.",
-            "The Airline Owed Me €400.",
+            "Airline Owed Me €400.",
         ],
         "cta_badge": "( EU law. Most passengers never claim it ↓ )",
     },
@@ -43,7 +43,7 @@ reels = [
         "face_union": (340, 970),
         "text_y": 1060,
         "hook_lines": [
-            "My Carrier Charged Me $340.",
+            "My Carrier Billed $340.",
             "One App. I Paid $22.",
         ],
         "cta_badge": "( Set it up before you board. 4 minutes ↓ )",
@@ -54,9 +54,8 @@ reels = [
         "face_union": (140, 660),
         "text_y": 1060,
         "hook_lines": [
-            "Hotel Quoted Me $180 A Night.",
             "Two Words At Check-In.",
-            "Rate Dropped To $120.",
+            "$180 Dropped To $120.",
         ],
         "cta_badge": "( It's never posted online. Most guests overpay ↓ )",
     },
@@ -66,7 +65,7 @@ reels = [
         "face_union": (80, 680),
         "text_y": 1060,
         "hook_lines": [
-            "I Wore Earbuds Every Day.",
+            "I Wore Earbuds Outside.",
             "A Doctor Made Me Stop.",
         ],
         "cta_badge": "( Research links it to 3× higher hearing loss risk ↓ )",

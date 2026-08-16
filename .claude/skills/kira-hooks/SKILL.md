@@ -297,7 +297,7 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 
 - Font: Montserrat-BlackItalic
   Path: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Font size: auto_font(max_size=100) → target result 60–80px (never hardcode 48px or 42px)
+- Font size: auto_font(max_size=100) → **MINIMUM 60px, target 60–80px** — if result < 60px, shorten hook lines until font hits 60px+. NEVER publish with font below 60px. Never hardcode.
 - FILL: (255,255,255,245) | RADIUS: 14 | PAD_X: 32 | PAD_Y: 22 | BOX_GAP: 20
 - Canvas: 1080×1920 | CENTER_X=540 | MAX_BOX_W=860px | MAX_TEXT_W=796px
 - Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
