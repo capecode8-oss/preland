@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{}' | python3 -c \"\nimport sys, json\ndata = sys.stdin.read()\ntry:\n    obj = json.loads(data)\n    prompt = obj.get('prompt', '')\nexcept:\n    prompt = ''\n\nkeywords = ['hook', 'хук', 'рилс', 'reel', 'aug', 'авг', 'контент', 'content', 'publish', 'публик', 'schedule', 'расписан']\nif any(k in prompt.lower() for k in keywords):\n    print(json.dumps({'systemMessage': '⚠️  KIRA PIPELINE: Перед хуками — вызови /kira-hooks и прогони через команду (Jordan · Mike · Alex · Sam · Dana · Tyler). Без аудита команды хуки не финализируются.'}))\nelse:\n    print(json.dumps({}))\n\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
