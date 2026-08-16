@@ -10,16 +10,20 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 ## ЯЗЫК — ОБЯЗАТЕЛЬНОЕ ПРАВИЛО (вшито навсегда)
 
-**Писать на простом американском английском. Прямо в лоб. Как текстовое сообщение другу.**
+**СЛОЖНОСТЬ — НАШ ВРАГ. Простота — наше оружие.**
 
-- Если слово можно заменить более простым — заменяй всегда
-- Предложения короткие. Максимум 15 слов в предложении.
-- Никаких умных слов: не "utilize" → "use", не "commence" → "start", не "in order to" → "to"
-- Никакого академического или журналистского тона
-- Должен понять 15-летний американец, который никогда не читал статей про здоровье или путешествия
-- Тест: если твоя бабушка или племянник не поймут слово — замени его
+Писать на простом американском английском. Прямо в лоб. Без объяснений что такое продукт — это должно быть понятно из самого текста сразу.
 
-**Sam проверяет каждое предложение:** "Мог бы я написать это в iMessage другу?" Если нет — переписать.
+**Правила — обязательные, без исключений:**
+- Короткие предложения. Максимум 15 слов.
+- Простые слова. Если есть слово проще — использовать его.
+- Не "utilize" → "use". Не "commence" → "start". Не "in order to" → "to".
+- Никакого академического, журналистского или экспертного тона.
+- Тест: поймёт ли 15-летний американец, который не читает статьи? Если нет — переписать.
+- Читатель не должен спрашивать "а что это такое?" — всё объяснено внутри текста.
+- Продукт (free card, 4 steps) описывается одной простой фразой прямо в CTA — не названием.
+
+**Sam проверяет каждое предложение:** "Мог бы я написать это в iMessage другу в 11 вечера?" Если нет — переписать.
 
 ---
 
@@ -159,48 +163,44 @@ Dana green-lights: "Post it" / "Fix the fact in line 3" / "Soften the CTA"
 
 ### 🏨 HOTEL / CHECK-IN
 ```
-The worst part of traveling isn't the delays.
-It's waking up at 3AM in a hotel room, staring at the ceiling.
-I made a free phone card — The 3AM Calm Card — 4 steps for exactly that moment.
-Comment CALM and I'll send it. Or grab it free from the link in bio.
+Ever wake up at 3AM in a hotel room and just stare at the ceiling?
+I made a free card for that. One page. 4 steps. Tells you exactly what to do.
+Comment CALM and I'll send it to you. It's also free in the link in bio.
 ```
 
 ### ✈️ AIRPORT / FLIGHT
 ```
-P.S. Long flights wreck sleep for days.
-If you ever lie awake at 3AM and can't get back to sleep —
-comment CALM below. I'll send you The 3AM Calm Card — free, 4 steps.
-Also in the link in bio.
+Long flights mess up your sleep for days after.
+I have a free one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+Comment CALM below and I'll send it. Or get it free in the link in bio.
 ```
 
 ### 🚢 CRUISE
 ```
-Cruise tip nobody talks about: cabin noise wakes you at 3AM.
-If that's ever you — comment CALM.
-Free phone card, 4 steps, no email needed. Also in the link in bio.
+Cabin noise on a ship wakes you up at 3AM. Every time.
+I made a free one-page card — 4 steps for when that happens and you can't fall back asleep.
+Comment CALM and I'll send it. Free in the link in bio too.
 ```
 
 ### 🍎 FOOD / HEALTH
 ```
-Food affects sleep more than most people realize.
-If you wake up at 3AM and can't settle —
-comment CALM. I'll send you The 3AM Calm Card — free.
-Link in bio too.
+What you eat affects how you sleep — more than most people think.
+If you wake up at 3AM and can't fall back asleep, I have a free card for that.
+One page. 4 steps. Comment CALM and I'll send it. Also free in the link in bio.
 ```
 
 ### 💰 MONEY / TRAPS
 ```
 Money stress is the #1 reason people wake up at 3AM.
-If that's you — comment CALM.
-Free 3AM Calm Card — 4 steps for when your brain won't stop.
-Also free in the link in bio.
+I made a free one-page card — 4 steps for when your brain won't stop at night.
+Comment CALM and I'll send it. Free in the link in bio too.
 ```
 
 ### 🌍 GENERAL (topic far from sleep)
 ```
-💤 Wake up at 3AM and can't fall back asleep?
-Comment CALM — I'll send you The 3AM Calm Card. Free. 4 steps.
-Or grab it directly from the link in bio.
+Ever wake up at 3AM and just can't fall back asleep?
+I made a free card for that — one page, 4 steps, tells you exactly what to do.
+Comment CALM and I'll send it to you. Or grab it free from the link in bio.
 ```
 
 ---
