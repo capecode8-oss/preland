@@ -28,7 +28,7 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 Jordan's job: **Does this hook pass the 0.3-second test?**
 
 Jordan asks:
-- "Would a 17-year-old American understand this immediately — no explanation needed?"
+- "Would a 22-year-old American understand this immediately — no explanation needed?"
 - "Is the first word or phrase a STOPPER? Or does it warm up slowly?"
 - "Is there a word in here that might need Googling? Cut it."
 - "Does the gap between what they know and what they need to know feel unbearable?"
@@ -83,7 +83,9 @@ Sam's formula from Ogilvy: *"On average, 5× more people read the headline than 
 
 Sam's formula from Hormozi: *"One hook = one problem = one person = one emotion. Never dilute."*
 
-Sam's formula from MrBeast: *"Write for someone with no prior knowledge. Simple words. Active voice. Under 10 words per line. The title should be understood by a 10-year-old."*
+Sam's formula from MrBeast: *"Write for someone with no prior knowledge. Simple words. Active voice. Under 8 words per line. If a 17-year-old wouldn't instantly get it — rewrite."*
+
+Sam's reminder: **Formulas below are conceptual templates — hook_lines in the render script must still be ≤8 words per line. Split long formula sentences across multiple lines.**
 
 ---
 
@@ -271,7 +273,7 @@ hook_lines: [
     "Never Check Into A Hotel",
     "Without Saying These Two Words.",
 ]
-cta_badge: "( Most guests pay $40–80 extra. The staff never volunteers this ↓ )"
+cta_badge: "( The staff never volunteers this ↓ )"
 Team verdict: Jordan ✅ | Mike ✅ SHARE | Alex ✅ | Sam ✅ | Dana ✅ | Tyler STOPS ✅
 ```
 
@@ -291,10 +293,13 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 
 ---
 
-## RENDER SPECS
+## RENDER SPECS (single source of truth — matches CLAUDE.md)
 
-- Font: Montserrat-BlackItalic | auto_font max_size=100px | target 60–80px
+- Font: Montserrat-BlackItalic
+  Path: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
+- Font size: auto_font(max_size=100) → target result 60–80px (never hardcode 48px or 42px)
 - FILL: (255,255,255,245) | RADIUS: 14 | PAD_X: 32 | PAD_Y: 22 | BOX_GAP: 20
-- Canvas: 1080×1920 | CENTER_X=540 | MAX_BOX_W=860px
-- Duration: 150 frames = 5.0s at 30fps (loop shorter clips)
+- Canvas: 1080×1920 | CENTER_X=540 | MAX_BOX_W=860px | MAX_TEXT_W=796px
+- Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
 - Codec: H.264, yuv420p, -an, -crf 18, -preset fast
+- FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`

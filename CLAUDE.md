@@ -13,17 +13,6 @@
 
 ---
 
-## Обязательные файлы — читать перед любым действием
-
-| Файл | Когда читать |
-|------|--------------|
-| `/workspace/kira_pack/KIRA_PACK_UPDATED/04_AUTOMATION/REELS_FOOTAGE_RENDER_AND_METRICOOL_WORKFLOW.md` | Перед любым рендером или планированием |
-| `/workspace/kira_pack/KIRA_PACK_UPDATED/02_CONTENT_SYSTEM/viral_pattern_library.md` | Перед написанием хуков |
-| `/workspace/kira_pack/KIRA_PACK_UPDATED/02_CONTENT_SYSTEM/viral-reels-prompt-v2.original.md` | Перед написанием хуков |
-| KIRA_FACE_CLEARANCE_PROTOCOL (загружен в сессии) | Перед каждым рендером |
-
----
-
 ## Правила футажей
 
 - **Каждый день — новые клипы. Никаких повторов.**
@@ -33,59 +22,54 @@
 
 ---
 
-## Face Clearance Protocol (обязательно)
+## Face Clearance Protocol (обязательно — всегда перед рендером)
 
 1. Извлечь 5 кадров: t = 0.25, 1.25, 2.50, 3.75, 4.75s
 2. UNION bbox лица по всем 5 кадрам → +70px сверху и снизу = forbidden zone
 3. Текст должен быть ПОЛНОСТЬЮ выше forbidden_top ИЛИ ПОЛНОСТЬЮ ниже forbidden_bottom
-4. Если нет места — брать другой клип
-5. QA: center=540±2px, box_w≤864px (10% отступы), cta_bottom≤1536px
+4. Если нет места ни выше, ни ниже — брать другой клип
+5. QA: center=540±2px, box_w≤860px, cta_bottom≤1536px
 
-## Instagram Reels Safe Zone (жёсткое правило)
-
-- text_y (hook_y0) = строго **65%–75% от верха** = **1248–1440px** (в 1920px кадре)
-- ❌ ЗАПРЕЩЕНО выше 60% (y < 1152) — зона лица
-- ❌ ЗАПРЕЩЕНО ниже 80% (y > 1536) — закроет описание и аватар Reels
-- Горизонталь: center=540, box_w ≤ 864px (10% отступ с каждой стороны)
-- Всегда рендерить кадр из финального MP4 и визуально проверять перед отправкой
+**Face clearance — главный закон размещения текста. Никаких фиксированных процентов.**
 
 ---
 
-## Рендер-спецификации
+## Рендер-спецификации (единый источник правды)
 
 - Размер: 1080×1920
-- Длительность: ровно 5.000s (loop если короче)
-- Кодек: H.264, yuv420p, -an (без аудио)
+- Длительность: ровно 5.000s = 150 frames @ 30fps (loop если короче)
+- Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
-- Шрифт: LiberationSans-BoldItalic (Montserrat в репо повреждён)
-- Hook: 48px, CTA badge: 42px
-- FILL: (255, 255, 255, 245), RADIUS: 14, PAD_X: 28, PAD_Y: 18
+- Шрифт: `Montserrat-BlackItalic` — путь `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
+- Размер шрифта: auto_font(max_size=100) → целевой результат 60–80px
+- FILL: (255, 255, 255, 245), RADIUS: 14, PAD_X: 32, PAD_Y: 22, BOX_GAP: 20
+- CENTER_X: 540, MAX_BOX_W: 860px, MAX_TEXT_W: 796px
+- Всегда рендерить JPG-превью из финального MP4 и показывать перед публикацией
 
 ---
 
 ## Хук — правила написания (COMPETITOR FORMAT)
 
-**Золотой стандарт:** maks.motivator — изучать перед каждой сессией хуков.
+**Золотой стандарт:** maks.motivator — 8 доказанных формул в скилле `kira-hooks`.
 
 **Структура:**
 - **Первое лицо** ("I", "my friend", "A local told me") — обязательно
-- **Конкретная цифра или место** когда возможно ("$14,000", "Bali", "3×")
-- **CTA badge:** скрывает payoff, заставляет читать caption → всегда ↓
-
-**Типы хуков (A/B/C/D):** см. скилл `kira-hooks`
+- **Конкретная цифра или место** ("$14,000", "Bali", "3×") — когда возможно
+- **Max 3 строки** в hook_lines, ≤8 слов на строку
+- **CTA badge:** одна фраза, скрывает payoff → всегда ↓
 
 **5 обязательных вопросов перед финализацией:**
-1. Я бы остановил скролл? 
-2. Я бы переслал другу?
-3. Я чувствую что упускаю что-то важное?
-4. Есть конкретная цифра или деталь?
-5. Это первое лицо или прямое обращение ("you")?
+1. Tyler остановит скролл на первых 3 словах?
+2. Перешлёт другу?
+3. Чувствует что упускает что-то важное?
+4. Есть конкретная цифра или место?
+5. Первое лицо ("I/my") или прямое обращение ("you") — НЕ "she/he"?
 
 Если хоть один ответ "нет" — переписать.
 
 **Темы (ротировать):** airport hacks, hotel tricks, customs traps, food facts, health warnings, cruise secrets, EU flight compensation, gate bump, Blue Zone food.
 
-❌ ЗАПРЕЩЕНО: темы про отношения / измену / "she found" / "he asked"
+❌ ЗАПРЕЩЕНО: отношения / измена / "she found" / "he asked" / "you won't believe"
 
 ---
 
@@ -93,10 +77,10 @@
 
 - brand_id: 6476294
 - Timezone: America/New_York
-- Публиковать как Instagram Reel
+- Публиковать как Instagram Reel + TikTok (PUBLIC_TO_EVERYONE, нужен tiktokData.title)
 - Музыку и геотег (New York) добавляет владелец вручную
-- Caption: 1600–1800 символов, структура: second hook → context → escalation → payoff → detail → CALM CTA
-- CALM CTA: `Comment CALM. I'll send you The 3AM Calm Card -- a free one-page guide with 4 steps for when you wake up and can't settle. Also available from the link in bio.`
+- Caption: 1200–1800 символов, структура: second hook → context → detail → payoff → CTA
+- CTA: призыв сохранить/переслать + ссылка в био
 
 ---
 
@@ -105,3 +89,10 @@
 - Репо: `capecode8-oss/preland`, ветка: `claude/new-chat-fjz36a`
 - MP4 пушить в репо → raw.githubusercontent.com URL → Metricool
 - После изменений: commit + push обязательно
+
+---
+
+## Карусели (будущее — после 500 подписчиков)
+
+Когда аккаунт достигнет 500 подписчиков — добавим карусели в формат публикаций.
+Пока не делаем. Правила рендера карусели будут добавлены в отдельный скилл.
