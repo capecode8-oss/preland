@@ -32,10 +32,10 @@ reels = [
         "face_union": (180, 820),
         "text_y": 1060,
         "hook_lines": [
-            "I Almost Got Fined.",
-            "One Form. One Box.",
+            "My Friend Lost $14,000.",
+            "One Customs Form.",
         ],
-        "cta_badge": "( Customs agents catch this daily ↓ )",
+        "cta_badge": "( One question cost him everything ↓ )",
     },
     {
         "name": "aug18_3",
@@ -43,7 +43,7 @@ reels = [
         "face_union": (290, 900),
         "text_y": 1060,
         "hook_lines": [
-            "I Drank Coffee Wrong.",
+            "Coffee Wrong Timing.",
             "Years Lost.",
         ],
         "cta_badge": "( The cortisol window most people miss ↓ )",
@@ -54,10 +54,10 @@ reels = [
         "face_union": (150, 810),
         "text_y": 1060,
         "hook_lines": [
-            "Baggage Claim. 90-Second Window.",
-            "Thieves Know It.",
+            "Never Do This.",
+            "Waiting For Luggage.",
         ],
-        "cta_badge": "( They grab yours before you reach the belt ↓ )",
+        "cta_badge": "( They grab yours first ↓ )",
     },
     {
         "name": "aug18_5",
@@ -65,10 +65,10 @@ reels = [
         "face_union": (100, 820),
         "text_y": 1060,
         "hook_lines": [
-            "I Ordered A Special Meal.",
-            "Served First. Better Food.",
+            "Flight Crew. Single File.",
+            "I Asked Why.",
         ],
-        "cta_badge": "( Anyone can order it. 24 hours before ↓ )",
+        "cta_badge": "( A flight attendant told me the reason ↓ )",
     },
     {
         "name": "aug18_6",
@@ -76,10 +76,10 @@ reels = [
         "face_union": (200, 840),
         "text_y": 1060,
         "hook_lines": [
-            "I Paid $40 Insurance.",
-            "Card Already Covered It.",
+            "Paid $40 Insurance.",
+            "Card Covered It.",
         ],
-        "cta_badge": "( Most people pay twice for the same coverage ↓ )",
+        "cta_badge": "( Most people pay twice ↓ )",
     },
 ]
 
