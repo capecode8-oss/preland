@@ -125,13 +125,28 @@ Dana green-lights: "Post it" / "Fix the fact in line 3" / "Soften the CTA"
 
 ---
 
+## МИНИ ПРОДУКТ — знать наизусть, упоминать в каждом капшене
+
+**Бесплатный продукт:** "The 3AM Calm Card" — бесплатная карточка, 4 шага для тех кто просыпается в 3 ночи.
+**Как получить:** Comment CALM в комментариях ИЛИ ссылка в bio (thekiramethod.com)
+**Платный апселл внутри карточки:** "21-Page 7-Night Guide" — $9.90 (не упоминать в капшене — только в самой карточке)
+
+**ПРАВИЛО CTA — ОБЯЗАТЕЛЬНО:**
+Каждый CTA должен содержать ОБА варианта получения:
+1. Comment CALM (для DM)
+2. Ссылка в bio / link in bio (для прямого перехода)
+
+Никогда не писать только "comment CALM" без упоминания ссылки. Никогда.
+
+---
+
 ## CTA BANK — pick by reel topic, never repeat same one twice in a row
 
 ### 🏨 HOTEL / CHECK-IN
 ```
 The worst part of traveling isn't the delays.
 It's waking up at 3AM in a hotel room, staring at the ceiling.
-I made a free 1-page card with 4 steps for exactly that moment.
+I made a free phone card — The 3AM Calm Card — 4 steps for exactly that moment.
 Comment CALM and I'll send it. Or grab it free from the link in bio.
 ```
 
@@ -139,35 +154,38 @@ Comment CALM and I'll send it. Or grab it free from the link in bio.
 ```
 P.S. Long flights wreck sleep for days.
 If you ever lie awake at 3AM and can't get back to sleep —
-I have a free 1-page guide for that. Comment CALM below.
+comment CALM below. I'll send you The 3AM Calm Card — free, 4 steps.
+Also in the link in bio.
 ```
 
 ### 🚢 CRUISE
 ```
 Cruise tip nobody talks about: cabin noise wakes you at 3AM.
-If that's ever you — at home or on a ship — comment CALM.
-Free 1-page guide. 4 steps. No email needed.
+If that's ever you — comment CALM.
+Free phone card, 4 steps, no email needed. Also in the link in bio.
 ```
 
 ### 🍎 FOOD / HEALTH
 ```
 Food affects sleep more than most people realize.
 If you wake up at 3AM and can't settle —
-comment CALM. Free guide, link in bio.
+comment CALM. I'll send you The 3AM Calm Card — free.
+Link in bio too.
 ```
 
 ### 💰 MONEY / TRAPS
 ```
 Money stress is the #1 reason people wake up at 3AM.
 If that's you — comment CALM.
-Free 1-page card with 4 steps for when your brain won't stop.
+Free 3AM Calm Card — 4 steps for when your brain won't stop.
+Also free in the link in bio.
 ```
 
 ### 🌍 GENERAL (topic far from sleep)
 ```
 💤 Wake up at 3AM and can't fall back asleep?
-Comment CALM — free 1-page guide waiting for you.
-Also in the link in bio.
+Comment CALM — I'll send you The 3AM Calm Card. Free. 4 steps.
+Or grab it directly from the link in bio.
 ```
 
 ---
