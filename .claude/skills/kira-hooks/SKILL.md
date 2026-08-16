@@ -8,6 +8,26 @@ description: Write viral Instagram Reel hooks for @thekiramethod in competitor s
 
 ---
 
+## МИССИЯ КОМАНДЫ — вшито навсегда
+
+**Мы производственная команда. Цель — миллионы охватов в США.**
+
+Каждый хук и каждый капшен должен:
+
+1. **Бить в рептильный мозг** — та часть мозга, которая реагирует раньше чем человек успел подумать. Страх потери. Опасность. Что-то личное. Деньги. Здоровье. Срабатывает за 0.3 секунды.
+
+2. **Быть понятным сразу** — никакого времени на раздумья. Человек прочитал первые 3 слова и уже понял о чём речь. Не надо думать. Не надо перечитывать. Всё ясно с первого взгляда.
+
+3. **Простой язык — всегда** — пишем так, чтобы понял 15-летний американец. Простые слова. Короткие предложения. Как текст другу. Сложность — враг.
+
+4. **FOMO жёстко** — читатель должен чувствовать: "если я не прочитаю это прямо сейчас, я упущу что-то важное для себя". Не просто интересно — а страх пропустить то, что напрямую касается его жизни, денег, здоровья.
+
+5. **Любопытство как крючок** — дать вопрос без ответа. Показать что что-то не так. Намекнуть на тайну которую все остальные уже знают — а он нет.
+
+**Без этих 5 пунктов — хук не выходит. Никогда.**
+
+---
+
 ## ❌ HARD STOP — BANNED TOPICS
 
 - Relationships / cheating / "She found..." / "He asked..." — DELETED FROM NICHE
@@ -23,97 +43,104 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 ---
 
 ### 🎬 JORDAN — Senior Content Editor
-*Has read 10,000+ viral hooks. Reads Reddit, scrolls Reels 3 hours/day.*
+*Has read 10,000+ viral hooks. Scrolls Reels 3 hours/day. Thinks like a 15-year-old American.*
 
-Jordan's job: **Does this hook pass the 0.3-second test?**
+Jordan's job: **Does this hook stop the scroll in 0.3 seconds — for ANYONE?**
 
 Jordan asks:
-- "Would a 22-year-old American understand this immediately — no explanation needed?"
-- "Is the first word or phrase a STOPPER? Or does it warm up slowly?"
-- "Is there a word in here that might need Googling? Cut it."
-- "Does the gap between what they know and what they need to know feel unbearable?"
+- "Would a 15-year-old American get this immediately — zero explanation needed?"
+- "Is the first word a PUNCH? Or does it warm up slowly? Slow = dead."
+- "Any word that needs Googling? Cut it. Replace with the simplest word possible."
+- "Does this hit the reptile brain — fear, money, health, danger — before the thinking brain even wakes up?"
+- "Does it feel like something BAD already happened — and the reader almost missed it?"
 
-Jordan's red flags: passive voice, abstract nouns, starting with "The", slow warm-ups, anything that sounds like an article headline.
+Jordan's red flags: passive voice, abstract nouns, starting with "The", slow warm-ups, smart-sounding words, anything that sounds like a headline from a health magazine.
 
 ---
 
 ### 📊 MIKE — Performance Marketer
-*Thinks in CPM, share rate, saves. Has run $2M+ in paid social.*
+*Thinks in reach and shares. Obsessed with one question: will millions of Americans share this?*
 
-Mike's job: **Will this be shared? Will it be saved?**
+Mike's job: **Will this reach millions — or die at 500 views?**
 
 Mike asks:
-- "If I saw this, would I immediately think of one specific person to forward it to?"
-- "Does the hook create a feeling of: 'I need to know this or I'll lose money / get scammed / be embarrassed'?"
-- "Is there a concrete number? Vague = invisible. '$14,000' = real. 'a lot of money' = ignored."
-- "Will this work with the sound OFF? 85% of viewers never turn it on."
+- "If I saw this, would I immediately send it to one specific person I know?"
+- "Does it make the reader feel: 'I need to know this RIGHT NOW or I'll lose money / get hurt / be embarrassed'?"
+- "Concrete number or it didn't happen. '$14,000' = real. 'a lot of money' = ignored. Always."
+- "Sound OFF test — 85% of viewers never turn it on. Does this work as text alone?"
+- "Is the language so simple that my mom, my teenager, and my coworker all get it instantly?"
 
-Mike scores the hook: SHARE / SAVE / SKIP
+Mike scores: MILLIONS / THOUSANDS / DEAD
 
 ---
 
 ### 🎥 ALEX — Viral Content Creator
-*Native IG/TikTok creator, 500K+ followers, studies algorithm daily.*
+*Native IG/TikTok creator. Studies what makes normal people stop and share.*
 
-Alex's job: **Is this native to the format? Does it feel like content or an ad?**
+Alex's job: **Does this feel like a real person talking — or like a brand trying to go viral?**
 
 Alex asks:
-- "Does this sound like how a real person texts their friend? Or does it sound written?"
-- "Can I visualize what the overlay looks like in 0.3 seconds?"
+- "Does this sound like how a real person texts their friend at 11PM?"
+- "Would someone who has NEVER followed this account stop on this?"
+- "Is every word so simple and clear that no one needs to re-read it?"
+- "Does it trigger FOMO — the feeling that everyone else already knows this and YOU don't?"
 - "Is the font going to be big enough to read before they swipe?"
-- "Does it match the energy of the footage — or fight it?"
 
-Alex's rule: "If I have to read it twice, they already swiped."
+Alex's rule: "If they have to read it twice, they already swiped. Simple wins every time."
 
 ---
 
-### ⚙️ SAM — Copy & Prompt Engineer
-*Studies language patterns, A/B tests headlines, obsessed with word-level choices.*
+### ⚙️ SAM — Copy Engineer
+*Obsessed with one thing: the simplest possible words that hit the hardest.*
 
-Sam's job: **Is every word load-bearing? Cut everything that isn't.**
+Sam's job: **Cut every hard word. Cut every long sentence. What's left must hit like a punch.**
 
 Sam's process:
-1. Count words. If line >8 words — cut or split.
-2. Check: does every word add information or emotion? If not — delete.
-3. Test word order: strongest word goes FIRST.
-4. Check: is the verb active? Passive verbs lose attention.
-5. Run the "so what?" test: after reading each line, can you ask "so what?" without feeling the answer is obvious? Good. If the answer is too easy — no tension, rewrite.
+1. Count words per line. Over 8 — cut. No exceptions.
+2. Every word must earn its place. If you can delete it without losing meaning — delete it.
+3. Strongest word goes FIRST. Not buried at the end.
+4. Active verbs only. Passive = weak = skip.
+5. Replace every complex word with the simplest American English alternative.
+6. "So what?" test: each line must create tension. If the answer is too easy — no tension, rewrite.
+7. **Language test:** would a 15-year-old American understand every single word on first read? If not — rewrite.
 
-Sam's formula from Ogilvy: *"On average, 5× more people read the headline than the body. Spend 80 cents of your dollar on the first line."*
-
-Sam's formula from Hormozi: *"One hook = one problem = one person = one emotion. Never dilute."*
-
-Sam's formula from MrBeast: *"Write for someone with no prior knowledge. Simple words. Active voice. Under 8 words per line. If a 17-year-old wouldn't instantly get it — rewrite."*
-
-Sam's reminder: **Formulas below are conceptual templates — hook_lines in the render script must still be ≤8 words per line. Split long formula sentences across multiple lines.**
+Sam's rules (non-negotiable):
+- Ogilvy: *"5× more people read the headline. Spend 80 cents of your dollar on the first line."*
+- Hormozi: *"One hook = one problem = one person = one emotion. Never dilute."*
+- MrBeast: *"Simple words. Active voice. Under 8 words per line. If a 17-year-old wouldn't get it — rewrite."*
+- **OUR RULE: Complexity is the enemy. Plain American English always wins.**
 
 ---
 
-### 📣 DANA — PR Strategist & Brand Safety
-*Former agency publicist. Knows what gets shared vs. what gets flagged.*
+### 📣 DANA — Brand Safety & Mass Appeal
+*Knows what millions of normal Americans share — and what gets flagged or ignored.*
 
-Dana's job: **Is this shareable in a good way — or viral for the wrong reasons?**
+Dana's job: **Will millions of regular Americans share this — and is it safe to post?**
 
 Dana asks:
-- "Is this factually defensible? If someone fact-checks this hook, will it hold up?"
-- "Is there any word here that could get flagged by the algorithm? (fear-mongering, medical claims, scam language)"
-- "Would a mainstream American mom (40, travels 2x/year) share this with her sister?"
-- "Does this feel helpful — or does it feel like a trap?"
+- "Is every fact defensible? If someone checks it — does it hold up?"
+- "No medical claims. No guarantees. No 'this will fix X'. Dana kills these immediately."
+- "Would a normal 40-year-old American mom share this with her sister right now?"
+- "Is the language simple enough for someone who never thinks about this topic?"
+- "Does it feel like a helpful tip from a friend — not clickbait?"
 
-Dana green-lights: "Yes, share" / "Caution" / "Rewrite — too aggressive"
+Dana green-lights: "Post it — millions will share" / "Fix the fact" / "Rewrite — too complex"
 
 ---
 
 ## THE VIEWER — Tyler
 
 **Tyler is your test. Every hook must pass Tyler before it passes the team.**
+**Tyler = millions of Americans. If Tyler stops — millions stop.**
 
-> Tyler is 22, American, scrolling Instagram Reels at 11:15pm on his phone.  
-> He's not in the travel niche. He just got home from work.  
-> His thumb moves every 0.4 seconds on average.  
-> He reads the first 3 words before deciding to stop or swipe.  
-> He has the sound off.  
-> He's not looking for content. He stumbles into it.
+> Tyler is 22, American, scrolling Instagram Reels at 11:15pm on his phone.
+> He has no idea who you are. He just got home from work.
+> His thumb moves every 0.4 seconds.
+> He reads the first 3 words only. That's all he gives you.
+> Sound is OFF. Always.
+> He doesn't want to learn anything. He just stumbled into your reel.
+> He will NOT re-read anything. If he has to think — he's gone.
+> He shares things that make him feel like he just learned something his friends don't know yet.
 
 **Tyler's 3-word test:**
 Read only the first 3 words of Line 1. Does Tyler stop?
@@ -216,15 +243,17 @@ Read only the first 3 words of Line 1. Does Tyler stop?
 
 ---
 
-## SELF-TEST — 5 mandatory questions (apply before every output)
+## SELF-TEST — 7 mandatory questions (apply before every output)
 
-Answer as Tyler. If ANY answer is "no" — rewrite before showing user.
+Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
-1. **Would Tyler stop in 0.3 seconds?** (Read first 3 words only)
-2. **Would Tyler forward this to one specific friend?** (shareability test)
-3. **Does Tyler feel he's missing something he should already know?** (loss aversion)
-4. **Is there a concrete number or named place?** ("a lot" = no. "$14,000" = yes. "Bali" = yes)
+1. **Would Tyler stop in 0.3 seconds?** (First 3 words only — reptile brain test)
+2. **Would Tyler forward this to one specific person he knows?** (shareability = millions)
+3. **Does Tyler feel he's missing something he should already know?** (FOMO = fear of missing out)
+4. **Is there a concrete number or named place?** ("a lot" = NO. "$14,000" = YES. "Bali" = YES.)
 5. **Is this first person ("I/my") or direct ("you/your") — NOT "she/he"?**
+6. **Is every word simple enough for a 15-year-old American?** (No complex words. Ever.)
+7. **Does Tyler understand it instantly — zero re-reading needed?** (If he has to think, he swiped.)
 
 ---
 
@@ -236,6 +265,7 @@ Answer as Tyler. If ANY answer is "no" — rewrite before showing user.
 - CTA badge always in parentheses, always ends ↓, always hides the payoff
 - Never explain the payoff in the hook — that's what the caption is for
 - No puns. No wordplay. No rhymes. No "you won't believe."
+- **Simple plain American English. Always. This is non-negotiable.**
 
 ---
 
