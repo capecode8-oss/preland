@@ -24,6 +24,8 @@ description: Write viral Instagram Reel hooks for @thekiramethod in competitor s
 
 5. **Любопытство как крючок** — дать вопрос без ответа. Показать что что-то не так. Намекнуть на тайну которую все остальные уже знают — а он нет.
 
+6. **БЕШЕНОЕ ЖЕЛАНИЕ ПЕРЕСЛАТЬ** — главный тест каждого хука и капшена. Не "понравится ли им?" — а "скинут ли они это кому-то прямо сейчас?". Это сарафанное радио. Один переслал → цепочка → миллионы. Если контент не вызывает этого бешеного желания немедленно скинуть другу — переписываем. Всегда. Без исключений.
+
 **Без этих 5 пунктов — хук не выходит. Никогда.**
 
 ---
@@ -69,6 +71,8 @@ Mike asks:
 - "Concrete number or it didn't happen. '$14,000' = real. 'a lot of money' = ignored. Always."
 - "Sound OFF test — 85% of viewers never turn it on. Does this work as text alone?"
 - "Is the language so simple that my mom, my teenager, and my coworker all get it instantly?"
+
+Mike's главный вопрос: **"Есть ли у меня бешеное желание скинуть это кому-то прямо сейчас?"** Если нет — переписать.
 
 Mike scores: MILLIONS / THOUSANDS / DEAD
 
