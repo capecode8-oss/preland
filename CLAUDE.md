@@ -80,7 +80,60 @@
 - Публиковать как Instagram Reel + TikTok (PUBLIC_TO_EVERYONE, нужен tiktokData.title)
 - Музыку и геотег (New York) добавляет владелец вручную
 - Caption: 1200–1800 символов, структура: second hook → context → detail → payoff → CTA
-- CTA: призыв сохранить/переслать + ссылка в био
+
+---
+
+## Caption CTA — выбирать по теме рилса (каждый рилс — свой вариант)
+
+**Правило:** не повторять один и тот же CTA два раза подряд. Подбирать по теме.
+
+### 🏨 ОТЕЛЬ / ЧЕК-ИН
+```
+The worst part of traveling isn't the delays.
+It's waking up at 3AM in a hotel room, staring at the ceiling.
+I made a free 1-page card with 4 steps for exactly that moment.
+Comment CALM and I'll send it. Or grab it free from the link in bio.
+```
+
+### ✈️ АЭРОПОРТ / ПЕРЕЛЁТ
+```
+P.S. Long flights wreck sleep for days.
+If you ever lie awake at 3AM and can't get back to sleep —
+I have a free 1-page guide for that. Comment CALM below.
+```
+
+### 🚢 КРУИЗ
+```
+Cruise tip nobody talks about: cabin noise wakes you at 3AM.
+If that's ever you — at home or on a ship — comment CALM.
+Free 1-page guide. 4 steps. No email needed.
+```
+
+### 🍎 ЕДА / ЗДОРОВЬЕ
+```
+Food affects sleep more than most people realize.
+If you wake up at 3AM and can't settle —
+comment CALM. Free guide, link in bio.
+```
+
+### 💰 ДЕНЬГИ / ЛОВУШКИ
+```
+Money stress is the #1 reason people wake up at 3AM.
+If that's you — comment CALM.
+Free 1-page card with 4 steps for when your brain won't stop.
+```
+
+### 🌍 ОБЩИЙ (когда тема далека от сна)
+```
+💤 Wake up at 3AM and can't fall back asleep?
+Comment CALM — free 1-page guide waiting for you.
+Also in the link in bio.
+```
+
+**После CTA всегда добавлять:**
+```
+Save this for your next trip. ♻️ Share with someone who needs it.
+```
 
 ---
 
