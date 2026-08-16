@@ -245,6 +245,27 @@ Read only the first 3 words of Line 1. Does Tyler stop?
 - Hotel loyalty status: cheapest way to get it before travel
 - Checked bag fee loophole (credit cards that reimburse it)
 
+### 💊 PHARMACY / HEALTHCARE (USA — массово пересылают)
+- GoodRx / pharmacy coupons: same pill, 10× cheaper — pharmacist never tells you
+- Hospital bill negotiation: every bill is negotiable, most people never ask
+- Generic vs brand drugs: identical ingredients, 80% cheaper — FDA confirmed
+- Prescription price varies by pharmacy: same drug, $12 vs $180 same street
+- Medical bill surprise charges: what to dispute and how (one letter kills most charges)
+
+### 🏠 HOME / HOUSEHOLD DANGER (страх = мгновенная пересылка)
+- Bleach + ammonia = toxic gas (Windex + bleach — in every home)
+- Bleach + vinegar = chlorine gas (people mix these thinking it's "natural")
+- Air freshener + candle in closed room = VOC buildup (headaches, not ambiance)
+- Extension cord + space heater = #1 cause of home fires in USA
+- Fridge temperature: most Americans keep it too warm — food spoils 2× faster
+
+### ⚖️ RIGHTS / CONSUMER LAW USA (люди пересылают потому что чувствуют себя умнее)
+- Security deposit law: landlord must return in 14-30 days or owe you 2-3× (by state)
+- Airline bumping: if they involuntarily bump you — owed up to $1,550 cash by law
+- Credit card dispute: 60 days to dispute any charge — bank must investigate
+- Debt collectors: 11 things they are legally banned from doing (most people don't know)
+- Car dealership add-ons: every single one is optional by law, they can't make it required
+
 ---
 
 ## SELF-TEST — 7 mandatory questions (apply before every output)
