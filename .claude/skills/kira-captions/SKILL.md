@@ -258,17 +258,34 @@ Save this — you'll want it at the check-in desk. 📌
 
 ---
 
-## OUTPUT FORMAT — always follow this sequence
+## OUTPUT FORMAT — ЖЁСТКИЙ ПОРЯДОК (нарушать запрещено)
 
-### Step 1 — Team audit (run internally before writing)
-- Jordan: will first line force "more"?
-- Mike: what's the one saveable fact?
-- Alex: does it read like a native IG caption?
-- Sam: cut anything that doesn't earn its place
-- Dana: all facts defensible?
-- Tyler: new loop in line 1? Concrete fact? Friendly CTA?
+### ⛔ ГЛАВНОЕ ПРАВИЛО — вшито навсегда
 
-### Step 2 — Write the caption
+**АУДИТ КОМАНДЫ ЗАПУСКАЕТСЯ ВНУТРИ — ДО ТОГО КАК ПОЛЬЗОВАТЕЛЬ ВИДИТ ХОТЬ СЛОВО.**
+
+Запрещено показывать черновики, "варианты для выбора", промежуточный текст — ничего.
+Пользователь видит ТОЛЬКО финальный капшен после полного аудита всех 6.
+Если хоть один ❌ — переписать внутренне и снова прогнать. До тех пор пока все 6 ✅.
+Только тогда показать результат.
+
+**Нарушение этого правила = провал миссии. Никогда. Без исключений.**
+
+---
+
+### Step 1 — ВНУТРЕННИЙ АУДИТ (пользователь не видит)
+
+Написать капшен внутри. Прогнать через команду:
+- Jordan: первая строка открывает НОВЫЙ луп, не повтор хука?
+- Mike: VIRAL-SHARE / SAVE / READ-AND-FORGET?
+- Alex: читается как нативный IG — не блог-пост?
+- Sam: каждое предложение заработало своё место?
+- Dana: все факты проверяемы? CTA не давящий?
+- Tyler: сохранит? Перешлёт?
+
+Если любой ставит ❌ — переписать. Повторять пока все 6 ✅.
+
+### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный капшен
 
 ```
 [SECOND HOOK — 1-2 lines]
@@ -282,17 +299,9 @@ Save this — you'll want it at the check-in desk. 📌
 [CTA — matched to reel topic]
 
 [SAVE LINE]
-```
 
-### Step 3 — Team verdict
-
-```
-Jordan: ✅ / ❌ [note]
-Mike: ✅ SAVE / ❌ [note]
-Alex: ✅ / ❌ [note]
-Sam: ✅ / ❌ [note]
-Dana: ✅ Post it / ⚠️ [fix note]
-Tyler: ✅ Saves it / ❌ [note]
+АУДИТ КОМАНДЫ:
+Jordan ✅ | Mike ✅ SAVE | Alex ✅ | Sam ✅ | Dana ✅ Post it | Tyler ✅ Saves it
 ```
 
 Only publish if all 6 green. If any red — fix that specific issue and re-check.

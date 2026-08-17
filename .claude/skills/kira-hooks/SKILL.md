@@ -323,29 +323,50 @@ Examples of body_bottom (not face_bottom):
 
 ---
 
-## OUTPUT FORMAT — always follow this sequence
+## OUTPUT FORMAT — ЖЁСТКИЙ ПОРЯДОК (нарушать запрещено)
 
-### Step 1 — Brainstorm (internal, run team in your head)
-- Jordan: first 3 words pass?
-- Mike: share or save?
-- Alex: sounds native?
-- Sam: cut every unnecessary word
-- Dana: safe to post?
-- Tyler: stops scrolling?
+### ⛔ ГЛАВНОЕ ПРАВИЛО — вшито навсегда
 
-### Step 2 — Write 3–5 variants, each with formula label
+**АУДИТ КОМАНДЫ ЗАПУСКАЕТСЯ ВНУТРИ — ДО ТОГО КАК ПОЛЬЗОВАТЕЛЬ ВИДИТ ХОТЬ СЛОВО.**
+
+Запрещено показывать черновики, варианты, "предложения", "первые мысли" — ничего.
+Пользователь видит ТОЛЬКО финальный результат после полного аудита всех 6.
+Если хоть один ❌ — переписать внутренне и снова прогнать. Снова и снова — пока все 6 ✅.
+Только тогда показать результат.
+
+**Нарушение этого правила = провал миссии. Никогда. Без исключений.**
+
+---
+
+### Step 1 — ВНУТРЕННИЙ МОЗГОШТУРМ (пользователь не видит)
+
+Написать 3–5 вариантов хука внутри. Для каждого прогнать через команду:
+- Jordan: первые 3 слова — СТОП или СВАЙП?
+- Mike: MILLIONS / THOUSANDS / DEAD?
+- Alex: звучит как живой человек или бренд?
+- Sam: каждое слово заработало своё место?
+- Dana: безопасно? Факт проверяем?
+- Tyler: остановит скролл за 0.3 секунды?
+
+Если любой ставит ❌ — переписать. Повторять пока все 6 ✅.
+
+### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный победитель
+
+Формат вывода:
 
 ```
-VARIANT 1 — Formula: [3 / Command Interrupt]
+ФИНАЛЬНЫЙ ХУК — Formula: [номер / название]
 hook_lines: [
-    "Never Check Into A Hotel",
-    "Without Saying These Two Words.",
+    "Строка 1",
+    "Строка 2",
 ]
-cta_badge: "( The staff never volunteers this ↓ )"
-Team verdict: Jordan ✅ | Mike ✅ SHARE | Alex ✅ | Sam ✅ | Dana ✅ | Tyler STOPS ✅
+cta_badge: "( текст ↓ )"
+
+АУДИТ КОМАНДЫ:
+Jordan ✅ | Mike ✅ MILLIONS | Alex ✅ | Sam ✅ | Dana ✅ | Tyler STOPS ✅
 ```
 
-### Step 3 — Body clearance
+### Step 3 — Body clearance (после одобрения хука)
 
 ```
 Clip: [filename]
