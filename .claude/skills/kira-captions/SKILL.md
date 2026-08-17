@@ -216,6 +216,27 @@ I made a free card for that — one page, 4 steps, tells you exactly what to do.
 Comment CALM and I'll send it to you. Or grab it free from the link in bio.
 ```
 
+### 💊 PHARMACY / PRESCRIPTION DRUGS
+```
+Stress about bills is one of the top reasons people can't sleep at night.
+If your brain won't turn off at 3AM, I made a free card for that.
+One page. 4 steps. Comment CALM and I'll send it. Free in the link in bio too.
+```
+
+### 🏠 HOME DANGER / HOUSEHOLD SAFETY
+```
+Anxiety and fear keep a lot of people awake at 3AM.
+If that's you, I made a free card — one page, 4 steps, tells you exactly what to do.
+Comment CALM and I'll send it. Or grab it free from the link in bio.
+```
+
+### ⚖️ CONSUMER RIGHTS / COMPENSATION
+```
+Money you're owed but haven't claimed? That stress hits hardest at 3AM.
+I made a free one-page card — 4 steps for when your brain won't stop at night.
+Comment CALM and I'll send it. Free in the link in bio too.
+```
+
 ---
 
 ## SAVE LINE — always the last line of every caption
@@ -275,3 +296,12 @@ Tyler: ✅ Saves it / ❌ [note]
 ```
 
 Only publish if all 6 green. If any red — fix that specific issue and re-check.
+
+---
+
+## BODY CLEARANCE REMINDER (кaждый раз перед рендером)
+
+⚠️ Текст накладывается ПОСЛЕ проверки body clearance в kira-hooks.
+Напоминание: измерять ПОЛНОЕ ТЕЛО (не только лицо) по 5 кадрам.
+body_bottom = самая низкая видимая часть тела (руки, биноклей, корпус, ноги).
+hook_y0 ≥ body_bottom + 70. Никогда не накладывать текст на тело.

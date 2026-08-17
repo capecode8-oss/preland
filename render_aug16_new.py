@@ -17,9 +17,10 @@ TEXT_COLOR = (0, 0, 0, 255)
 reels = [
     {
         "name": "aug16_pharm",
-        "footage": f"{BASE}/9836c562-1_17.mp4",
-        "face_union": (120, 800),
-        "text_y": 900,
+        "footage": f"{BASE}/5057fe3d-1_25.mp4",  # snorkeling — body 0-900, safe BELOW at y=1020
+        "body_union": (0, 900),
+        "text_y": 1020,
+        "placement": "below",
         "hook_lines": [
             "Same Pill. Same Store.",
             "$180 vs $12.",
@@ -28,9 +29,10 @@ reels = [
     },
     {
         "name": "aug16_home",
-        "footage": f"{BASE}/8a25c132-1_18.mp4",
-        "face_union": (50, 620),
+        "footage": f"{BASE}/8a25c132-1_18.mp4",  # tennis — body 50-620, safe BELOW at y=720
+        "body_union": (50, 620),
         "text_y": 720,
+        "placement": "below",
         "hook_lines": [
             "Never Mix These Two.",
             "They're In Every Home.",
@@ -39,14 +41,15 @@ reels = [
     },
     {
         "name": "aug16_rights",
-        "footage": f"{BASE}/363dc85a-1_29.mp4",
-        "face_union": (150, 800),
-        "text_y": 900,
+        "footage": f"{BASE}/a4be1900-1_23.mp4",  # Grand Canyon — body 590-1800, ABOVE at y=80
+        "body_union": (590, 1800),
+        "text_y": 80,
+        "placement": "above",
         "hook_lines": [
             "They Bumped Me Off.",
             "Owed Me $1,550 Cash.",
         ],
-        "cta_badge": "( US law. Most passengers take vouchers instead ↓ )",
+        "cta_badge": "( US law. Take cash, not vouchers ↓ )",
     },
 ]
 
@@ -104,12 +107,19 @@ def make_overlay(r):
     cta_y0 = hook_y1 + BOX_GAP
     cta_y1 = cta_y0 + cta_box_h
 
-    ft, fb = r["face_union"]
-    forbidden_bottom = min(1920, fb + 70)
-    assert hook_y0 >= forbidden_bottom, f"FACE OVERLAP {r['name']}: hook_y0={hook_y0} < {forbidden_bottom}"
-    assert cta_y1 <= 1536, f"CTA too low {r['name']}: {cta_y1}"
+    bt, bb = r["body_union"]
+    forbidden_top = max(0, bt - 70)
+    forbidden_bottom = min(1920, bb + 70)
+    placement = r.get("placement", "below")
 
-    print(f"  {r['name']}: font={fsize}px hook_y0={hook_y0} cta_bottom={cta_y1} box_w={box_w} face_clear=✅")
+    if placement == "above":
+        assert hook_y0 >= 80, f"ABOVE too high {r['name']}: hook_y0={hook_y0} < 80"
+        assert cta_y1 <= forbidden_top, f"BODY OVERLAP (above) {r['name']}: cta_y1={cta_y1} > forbidden_top={forbidden_top}"
+    else:
+        assert hook_y0 >= forbidden_bottom, f"BODY OVERLAP (below) {r['name']}: hook_y0={hook_y0} < forbidden_bottom={forbidden_bottom}"
+        assert cta_y1 <= 1536, f"CTA too low {r['name']}: {cta_y1}"
+
+    print(f"  {r['name']}: font={fsize}px placement={placement} hook_y0={hook_y0} cta_bottom={cta_y1} body_clear=✅")
 
     bx0 = CENTER_X - box_w // 2
     bx1 = CENTER_X + box_w // 2

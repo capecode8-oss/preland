@@ -294,19 +294,29 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
 ---
 
-## FACE CLEARANCE — run before every render
+## BODY CLEARANCE — run before every render
+
+⚠️ **FULL BODY — NOT face only. This is the #1 source of render errors.**
+
+Measure the LOWEST VISIBLE BODY PART across ALL 5 frames — hands, arms holding objects, torso, hips, feet — anything visible on screen. The face chin is NOT the bottom. The lowest pixel of any body part IS.
 
 1. Extract 5 frames: t = 0.25, 1.25, 2.50, 3.75, 4.75s
-2. View ALL 5 — find face bbox in each
-3. UNION: face_top = min across all frames, face_bottom = max
-4. forbidden_top = face_top − 70 | forbidden_bottom = face_bottom + 70
+2. View ALL 5 — find the FULL BODY extent in each frame (head to lowest visible body part)
+3. UNION: body_top = min y across all frames | body_bottom = MAX y of LOWEST BODY PART across all frames
+4. forbidden_top = body_top − 70 | forbidden_bottom = body_bottom + 70
 5. Placement:
    - BELOW: hook_y0 ≥ forbidden_bottom AND cta_bottom ≤ 1536 ✅
    - ABOVE: hook_y0 ≥ 80 AND cta_bottom ≤ forbidden_top ✅
    - Neither fits → change clip
 6. QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1536px
 
-**NEVER skip. NEVER use one frame. NEVER guess.**
+**NEVER skip. NEVER use one frame. NEVER measure face only. NEVER guess.**
+
+Examples of body_bottom (not face_bottom):
+- Person holding binoculars → body_bottom = bottom of binoculars in hands
+- Person standing → body_bottom = feet
+- Person in close-up (shoulders only) → body_bottom = bottom of shoulders/chest
+- Selfie filling full frame → body_bottom may be ~1500px → NO safe placement → change clip
 
 ---
 
@@ -332,13 +342,13 @@ cta_badge: "( The staff never volunteers this ↓ )"
 Team verdict: Jordan ✅ | Mike ✅ SHARE | Alex ✅ | Sam ✅ | Dana ✅ | Tyler STOPS ✅
 ```
 
-### Step 3 — Face clearance
+### Step 3 — Body clearance
 
 ```
 Clip: [filename]
-face_union: y=TOP–BOTTOM
+body_union: y=TOP–BOTTOM (FULL BODY — lowest visible body part, not just face)
 forbidden_zone: y=FORBIDDEN_TOP–FORBIDDEN_BOTTOM
-text_y: VALUE (BELOW / ABOVE face)
+text_y: VALUE (BELOW / ABOVE body)
 QA: center=540 box_w=XXX cta_bottom=XXX ✅
 ```
 
