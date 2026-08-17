@@ -167,16 +167,18 @@ Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
 
 ## TYLER'S CAPTION TEST
 
-> Tyler opens the caption only if the reel hook stopped him.
+> Tyler opens the caption only if the reel hook stopped him in 1.7 seconds.
 > Now he's reading on his phone, standing in line somewhere.
 > He'll tap "more" if line 1 promises something he doesn't know yet.
 > He'll save it if there's one concrete fact he wants to remember.
 > He'll share it if it makes him think of one specific person.
+> He'll tap the bio link ONLY if the CTA shows him exactly what he gets — no vague promises.
 
 **Tyler's test:**
 1. Does line 1 of the caption open a NEW loop? (not just repeat the reel)
 2. Is there one fact concrete enough to remember tomorrow?
 3. Does the CTA feel like a friend recommending something — not a brand selling?
+4. **Does the CTA show the concrete payoff (one page, 4 steps) before asking for action?** (preview-before-ask = higher CTR)
 
 ---
 
@@ -192,6 +194,22 @@ Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
 2. Ссылка в bio / link in bio (для прямого перехода)
 
 Никогда не писать только "comment CALM" без упоминания ссылки. Никогда.
+
+---
+
+## КОНВЕРСИЯ BIO-ССЫЛКИ — данные 2026 (вшито навсегда)
+
+**Бенчмарк:** средний CTR по bio-ссылке = 2-4% от просмотров. Топ-аккаунты — 8-10%. Мы должны целиться в топ, не в среднее.
+
+**Что снижает конверсию (проверено исследованиями):**
+- Форма с 3+ полями вместо 1 — каждое лишнее поле режет конверсию на 5-10%. На лендинге (если есть форма) — только email, ничего больше.
+- Отсутствие "превью" выгоды перед запросом контакта — люди должны увидеть ЧТО они получат (скриншот карточки, превью) ДО того как их просят дать email/comment.
+- Не мобильная вёрстка — 95%+ трафика с bio идёт с телефона. Всё должно быть мобильно-идеальным.
+
+**Применяем в каждом капшене:**
+1. CTA должен показывать ЦЕННОСТЬ карточки конкретно ("one page, 4 steps, tells you exactly what to do") — это и есть "превью" в тексте, раз нет визуального превью.
+2. Никогда не просить больше одного действия за раз (Comment CALM ИЛИ переход по ссылке — оба ведут к ОДНОМУ действию: получить карточку).
+3. CTA — последнее что читает зритель перед решением "перехожу / нет". Это критичная точка конверсии, не проходной абзац. Sam проверяет CTA с той же строгостью что и хук.
 
 ---
 

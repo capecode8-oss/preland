@@ -50,10 +50,25 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 **ALGORITHM FACTS (2025-2026 research — вшито навсегда):**
 - DM sends (пересылки) = самый важный сигнал. Вес 3-5× больше чем лайки.
 - Sends/reach benchmark: <0.5% = мёртвый контент. 1-2% = здоровый. >3% = вирусный.
-- Watch time (досмотр до конца) = сигнал #2. Первые 3 секунды решают всё.
+- **РЕАЛЬНОЕ окно решения — 1.7 СЕКУНДЫ, не 3.** Зритель решает scroll/stay за 1.7 сек. До 50% уходят в первые 3 секунды — если хук слабый, теряем половину аудитории мгновенно.
+- **Skip rate — ключевая метрика.** <30-40% = здоровый хук. >50% = хук не работает, переписать формулу целиком.
+- **Hold rate на 3-й секунде >60% = 5-10× больше охвата** чем у hold rate <40%. Разница не линейная — экспоненциальная.
 - Saves = сигнал #3. Означает "хочу вернуться".
 - Контент с лицами в первые 3 секунды = +35% retention.
 - Instagram пенализирует AI-сгенерированный и репостнутый контент.
+
+**RETENTION BENCHMARK BY HOOK TYPE (данные 2026 — используй для выбора формулы):**
+
+| Тип хука | Retention на 3 сек | Наши формулы этого типа |
+|----------|---------------------|--------------------------|
+| 🥇 Pattern Interrupt | 72–84% | Formula 3 (Command Interrupt), Formula 5 (Injustice) |
+| 🥈 Curiosity Gap | 65–78% | Formula 4 (Insider Observation), Formula 7 (Location Danger) |
+| 🥉 Direct Question | 58–72% | вариации "Ever notice how..." |
+| Bold Claim | 55–70% | Formula 1 (Personal Warning), Formula 2 (Specific Loss) |
+| Problem Statement | 50–65% | Formula 6, Formula 8 (Body/Kitchen fact) |
+| ❌ Social Proof | 45–60% | СЛАБЕЙШИЙ тип — избегать как основной формулы |
+
+**Правило приоритета формул:** при выборе между несколькими вариантами хука — всегда предпочитать Pattern Interrupt и Curiosity Gap формулы. Social Proof формулы ("everyone knows...", "most people don't know that...") — использовать только как второстепенный элемент, никогда как основной механизм хука.
 
 **ПОЧЕМУ ЛЮДИ ШЕРЯТ (психология — исследования 2025):**
 - Высокая эмоция: awe, смех, тревога, злость → шерят. Грусть, удивление → НЕ шерят.
@@ -66,17 +81,20 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 ### 🎬 JORDAN — Senior Content Editor
 *Has read 10,000+ viral hooks. Scrolls Reels 3 hours/day. Thinks like a 15-year-old American.*
 
-Jordan's job: **Does this hook stop the scroll in 0.3 seconds — for ANYONE?**
+Jordan's job: **Does this hook stop the scroll in 1.7 SECONDS — for ANYONE?**
+
+⏱️ **1.7 секунды = реальное окно.** Не 3 секунды. Зритель решает scroll/stay почти мгновенно — это значит первые 3 СЛОВА и первый визуальный кадр должны сработать вместе, без разгона.
 
 Jordan asks:
 - "Would a 15-year-old American get this immediately — zero explanation needed?"
-- "Is the first word a PUNCH? Or does it warm up slowly? Slow = dead."
+- "Is the first word a PUNCH? Or does it warm up slowly? Slow = dead in 1.7 sec."
 - "Any word that needs Googling? Cut it. Replace with the simplest word possible."
 - "Does this hit the reptile brain — fear, money, health, danger — before the thinking brain even wakes up?"
 - "Does it feel like something BAD already happened — and the reader almost missed it?"
-- **NEW:** "Will the viewer watch past 3 seconds? If the hook doesn't create an OPEN LOOP in 3 seconds — the algorithm kills it."
+- "Will the viewer watch past 3 seconds? If the hook doesn't create an OPEN LOOP by second 2 — the algorithm kills it."
+- **NEW: Тип хука определён?** Pattern Interrupt / Curiosity Gap = сильные (65-84% retention). Social Proof = слабый (45-60%). Если формула Social Proof — заменить на Pattern Interrupt или Curiosity Gap.
 
-Jordan's red flags: passive voice, abstract nouns, starting with "The", slow warm-ups, smart-sounding words, anything that sounds like a headline from a health magazine.
+Jordan's red flags: passive voice, abstract nouns, starting with "The", slow warm-ups, smart-sounding words, anything that sounds like a headline from a health magazine, hooks that need 2+ seconds of setup before the tension lands.
 
 ---
 
@@ -190,7 +208,7 @@ Red's вердикт:
 
 > Tyler is 22, American, scrolling Instagram Reels at 11:15pm on his phone.
 > He has no idea who you are. He just got home from work.
-> His thumb moves every 0.4 seconds.
+> His thumb decides scroll-or-stay in 1.7 SECONDS. Not 3. Not 5. 1.7.
 > He reads the first 3 words only. That's all he gives you.
 > Sound is OFF. Always.
 > He doesn't want to learn anything. He just stumbled into your reel.
@@ -212,45 +230,61 @@ Read only the first 3 words of Line 1. Does Tyler stop?
 
 ## PROVEN FORMULAS — from Ogilvy, Hormozi, MrBeast, maks.motivator
 
+**Приоритет выбора:** сначала пробовать формулы 3, 5 (Pattern Interrupt, 72-84% retention), затем 4, 7 (Curiosity Gap, 65-78%). Формулы 1, 2 (Bold Claim, 55-70%) и 6, 8 (Problem, 50-65%) — использовать когда Pattern Interrupt/Curiosity Gap не подходят по теме.
+
 ### Formula 1 — PERSONAL WARNING (fear of doing it wrong)
+🏷️ Type: Bold Claim — retention 55-70%
 `"I [did X for Y years]. A [authority] showed me [specific shocking fact]. I [changed behavior] since."`
 > "I wore earbuds outside for years. A doctor showed me research linking it to 3× hearing loss. I haven't worn them outside since."
 → 76K views
 
 ### Formula 2 — SPECIFIC LOSS (concrete number + real consequence)
+🏷️ Type: Bold Claim — retention 55-70%
 `"My [person] lost [$specific amount] for [doing something normal]. [One action] cost [them] everything."`
 > "My friend lost $14,000 at customs for money he earned legally. One question on a form cost him everything."
 → 900K views
 
 ### Formula 3 — COMMAND INTERRUPT (stop the dangerous behavior)
+🏷️ Type: Pattern Interrupt — retention 72-84% ⭐ ПРИОРИТЕТ
 `"Never [do X] while [doing normal thing]."`
 > "Never Do This While Waiting for Your Luggage"
 → 1.9M views
 
 ### Formula 4 — INSIDER OBSERVATION (pattern everyone noticed, answer withheld)
+🏷️ Type: Curiosity Gap — retention 65-78% ⭐ ПРИОРИТЕТ
 `"Ever notice how [group] always [do X]? I asked [insider]. This is what [they] told me."`
 > "Ever notice how flight crews always walk through the airport in a tight single-file line? I asked a flight attendant why. This is what she told me."
 → 282K views
 
 ### Formula 5 — INJUSTICE + RESOLUTION (they did X to me, I fought back)
+🏷️ Type: Pattern Interrupt — retention 72-84% ⭐ ПРИОРИТЕТ
 `"[Business/authority] [charged/did] [specific thing] I [never did]. [One action] [fixed it] in [short time]."`
 > "Hotel charged me $40 for a 'missing' towel I never touched. One reply killed it in 5 minutes."
 → 3M views
 
 ### Formula 6 — KITCHEN/HOME FACT (thing you own doing you harm)
+🏷️ Type: Problem Statement — retention 50-65%
 `"One [object] in your [place] right now could be doing [negative effect] [X times] less/more [than expected]. The reason is [unexpected simple cause]."`
 > "One spice sitting in your kitchen right now could be doing 150 times less for your brain than it should be. The reason is how much you're actually using."
 → 15.5K views
 
 ### Formula 7 — LOCATION DANGER (somewhere you've been / want to go)
+🏷️ Type: Curiosity Gap — retention 65-78% ⭐ ПРИОРИТЕТ
 `"A local stopped me before [normal tourist action] in [specific place]. What [they] told me next is [shocking consequence] every year."`
 > "A local stopped me before I stepped onto a beach in Bali. What she told me next is why tourists get pulled out to sea there every year."
 → 131K views
 
 ### Formula 8 — INFLAMMATION / BODY SELF-SABOTAGE (health fear)
+🏷️ Type: Problem Statement — retention 50-65%
 `"I got my [health marker] tested. [Number] things in my [location] were quietly [negative effect] — I had no idea about [number] of them."`
 > "I got my inflammation markers tested. Five things in my kitchen were quietly wrecking them — I had no idea about three of them."
 → 7.7K views
+
+### Formula 9 — PATTERN INTERRUPT VISUAL + STAT (NEW — highest retention combo)
+🏷️ Type: Pattern Interrupt — retention 72-84% ⭐⭐ ВЫСШИЙ ПРИОРИТЕТ
+`"Stop [doing normal action]. [Shocking stat] says [consequence]."`
+> "Stop Checking Your Phone In Bed. 1 In 3 Americans Do This And Regret It."
+Комбинирует команду (pattern interrupt) + конкретную цифру в одной строке — максимальная сила на 1.7 секунды.
 
 ---
 
@@ -323,7 +357,7 @@ Read only the first 3 words of Line 1. Does Tyler stop?
 
 Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
-1. **Would Tyler stop in 0.3 seconds?** (First 3 words only — reptile brain test)
+1. **Would Tyler stop in 1.7 seconds?** (First 3 words + first frame together — reptile brain test. If Jordan predicts skip rate >40% — rewrite.)
 2. **КОМУ Tyler перешлёт это в DM? Назови конкретного человека.** (маме, другу, коллеге — если не можешь назвать — хук слабый)
 3. **Does Tyler feel he's missing something he should already know?** (FOMO = fear of missing out)
 4. **Is there a concrete number or named place?** ("a lot" = NO. "$14,000" = YES. "Bali" = YES.)
