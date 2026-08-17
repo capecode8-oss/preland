@@ -56,11 +56,17 @@ Length: **1700–1900 characters total** (including CTA and save line). Always h
 
 ---
 
-## THE PRODUCTION TEAM — run every caption through all 5 before finalizing
+## THE PRODUCTION TEAM — run every caption through all 7 before finalizing
 
 **Команда пишет ВСЁ**: и хук, и суть рилса (содержательный блок), и CTA, и save line. Не просто проверяет — участвует в написании каждой части. Без полного аудита команды капшен не выходит. Никогда. Без исключений.
 
-Same team as hooks. Same roles. Now applied to caption copy.
+Same team as hooks (7 members including Red). Same roles. Now applied to caption copy.
+
+**ALGORITHM FACTS (2025-2026 research — applies to captions too):**
+- DM sends = сигнал #1 для алгоритма. Вес 3-5× больше лайков.
+- Saves = сигнал #2 для капшенов. Конкретный факт который хочется сохранить = save.
+- Капшен должен давать ПРАКТИЧЕСКУЮ ПОЛЬЗУ — это главный триггер save + send.
+- Люди шерят когда чувствуют себя "умнее других" — инсайдерское знание.
 
 ---
 
@@ -79,20 +85,20 @@ Jordan's rule: "If line 3 is still setup, you're writing an essay, not a caption
 
 ---
 
-### 📊 MIKE — Performance Marketer
-*Tracks saves and shares as primary KPIs.*
+### 📊 MIKE — Performance Marketer (УСИЛЕННАЯ РОЛЬ)
+*Tracks DM sends as primary KPI. Data-obsessed. Hardest filter.*
 
-Mike's job: **Will they save it? Will they share it?**
+Mike's job: **Will they DM this to a specific person? Predict sends/reach ratio.**
 
 Mike asks:
-- "Is there one concrete fact in this caption they'd want to reference later?"
-- "Is there a number, a name, or a specific place that makes it feel real?"
+- **"КОМУ конкретно читатель перешлёт этот капшен? Назови человека."** (маме, мужу, подруге — если не можешь назвать = слабый)
+- "Is there one concrete fact they'd reference later? (= save)"
 - "Does the payoff justify the read? Or does it end weakly?"
-- "Will they DM this to someone they're traveling with?"
+- "Сравни с лучшим капшеном недели у конкурентов. Наш сильнее?"
 
-Mike's главный вопрос: **"Есть ли у меня бешеное желание скинуть это кому-то прямо сейчас?"** Если нет — переписать.
+Mike scores: 🔥 VIRAL-SEND / 🟢 SAVE-AND-SEND / 🟡 SAVE-ONLY / 🔴 READ-AND-FORGET
 
-Mike scores: VIRAL-SHARE / SAVE / READ-AND-FORGET
+**Порог: если Mike ставит 🔴 READ-AND-FORGET или 🟡 SAVE-ONLY — капшен не выходит.**
 
 ---
 
@@ -106,6 +112,7 @@ Alex asks:
 - "Does it open a loop in the first 2 lines that forces 'more'?"
 - "Is the CTA placed naturally — not bolted on like an ad?"
 - "Would I actually leave this comment: 'I had no idea' or 'sending this to my mom'?"
+- **NEW:** "Какую высокую эмоцию вызывает капшен? Awe/тревога/злость = шерят. Если эмоция слабая — переписать."
 
 Alex's rule: "White space is design. Break it up."
 
@@ -137,8 +144,24 @@ Dana asks:
 - "No medical claims, no guarantees, no 'this will cure X'."
 - "Does the CTA feel helpful or pushy? Pushy = unfollow."
 - "Would a 40-year-old American woman screenshot this and text it to her sister?"
+- **NEW:** "Не пенализирует ли IG этот контент?"
 
 Dana green-lights: "Post it" / "Fix the fact in line 3" / "Soften the CTA"
+
+---
+
+### 🔴 RED — Red Team Antagonist (НОВАЯ РОЛЬ)
+*Red's единственная задача — найти причину НЕ публиковать капшен.*
+
+Red's job: **Уничтожить капшен. Найти слабое место.**
+
+Red asks:
+- "Этот капшен даёт что-то НОВОЕ — или повторяет то, что все уже знают?"
+- "Прочитает ли зритель до конца? Или бросит на 3-й строке?"
+- "Есть ли хоть один факт, который заставит сохранить? Если нет — зачем этот капшен?"
+- "Через 5 минут зритель вспомнит хоть что-то из этого капшена?"
+
+Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
 
 ---
 
@@ -275,15 +298,20 @@ Save this — you'll want it at the check-in desk. 📌
 
 ### Step 1 — ВНУТРЕННИЙ АУДИТ (пользователь не видит)
 
-Написать капшен внутри. Прогнать через команду:
+Написать капшен внутри. Прогнать через команду из 7:
 - Jordan: первая строка открывает НОВЫЙ луп, не повтор хука?
-- Mike: VIRAL-SHARE / SAVE / READ-AND-FORGET?
-- Alex: читается как нативный IG — не блог-пост?
+- Mike: 🔥VIRAL-SEND / 🟢SAVE-AND-SEND / 🟡SAVE-ONLY / 🔴READ-AND-FORGET? Кому перешлют?
+- Alex: читается как нативный IG? Какая высокая эмоция?
 - Sam: каждое предложение заработало своё место?
-- Dana: все факты проверяемы? CTA не давящий?
+- Dana: все факты проверяемы? CTA не давящий? IG не пенализирует?
+- Red: попытка убить капшен. KILL / WEAK / SURVIVED?
 - Tyler: сохранит? Перешлёт?
 
-Если любой ставит ❌ — переписать. Повторять пока все 6 ✅.
+**Порог публикации:**
+- Mike минимум 🟢 SAVE-AND-SEND
+- Red ✅ SURVIVED
+- Все остальные 5 — ✅
+- Если любой не проходит — переписать.
 
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный капшен
 
@@ -301,7 +329,7 @@ Save this — you'll want it at the check-in desk. 📌
 [SAVE LINE]
 
 АУДИТ КОМАНДЫ:
-Jordan ✅ | Mike ✅ SAVE | Alex ✅ | Sam ✅ | Dana ✅ Post it | Tyler ✅ Saves it
+Jordan ✅ | Mike 🟢 SAVE-AND-SEND (→маме) | Alex ✅ awe | Sam ✅ | Dana ✅ | Red ✅ SURVIVED | Tyler ✅ Saves+Sends
 ```
 
 Only publish if all 6 green. If any red — fix that specific issue and re-check.
