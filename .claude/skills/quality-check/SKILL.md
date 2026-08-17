@@ -1,0 +1,196 @@
+---
+name: quality-check
+description: Final QA gate before any KIRA reel is published. Checks body clearance, font size, text placement, video specs, and hook quality. Run after render, before scheduling in Metricool. Blocks publication if any check fails.
+---
+
+# KIRA Quality Check — Pre-Publication Gate
+
+## ⛔ БЛОКИРАТОР ПУБЛИКАЦИИ
+
+Этот скилл — последний барьер перед публикацией.
+Если хоть один пункт не прошёл — рилс НЕ выходит.
+
+---
+
+## CHECKLIST — 7 обязательных проверок
+
+### ✅ 1. ВИДЕО СПЕЦИФИКАЦИИ
+```
+□ Размер: 1080×1920
+□ Длительность: ровно 5.000s (150 frames @ 30fps)
+□ Кодек: H.264, yuv420p
+□ Аудио: отсутствует (-an)
+□ CRF: 18, preset: fast
+□ Файл существует и не повреждён
+```
+
+**Проверка командой:**
+```bash
+FFMPEG="/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"
+$FFMPEG -i OUTPUT.mp4 2>&1 | grep -E "Duration|Video:|Stream"
+```
+
+**Ожидаемый результат:**
+```
+Duration: 00:00:05.00
+Video: h264, yuv420p, 1080x1920
+```
+
+---
+
+### ✅ 2. ШРИФТ — МИНИМУМ 60px
+
+**Как проверить:**
+Шрифт задаётся через `auto_font(max_size=100)`. Если строка хука > 6 слов — шрифт упадёт ниже 60px.
+
+**Правило:**
+- Каждая строка ≤ 6 слов → шрифт автоматически ≥ 60px
+- Если шрифт < 60px → СОКРАТИТЬ строку → перерендерить
+- Никогда не публиковать с шрифтом < 60px
+
+**Проверка длины строк:**
+```
+□ Строка 1: [текст] → [N] слов → [ОК/СЛИШКОМ ДЛИННО]
+□ Строка 2: [текст] → [N] слов → [ОК/СЛИШКОМ ДЛИННО]
+□ CTA badge: [текст] → [ОК]
+```
+
+---
+
+### ✅ 3. BODY CLEARANCE — ПОЛНОЕ ТЕЛО
+
+**⚠️ САМАЯ ЧАСТАЯ ОШИБКА — измеряют только лицо.**
+
+**Процедура:**
+```python
+# Извлечь 5 кадров
+frames = [0.25, 1.25, 2.50, 3.75, 4.75]  # секунды
+
+# В каждом кадре найти:
+# - body_top = самый высокий пиксель тела (голова)  
+# - body_bottom = самый НИЗКИЙ пиксель любой части тела
+#   (руки, предметы в руках, ноги, бёдра — всё видимое)
+
+# UNION по всем 5 кадрам:
+# body_top_final = MIN(body_top по всем кадрам)
+# body_bottom_final = MAX(body_bottom по всем кадрам)
+
+# Запретная зона:
+forbidden_top = body_top_final - 70
+forbidden_bottom = body_bottom_final + 70
+
+# Текст должен быть:
+# BELOW: hook_y0 >= forbidden_bottom ИЛИ
+# ABOVE: cta_bottom <= forbidden_top
+```
+
+**Чеклист body clearance:**
+```
+□ 5 кадров извлечены (t=0.25, 1.25, 2.50, 3.75, 4.75s)
+□ body_bottom = САМАЯ НИЗКАЯ видимая часть тела (НЕ лицо!)
+□ forbidden_zone = [body_top-70] до [body_bottom+70]
+□ Текст полностью ВНЕ запретной зоны
+□ center_x = 540 ± 2px
+□ box_w ≤ 860px
+□ cta_bottom ≤ 1536px
+```
+
+**ПРАВИЛО ПРИЖАТИЯ:**
+```
+ABOVE: hook_y0 = 80 (прижать к ВЕРХУ)
+BELOW: hook_y0 = max(forbidden_bottom, 1300) — к НИЗУ
+❌ НЕЛЬЗЯ: текст посередине экрана (y=700-1100) при BELOW placement
+```
+
+---
+
+### ✅ 4. HOOK QUALITY — АУДИТ КОМАНДЫ
+
+Перед рендером (не после!) должен быть пройден аудит команды:
+```
+□ Jordan ✅ (останавливает скролл за 1.7 секунды?)
+□ Mike 🟢 STRONG или VIRAL (5K+ прогноз)
+□ Alex ✅ (звучит как реальный человек?)
+□ Sam ✅ (≤6 слов/строка, активные глаголы?)
+□ Dana ✅ (безопасно для публикации?)
+□ Red ✅ SURVIVED (не убил хук?)
+□ Tyler ✅ (первые 3 слова останавливают скролл?)
+```
+
+**Если хоть один ❌ → хук не выходит → переписать → повторить аудит**
+
+---
+
+### ✅ 5. CLIP — СООТВЕТСТВИЕ ТЕМЕ
+
+```
+□ Клип не использовался сегодня или вчера
+□ Тема клипа соответствует теме хука
+□ Клип из footage-manager approved list
+□ Записан в журнал использованных клипов
+```
+
+---
+
+### ✅ 6. JPG ПРЕВЬЮ
+
+```
+□ JPG превью сгенерирован из финального MP4
+□ Превью показано пользователю
+□ Пользователь одобрил превью
+□ Только после одобрения — в Metricool
+```
+
+**Генерация превью:**
+```bash
+FFMPEG="/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"
+$FFMPEG -i OUTPUT.mp4 -vframes 1 -ss 0.5 PREVIEW.jpg
+```
+
+---
+
+### ✅ 7. METRICOOL ДАННЫЕ
+
+Перед публикацией проверить что готово:
+```
+□ MP4 запушен в GitHub (capecode8-oss/preland, ветка claude/new-chat-fjz36a)
+□ Raw URL получен
+□ Caption написан и прошёл аудит команды (kira-captions)
+□ tiktokData.title готов (отдельный заголовок для TikTok)
+□ Платформы: Instagram Reel + TikTok
+□ Visibility: PUBLIC_TO_EVERYONE
+□ brand_id: 6476294
+□ Timezone: America/New_York
+```
+
+---
+
+## ИТОГОВЫЙ СТАТУС
+
+После прохождения всех 7 пунктов:
+
+```
+QUALITY CHECK: ✅ PASSED / ❌ FAILED
+
+Видео specs:    [✅/❌]
+Шрифт ≥60px:   [✅/❌]
+Body clearance: [✅/❌]
+Team audit:     [✅/❌]
+Clip OK:        [✅/❌]
+JPG preview:    [✅/❌]
+Metricool data: [✅/❌]
+
+РЕШЕНИЕ: [ПУБЛИКОВАТЬ / БЛОКИРОВАНО — причина]
+```
+
+---
+
+## ЧАСТЫЕ ОШИБКИ И ИСПРАВЛЕНИЯ
+
+| Ошибка | Причина | Исправление |
+|--------|---------|-------------|
+| Шрифт < 60px | Строка > 6 слов | Сократить строку → перерендер |
+| Текст на теле | Измеряли только лицо | Перемерить body_bottom по 5 кадрам |
+| Текст посередине | BELOW без прижатия | hook_y0 = max(forbidden_bottom, 1300) |
+| Клип уже использован | Не проверили журнал | Взять другой клип |
+| MP4 длиннее 5s | Нет точного trim | Добавить -t 5.0 в ffmpeg |
