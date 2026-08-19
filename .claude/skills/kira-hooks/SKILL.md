@@ -284,10 +284,13 @@ Nova выбирает визуальный режим перед написан�
 - `handheld` + `slightly shaky` + `natural light` + `documentary style`
 
 Nova's prompting rules — Veo 3 (PRIMARY TOOL):
-- **5-block narrative sentence:** CAMERA → SCENE → SUBJECT+ACTION+EMOTION → LIGHTING+ATMOSPHERE → STYLE+SPECS
+- **7-LAYER NATURALISTIC SYSTEM** (из ai-video-prompts SKILL): каждый промт должен содержать все 7 слоёв — Camera Identity + Environment Texture + Character Specificity + Action Sequence + Light Source + Technical Imperfections + Emotional Atmosphere. Без всех 7 слоёв — промт шаблонный, результат шаблонный.
 - NEVER use keyword lists. NEVER use "render". NEVER add a separate negative prompt field.
 - Always include: "vertical frame 9:16 portrait orientation", "ambient sound only no dialogue"
-- Describe the EMOTION (documentary) or the IMPOSSIBLE EVENT (spectacle) — не просто "человек стоит".
+- **CAMERA IDENTITY**: не просто "handheld" — назвать конкретный стиль: "Shot on an iPhone held loosely at chest height" / "Shot as if a passenger grabbed a phone and braced against the railing"
+- **ENVIRONMENT TEXTURE**: 3-4 конкретные детали среды с imperfections: "scuffed linoleum floors / slightly yellowed grout / salt-air rust streaks / lived-in kitchen counter"
+- **TECHNICAL IMPERFECTIONS**: 2-3 из: "autofocus lag / camera breathing / slight overexposure / digital noise / constant minor reframing / auto-exposure adjusting"
+- **EMOTIONAL ATMOSPHERE**: специфическая фраза, не общая: "the specific nervous energy of someone who suspects they've been cheated"
 - Max Veo 3 generation: 8 seconds → ffmpeg `-stream_loop -1` loops seamlessly to 10s in render.
 
 Nova's prompting rules — Kling 2.1 (FALLBACK if Veo 3 unavailable):

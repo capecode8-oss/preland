@@ -177,14 +177,14 @@ No text, no watermarks, no logos, no subtitles on screen.
 
 **AIRPORT — luggage belt (Fear):**
 ```
-VEO 3:
-Handheld close-up shot slowly pushing in toward a moving airport baggage carousel. Inside a busy arrival terminal with overhead fluorescent lighting. A pair of hands nervously reaches forward toward a black suitcase as it passes on the moving belt, fingers slightly tense and hesitant. The cool, slightly harsh airport lighting creates an institutional, urgent atmosphere. Documentary-style footage with slight natural camera movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient airport sound only. No text, no watermarks, no logos on screen.
+VEO 3 [7-LAYER]:
+Shot on an iPhone held loosely at waist height by someone standing in the crowd — auto-exposure adjusting to the terminal's overhead fluorescents, slight electronic stabilization fighting the natural drift of a person shifting their weight. Inside a busy arrival baggage claim hall — scuffed linoleum floors reflecting cold institutional overhead fluorescent lights, rows of waiting passengers with luggage trolleys visible in background, the mechanical hum of the rotating carousel, bags of various sizes moving past in sequence. A pair of hands — a woman in her late 30s, travel-worn light blue sleeve visible, silver watch — reaches forward toward a black rolling suitcase as it passes on the moving belt, fingers slightly tense, the reach hesitant and uncertain. The specific nervous energy of someone who's not sure their bag actually made it. Cold overhead fluorescent lighting, slightly green-tinted, flat and institutional. Photorealistic. Vertical frame, 9:16 portrait orientation. Ambient airport sound only. No text, no watermarks.
 ```
 
 **HOTEL — front desk dispute (Injustice):**
 ```
-VEO 3:
-Medium shot slowly pushing in toward a hotel reception desk. Inside a hotel lobby with warm chandelier lighting and marble counter. A woman in her 40s stands at the desk holding a paper receipt, her expression frustrated and confused, gesturing toward the receptionist across the counter. The warm lobby lighting contrasts with the tension in her body language. Documentary-style footage with slight natural handheld movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient lobby sound only. No text, no watermarks, no logos.
+VEO 3 [7-LAYER]:
+Shot on an iPhone held loosely at chest height by a bystander — slight auto-exposure adjusting, gentle drift before correcting. Inside the lobby of an ordinary mid-range hotel — reception counter with polished-but-not-luxurious marble surface, two monitors behind the desk, a small flower arrangement slightly wilting, soft warm light from recessed ceiling fixtures overhead, the sound of rolling luggage somewhere behind. A woman in her early 40s in a slightly wrinkled linen travel shirt and dark jeans stands at the counter — reading glasses pushed up on her head, a folded paper receipt in her left hand. She unfolds it slowly, runs her finger down the line items, stops — looks up at the receptionist with the specific quiet disbelief of someone realizing they've been charged for something they didn't use. One hand rests on the marble counter. The warm overhead light catches the surface of the paper. Photorealistic. Vertical frame, 9:16 portrait orientation. Ambient lobby sound only. No text, no watermarks.
 ```
 
 **KITCHEN — cabinet reveal (Health Warning):**
@@ -486,6 +486,177 @@ TEAM: NOVA ✅ | VIC 🎬 [VIRAL/STRONG] | Mike 🟢 | Red ✅ SURVIVED
 
 ---
 
+## 🎯 NATURALISTIC LAYER SYSTEM — Что отделяет шаблон от вирусного
+
+Инспирировано: @neurustik (8,962 лайков, 6,084 сохранений на одном промте — Seedance 2.0).
+Подтверждено исследованиями 2026: специфичность промта = прямая корреляция с реализмом.
+
+**Главная ошибка текущих промтов:** слишком общие. "Documentary-style footage with slight handheld movement" — это описание КАТЕГОРИИ, а не СЦЕНЫ. Veo 3 / Kling видят шаблон и рендерят шаблон.
+
+**Правило neurustik:** Промт должен отвечать на 7 конкретных вопросов. Если хоть один пропущен — AI заполняет его "средним значением" = шаблонный вид.
+
+---
+
+### LAYER 1 — CAMERA IDENTITY (какая камера, кто снимает)
+
+❌ СЛАБО: "handheld camera, documentary style"
+✅ СИЛЬНО: "The camera was grabbed by someone who'd never held it before — strong unpredictable shake, constant minor reframing, subject sometimes drifting to the edge of the frame, autofocus hunting for a moment before locking"
+
+**Шаблоны Camera Identity:**
+
+```
+[PHONE, современный, случайный очевидец]:
+Shot on an iPhone held loosely at chest height by someone who picked it up to quickly film something — unsteady grip, auto-exposure adjusting to the light, slight electronic stabilization fighting against the hand movement
+
+[DV CAMERA, 2000-2005, ностальгический]:
+Shot on a consumer DV camcorder from around 2003 — strong handheld shake, constant reframing, autofocus lag, visible camera breathing, slight overexposure in bright areas, faded low-contrast image, digital noise, home video compression artifacts, no stabilization, no modern color grading
+
+[SECURITY CAM / CCTV, статичная]:
+Fixed security camera angle, high and slightly tilted downward, wide angle, slightly desaturated institutional color, minimal grain, static frame — the scene happens within the locked-off frame
+
+[HANDHELD PROFESSIONAL, но не студийный]:
+Slightly handheld documentary camera — enough movement to feel real, not enough to be distracting. The camera breathes with the cinematographer's body, subtle drift rather than shake
+```
+
+---
+
+### LAYER 2 — ENVIRONMENT TEXTURE (среда с деталями, не название места)
+
+❌ СЛАБО: "inside an airport terminal"
+✅ СИЛЬНО: "inside a busy mid-size regional airport — scuffed linoleum floors reflecting fluorescent overhead lights, rows of molded plastic chairs with worn armrests, departure boards clicking through updates, a Starbucks visible through the crowd in background"
+
+**Правило:** Назови 3-4 конкретных детали среды. Imperfections читаются как реальность.
+
+```
+[HOTEL BATHROOM реалистичный]:
+Ordinary mid-range hotel bathroom — slightly yellowed grout between white tiles, chrome faucet with minor water stains, used soap bar at the edge of the sink, white towels folded on a chrome rail, the kind of bathroom that could be in any Marriott or Hilton
+
+[KITCHEN реалистичный]:
+A real lived-in home kitchen — magnets and papers on the fridge, a dish drying rack with a few plates, soft yellow morning light from a window above the sink, a half-finished coffee mug on the counter, the kind of kitchen a family actually uses
+
+[CRUISE SHIP DECK реалистичный]:
+The stern deck of a mid-size cruise ship — white painted metal railing with some rust streaks where the paint has chipped, deck chairs stacked and strapped down, salt-air haze softening the horizon, institutional exterior lighting fixtures mounted every few meters along the deck wall
+
+[AIRPORT CUSTOMS]:
+A real customs inspection area — long counter with visible wear marks, institutional overhead fluorescent lights casting a slightly green-tinted light on everything, official blue CUSTOMS sign in background, security cameras mounted on the ceiling, the floor slightly scuffed from years of rolling luggage
+```
+
+---
+
+### LAYER 3 — CHARACTER SPECIFICITY (если человек в кадре)
+
+❌ СЛАБО: "a woman in her 40s holding a receipt"
+✅ СИЛЬНО: "a woman in her early 40s in a faded navy blue cotton t-shirt tucked into light-wash jeans, reading glasses pushed up on her head, holding a folded paper receipt, her expression shifting from confusion to quiet frustration, one hand on the counter for balance"
+
+**Правило @neurustik:** один оригинальный персонаж, неизменные лицо/кожа/фигура/одежда на протяжении всего ролика. Конкретные детали одежды = характер.
+
+**AI-риск:** лица крупным планом = высокий риск артефактов. Использовать partial face, side angle, hands+body, или blur.
+
+```
+[TRAVELER — средний возраст, аэропорт]:
+A woman in her late 30s in light-wash jeans and a slightly wrinkled linen shirt — the kind of outfit someone wore on a long flight, slightly travel-tired, rolling carry-on handle visible at her side
+
+[MAN — деловой путешественник]:
+A man in his mid-40s in a rumpled business-casual button-down, laptop bag strap over one shoulder, the slightly defeated posture of someone who's been traveling all day
+
+[WOMAN — домашняя сцена]:
+A woman in her early 40s in a soft grey oversized cardigan and dark jeans, at home, hair in a loose bun, the kind of person who's organized but currently mildly worried about something
+```
+
+---
+
+### LAYER 4 — ACTION SEQUENCE (последовательность, не статика)
+
+❌ СЛАБО: "woman holding a receipt at the hotel desk"
+✅ СИЛЬНО: "she unfolds the paper receipt slowly, scans it top to bottom, stops partway down — her eyes go back to the same line — she looks up at the receptionist with an expression halfway between confusion and frustration, says nothing yet"
+
+**Правило:** Опиши что происходит В ЭТОТ МОМЕНТ — не состояние, а движение. Multi-step = жизнь. Single state = stock photo.
+
+---
+
+### LAYER 5 — LIGHT SOURCE (физический, named, направленный)
+
+❌ СЛАБО: "warm lighting"
+✅ СИЛЬНО: "warm incandescent light from a floor lamp to camera left, casting a soft golden glow across the left half of the scene, the right side falling into cooler shadow from the window behind"
+
+**Правило:** всегда называй физический источник света (ceiling fluorescent, window, floor lamp, phone screen glow, car headlights) + его направление (from the left, from below, backlit, overhead).
+
+---
+
+### LAYER 6 — TECHNICAL IMPERFECTIONS (несовершенства = аутентичность)
+
+Это самый быстрый способ убрать AI-look. Добавлять 2-3 из этого списка:
+
+```
+CAMERA SHAKE:        strong handheld shake / slight tremor / unpredictable micro-movements
+FOCUS:               autofocus lag / rack focus / slightly out of focus foreground
+EXPOSURE:            slight overexposure in bright areas / lens flare / auto-exposure adjusting
+GRAIN:               light film grain / digital noise / slight compression artifacts
+COLOR:               slightly desaturated / faded washed-out tones / no modern color grading / low contrast
+FRAME:               constant minor reframing / subject drifts to frame edge / accidental dutch angle
+MOTION BLUR:         natural motion blur on fast movements
+BREATHING:           the lens breathes slightly as it adjusts focal length
+```
+
+---
+
+### LAYER 7 — EMOTIONAL ATMOSPHERE (настроение = "nervous energy" > "tense scene")
+
+❌ СЛАБО: "tense atmosphere"
+✅ СИЛЬНО: "the specific nervous energy of someone who suspects they've been cheated but isn't sure yet"
+
+```
+INJUSTICE:    the specific quiet outrage of someone realizing they were cheated
+FEAR:         the held-breath stillness of someone about to discover something wrong
+CURIOSITY:    the leaning-in concentration of someone who just noticed something they can't explain
+AWE:          the frozen wide-eyed moment when something is bigger than expected
+RELIEF:       the exhale-and-shoulders-drop of someone who just solved a problem
+```
+
+---
+
+### BEFORE / AFTER — Апгрейд промта
+
+**НАШИ СТАРЫЕ ПРОМТЫ (шаблонные):**
+```
+Medium shot slowly pushing in toward a hotel reception desk. Inside a hotel lobby with warm chandelier lighting and marble counter. A woman in her 40s stands at the desk holding a paper receipt, her expression frustrated and confused, gesturing toward the receptionist across the counter. Documentary-style footage with slight natural handheld movement. Photorealistic. Vertical frame, 9:16 portrait orientation.
+```
+
+**NEURUSTIK-LEVEL (7 слоёв):**
+```
+Shot on an iPhone held loosely at chest height by a bystander — slight auto-exposure adjusting, gentle electronic stabilization fighting the grip, the camera drifts slightly right before correcting. Inside the lobby of an ordinary mid-range hotel — a reception counter with polished but not luxurious marble surface, two monitors behind the desk, a small flower arrangement wilting slightly, soft warm light from recessed ceiling fixtures overhead. A woman in her early 40s in a slightly wrinkled linen travel shirt and dark jeans stands at the counter — reading glasses pushed up on her head, a folded paper receipt in her left hand. She unfolds it slowly, runs her finger down the line items, stops — looks up at the receptionist with the specific quiet disbelief of someone realizing they've been charged for something they didn't use. The receptionist behind the counter has the calm, practiced expression of someone who's had this conversation before. The warm overhead light catches the surface of the paper. Vertical frame, 9:16 portrait orientation. Ambient lobby sound only. No text, no watermarks, no dialogue.
+```
+
+**Разница:** 70 слов → 190 слов. Каждое из 7 слоёв заполнено.
+
+---
+
+### QUICK REFERENCE — Словарь реализма (вставлять напрямую в промты)
+
+**Camera shake levels:**
+- лёгкий: "slight natural handheld drift, camera breathes with the operator's body"
+- средний: "moderate handheld shake, constant minor reframing, subject occasionally drifts toward frame edge"
+- сильный (DV-стиль): "strong unpredictable handheld shake, autofocus hunting, subject sometimes drifts out of frame, constant reframing"
+
+**Light sources (добавлять в каждый промт):**
+- кухня: "warm window light from the left, soft and directional, casting a gentle shadow to the right"
+- аэропорт: "cold institutional overhead fluorescent lights, slightly green-tinted, casting flat even shadows"
+- отель-лобби: "warm recessed ceiling fixtures supplemented by a floor lamp in the corner"
+- улица-день: "overcast daylight, soft and directionless, no strong shadows"
+- вечер-дом: "single warm floor lamp to camera left, the rest of the room falling into cool shadow"
+
+**Texture words (добавлять к локациям):**
+worn / scuffed / slightly yellowed / water-stained / chipped paint / faded / salt-air corroded / smudged / lived-in / slightly cluttered / fingerprint-marked
+
+**Emotion phrases:**
+- "the specific nervous energy of someone who suspects something is wrong"
+- "the quiet held-breath stillness before a difficult conversation"
+- "the frozen wide-eyed moment of seeing something unexpectedly large"
+- "the specific quiet frustration of someone who's been cheated and knows it"
+- "the exhale-and-shoulders-drop of someone who just found the solution"
+
+---
+
 ## 🎭 SPECTACLE MODE — Визуальный спектакль (новый стиль)
 
 ### Что такое Spectacle Mode
@@ -513,21 +684,23 @@ TEAM: NOVA ✅ | VIC 🎬 [VIRAL/STRONG] | Mike 🟢 | Red ✅ SURVIVED
 
 **Формула:**
 ```
-Реальная обычная сцена + одно физически невозможное явление которое ПОКАЗЫВАЕТ правду хука + slow motion чтобы дать зрителю время обработать увиденное
+7 NATURALISTIC LAYERS (среда, камера, текстура, свет, несовершенства) + одно физически невозможное явление + slow motion
 ```
 
+Spectacle Mode требует ВСЕ 7 слоёв из NATURALISTIC LAYER SYSTEM — иначе невозможное событие выглядит как CGI на фоне шаблона. Только когда среда максимально реальная — невозможное событие даёт максимальный шок.
+
 **Запрещено в Spectacle Mode:**
-- ❌ CGI-вид, картунность, мультяшность — это убивает эффект
+- ❌ CGI-вид, картунность, мультяшность — убивает эффект
 - ❌ Слишком много невозможных элементов — один эффект, максимум
-- ❌ Нарратив от первого лица — показываем ФАКТ, не персонажа
-- ❌ Слова "magical" или "fantasy" — это уводит в сказку
+- ❌ Слова "magical" или "fantasy" — уводит в сказку
+- ❌ "photorealistic render" — слово "render" триггерит CGI-look
 
 **Работает:**
 - ✅ "as if demonstrating the invisible force" — невидимая сила стала видимой
 - ✅ "in slow motion" — даёт мозгу время осознать невозможное
-- ✅ "photorealistic environment" — обычная среда усиливает шок невозможного
-- ✅ "the effect happens naturally, as if this is normal physics" — не подчёркивать трюк
-- ✅ Деньги, газ, свет, тепло — это всё можно визуализировать "невидимыми" силами
+- ✅ "the effect happens naturally, as if this is simply how physics works here"
+- ✅ Деньги, газ, свет, тепло, цвет — всё это визуализируется "невидимыми" силами
+- ✅ TEXTURE WORDS в среде (worn / scuffed / lived-in) — усиливают реализм фона
 
 ---
 
@@ -589,21 +762,21 @@ Macro close-up slow-motion shot of a single white pill on a pharmacy counter. Gr
 
 **#1 — Giant storm wave (Fear · Formula 3 Command Interrupt):**
 ```
-VEO 3 SPECTACLE:
-Wide slow-motion shot from the stern of a massive cruise ship, camera low and slightly shaking as if held by someone gripping a railing. The open ocean stretches ahead, and on the horizon an enormous dark wave — fifteen to twenty meters high — rises slowly and moves toward the ship. Inside the ship through the portholes, warm yellow cabin lights glow, completely unaware. The contrast between the cozy interior light and the approaching wall of black water is the visual hook. The wave moves slowly, inevitably, filling the frame. The sky is dark grey, the ocean surface rough. Documentary-style footage with strong natural camera shake from wind and swell, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient ocean and wind sound only. No text, no watermarks, no dialogue.
+VEO 3 SPECTACLE [7-LAYER]:
+Shot as if a passenger grabbed a phone and braced it against the railing — strong unpredictable shake from wind and swell, auto-exposure fighting the dark sky, the frame drifting slightly before correcting. The stern deck of a mid-size cruise ship at dusk — white painted metal railing with visible salt-air rust streaks where paint has chipped, deck chairs strapped and stacked against the wall, institutional exterior light fixtures mounted along the wall casting a cold flat glow. The open ocean stretches behind the ship. On the horizon, an enormous dark green wall of water — fifteen to twenty meters high — rises slowly and continuously, its foam-crested peak beginning to curl. Through the portholes along the ship's side, warm amber cabin lights glow steadily, completely unaware of what rises behind them. The contrast between the ordinary, warm domesticity of those lit windows and the scale of the approaching wave is the visual hook. The wave moves slowly and inevitably, its surface textured with whitecaps and foam. The sky above it is a deep bruised violet-grey, the water below it black and churning. Slow-motion, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient wind and ocean sound only. No text, no watermarks, no dialogue.
 ```
-Hook fit: "Never Book This Cabin / In A Storm"  
+Hook fit: "Never Book This Cabin / On A Cruise Ship"
 Mike: 🔥 VIRAL — Maya шлёт мужу перед круизом
 
 ---
 
-**#2 — Hidden fees fly from ticket (Injustice · Formula 5):**
+**#2 — Hidden fees fly from brochure (Injustice · Formula 5):**
 ```
-VEO 3 SPECTACLE:
-Slow-motion close-up of hands holding a glossy cruise line brochure showing a price of $800. As the fingers hold the brochure steady, coins and dollar bills begin to peel away from behind the pages one by one, rising upward into the air in a slow steady stream, as if hidden charges are physically escaping the fine print. The bills float upward and disappear off-screen. In the background, a blurred living room with warm lamp light — someone at home planning a vacation. The brochure remains in hand, unchanged on the surface, as the money continues to rise. The effect is inevitable and impossible to stop. Documentary-style handheld footage, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient room sound only. No text, no watermarks.
+VEO 3 SPECTACLE [7-LAYER]:
+Shot on an iPhone resting on a coffee table at a low angle — slight natural drift as if the phone wasn't perfectly propped, slight auto-exposure adjusting to the room light. Inside a real lived-in home living room — a coffee table with a half-finished glass of water and a notepad with handwritten trip notes, a couch visible in background, warm floor lamp light to the left casting a golden pool, the rest of the room in soft shadow. A pair of hands — a woman in her late 30s, light blue nail polish, casual rings — holds open a glossy cruise brochure showing a bold printed price of $800 against a tropical sea background. As the fingers hold the brochure open and still, individual coins and folded dollar bills begin to silently peel away from behind the pages one by one, rising slowly upward into the warm air above the table as if drawn by an invisible current, each bill rotating gently and catching the floor lamp light as it lifts. The brochure remains unchanged on the surface, face-up and bright. More money continues to rise. The effect feels inevitable and impossible to stop. Slow-motion, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient room silence only. No text, no watermarks.
 ```
-Hook fit: "My $800 Cruise / Cost $1,400 Before Boarding"  
-Mike: 🔥 VIRAL — конкретные цифры + Injustice = Formula 5 = 3M views formula
+Hook fit: "My $800 Cruise / Cost Me $1,400"
+Mike: 🔥 VIRAL — конкретные цифры + Injustice + визуал деньги буквально улетают
 
 ---
 
