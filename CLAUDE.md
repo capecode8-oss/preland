@@ -78,7 +78,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 ## Рендер-спецификации (единый источник правды)
 
 - Размер: 1080×1920
-- Длительность: ровно 5.000s = 150 frames @ 30fps (loop если короче)
+- Длительность: ровно 10.000s = 300 frames @ 30fps (loop если короче)
 - Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
 - Шрифт: `Montserrat-BlackItalic` — путь `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`

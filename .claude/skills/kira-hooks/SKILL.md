@@ -264,7 +264,7 @@ Nova asks:
 - "First frame: what does the viewer see in 0.3 seconds BEFORE the text loads? That is the visual hook."
 - "Hook emotion: Fear / Awe / Injustice / Curiosity? Each requires different visual language and shot type."
 - "AI artifact risk? Face close-up = HIGH (distorted features). Hands holding objects = MEDIUM (finger count). Environments = LOW."
-- "5-second seamless loop? End frame must flow naturally back to first frame."
+- "10-second seamless loop? End frame must flow naturally back to first frame."
 - "Text zone clean? Subject in center, top 1/4 and bottom 1/4 of frame free for white overlay."
 
 Nova's 20-year rules:
@@ -543,6 +543,6 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 - Font size: auto_font(max_size=100) → **MINIMUM 60px, target 60–80px** — if result < 60px, shorten hook lines until font hits 60px+. NEVER publish with font below 60px. Never hardcode.
 - FILL: (255,255,255,245) | RADIUS: 14 | PAD_X: 32 | PAD_Y: 22 | BOX_GAP: 20
 - Canvas: 1080×1920 | CENTER_X=540 | MAX_BOX_W=860px | MAX_TEXT_W=796px
-- Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
+- Duration: 300 frames = 10.0s at 30fps (loop shorter clips with -stream_loop -1)
 - Codec: H.264, yuv420p, -an, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`

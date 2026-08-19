@@ -101,8 +101,9 @@ VIC's вердикт:
 НЕ "кинематографично". НЕ "студийное освещение".
 Ключевые слова реализма: `handheld` / `slightly shaky` / `natural light` / `documentary style` / `shot on phone`
 
-### Rule 5 — Seamless 5-second loop
-Финальный кадр визуально переходит в начальный. Используй движения которые зацикливаются естественно: конвейер, ходьба по коридору, медленный pan, волны.
+### Rule 5 — 10-second clip, seamless loop preferred
+Оптимальная длина генерации — 10 секунд. Если клип короче — будет залуплен при рендере.
+Для loop: используй движения которые зацикливаются естественно: конвейер, ходьба по коридору, медленный pan, волны, вращение.
 
 ---
 
@@ -113,7 +114,7 @@ VIC's вердикт:
 **Luggage belt — тревога / theft warning (Fear):**
 ```
 KLING:
-Close-up of moving airport baggage claim belt, multiple suitcases passing, a pair of hands nervously reaching toward a bag, fluorescent terminal overhead lighting, slightly handheld camera movement, tense worried atmosphere, documentary style, photorealistic, no text no watermarks, 5 seconds seamless loop
+Close-up of moving airport baggage claim belt, multiple suitcases passing, a pair of hands nervously reaching toward a bag, fluorescent terminal overhead lighting, slightly handheld camera movement, tense worried atmosphere, documentary style, photorealistic, no text no watermarks, 10 seconds vertical 9:16
 
 RUNWAY:
 [Slow push in] Crowded airport baggage carousel, bags circulating, person's hands visible reaching forward with anxious energy, cool fluorescent overhead lights, authentic documentary feel, photorealistic, no logos
@@ -356,7 +357,7 @@ text, watermark, logo, subtitle, CGI, studio lighting, obvious AI artifacts, unc
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 TECH SPECS:
-- Duration: 5 seconds | Resolution: 1080×1920 (9:16 вертикальное)
+- Duration: 10 seconds | Resolution: 1080×1920 (9:16 вертикальное)
 - После генерации: footage-manager → залогировать как custom clip
 - Затем: kira-hooks body clearance → рендер
 
