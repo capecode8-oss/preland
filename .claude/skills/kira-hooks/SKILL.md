@@ -568,7 +568,13 @@ hook_lines: [
     "Строка 1",
     "Строка 2",
 ]
-cta_badge: "( текст ↓ )"
+cta_badge: "( [конкретный байт — не абстрактный. Намёк на личную потерю / шокирующий факт / что зритель получит] ↓ )"
+
+━━ НА ЭКРАНЕ ВЫГЛЯДИТ ТАК:
+[Строка 1]
+[Строка 2]
+( [cta_badge текст] ↓ )
+━━
 
 АУДИТ КОМАНДЫ:
 Jordan ✅ | Mike 🟢 STRONG (→[кому]) | Alex ✅ [эмоция] | Sam ✅ 6w | Dana ✅ | Red ✅ SURVIVED | Rico 🟢 FRESH
@@ -592,7 +598,52 @@ CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
 🎯 KLING 2.1 (если Veo 3 недоступен):
 [готовый Kling промт — comma-separated descriptors]
 🚫 negative: text, watermark, logo, CGI, studio lighting, distorted hands, extra fingers
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DESCRIPTION TEASER (вставить в начало капшена):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2-3 предложения от первого лица. Личная история или близкий промах. Намёк на решение без его раскрытия. Заставляет читать дальше.]
+
+CTA → мини-продукт:
+💾 Save this — [причина почему стоит сохранить]
+🔗 [конкретный мини-продукт] → link in bio
 ```
+
+---
+
+### ПРАВИЛО CTA BADGE — вшито навсегда
+
+❌ ЗАПРЕЩЕНО — абстрактные CTA:
+- "( watch till the end ↓ )"
+- "( you need to know this ↓ )"
+- "( this is important ↓ )"
+- "( see below ↓ )"
+
+✅ ОБЯЗАТЕЛЬНО — конкретный байт с личной ставкой или шокирующим фактом:
+- "( I was sick for 3 days straight ↓ )" — личная потеря
+- "( my friend lost $14,000 over this ↓ )" — конкретная цифра
+- "( the cabin that saved every trip since ↓ )" — намёк на решение
+- "( customs kept every dollar ↓ )" — конкретное последствие
+- "( one reply email fixed it in 5 min ↓ )" — решение без раскрытия
+
+**Правило:** CTA badge должен создавать НОВЫЙ вопрос — не закрывать старый. Зритель читает hook → badge → и ещё больше хочет знать.
+
+---
+
+### ПРАВИЛО DESCRIPTION TEASER — вшито навсегда
+
+Каждый выход хука включает description teaser. Структура:
+1. **Первое предложение** — личная история или близкий промах (от "I")
+2. **Второе предложение** — масштаб потери или упущенной возможности
+3. **Третье предложение** — намёк что решение существует и простое
+4. **CTA строка** — сохранить + ссылка на мини-продукт
+
+Мини-продукт (ротировать по теме рилса):
+- Travel/Cruise → "Free cruise mistake checklist"
+- Hotel/Airport → "Free travel hack cheatsheet"
+- Health/Food → "Free inflammation tracker"
+- Money/Rights → "Free bill dispute template"
+- Home Safety → "Free household danger checklist"
 
 ### Step 3 — Размещение текста
 
