@@ -1,263 +1,182 @@
 ---
 name: niche-templates
-description: Pre-built hook and caption templates for each KIRA niche (travel, pharmacy, hotel, money, health, home, rights). Use to quickly generate hooks with proven formula for a specific topic. Reduces time from idea to final hook.
+description: Niche-specific content templates with proven structures and placeholder stats. Use after selecting a topic — fills in the factual backbone before hook writing begins.
 ---
 
-# KIRA Niche Templates
+# Niche Templates
+## Фактическая база для каждой ниши @thekiramethod
+
+---
 
 ## КАК ИСПОЛЬЗОВАТЬ
 
-1. Выбрать нишу из списка ниже
-2. Выбрать тему внутри ниши
-3. Взять формулу-шаблон → адаптировать под конкретный факт
-4. Прогнать через kira-hooks аудит команды (обязательно!)
-
-**Шаблоны = стартовая точка, НЕ финальный текст.**
+1. Определить нишу по теме рилса
+2. Найти шаблон ниже → заполнить плейсхолдеры реальными цифрами
+3. Передать заполненный шаблон в `kira-hooks` как фактическую основу
+4. Хук строится НА ОСНОВЕ цифр из шаблона — не придумывать числа
 
 ---
 
-## ✈️ TRAVEL / AIRPORT / HOTEL
+## ✈️ AIRPORT / FLIGHT
 
-### Темы с высоким потенциалом:
-- EU flight delay compensation (€250–€600 — большинство не знает)
-- Luggage belt theft window (90 секунд пока ты ищешь тележку)
-- Gate volunteer bump ($400–800 + отель)
-- Airport currency exchange vs ATM (50-70% хуже курс)
-- Hotel upgrade hack (спрашивать в 3pm, не при заезде)
-- Hidden rack rate / unpublished rate (два слова на ресепшн)
-- Towel charge dispute (одно письмо убивает charge)
-- eSIM vs roaming (в 10 раз дешевле)
+**Luggage theft window:**
+- Fact: 90-second window after carousel starts — peak theft time
+- Hook stat: `90 seconds` / `$[value] of luggage` / `every airport`
+- Formula fit: Command Interrupt (#3) or Personal Warning (#1)
 
-### Формулы-шаблоны:
+**EU flight delay compensation:**
+- Fact: EC 261/2004 — delay 3h+ = €250 (short), €400 (medium), €600 (long haul)
+- Hook stat: `€[250/400/600]` / `most passengers never claim` / `[year] rule`
+- Formula fit: Injustice (#5) or Specific Loss (#2)
 
-**Formula 5 — Injustice + Resolution:**
-```
-hook_lines: [
-    "Hotel Charged Me $[X]",
-    "For Something I Never [Did/Touched/Used].",
-]
-cta_badge: "( One email killed it in 5 minutes ↓ )"
-```
+**Window seat radiation:**
+- Fact: ~0.02 mSv per hour at altitude = ~2 chest X-rays per transatlantic flight
+- Hook stat: `2 chest X-rays` / `per flight` / `window seat`
+- Formula fit: Personal Warning (#1)
 
-**Formula 2 — Specific Loss:**
-```
-hook_lines: [
-    "My Friend Lost $[X] At [Place]",
-    "For [Doing Something Normal].",
-]
-cta_badge: "( One [action] could have saved it ↓ )"
-```
+**Gate volunteer bump:**
+- Fact: DOT requires compensation — up to $1,550 + hotel for involuntary bump
+- Hook stat: `$[400-800]` / `hotel room` / `2 words at the gate`
+- Formula fit: Injustice (#5)
 
-**Formula 3 — Command Interrupt:**
-```
-hook_lines: [
-    "Never [Do X]",
-    "While [Normal Travel Action].",
-]
-cta_badge: "( Most travelers don't know this ↓ )"
-```
+**Customs form mistake:**
+- Fact: Undeclared cash over $10,000 = potential full confiscation
+- Hook stat: `$[amount]` / `one form` / `legally earned`
+- Formula fit: Specific Loss (#2)
 
 ---
 
-## 💊 PHARMACY / HEALTH / MONEY (USA)
+## 🏨 HOTEL
 
-### Темы с высоким потенциалом:
-- GoodRx / pharmacy coupons (одно и то же лекарство в 10× дешевле)
-- Generic vs brand drugs (одинаковые компоненты, 80% дешевле — FDA)
-- Prescription price varies by pharmacy ($12 vs $180 одна улица)
-- Hospital bill negotiation (каждый счёт можно оспорить)
-- Medical bill surprise charges (одно письмо убивает большинство)
+**Hidden rack rate:**
+- Fact: Hotels keep unpublished rates — two words at check-in: "best rate"
+- Hook stat: `[%] cheaper` / `two words` / `front desk`
+- Formula fit: Injustice (#5) or Insider Observation (#4)
 
-### Формулы-шаблоны:
+**Towel/minibar dispute:**
+- Fact: Hotels charge for items without proof — one email to dispute kills most charges
+- Hook stat: `$[40]` / `never touched` / `5 minutes`
+- Formula fit: Injustice (#5) ← 3M views formula
 
-**Formula 1 — Personal Warning:**
-```
-hook_lines: [
-    "I Paid $[X] For [Drug]",
-    "At [Pharmacy] For [Years]. A [Friend] Showed Me [Better Way].",
-]
-cta_badge: "( Same pill. [X] times cheaper ↓ )"
-```
-
-**Formula 2 — Specific Loss:**
-```
-hook_lines: [
-    "My [Person] Paid $[X] More",
-    "For The Exact Same [Drug]. Same Street.",
-]
-cta_badge: "( The price difference is legal and insane ↓ )"
-```
-
-**Formula 3 — Command Interrupt:**
-```
-hook_lines: [
-    "Never Fill A Prescription",
-    "Without Asking [Store] This First.",
-]
-cta_badge: "( I save $[X]/month doing this ↓ )"
-```
+**Room upgrade hack:**
+- Fact: Best time to ask is 3pm — morning arrivals fill up, afternoon cancellations open
+- Hook stat: `3pm` / `ask one question` / `free upgrade`
+- Formula fit: Insider Observation (#4)
 
 ---
 
-## 🏨 HOTEL LIFE HACKS
+## 🚢 CRUISE
 
-### Темы:
-- Hidden unpublished room rates (два слова при заезде)
-- Room upgrade timing (3pm = лучшее время)
-- Minibar tracking не обновляется (ложные charges)
-- Safe hygiene между гостями (никто не чистит)
-- Ice machine floors (средние этажи, есть причина)
+**Hidden fee inflation:**
+- Fact: Gratuities + drink packages + port fees can add $600+ to advertised price
+- Hook stat: `$800 trip → $1,400+` / `before you book`
+- Formula fit: Specific Loss (#2)
 
-### Формулы-шаблоны:
-
-**Formula 4 — Insider Observation:**
-```
-hook_lines: [
-    "Ever Notice How Hotel Staff",
-    "Never Mention [Thing]? I Asked One Why.",
-]
-cta_badge: "( This is what they told me ↓ )"
-```
-
-**Formula 5 — Injustice:**
-```
-hook_lines: [
-    "Hotel Charged Me $[X]",
-    "For [Item] That Was Already There.",
-]
-cta_badge: "( Two words at checkout fix this ↓ )"
-```
+**Seasickness cabin:**
+- Fact: Mid-ship, deck 3-5 = least motion (center of gravity, close to waterline)
+- Hook stat: `deck [3]` / `mid-ship` / `zero seasickness`
+- Formula fit: Insider Observation (#4)
 
 ---
 
-## 💰 MONEY TRAPS / CONSUMER RIGHTS (USA)
+## 🍎 FOOD / HEALTH
 
-### Темы:
-- Rental car insurance (кредитная карта уже покрывает)
-- Airline involuntary bump (до $1,550 по закону)
-- Credit card dispute window (60 дней, любой charge)
-- Debt collector banned actions (11 вещей запрещено по закону)
-- Car dealership add-ons (всё опционально по закону)
-- Security deposit state law (вернуть 14-30 дней или 2-3× штраф)
+**Spice storage:**
+- Fact: Light + heat degrade antioxidant potency by up to 150× over 6 months
+- Hook stat: `150×` / `your spice rack` / `right now`
+- Formula fit: Kitchen/Home Fact (#6)
 
-### Формулы-шаблоны:
+**Coffee cortisol window:**
+- Fact: Cortisol peaks 30-45min after waking — drinking coffee then blunts caffeine effect
+- Hook stat: `90 minutes` / `after waking` / `most people`
+- Formula fit: Personal Warning (#1)
 
-**Formula 2 — Specific Loss:**
-```
-hook_lines: [
-    "I Paid $[X] For Rental Insurance.",
-    "My Credit Card Already Covered It.",
-]
-cta_badge: "( Check your card. You're probably paying twice ↓ )"
-```
+**Olive oil fraud:**
+- Fact: UC Davis study — 69% of "extra virgin" olive oil in US supermarkets failed standards
+- Hook stat: `69%` / `olive oil bottles` / `not actually extra virgin`
+- Formula fit: Kitchen/Home Fact (#6)
 
-**Formula 3 — Command Interrupt:**
-```
-hook_lines: [
-    "Never Sign At A Car Dealership",
-    "Until You Say These [X] Words.",
-]
-cta_badge: "( Every add-on is optional by law ↓ )"
-```
+**Inflammation markers:**
+- Fact: Processed seed oils, refined sugar, alcohol → elevated CRP (inflammation marker)
+- Hook stat: `[3-5] things` / `your kitchen` / `quietly`
+- Formula fit: Body Self-Sabotage (#8)
 
 ---
 
-## 🍎 FOOD / HEALTH WARNINGS
+## 💰 MONEY TRAPS
 
-### Темы:
-- Spice storage light+heat degrades potency 150×
-- Olive oil fraud (большинство бутылок не проходят тест)
-- Coffee timing mistake (кортизол окно = худшее время)
-- Earbuds + street noise = 3× hearing loss risk
-- Inflammation kitchen items (тест маркеров)
-- Blue Zone breakfast (долголетие Сардиния/Окинава)
+**Rental car insurance:**
+- Fact: Most Visa/MC cards include CDW rental coverage — paying extra = paying twice
+- Hook stat: `$[30/day]` / `already covered` / `your credit card`
+- Formula fit: Injustice (#5)
 
-### Формулы-шаблоны:
+**Airport currency exchange:**
+- Fact: Airport kiosks charge 8-15% margin vs ~2% at ATM past security
+- Hook stat: `15% worse rate` / `worst place in the airport` / `use ATM instead`
+- Formula fit: Personal Warning (#1)
 
-**Formula 1 — Personal Warning:**
-```
-hook_lines: [
-    "I Wore [Item] Every Day For Years.",
-    "A Doctor Showed Me What It Was Doing.",
-]
-cta_badge: "( I haven't done it the same way since ↓ )"
-```
+---
 
-**Formula 6 — Kitchen/Home Fact:**
-```
-hook_lines: [
-    "One [Item] In Your Kitchen",
-    "Could Be [X] Times Less Effective.",
-]
-cta_badge: "( The reason is how you store it ↓ )"
-```
+## 💊 PHARMACY / HEALTHCARE USA
+
+**GoodRx / generic pricing:**
+- Fact: Same drug, same pharmacy — GoodRx coupon can cut price 80-90%
+- Hook stat: `$[12] vs $[180]` / `same pill` / `same street`
+- Formula fit: Specific Loss (#2)
+
+**Hospital bill negotiation:**
+- Fact: Hospitals legally must provide itemized bills — errors in 80% of bills (per AMA)
+- Hook stat: `80%` / `hospital bills` / `overcharged`
+- Formula fit: Injustice (#5)
+
+**Generic vs brand:**
+- Fact: FDA requires generic to have same active ingredient, dose, safety — identical efficacy
+- Hook stat: `80% cheaper` / `FDA confirmed` / `same pill`
+- Formula fit: Personal Warning (#1)
 
 ---
 
 ## 🏠 HOME / HOUSEHOLD DANGER
 
-### Темы:
-- Bleach + ammonia = toxic gas (в каждом доме)
-- Bleach + vinegar = chlorine gas (люди смешивают)
-- Extension cord + space heater = #1 причина пожаров США
-- Fridge temperature: большинство держат слишком тёплым
+**Bleach + ammonia:**
+- Fact: Mixing bleach (NaOCl) + ammonia → chloramine gas — toxic, causes lung damage
+- Hook stat: `Windex + bleach` / `in your home right now` / `toxic gas`
+- Formula fit: Command Interrupt (#3) or Pattern Interrupt (#9)
 
-### Формулы-шаблоны:
+**Extension cord + space heater:**
+- Fact: NFPA — space heaters cause 1,700 home fires per year, #1 cause = extension cords
+- Hook stat: `1,700 fires per year` / `#1 cause` / `extension cord`
+- Formula fit: Command Interrupt (#3)
 
-**Formula 3 — Command Interrupt:**
-```
-hook_lines: [
-    "Never Mix [Product 1]",
-    "With [Product 2] At Home.",
-]
-cta_badge: "( Most people do this without knowing ↓ )"
-```
-
-**Formula 9 — Pattern Interrupt + Stat:**
-```
-hook_lines: [
-    "[X]% Of House Fires In The US",
-    "Start From [One Common Item].",
-]
-cta_badge: "( You probably have one right now ↓ )"
-```
+**Fridge temperature:**
+- Fact: FDA recommends ≤40°F (4°C) — most US fridges set too warm, doubles spoilage rate
+- Hook stat: `2× faster` / `most American fridges` / `too warm`
+- Formula fit: Personal Warning (#1)
 
 ---
 
-## ⚖️ RIGHTS / LEGAL USA
+## ⚖️ RIGHTS / CONSUMER LAW USA
 
-### Темы:
-- Security deposit law (по штатам)
-- Airline bump compensation ($1,550)
-- Credit card dispute (60 дней)
-- Debt collector banned actions
-- Rental car insurance overlap
+**Airline involuntary bump:**
+- Fact: DOT regulation — involuntary bump = 200-400% of ticket price, max $1,550 cash
+- Hook stat: `$1,550` / `by law` / `they bumped me`
+- Formula fit: Injustice (#5)
 
-### Формулы-шаблоны:
+**Credit card dispute:**
+- Fact: Fair Credit Billing Act — 60 days to dispute, bank must investigate within 30 days
+- Hook stat: `60 days` / `any charge` / `bank must investigate`
+- Formula fit: Insider Observation (#4) or Injustice (#5)
 
-**Formula 2 — Specific Loss:**
-```
-hook_lines: [
-    "My Landlord Kept My $[X] Deposit.",
-    "He Owed Me 3× That By Law.",
-]
-cta_badge: "( One letter. Got it back in 10 days ↓ )"
-```
-
-**Formula 9 — Pattern Interrupt + Stat:**
-```
-hook_lines: [
-    "[X]% Of Americans Don't Know",
-    "Airlines Owe Them Up To $[Y].",
-]
-cta_badge: "( If this happened to you — you can still claim it ↓ )"
-```
+**Security deposit law:**
+- Fact: Most states require return within 14-30 days — violation = 2-3× penalty
+- Hook stat: `2-3×` / `your deposit` / `[state] law`
+- Formula fit: Specific Loss (#2)
 
 ---
 
-## ПРАВИЛО ИСПОЛЬЗОВАНИЯ
+## ПРАВИЛО ЦИФР
 
-1. **Никогда не публиковать шаблон как есть** — всегда адаптировать с конкретными цифрами/местами
-2. **Конкретика обязательна** — "$14,000" > "a lot", "Bali" > "a beach", "FDA confirmed" > "studies show"
-3. **Шаблон + команда** — каждый хук всё равно проходит через Jordan · Mike · Alex · Sam · Dana · Red · Tyler
-4. **Не повторять один шаблон дважды за неделю** — ротировать формулы
+❌ "a lot of money" → ❌ "many people" → ❌ "sometimes"
+✅ "$14,000" → ✅ "1 in 3 Americans" → ✅ "every 90 seconds"
+
+Если нет точной цифры — найти её перед написанием хука. Хук без цифры — слабый хук.
