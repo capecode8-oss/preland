@@ -1,10 +1,10 @@
 ---
 name: ai-video-prompts
-description: Generate AI video prompts for @thekiramethod reels. Use when stock footage library has no matching clip OR when you want a custom visual that perfectly fits the hook's emotion. Run after kira-hooks — finalized hook required before generating visual. Output is ready-to-paste prompts for Kling, Runway, and Pika. The user generates the actual video themselves.
+description: Generate AI video prompts for @thekiramethod reels. Use when stock footage library has no matching clip OR when you want a custom visual that perfectly fits the hook's emotion. Run after kira-hooks — finalized hook required before generating visual. Output is ready-to-paste prompts for Veo 3, Kling, Runway, and Pika. The user generates the actual video themselves.
 ---
 
 # AI Video Prompt System — KIRA
-## Tools: Kling 2.1 · Runway Gen-4 · Pika 2.2
+## Tools: Veo 3 ⭐ · Kling 2.1 · Runway Gen-4 · Pika 2.2
 ## Niche: Travel · Life Hacks · Food · Health · Money (USA, 35+)
 
 ---
@@ -39,10 +39,11 @@ Nova спрашивает:
 Nova's 20-летние правила (выжимка):
 - `handheld` + `slightly shaky` + `natural light` + `documentary style` = реализм. Никогда "professional" или "studio".
 - Описывай ЭМОЦИЮ сцены, не только её. "Nervous energy" > "person standing at counter".
-- Kling: comma-separated descriptors, cinematic precision. Лучший реализм.
+- **Veo 3** (главный инструмент): нарративные ПРЕДЛОЖЕНИЯ, не keyword-список. Пять блоков: Camera → Scene → Subject+Action → Lighting → Style+Specs. Явно указывать "vertical frame, 9:16 portrait". Добавлять "no dialogue, no voiceover, ambient sound only" (Veo 3 генерирует аудио — для нас оно режется при рендере). Нет отдельного negative prompt — всё в основном тексте.
+- Kling: comma-separated descriptors, cinematic precision. Лучший реализм после Veo 3.
 - Runway: начинать с `[Camera motion]` (Slow push in / Pan right / Track forward). Лучший контроль движения.
-- Pika: conversational natural language. Самая быстрая итерация.
-- Negative prompt — ВСЕГДА: `text, watermark, logo, CGI, studio lighting, obvious AI artifacts, distorted hands, extra fingers, advertisement look`
+- Pika: conversational natural language. Самая быстрая итерация для теста концепта.
+- Negative prompt для Kling/Runway/Pika — ВСЕГДА: `text, watermark, logo, CGI, studio lighting, obvious AI artifacts, distorted hands, extra fingers, advertisement look`
 
 ---
 
@@ -104,6 +105,117 @@ VIC's вердикт:
 ### Rule 5 — 10-second clip, seamless loop preferred
 Оптимальная длина генерации — 10 секунд. Если клип короче — будет залуплен при рендере.
 Для loop: используй движения которые зацикливаются естественно: конвейер, ходьба по коридору, медленный pan, волны, вращение.
+
+---
+
+## VEO 3 — ГЛАВНЫЙ ИНСТРУМЕНТ (Google DeepMind, 2025)
+
+**Доступ:** Google VideoFX → labs.google.com/fx/tools/video-fx | Google Flow | Vertex AI API
+
+**Почему Veo 3 первый:**
+- Лучшая фотореалистичность среди всех инструментов (2025-2026)
+- Лучшее движение людей — натуральные жесты, походка, мимика
+- Нативное аудио (мы его режем `-an` при рендере — не мешает, не помогает)
+- Вертикальный формат 9:16 поддерживается нативно
+- Минимум AI-артефактов при правильном промте
+
+**Duration в Veo 3:**
+- VideoFX генерирует до 8 секунд за раз
+- Для 10-секундного рилса: сгенерировать 8s → рендер залупит до 10s автоматически
+- Альтернатива: Vertex AI API — там можно запросить duration через параметры
+
+---
+
+### ⭐ СТРУКТУРА ПРОМТА VEO 3 — 5 блоков (обязательный порядок)
+
+Veo 3 понимает ПРЕДЛОЖЕНИЯ, не keyword-списки. Каждый блок — одно-два предложения.
+
+```
+БЛОК 1 — CAMERA (как снято)
+Handheld close-up slowly pushing in toward [subject].
+POV shot from [position] slowly moving forward.
+Slow pan from left to right across [scene].
+Wide shot gradually tightening to medium.
+
+БЛОК 2 — SCENE (где, что за окружение)
+Inside a crowded airport terminal with moving baggage carousel.
+In a modern hotel lobby with marble counters and warm chandelier lighting.
+In a home kitchen, under-sink cabinet just opened revealing cleaning supplies.
+
+БЛОК 3 — SUBJECT + ACTION + EMOTION (кто, что делает, с какой эмоцией)
+A woman in her mid-30s reaches toward the belt, her expression tense and cautious.
+A pair of hands nervously holds a long paper receipt, fingers slightly trembling.
+A traveler stands at a customs counter, looking worried as an officer examines documents.
+
+БЛОК 4 — LIGHTING + ATMOSPHERE (свет и настроение)
+Overhead fluorescent terminal lights cast a cool, slightly harsh institutional glow.
+Warm morning window light enters from the left, soft and natural.
+The atmosphere feels tense, slightly claustrophobic, urgent.
+
+БЛОК 5 — STYLE + SPECS (стиль и технические требования)
+Documentary-style footage with slight natural handheld camera movement. Photorealistic.
+Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient sound only.
+No text, no watermarks, no logos, no subtitles on screen.
+```
+
+**Veo 3 ЗАПРЕЩЕНО писать:**
+- ❌ Keyword-списки через запятую (это для Kling, не Veo 3)
+- ❌ "Ultra HD", "8K", "cinematic 4K" — это не помогает Veo 3
+- ❌ "photorealistic render" — слово "render" триггерит CGI-look
+- ❌ Отдельный negative prompt (нет такого поля в VideoFX) — пиши ограничения в тексте: "no text", "no watermarks"
+
+**Veo 3 РАБОТАЕТ ЛУЧШЕ с:**
+- ✅ "documentary-style footage" — включает реализм
+- ✅ "slight natural camera movement" — естественное качание
+- ✅ "ambient sound only, no dialogue" — чистый аудио-трек (нам не нужен, но подсказка Veo 3)
+- ✅ описание эмоции персонажа — Veo 3 её воспроизводит в мимике
+- ✅ "vertical frame, 9:16 portrait orientation" — вертикаль
+
+---
+
+### VEO 3 ПРИМЕРЫ ПО НИШАМ
+
+**AIRPORT — luggage belt (Fear):**
+```
+VEO 3:
+Handheld close-up shot slowly pushing in toward a moving airport baggage carousel. Inside a busy arrival terminal with overhead fluorescent lighting. A pair of hands nervously reaches forward toward a black suitcase as it passes on the moving belt, fingers slightly tense and hesitant. The cool, slightly harsh airport lighting creates an institutional, urgent atmosphere. Documentary-style footage with slight natural camera movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient airport sound only. No text, no watermarks, no logos on screen.
+```
+
+**HOTEL — front desk dispute (Injustice):**
+```
+VEO 3:
+Medium shot slowly pushing in toward a hotel reception desk. Inside a hotel lobby with warm chandelier lighting and marble counter. A woman in her 40s stands at the desk holding a paper receipt, her expression frustrated and confused, gesturing toward the receptionist across the counter. The warm lobby lighting contrasts with the tension in her body language. Documentary-style footage with slight natural handheld movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient lobby sound only. No text, no watermarks, no logos.
+```
+
+**KITCHEN — cabinet reveal (Health Warning):**
+```
+VEO 3:
+POV shot slowly pushing forward toward a kitchen cabinet as the door swings open. Inside a real home kitchen with warm natural light from a nearby window. A hand reaches into the cabinet revealing rows of spice jars and supplement bottles arranged on shelves. The warm, slightly cluttered kitchen environment feels familiar and domestic. The camera movement is slow and deliberate, as if discovering something unexpected. Documentary-style footage, slightly handheld. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient kitchen sound only. No text, no watermarks, no logos.
+```
+
+**PHARMACY — pill bottle (Health/Money):**
+```
+VEO 3:
+Close-up shot slowly pushing in on a prescription medication bottle held in two hands. Inside a pharmacy or home bathroom, with neutral clinical overhead lighting. The hands carefully examine the label, turning the bottle slightly. The person's expression, partially visible, shows mild concern or realization. Clean, clinical atmosphere with no dramatic lighting. Documentary-style, slight natural camera movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient sound only. No text, no watermarks, no logos, no readable text on the bottle label.
+```
+
+**HOME DANGER — extension cord (Fear):**
+```
+VEO 3:
+Macro close-up shot slowly pushing in toward an overloaded power extension strip on the floor. Inside a home living room or bedroom with warm indoor lamp lighting. Multiple thick power cords are plugged into a single strip, with a space heater cord prominently visible among them. The close framing and slow camera push creates a slightly ominous, cautionary atmosphere. Documentary-style footage with subtle handheld movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient room sound only. No text, no watermarks, no logos.
+```
+
+**MONEY — credit card payment (Injustice/Money):**
+```
+VEO 3:
+Macro close-up shot slowly pushing in toward hands inserting a credit card into a payment terminal. Inside a retail store with neutral overhead lighting. The hands move with slight hesitation, the terminal screen visible. The framing is tight, focusing on the card and terminal, with the store environment softly blurred behind. A subtle sense of uncertainty in the hand movement. Documentary-style footage, natural camera movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient store sound only. No text, no watermarks, no logos, no readable text on screen.
+```
+
+**AIRPORT CUSTOMS — money confiscation (Fear + Injustice):**
+```
+VEO 3:
+Medium static shot at an airport customs inspection counter. Inside an official customs area with cool institutional overhead fluorescent lighting. A customs officer in uniform reviews travel documents handed across the counter by a traveler standing opposite. The traveler's expression is tense and worried, watching carefully. The atmosphere is formal, slightly intimidating, institutional. Documentary-style footage with minimal camera movement. Photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient airport sound only. No text, no watermarks, no logos.
+```
 
 ---
 
@@ -340,24 +452,32 @@ Visual concept: [одна фраза — что зритель видит в п�
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🎯 KLING 2.1 (лучший реализм):
-[Готовый промт — вставить напрямую в Kling]
+⭐ VEO 3 (главный — labs.google.com/fx/tools/video-fx):
+[Готовый промт — 5 блоков предложениями, вставить напрямую]
+↳ Duration: запросить максимум (8s) → рендер залупит до 10s
+↳ No separate negative prompt — ограничения уже в тексте
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 KLING 2.1 (если Veo 3 недоступен — лучший реализм):
+[Готовый промт — comma-separated descriptors]
 
 🎬 RUNWAY GEN-4 (лучшее движение камеры):
 [Camera: тип движения] + [готовый промт]
 
-⚡ PIKA 2.2 (быстрая итерация):
-[Готовый промт — вставить напрямую в Pika]
+⚡ PIKA 2.2 (быстрый тест концепта):
+[Готовый промт — natural language]
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-🚫 NEGATIVE PROMPT (для всех инструментов):
+🚫 NEGATIVE PROMPT (только для Kling / Runway / Pika — НЕ для Veo 3):
 text, watermark, logo, subtitle, CGI, studio lighting, obvious AI artifacts, uncanny valley, distorted hands, extra fingers, advertisement look, stock footage aesthetic
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 TECH SPECS:
 - Duration: 10 seconds | Resolution: 1080×1920 (9:16 вертикальное)
+- Veo 3 generates 8s max → loop to 10s in render (-stream_loop -1)
 - После генерации: footage-manager → залогировать как custom clip
 - Затем: kira-hooks body clearance → рендер
 
