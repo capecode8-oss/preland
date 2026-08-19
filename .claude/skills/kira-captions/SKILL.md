@@ -32,15 +32,41 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 ## CAPTION STRUCTURE — always follow this order
 
 ```
-1. SECOND HOOK       — first line of caption repeats/deepens the tension (not the same as reel hook)
-2. CONTEXT           — brief setup: why this matters, what most people don't know
-3. DETAIL            — the specific fact, number, or story that makes it real
-4. PAYOFF            — the reveal: what they should do / what actually happens
-5. CTA               — choose from topic-matched list below (never repeat same CTA twice in a row)
-6. SAVE LINE         — always last
+TITLE              — one bold line. Repeats or deepens the hook tension. NOT a repeat of the reel hook — a stronger restatement.
+(SUBTITLE)         — one line in parentheses. Teases what they're about to learn. Doubles as a CTA bridge.
+
+SECOND HOOK        — 1-2 lines that open a NEW loop beyond the reel
+CONTEXT            — brief setup: why this matters, what most people don't know
+DETAIL             — the specific fact, number, or story that makes it real
+PAYOFF             — the reveal: what they should do / what actually happens
+
+CTA                — choose from topic-matched list below (never repeat same CTA twice in a row)
+                     ⚠️ CTA MUST BE UNDERSTOOD IN 3 SECONDS — see 3-SECOND CTA RULE below
+SAVE LINE          — always last
 ```
 
-Length: **1700–1900 characters total** (including CTA and save line). Always hit this range — too short = no value, too long = scroll fatigue.
+Length: **1700–1900 characters total** (including title, subtitle, CTA and save line). Always hit this range — too short = no value, too long = scroll fatigue.
+
+### 3-SECOND CTA RULE — вшито навсегда
+
+**Зритель читает CTA стоя в очереди. 3 секунды. Решение: иду / не иду.**
+
+CTA должен содержать ВСЕ 3 элемента подряд, без паузы:
+1. **ЧТО** — что это такое (free card / free one-page guide)
+2. **ЧТО ДАЁТ** — что конкретно решает (4 steps for when you wake up at 3AM)
+3. **КАК ПОЛУЧИТЬ** — Comment CALM ИЛИ link in bio
+
+❌ ЗАПРЕЩЕНО:
+- "Get it free" — не понятно что именно
+- "Check the link in bio" — не понятно зачем
+- "Comment CALM for more info" — не понятно что за info
+
+✅ ОБРАЗЕЦ (всё за 3 секунды):
+```
+I made a free one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+Comment CALM and I'll send it. Or grab it free from the link in bio.
+```
+→ ЧТО: free one-page card | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
 
 **ОБЯЗАТЕЛЬНО: суть рилса — содержательный блок**
 После second hook — раскрыть тему полностью. Объяснить ПОЧЕМУ, КАК, ЧТО конкретно делать. Читатель уходит с реальными знаниями. Без этого блока капшен не выходит.
@@ -334,15 +360,18 @@ Save this — you'll want it at the check-in desk. 📌
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный капшен
 
 ```
-[SECOND HOOK — 1-2 lines]
+[TITLE — одна жирная строка, сильнее хука]
+([SUBTITLE — что узнаешь / мост к CTA])
 
-[CONTEXT — 2-3 lines]
+[SECOND HOOK — 1-2 строки, открывает новый луп]
 
-[DETAIL — 2-3 lines, include the specific number/place]
+[CONTEXT — 2-3 строки]
 
-[PAYOFF — 2-3 lines]
+[DETAIL — 2-3 строки, конкретное число / место]
 
-[CTA — matched to reel topic]
+[PAYOFF — 2-3 строки]
+
+[CTA — из банка ниже, 3 секунды = понятно ЧТО + ЧТО ДАЁТ + КАК ПОЛУЧИТЬ]
 
 [SAVE LINE]
 
