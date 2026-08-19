@@ -404,15 +404,15 @@ Rico also drives autonomous topic selection (Step 0) — when no topic is given,
 
 ### ✈️ AIRPORT / FLIGHT
 - Luggage belt theft window (90-second window, thieves know it)
-- EU flight delay €250–€600 compensation (most never claim)
-- Window seat radiation = 2 chest X-rays per flight
+- EU flight delay €250–€600 compensation (most never claim) ⭐ SPECTACLE
+- Window seat radiation = 2 chest X-rays per flight ⭐ SPECTACLE
 - Flight crew single-file line (protocol reason, insider secret)
 - Airline special meal hack (served first, better quality, anyone can order)
-- Gate volunteer bump ($400–800 + hotel room)
+- Gate volunteer bump ($400–800 + hotel room) ⭐ SPECTACLE
 - Airport currency exchange = worst rate in building (use ATM past security)
 - eSIM before landing (90% cheaper than roaming)
 - TSA PreCheck vs Global Entry (one includes the other, most people don't know)
-- Customs form mistake = fine / confiscation
+- Customs form mistake = fine / confiscation ⭐ SPECTACLE
 
 ### 🏨 HOTEL
 - Hidden rack rate / unpublished rate (two words at check-in)
@@ -423,9 +423,12 @@ Rico also drives autonomous topic selection (Step 0) — when no topic is given,
 
 ### 🚢 CRUISE
 - Mid-ship deck 3 cabin = no seasickness (physics reason)
-- Hidden fees that inflate $800 trip to $1,400+
+- Hidden fees that inflate $800 trip to $1,400+ ⭐ SPECTACLE
 - Cruise buffet restocking time (what gets replaced vs recycled)
-- Private island vs destination port (what cruise lines don't tell you)
+- Private island vs destination port (what cruise lines don't tell you) ⭐ SPECTACLE
+- Giant storm wave — cabin deck determines survival comfort ⭐ SPECTACLE
+- Ship scale vs port city — no one warns you how massive these are ⭐ SPECTACLE
+- Seasickness: green wave visible through bow/stern vs mid-ship passengers ⭐ SPECTACLE
 
 ### 🍎 FOOD / HEALTH
 - Spice storage mistake (light + heat degrade potency 150×)

@@ -583,6 +583,40 @@ Macro close-up slow-motion shot of a single white pill on a pharmacy counter. Gr
 
 ---
 
+---
+
+### 🚢 CRUISE — SPECTACLE ПРОМТЫ
+
+**#1 — Giant storm wave (Fear · Formula 3 Command Interrupt):**
+```
+VEO 3 SPECTACLE:
+Wide slow-motion shot from the stern of a massive cruise ship, camera low and slightly shaking as if held by someone gripping a railing. The open ocean stretches ahead, and on the horizon an enormous dark wave — fifteen to twenty meters high — rises slowly and moves toward the ship. Inside the ship through the portholes, warm yellow cabin lights glow, completely unaware. The contrast between the cozy interior light and the approaching wall of black water is the visual hook. The wave moves slowly, inevitably, filling the frame. The sky is dark grey, the ocean surface rough. Documentary-style footage with strong natural camera shake from wind and swell, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient ocean and wind sound only. No text, no watermarks, no dialogue.
+```
+Hook fit: "Never Book This Cabin / In A Storm"  
+Mike: 🔥 VIRAL — Maya шлёт мужу перед круизом
+
+---
+
+**#2 — Hidden fees fly from ticket (Injustice · Formula 5):**
+```
+VEO 3 SPECTACLE:
+Slow-motion close-up of hands holding a glossy cruise line brochure showing a price of $800. As the fingers hold the brochure steady, coins and dollar bills begin to peel away from behind the pages one by one, rising upward into the air in a slow steady stream, as if hidden charges are physically escaping the fine print. The bills float upward and disappear off-screen. In the background, a blurred living room with warm lamp light — someone at home planning a vacation. The brochure remains in hand, unchanged on the surface, as the money continues to rise. The effect is inevitable and impossible to stop. Documentary-style handheld footage, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient room sound only. No text, no watermarks.
+```
+Hook fit: "My $800 Cruise / Cost $1,400 Before Boarding"  
+Mike: 🔥 VIRAL — конкретные цифры + Injustice = Formula 5 = 3M views formula
+
+---
+
+**#3 — Private island reveal (Curiosity + Injustice · Formula 4/7):**
+```
+VEO 3 SPECTACLE:
+Slow cinematic drone-style shot beginning at water level, looking at a picture-perfect tropical beach with white sand and palm trees — the cruise line's "private island." Passengers in the foreground on the ship deck point and photograph it with excitement. Then the camera slowly, continuously rises upward and pulls back, revealing more and more of the island from above. As the altitude increases, the manufactured nature becomes visible: identical beach loungers in perfect grid formation, a large commercial dock, logistics trucks on a hidden road behind the treeline, corporate infrastructure. The island looks less natural and more like a theme park operation from above. The passengers below remain excited and unaware. The rise is slow and relentless. Photorealistic, natural daylight, slight natural lens movement. Vertical frame, 9:16 portrait orientation. Ambient ocean and crowd sound only. No text, no watermarks.
+```
+Hook fit: "A Local Told Me / What That 'Private Island' Actually Is"  
+Mike: 🟢 STRONG → 🔥 VIRAL potential — тайна + путешествие = Maya мгновенно пересылает
+
+---
+
 ### КОГДА ИСПОЛЬЗОВАТЬ Spectacle vs Documentary
 
 | Formulas | Spectacle Mode | Documentary Mode |
