@@ -380,32 +380,16 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
 ---
 
-## BODY CLEARANCE — run before every render
+## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО (body clearance отменён)
 
-⚠️ **FULL BODY — NOT face only. This is the #1 source of render errors.**
+⚠️ **Все футажи специально сняты так, что лицо НЕ закрывается плашкой при стандартном размещении.**
 
-Measure the LOWEST VISIBLE BODY PART across ALL 5 frames — hands, arms holding objects, torso, hips, feet — anything visible on screen. The face chin is NOT the bottom. The lowest pixel of any body part IS.
+**ВСЕГДА: hook_y0 = 80** — текст прижат к верху. Никакого анализа кадров. Никаких измерений.
 
-1. Extract 5 frames: t = 0.25, 1.25, 2.50, 3.75, 4.75s
-2. View ALL 5 — find the FULL BODY extent in each frame (head to lowest visible body part)
-3. UNION: body_top = min y across all frames | body_bottom = MAX y of LOWEST BODY PART across all frames
-4. forbidden_top = body_top − 70 | forbidden_bottom = body_bottom + 70
-5. Placement:
-   - **ABOVE:** hook_y0 = 80 (always push to TOP — never float in middle)
-   - **BELOW:** hook_y0 = max(forbidden_bottom, 1300) — always push to BOTTOM of screen
-     - Try hook_y0 = 1300 first. If cta_bottom > 1536 → raise hook_y0 to forbidden_bottom minimum.
-     - ❌ NEVER place BELOW text at y=700–1100 (middle of screen) — this covers the action zone.
-   - Neither fits → change clip
-6. QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1536px
-
-**NEVER skip. NEVER use one frame. NEVER measure face only. NEVER guess.**
-**NEVER place text in the middle of the frame. TOP or BOTTOM only.**
-
-Examples of body_bottom (not face_bottom):
-- Person holding binoculars → body_bottom = bottom of binoculars in hands
-- Person standing → body_bottom = feet
-- Person in close-up (shoulders only) → body_bottom = bottom of shoulders/chest
-- Selfie filling full frame → body_bottom may be ~1500px → NO safe placement → change clip
+- ❌ НЕ извлекать 5 кадров для измерений
+- ❌ НЕ менять клип из-за "тело заполняет кадр"
+- ✅ Поставить текст y=80, рендерить, показать превью
+- QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1536px
 
 ---
 
