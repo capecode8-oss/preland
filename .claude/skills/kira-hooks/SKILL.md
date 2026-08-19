@@ -38,7 +38,7 @@ description: Write viral Instagram Reel hooks for @thekiramethod in competitor s
 
 ---
 
-## THE PRODUCTION TEAM — run every hook through all 7 before finalizing
+## THE PRODUCTION TEAM — run every hook through all 10 before finalizing
 
 Before writing final hooks, simulate this internal brainstorm. Each team member speaks in character. You are the showrunner — you collect all feedback and produce the final version.
 
