@@ -486,6 +486,120 @@ TEAM: NOVA ✅ | VIC 🎬 [VIRAL/STRONG] | Mike 🟢 | Red ✅ SURVIVED
 
 ---
 
+## 🎭 SPECTACLE MODE — Визуальный спектакль (новый стиль)
+
+### Что такое Spectacle Mode
+
+Инспирировано @evanrosenman (156M / 128M / 106M views).
+
+**Принцип:** Видео = первый хук. Текст не нужен чтобы остановить скролл. Зритель видит что-то **физически невозможное** — но моментально понятное. Мозг кричит "подождите, что?!" раньше чем текст прочитан.
+
+**Documentary Mode** (текущий): реалистично, мог быть снят на iPhone  
+**Spectacle Mode** (новый): физика нарушается чтобы ВИЗУАЛИЗИРОВАТЬ правду хука
+
+Разница:
+| Documentary | Spectacle |
+|------------|-----------|
+| "Человек у стойки отеля с квитанцией" | "Долларовые купюры буквально вылетают из стены когда он прикасается к полотенцу" |
+| 65-78% hold rate | Потенциал 80%+ |
+| Хук = текст + видео вместе | Видео ЭТО и есть хук |
+| Подходит для всех форматов | Убийца для Formula 3, 5, 9 (Command / Injustice / Pattern Interrupt) |
+
+---
+
+### Правила промтинга для Spectacle Mode (Veo 3)
+
+**Ключевой принцип:** Сохранять реалистичную среду — и вводить ОДНО невозможное событие. Контраст реальности и нереальности = шок.
+
+**Формула:**
+```
+Реальная обычная сцена + одно физически невозможное явление которое ПОКАЗЫВАЕТ правду хука + slow motion чтобы дать зрителю время обработать увиденное
+```
+
+**Запрещено в Spectacle Mode:**
+- ❌ CGI-вид, картунность, мультяшность — это убивает эффект
+- ❌ Слишком много невозможных элементов — один эффект, максимум
+- ❌ Нарратив от первого лица — показываем ФАКТ, не персонажа
+- ❌ Слова "magical" или "fantasy" — это уводит в сказку
+
+**Работает:**
+- ✅ "as if demonstrating the invisible force" — невидимая сила стала видимой
+- ✅ "in slow motion" — даёт мозгу время осознать невозможное
+- ✅ "photorealistic environment" — обычная среда усиливает шок невозможного
+- ✅ "the effect happens naturally, as if this is normal physics" — не подчёркивать трюк
+- ✅ Деньги, газ, свет, тепло — это всё можно визуализировать "невидимыми" силами
+
+---
+
+### VEO 3 SPECTACLE ПРИМЕРЫ ПО НИШАМ
+
+**HOTEL — towel charge ($40 вылетает из кармана):**
+```
+VEO 3 SPECTACLE:
+Slow-motion close-up shot inside a hotel bathroom as a guest's hand gently touches a neatly folded white towel on the rack. At the moment of contact, several dollar bills visibly peel off the countertop nearby and float upward into the air, as if drawn by an invisible magnetic force, disappearing off-screen. The hotel bathroom environment is photorealistic and ordinary — warm lighting, marble tiles, nothing unusual except the floating currency. The movement of the money is slow, deliberate, inevitable. Documentary-style footage with natural handheld movement, photorealistic. Vertical frame, 9:16 portrait orientation. No dialogue, no voiceover, ambient bathroom sound only. No text, no watermarks.
+```
+
+**CUSTOMS — money confiscation (купюры засасывает из чемодана):**
+```
+VEO 3 SPECTACLE:
+Slow-motion medium shot of a traveler opening their suitcase at an airport customs counter. As the lid opens, dollar bills begin to rise slowly from inside the bag on their own, floating upward in a steady stream, as if being pulled by an invisible vacuum toward the customs officer across the counter. The traveler watches with visible shock, unable to stop the movement. The airport customs area is completely realistic — fluorescent lighting, official uniforms, standard counter. Only the money moves impossibly. Documentary-style footage, natural camera movement, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient airport sound only. No text, no watermarks.
+```
+
+**BLEACH + WINDEX — toxic gas visible (яд становится видимым):**
+```
+VEO 3 SPECTACLE:
+Slow-motion close-up shot on a kitchen counter as two common cleaning spray bottles are placed next to each other. A faint, sickly green-tinted mist begins to rise slowly from the gap between the two bottles, spreading across the counter surface and drifting upward into the kitchen air. The kitchen is completely ordinary — warm natural window light, familiar counter surface. Only the gas is unusual, visible, and spreading. The effect is subtle and deeply unsettling. Documentary-style footage, slight natural handheld movement, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient kitchen sound only. No text, no watermarks.
+```
+
+**EXTENSION CORD — heat becomes visible (жар становится видимым):**
+```
+VEO 3 SPECTACLE:
+Macro close-up slow-motion shot of an overloaded power extension strip on a living room floor with a space heater plugged in. Gradually, a faint orange-red glow begins to emanate from inside the cord itself, pulsing slightly, intensifying with each second, as if the heat building inside is becoming visible through the plastic. The surrounding room is completely normal — carpet, furniture, warm lamp light. Only the cord glows with internal heat. The effect grows slowly, making it more unsettling. Documentary-style, handheld, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient room sound only. No text, no watermarks.
+```
+
+**SPICE — potency draining in sunlight (специя тускнеет на глазах):**
+```
+VEO 3 SPECTACLE:
+Macro close-up slow-motion shot of a spice jar sitting on a sunny kitchen windowsill. As the sunlight hits the jar directly, the color of the spice inside visibly fades — starting from the edges touching the glass, spreading inward, the vibrant red or orange slowly becoming pale and grey over several seconds. The kitchen environment is warm, real, everyday. Only the spice changes, draining of color in real time. Documentary-style footage, slightly handheld, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient kitchen sound only. No text, no watermarks.
+```
+
+**AIRLINE BUMP — cash appears at gate (деньги материализуются из посадочного):**
+```
+VEO 3 SPECTACLE:
+Slow-motion close-up of hands holding a boarding pass at an airport gate. As the flight status board behind shows CANCELLED or DELAYED, the boarding pass in the hands slowly transforms — dollar bills begin to appear underneath it, one by one, as if the cancelled ticket is converting directly into cash in real time. The gate area is completely realistic — fluorescent terminal lighting, departure board, gate agent desk in background. Only the money materializing is impossible. Documentary-style, natural camera movement, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient terminal sound only. No text, no watermarks.
+```
+
+**FRIDGE — bacteria visual (невидимое становится видимым):**
+```
+VEO 3 SPECTACLE:
+Slow-motion POV shot of a refrigerator door swinging open. As the light inside illuminates the food shelves, a faint shimmer or heat-haze effect rises from the food containers, visualizing the warmth — the temperature that should not be there. Leftovers and fresh food sit normally on shelves, but the rising heat shimmer creates a subtle, unsettling glow above each item. The fridge is completely realistic and ordinary. Documentary-style, handheld, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient fridge hum only. No text, no watermarks.
+```
+
+**PHARMACY — price difference (таблетка раздваивается):**
+```
+VEO 3 SPECTACLE:
+Macro close-up slow-motion shot of a single white pill on a pharmacy counter. Gradually, the pill splits into two identical pills side by side — one stays surrounded by a small stack of dollar bills, the other sits alone with just coins beside it. The two pills are identical. The price difference is visible in the objects surrounding them. The counter surface is a real pharmacy — clinical, fluorescent-lit, clean. The split happens slowly and inevitably, like a demonstration. Documentary-style, natural handheld, photorealistic. Vertical frame, 9:16 portrait orientation. Ambient pharmacy sound only. No text, no watermarks.
+```
+
+---
+
+### КОГДА ИСПОЛЬЗОВАТЬ Spectacle vs Documentary
+
+| Formulas | Spectacle Mode | Documentary Mode |
+|----------|---------------|-----------------|
+| Formula 3 — Command Interrupt | ✅ ПЕРВЫЙ ВЫБОР | Запасной |
+| Formula 5 — Injustice | ✅ ПЕРВЫЙ ВЫБОР | Запасной |
+| Formula 9 — Pattern Interrupt + Stat | ✅ ПЕРВЫЙ ВЫБОР | Запасной |
+| Formula 2 — Specific Loss | ✅ Работает | ✅ Работает |
+| Formula 1 — Personal Warning | ✅ Работает | ✅ Первый выбор |
+| Formula 4 — Insider Observation | ❌ Слабее | ✅ ПЕРВЫЙ ВЫБОР |
+| Formula 7 — Location Danger | ❌ Слабее | ✅ ПЕРВЫЙ ВЫБОР |
+| Formula 8 — Body Self-Sabotage | ✅ Работает | ✅ Работает |
+
+**VIC решает:** если VIC ставит 🔥 VISUAL VIRAL на Spectacle концепт — берём Spectacle. Если сомнения — Documentary безопаснее.
+
+---
+
 ## КОГДА ИСПОЛЬЗОВАТЬ
 
 | Ситуация | Действие |

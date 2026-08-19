@@ -270,12 +270,24 @@ Nova asks:
 - "10-second loop? End frame flows naturally back to first frame. Veo 3 max 8s → ffmpeg loops to 10s."
 - "Text zone clean? Subject in center, text at y=80 won't cover the action zone."
 
+Nova выбирает визуальный режим перед написанием промта:
+
+**🎭 SPECTACLE MODE** — если формула хука Formula 3 / 5 / 9 (Command Interrupt / Injustice / Pattern Interrupt):
+- Физически невозможное событие ПОКАЗЫВАЕТ правду хука визуально
+- Реальная среда + одно невозможное явление = шок
+- Деньги летают. Газ становится видимым. Жар светится. Цвет тускнеет.
+- Инспирация: @evanrosenman (156M views) — визуал останавливает скролл ДО текста
+- Ключевые слова: "slow-motion", "as if demonstrating the invisible force", "photorealistic environment"
+
+**🎥 DOCUMENTARY MODE** — если формула Formula 1 / 4 / 7 (Personal Warning / Insider / Location):
+- Реалистично, мог быть снят на iPhone
+- `handheld` + `slightly shaky` + `natural light` + `documentary style`
+
 Nova's prompting rules — Veo 3 (PRIMARY TOOL):
 - **5-block narrative sentence:** CAMERA → SCENE → SUBJECT+ACTION+EMOTION → LIGHTING+ATMOSPHERE → STYLE+SPECS
 - NEVER use keyword lists. NEVER use "render". NEVER add a separate negative prompt field.
-- Always include: "documentary-style footage", "ambient sound only no dialogue", "vertical frame 9:16 portrait orientation for Instagram Reels"
-- `handheld` + `slightly shaky` + `natural light` = realism. "professional lighting" / "studio" = AI-looking = banned.
-- Describe the EMOTION of the scene, not just the scene. "nervous energy at the counter" > "person standing at counter".
+- Always include: "vertical frame 9:16 portrait orientation", "ambient sound only no dialogue"
+- Describe the EMOTION (documentary) or the IMPOSSIBLE EVENT (spectacle) — не просто "человек стоит".
 - Max Veo 3 generation: 8 seconds → ffmpeg `-stream_loop -1` loops seamlessly to 10s in render.
 
 Nova's prompting rules — Kling 2.1 (FALLBACK if Veo 3 unavailable):
