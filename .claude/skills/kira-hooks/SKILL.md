@@ -38,7 +38,7 @@ description: Write viral Instagram Reel hooks for @thekiramethod in competitor s
 
 ---
 
-## THE PRODUCTION TEAM — run every hook through all 10 before finalizing
+## THE PRODUCTION TEAM — run every hook through all 11 before finalizing
 
 Before writing final hooks, simulate this internal brainstorm. Each team member speaks in character. You are the showrunner — you collect all feedback and produce the final version.
 
@@ -116,7 +116,7 @@ Mike asks:
 - **"КОМУ конкретно зритель перешлёт это в DM? Назови человека."** Если не можешь назвать конкретного получателя (маме, мужу, подруге, коллеге) — хук слабый.
 - "Concrete number or it didn't happen. '$14,000' = real. 'a lot of money' = ignored."
 - "Sound OFF test — 85% of viewers never turn it on. Does this work as text alone?"
-- "Досмотрит ли зритель 5-секундный рилс до конца? Если хук не создаёт open loop — watch time будет низкий."
+- "Досмотрит ли зритель 10-секундный рилс до конца? Если хук не создаёт open loop — watch time будет низкий."
 - **"Сравни с топ-хуком недели у конкурентов. Наш сильнее? Если нет — переписать."**
 
 Mike's порог: **Если прогноз 🔴 DEAD или 🟡 WEAK — хук не проходит. Точка.**
@@ -201,81 +201,86 @@ Red's вердикт:
 
 ---
 
-## THE VIEWER — Tyler
+## THE VIEWER — Tyler 🖱️ LIVE SCROLL TESTER
 
-**Tyler is your test. Every hook must pass Tyler before it passes the team.**
+**Tyler is scrolling the Reels feed RIGHT NOW. Every hook must stop his thumb.**
 **Tyler = millions of Americans. If Tyler stops — millions stop.**
 
-> Tyler is 22, American, scrolling Instagram Reels at 11:15pm on his phone.
-> He has no idea who you are. He just got home from work.
+> Tyler is 22, American. Right now he's scrolling Instagram Reels at 11:15pm on his phone.
+> He has no idea who you are. He just got home from work, full feed ahead.
 > His thumb decides scroll-or-stay in 1.7 SECONDS. Not 3. Not 5. 1.7.
 > He reads the first 3 words only. That's all he gives you.
-> Sound is OFF. Always.
+> Sound is OFF. Always. He's in bed, partner sleeping next to him.
 > He doesn't want to learn anything. He just stumbled into your reel.
 > He will NOT re-read anything. If he has to think — he's gone.
 > He shares things that make him feel like he just learned something his friends don't know yet.
 
-**Tyler's 3-word test:**
-Read only the first 3 words of Line 1. Does Tyler stop?
+**Tyler's live verdict (листает ленту прямо сейчас — 1.7 сек на решение):**
+Read only the first 3 words of Line 1. Tyler stops or swipes — no middle ground.
 
-- "Never Do This" → STOP (command + forbidden action)
-- "My friend lost" → STOP (story starting, personal, loss)
-- "Hotel charged me" → STOP (personal injustice, unexpected)
-- "A local stopped" → STOP (conflict, story, location)
-- "Travel hacks that" → SWIPE (generic, no tension)
-- "The truth about" → SWIPE (too common, seen 1000 times)
-- "You won't believe" → SWIPE (clickbait fatigue, banned)
+- "Never Do This" → 🛑 STOP (command + forbidden action)
+- "My friend lost" → 🛑 STOP (story starting, personal, loss)
+- "Hotel charged me" → 🛑 STOP (personal injustice, unexpected)
+- "A local stopped" → 🛑 STOP (conflict, story, location)
+- "Travel hacks that" → 👆 SWIPE (generic, no tension)
+- "The truth about" → 👆 SWIPE (too common, seen 1000 times)
+- "You won't believe" → 👆 SWIPE (clickbait fatigue, banned)
 
 ---
 
-## THE VIEWER — Maya (Core Demographic · 35–45 · Female)
+## THE VIEWER — Maya 📱 LIVE SCROLL TESTER (Core Demographic · 35–45 · Female)
 
-**Maya is WHERE the money is. Tyler stops the scroll. Maya SENDS it to 5 people.**
+**Maya is scrolling the Reels feed RIGHT NOW. Tyler stops — Maya decides whether to SEND.**
+**One DM from Maya = 5 warm viewers instantly. She IS the algorithm.**
 
-> Maya is 38, American. Corporate job, two kids. Scrolls Instagram during lunch and before bed.
-> She doesn't care about going viral. She shares things that make her feel smart, or protective of her family.
-> One send from Maya reaches her husband, sister, travel group, mom, and work friend. That's 5 warm audience members instantly.
+> Maya is 38, American. Corporate job, two kids. Right now she's scrolling Instagram during her lunch break.
+> She's been served 30 reels already. Slightly tired, slightly distracted — but still scrolling.
+> She doesn't care about "going viral." She shares things that make her feel smart — or that her family NEEDS to know.
+> One DM from Maya reaches: husband, sister, travel group, mom, work friend. That's 5 warm viewers instantly.
 > Tyler tests REACH. Maya tests SHARES. Our niche (35+, USA) is full of Mayas.
 
-**Maya shares when:**
+**Maya sends when (листает ленту прямо сейчас):**
 - "My husband NEEDS to see this before our next trip" (travel, customs, money traps)
 - "I almost made this exact mistake last month" (close-call personal resonance)
 - "I felt embarrassed not knowing this" (makes her feel smarter afterward)
 - "This is dangerous and my family doesn't know" (safety, health warnings)
 
-**Maya won't share if:**
+**Maya won't send if:**
 - Feels like clickbait or a trap → "I don't trust accounts like this"
 - Too young / male-coded → "this isn't for people like me"
 - Too obvious → "everyone already knows this"
 - Scary with no actionable solution → "this just stresses me out and I can't do anything about it"
 
-**Maya's test:** Would Maya send this to her husband or sister tonight before sleep?
-YES → ✅ PASS | NO → state why. Rewrite to fix the failure point.
+**Maya's live verdict:** Would Maya DM this to her husband or sister right now — while still scrolling?
+✅ YES → "отправлю [кому] прямо сейчас, потому что [одна причина]"
+❌ NO → state exactly why. Rewrite hook to fix that failure point before proceeding.
 
 ---
 
 ### 🤖 NOVA — AI Video Prompt Engineer (20 Years Experience)
-*Came from film production — documentaries, ads, music videos. Pivoted to AI video in 2023. Has tested 5000+ prompts across Kling, Runway, and Pika. Knows what generates artifacts, what passes undetected, what stops the scroll visually before text loads.*
+*Came from film production — documentaries, ads, music videos. Pivoted to AI video in 2023. Has tested 5000+ prompts across Veo 3, Kling, Runway, and Pika. Knows what generates artifacts, what passes undetected, what stops the scroll visually before text loads.*
 
-Nova's job: **For every finalized hook — determine the ideal clip. Stock library has it → use it. No match → write the prompts.**
+Nova's job: **For every finalized hook — determine the ideal clip. Stock library has it → use it. No match → write Veo 3 prompt (primary) + Kling fallback. Output goes INLINE in the hook result — no separate skill call.**
 
 Nova asks:
-- "Stock library `/footage/` — anything close? If yes, why generate?"
+- "Stock library `/footage/` — anything close? If yes, use it. Skip generation entirely."
 - "First frame: what does the viewer see in 0.3 seconds BEFORE the text loads? That is the visual hook."
 - "Hook emotion: Fear / Awe / Injustice / Curiosity? Each requires different visual language and shot type."
-- "AI artifact risk? Face close-up = HIGH (distorted features). Hands holding objects = MEDIUM (finger count). Environments = LOW."
-- "10-second seamless loop? End frame must flow naturally back to first frame."
-- "Text zone clean? Subject in center, top 1/4 and bottom 1/4 of frame free for white overlay."
+- "AI artifact risk? Face close-up = HIGH (distorted features). Environments = LOW. Avoid faces when possible."
+- "10-second loop? End frame flows naturally back to first frame. Veo 3 max 8s → ffmpeg loops to 10s."
+- "Text zone clean? Subject in center, text at y=80 won't cover the action zone."
 
-Nova's 20-year rules:
-- `handheld` + `slightly shaky` + `natural light` + `documentary style` = realism. Never "professional" or "studio".
-- Describe the EMOTION of the scene, not just the scene. "Nervous energy" > "person standing at counter".
-- Kling: comma-separated precision descriptors. Best realism and photorealism.
-- Runway: start with `[Camera motion]` (Slow push in / Pan right / Track forward). Best motion control.
-- Pika: conversational natural language. Fastest iteration for quick tests.
-- Negative prompt ALWAYS includes: `text, watermark, logo, CGI, studio lighting, obvious AI artifacts, distorted hands, extra fingers`
+Nova's prompting rules — Veo 3 (PRIMARY TOOL):
+- **5-block narrative sentence:** CAMERA → SCENE → SUBJECT+ACTION+EMOTION → LIGHTING+ATMOSPHERE → STYLE+SPECS
+- NEVER use keyword lists. NEVER use "render". NEVER add a separate negative prompt field.
+- Always include: "documentary-style footage", "ambient sound only no dialogue", "vertical frame 9:16 portrait orientation for Instagram Reels"
+- `handheld` + `slightly shaky` + `natural light` = realism. "professional lighting" / "studio" = AI-looking = banned.
+- Describe the EMOTION of the scene, not just the scene. "nervous energy at the counter" > "person standing at counter".
+- Max Veo 3 generation: 8 seconds → ffmpeg `-stream_loop -1` loops seamlessly to 10s in render.
 
-Nova outputs: ready-to-paste prompts for Kling + Runway + Pika. Run `/ai-video-prompts` for full system with all niches and templates.
+Nova's prompting rules — Kling 2.1 (FALLBACK if Veo 3 unavailable):
+- Comma-separated precision descriptors. Best photorealism after Veo 3.
+- Negative prompt required: `text, watermark, logo, CGI, studio lighting, obvious AI artifacts, distorted hands, extra fingers`
 
 ---
 
@@ -298,6 +303,28 @@ VIC's verdict:
 - ❌ CHANGE CONCEPT — "Wrong visual for this hook. Try: [alternative]."
 
 **VIC's rule: "The video is hook #1. The text is hook #2. A weak video means you never get to the text."**
+
+---
+
+### 🔍 RICO — Trend Intelligence Analyst
+*Monitors top-performing content across Instagram, TikTok, and YouTube Shorts in travel/health/food/money niches. Tracks maks.motivator and 20+ competitor accounts daily. Knows what got 100K+ sends THIS WEEK — and what's been done to death.*
+
+Rico's job: **Prevent the team from publishing yesterday's angle. Every hook must be fresh this week — not just "not seen before", but actively under-tapped RIGHT NOW.**
+
+Rico checks before any hook is finalized:
+- "Did maks.motivator or any top competitor post THIS exact angle in the last 7 days? If yes — we're second, not first."
+- "What format is winning in the niche THIS week? Are we using it or ignoring the signal?"
+- "Is this topic oversaturated right now, or still a fresh opportunity?"
+- "Does our specific angle add a detail that competitors' versions missed?"
+
+Rico's verdicts:
+- 🟢 FRESH — "Not seen this week. High opportunity. Angle is ours."
+- 🟡 CROWDED — "Similar posted 3+ times by competitors. Make our stat 3× more specific."
+- 🔴 SATURATED — "Everyone's doing this. Change angle, change stat, or change niche category."
+
+**Rico's rule: "Being second with the same hook is worthless. A slightly different angle = a completely different algorithm trajectory."**
+
+Rico also drives autonomous topic selection (Step 0) — when no topic is given, Rico picks the freshest opportunity from the TOPIC BANK based on the current niche landscape.
 
 ---
 
@@ -481,27 +508,40 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
 ---
 
+### Step 0 — ВЫБОР ТЕМЫ (только если тема НЕ указана пользователем)
+
+Если тема дана → пропустить Step 0, идти в Step 1.
+
+Если тема НЕ дана — команда выбирает автономно:
+1. **Rico**: сканирует TOPIC BANK → убирает темы опубликованные последние 3 дня → помечает 🟢 FRESH / 🔴 SATURATED
+2. **Mike**: из FRESH-тем выбирает с максимальным send-потенциалом на этой неделе
+3. **VIC**: финальная проверка — визуал темы свежий или видели в ленте последние 48ч?
+4. Победитель: тема где Rico 🟢 + Mike 🔥/🟢 + VIC минимум 🎬 STRONG
+5. Сообщить пользователю одной строкой: `🎯 ТЕМА КОМАНДЫ: [название темы]`
+
 ### Step 1 — ВНУТРЕННИЙ МОЗГОШТУРМ (пользователь не видит)
 
-Написать 3–5 вариантов хука внутри. Для каждого прогнать через команду из 10:
+Написать 3–5 вариантов хука внутри. Для каждого прогнать через команду из 11:
 - Jordan: первые 3 слова — СТОП или СВАЙП? Open loop в 3 секунды?
 - Mike: прогноз 🔴DEAD / 🟡WEAK / 🟢STRONG / 🔥VIRAL? Кому конкретно перешлют?
 - Alex: звучит как живой человек? Какая высокая эмоция?
 - Sam: каждое слово ≤6 на строку? Шрифт будет 60px+?
 - Dana: безопасно? Факт проверяем? Не пенализирует ли IG?
 - Red: попытка убить хук. KILL / WEAK / SURVIVED?
-- Tyler: остановит скролл за 0.3 секунды?
-- Maya: перешлёт мужу / сестре этой же ночью? ✅ / ❌ (объяснить почему нет)
-- NOVA: есть клип в библиотеке `/footage/`? Если нет — какой visual нужен?
+- Tyler: листает ленту — остановит скролл за 1.7 секунды? 🛑STOP или 👆SWIPE?
+- Maya: листает ленту — DM отправит прямо сейчас? ✅ "отправлю [кому]" / ❌ [почему нет]
+- NOVA: есть клип в библиотеке `/footage/`? Если нет — какой Veo 3 visual нужен?
 - VIC: визуал свежий или видели 1000 раз? VISUAL VIRAL / STRONG / WEAK / CHANGE?
+- Rico: угол свежий на этой неделе? 🟢FRESH / 🟡CROWDED / 🔴SATURATED?
 
 **Порог публикации:**
-- Mike должен поставить минимум 🟢 STRONG (прогноз 5K+ views)
-- Red должен поставить ✅ SURVIVED (не смог убить)
-- Maya должна ответить ✅ "отправлю [кому] сегодня же"
-- VIC должен поставить минимум 🎬 VISUAL STRONG
+- Mike минимум 🟢 STRONG (прогноз 5K+ views)
+- Red ✅ SURVIVED (не смог убить)
+- Maya ✅ "отправлю [кому] прямо сейчас"
+- VIC минимум 🎬 VISUAL STRONG
+- Rico 🟢 FRESH (угол не использовался конкурентами на этой неделе)
 - Все остальные 6 — ✅
-- Если любой не проходит — переписать. Повторять пока все 10 ✅.
+- Если любой не проходит — переписать внутренне. Повторять пока все 11 ✅.
 
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный победитель
 
@@ -516,11 +556,27 @@ hook_lines: [
 cta_badge: "( текст ↓ )"
 
 АУДИТ КОМАНДЫ:
-Jordan ✅ | Mike 🟢 STRONG (→[кому]) | Alex ✅ [эмоция] | Sam ✅ 6w | Dana ✅ | Red ✅ SURVIVED | Tyler STOPS ✅ | Maya SENDS ✅
+Jordan ✅ | Mike 🟢 STRONG (→[кому]) | Alex ✅ [эмоция] | Sam ✅ 6w | Dana ✅ | Red ✅ SURVIVED | Rico 🟢 FRESH
 
-ВИДЕО-БРИФ:
-NOVA: [клип 1_X из библиотеки ✅] / [нет клипа → run /ai-video-prompts]
-VIC: 🎬 VISUAL STRONG ✅
+SCROLL TEST (листают ленту прямо сейчас):
+Tyler [22М] 🛑 STOPS — "[первые 3 слова]" → [fear/injustice/curiosity]
+Maya [38F] 📲 SENDS — "отправлю [кому] прямо сейчас, потому что [причина]"
+
+VIC 🎬 VISUAL STRONG — [визуальная концепция одной строкой]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+⭐ VEO 3 PROMPT (вставить в labs.google.com/fx/tools/video-fx):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[ПОЛНЫЙ VEO 3 ПРОМТ — готовый к вставке.
+Нарративные предложения, 5 блоков в одном тексте:
+CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+↳ Запросить MAX duration (8s) → render зациклит до 10s
+↳ Negative prompt НЕ нужен — ограничения вшиты в текст промта
+
+🎯 KLING 2.1 (если Veo 3 недоступен):
+[готовый Kling промт — comma-separated descriptors]
+🚫 negative: text, watermark, logo, CGI, studio lighting, distorted hands, extra fingers
 ```
 
 ### Step 3 — Размещение текста
