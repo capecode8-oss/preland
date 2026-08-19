@@ -441,13 +441,10 @@ cta_badge: "( текст ↓ )"
 Jordan ✅ | Mike 🟢 STRONG (→маме/подруге) | Alex ✅ awe | Sam ✅ 6w | Dana ✅ | Red ✅ SURVIVED | Tyler STOPS ✅
 ```
 
-### Step 3 — Body clearance (после одобрения хука)
+### Step 3 — Размещение текста
 
 ```
-Clip: [filename]
-body_union: y=TOP–BOTTOM (FULL BODY — lowest visible body part, not just face)
-forbidden_zone: y=FORBIDDEN_TOP–FORBIDDEN_BOTTOM
-text_y: VALUE (BELOW / ABOVE body)
+hook_y0 = 80 (всегда верх — железное правило)
 QA: center=540 box_w=XXX cta_bottom=XXX ✅
 ```
 

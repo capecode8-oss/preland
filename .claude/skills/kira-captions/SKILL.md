@@ -354,9 +354,8 @@ Only publish if all 6 green. If any red — fix that specific issue and re-check
 
 ---
 
-## BODY CLEARANCE REMINDER (кaждый раз перед рендером)
+## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО
 
-⚠️ Текст накладывается ПОСЛЕ проверки body clearance в kira-hooks.
-Напоминание: измерять ПОЛНОЕ ТЕЛО (не только лицо) по 5 кадрам.
-body_bottom = самая низкая видимая часть тела (руки, биноклей, корпус, ноги).
-hook_y0 ≥ body_bottom + 70. Никогда не накладывать текст на тело.
+**ВСЕГДА hook_y0 = 80 (верх экрана). Никаких измерений. Никакого анализа кадров.**
+Футажи специально сняты так, что лицо не закрывается плашкой.
+QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1536px
