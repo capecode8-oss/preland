@@ -794,9 +794,12 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 
 - Font: Montserrat-BlackItalic
   Path: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Font size: auto_font(max_size=100) → **MINIMUM 60px, target 60–80px** — if result < 60px, shorten hook lines until font hits 60px+. NEVER publish with font below 60px. Never hardcode.
-- FILL: (255,255,255,245) | RADIUS: 14 | PAD_X: 32 | PAD_Y: 22 | BOX_GAP: 20
-- Canvas: 1080×1920 | CENTER_X=540 | MAX_BOX_W=860px | MAX_TEXT_W=796px
+- Font size: auto_font(max_size=70, min_size=50), авто-перенос строк если > MAX_TEXT_W
+- СТИЛЬ: **СПЛОШНАЯ ПЛАШКА** — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
+- FILL: (255,255,255,248) | RADIUS: 18 | PAD_X: 32 | PAD_TOP/BOTTOM: 28 | LINE_GAP: 8
+- Canvas: 1080×1920 | CENTER_X=540 | **MAX_BOX_W=860px** (НИКОГДА не менять) | **MAX_TEXT_W=760px**
+- **BOTTOM_ANCHOR=1550px** — hook_y0 = 1550 - box_height (выше Instagram UI chrome)
 - Duration: 300 frames = 10.0s at 30fps (loop shorter clips with -stream_loop -1)
 - Codec: H.264, yuv420p, -an, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
+- Render script: `/home/user/preland/render.py` — использовать всегда
