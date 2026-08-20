@@ -385,6 +385,7 @@ Only publish if all 6 green. If any red — fix that specific issue and re-check
 
 ## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО
 
-**ВСЕГДА hook_y0 = 80 (верх экрана). Никаких измерений. Никакого анализа кадров.**
-Футажи специально сняты так, что лицо не закрывается плашкой.
-QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1536px
+**ЗЕЛЁНАЯ ЗОНА: текст ВСЕГДА внизу кадра (y=1400–1820px). Лицо свободно сверху.**
+- `BOTTOM_ANCHOR = 1820` | `hook_y0 = 1820 - total_block_height`
+- ❌ hook_y0 = 80 ЗАПРЕЩЕНО | ❌ центр ЗАПРЕЩЕНО | ❌ анализ кадров ЗАПРЕЩЕНО
+QA: center=540±2px | box_w ≤ 860px | hook_y0 ≥ 1400 | cta_bottom ≤ 1820
