@@ -1,4 +1,14 @@
 {
+  "permissions": {
+    "allow": [
+      "mcp__Metricoll__createScheduledPost",
+      "mcp__Metricoll__getScheduledPosts",
+      "mcp__Metricoll__updateScheduledPost",
+      "mcp__Metricoll__getBrandSettings",
+      "mcp__Metricoll__getAnalyticsDataByMetrics",
+      "mcp__Metricoll__getBestTimeToPostByNetwork"
+    ]
+  },
   "hooks": {
     "UserPromptSubmit": [
       {
