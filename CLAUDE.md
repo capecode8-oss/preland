@@ -76,11 +76,16 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ⚠️ **Текст ВСЕГДА внизу. Лицо всегда свободно сверху. Без исключений. Никаких измерений.**
 
-**BOTTOM placement:** текстовый блок прижат к низу. `cta_bottom = 1820px` (100px от нижнего края 1920px).
-hook_y0 вычисляется автоматически: `hook_y0 = 1820 - total_text_block_height`
+**SOLID BOX placement (сплошная плашка):**
+- Один прямоугольник на весь текст (не отдельные плашки на каждую строку)
+- `BOTTOM_ANCHOR = 1550px` (выше Instagram UI — кнопки/имя канала закрывают ниже ~1680px)
+- `hook_y0 = BOTTOM_ANCHOR - box_height`
+- `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` (safety margin 50px с каждой стороны)
+- font: max_size=70, min_size=50, авто-перенос строк если строка > MAX_TEXT_W
 
-❌ ЗАПРЕЩЕНО: ставить текст сверху, делать body clearance анализ, извлекать кадры для измерений
-✅ ВСЕГДА: текст внизу (cta_bottom=1820), лицо сверху свободно, рендерить, показывать превью
+❌ ЗАПРЕЩЕНО: ставить текст сверху, делать body clearance анализ, писать строки длиннее 6 слов
+❌ ЗАПРЕЩЕНО: менять MAX_BOX_W > 860 — текст выйдет за края экрана
+✅ ВСЕГДА: сплошная плашка внизу, авто-перенос строк, проверять превью перед пушем
 
 ---
 
@@ -91,9 +96,11 @@ hook_y0 вычисляется автоматически: `hook_y0 = 1820 - tot
 - Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
 - Шрифт: `Montserrat-BlackItalic` — путь `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Размер шрифта: auto_font(max_size=100) → **МИНИМУМ 60px, цель 60–80px** — если результат < 60px, сокращать строки хука пока шрифт не станет 60px+. Никогда не публиковать если шрифт ниже 60px.
-- FILL: (255, 255, 255, 245), RADIUS: 14, PAD_X: 32, PAD_Y: 22, BOX_GAP: 20
-- CENTER_X: 540, MAX_BOX_W: 860px, MAX_TEXT_W: 796px
+- Шрифт: auto_font(max_size=70, min_size=50), авто-перенос строк если > MAX_TEXT_W
+- СТИЛЬ: СПЛОШНАЯ ПЛАШКА — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
+- FILL: (255, 255, 255, 248), RADIUS: 18, PAD_X: 32, PAD_TOP/BOTTOM: 28
+- CENTER_X: 540, **MAX_BOX_W: 860px** (НИКОГДА не увеличивать), **MAX_TEXT_W: 760px**
+- BOTTOM_ANCHOR: 1550px (выше Instagram UI chrome)
 - Всегда рендерить JPG-превью из финального MP4 и показывать перед публикацией
 
 ---
