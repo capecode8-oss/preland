@@ -486,15 +486,94 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
 ---
 
-## HOOK LINE RULES (non-negotiable)
+## ДВА ФОРМАТА ХУКА — выбирать по задаче
 
-- Max 3 lines in hook_lines (2 is ideal)
-- **Max 6 words per line** — Sam cuts at 6, no exceptions (гарантирует шрифт 60px+)
-- First word is the most important word in the hook
-- CTA badge always in parentheses, always ends ↓, always hides the payoff
-- Never explain the payoff in the hook — that's what the caption is for
+---
+
+### FORMAT A — SHORT PUNCH (наш оригинальный)
+Используется для: команды, предупреждения, "Never do X", цифра как удар.
+
+**Правила:**
+- Max 3 строки (2 — идеал)
+- **Max 6 слов на строку** → шрифт автоматически 60px+
+- CTA badge обязателен: `( текст ↓ )` — скрывает payoff
+- Первое слово = самое сильное слово хука
+- Никогда не раскрывать payoff в хуке
+
+**Пример:**
+```
+"Never Book This Cabin"
+"On A Cruise Ship."
+( I was sick for 3 days straight ↓ )
+```
+→ 134K views ✅
+
+---
+
+### FORMAT B — STORY HOOK (maks.motivator style) ⭐ ДОБАВЛЕН
+Используется для: личные истории, "my friend", "a local", "a waiter", insider witness.
+
+**Правила:**
+- 3–5 строк, полные предложения — без лимита слов на строку
+- Структура: SETUP → СОБЫТИЕ → ПОСЛЕДСТВИЕ (обрезается на самом интересном месте)
+- **НЕТ CTA badge** — история сама является крючком
+- Шрифт меньше (авто ~40–55px) — так и должно быть, как у конкурента
+- Первое лицо ОБЯЗАТЕЛЬНО: "I", "My friend", "A local", "A waiter", "A nurse"
+- Конкретное место или сумма ОБЯЗАТЕЛЬНО: "in Rome", "$140", "in Bangkok"
+- История обрывается ДО развязки — зритель читает капшен чтобы узнать конец
+
+**Структура истории:**
+```
+[Кто] + [сделал обычное действие] + [неожиданное событие] + [последствие / cliff-hanger]
+```
+
+**Примеры (реальные хиты maks.motivator):**
+```
+"A waiter in Rome brought me two different bills
+for the same table.
+The second one only appeared after I paid the first."
+→ 659K views
+
+"My friend picked up a rental car in Iceland,
+waved off the extra insurance to save money,
+and drove straight into a gravel storm on the Ring Road.
+What it cost him made the insurance look free."
+→ 41.6K views
+
+"I connected to 'Free Airport WiFi' in Bangkok
+to kill time before my flight.
+Ten minutes later, my phone was buzzing
+with charges I never made."
+→ 79.7K views
+```
+
+**ТЕМЫ для Format B (story hook):**
+- Travel scams ("A waiter in [city]...", "A taxi driver in [city]...")
+- Health discoveries ("A nurse in [country] changed my...", "My doctor showed me...")
+- Money traps ("A card machine in [country] quietly cost me...")
+- Cruise/hotel insider ("The cruise director told me...", "The hotel manager admitted...")
+- Airport dangers ("A security officer stopped me...", "An airline employee warned me...")
+
+**SAM проверяет Format B:**
+- Первые 3 слова → СТОП или СВАЙП?
+- Конкретное место или число есть?
+- История обрывается на cliff-hanger?
+- Зритель ДОЛЖЕН читать капшен чтобы узнать чем кончилось?
+
+---
+
+**КАК ВЫБРАТЬ ФОРМАТ:**
+- Факт/предупреждение/команда → **Format A** (короткий удар)
+- Личная история с местом/человеком/событием → **Format B** (story hook)
+- Оба формата проходят полный аудит команды (7 человек). Оба законны.
+
+---
+
+**ОБЩИЕ ПРАВИЛА для обоих форматов:**
 - No puns. No wordplay. No rhymes. No "you won't believe."
 - **Simple plain American English. Always. This is non-negotiable.**
+- Первое лицо или прямое обращение — никогда She/He третье лицо
+- Конкретная цифра или место — всегда когда возможно
 
 ---
 
@@ -563,10 +642,9 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный победитель
 
-Формат вывода:
-
+**Format A (short punch):**
 ```
-ФИНАЛЬНЫЙ ХУК — Formula: [номер / название]
+ФИНАЛЬНЫЙ ХУК — Format A | Formula: [номер / название]
 hook_lines: [
     "Строка 1",
     "Строка 2",
@@ -653,6 +731,19 @@ CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
 Язык: простой американский английский, предложения ≤15 слов, как iMessage другу в 11 вечера  
 Мини-продукт в CTA: **The 3AM Calm Card** (бесплатно, одна страница, 4 шага) → Comment CALM / link in bio. Апсейл: 21-Page 7-Night Guide — $9.90
 
+**Format B (story hook):**
+```
+ФИНАЛЬНЫЙ ХУК — Format B | Formula: [номер / название]
+hook_lines: [
+    "A waiter in Rome brought me two different bills",
+    "for the same table.",
+    "The second one only appeared after I paid the first.",
+]
+cta_badge: None (story is the hook)
+
+АУДИТ КОМАНДЫ:
+Jordan ✅ | Mike 🟢 STRONG (→другу кто едет в Европу) | Alex ✅ злость | Sam ✅ cliff-hanger | Dana ✅ | Red ✅ SURVIVED | Tyler STOPS ✅
+```
 ### Step 3 — Размещение текста
 
 ```

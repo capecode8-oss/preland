@@ -49,10 +49,16 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 ❌ СТОП: отношения / измена / cheating drama — больше не делаем.
 Ежедневно публикуем 4–5 рилсов через Metricool.
 
-**Формат хуков — конкурент (maks.motivator):**
-- Первое лицо: "I", "my friend", "A local told me" — НЕ "She/He"
-- Страх потери + конкретные цифры + universal shareability
-- Главный KPI: будет ли зритель пересылать другу? Если нет — переписать.
+**Формат хуков — конкурент (maks.motivator) — ДВА ФОРМАТА:**
+
+**Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, CTA badge `( текст ↓ )`, шрифт 60px+
+→ Для команд, предупреждений, фактов с цифрой. Пример: "Never Book This Cabin On A Cruise Ship"
+
+**Format B — Story Hook:** 3-5 строк полными предложениями, без CTA badge, шрифт ~40-55px авто
+→ Для личных историй с местом/человеком. Структура: SETUP → СОБЫТИЕ → CLIFF-HANGER
+→ Пример: "A waiter in Rome brought me two different bills for the same table. The second one only appeared after I paid the first."
+
+**Общее для обоих:** Первое лицо ("I/my friend/a local") — НЕ "She/He". Конкретное место или цифра. Главный KPI: зритель пересылает другу.
 
 ---
 
