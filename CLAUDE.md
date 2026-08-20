@@ -54,11 +54,29 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 **Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, CTA badge `( текст ↓ )`, шрифт 60px+
 → Для команд, предупреждений, фактов с цифрой. Пример: "Never Book This Cabin On A Cruise Ship"
 
-**Format B — Story Hook:** 3-5 строк полными предложениями, без CTA badge, шрифт ~40-55px авто
+**Format B — Story Hook (ОСНОВНОЙ):** 3 строки полными предложениями, без CTA badge
 → Для личных историй с местом/человеком. Структура: SETUP → СОБЫТИЕ → CLIFF-HANGER
 → Пример: "A waiter in Rome brought me two different bills for the same table. The second one only appeared after I paid the first."
 
-**Общее для обоих:** Первое лицо ("I/my friend/a local") — НЕ "She/He". Конкретное место или цифра. Главный KPI: зритель пересылает другу.
+**Общее для обоих:** Kira рассказывает от первого лица ("I", "my", "a local told me") — НЕ "She/He". Конкретное место или цифра. Главный KPI: зритель пересылает другу.
+
+## 🔑 КОДОВОЕ СЛОВО "ЗАПЛАНИРУЕМ" — ЖЕЛЕЗНОЕ ПРАВИЛО
+
+Когда пользователь говорит **"запланируем рилсы"**, **"давай 5 рилсов"**, **"сделай batch"** — АВТОМАТИЧЕСКИ применять:
+
+1. **Kira = рассказчик от первого лица** — "I found out", "A hotel receptionist told me", "My doctor showed me"
+2. **Format B приоритет** — полные предложения, 3 строки, без CTA badge
+3. **Три формулы-приоритета (maks.motivator стиль):**
+   - `"I [did X] for [Y years]. A [person] told me [shocking fact]. I [changed] since."` — личная история
+   - `"The first thing [person] looks for is not [obvious thing]. It's this."` — curiosity gap
+   - `"Every [common thing] equals [shocking fact]. [Authority] know. No one tells you."` — insider reveal
+4. **Клипы — только новые 32_x серия** (подобрать по теме, см. footage mapping в kira-hooks)
+5. **Clips mapping:**
+   - 32_6 = hotel reception | 32_7 = hotel room
+   - 32_5 = airplane window seat | 32_8 = Tokyo cafe
+   - 32_12 = cruise cabin | 32_13 = cruise deck
+   - 32_17 = baggage claim | 32_1/32_4/32_10 = airport terminal
+   - 32_11 = airport exit | 32_3 = travel selfie
 
 ---
 

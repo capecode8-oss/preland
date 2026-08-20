@@ -343,6 +343,32 @@ Rico also drives autonomous topic selection (Step 0) — when no topic is given,
 
 ---
 
+## КОДОВОЕ СЛОВО "ЗАПЛАНИРУЕМ" — ВШИТО НАВСЕГДА
+
+Когда пользователь говорит **"запланируем рилсы"** или **"давай 5 рилсов"** — АВТОМАТИЧЕСКИ:
+
+1. **Kira рассказывает от первого лица** — она главный персонаж. НЕ "она", НЕ "они". Только "I", "my", "a local told me", "a [authority] showed me".
+2. **maks.motivator стиль** — полные предложения, реальные истории, конкретные места и цифры.
+3. **Три формулы в приоритете (всегда первыми):**
+   - "I did X for Y years. A [person] told me [shocking thing]. I [changed] since." — личная история
+   - "The first thing [person] does is not [expected thing]. It's this." — curiosity gap
+   - "A [authority] told me [insider secret]. [Specific number]% of [people] don't know." — insider + stat
+4. **Format B (story) = основной формат** — 3 строки, полные предложения, без CTA badge
+5. **Новые 32_x клипы** — смотреть превью, подбирать клип по содержанию темы
+6. **Clips mapping (запомнить):**
+   - 32_6 = hotel reception
+   - 32_7 = hotel room
+   - 32_8 = Tokyo cafe (Japan)
+   - 32_5 = airplane window seat
+   - 32_12 = cruise cabin ocean view
+   - 32_13 = cruise deck Mediterranean
+   - 32_17 = airport baggage claim
+   - 32_1, 32_4, 32_10 = airport terminal/walking
+   - 32_11 = airport exit
+   - 32_3 = travel selfie (Rio)
+
+---
+
 ## PROVEN FORMULAS — from Ogilvy, Hormozi, MrBeast, maks.motivator
 
 **Приоритет выбора:** сначала пробовать формулы 3, 5 (Pattern Interrupt, 72-84% retention), затем 4, 7 (Curiosity Gap, 65-78%). Формулы 1, 2 (Bold Claim, 55-70%) и 6, 8 (Problem, 50-65%) — использовать когда Pattern Interrupt/Curiosity Gap не подходят по теме.
