@@ -4,8 +4,10 @@ SOLID BOX render — one continuous white rectangle for all hook lines.
 Position: bottom area but ABOVE Instagram UI chrome (~200px from bottom).
 BOTTOM_ANCHOR = 1680 (Instagram UI starts ~1700px)
 """
-import subprocess, os
+import subprocess, os, random, glob
 from PIL import Image, ImageDraw, ImageFont
+
+MUSIC_DIR = "/home/user/preland/music"
 
 FFMPEG = "/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"
 FONT_PATH = "/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf"
@@ -147,6 +149,53 @@ def render_reel(clip_name, slug, lines, cta=None, date="2026-08-20"):
     mb = os.path.getsize(out_mp4) / 1024 / 1024
     print(f"  ✅ {slug} ({mb:.1f}MB)")
     return True
+
+
+def render_reel_youtube(clip_name, slug, lines, music_path, cta=None, date="2026-08-21"):
+    """Render YouTube Short — same as render_reel but with audio mixed in."""
+    clip = f"{FOOTAGE}/{clip_name}.mp4"
+    out_mp4 = f"{RENDERED}/{date}_{slug}_yt.mp4"
+    out_jpg = f"{RENDERED}/{date}_{slug}_yt.jpg"
+
+    overlay = render_overlay(lines, cta)
+    overlay_path = f"/tmp/{slug}_yt_overlay.png"
+    overlay.save(overlay_path)
+
+    cmd = [
+        FFMPEG, "-y",
+        "-stream_loop", "-1", "-i", clip,
+        "-i", overlay_path,
+        "-stream_loop", "-1", "-i", music_path,
+        "-filter_complex",
+        "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30[bg];"
+        "[1:v]scale=1080:1920[ov];"
+        "[bg][ov]overlay=0:0[outv]",
+        "-map", "[outv]", "-map", "2:a",
+        "-t", "5.000",
+        "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p",
+        "-c:a", "aac", "-b:a", "192k",
+        "-crf", "18", "-preset", "fast",
+        "-frames:v", "150",
+        out_mp4
+    ]
+    r = subprocess.run(cmd, capture_output=True)
+    if r.returncode != 0:
+        print(f"  ERROR: {r.stderr.decode()[-300:]}")
+        return False
+
+    subprocess.run([FFMPEG, "-y", "-i", out_mp4, "-vframes", "1", "-ss", "0.5", out_jpg], capture_output=True)
+    mb = os.path.getsize(out_mp4) / 1024 / 1024
+    track = os.path.basename(music_path)
+    print(f"  ✅ {slug}_yt ({mb:.1f}MB) | 🎵 {track}")
+    return True
+
+
+def pick_music_for_batch(n):
+    """Pick n unique random tracks from MUSIC_DIR for one day's batch."""
+    tracks = sorted(glob.glob(f"{MUSIC_DIR}/*.mp3"))
+    if len(tracks) < n:
+        tracks = tracks * (n // len(tracks) + 1)
+    return random.sample(tracks, n)
 
 
 # ── BATCH Aug 20 ────────────────────────────────────────────
