@@ -132,10 +132,10 @@ def render_reel(clip_name, slug, lines, cta=None, date="2026-08-20"):
         "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30[bg];"
         "[1:v]scale=1080:1920[ov];"
         "[bg][ov]overlay=0:0",
-        "-t", "10.000",
+        "-t", "5.000",
         "-c:v", "libx264", "-profile:v", "high", "-pix_fmt", "yuv420p",
         "-an", "-crf", "18", "-preset", "fast",
-        "-frames:v", "300",
+        "-frames:v", "150",
         out_mp4
     ]
     r = subprocess.run(cmd, capture_output=True)
