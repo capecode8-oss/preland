@@ -103,7 +103,7 @@ VIC's вердикт:
 Ключевые слова реализма: `handheld` / `slightly shaky` / `natural light` / `documentary style` / `shot on phone`
 
 ### Rule 5 — 10-second clip, seamless loop preferred
-Оптимальная длина генерации — 10 секунд. Если клип короче — будет залуплен при рендере.
+Оптимальная длина генерации — 5 секунд. Если клип короче — будет залуплен при рендере.
 Для loop: используй движения которые зацикливаются естественно: конвейер, ходьба по коридору, медленный pan, волны, вращение.
 
 ---
@@ -121,7 +121,7 @@ VIC's вердикт:
 
 **Duration в Veo 3:**
 - VideoFX генерирует до 8 секунд за раз
-- Для 10-секундного рилса: сгенерировать 8s → рендер залупит до 10s автоматически
+- Для 5-секундного рилса: сгенерировать 5s → рендер залупит до 5s автоматически
 - Альтернатива: Vertex AI API — там можно запросить duration через параметры
 
 ---
@@ -454,7 +454,7 @@ Visual concept: [одна фраза — что зритель видит в п�
 
 ⭐ VEO 3 (главный — labs.google.com/fx/tools/video-fx):
 [Готовый промт — 5 блоков предложениями, вставить напрямую]
-↳ Duration: запросить максимум (8s) → рендер залупит до 10s
+↳ Duration: запросить 5s → рендер залупит до 5s
 ↳ No separate negative prompt — ограничения уже в тексте
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -477,7 +477,7 @@ text, watermark, logo, subtitle, CGI, studio lighting, obvious AI artifacts, unc
 
 TECH SPECS:
 - Duration: 10 seconds | Resolution: 1080×1920 (9:16 вертикальное)
-- Veo 3 generates 8s max → loop to 10s in render (-stream_loop -1)
+- Veo 3 generates 5s → loop to 5s in render (-stream_loop -1)
 - После генерации: footage-manager → залогировать как custom clip
 - Затем: kira-hooks body clearance → рендер
 
