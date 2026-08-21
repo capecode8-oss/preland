@@ -24,7 +24,7 @@ description: 7-point QA gate for every reel before scheduling in Metricool. Run 
 | Параметр | Требование | Как проверить |
 |----------|------------|---------------|
 | Размер | 1080×1920 | `ffprobe [file] 2>&1 \| grep Video` |
-| Длительность | ровно 10.0s (±0.1s) | `ffprobe -v quiet -show_entries format=duration` |
+| Длительность | ровно 5.0s (±0.1s) | `ffprobe -v quiet -show_entries format=duration` |
 | FPS | 30 fps | в выводе ffprobe |
 | Кодек | H.264, yuv420p | в выводе ffprobe |
 | Аудио | ОТСУТСТВУЕТ (-an) | нет audio stream в ffprobe |

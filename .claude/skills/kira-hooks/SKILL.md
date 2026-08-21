@@ -267,7 +267,7 @@ Nova asks:
 - "First frame: what does the viewer see in 0.3 seconds BEFORE the text loads? That is the visual hook."
 - "Hook emotion: Fear / Awe / Injustice / Curiosity? Each requires different visual language and shot type."
 - "AI artifact risk? Face close-up = HIGH (distorted features). Environments = LOW. Avoid faces when possible."
-- "10-second loop? End frame flows naturally back to first frame. Veo 3 max 8s → ffmpeg loops to 10s."
+- "5-second loop? End frame flows naturally back to first frame. Veo 3 max 5s → ffmpeg loops to 5s."
 - "Text zone clean? Subject in center, text at y=80 won't cover the action zone."
 
 Nova выбирает визуальный режим перед написанием промта:
@@ -291,7 +291,7 @@ Nova's prompting rules — Veo 3 (PRIMARY TOOL):
 - **ENVIRONMENT TEXTURE**: 3-4 конкретные детали среды с imperfections: "scuffed linoleum floors / slightly yellowed grout / salt-air rust streaks / lived-in kitchen counter"
 - **TECHNICAL IMPERFECTIONS**: 2-3 из: "autofocus lag / camera breathing / slight overexposure / digital noise / constant minor reframing / auto-exposure adjusting"
 - **EMOTIONAL ATMOSPHERE**: специфическая фраза, не общая: "the specific nervous energy of someone who suspects they've been cheated"
-- Max Veo 3 generation: 8 seconds → ffmpeg `-stream_loop -1` loops seamlessly to 10s in render.
+- Max Veo 3 generation: 8 seconds → ffmpeg `-stream_loop -1` loops seamlessly to 5s in render.
 
 Nova's prompting rules — Kling 2.1 (FALLBACK if Veo 3 unavailable):
 - Comma-separated precision descriptors. Best photorealism after Veo 3.
@@ -732,7 +732,7 @@ VIC 🎬 VISUAL STRONG — [визуальная концепция одной �
 Нарративные предложения, 5 блоков в одном тексте:
 CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-↳ Запросить MAX duration (8s) → render зациклит до 10s
+↳ Запросить duration (5s) → render зациклит до 5s
 ↳ Negative prompt НЕ нужен — ограничения вшиты в текст промта
 
 🎯 KLING 2.1 (если Veo 3 недоступен):
@@ -825,7 +825,7 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 - FILL: (255,255,255,248) | RADIUS: 18 | PAD_X: 32 | PAD_TOP/BOTTOM: 28 | LINE_GAP: 8
 - Canvas: 1080×1920 | CENTER_X=540 | **MAX_BOX_W=860px** (НИКОГДА не менять) | **MAX_TEXT_W=760px**
 - **BOTTOM_ANCHOR=1550px** — hook_y0 = 1550 - box_height (выше Instagram UI chrome)
-- Duration: 300 frames = 10.0s at 30fps (loop shorter clips with -stream_loop -1)
+- Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
 - Codec: H.264, yuv420p, -an, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
 - Render script: `/home/user/preland/render.py` — использовать всегда
