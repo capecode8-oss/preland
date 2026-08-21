@@ -71,12 +71,19 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
    - `"The first thing [person] looks for is not [obvious thing]. It's this."` — curiosity gap
    - `"Every [common thing] equals [shocking fact]. [Authority] know. No one tells you."` — insider reveal
 4. **Клипы — только новые 32_x серия** (подобрать по теме, см. footage mapping в kira-hooks)
-5. **Clips mapping:**
-   - 32_6 = hotel reception | 32_7 = hotel room
-   - 32_5 = airplane window seat | 32_8 = Tokyo cafe
-   - 32_12 = cruise cabin | 32_13 = cruise deck
-   - 32_17 = baggage claim | 32_1/32_4/32_10 = airport terminal
-   - 32_11 = airport exit | 32_3 = travel selfie
+5. **Clips mapping (VERIFIED BY VISUAL PREVIEW — не менять без проверки скриншота):**
+   - ✈️ САМОЛЁТ: 32_5 = window seat (иллюминатор, пассажирка)
+   - 🏨 ОТЕЛЬ: 32_6 = reception (check-in стойка) | 32_7 = hotel room (номер, спальня)
+   - ☕ КАФЕ: 32_8 = Asian cafe (Токио, город за окном)
+   - 🛳️ КРУИЗ: 32_13 = cruise cabin (каюта, балкон) | 32_14 = cruise deck evening | 32_15 = cruise terrace | 32_16 = cruise deck railing | 32_17 = cruise deck Mediterranean port
+   - 🧳 АЭРОПОРТ-ЗОНА ОЖИДАНИЯ: 32_1 = departure lounge (сидит) | 32_4 = departure lounge (другой ракурс) | 32_10 = departure lounge (= 32_4)
+   - 🚶 АЭРОПОРТ-ДВИЖЕНИЕ: 32_9 = walking terminal | 32_11 = walking terminal (другой ракурс)
+   - 🚪 АЭРОПОРТ-ВЫХОД: 32_12 = airport exit doors (автодвери наружу)
+   - 🎒 БАГАЖ: 32_18 = baggage claim (багажная лента, чемоданы на карусели) ← ЕДИНСТВЕННЫЙ
+   - 🚇 МЕТРО: 32_2 = subway (вагон метро)
+   - 📸 СЕЛФИ: 32_3 = travel selfie (видовая точка, Рио)
+
+   ⚠️ ПРАВИЛО: перед назначением клипа — всегда extract frame + read image визуально. Никогда не угадывать по названию.
 
 ---
 
