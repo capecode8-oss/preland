@@ -45,7 +45,31 @@ CTA                — choose from topic-matched list below (never repeat same C
 SAVE LINE          — always last
 ```
 
-Length: **1700–1900 characters total** (including title, subtitle, CTA and save line). Always hit this range — too short = no value, too long = scroll fatigue.
+Length: **~1900 characters total** (including title, subtitle, CTA and save line). Target 1850–1950. Under 1800 = not enough value. Over 2000 = scroll fatigue. Always hit the range — a short caption loses the algorithm.
+
+### CTA BRIDGE RULE — вшито навсегда
+
+**CTA должен ЛОГИЧЕСКИ ВЫТЕКАТЬ из темы рилса. Никакого резкого переключения.**
+
+Запрещено: рилс про ресторанный скам → CTA "Ever wake up at 3AM?" без моста. Читатель чувствует разрыв — доверие падает, клик не происходит.
+
+**Обязательная структура CTA-блока (3 элемента):**
+1. **МОСТ** — 1-2 предложения, которые соединяют тему рилса с бессонницей. Эмоция которую вызывает тема (тревога, злость, беспокойство, "а вдруг у меня уже") → "это и есть то что не даёт спать в 3 ночи"
+2. **ЧТО** — free one-page card, 4 steps
+3. **КАК** — Comment CALM + link in bio
+
+**Формула МОСТА по теме:**
+- ✈️ Аэропорт/кража → "That hypervigilant feeling doesn't turn off when you get home. A lot of travelers lie awake at 3AM replaying what could have happened."
+- 🚖 Такси-скам → "That feeling of someone knowing things about you they shouldn't — it stays with you. The 'what if I had gotten in' loop runs at 3AM."
+- 🏨 Отель соло → "That low-level hypervigilance after checking in alone — your brain keeps running threat checks at 3AM."
+- 🚢 Круиз → "That realization you were vulnerable while at dinner — it circles back at 3AM. What was there. What could have been taken."
+- 🍽️ Ресторанный скам → "That feeling of handing over money you didn't agree to — your brain keeps running it back. Comes back at 3AM."
+- 💻 USB/cybersecurity → "That 'what if it already happened' loop — replaying every charge point — keeps people awake at 3AM."
+- 💰 Деньги → "Money stress hits hardest at 3AM when the brain won't stop."
+
+**Тест:** уберите CTA-блок и прочитайте только основной текст — потом добавьте мост — переход должен ощущаться как ПРОДОЛЖЕНИЕ истории, не как реклама.
+
+---
 
 ### 3-SECOND CTA RULE — вшито навсегда
 
