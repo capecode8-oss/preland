@@ -14,7 +14,7 @@ pt = 1.0
 
 # ── Fonts ──────────────────────────────────────────────────────────────────
 FONT_DIR = "/usr/share/fonts/truetype/montserrat"
-pdfmetrics.registerFont(TTFont("Mont-Black",   f"{FONT_DIR}/Montserrat-Black.ttf"))
+pdfmetrics.registerFont(TTFont("Druk",         "/tmp/DrukWideBold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-Bold",    f"{FONT_DIR}/Montserrat-Bold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-SemiBold",f"{FONT_DIR}/Montserrat-SemiBold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-Regular", f"{FONT_DIR}/Montserrat-Regular.ttf"))
@@ -105,10 +105,10 @@ def draw_card(c):
     y -= 18 * pt
 
     # ── Hero title ───────────────────────────────────────────────────────────
-    c.setFont("Mont-Black", 22 * pt)
+    c.setFont("Druk", 22 * pt)
     c.setFillColor(C_NAVY)
     c.drawCentredString(W / 2, y, "THE TRAVELER'S")
-    y -= 24 * pt
+    y -= 26 * pt
     c.drawCentredString(W / 2, y, "SAFETY CARD")
     y -= 10 * pt
 
@@ -136,7 +136,7 @@ def draw_card(c):
 
     for tip in TIPS:
         # Number
-        c.setFont("Mont-Black", 18 * pt)
+        c.setFont("Mont-Bold", 18 * pt)
         c.setFillColor(C_RULE)
         c.drawString(MARGIN_X, y - 4 * pt, tip["num"])
 
