@@ -190,6 +190,28 @@ def draw_card(c):
     c.setFont("Mont-Regular", 7.5 * pt)
     c.setFillColor(C_INK)
     c.drawCentredString(W / 2, y, "thekiramethod.com  ·  @thekiramethod")
+    y -= 18 * pt
+
+    # ── Upsell CTA ───────────────────────────────────────────────────────────
+    c.setStrokeColor(C_COPPER)
+    c.setLineWidth(0.5)
+    c.line(MARGIN_X, y, W - MARGIN_X, y)
+    y -= 13 * pt
+
+    c.setFont("Mont-SemiBold", 7.5 * pt)
+    c.setFillColor(C_COPPER)
+    c.drawCentredString(W / 2, y, "WANT THE FULL TRAVEL SAFETY GUIDE?")
+    y -= 11 * pt
+
+    c.setFont("Mont-Regular", 7.5 * pt)
+    c.setFillColor(C_INK)
+    c.drawCentredString(W / 2, y, "47 countries · 8 chapters · instant download  →  $14.90")
+    y -= 10 * pt
+
+    c.setFont("Mont-SemiBold", 7 * pt)
+    c.setFillColor(C_NAVY)
+    url = "thekiramethod.com/guide"
+    c.drawCentredString(W / 2, y, url)
 
 
 def main():
