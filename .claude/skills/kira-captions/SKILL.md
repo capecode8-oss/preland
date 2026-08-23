@@ -8,6 +8,23 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 ---
 
+## 🔴 FREE + КОДОВЫЕ СЛОВА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, Sam проверяет каждый капшен)
+
+**Три обязательных правила форматирования — нарушение = капшен не выходит:**
+
+1. **Слово FREE** — всегда CAPS + эмодзи рядом:
+   - ✅ `🎁 FREE one-page safety card` / `FREE 🎁` / `get it FREE 🎁`
+   - ❌ `free card` / `a free guide` — запрещено
+   - Эмодзи выбирать по смыслу: 🎁 (подарок) / 🆓 (free) / ✅ (получи)
+
+2. **Кодовые слова** — всегда CAPS:
+   - ✅ `Comment SAFE` / `Comment CALM`
+   - ❌ `comment safe` / `Comment Safe` — запрещено
+
+3. **Sam проверяет** перед финализацией: найди каждое вхождение слова "free" в капшене — заменить на FREE + эмодзи. Найди каждое кодовое слово — убедиться что CAPS.
+
+---
+
 ## ⛔ ДВА ПРОДУКТА — ЧИТАТЬ ПЕРВЫМ (вшито навсегда)
 
 Перед написанием капшена — определить продукт по контексту запроса:
@@ -112,8 +129,8 @@ CTA должен содержать ВСЕ 3 элемента подряд, бе
 
 ✅ ОБРАЗЕЦ (всё за 3 секунды):
 ```
-I made a free one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM and I'll send it. Or grab it free from the link in bio.
+I made a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
 ```
 → ЧТО: free one-page card | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
 
@@ -293,64 +310,64 @@ Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
 ### 🏨 HOTEL / CHECK-IN
 ```
 Ever wake up at 3AM in a hotel room and just stare at the ceiling?
-I made a free card for that. One page. 4 steps. Tells you exactly what to do.
-Comment CALM and I'll send it to you. It's also free in the link in bio.
+I made a 🎁 FREE card for that. One page. 4 steps. Tells you exactly what to do.
+Comment CALM and I'll send it to you. It's also FREE 🎁 in the link in bio.
 ```
 
 ### ✈️ AIRPORT / FLIGHT
 ```
 Long flights mess up your sleep for days after.
-I have a free one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM below and I'll send it. Or get it free in the link in bio.
+I have a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+Comment CALM below and I'll send it. Or get it FREE 🎁 in the link in bio.
 ```
 
 ### 🚢 CRUISE
 ```
 Cabin noise on a ship wakes you up at 3AM. Every time.
-I made a free one-page card — 4 steps for when that happens and you can't fall back asleep.
-Comment CALM and I'll send it. Free in the link in bio too.
+I made a 🎁 FREE one-page card — 4 steps for when that happens and you can't fall back asleep.
+Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
 ```
 
 ### 🍎 FOOD / HEALTH
 ```
 What you eat affects how you sleep — more than most people think.
 If you wake up at 3AM and can't fall back asleep, I have a free card for that.
-One page. 4 steps. Comment CALM and I'll send it. Also free in the link in bio.
+One page. 4 steps. Comment CALM and I'll send it. Also FREE 🎁 in the link in bio.
 ```
 
 ### 💰 MONEY / TRAPS
 ```
 Money stress is the #1 reason people wake up at 3AM.
-I made a free one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. Free in the link in bio too.
+I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
+Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
 ```
 
 ### 🌍 GENERAL (topic far from sleep)
 ```
 Ever wake up at 3AM and just can't fall back asleep?
-I made a free card for that — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it to you. Or grab it free from the link in bio.
+I made a 🎁 FREE card for that — one page, 4 steps, tells you exactly what to do.
+Comment CALM and I'll send it to you. Or grab it FREE 🎁 from the link in bio.
 ```
 
 ### 💊 PHARMACY / PRESCRIPTION DRUGS
 ```
 Stress about bills is one of the top reasons people can't sleep at night.
-If your brain won't turn off at 3AM, I made a free card for that.
-One page. 4 steps. Comment CALM and I'll send it. Free in the link in bio too.
+If your brain won't turn off at 3AM, I made a 🎁 FREE card for that.
+One page. 4 steps. Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
 ```
 
 ### 🏠 HOME DANGER / HOUSEHOLD SAFETY
 ```
 Anxiety and fear keep a lot of people awake at 3AM.
-If that's you, I made a free card — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it. Or grab it free from the link in bio.
+If that's you, I made a 🎁 FREE card — one page, 4 steps, tells you exactly what to do.
+Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
 ```
 
 ### ⚖️ CONSUMER RIGHTS / COMPENSATION
 ```
 Money you're owed but haven't claimed? That stress hits hardest at 3AM.
-I made a free one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. Free in the link in bio too.
+I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
+Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
 ```
 
 ---
