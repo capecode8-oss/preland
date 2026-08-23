@@ -8,6 +8,31 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 ---
 
+## ⛔ ДВА ПРОДУКТА — ЧИТАТЬ ПЕРВЫМ (вшито навсегда)
+
+Перед написанием капшена — определить продукт по контексту запроса:
+
+### 🌍 TRAVEL продукт → кодовое слово **SAFE**
+- Тема: travel hacks / airport / hotel / cruise / ATM / restaurant scam
+- Бесплатный лид-магнит: Solo Traveler's Safety Card (5 советов, 1 страница)
+- CTA в капшене: `Comment SAFE and I'll send it to your DMs`
+- Ссылка: прилэнд с карточкой и платным гайдом
+- Платный продукт: $14.90 Travel Safety Guide на Lava.top
+- Мост к CTA: тревога после travel-ситуации → "I made a free safety card"
+
+### 😴 СОН продукт → кодовое слово **CALM**
+- Тема: сон / 3AM wakeup / insomnia / sleep hacks / health
+- Бесплатный лид-магнит: The 3AM Calm Card (4 steps)
+- CTA в капшене: `Comment CALM and I'll send it to your DMs`
+- Мост к CTA: тревога / стресс → "can't fall back asleep at 3AM"
+
+### ❌ ЗАПРЕЩЕНО:
+- Писать CALM в travel-рилсе
+- Писать SAFE в sleep-рилсе
+- Путать продукты местами
+
+---
+
 ## ЯЗЫК — ОБЯЗАТЕЛЬНОЕ ПРАВИЛО (вшито навсегда)
 
 **СЛОЖНОСТЬ — НАШ ВРАГ. Простота — наше оружие. САРАФАНКА — наша цель.**
