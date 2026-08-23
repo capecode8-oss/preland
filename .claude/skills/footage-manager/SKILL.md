@@ -25,6 +25,8 @@ description: Select a clip from the footage library for the current reel. Tracks
 |------|-------|
 | Aug 13 | 1_11, 1_12, 1_14, 1_15 |
 | Aug 19 | 1_19, 1_15, 1_23, 1_25, 1_18 |
+| Aug 22 | 32_18, 32_13, 32_12, 32_6, 32_8, 32_9 |
+| Aug 23 | 32_7, 32_4, 32_11, 32_14, 32_15 |
 
 ---
 
