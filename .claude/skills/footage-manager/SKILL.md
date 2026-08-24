@@ -29,6 +29,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Aug 23 | 32_7, 32_4, 32_11, 32_14, 32_15 |
 | Aug 24 | 32_7, 32_4, 32_5, 32_17, 32_1, 32_18, 32_9 |
 | Aug 25 | 32_10, 32_12, 32_16, 32_6, 32_8, 32_13 |
+| Aug 26 | 1_3, 1_4, 1_5, 1_6, 1_7, 1_8, 1_10, 1_16 |
 
 ---
 
@@ -42,6 +43,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Aug 23 | luggage-theft-window, window-seat-xrays, fa-greeting-screening, airport-thief-target, doctor-radiation-story |
 | Aug 24 | hotel-receptionist-v2, overhead-bin-theft-v2, cruise-port-scam-v2, airport-helper-trap-v2, baggage-claim-swap, airport-atm-trap |
 | Aug 25 | gate-easy-target, taxi-uniform-scam, cruise-card-cloned, hotel-checkin-watched, restaurant-abroad-customs, cruise-cabin-nightclub |
+| Aug 26 | adventure-tour-deposit-scam, japan-izakaya-hidden-cover, airline-damage-claim-window, vietnam-motorbike-price-switch, paris-bracelet-scam, paris-tourist-menu-prices, airplane-usb-port-data, rental-car-insurance-trap |
 
 ---
 
