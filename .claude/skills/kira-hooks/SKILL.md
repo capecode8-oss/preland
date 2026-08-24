@@ -257,77 +257,158 @@ Read only the first 3 words of Line 1. Tyler stops or swipes — no middle groun
 
 ---
 
-## THE FOCUS GROUP — 👥 100 American Scrollers (Ages 30–75)
+## THE FOCUS GROUP — 👥 100 Real American Scrollers (Ages 30–75)
 
 **The team writes the hook. The Focus Group votes on it. No hook passes without their numbers.**
 
-> They're not critics. They're just scrolling. They don't care about content strategy.
-> Sound is OFF. They're on the couch, in line at the grocery store, eating lunch.
-> They stop for one reason only: the first 3 words hit something personal.
-
-**Demographics — 100 people:**
-- **30–45 (40 people):** Working parents, both genders. Travel for vacation, worry about money, follow health tips. Scroll during lunch or after kids are in bed.
-- **45–60 (35 people):** Pre-retirees. Frequent travelers. Cruise-goers. Planning retirement trips. Share heavily in group chats. Susan, Linda, Carol, David, Mark.
-- **60–75 (25 people):** Retirees. Grandparents. The biggest sharers of the three groups. Send things to family WhatsApp groups, church friends, cruise buddies. If they share it — it reaches 10+ people instantly.
-
-**All 100:** Americans. Scrolling Instagram or TikTok. Not fans of the account. First-time viewers.
+> These are NOT bots. NOT content experts. NOT fans of the account.
+> They are ordinary Americans — scrolling out of boredom, habit, or procrastination.
+> Sound is OFF. Phone in one hand. The other hand is doing something else.
+> They stop for ONE reason only: something in the first 3 words felt personal.
 
 ---
 
-### ROUND 1 — SCROLL STOP (1.7 seconds, text only, sound off)
+### THE 100 PEOPLE — WHO THEY ARE
 
-How many of the 100 stop scrolling?
+**GROUP A — 30–45 (40 people) · Working life, tight schedules, small budgets for travel**
+
+These people scroll in stolen moments — between meetings, during lunch, after the kids are asleep.
+They travel 1-2x a year. They worry about money. They forward things to protect people they love.
+
+Real profiles from this group:
+
+- **Ashley, 32, Dallas TX** — HR manager. Mom of a toddler. Scrolls Instagram at 10:30pm after her daughter is asleep. She stops for anything involving money being lost or safety threats she didn't know about. Sends to her husband via iMessage: "babe read this before our Europe trip." Follows 340 accounts, never interacts, scrolls fast.
+
+- **Marcus, 37, Atlanta GA** — UPS driver. Uses TikTok on breaks. Grew up in a city, street-smart, doesn't trust easily. Stops for hooks that feel like insider knowledge — "things they don't want you to know." Skips anything that feels like an ad or a lecture. Sends to the group chat: "y'all already know this?"
+
+- **Jennifer, 34, suburban Ohio** — Stay-at-home mom, used to work in accounting. Scrolls Facebook Reels and Instagram during nap time. Very motivated by protecting her family. Stops when something feels like "I almost made that mistake." Sends things to her sister and mom: "you need to see this."
+
+- **Carlos, 41, Miami FL** — Sales rep, travels monthly for work. Frequent flyer. Skeptical of tips that sound too simple. Stops when there's a specific dollar amount or a real airport name. Saves to his "travel hacks" folder. Rarely sends — but when he does, it goes to 3 coworkers in the group chat.
+
+- **Rachel, 38, Austin TX** — Marketing manager. Follows 600 accounts. Scrolls at 2x speed. Takes 0.8 seconds to decide. Stops only if the first word is an action word or a threat. Sends things to her friend group of 8 women: "ok this happened to me once literally."
+
+---
+
+**GROUP B — 45–60 (35 people) · Pre-retirees, frequent travelers, biggest spenders**
+
+These people have money and time to travel. They're planning trips right now.
+They share in group chats, text threads, and email. They forward things "just in case."
+
+Real profiles from this group:
+
+- **Susan, 52, Phoenix AZ** — Middle school teacher. Takes 2 international trips a year. Cruises with her husband every other year. Scrolls Instagram after dinner with a glass of wine. Stops for anything involving hotels, airports, or money traps abroad. Sends to her travel group of 6 women: "saving this before Cancun." Her sends reach 6 people who each read it carefully.
+
+- **Linda, 57, Charlotte NC** — Retired nurse, part-time consultant. On Instagram and Facebook. Shares to both. Stops when something feels medically relevant or involves physical safety. Texts her adult kids: "I didn't know this, did you?" Her daughter usually reposts it.
+
+- **David, 49, Chicago IL** — Finance director. Travels to Europe 2x a year for business. Follows zero travel accounts intentionally. Stops when a hook involves a specific dollar amount he recognizes ($200, $400, $14,000). Does not send — but he watches the full reel and saves it. His save = algorithm signal.
+
+- **Karen, 54, Tampa FL** — Real estate agent. Just booked a cruise. Scrolls TikTok and Instagram. Sends aggressively to her real estate group chat and family. "Oh my GOD I need everyone to see this." When Karen sends, 14 people see it.
+
+- **Tom, 58, Denver CO** — Semi-retired contractor. Scrolls YouTube Shorts and Facebook mostly. If a reel surfaces there, he stops for anything involving being cheated or outsmarted. Sends to his poker buddies: "this is messed up." Three of them are planning a trip to Portugal.
+
+---
+
+**GROUP C — 60–75 (25 people) · Retirees, grandparents, the multiplier group**
+
+These people have the most time and share the most. One send = 15 immediate viewers.
+Family WhatsApp groups. Church friends. Cruise buddy lists. Bridge club.
+They share things that "could happen to someone I love."
+
+**⚠️ IRON RULE: If this group is confused by the hook → hook is too abstract → rewrite.**
+They will not Google anything. They will not re-read. If they don't get it in 2 seconds — they scroll.
+
+Real profiles from this group:
+
+- **Barbara, 67, Sarasota FL** — Retired school librarian. On Instagram and Facebook. Shares to a family WhatsApp of 22 people. Stops for anything involving safety abroad, hotel safety, or health. Sends immediately: "I'm sending this to everyone before our trip to Italy." One Barbara send = 22 people see it within 10 minutes.
+
+- **Robert, 71, Scottsdale AZ** — Retired engineer. On Facebook and YouTube. Very skeptical. Stops ONLY when there is a specific number, a specific place, and a specific consequence. Skips anything vague. When he stops, he reads the full caption. Saves 1 thing per week.
+
+- **Patricia, 63, Naples FL** — Frequent cruiser. On Instagram. Follows cruise accounts, travel accounts, grandkid accounts. Stops for cruise and airport content immediately. Sends to her "Cruise Girls 2026" group of 9 women. When Patricia sends, those 9 women each share it in their own circles.
+
+- **Gary, 68, Boca Raton FL** — Retired dentist. Wife plans all the travel, he pays. Scrolls Facebook. Stops for money traps, customs warnings, health stuff. Sends to his wife: "Carol read this." Carol then sends it to 30 people.
+
+- **Dorothy, 74, Sun City AZ** — Grandmother of 7. Scrolls Facebook Reels daily. Sends everything that mentions danger abroad to her kids and grandkids: "please read before you travel." Does not understand complex hooks. Cannot parse irony. Cannot understand metaphors without a setup. Needs the threat stated plainly in the first line.
+
+---
+
+---
+
+### ROUND 1 — SCROLL STOP TEST (1.7 seconds, sound OFF, first 3 words only)
+
+Show the 100 people ONLY the first line of the hook. No context. No account name. Just the text on the video.
+They have 1.7 seconds. Thumb is already moving. They stop or they don't.
 
 | Result | Signal | Action |
 |--------|--------|--------|
 | 🛑 **70–100 stop** | Hook hits universally | ✅ Proceed to Round 2 |
-| 🟡 **50–69 stop** | Hook works for part of audience | ⚠️ Rewrite or adjust angle |
+| 🟡 **50–69 stop** | Hook works for part of audience | ⚠️ Rework — identify which group is swiping and why |
 | ❌ **Under 50 stop** | Hook is dead | 💀 Rewrite from scratch |
 
-**Why they stop (or don't):**
-- ✅ STOPS: "Never Do This..." / physical violation / "I didn't know until..." / specific place + threat
-- ❌ SWIPES: abstract threat / delayed consequence / too niche / requires prior knowledge / sounds like an ad
+**Why real people stop (simulated from their profiles above):**
+
+✅ Ashley (32) stops when: first word is a verb or a place. "A stranger..." / "Never book..." / "My bag..."
+✅ Susan (52) stops when: it involves a trip she is already planning. Airport + money + specific city.
+✅ Barbara (67) stops when: the threat is stated plainly. No metaphor. No irony. Just what happened.
+✅ Karen (54) stops when: it sounds like something that could embarrass her or cost her money.
+✅ Marcus (37) stops when: it sounds like insider info that most people don't have.
+
+❌ Everyone swipes when: first word is "The" / "Here's" / "Did you know" / it sounds like a tip, not a story.
+❌ Dorothy (74) swipes when: the first line requires knowing what the consequence is before she reads it.
+❌ David (49) swipes when: there's no number and no specific place — too vague.
+❌ Robert (71) swipes when: it sounds like clickbait he's seen 100 times.
 
 ---
 
-### ROUND 2 — of those who stopped, WHAT DO THEY DO?
+### ROUND 2 — OF THOSE WHO STOPPED, WHAT DO THEY DO NEXT?
 
-| Action | Target | Signal |
-|--------|--------|--------|
-| 📲 **SEND** to specific person | 20+ out of 100 total | 🔥 VIRAL — chain reaction starts |
-| 💾 **SAVE** for later | 15+ out of 100 total | 🟢 Algorithm boost |
-| 👍 **Like only, don't send** | Majority | 🟡 Reach without spread |
-| 👆 **Swipe after 2 seconds** | Majority | 🔴 Hook failed after stop |
+They watched. Now what? Each person makes an independent decision.
 
----
+| Action | Target | What it looks like |
+|--------|--------|--------------------|
+| 📲 **SEND in DM** to specific person | **20+ out of 100** | 🔥 VIRAL — chain reaction starts |
+| 💾 **SAVE** for later | **15+ out of 100** | 🟢 Algorithm boost — strong signal |
+| 👍 **Like only** | Majority who stopped | 🟡 Reach, no spread |
+| 👆 **Swipe after 2 sec** | Those who stopped but lost interest | 🔴 Hook worked, content didn't hold |
 
-### WHO SENDS TO WHOM (by age group):
+**Who sends and why (from their real profiles):**
 
-- **30–45:** Sends to spouse before a trip / drops in travel group chat / tags a friend in comments
-- **45–60:** Sends to adult children planning travel / best friend / texts it with "you need to see this"
-- **60–75:** Posts in family WhatsApp group / sends to cruise friends / shares to Facebook
+- **Ashley** sends to her husband: "read this before we go to Rome next month" — money trap, specific place
+- **Jennifer** sends to her sister: "omg I would have done this" — close-call personal resonance
+- **Susan** sends to travel group of 6: "saving this before Cancun girls" — pre-trip anxiety trigger
+- **Karen** sends to 14 people: "OH MY GOD everyone needs to see this" — injustice / got cheated angle
+- **Barbara** sends to family WhatsApp of 22: "sending to everyone before the Italy trip" — safety warning
+- **Patricia** sends to Cruise Girls group of 9: "they never told us this on the ship" — cruise-specific violation
+- **Gary** sends to his wife Carol: "Carol read this" → Carol sends to 30 people
+- **Marcus** drops in group chat: "y'all already know this?" — insider knowledge angle
 
-**The 60–75 group is the multiplier.** One send from a 67-year-old grandmother = 15 immediate viewers. Never write hooks that confuse this group.
+**⚠️ IRON RULE — Dorothy Test:**
+Dorothy (74) must understand the hook on FIRST READ with ZERO prior knowledge.
+If Dorothy says "I'm not sure what happened" → hook is too abstract → rewrite.
+If Dorothy says "Oh that's terrible, I'm sending this to my grandkids" → hook is strong.
 
 ---
 
 ### FOCUS GROUP KILLS A HOOK WHEN:
 
-- Under 50 of 100 stop (too abstract, too niche, too fast)
-- Under 10 total sends (people watch but don't share = algorithm death)
-- The 60–75 group (25 people) reports: "I don't understand what happened" or "I'm not sure this applies to me"
-- Hook requires knowing something in advance (insider knowledge without the setup)
+- Under 50/100 stop (Marcus swiped, Ashley swiped, Susan swiped = hook is universally weak)
+- Under 10 total sends (people watched, didn't share = algorithm death, no chain reaction)
+- Dorothy (74) says: "I'm not sure what this is about" or "I don't think this applies to me"
+- Robert (71) says: "I've seen this type of thing a thousand times, nothing new"
+- The hook requires knowing something before the first line makes sense (no setup = confusion for Group C)
 
 ---
 
-### FOCUS GROUP OUTPUT FORMAT (в каждом аудите):
+### FOCUS GROUP OUTPUT FORMAT (в каждом аудите — обязательно):
 
 ```
-👥 FOCUS GROUP — 100 Americans (30–75):
+👥 FOCUS GROUP — 100 Real Americans (30–75):
 Round 1: [N]/100 stopped scrolling
-Round 2: [N] sent it | [N] saved | [N] liked only
-Who sent: [age group] → [to whom] → [why]
-60–75 verdict: [understood / confused / "this isn't for me"]
+  — Ashley (32) stopped: [yes/no — one-line reason]
+  — Susan (52) stopped: [yes/no — one-line reason]
+  — Barbara (67) stopped: [yes/no — one-line reason]
+  — Dorothy (74): [understood hook / confused / "not for me"]
+Round 2: [N] sent in DM | [N] saved | [N] liked only
+  Sent by: [name] → [to whom] → "[exact thing they would type]"
 Verdict: 🛑 PROCEED / ⚠️ REWORK / 💀 KILL
 ```
 
