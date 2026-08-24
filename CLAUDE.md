@@ -113,8 +113,10 @@
 ### Пользователь говорит: "планируем N рилсов"
 
 **АВТОМАТИЧЕСКОЕ ПРАВИЛО ПО ТЕМЕ:**
-- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 47 стран, $14.90). CTA: `Comment SAFE`
-- Тема **сон / 3AM / insomnia / sleep / health** → продукт **CALM** (3AM Calm Card). CTA: `Comment CALM`
+- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 47 стран, $14.90).
+  CTA (вшито навсегда): `I put together a FREE 🎁 one-page safety card — the 5 things I check before every trip now. Comment SAFE and I'll send it to your DMs. Or grab it FREE 🎁 from the link in bio.`
+- Тема **сон / 3AM / insomnia / sleep / health** → продукт **CALM** (3AM Calm Card).
+  CTA: `Comment CALM and I'll send it to your DMs.`
 - Рилс может быть про ЧТО УГОДНО — но в конце капшена логически связывается с мини-продуктом через мост.
 
 ---
