@@ -257,6 +257,82 @@ Read only the first 3 words of Line 1. Tyler stops or swipes — no middle groun
 
 ---
 
+## THE FOCUS GROUP — 👥 100 American Scrollers (Ages 30–75)
+
+**The team writes the hook. The Focus Group votes on it. No hook passes without their numbers.**
+
+> They're not critics. They're just scrolling. They don't care about content strategy.
+> Sound is OFF. They're on the couch, in line at the grocery store, eating lunch.
+> They stop for one reason only: the first 3 words hit something personal.
+
+**Demographics — 100 people:**
+- **30–45 (40 people):** Working parents, both genders. Travel for vacation, worry about money, follow health tips. Scroll during lunch or after kids are in bed.
+- **45–60 (35 people):** Pre-retirees. Frequent travelers. Cruise-goers. Planning retirement trips. Share heavily in group chats. Susan, Linda, Carol, David, Mark.
+- **60–75 (25 people):** Retirees. Grandparents. The biggest sharers of the three groups. Send things to family WhatsApp groups, church friends, cruise buddies. If they share it — it reaches 10+ people instantly.
+
+**All 100:** Americans. Scrolling Instagram or TikTok. Not fans of the account. First-time viewers.
+
+---
+
+### ROUND 1 — SCROLL STOP (1.7 seconds, text only, sound off)
+
+How many of the 100 stop scrolling?
+
+| Result | Signal | Action |
+|--------|--------|--------|
+| 🛑 **70–100 stop** | Hook hits universally | ✅ Proceed to Round 2 |
+| 🟡 **50–69 stop** | Hook works for part of audience | ⚠️ Rewrite or adjust angle |
+| ❌ **Under 50 stop** | Hook is dead | 💀 Rewrite from scratch |
+
+**Why they stop (or don't):**
+- ✅ STOPS: "Never Do This..." / physical violation / "I didn't know until..." / specific place + threat
+- ❌ SWIPES: abstract threat / delayed consequence / too niche / requires prior knowledge / sounds like an ad
+
+---
+
+### ROUND 2 — of those who stopped, WHAT DO THEY DO?
+
+| Action | Target | Signal |
+|--------|--------|--------|
+| 📲 **SEND** to specific person | 20+ out of 100 total | 🔥 VIRAL — chain reaction starts |
+| 💾 **SAVE** for later | 15+ out of 100 total | 🟢 Algorithm boost |
+| 👍 **Like only, don't send** | Majority | 🟡 Reach without spread |
+| 👆 **Swipe after 2 seconds** | Majority | 🔴 Hook failed after stop |
+
+---
+
+### WHO SENDS TO WHOM (by age group):
+
+- **30–45:** Sends to spouse before a trip / drops in travel group chat / tags a friend in comments
+- **45–60:** Sends to adult children planning travel / best friend / texts it with "you need to see this"
+- **60–75:** Posts in family WhatsApp group / sends to cruise friends / shares to Facebook
+
+**The 60–75 group is the multiplier.** One send from a 67-year-old grandmother = 15 immediate viewers. Never write hooks that confuse this group.
+
+---
+
+### FOCUS GROUP KILLS A HOOK WHEN:
+
+- Under 50 of 100 stop (too abstract, too niche, too fast)
+- Under 10 total sends (people watch but don't share = algorithm death)
+- The 60–75 group (25 people) reports: "I don't understand what happened" or "I'm not sure this applies to me"
+- Hook requires knowing something in advance (insider knowledge without the setup)
+
+---
+
+### FOCUS GROUP OUTPUT FORMAT (в каждом аудите):
+
+```
+👥 FOCUS GROUP — 100 Americans (30–75):
+Round 1: [N]/100 stopped scrolling
+Round 2: [N] sent it | [N] saved | [N] liked only
+Who sent: [age group] → [to whom] → [why]
+60–75 verdict: [understood / confused / "this isn't for me"]
+Verdict: 🛑 PROCEED / ⚠️ REWORK / 💀 KILL
+```
+
+---
+
 ### 🤖 NOVA — AI Video Prompt Engineer (20 Years Experience)
 *Came from film production — documentaries, ads, music videos. Pivoted to AI video in 2023. Has tested 5000+ prompts across Veo 3, Kling, Runway, and Pika. Knows what generates artifacts, what passes undetected, what stops the scroll visually before text loads.*
 
@@ -689,6 +765,7 @@ Badge создаёт НОВЫЙ вопрос — не закрывает ста�
 - NOVA: есть клип в библиотеке `/footage/`? Если нет — какой Veo 3 visual нужен?
 - VIC: визуал свежий или видели 1000 раз? VISUAL VIRAL / STRONG / WEAK / CHANGE?
 - Rico: угол свежий на этой неделе? 🟢FRESH / 🟡CROWDED / 🔴SATURATED?
+- **Focus Group (100 американцев 30–75):** Round 1 — сколько из 100 остановились? Round 2 — сколько отправили? Группа 60–75 поняла с первого раза?
 
 **Порог публикации:**
 - Mike минимум 🟢 STRONG (прогноз 5K+ views)
@@ -696,8 +773,9 @@ Badge создаёт НОВЫЙ вопрос — не закрывает ста�
 - Maya ✅ "отправлю [кому] прямо сейчас"
 - VIC минимум 🎬 VISUAL STRONG
 - Rico 🟢 FRESH (угол не использовался конкурентами на этой неделе)
-- Все остальные 6 — ✅
-- Если любой не проходит — переписать внутренне. Повторять пока все 11 ✅.
+- **Focus Group: минимум 70/100 остановились, минимум 20/100 отправили, группа 60–75 поняла**
+- Все остальные — ✅
+- Если любой не проходит — переписать внутренне. Повторять пока все ✅.
 
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный победитель
 
