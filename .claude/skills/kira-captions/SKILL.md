@@ -274,6 +274,54 @@ Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
 
 ---
 
+## 👥 FOCUS GROUP CAPTION TEST — 100 Real Americans (30–75)
+
+**The hook stopped them. Now they're reading the caption. Do they finish it — or swipe?**
+
+> They're not reading for pleasure. They're reading to decide: save, send, or forget.
+> If line 3 is still setup, they're already gone.
+> If the caption has one boring sentence — 60% of them stop reading right there.
+> If there's a concrete fact they didn't know — they save it.
+> If it makes them think of a specific person — they send it.
+
+### CAPTION SCROLL TEST — simulated per persona:
+
+**Ashley (32, Dallas)** reads captions during lunch. Reads 3 lines max before deciding. Stops reading when: too many words, no numbers, sounds like a blog post. Saves when: there's a specific dollar amount or action she can take before her next trip. Sends when: "my husband would do exactly this."
+
+**Susan (52, Phoenix)** reads captions fully if the second hook promises something new. Stops reading when: the content repeats what the reel already said. Saves when: there's a tip she can write down or screenshot. Sends to travel group when: "the girls need to know this."
+
+**Barbara (67, Sarasota)** reads slowly. Will read the full caption if she understood the reel. Stops reading when: any sentence is longer than 15 words or uses a term she doesn't know. Sends to family WhatsApp when: the caption confirms the threat is real and gives a clear "what to do."
+
+**Dorothy (74, Sun City)** opens captions only when the reel scared her. Will NOT tap "more" if the first visible line is confusing. Sends when: the caption ends with a clear, simple action she can tell her grandkids.
+
+**Karen (54, Tampa)** skims captions. Jumps straight to the CTA. If the CTA is vague — she closes. If the CTA shows exactly what she gets in 3 words — she clicks. Sends the CTA screenshot to her real estate group chat.
+
+### CAPTION KILL RULES (Focus Group):
+
+- **Boring line 3** → Ashley and Marcus stopped reading → rewrite that section
+- **CTA is vague** → Karen didn't click → add concrete payoff before the ask
+- **Caption repeats the reel** → Susan stopped at line 2 → second hook must open NEW loop
+- **Any sentence over 15 words** → Dorothy lost the thread → cut and split
+- **No concrete number or fact** → David didn't save → add specific dollar, place, or stat
+- **Caption sounds like an article** → everyone swiped → rewrite in conversational voice
+
+### CAPTION FOCUS GROUP OUTPUT (в каждом аудите капшена):
+
+```
+👥 FOCUS GROUP CAPTION READ:
+Ashley (32): read to [line N] → [saved/sent/swiped] — "[one-line reason]"
+Susan (52): read to [line N] → [saved/sent/swiped] — "[one-line reason]"
+Barbara (67): [finished / stopped at line N] — "[one-line reason]"
+Dorothy (74): [understood CTA / confused] — "[what she would do]"
+Karen (54): [clicked CTA / closed] — "[one-line reason]"
+Sends total: [N] out of 100 → [VIRAL / STRONG / WEAK / REWRITE]
+```
+
+**Threshold:** 15+ send the caption (not just the reel) → 🔥 caption is pulling its weight
+Under 10 send → caption is dead weight → rewrite the weakest section and re-test
+
+---
+
 ## МИНИ ПРОДУКТ — знать наизусть, упоминать в каждом капшене
 
 **Бесплатный продукт:** "The 3AM Calm Card" — бесплатная карточка, 4 шага для тех кто просыпается в 3 ночи.
@@ -408,7 +456,7 @@ Save this — you'll want it at the check-in desk. 📌
 
 ### Step 1 — ВНУТРЕННИЙ АУДИТ (пользователь не видит)
 
-Написать капшен внутри. Прогнать через команду из 7:
+Написать капшен внутри. Прогнать через команду + Focus Group:
 - Jordan: первая строка открывает НОВЫЙ луп, не повтор хука?
 - Mike: 🔥VIRAL-SEND / 🟢SAVE-AND-SEND / 🟡SAVE-ONLY / 🔴READ-AND-FORGET? Кому перешлют?
 - Alex: читается как нативный IG? Какая высокая эмоция?
@@ -416,12 +464,14 @@ Save this — you'll want it at the check-in desk. 📌
 - Dana: все факты проверяемы? CTA не давящий? IG не пенализирует?
 - Red: попытка убить капшен. KILL / WEAK / SURVIVED?
 - Tyler: сохранит? Перешлёт?
+- **👥 FOCUS GROUP CAPTION READ:** Ashley дочитала до конца? Susan нашла новый факт? Dorothy поняла CTA? Karen кликнула? 15+ из 100 отправят?
 
 **Порог публикации:**
 - Mike минимум 🟢 SAVE-AND-SEND
 - Red ✅ SURVIVED
-- Все остальные 5 — ✅
-- Если любой не проходит — переписать.
+- Focus Group: 15+ из 100 отправляют капшен (не только рилс)
+- Все остальные — ✅
+- Если любой не проходит — найти слабую строку, переписать её, прогнать снова.
 
 ### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный капшен
 
@@ -443,9 +493,17 @@ Save this — you'll want it at the check-in desk. 📌
 
 АУДИТ КОМАНДЫ:
 Jordan ✅ | Mike 🟢 SAVE-AND-SEND (→маме) | Alex ✅ awe | Sam ✅ | Dana ✅ | Red ✅ SURVIVED | Tyler ✅ Saves+Sends
+
+👥 FOCUS GROUP CAPTION READ:
+Ashley (32): read to end → sent husband — "he would do exactly this"
+Susan (52): read to end → sent travel group — "girls need this before Cancun"
+Barbara (67): finished → understood CTA → sent to family WhatsApp
+Dorothy (74): understood CTA → "sending to grandkids before their trip"
+Karen (54): jumped to CTA → clicked — "clear payoff, I know what I'm getting"
+Sends total: [N]/100 → VIRAL / STRONG / WEAK
 ```
 
-Only publish if all 6 green. If any red — fix that specific issue and re-check.
+Only publish if all 7 green + Focus Group 15+ sends. If any red — find the weak line, rewrite it, re-run.
 
 ---
 
