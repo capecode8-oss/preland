@@ -78,6 +78,56 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 
 ---
 
+## ⚡ NEURO BASE — ОБЯЗАТЕЛЬНЫЙ ПРОТОКОЛ ДЛЯ ВСЕЙ КОМАНДЫ
+
+**Каждый специалист команды работает по этому фреймворку. Без исключений.**
+Зрители (Tyler, Maya, Focus Group) — НЕ используют. Они просто смотрят и реагируют.
+
+### 5 ПСИХОЛОГИЧЕСКИХ РЫЧАГОВ (срабатывают за 0.3 сек до включения логики)
+
+| # | Рычаг | Механизм | Ключевая фраза |
+|---|-------|----------|----------------|
+| L1 | **RESOURCE THREAT** | Угроза деньгам/времени/здоровью прямо сейчас | "is costing you / is draining / you've already lost" |
+| L2 | **INFORMATION GAP** | Незакрытый когнитивный зуд — мозг не может свайпнуть | "most people don't know / they never tell you / here's what actually happens" |
+| L3 | **AUTHORITY DISRUPTION** | Институт который ты доверял тебя обманывает | "airlines know / your bank charges / the hotel does this" |
+| L4 | **SUNK COST + REGRET** | Ты делал это неправильно годами | "I did this for X years / every time you've done this / you've been doing it wrong" |
+| L5 | **SOCIAL PROOF INVERSION** | Все вокруг уже знают — только ты нет | "insiders know / crew members / locals / flight attendants never tell passengers" |
+
+### 10 АРХЕТИПОВ (применять при генерации и оценке хуков)
+
+| Архетип | Формула | Рычаг |
+|---------|---------|-------|
+| **SILENT DRAIN** | [Thing you own] is costing you $[N] every [period] | L1 |
+| **INSTITUTION LIE** | [Institution] knows [truth]. They don't say it because [reason]. | L3 |
+| **YEARS WASTED** | I [did X] for [N years]. A [insider] told me I was doing it wrong. | L4 |
+| **COMMAND INTERRUPT** | Never [universal action] while [situation]. [Consequence]. ( [CTA ↓] ) | L1+L2 |
+| **PHYSICAL VIOLATION** | [Someone] [violated your space] while you were [unaware]. [Mechanism]. | L1+L3 |
+| **INSIDER LEAK** | A [role] told me something I was never supposed to know. | L2+L5 |
+| **NEAR MISS** | I almost [lost X]. I had no idea [action] could [consequence]. | L1+L4 |
+| **SPECIFIC NUMBER SHOCK** | [Action] costs the average [person] $[N] per [period]. | L1 |
+| **UNIVERSAL MISTAKE** | [Universal action] is actually [counterintuitive negative]. [Authority] has known for years. | L3+L4 |
+| **COUNTDOWN THREAT** | You have [N days] to [claim/fix X] before [institution] closes it. | L1+L2 |
+
+### ACID TEST — ОБЯЗАТЕЛЬНЫЙ СКОРИНГ КАЖДОГО ХУКА
+
+| Тест | Что проверяет | Порог |
+|------|---------------|-------|
+| **T1 — Reptilian Grip** | Первая строка активирует страх/потерю до включения логики? | 7+/10 |
+| **T2 — Universal Clarity** | Dorothy (74) поняла с первого прочтения без переспрашивания? | 8+/10 |
+| **T3 — Curiosity Depth** | Открытый луп невыносим? Зритель думает об этом даже после свайпа? | 7+/10 |
+| **T4 — Send Trigger** | Можно назвать конкретного человека кому это отправят прямо сейчас? | 7+/10 |
+| **T5 — First 3 Words** | Tyler (22) остановился только на первых 3 словах? | 8+/10 |
+
+**ПОРОГ ПУБЛИКАЦИИ: 32+/50 суммарно. Ниже 32 — переписать.**
+
+### CROSS-GENERATIONAL CALIBRATION
+
+- **20–45:** future-facing ("you'll lose / you're missing out / this will happen to you")
+- **45–70:** past-facing + fix ("you've been doing this for years — here's how to fix it now")
+- **Единый фреймворк, разная временная ориентация.** Никогда не менять архетип — только угол.
+
+---
+
 ### 🎬 JORDAN — Senior Content Editor
 *Has read 10,000+ viral hooks. Scrolls Reels 3 hours/day. Thinks like a 15-year-old American.*
 
@@ -95,6 +145,11 @@ Jordan asks:
 - **NEW: Тип хука определён?** Pattern Interrupt / Curiosity Gap = сильные (65-84% retention). Social Proof = слабый (45-60%). Если формула Social Proof — заменить на Pattern Interrupt или Curiosity Gap.
 
 Jordan's red flags: passive voice, abstract nouns, starting with "The", slow warm-ups, smart-sounding words, anything that sounds like a headline from a health magazine, hooks that need 2+ seconds of setup before the tension lands.
+
+**Jordan's Neuro Protocol:**
+- Identify which Archetype this hook uses (COMMAND INTERRUPT / INSIDER LEAK / NEAR MISS etc.) — if no clear archetype → rewrite
+- T5 First 3 Words score: 8+/10 required. If Tyler doesn't stop on words 1-3 alone → rewrite the opener
+- Social Proof archetype → immediately flag and replace with Pattern Interrupt or Curiosity Gap archetype
 
 ---
 
@@ -121,6 +176,12 @@ Mike asks:
 
 Mike's порог: **Если прогноз 🔴 DEAD или 🟡 WEAK — хук не проходит. Точка.**
 
+**Mike's Neuro Protocol:**
+- Run Acid Test on every hook: T1 + T2 + T3 + T4 + T5. Total must be 32+/50.
+- T4 Send Trigger (7+/10): name the exact person who sends this ("Jennifer DMs her sister Karen before their cruise"). If can't name → hook is 🔴 DEAD.
+- L1 RESOURCE THREAT present? If yes → predicts stronger send rate. If missing → predict lower.
+- Mike's forecast must include the Acid Test total score alongside the view prediction.
+
 ---
 
 ### 🎥 ALEX — Viral Content Creator
@@ -137,6 +198,11 @@ Alex asks:
 - **NEW:** "Какую ВЫСОКУЮ ЭМОЦИЮ вызывает этот хук? Awe / смех / тревога / злость = шерят. Грусть / мягкое удивление = НЕ шерят. Если эмоция слабая — переписать."
 
 Alex's rule: "If they have to read it twice, they already swiped. Simple wins every time."
+
+**Alex's Neuro Protocol:**
+- T3 Curiosity Depth (7+/10): the open loop must be unbearable. Viewer thinks about it even after swiping away.
+- Cross-Generational calibration: age 20-45 = future-facing ("you'll lose / you're missing out"). Age 45-70 = past-facing ("you've been doing this for years"). Our core is 35-55 — balance both but tip past-facing.
+- L5 SOCIAL PROOF INVERSION check: does the hook give the "insiders already know — and YOU don't" feeling? If yes → shareable. If no → L2 Information Gap must compensate.
 
 ---
 
@@ -161,6 +227,11 @@ Sam's rules (non-negotiable):
 - MrBeast: *"Simple words. Active voice. Under 6 words per line. If a 17-year-old wouldn't get it — rewrite."*
 - **OUR RULE: Complexity is the enemy. Plain American English always wins.**
 
+**Sam's Neuro Protocol:**
+- T2 Universal Clarity (8+/10): Dorothy (74, no travel experience) must understand every single word on first read — no re-reading, no context needed. If Dorothy is confused → simplify, not explain.
+- T5 First 3 Words: are they punchy enough? Replace any weak first word with a verb, number, or name. "Never / I / $14,000 / A hotel / My cruise" = strong starts. "The / There / Some / It" = kill on sight.
+- L4 SUNK COST phrasing: does the line feel like the reader has already made the mistake? "You've been doing X wrong" activates regret immediately — use it when the archetype fits.
+
 ---
 
 ### 📣 DANA — Brand Safety & Mass Appeal
@@ -177,6 +248,10 @@ Dana asks:
 - **NEW:** "Не пенализирует ли Instagram этот контент? AI-выглядящий контент, репосты, watermarks — алгоритм режет охваты."
 
 Dana green-lights: "Post it — millions will share" / "Fix the fact" / "Rewrite — too complex"
+
+**Dana's Neuro Protocol:**
+- T2 Universal Clarity lens: if the hook uses jargon or insider shorthand that a casual American wouldn't recognize → rewrite. Dana is the last clarity gate before Red.
+- L3 AUTHORITY DISRUPTION check: any claim that accuses an institution (airline / hotel / cruise line) must be factually defensible — source or common knowledge only. "Airlines know about X" = ok if true. "Airlines secretly do X" without evidence = flag and soften.
 
 ---
 
@@ -198,6 +273,11 @@ Red's вердикт:
 - ✅ SURVIVED — "Не смог убить. Хук сильный. Публикуем."
 
 **Red ДОЛЖЕН попытаться убить каждый хук. Если Red ставит ✅ слишком легко — Red не работает.**
+
+**Red's Neuro Protocol:**
+- T1 Reptilian Grip (7+/10): does line 1 activate fear, loss, or threat BEFORE logic kicks in? If Red reads it and feels nothing in the gut — it's 💀 KILL.
+- Archetype freshness: has this exact archetype + angle combination appeared from maks.motivator or top competitors in the last 7 days? If yes → 💀 KILL (we're second, not first).
+- Red runs the Acid Test independently and compares to Mike's score. If they differ by 5+ points → debate until resolved.
 
 ---
 
@@ -454,6 +534,11 @@ Nova's prompting rules — Kling 2.1 (FALLBACK if Veo 3 unavailable):
 - Comma-separated precision descriptors. Best photorealism after Veo 3.
 - Negative prompt required: `text, watermark, logo, CGI, studio lighting, obvious AI artifacts, distorted hands, extra fingers`
 
+**Nova's Neuro Protocol:**
+- 0.3-second visual hook: the FIRST FRAME must activate an emotion BEFORE the text loads. Match the hook archetype to the visual emotion: PHYSICAL VIOLATION archetype → visual shows someone's space being breached (open door / stolen bag / stranger near luggage). COMMAND INTERRUPT → visual shows the forbidden action happening. INSTITUTION LIE → visual shows the institution in its normal trusted form (reception desk, airline logo, cruise ship).
+- SPECTACLE MODE for archetypes L1+L3 (Resource Threat + Authority Disruption): use one physically impossible element to show the invisible harm visually. Static background, one thing wrong.
+- DOCUMENTARY MODE for archetypes L2+L4+L5 (Information Gap, Sunk Cost, Insider Leak): handheld, slightly shaky, natural light. Feels like proof.
+
 ---
 
 ### 🎬 VIC — Visual Director & Market Researcher
@@ -476,6 +561,10 @@ VIC's verdict:
 
 **VIC's rule: "The video is hook #1. The text is hook #2. A weak video means you never get to the text."**
 
+**VIC's Neuro Protocol:**
+- Match visual archetype to hook archetype: PHYSICAL VIOLATION needs visible tension (door ajar, stranger near luggage, hand reaching). INSIDER LEAK needs the insider in frame — a crew member, a hotel employee, someone in uniform. SILENT DRAIN needs to show the invisible thing draining (money graphic, depleting visual).
+- T1 Reptilian Grip visual check: does the first frame alone activate unease, alert, or curiosity within 0.3 seconds — BEFORE the text loads? If not → VIC flags it as ⚠️ VISUAL WEAK and proposes a reframe.
+
 ---
 
 ### 🔍 RICO — Trend Intelligence Analyst
@@ -497,6 +586,11 @@ Rico's verdicts:
 **Rico's rule: "Being second with the same hook is worthless. A slightly different angle = a completely different algorithm trajectory."**
 
 Rico also drives autonomous topic selection (Step 0) — when no topic is given, Rico picks the freshest opportunity from the TOPIC BANK based on the current niche landscape.
+
+**Rico's Neuro Protocol:**
+- Check which Archetype competitors used this week: if maks.motivator posted COMMAND INTERRUPT twice → we pick INSIDER LEAK or NEAR MISS to differentiate.
+- L3 AUTHORITY DISRUPTION is currently the highest-performing lever in travel niche — Rico prioritizes it when not overused by competitors.
+- Cross-reference ЖУРНАЛ ТЕМ (topics journal in footage-manager): never propose a slug that was used in the last 14 days. This is Rico's first check before any brainstorm.
 
 ---
 
