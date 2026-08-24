@@ -28,15 +28,30 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Aug 22 | 32_18, 32_13, 32_12, 32_6, 32_8, 32_9 |
 | Aug 23 | 32_7, 32_4, 32_11, 32_14, 32_15 |
 | Aug 24 | 32_7, 32_4, 32_5, 32_17, 32_1, 32_18, 32_9 |
+| Aug 25 | 32_10, 32_12, 32_16, 32_6, 32_8, 32_13 |
+
+---
+
+## ЖУРНАЛ ТЕМ (slug — повторять нельзя 14 дней)
+
+| Дата | Slug / тема |
+|------|-------------|
+| Aug 13 | overhead-bin-theft, hotel-room-entry, cruise-balcony-entry, airport-helper-trap |
+| Aug 19 | baggage-claim-swap, airport-atm-trap, cruise-port-scam, hotel-receptionist, rome-waiter |
+| Aug 22 | border-officer-phone, crew-2am, bangkok-taxi, gate-agent-bump, eu-compensation, blue-zone-food |
+| Aug 23 | luggage-theft-window, window-seat-xrays, fa-greeting-screening, airport-thief-target, doctor-radiation-story |
+| Aug 24 | hotel-receptionist-v2, overhead-bin-theft-v2, cruise-port-scam-v2, airport-helper-trap-v2, baggage-claim-swap, airport-atm-trap |
+| Aug 25 | gate-easy-target, taxi-uniform-scam, cruise-card-cloned, hotel-checkin-watched, restaurant-abroad-customs, cruise-cabin-nightclub |
 
 ---
 
 ## ПРАВИЛА — железные
 
-1. **Никаких повторов** — нельзя использовать клип если он уже был сегодня или вчера
-2. **Ротация** — идти по библиотеке рандомно, не зацикливаться на первых клипах
-3. **Batch** — если делаем 4-6 рилсов сразу, все 4-6 клипов должны быть разными
-4. **После выбора** — записать клип в журнал с сегодняшней датой
+1. **Никаких повторов клипов** — нельзя использовать клип если он уже был сегодня или вчера
+2. **Никаких повторов тем** — нельзя брать тему (slug) если она была в последние 14 дней. Смотреть ЖУРНАЛ ТЕМ перед брейнштормом.
+3. **Ротация** — идти по библиотеке рандомно, не зацикливаться на первых клипах
+4. **Batch** — если делаем 4-6 рилсов сразу, все клипы и все темы должны быть разными
+5. **После выбора** — записать клип В ЖУРНАЛ ИСПОЛЬЗОВАНИЯ и slug В ЖУРНАЛ ТЕМ с сегодняшней датой
 
 ---
 
