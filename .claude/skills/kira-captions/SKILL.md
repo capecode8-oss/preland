@@ -69,7 +69,7 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 - CTA в капшене: `Comment SAFE and I'll send it to your DMs`
 - Ссылка: прилэнд с карточкой и платным гайдом
 - Платный продукт: $14.90 Travel Safety Guide на Lava.top
-- Мост к CTA: тревога после travel-ситуации → "I made a free safety card"
+- Мост к CTA: тревога после travel-ситуации → "I put together a 🎁 safety card — yours to keep"
 
 ### 😴 СОН продукт → кодовое слово **CALM**
 - Тема: сон / 3AM wakeup / insomnia / sleep hacks / health
@@ -99,7 +99,7 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 - Никакого академического, журналистского или экспертного тона.
 - Тест: поймёт ли 15-летний американец, который не читает статьи? Если нет — переписать.
 - Читатель не должен спрашивать "а что это такое?" — всё объяснено внутри текста.
-- Продукт (free card, 4 steps) описывается одной простой фразой прямо в CTA — не названием.
+- Продукт (🎁 one-page card, yours to keep) описывается одной простой фразой прямо в CTA — не названием.
 
 **Sam проверяет каждое предложение:** "Мог бы я написать это в iMessage другу в 11 вечера?" Если нет — переписать.
 
@@ -131,7 +131,7 @@ Length: **~1900 characters total** (including title, subtitle, CTA and save line
 
 **Обязательная структура CTA-блока (3 элемента):**
 1. **МОСТ** — 1-2 предложения, которые соединяют тему рилса с бессонницей. Эмоция которую вызывает тема (тревога, злость, беспокойство, "а вдруг у меня уже") → "это и есть то что не даёт спать в 3 ночи"
-2. **ЧТО** — free one-page card, 4 steps
+2. **ЧТО** — 🎁 one-page card, yours to keep, 4 steps
 3. **КАК** — Comment CALM + link in bio
 
 **Формула МОСТА по теме:**
@@ -152,12 +152,12 @@ Length: **~1900 characters total** (including title, subtitle, CTA and save line
 **Зритель читает CTA стоя в очереди. 3 секунды. Решение: иду / не иду.**
 
 CTA должен содержать ВСЕ 3 элемента подряд, без паузы:
-1. **ЧТО** — что это такое (free card / free one-page guide)
+1. **ЧТО** — что это такое (🎁 one-page card, yours to keep)
 2. **ЧТО ДАЁТ** — что конкретно решает (4 steps for when you wake up at 3AM)
-3. **КАК ПОЛУЧИТЬ** — Comment CALM ИЛИ link in bio
+3. **КАК ПОЛУЧИТЬ** — Comment CALM/SAFE ИЛИ link in bio
 
 ❌ ЗАПРЕЩЕНО:
-- "Get it free" — не понятно что именно
+- "Get it free" / "FREE card" / любое слово free — Instagram банит
 - "Check the link in bio" — не понятно зачем
 - "Comment CALM for more info" — не понятно что за info
 

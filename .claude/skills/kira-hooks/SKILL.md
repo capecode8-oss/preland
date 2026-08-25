@@ -1006,7 +1006,7 @@ CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
 
 [PAYOFF — что делать / что на самом деле происходит]
 
-[CTA — 3 секунды = понятно: ЧТО (free one-page card) + ЧТО ДАЁТ (4 steps for 3AM) + КАК (comment CALM / link in bio)]
+[CTA — 3 секунды = понятно: ЧТО (🎁 one-page card, yours to keep) + ЧТО ДАЁТ (4 steps for 3AM / 5 travel situations) + КАК (comment CALM или SAFE / link in bio). ⛔ СЛОВО FREE ЗАПРЕЩЕНО.]
 
 [SAVE LINE]
 
