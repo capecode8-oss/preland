@@ -13,7 +13,7 @@ VERIFY_TOKEN = os.environ["WEBHOOK_VERIFY_TOKEN"]
 PAGE_ACCESS_TOKEN = os.environ["INSTAGRAM_PAGE_ACCESS_TOKEN"]
 APP_SECRET = os.environ["META_APP_SECRET"]
 
-KEYWORDS = ["calm"]
+KEYWORDS = ["safe"]
 PRODUCT_URL = "https://thekiramethod.com/"
 GRAPH_API_URL = "https://graph.facebook.com/v21.0"
 
