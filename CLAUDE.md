@@ -97,10 +97,10 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 **Формат хуков — конкурент (maks.motivator) — ДВА ФОРМАТА:**
 
-**Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, CTA badge `( текст ↓ )`, шрифт 60px+
+**Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, шрифт 60px+
 → Для команд, предупреждений, фактов с цифрой. Пример: "Never Book This Cabin On A Cruise Ship"
 
-**Format B — Story Hook (ОСНОВНОЙ):** 3 строки полными предложениями, без CTA badge
+**Format B — Story Hook (ОСНОВНОЙ):** 3 строки полными предложениями
 → Для личных историй с местом/человеком. Структура: SETUP → СОБЫТИЕ → CLIFF-HANGER
 → Пример: "A waiter in Rome brought me two different bills for the same table. The second one only appeared after I paid the first."
 
@@ -136,7 +136,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 Когда пользователь говорит **"запланируем рилсы"**, **"давай 5 рилсов"**, **"сделай batch"** — АВТОМАТИЧЕСКИ применять:
 
 1. **Kira = рассказчик от первого лица** — "I found out", "A hotel receptionist told me", "My doctor showed me"
-2. **Format B приоритет** — полные предложения, 3 строки, без CTA badge
+2. **Format B приоритет** — полные предложения, 3 строки
 3. **Три формулы-приоритета (maks.motivator стиль):**
    - `"I [did X] for [Y years]. A [person] told me [shocking fact]. I [changed] since."` — личная история
    - `"The first thing [person] looks for is not [obvious thing]. It's this."` — curiosity gap
@@ -209,7 +209,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - **Первое лицо** ("I", "my friend", "A local told me") — обязательно
 - **Конкретная цифра или место** ("$14,000", "Bali", "3×") — когда возможно
 - **Max 3 строки** в hook_lines, ≤6 слов на строку
-- **CTA badge:** одна фраза, скрывает payoff → всегда ↓
+- ⛔ **CTA badge / стрелка ↓ — ОТМЕНЕНЫ** (Aug 25 2026, фокус-группа 84/100)
 
 **5 обязательных вопросов перед финализацией:**
 1. Tyler остановит скролл на первых 3 словах?

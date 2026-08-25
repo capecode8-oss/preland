@@ -773,7 +773,7 @@ Answer as Tyler. If ANY answer is "no" — rewrite. No exceptions.
 **Правила:**
 - Max 3 строки (2 — идеал)
 - **Max 6 слов на строку** → шрифт автоматически 60px+
-- CTA badge обязателен: `( текст ↓ )` — скрывает payoff
+- ❌ CTA badge ОТМЕНЁН — больше не используем стрелку/badge ни в каком формате
 - Первое слово = самое сильное слово хука
 - Никогда не раскрывать payoff в хуке
 
@@ -843,22 +843,23 @@ with charges I never made."
 
 | Ситуация | Формат | CTA Badge |
 |----------|--------|-----------|
-| Факт / цифра / предупреждение / команда | **Format A** | ✅ ОБЯЗАТЕЛЬНО |
-| Личная история с местом / человеком / событием | **Format B** | ❌ НЕТ |
-| Insider observation ("ever notice how...") | **Format A или B** | Зависит от длины |
-| Команда ("Never do X") | **Format A** | ✅ ОБЯЗАТЕЛЬНО |
-| Injustice ("They charged me / A waiter...") | **Format B** если 3+ предложения; **Format A** если 2 строки | Только для Format A |
+| Факт / цифра / предупреждение / команда | **Format A** | ❌ нет badge |
+| Личная история с местом / человеком / событием | **Format B** | ❌ нет badge |
+| Insider observation ("ever notice how...") | **Format A или B** | ❌ нет badge |
+| Команда ("Never do X") | **Format A** | ❌ нет badge |
+| Injustice ("They charged me / A waiter...") | **Format B** если 3+ предложения; **Format A** если 2 строки | ❌ нет badge |
 
 **АЛГОРИТМ РЕШЕНИЯ (Mike запускает автоматически):**
 
 ```
-1. Тема — это команда, цифра, факт? → Format A + CTA badge
-2. Тема — это история с человеком / местом / событием? → Format B, нет badge
-3. История 2 строки → Format A с badge
-4. История 3+ строк → Format B без badge
-5. Hook уже заканчивается на cliff-hanger (зритель ДОЛЖЕН читать капшен)? → Format B, badge не нужен
-6. Hook заканчивается "слишком ровно" (payoff виден)? → добавить badge Format A
+1. Тема — это команда, цифра, факт? → Format A (без badge)
+2. Тема — это история с человеком / местом / событием? → Format B (без badge)
+3. История 2 строки → Format A
+4. История 3+ строк → Format B
+5. Hook уже заканчивается на cliff-hanger? → Format B
+6. Hook заканчивается "слишком ровно" (payoff виден)? → усилить последнюю строку, НЕ добавлять badge
 ```
+⛔ CTA badge / стрелка ↓ — ОТМЕНЕНЫ НАВСЕГДА. Фокус-группа 84/100 проголосовала за удаление. Баннерная слепота. Хук = только строки текста.
 
 **ПРАВИЛО CTA BADGE (для Format A):**
 Badge создаёт НОВЫЙ вопрос — не закрывает старый. Hook → badge → зритель хочет знать ещё больше.
@@ -961,12 +962,9 @@ hook_lines: [
     "Строка 1",
     "Строка 2",
 ]
-cta_badge: "( [конкретный байт — не абстрактный. Намёк на личную потерю / шокирующий факт / что зритель получит] ↓ )"
-
 ━━ НА ЭКРАНЕ ВЫГЛЯДИТ ТАК:
 [Строка 1]
 [Строка 2]
-( [cta_badge текст] ↓ )
 ━━
 
 АУДИТ КОМАНДЫ:
@@ -1017,22 +1015,13 @@ CAMERA + SCENE + SUBJECT/ACTION/EMOTION + LIGHTING + STYLE/SPECS]
 
 ---
 
-### ПРАВИЛО CTA BADGE — вшито навсегда
+### ⛔ CTA BADGE — ОТМЕНЁН НАВСЕГДА (решение Aug 25 2026)
 
-❌ ЗАПРЕЩЕНО — абстрактные CTA:
-- "( watch till the end ↓ )"
-- "( you need to know this ↓ )"
-- "( this is important ↓ )"
-- "( see below ↓ )"
+CTA badge и стрелка ↓ больше не используются ни в одном формате.
+Причина: фокус-группа 84/100 проголосовала против. Баннерная слепота 2026.
+maks.motivator убрал badge в 60% постов — мы делаем то же самое.
 
-✅ ОБЯЗАТЕЛЬНО — конкретный байт с личной ставкой или шокирующим фактом:
-- "( I was sick for 3 days straight ↓ )" — личная потеря
-- "( my friend lost $14,000 over this ↓ )" — конкретная цифра
-- "( the cabin that saved every trip since ↓ )" — намёк на решение
-- "( customs kept every dollar ↓ )" — конкретное последствие
-- "( one reply email fixed it in 5 min ↓ )" — решение без раскрытия
-
-**Правило:** CTA badge создаёт НОВЫЙ вопрос — не закрывает старый. Hook → badge → ещё больше хочется знать.
+Хук = только строки текста. Никакого `( текст ↓ )`. Никогда.
 
 ---
 
@@ -1051,7 +1040,7 @@ hook_lines: [
     "for the same table.",
     "The second one only appeared after I paid the first.",
 ]
-cta_badge: None (story is the hook)
+⛔ badge: нет (badge отменён навсегда)
 
 АУДИТ КОМАНДЫ:
 Jordan ✅ | Mike 🟢 STRONG (→другу кто едет в Европу) | Alex ✅ злость | Sam ✅ cliff-hanger | Dana ✅ | Red ✅ SURVIVED | Tyler STOPS ✅
