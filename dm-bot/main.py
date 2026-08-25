@@ -2,6 +2,7 @@ import os
 import json
 import hmac
 import hashlib
+import random
 import httpx
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import PlainTextResponse
@@ -15,6 +16,41 @@ APP_SECRET = os.environ["META_APP_SECRET"]
 KEYWORDS = ["calm"]
 PRODUCT_URL = "https://thekiramethod.com/"
 GRAPH_API_URL = "https://graph.facebook.com/v21.0"
+
+COMMENT_REPLIES = [
+    "Sent you a message! 🌙 Check your DMs — your free guide is waiting ✨",
+    "Just sent it to your DMs! 📩 Check your inbox (or Message Requests) ✨",
+    "Done! 🌙 Look for a DM from me — your free Calm Guide is there ✨",
+    "Sent! Check your Instagram Direct — it's there waiting for you 🌙",
+    "Your free guide is on its way to your DMs! 📩 Check your inbox ✨",
+    "Just dropped it in your DMs! 🌙 Open your messages to grab it ✨",
+    "Sent you the guide! 📩 Look in your DMs or Message Requests 🌙",
+    "It's in your DMs! 🌙 Check your inbox — the free guide is there ✨",
+    "Done! 🌙 I sent it to your messages — check your DMs ✨",
+    "Just sent your free Calm Guide to your DMs! 📩 Check inbox ✨",
+    "Sent it! 🌙 Your guide is waiting in your Instagram messages ✨",
+    "Check your DMs! 📩 I just sent your free guide over 🌙",
+    "Your guide is in your inbox! 🌙 Check DMs or Message Requests ✨",
+    "Just messaged you! 📩 Your free Calm Guide is in your DMs 🌙",
+    "Sent! 🌙 Check your messages — it's there for you ✨",
+    "Done — your free guide is in your DMs! 📩 Go check 🌙",
+    "Just sent it! 🌙 Look in your Instagram inbox for the guide ✨",
+    "Sent to your DMs! 🌙 Check messages — it's free, no email needed ✨",
+    "Your free Calm Guide is in your inbox! 📩 Check DMs 🌙",
+    "Done! Check your Instagram Direct — sent your guide right now 🌙 ✨",
+]
+
+
+async def reply_to_comment(comment_id: str):
+    """Post a random reply to the Instagram comment."""
+    text = random.choice(COMMENT_REPLIES)
+    async with httpx.AsyncClient() as client:
+        await client.post(
+            f"{GRAPH_API_URL}/{comment_id}/replies",
+            params={"access_token": PAGE_ACCESS_TOKEN},
+            json={"message": text},
+            timeout=10.0,
+        )
 
 
 async def send_message(recipient_id: str, message: dict):
@@ -118,6 +154,9 @@ async def handle_webhook(request: Request):
                 commenter_id = value.get("from", {}).get("id")
 
                 if commenter_id and contains_keyword(comment_text):
+                    comment_id = value.get("id")
+                    if comment_id:
+                        await reply_to_comment(comment_id)
                     await send_first_dm(commenter_id)
 
         # --- Button click (quick reply postback) ---
