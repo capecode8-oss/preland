@@ -8,20 +8,23 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 ---
 
-## 🔴 FREE + КОДОВЫЕ СЛОВА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, Sam проверяет каждый капшен)
+## 🔴 ЗАПРЕТ FREE + КОДОВЫЕ СЛОВА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, Sam проверяет каждый капшен)
 
-**Три обязательных правила форматирования — нарушение = капшен не выходит:**
+**⛔ СЛОВО "FREE" — ПОЛНОСТЬЮ ЗАПРЕЩЕНО. Instagram банит аккаунты за него.**
+Нельзя использовать ни в каком регистре: free / Free / FREE — всё запрещено. Навсегда.
 
-1. **Слово FREE** — всегда CAPS + эмодзи рядом:
-   - ✅ `🎁 FREE one-page safety card` / `FREE 🎁` / `get it FREE 🎁`
-   - ❌ `free card` / `a free guide` — запрещено
-   - Эмодзи выбирать по смыслу: 🎁 (подарок) / 🆓 (free) / ✅ (получи)
+**Вместо FREE — новая формула (одобрена командой + 100 зрителей: 81/100 стоп, 26 DM sends):**
+- ✅ `🎁 one-page safety card — yours to keep`
+- ✅ `I put together a 🎁 one-page card — yours to keep`
+- ✅ `it's yours to keep 🎁`
+- ✅ `I'll send it to you directly` (без слова free)
+- ❌ `FREE card` / `free guide` / `get it free` / `FREE 🎁` — всё запрещено
 
-2. **Кодовые слова** — всегда CAPS:
+**Кодовые слова** — всегда CAPS:
    - ✅ `Comment SAFE` / `Comment CALM`
    - ❌ `comment safe` / `Comment Safe` — запрещено
 
-3. **Sam проверяет** перед финализацией: найди каждое вхождение слова "free" в капшене — заменить на FREE + эмодзи. Найди каждое кодовое слово — убедиться что CAPS.
+**Sam проверяет** перед финализацией: найди каждое вхождение слова "free" в капшене — УДАЛИТЬ и заменить на "yours to keep" / "on me" / "I'll send it". Найди каждое кодовое слово — убедиться что CAPS.
 
 ---
 
@@ -158,12 +161,19 @@ CTA должен содержать ВСЕ 3 элемента подряд, бе
 - "Check the link in bio" — не понятно зачем
 - "Comment CALM for more info" — не понятно что за info
 
-✅ ОБРАЗЕЦ (всё за 3 секунды):
+✅ ОБРАЗЕЦ CALM (всё за 3 секунды):
 ```
-I made a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
+I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
+Comment CALM and I'll send it to you directly. Or find it in the link in bio.
 ```
-→ ЧТО: free one-page card | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
+→ ЧТО: one-page card (🎁 yours to keep) | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
+
+✅ ОБРАЗЕЦ SAFE (всё за 3 секунды):
+```
+I put together a 🎁 one-page safety card — yours to keep. It covers the 5 situations most solo travelers don't prepare for.
+Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+```
+→ ЧТО: one-page safety card (🎁 yours to keep) | ЧТО ДАЁТ: 5 situations | КАК: comment SAFE / link in bio
 
 **ОБЯЗАТЕЛЬНО: суть рилса — содержательный блок**
 После second hook — раскрыть тему полностью. Объяснить ПОЧЕМУ, КАК, ЧТО конкретно делать. Читатель уходит с реальными знаниями. Без этого блока капшен не выходит.
@@ -353,18 +363,26 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 
 ---
 
-## МИНИ ПРОДУКТ — знать наизусть, упоминать в каждом капшене
+## ДВА МИНИ-ПРОДУКТА — знать наизусть, упоминать в каждом капшене
 
-**Бесплатный продукт:** "The 3AM Calm Card" — бесплатная карточка, 4 шага для тех кто просыпается в 3 ночи.
-**Как получить:** Comment CALM в комментариях ИЛИ ссылка в bio (thekiramethod.com)
-**Платный апселл внутри карточки:** "21-Page 7-Night Guide" — $9.90 (не упоминать в капшене — только в самой карточке)
+### 😴 CALM продукт (сон):
+**Карточка:** "The 3AM Calm Card" — 🎁 одна страница, 4 шага, yours to keep.
+**Как получить:** Comment CALM ИЛИ ссылка в bio (thekiramethod.com)
+**Платный апселл внутри карточки:** "21-Page 7-Night Guide" — $9.90 (не упоминать в капшене)
+
+### ✈️ SAFE продукт (travel):
+**Карточка:** Solo Traveler's Safety Card — 🎁 одна страница, 5 ситуаций, yours to keep.
+**Как получить:** Comment SAFE ИЛИ ссылка в bio (thekiramethod.com)
+**Платный апселл внутри карточки:** Travel Safety Guide 47 стран — $14.90 (не упоминать в капшене)
 
 **ПРАВИЛО CTA — ОБЯЗАТЕЛЬНО:**
 Каждый CTA должен содержать ОБА варианта получения:
-1. Comment CALM (для DM)
+1. Comment SAFE / Comment CALM (для DM)
 2. Ссылка в bio / link in bio (для прямого перехода)
 
-Никогда не писать только "comment CALM" без упоминания ссылки. Никогда.
+⛔ Никогда не писать только "comment CALM/SAFE" без упоминания ссылки. Никогда.
+⛔ Никогда не использовать слово FREE в любой форме. Никогда.
+✅ Всегда: "yours to keep" + 🎁 + "I'll send it to you directly"
 
 ---
 
@@ -386,67 +404,88 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 
 ## CTA BANK — pick by reel topic, never repeat same one twice in a row
 
-### 🏨 HOTEL / CHECK-IN
+⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО во всех CTA ниже и в любом тексте капшена.
+✅ Всегда: "yours to keep" / "I'll send it to you directly" / "🎁 one-page card"
+
+### 🏨 HOTEL / CHECK-IN (CALM)
 ```
 Ever wake up at 3AM in a hotel room and just stare at the ceiling?
-I made a 🎁 FREE card for that. One page. 4 steps. Tells you exactly what to do.
-Comment CALM and I'll send it to you. It's also FREE 🎁 in the link in bio.
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you directly. Or find it in the link in bio.
 ```
 
-### ✈️ AIRPORT / FLIGHT
+### ✈️ AIRPORT / FLIGHT (CALM)
 ```
 Long flights mess up your sleep for days after.
-I have a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM below and I'll send it. Or get it FREE 🎁 in the link in bio.
+I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
+Comment CALM below and I'll send it. Or find it in the link in bio.
 ```
 
-### 🚢 CRUISE
+### 🚢 CRUISE (CALM)
 ```
 Cabin noise on a ship wakes you up at 3AM. Every time.
-I made a 🎁 FREE one-page card — 4 steps for when that happens and you can't fall back asleep.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+I put together a 🎁 one-page card — 4 steps for when that happens. Yours to keep.
+Comment CALM and I'll send it to you directly. Or find it in the link in bio.
 ```
 
-### 🍎 FOOD / HEALTH
+### 🍎 FOOD / HEALTH (CALM)
 ```
 What you eat affects how you sleep — more than most people think.
-If you wake up at 3AM and can't fall back asleep, I have a free card for that.
-One page. 4 steps. Comment CALM and I'll send it. Also FREE 🎁 in the link in bio.
+If you wake up at 3AM and can't fall back asleep, I put together a 🎁 one-page card for that. Yours to keep.
+One page. 4 steps. Comment CALM and I'll send it. Or find it in the link in bio.
 ```
 
-### 💰 MONEY / TRAPS
+### 💰 MONEY / TRAPS (CALM)
 ```
 Money stress is the #1 reason people wake up at 3AM.
-I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
+Comment CALM and I'll send it to you directly. Or find it in the link in bio.
 ```
 
-### 🌍 GENERAL (topic far from sleep)
+### 🌍 GENERAL (topic far from sleep) (CALM)
 ```
 Ever wake up at 3AM and just can't fall back asleep?
-I made a 🎁 FREE card for that — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it to you. Or grab it FREE 🎁 from the link in bio.
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you. Or find it in the link in bio.
 ```
 
-### 💊 PHARMACY / PRESCRIPTION DRUGS
+### 💊 PHARMACY / PRESCRIPTION DRUGS (CALM)
 ```
 Stress about bills is one of the top reasons people can't sleep at night.
-If your brain won't turn off at 3AM, I made a 🎁 FREE card for that.
-One page. 4 steps. Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+If your brain won't turn off at 3AM, I put together a 🎁 one-page card for that. Yours to keep.
+One page. 4 steps. Comment CALM and I'll send it. Or find it in the link in bio.
 ```
 
-### 🏠 HOME DANGER / HOUSEHOLD SAFETY
+### 🏠 HOME DANGER / HOUSEHOLD SAFETY (CALM)
 ```
 Anxiety and fear keep a lot of people awake at 3AM.
-If that's you, I made a 🎁 FREE card — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you. Or find it in the link in bio.
 ```
 
-### ⚖️ CONSUMER RIGHTS / COMPENSATION
+### ⚖️ CONSUMER RIGHTS / COMPENSATION (CALM)
 ```
 Money you're owed but haven't claimed? That stress hits hardest at 3AM.
-I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
+Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+```
+
+### ✈️ TRAVEL / SAFETY (SAFE — Solo Traveler's Safety Card)
+```
+I put together a 🎁 one-page safety card — yours to keep. It covers the 5 situations most solo travelers don't prepare for.
+Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+```
+
+### 🏨 HOTEL SAFETY (SAFE)
+```
+I put together a 🎁 one-page safety card for solo travelers — yours to keep. Most people only find out they needed it after check-in.
+Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+```
+
+### 🚢 CRUISE SAFETY (SAFE)
+```
+I put together a 🎁 one-page safety card for travelers — yours to keep. Cruise situations are in there.
+Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
 ```
 
 ---

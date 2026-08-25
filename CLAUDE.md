@@ -114,7 +114,8 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - **Кодовое слово в капшене:** `SAFE` (все регистры: safe / Safe / SAFE)
 - **Что получает:** бот отправляет в DM ссылку на прилэнд → человек скачивает карточку → видит платный гайд
 - **Платный продукт:** $14.90 на Lava.top
-- **Логика подводки:** travel tips → "I made a free safety card" → Comment **SAFE**
+- **Логика подводки:** travel tips → "I put together a 🎁 safety card — yours to keep" → Comment **SAFE**
+- ⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО — Instagram банит. Заменить на "yours to keep" / "I'll send it to you directly"
 
 ### Когда пользователь говорит **"под сон"** / **"сон"** / **"calm"**:
 - **Продукт:** Sleep guide (мини-продукт про сон)
