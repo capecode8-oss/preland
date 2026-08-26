@@ -76,6 +76,7 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 - Бесплатный лид-магнит: The 3AM Calm Card (4 steps)
 - CTA в капшене: `Comment CALM and I'll send it to your DMs`
 - Мост к CTA: тревога / стресс → "can't fall back asleep at 3AM"
+- ⛔ НЕ ПИСАТЬ "link in bio" — bio ссылка ведёт ТОЛЬКО на Travel (SAFE). В CALM капшене — только Comment CALM, никакой ссылки.
 
 ### ❌ ЗАПРЕЩЕНО:
 - Писать CALM в travel-рилсе
@@ -132,7 +133,7 @@ Length: **~1900 characters total** (including title, subtitle, CTA and save line
 **Обязательная структура CTA-блока (3 элемента):**
 1. **МОСТ** — 1-2 предложения, которые соединяют тему рилса с бессонницей. Эмоция которую вызывает тема (тревога, злость, беспокойство, "а вдруг у меня уже") → "это и есть то что не даёт спать в 3 ночи"
 2. **ЧТО** — 🎁 one-page card, yours to keep, 4 steps
-3. **КАК** — Comment CALM + link in bio
+3. **КАК** — Comment CALM (только!) ⛔ без link in bio — bio ведёт на SAFE, не CALM
 
 **Формула МОСТА по теме:**
 - ✈️ Аэропорт/кража → "That hypervigilant feeling doesn't turn off when you get home. A lot of travelers lie awake at 3AM replaying what could have happened."
@@ -154,7 +155,7 @@ Length: **~1900 characters total** (including title, subtitle, CTA and save line
 CTA должен содержать ВСЕ 3 элемента подряд, без паузы:
 1. **ЧТО** — что это такое (🎁 one-page card, yours to keep)
 2. **ЧТО ДАЁТ** — что конкретно решает (4 steps for when you wake up at 3AM)
-3. **КАК ПОЛУЧИТЬ** — Comment CALM/SAFE ИЛИ link in bio
+3. **КАК ПОЛУЧИТЬ** — SAFE: Comment SAFE + link in bio | CALM: только Comment CALM (без link in bio — bio ведёт на SAFE)
 
 ❌ ЗАПРЕЩЕНО:
 - "Get it free" / "FREE card" / любое слово free — Instagram банит
@@ -164,9 +165,10 @@ CTA должен содержать ВСЕ 3 элемента подряд, бе
 ✅ ОБРАЗЕЦ CALM (всё за 3 секунды):
 ```
 I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
-Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+Comment CALM and I'll send it to you directly.
 ```
-→ ЧТО: one-page card (🎁 yours to keep) | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
+→ ЧТО: one-page card (🎁 yours to keep) | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: только Comment CALM
+⛔ НЕ ДОБАВЛЯТЬ "link in bio" — bio ведёт на Travel продукт, не CALM.
 
 ✅ ОБРАЗЕЦ SAFE (всё за 3 секунды):
 ```
@@ -376,11 +378,8 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 **Платный апселл внутри карточки:** Travel Safety Guide 47 стран — $14.90 (не упоминать в капшене)
 
 **ПРАВИЛО CTA — ОБЯЗАТЕЛЬНО:**
-Каждый CTA должен содержать ОБА варианта получения:
-1. Comment SAFE / Comment CALM (для DM)
-2. Ссылка в bio / link in bio (для прямого перехода)
-
-⛔ Никогда не писать только "comment CALM/SAFE" без упоминания ссылки. Никогда.
+**SAFE** — два варианта: Comment SAFE + link in bio (bio ведёт на Travel продукт ✅)
+**CALM** — только один вариант: Comment CALM (⛔ НЕ писать link in bio — bio ведёт на Travel, не CALM)
 ⛔ Никогда не использовать слово FREE в любой форме. Никогда.
 ✅ Всегда: "yours to keep" + 🎁 + "I'll send it to you directly"
 
@@ -411,63 +410,63 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 ```
 Ever wake up at 3AM in a hotel room and just stare at the ceiling?
 I put together a 🎁 one-page card for that — 4 steps, yours to keep.
-Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+Comment CALM and I'll send it to you directly.
 ```
 
 ### ✈️ AIRPORT / FLIGHT (CALM)
 ```
 Long flights mess up your sleep for days after.
 I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
-Comment CALM below and I'll send it. Or find it in the link in bio.
+Comment CALM below and I'll send it.
 ```
 
 ### 🚢 CRUISE (CALM)
 ```
 Cabin noise on a ship wakes you up at 3AM. Every time.
 I put together a 🎁 one-page card — 4 steps for when that happens. Yours to keep.
-Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+Comment CALM and I'll send it to you directly.
 ```
 
 ### 🍎 FOOD / HEALTH (CALM)
 ```
 What you eat affects how you sleep — more than most people think.
 If you wake up at 3AM and can't fall back asleep, I put together a 🎁 one-page card for that. Yours to keep.
-One page. 4 steps. Comment CALM and I'll send it. Or find it in the link in bio.
+One page. 4 steps. Comment CALM and I'll send it.
 ```
 
 ### 💰 MONEY / TRAPS (CALM)
 ```
 Money stress is the #1 reason people wake up at 3AM.
 I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
-Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+Comment CALM and I'll send it to you directly.
 ```
 
 ### 🌍 GENERAL (topic far from sleep) (CALM)
 ```
 Ever wake up at 3AM and just can't fall back asleep?
 I put together a 🎁 one-page card for that — 4 steps, yours to keep.
-Comment CALM and I'll send it to you. Or find it in the link in bio.
+Comment CALM and I'll send it to you.
 ```
 
 ### 💊 PHARMACY / PRESCRIPTION DRUGS (CALM)
 ```
 Stress about bills is one of the top reasons people can't sleep at night.
 If your brain won't turn off at 3AM, I put together a 🎁 one-page card for that. Yours to keep.
-One page. 4 steps. Comment CALM and I'll send it. Or find it in the link in bio.
+One page. 4 steps. Comment CALM and I'll send it.
 ```
 
 ### 🏠 HOME DANGER / HOUSEHOLD SAFETY (CALM)
 ```
 Anxiety and fear keep a lot of people awake at 3AM.
 I put together a 🎁 one-page card for that — 4 steps, yours to keep.
-Comment CALM and I'll send it to you. Or find it in the link in bio.
+Comment CALM and I'll send it to you.
 ```
 
 ### ⚖️ CONSUMER RIGHTS / COMPENSATION (CALM)
 ```
 Money you're owed but haven't claimed? That stress hits hardest at 3AM.
 I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
-Comment CALM and I'll send it to you directly. Or find it in the link in bio.
+Comment CALM and I'll send it to you directly.
 ```
 
 ### ✈️ TRAVEL / SAFETY (SAFE — Solo Traveler's Safety Card)

@@ -129,6 +129,11 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - Никогда не путать кодовые слова между продуктами
 - Никогда не писать CALM в travel-рилсе и SAFE в sleep-рилсе
 
+### ⛔ ССЫЛКА В BIO — ЖЕЛЕЗНОЕ ПРАВИЛО:
+- **SAFE** капшен → писать "link in bio" ✅ (bio ведёт на Travel Safety Guide)
+- **CALM** капшен → ⛔ НЕ писать "link in bio" никогда — bio ведёт только на Travel, не на CALM
+- В CALM только: `Comment CALM and I'll send it to you directly.` — и всё
+
 ---
 
 ## 🔑 КОДОВОЕ СЛОВО "ЗАПЛАНИРУЕМ" — ЖЕЛЕЗНОЕ ПРАВИЛО
