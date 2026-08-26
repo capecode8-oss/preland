@@ -91,8 +91,22 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ## Кто я и что делаю
 Я (@thekiramethod) произвожу Instagram Reels для английского рынка (35+, США).
-Тематика: **travel hacks, life hacks, food facts, health warnings, money traps** (универсальные темы).
-❌ СТОП: отношения / измена / cheating drama — больше не делаем.
+Тематика: **travel hacks, life hacks, food facts, health warnings, money traps, marriage & relationships facts** (универсальные темы).
+
+### 💍 RELATIONSHIPS / MARRIAGE — РАЗРЕШЕНО (ниша #1 по DM sends в США)
+**Что можно:**
+- Психологические факты о браке и отношениях ("Studies show married couples who do X live Y years longer")
+- Предупреждения и паттерны ("If your partner does this, pay attention")
+- Любопытные факты ("The first 3 years of marriage change your brain chemistry")
+- От первого лица как наблюдение или факт — "I read this and sent it to my husband immediately"
+
+**Что запрещено навсегда:**
+- Cheating drama / измена ("She found...", "He was texting...")
+- Third person soap opera ("My friend's husband did X")
+- "you won't believe what he/she did"
+- Токсичный контент, скандалы, разводы как развлечение
+
+**Продукт для этой ниши:** CALM (стресс в отношениях → не спишь в 3AM → Comment CALM)
 Ежедневно публикуем 4–5 рилсов через Metricool.
 
 **Формат хуков — конкурент (maks.motivator) — ДВА ФОРМАТА:**
@@ -227,7 +241,8 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 **Темы (ротировать):** airport hacks, hotel tricks, customs traps, food facts, health warnings, cruise secrets, EU flight compensation, gate bump, Blue Zone food.
 
-❌ ЗАПРЕЩЕНО: отношения / измена / "she found" / "he asked" / "you won't believe"
+❌ ЗАПРЕЩЕНО: cheating drama / измена / "she found" / "he asked" / "you won't believe" / soap opera third person
+✅ РАЗРЕШЕНО: marriage facts / relationship psychology / предупреждения от первого лица
 
 ---
 
