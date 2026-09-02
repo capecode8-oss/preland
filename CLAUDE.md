@@ -198,27 +198,35 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - Один прямоугольник на весь текст (не отдельные плашки на каждую строку)
 - `BOTTOM_ANCHOR = 1550px` (выше Instagram UI — кнопки/имя канала закрывают ниже ~1680px)
 - `hook_y0 = BOTTOM_ANCHOR - box_height`
-- `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` (safety margin 50px с каждой стороны)
-- font: max_size=70, min_size=50, авто-перенос строк если строка > MAX_TEXT_W
+- `MAX_TEXT_W = 760px` — АБСОЛЮТНЫЙ ЛИМИТ ширины текста
+- **BOX WIDTH = адаптивная**: `min(860, max_line_width + 2*PAD_X)` — плашка по ширине контента, не растягивается зря
+- font: max_size=70, **min_size=40**, перебирать от 70 вниз пока строка ≤ MAX_TEXT_W
+- ⛔ ПЕРЕНОС СЛОВ ЗАПРЕЩЁН — если строка не влезает при min_size=40, переписать хук короче
+- Перед рендером: проверить `dummy.textlength(line) <= MAX_TEXT_W` для каждой строки
 
-❌ ЗАПРЕЩЕНО: ставить текст сверху, делать body clearance анализ, писать строки длиннее 6 слов
-❌ ЗАПРЕЩЕНО: менять MAX_BOX_W > 860 — текст выйдет за края экрана
-✅ ВСЕГДА: сплошная плашка внизу, авто-перенос строк, проверять превью перед пушем
+❌ ЗАПРЕЩЕНО: ставить текст сверху, писать строки длиннее 5 слов, делать box фиксированной шириной 860
+❌ ЗАПРЕЩЕНО: авто-перенос внутри строки — только сокращать хук
+✅ ВСЕГДА: плашка адаптируется под контент, текст 100% внутри плашки, превью перед пушем
 
 ---
 
 ## Рендер-спецификации (единый источник правды)
 
 - Размер: 1080×1920
-- Длительность: ровно 5.000s = 150 frames @ 30fps (loop если короче)
+- Длительность: ровно 5.000s = 150 frames @ 30fps `-frames:v 150` (loop если источник короче)
 - Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
-- Шрифт: `Montserrat-BlackItalic` — путь `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Шрифт: auto_font(max_size=70, min_size=50), авто-перенос строк если > MAX_TEXT_W
+  → установить через `pip install imageio imageio-ffmpeg` если не найден
+- Шрифт: **`Montserrat-BlackItalic`**
+  → системный путь: `/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
+  → установить: `apt-get install -y fonts-montserrat` (одна команда, работает всегда)
+  → кешировать в: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
+- Шрифт: auto_font(max_size=70, **min_size=40**), перебирать пока строка ≤ MAX_TEXT_W=760px
 - СТИЛЬ: СПЛОШНАЯ ПЛАШКА — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
 - FILL: (255, 255, 255, 248), RADIUS: 18, PAD_X: 32, PAD_TOP/BOTTOM: 28
-- CENTER_X: 540, **MAX_BOX_W: 860px** (НИКОГДА не увеличивать), **MAX_TEXT_W: 760px**
+- CENTER_X: 540, **MAX_TEXT_W: 760px** (абсолют), **BOX_W: адаптивная** = min(860, max_lw + 2*PAD_X)
 - BOTTOM_ANCHOR: 1550px (выше Instagram UI chrome)
+- Проверка перед рендером: `all(textlength(l) <= 760 for l in lines)` — если False, переписать хук
 - Всегда рендерить JPG-превью из финального MP4 и показывать перед публикацией
 
 ---
@@ -230,8 +238,9 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 **Структура:**
 - **Первое лицо** ("I", "my friend", "A local told me") — обязательно
 - **Конкретная цифра или место** ("$14,000", "Bali", "3×") — когда возможно
-- **Max 3 строки** в hook_lines, ≤6 слов на строку
+- **Max 3 строки** в hook_lines, **≤5 слов на строку** (референс: "Never Sleep Like This / On A Plane.")
 - ⛔ **CTA badge / стрелка ↓ — ОТМЕНЕНЫ** (Aug 25 2026, фокус-группа 84/100)
+- ⛔ **ДЛИННЫЕ СТРОКИ ЗАПРЕЩЕНЫ** — Montserrat-BlackItalic широкий, 6+ слов не влезают в плашку при 50px+
 
 **5 обязательных вопросов перед финализацией:**
 1. Tyler остановит скролл на первых 3 словах?
@@ -265,7 +274,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ## GitHub / публикация
 
-- Репо: `capecode8-oss/preland`, ветка: `claude/new-chat-fjz36a`
+- Репо: `capecode8-oss/preland`, ветка: `claude/schedule-5-reels-metricool-ip1tp7`
 - MP4 пушить в репо → raw.githubusercontent.com URL → Metricool
 - После изменений: commit + push обязательно
 
