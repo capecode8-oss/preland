@@ -8,20 +8,36 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 ---
 
-## 🔴 FREE + КОДОВЫЕ СЛОВА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, Sam проверяет каждый капшен)
+## 🚫 СЛОВО FREE — ПОЖИЗНЕННЫЙ ЗАПРЕТ (вшито навсегда, Sam проверяет каждый капшен)
 
-**Три обязательных правила форматирования — нарушение = капшен не выходит:**
+**FREE = спам-сигнал. Instagram и TikTok ассоциируют слово FREE со скамом → спам-блок, потеря охвата.**
 
-1. **Слово FREE** — всегда CAPS + эмодзи рядом:
-   - ✅ `🎁 FREE one-page safety card` / `FREE 🎁` / `get it FREE 🎁`
-   - ❌ `free card` / `a free guide` — запрещено
-   - Эмодзи выбирать по смыслу: 🎁 (подарок) / 🆓 (free) / ✅ (получи)
+### ❌ ЗАПРЕЩЕНО НАВСЕГДА — нарушение = капшен не выходит:
+- `FREE` / `free` / `Free` в любом регистре — УДАЛИТЬ
+- `get it free` / `free one-page` / `FREE 🎁` / `🎁 FREE` — всё под запретом
+- Любое сочетание слова free с чем угодно
 
-2. **Кодовые слова** — всегда CAPS:
-   - ✅ `Comment SAFE` / `Comment CALM`
-   - ❌ `comment safe` / `Comment Safe` — запрещено
+### ✅ ВМЕСТО FREE — эти формулировки (байт сохраняется, спам-блока нет):
+- `🎁 safety card` — эмодзи подарка заменяет слово free визуально
+- `Yours to keep` — человек понимает что это бесплатно без слова free
+- `I'll send it to you directly` — личное обещание вместо рекламного слова
+- `I put it together for you` — ощущение подарка без триггер-слова
+- `Comment SAFE and I'll send it` — действие важнее слова free
 
-3. **Sam проверяет** перед финализацией: найди каждое вхождение слова "free" в капшене — заменить на FREE + эмодзи. Найди каждое кодовое слово — убедиться что CAPS.
+**Образец правильного CTA (без единого слова free):**
+```
+I put together a 🎁 safety card with 12 situations like this — the ones that feel normal until something goes wrong. Yours to keep.
+
+Comment SAFE and I'll send it to you directly. Link in bio.
+
+Save this before your next trip. Share it with someone who's traveling soon. 🗂️
+```
+
+### КОДОВЫЕ СЛОВА — всегда CAPS:
+- ✅ `Comment SAFE` / `Comment CALM`
+- ❌ `comment safe` / `Comment Safe` — запрещено
+
+**Sam проверяет перед финализацией:** grep по слову "free" в любом регистре. Нашёл — удалить, заменить на формулировку из списка выше. Найди кодовое слово — убедиться что CAPS.
 
 ---
 
@@ -158,12 +174,14 @@ CTA должен содержать ВСЕ 3 элемента подряд, бе
 - "Check the link in bio" — не понятно зачем
 - "Comment CALM for more info" — не понятно что за info
 
-✅ ОБРАЗЕЦ (всё за 3 секунды):
+✅ ОБРАЗЕЦ (всё за 3 секунды, без слова FREE):
 ```
-I made a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
+I put together a 🎁 card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+Comment CALM and I'll send it to you. Link in bio.
 ```
-→ ЧТО: free one-page card | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
+→ ЧТО: 🎁 card | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: comment CALM / link in bio
+
+⚠️ FREE не нужен — 🎁 + "Yours to keep" / "I'll send it" передают то же самое без спам-сигнала.
 
 **ОБЯЗАТЕЛЬНО: суть рилса — содержательный блок**
 После second hook — раскрыть тему полностью. Объяснить ПОЧЕМУ, КАК, ЧТО конкретно делать. Читатель уходит с реальными знаниями. Без этого блока капшен не выходит.
@@ -386,67 +404,105 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 
 ## CTA BANK — pick by reel topic, never repeat same one twice in a row
 
-### 🏨 HOTEL / CHECK-IN
+⚠️ СЛОВО FREE ЗАПРЕЩЕНО ВО ВСЕХ CTA. Используй только формулировки ниже.
+
+### ✈️ TRAVEL SAFETY (SAFE) — аэропорт / отель / круиз / общий тревел
 ```
-Ever wake up at 3AM in a hotel room and just stare at the ceiling?
-I made a 🎁 FREE card for that. One page. 4 steps. Tells you exactly what to do.
-Comment CALM and I'll send it to you. It's also FREE 🎁 in the link in bio.
+I put together a 🎁 safety card with situations like this — the ones that feel normal until something goes wrong. Yours to keep.
+
+Comment SAFE and I'll send it to you directly. Link in bio.
+
+Save this before your next trip. Share it with someone who's traveling soon. 🗂️
 ```
 
-### ✈️ AIRPORT / FLIGHT
+### ✈️ TRAVEL SAFETY — вариант 2 (когда история про документы / кражу)
 ```
-Long flights mess up your sleep for days after.
-I have a 🎁 FREE one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
-Comment CALM below and I'll send it. Or get it FREE 🎁 in the link in bio.
+I made a 🎁 one-page safety checklist — 5 things I check before every trip now. Takes 15 minutes. Could save you everything.
+
+Comment SAFE below and I'll send it straight to your DMs. Or grab it from the link in bio.
+
+Save this. You'll want it before your next flight. 🗂️
+```
+
+### ✈️ TRAVEL SAFETY — вариант 3 (когда история про скам / ловушку)
+```
+After this happened to me, I put together a 🎁 card — 12 situations like this one. The traps that look completely normal.
+
+Comment SAFE and it's yours. Link in bio too.
+
+Send this to someone planning a trip. They need to see it first. ♻️
+```
+
+### 🏨 HOTEL / CHECK-IN
+```
+That low-level hypervigilance after checking in alone — it's real. A lot of travelers lie awake at 3AM replaying it.
+
+I made a 🎁 card for that. One page. 4 steps for when your brain won't shut off.
+
+Comment CALM and I'll send it to you. Link in bio.
 ```
 
 ### 🚢 CRUISE
 ```
-Cabin noise on a ship wakes you up at 3AM. Every time.
-I made a 🎁 FREE one-page card — 4 steps for when that happens and you can't fall back asleep.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+That realization you were vulnerable while at dinner — it circles back at 3AM.
+
+I put together a 🎁 card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+
+Comment CALM and it's yours. Link in bio too.
 ```
 
 ### 🍎 FOOD / HEALTH
 ```
-What you eat affects how you sleep — more than most people think.
-If you wake up at 3AM and can't fall back asleep, I have a free card for that.
-One page. 4 steps. Comment CALM and I'll send it. Also FREE 🎁 in the link in bio.
+What you eat affects how you sleep more than most people think.
+
+I made a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep.
+
+Comment CALM and I'll send it. Link in bio.
 ```
 
 ### 💰 MONEY / TRAPS
 ```
-Money stress is the #1 reason people wake up at 3AM.
-I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+Money stress hits hardest at 3AM when the brain won't stop.
+
+I put together a 🎁 card — 4 steps for when that happens. One page. Straight to the point.
+
+Comment CALM and I'll send it to you directly. Link in bio.
 ```
 
 ### 🌍 GENERAL (topic far from sleep)
 ```
 Ever wake up at 3AM and just can't fall back asleep?
-I made a 🎁 FREE card for that — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it to you. Or grab it FREE 🎁 from the link in bio.
+
+I made a 🎁 card for that — one page, 4 steps, tells you exactly what to do.
+
+Comment CALM and I'll send it to you. Link in bio.
 ```
 
 ### 💊 PHARMACY / PRESCRIPTION DRUGS
 ```
 Stress about bills is one of the top reasons people can't sleep at night.
-If your brain won't turn off at 3AM, I made a 🎁 FREE card for that.
-One page. 4 steps. Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+
+I put together a 🎁 card — 4 steps for when your brain won't turn off at 3AM.
+
+Comment CALM and I'll send it. Link in bio too.
 ```
 
 ### 🏠 HOME DANGER / HOUSEHOLD SAFETY
 ```
-Anxiety and fear keep a lot of people awake at 3AM.
-If that's you, I made a 🎁 FREE card — one page, 4 steps, tells you exactly what to do.
-Comment CALM and I'll send it. Or grab it FREE 🎁 from the link in bio.
+Anxiety after something like this keeps people awake at 3AM.
+
+I made a 🎁 card for that — one page, 4 steps.
+
+Comment CALM and it's yours. Link in bio.
 ```
 
 ### ⚖️ CONSUMER RIGHTS / COMPENSATION
 ```
-Money you're owed but haven't claimed? That stress hits hardest at 3AM.
-I made a 🎁 FREE one-page card — 4 steps for when your brain won't stop at night.
-Comment CALM and I'll send it. FREE 🎁 in the link in bio too.
+Money you're owed but haven't claimed — that stress hits hardest at 3AM.
+
+I put together a 🎁 card — 4 steps for when your brain won't stop at night.
+
+Comment CALM and I'll send it. Link in bio.
 ```
 
 ---
@@ -540,10 +596,20 @@ Only publish if all 7 green + Focus Group 15+ sends. If any red — find the wea
 
 ## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО
 
-**СПЛОШНАЯ ПЛАШКА внизу кадра. Лицо свободно сверху. Никаких измерений.**
-- `BOTTOM_ANCHOR = 1550px` | `hook_y0 = 1550 - box_height`
+**Два варианта позиции — выбрать по видео:**
+
+### Вариант A — ПЛАШКА ВНИЗУ (по умолчанию)
+- Лицо/действие сверху, текст внизу
+- `BOTTOM_ANCHOR = 1550px` | `box_y0 = 1550 - box_height`
+
+### Вариант B — ПЛАШКА СВЕРХУ (когда небо / пустое пространство вверху)
+- Текст сверху на фоне неба/пространства, действие внизу
+- `TOP_ANCHOR = 120px` | `box_y0 = 120`
+
+**Общее для обоих вариантов:**
 - Один прямоугольник на весь текст (не отдельные плашки на строку)
 - `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` — авто-перенос если строка длиннее
-- ❌ hook_y0 = 80 ЗАПРЕЩЕНО | ❌ отдельные плашки на строки ЗАПРЕЩЕНО
-- Render script: `/home/user/preland/render.py` — использовать всегда
-QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1550
+- font: Montserrat-BlackItalic, авто-размер 70→36px пока все строки влезают
+- fill: (255,255,255,248), radius=18, PAD_X=32, PAD_TOP/BOT=28
+- ❌ Отдельные плашки на строки ЗАПРЕЩЕНО
+- QA: center=540±2px | box_w ≤ 860px
