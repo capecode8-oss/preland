@@ -313,6 +313,8 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 - Публиковать как Instagram Reel + TikTok (PUBLIC_TO_EVERYONE, нужен tiktokData.title)
 - Музыку и геотег (New York) добавляет владелец вручную
 - Caption: 1700–1900 символов, структура: second hook → context → detail → payoff → CTA → save line
+- **🎁 ОБЯЗАТЕЛЬНО** перед CTA с лид-магнитом: `I put together a 🎁 safety card...` (или `🎁 calm card`)
+- **📌 ОБЯЗАТЕЛЬНО** перед save line: `📌 Save this before your next...`
 - Все правила капшена и CTA банк — в скилле `kira-captions`
 
 ---
