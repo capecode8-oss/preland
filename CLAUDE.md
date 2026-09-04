@@ -122,6 +122,79 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ---
 
+## 🧠 МАТРИЦА НИШЕЙ — РЕПТИЛЬНЫЙ МОЗГ (вшито навсегда)
+
+Рептильный мозг управляет 6 инстинктами. Контент работает ТОЛЬКО если попадает в один из них.
+
+### T1 — ВЫЖИВАНИЕ | Ниша: ЗДОРОВЬЕ ("ты умираешь и не знаешь")
+Темы-триггеры:
+- Сон: поза сна → инфаркт / инсульт. "Never Sleep On Your Left Side. A Cardiologist Told Me Why."
+- Телефон у кровати → нейроны. "Never Charge Your Phone / Next To Your Bed. / A Neurologist Explained Why."
+- Пластик в микроволновке → гормоны. "Never Reheat Food / In Plastic Like This. / It's In Your Blood Now."
+- Подушка старше 2 лет → бактерии. "Never Use A Pillow / Longer Than This. / A Doctor Showed Me What's Inside."
+- Дезодорант с алюминием → рак. "Never Use Deodorant / Like This. / A Doctor Said Stop."
+Продукт: CALM (здоровье → не спишь → 3AM)
+
+### T1 — ВЫЖИВАНИЕ | Ниша: ЕДА ("ты ешь яд каждый день")
+Темы-триггеры:
+- Лимон в воде в кафе → бактерии. "Never Put That Lemon / In Your Water. / A Microbiologist Told Me Why."
+- Лёд в ресторане → кишечная инфекция. "Never Order Ice / At A Restaurant. / A Chef Told Me What's In It."
+- Буфет — первые 20 минут → нороволрус. "Never Eat First / At Any Buffet. / A Chef Told Me The Real Reason."
+- Вмятина на консерве → ботулизм. "Never Buy A Dented Can. / A Doctor Said It Can Kill You."
+- Первое блюдо в меню → самое дешёвое/залежавшееся. "Never Order The First Item / On Any Menu. / A Waiter Told Me Why."
+Продукт: SAFE (рестораны за рубежом → travel) или CALM (здоровье)
+
+### T1 — ВЫЖИВАНИЕ | Ниша: ПУТЕШЕСТВИЯ (наша, доказано 471K)
+→ Все темы в content_log.json. Паттерн работает. Продукт: SAFE.
+
+### T2 — РАЗМНОЖЕНИЕ | Ниша: БРАК / ОТНОШЕНИЯ (DM sends #1 в США)
+Темы-триггеры:
+- Что рушит браки на 7-й год. "Studies show most marriages fall apart / in year 7 for one reason. / Nobody talks about it."
+- Мозг влюблённых = мозг наркомана. "Your brain on new love / looks identical to addiction. / A neuroscientist showed me the scans."
+- 7 признаков что партнёр отстраняется. "7 signs your partner / is pulling away slowly. / I missed all of them."
+- Первые 3 года перезаписывают мозг. "The first 3 years of marriage / rewire your brain permanently. / Here's what actually changes."
+- Что мужчины замечают первым (не внешность). "The first thing men notice / is never what you think. / A therapist told me."
+Продукт: CALM (стресс в отношениях → 3AM → Comment CALM). ⛔ НЕ писать "link in bio" для CALM.
+
+### T3 — СТАТУС | Ниша: ДЕНЬГИ ("они знают, ты платишь")
+Темы-триггеры:
+- Скрытый сбор в счёте отеля. "Never Pay This Fee / On Your Hotel Bill. / A Front Desk Agent Told Me How."
+- День недели для покупки билетов. "Never Book A Flight / On This Day Of The Week. / Airline Employees Know."
+- Строчка в банковской выписке. "Never Ignore This Line / On Your Bank Statement. / It's How They Take $400 A Year."
+- Что пилоты никогда не едят на борту. "Pilots Never Eat / The Crew Meal On Long Flights. / Here's What They Order Instead."
+- Что делают богатые с чаевыми. "Never Tip This Amount / At A Restaurant. / A Waiter Told Me What It Really Means."
+Продукт: SAFE (travel + деньги = одна ниша)
+
+### T3 — СТАТУС | Ниша: ИНСАЙД ("профессионалы знают, молчат")
+Темы-триггеры:
+- Что врачи не пьют в больнице. "My Doctor Never Drinks / This At The Hospital. / She Finally Told Me Why."
+- Что отельный персонал видит в номерах. "A Hotel Housekeeper Told Me / What They Find In Rooms / That Never Makes The News."
+- Что механики проверяют первым в б/у машине. "A Mechanic Told Me Never Buy A Used Car / Without Checking This First. / I Didn't Know This Existed."
+Продукт: SAFE или CALM в зависимости от темы
+
+### T6 — СОЦИАЛЬНОЕ СРАВНЕНИЕ | Ниша: ФАКТЫ КОТОРЫЕ СТЫДНО НЕ ЗНАТЬ
+Темы-триггеры:
+- Аспирин — что скрывают врачи. "Most Doctors Know This / About Aspirin. / They Don't Tell Patients Why."
+- Что ускоряет старение (не еда). "The One Thing / That Ages You Faster Than Anything. / It's Not What You Eat."
+- Что школы не учат про деньги. "Schools Teach You How To Work. / They Never Teach You / How Money Actually Works."
+Продукт: CALM (страх упустить важное → не спишь → 3AM)
+
+---
+
+### ⚡ МАТРИЦА БЫСТРОГО ВЫБОРА
+
+| Ниша | Триггер | Паттерн | Продукт |
+|------|---------|---------|---------|
+| Здоровье (тело, сон) | T1 | Never X / It Can Kill You + Authority | CALM |
+| Еда (рестораны, продукты) | T1 | Never X / A Chef/Doctor Told Me | SAFE/CALM |
+| Путешествия | T1 + T4 | Never X / Like This / + Authority | SAFE |
+| Брак / отношения | T2 + T3 | Facts + Story (I missed all signs) | CALM |
+| Деньги / скрытые ловушки | T3 | Insider reveal + конкретная сумма | SAFE |
+| Инсайд профессионалов | T3 | A [profession] Never / Told Me Why | SAFE/CALM |
+| Факты-стыд | T6 | Everyone knows this except you | CALM |
+
+---
+
 ## 🏆 ДОКАЗАННЫЕ ПАТТЕРНЫ ХУКОВ — СЕНТЯБРЬ 2026 (из реальных данных)
 
 ### ✅ РАБОТАЕТ — проверено просмотрами
