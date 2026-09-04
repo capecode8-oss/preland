@@ -224,11 +224,42 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ---
 
+## 🎵 МУЗЫКА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда)
+
+**Каждый рилс рендерится С МУЗЫКОЙ. Без исключений.**
+
+- Библиотека: `/home/user/preland/music/1.mp3` — `music/30.mp3` (30 треков)
+- Выбор трека: случайный из библиотеки, **не повторять трек сегодня и завтра** — только через день
+- Журнал треков: `/home/user/preland/music/music_log.json` — записывать каждый использованный трек (дата + filename)
+- Перед выбором трека — проверить журнал: исключить треки использованные сегодня и вчера
+- Длина трека ≥ длины видео (5 сек) — loop если короче
+- Аудио: `-stream_loop -1 -i music/[N].mp3` перед видео-input, смикшировать `-shortest`
+- Громкость: `-af "volume=0.8"` — чуть тише чтобы не давил на текст
+- ❌ Рилс без музыки = брак. Перерендерить.
+- ⚠️ Владелец меняет трек вручную в Instagram/TikTok после публикации если нужно — наша задача просто добавить музыку при рендере
+
+**FFMPEG команда с музыкой:**
+```bash
+FFMPEG=/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2
+MUSIC=$(ls /home/user/preland/music/*.mp3 | shuf -n 1)
+
+$FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
+  -map 1:v -map 0:a \
+  -af "volume=0.8" \
+  -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" \
+  -c:v libx264 -c:a aac -b:a 128k \
+  -t 5.0 -r 30 -crf 18 -preset fast \
+  -pix_fmt yuv420p \
+  output.mp4
+```
+
+---
+
 ## Рендер-спецификации (единый источник правды)
 
 - Размер: 1080×1920
 - Длительность: ровно 5.000s = 150 frames @ 30fps `-frames:v 150` (loop если источник короче)
-- Кодек: H.264, yuv420p, -an (без аудио), -crf 18, -preset fast
+- Кодек: H.264, yuv420p, **с аудио (музыка из библиотеки)**, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
   → установить через `pip install imageio imageio-ffmpeg` если не найден
 - Шрифт: **`Montserrat-BlackItalic`**

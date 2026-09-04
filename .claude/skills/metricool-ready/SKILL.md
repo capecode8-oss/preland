@@ -13,7 +13,8 @@ description: Push rendered MP4 to GitHub repo, get raw URL, schedule in Metricoo
 - **brand_id**: `6476294`
 - **Timezone**: `America/New_York`
 - **Платформы**: Instagram Reel + TikTok (PUBLIC_TO_EVERYONE)
-- **Музыка и геотег (New York)**: добавляет владелец вручную после публикации
+- **Музыка**: вшита в MP4 при рендере (библиотека music/1–30.mp3) — владелец может заменить вручную в Instagram если нужно
+- **Геотег (New York)**: добавляет владелец вручную после публикации
 - **Репо**: `capecode8-oss/preland`, ветка: `claude/new-chat-fjz36a`
 
 ---
@@ -96,7 +97,7 @@ curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat
 Post ID: [id из ответа Metricool]
 Raw URL: [url]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Владелец добавляет: музыку + геотег New York вручную
+Владелец добавляет: геотег New York вручную (музыка уже в видео)
 ```
 
 ---

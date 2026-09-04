@@ -1102,6 +1102,51 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 - Canvas: 1080×1920 | CENTER_X=540 | **MAX_BOX_W=860px** (НИКОГДА не менять) | **MAX_TEXT_W=760px**
 - **BOTTOM_ANCHOR=1550px** — hook_y0 = 1550 - box_height (выше Instagram UI chrome)
 - Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
-- Codec: H.264, yuv420p, -an, -crf 18, -preset fast
+- Codec: H.264, yuv420p, **aac audio (музыка обязательна)**, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
 - Render script: `/home/user/preland/render.py` — использовать всегда
+
+## 🎵 МУЗЫКА — ОБЯЗАТЕЛЬНО НА КАЖДЫЙ РЕНДЕР
+
+**Каждый рилс рендерится с музыкой. Рилс без музыки = брак.**
+
+- Библиотека: `/home/user/preland/music/1.mp3` — `music/30.mp3`
+- Журнал: `/home/user/preland/music/music_log.json` — перед выбором проверить
+- Правило: **не повторять трек сегодня и завтра** — только через день минимум
+- Выбор: `shuf` из треков которых нет в журнале за сегодня и вчера
+- Громкость: `-af "volume=0.8"`
+
+```bash
+# Выбор трека (исключить использованные сегодня/вчера):
+MUSIC=$(python3 -c "
+import json, os, random
+from datetime import date, timedelta
+log_path = '/home/user/preland/music/music_log.json'
+log = json.load(open(log_path)) if os.path.exists(log_path) else {}
+today = str(date.today())
+yesterday = str(date.today() - timedelta(days=1))
+used = set(log.get(today, []) + log.get(yesterday, []))
+all_tracks = [f'{i}.mp3' for i in range(1, 31)]
+available = [t for t in all_tracks if t not in used]
+print('/home/user/preland/music/' + random.choice(available or all_tracks))
+")
+
+# Рендер с музыкой:
+FFMPEG=/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2
+$FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO_INPUT] \
+  -map 1:v -map 0:a -af "volume=0.8" \
+  -t 5.0 -r 30 -c:v libx264 -c:a aac -b:a 128k \
+  -crf 18 -preset fast -pix_fmt yuv420p output.mp4
+
+# После рендера — записать трек в журнал:
+python3 -c "
+import json, os
+from datetime import date
+log_path = '/home/user/preland/music/music_log.json'
+log = json.load(open(log_path)) if os.path.exists(log_path) else {}
+today = str(date.today())
+track = os.path.basename('$MUSIC')
+log.setdefault(today, []).append(track)
+json.dump(log, open(log_path, 'w'), indent=2)
+"
+```
