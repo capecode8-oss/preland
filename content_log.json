@@ -1,0 +1,147 @@
+{
+  "_comment": "Журнал опубликованных тем. Перед новым рилсом — проверить что тема не повторяется.",
+  "published": [
+    {
+      "date": "2026-09-04",
+      "metricool_id": 23,
+      "hook_topic": "USB port charging danger at airports",
+      "hook_text": "Never Charge Your Phone / At Airport USB Ports. / Here's Why.",
+      "clip": "32_9",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 24,
+      "hook_topic": "QR code scam at restaurants",
+      "hook_text": "Never Scan A QR Code / At A Restaurant Abroad. / I Almost Lost $3,400.",
+      "clip": "32_8",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 28,
+      "hook_topic": "Taxi meter scam",
+      "hook_text": "Never Get In A Taxi / That Does This At The Airport. / It Cost Me $180.",
+      "clip": "32_12",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 26,
+      "hook_topic": "Bag photo at airport / luggage identification",
+      "hook_text": "Always Photograph Your Bag / Before Every Flight. / A Gate Agent Told Me Why.",
+      "clip": "32_18",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 27,
+      "hook_topic": "Luggage tag privacy danger",
+      "hook_text": "Never Put Your Home Address / On Your Luggage Tag. / A Security Agent Told Me.",
+      "clip": "32_1",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 37,
+      "hook_topic": "Crossing legs on flight / DVT deep vein thrombosis",
+      "hook_text": "Never Cross Your Legs / Like This On A Flight. / It Can Kill You.",
+      "clip": "32_5",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 38,
+      "hook_topic": "Hotel towel bacteria / facial infection",
+      "hook_text": "Never Dry Your Face / With A Hotel Towel. / Here's What's On It.",
+      "clip": "32_7",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 39,
+      "hook_topic": "Cruise ship pool bacteria / chlorine danger",
+      "hook_text": "Never Swim In A / Cruise Ship Pool. / A Doctor Explained Why.",
+      "clip": "32_13",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 40,
+      "hook_topic": "Cruise ship buffet food safety / norovirus",
+      "hook_text": "Never Touch The Food / At A Cruise Buffet. / A Doctor Told Me Why.",
+      "clip": "32_14",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-04",
+      "metricool_id": 41,
+      "hook_topic": "Airplane tap water / onboard water tank bacteria",
+      "hook_text": "Never Drink The Water / On A Plane Like This. / It's Not What You Think.",
+      "clip": "32_4",
+      "product": "SAFE"
+    },
+    {
+      "date": "2026-09-05",
+      "metricool_id": null,
+      "hook_topic": "Ghost hotel / fake hotel listing scam",
+      "hook_text": "I Booked A Hotel In Budapest. / It Didn't Exist When I Arrived. / Here's How They Do It.",
+      "clip": "32_6",
+      "product": "SAFE",
+      "note": "scheduled Sep 5"
+    },
+    {
+      "date": "2026-09-05",
+      "metricool_id": null,
+      "hook_topic": "Fake hotel booking site / phishing",
+      "hook_text": "Never Book A Hotel / Through The First Google Result. / A Cybercop Explained Why.",
+      "clip": "32_7",
+      "product": "SAFE",
+      "note": "scheduled Sep 5 — NOTE: 32_7 also used Sep 4 batch 2, check!"
+    },
+    {
+      "date": "2026-09-05",
+      "metricool_id": null,
+      "hook_topic": "Airport terminal theory / gate assignment trick",
+      "hook_text": "A gate agent told me / airports are designed / to make you spend money.",
+      "clip": "32_11",
+      "product": "SAFE",
+      "note": "scheduled Sep 5"
+    },
+    {
+      "date": "2026-09-05",
+      "metricool_id": null,
+      "hook_topic": "Fake airline ticket / scam",
+      "hook_text": "Never Buy A Flight Ticket / From A Third-Party App. / I Almost Missed My Flight.",
+      "clip": "32_5",
+      "product": "SAFE",
+      "note": "scheduled Sep 5 — NOTE: 32_5 also used Sep 4 batch 2, check!"
+    },
+    {
+      "date": "2026-09-05",
+      "metricool_id": null,
+      "hook_topic": "Restaurant menu tourist trap / overpriced menu",
+      "hook_text": "A waiter in Rome / showed me two different menus. / Tourists get the other one.",
+      "clip": "32_3",
+      "product": "SAFE",
+      "note": "scheduled Sep 5"
+    }
+  ],
+  "_blocked_topics": [
+    "USB charging ports airport",
+    "QR code restaurant scam",
+    "taxi meter scam airport",
+    "bag photo luggage",
+    "luggage tag home address",
+    "crossing legs flight DVT",
+    "hotel towel bacteria",
+    "cruise ship pool chlorine bacteria",
+    "cruise buffet norovirus",
+    "airplane tap water bacteria",
+    "ghost hotel fake listing",
+    "fake hotel booking site google",
+    "airport gate money design",
+    "fake airline ticket third party",
+    "tourist menu trap Rome"
+  ]
+}
