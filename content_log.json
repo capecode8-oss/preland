@@ -165,6 +165,15 @@
       "hook_text": "My Doctor Stopped Telling Me / To Take Daily Aspirin. / Then I Found Out Why.",
       "clip": "1_26",
       "product": "CALM"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 47,
+      "hook_topic": "american_airlines_duct_tape_viral",
+      "hook_text": "American Airlines Flight 618. He Attacked Everyone On Board. Passengers Had One Option.",
+      "clip": "duct_tape_photo.png",
+      "product": "SAFE",
+      "scheduled_et": "14:00"
     }
   ],
   "_blocked_topics": [
@@ -187,6 +196,7 @@
     "Phone charging next to head / neurologist warning",
     "Microwaving food in plastic / toxins leach",
     "Sleeping on stomach / spine / nerve compression",
-    "Daily aspirin no longer recommended / USPSTF update"
+    "Daily aspirin no longer recommended / USPSTF update",
+    "american_airlines_duct_tape_viral"
   ]
 }
