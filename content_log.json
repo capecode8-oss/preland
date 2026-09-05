@@ -174,6 +174,51 @@
       "clip": "duct_tape_photo.png",
       "product": "SAFE",
       "scheduled_et": "14:00"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 48,
+      "hook_topic": "hantavirus_cruise_hot_tub",
+      "hook_text": "Never Use The Hot Tub / On A Cruise Ship. / 3 People Died From This.",
+      "clip": "32_15",
+      "product": "SAFE",
+      "scheduled_et": "09:00"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 49,
+      "hook_topic": "cyclospora_bagged_salad_cdc",
+      "hook_text": "Never Buy Bagged Salad / Like This At The Store. / The CDC Found 2 Deaths.",
+      "clip": "1_16",
+      "product": "CALM",
+      "scheduled_et": "11:00"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 50,
+      "hook_topic": "legionnaires_cruise_tap_water",
+      "hook_text": "Never Drink Tap Water / In A Cruise Ship Cabin. / A Doctor Warned Me Why.",
+      "clip": "32_13",
+      "product": "SAFE",
+      "scheduled_et": "17:00"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 51,
+      "hook_topic": "frontier_cockpit_assault_emergency_door",
+      "hook_text": "Never Sit Near / The Emergency Door. / A Flight Attendant Told Me Why.",
+      "clip": "32_9",
+      "product": "SAFE",
+      "scheduled_et": "19:00"
+    },
+    {
+      "date": "2026-09-06",
+      "metricool_id": 52,
+      "hook_topic": "carnival_buffet_fork_viral",
+      "hook_text": "Never Eat First / At A Cruise Buffet. / A Passenger Filmed This.",
+      "clip": "32_17",
+      "product": "SAFE",
+      "scheduled_et": "21:00"
     }
   ],
   "_blocked_topics": [
@@ -197,6 +242,11 @@
     "Microwaving food in plastic / toxins leach",
     "Sleeping on stomach / spine / nerve compression",
     "Daily aspirin no longer recommended / USPSTF update",
-    "american_airlines_duct_tape_viral"
+    "american_airlines_duct_tape_viral",
+    "hantavirus_cruise_hot_tub",
+    "cyclospora_bagged_salad_cdc",
+    "legionnaires_cruise_tap_water",
+    "frontier_cockpit_assault_emergency_door",
+    "carnival_buffet_fork_viral"
   ]
 }
