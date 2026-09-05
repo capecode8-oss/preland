@@ -219,6 +219,18 @@
       "clip": "32_17",
       "product": "SAFE",
       "scheduled_et": "21:00"
+    },
+    {
+      "id": 53,
+      "date": "2026-09-07",
+      "time_et": "13:00",
+      "topic": "silent_marriage_cycle_list_mirror",
+      "hook": "THE CYCLE OF SILENT MARRIAGE",
+      "clip": "1_30",
+      "music": "15.mp3",
+      "product": "CALM",
+      "format": "list-mirror",
+      "file": "2026-sep7-silent-marriage.mp4"
     }
   ],
   "_blocked_topics": [
