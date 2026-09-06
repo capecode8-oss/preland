@@ -281,6 +281,16 @@
       "music": "20.mp3",
       "product": "SAFE",
       "format": "myth-vs-fact"
+    },
+    {
+      "id": 59,
+      "date": "2026-09-07",
+      "time_et": "21:00",
+      "topic": "9_signs_married_right_person_stopped_acting",
+      "clip": "1_26",
+      "music": "21.mp3",
+      "product": "CALM",
+      "format": "signs-list-top-hook"
     }
   ],
   "_blocked_topics": [
