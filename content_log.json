@@ -231,6 +231,56 @@
       "product": "CALM",
       "format": "list-mirror",
       "file": "2026-sep7-silent-marriage.mp4"
+    },
+    {
+      "id": 54,
+      "date": "2026-09-07",
+      "time_et": "09:00",
+      "topic": "myth_cabin_lights_evacuation",
+      "clip": "32_5",
+      "music": "16.mp3",
+      "product": "SAFE",
+      "format": "myth-vs-fact"
+    },
+    {
+      "id": 55,
+      "date": "2026-09-07",
+      "time_et": "11:00",
+      "topic": "myth_hotel_coffee_maker_bacteria",
+      "clip": "32_7",
+      "music": "17.mp3",
+      "product": "SAFE",
+      "format": "myth-vs-fact"
+    },
+    {
+      "id": 56,
+      "date": "2026-09-07",
+      "time_et": "13:00",
+      "topic": "myth_oxygen_mask_15_minutes",
+      "clip": "32_9",
+      "music": "18.mp3",
+      "product": "SAFE",
+      "format": "myth-vs-fact"
+    },
+    {
+      "id": 57,
+      "date": "2026-09-07",
+      "time_et": "17:00",
+      "topic": "myth_airport_taxi_scam_uniform",
+      "clip": "32_12",
+      "music": "19.mp3",
+      "product": "SAFE",
+      "format": "myth-vs-fact"
+    },
+    {
+      "id": 58,
+      "date": "2026-09-07",
+      "time_et": "19:00",
+      "topic": "myth_plane_water_tank_bacteria",
+      "clip": "32_1",
+      "music": "20.mp3",
+      "product": "SAFE",
+      "format": "myth-vs-fact"
     }
   ],
   "_blocked_topics": [
