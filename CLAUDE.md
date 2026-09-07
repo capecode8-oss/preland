@@ -183,21 +183,37 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ### ⚡ МАТРИЦА БЫСТРОГО ВЫБОРА
 
-| Ниша | Триггер | Паттерн | Продукт |
-|------|---------|---------|---------|
-| Здоровье (тело, сон) | T1 | Never X / It Can Kill You + Authority | CALM |
-| Еда (рестораны, продукты) | T1 | Never X / A Chef/Doctor Told Me | SAFE/CALM |
-| Путешествия | T1 + T4 | Never X / Like This / + Authority | SAFE |
-| Брак / отношения | T2 + T3 | Facts + Story (I missed all signs) | CALM |
-| Деньги / скрытые ловушки | T3 | Insider reveal + конкретная сумма | SAFE |
-| Инсайд профессионалов | T3 | A [profession] Never / Told Me Why | SAFE/CALM |
-| Факты-стыд | T6 | Everyone knows this except you | CALM |
+⭐ **ПЕРВЫЙ ВОПРОС:** можно ли применить формат #0 "feels illegal to know"? Если да — берём его. Если тема про физическую угрозу — #1.
+
+| Ниша | Триггер | Паттерн #0 (приоритет) | Паттерн резерв | Продукт |
+|------|---------|------------------------|----------------|---------|
+| Здоровье (тело, сон) | T1 | "This sleep position feels almost illegal to fix..." | Never X / It Can Kill You + Authority | CALM |
+| Еда (рестораны, продукты) | T1 | "This restaurant trick feels almost illegal..." | Never X / A Chef Told Me | SAFE/CALM |
+| Путешествия | T1 + T4 | "This flight/hotel hack feels almost illegal..." | Never X / Like This / + Authority | SAFE |
+| Брак / отношения | T2 + T3 | "This marriage fact feels almost illegal to know..." | Facts + Story (I missed all signs) | CALM |
+| Деньги / скрытые ловушки | T3 | "This money trick feels almost illegal..." | Insider reveal + конкретная сумма | SAFE |
+| Инсайд профессионалов | T3 | "What [profession] knows feels almost illegal..." | A [profession] Never / Told Me Why | SAFE/CALM |
+| Факты-стыд | T6 | "This fact feels illegal to not know..." | Everyone knows this except you | CALM |
 
 ---
 
 ## 🏆 ДОКАЗАННЫЕ ПАТТЕРНЫ ХУКОВ — СЕНТЯБРЬ 2026 (из реальных данных)
 
 ### ✅ РАБОТАЕТ — проверено просмотрами
+
+**#0 — "FEELS ILLEGAL TO KNOW" ← ГЛАВНЫЙ ФОРМАТ СЕНТЯБРЬ 2026** ⭐ ПРИОРИТЕТ #1
+```
+"This [trick/fact/hack] feels almost illegal..."
+"but it's [reframe — actually smart / totally legal / works every time]..."
+"Here's how I [конкретный результат с цифрой или местом]..."
+```
+- **Почему работает:** мозг воспринимает как эксклюзивный доступ к запрещённому знанию → физически не может пролистнуть
+- **DM-sends:** самый высокий показатель в 2026 по данным нескольких аналитических платформ
+- **Пример залетевший у конкурента:** "This flight trick feels almost illegal... / but it's one of the smartest / travel hacks I've ever used..."
+- **Формат:** полные предложения, 3 строки, Halyard-стиль (нативный конкурент)
+- **Триггеры:** T5 CURIOSITY GAP + T3 STATUS ("я знаю, ты нет")
+- **Применять ко ВСЕМ нишам:** travel, health, food, money, relationships
+- ⚠️ **ОБЯЗАТЕЛЬНО** использовать как первый вариант при брейнсторме — если подходит по теме
 
 **#1 — COMMAND INTERRUPT + ФИЗИЧЕСКАЯ УГРОЗА СМЕРТИ** ← ПОБЕДИТЕЛЬ (471K на нашем аккаунте)
 ```
