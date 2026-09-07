@@ -1,5 +1,5 @@
 {
-  "_comment": "\u0416\u0443\u0440\u043d\u0430\u043b \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0442\u0435\u043c. \u041f\u0435\u0440\u0435\u0434 \u043d\u043e\u0432\u044b\u043c \u0440\u0438\u043b\u0441\u043e\u043c \u2014 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0447\u0442\u043e \u0442\u0435\u043c\u0430 \u043d\u0435 \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f.",
+  "_comment": "Журнал опубликованных тем. Перед новым рилсом — проверить что тема не повторяется.",
   "published": [
     {
       "date": "2026-09-04",
@@ -97,7 +97,7 @@
       "hook_text": "Never Book A Hotel / Through The First Google Result. / A Cybercop Explained Why.",
       "clip": "32_7",
       "product": "SAFE",
-      "note": "scheduled Sep 5 \u2014 NOTE: 32_7 also used Sep 4 batch 2, check!"
+      "note": "scheduled Sep 5 — NOTE: 32_7 also used Sep 4 batch 2, check!"
     },
     {
       "date": "2026-09-05",
@@ -115,7 +115,7 @@
       "hook_text": "Never Buy A Flight Ticket / From A Third-Party App. / I Almost Missed My Flight.",
       "clip": "32_5",
       "product": "SAFE",
-      "note": "scheduled Sep 5 \u2014 NOTE: 32_5 also used Sep 4 batch 2, check!"
+      "note": "scheduled Sep 5 — NOTE: 32_5 also used Sep 4 batch 2, check!"
     },
     {
       "date": "2026-09-05",
@@ -291,6 +291,18 @@
       "music": "21.mp3",
       "product": "CALM",
       "format": "signs-list-top-hook"
+    },
+    {
+      "id": 60,
+      "date": "2026-09-08",
+      "time_et": "09:00",
+      "topic": "middle_seat_trick_flight_hack",
+      "clip": "32_5",
+      "music": "22.mp3",
+      "product": "SAFE",
+      "format": "halyard-native-competitor-style",
+      "metricool_id": 64,
+      "hook": "This flight trick feels almost illegal..."
     }
   ],
   "_blocked_topics": [
