@@ -284,6 +284,43 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - **CALM** капшен → ⛔ НЕ писать "link in bio" никогда — bio ведёт только на Travel, не на CALM
 - В CALM только: `Comment CALM and I'll send it to you directly.` — и всё
 
+### 🚨 НОВЫЙ CTA БЛОК ДЛЯ SAFE — ОБЯЗАТЕЛЬНО (обновлено Sep 7 2026)
+
+**Причина:** Бот теперь отправляет гайд ТОЛЬКО подписчикам (им сообщение идёт в основную папку с пуш-уведомлением). Не-подписчикам улетает в скрытую папку Requests — они его не видят. Поэтому сначала FOLLOW, потом кодовое слово.
+
+**Кодовое слово изменено:** `SAFE` → `SAFETY` (только в CTA блоке, везде в логике — прежнее SAFE)
+
+**Три варианта CTA — чередовать от поста к посту:**
+
+**Вариант 1 (Фокус на сообщество):**
+```
+🚨 Want the full Solo Traveler Safety Guide? 🚨
+Join our safe travel community and get your copy instantly! Here is how:
+1️⃣ FOLLOW my page (so Instagram can deliver the guide straight to your main inbox 📬).
+2. COMMENT the word SAFETY below.
+*Note: If you are already following, just comment SAFETY and check your DMs right away!* 🗺️
+```
+
+**Вариант 2 (Пошаговый):**
+```
+👇 HOW TO GET YOUR SAFETY GUIDE: 👇
+• FOLLOW this account 🔒
+• COMMENT SAFETY below 💬
+I will send the guide straight to your Direct Messages so you don't miss it. Safe travels! ✈️
+```
+
+**Вариант 3 (С объяснением):**
+```
+🛡️ Don't leave for your next trip without this Safety Guide! 🛡️
+To make sure Instagram delivers my message to your Primary Inbox (and doesn't hide it in spam requests), please:
+1. FOLLOW this page.
+2. COMMENT the keyword SAFETY.
+Check your DMs immediately after commenting! 📩
+```
+
+⛔ НЕ использовать старый формат `Comment SAFE and I'll send it` как единственный CTA — только новые варианты выше.
+⛔ CALM рилсы — правило прежнее: `Comment CALM and I'll send it to you directly.` (бот CALM пока без изменений)
+
 ---
 
 ## 🔑 КОДОВОЕ СЛОВО "ЗАПЛАНИРУЕМ" — ЖЕЛЕЗНОЕ ПРАВИЛО
