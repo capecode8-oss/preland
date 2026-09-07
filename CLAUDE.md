@@ -15,18 +15,22 @@
 
 **ШАГ 1 — КОМАНДА ДЕЛАЕТ БРЕЙНСТОРМ (внутри, пользователь не видит)**
 - Jordan · Mike · Alex · Sam · Dana · Red · Tyler · Maya · NOVA · VIC · Rico (11 человек)
-- Генерируют хуки по формулам: Curiosity Gap, Pattern Interrupt, Physical Violation, Command Interrupt
+- **Rico СНАЧАЛА** делает WebSearch: что вирально у конкурентов прямо сейчас (maks.motivator, withhmilaofficial, похожие аккаунты) — проверяет тренды этой недели
+- Команда тестирует ВСЕ 8 форматов (#0–#7) и выбирает сильнейший для этой темы:
+  - #0 Feels Illegal · #1 Command Interrupt · #2 Insider Reveal · #3 Confession/Flop-Core
+  - #4 Pattern Break · #5 POV Реализм · #6 Unpopular Opinion · #7 Цифра+Открытие · #8 Show End First
 - Каждый хук — конкретное место, конкретная цифра, первое лицо "I"
 - Параллельно готовится капшен: second hook → context → detail → payoff → CTA bridge → save line
 - Red пытается убить каждый хук. Mike ставит прогноз. Все 11 должны поставить ✅
 
 **ШАГ 2 — ФОКУС-ГРУППА ГОЛОСУЕТ (внутри, пользователь не видит)**
-- 100 реальных американцев 30–75 листают ленту (Ashley, Marcus, Susan, Barbara, Dorothy и др.)
+- **100 реальных американцев 30–75** листают ленту прямо сейчас (Ashley, Marcus, Susan, Barbara, Dorothy и др.)
+- **Фокус-группа имеет доступ в интернет** — они видят реальную ленту Instagram/TikTok и сравнивают наш хук с тем что сейчас вирально
 - **Round 1:** 70+/100 остановили скролл → продолжаем. Меньше 70 → команда переписывает, даёт снова.
-- **Round 2:** 20+ отправили в DM → вирусный потенциал подтверждён
+- **Round 2:** 20+ отправили в DM другу → вирусный потенциал подтверждён
 - Dorothy Test (74 лет): не поняла с первого раза → хук слишком сложный → переписать
 - Капшен: Ashley дочитала до конца? Karen кликнула CTA? 15+ из 100 отправляют?
-- Если фокус-группа говорит "скучно / вайп" → команда переписывает и снова даёт им на просмотр
+- Если фокус-группа говорит "скучно / вайп / видела уже" → команда переписывает и снова даёт им на просмотр
 - Цикл повторяется пока фокус-группа не скажет ✅
 
 **ШАГ 3 — ПОЛЬЗОВАТЕЛЬ ВИДИТ ТОЛЬКО ХУКИ НА ОДОБРЕНИЕ**
@@ -83,7 +87,7 @@
 Текст: Jordan, Mike, Alex, Sam, Dana, Red — аудируют хук и капшен.
 Скролл-тест: Tyler [22M] и Maya [38F] листают ленту прямо сейчас — Tyler тестирует стоп-скролл, Maya тестирует DM-отправку.
 Видео: NOVA (AI video prompts — Veo 3 primary + Kling fallback), VIC (visual director) — клип или AI-промт прямо в выводе.
-Тренды: Rico (trend intelligence) — следит за конкурентами, выбирает свежий угол, пикает тему автономно если не указана.
+Тренды: Rico (trend intelligence) — **перед каждым брейнстормом делает WebSearch**: что вирально у конкурентов прямо сейчас, какие хуки залетели на этой неделе в нишах travel/health/relationships. Выбирает свежий угол, пикает тему автономно если не указана. ⚠️ Rico = обязательный первый шаг, до написания хуков.
 Mike ставит прогноз просмотров (порог: 🟢 STRONG = 5K+). Red пытается убить хук. Rico проверяет: не было у конкурентов на этой неделе.
 Если хоть один из 11 ставит ❌ — переписываем, не публикуем.
 
@@ -228,6 +232,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 **#2 — INSIDER REVEAL + ФИЗИЧЕСКАЯ УГРОЗА**
 ```
 "Never [ДЕЙСТВИЕ] / [МЕСТО]. / A [АВТОРИТЕТ] Explained Why."
+"A [flight attendant/doctor/chef] told me to never do this again."
 ```
 - Авторитет: doctor / flight attendant / crew member / security agent — реальные профессии
 - Пример: "Never Swim In A Cruise Ship Pool. A Doctor Explained Why."
@@ -236,6 +241,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 **#3 — CONFESSION / FLOP-CORE** (высокий DM-send rate 2026)
 ```
 "I [сделал X] for [Y лет / раз]. / [Инсайдер] told me [шокирующий факт]. / I [изменил поведение] since."
+"I did this wrong for [N] years. Nobody corrected me until..."
 ```
 - Работает потому что: люди устали от советов успешных → "мне тоже так было" → пересылают
 - Пример: "I paid $340 for a hotel room. The front desk agent told me I could've paid $80. She showed me how."
@@ -249,12 +255,71 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - Мозг получает противоречие → физически не может пролистнуть
 - Ключ: визуал должен выглядеть ИДЕАЛЬНО нормально (спящая женщина у иллюминатора)
 
+**#5 — POV РЕАЛИЗМ** (42% hook rate — второй по силе в сентябрь 2026)
+```
+"POV: A [flight attendant/hotel worker/doctor] just told me something / that changed how I [travel/eat/sleep] forever."
+"POV: You just found the [нишевый] hack / that saves you [конкретная цифра]."
+```
+- Работает потому что: зритель мгновенно ставит себя в ситуацию → эмпатия → пересылает другу у кого такая же ситуация
+- Триггеры: T5 CURIOSITY GAP + T4 PATTERN BREAK
+- Применять: travel, health, money — любая ниша где есть "момент открытия"
+
+**#6 — UNPOPULAR OPINION / CONTRARIAN** (38% hook rate)
+```
+"Stop [делая X]. Here's what actually works instead."
+"Everyone does [X] wrong on a plane. I didn't know either until..."
+"Why is nobody talking about this?"
+```
+- Работает потому что: мозг физически реагирует на несогласие с нормой → хочет проверить
+- Ключ: утверждение должно касаться того что ВСЕ делают — не "некоторые"
+- Пример: "Everyone packs wrong for a cruise. Here's what a crew member packs instead."
+- Триггеры: T3 STATUS + T6 SOCIAL PROOF SHOCK
+
+**#7 — СПЕЦИФИЧНАЯ ЦИФРА + ОТКРЫТИЕ**
+```
+"[N]% of people do this wrong [место/ситуация]. Are you one of them?"
+"I analyzed [100/47] [X] and found one pattern. It's not what you think."
+"Every [обычное действие] = [шокирующий факт]. [Авторитет] knows. Nobody tells you."
+```
+- Ключ: цифра появляется ПЕРВОЙ — до объяснения. Мозг видит число → хочет контекст
+- Работает лучше всего с цифрами которые выглядят неправдоподобно (94%, $340, 11 flights)
+- Триггеры: T5 CURIOSITY GAP + T3 STATUS
+
+**#8 — SHOW END FIRST** (растущий формат 2026)
+```
+"I [результат] in [N minutes/steps] — here's exactly how."
+"This [trick] saved me [сумма/время] — watch till the end."
+"Here's what happened when I [сделал X нестандартно]."
+```
+- Результат показывается ДО объяснения — мозг видит payoff и остаётся ради "как"
+- Триггеры: T5 CURIOSITY GAP + T1 SURVIVAL (если результат = избежание угрозы)
+
 ### ❌ НЕ РАБОТАЕТ — сентябрь 2026
 
 - **Финансовые предупреждения без личной истории** (USB, QR, такси) → 124-187 просмотров
 - **"5 tips / Never do these 5 things"** — список без истории → алгоритм видел миллиарды раз
 - **Generic warnings без конкретного места/цифры/инсайдера** → нет доверия
 - **COMMAND INTERRUPT без угрозы здоровью** → рационализация = скролл
+
+### 🔑 ПРОТОКОЛ БРЕЙНСТОРМА — 8 ФОРМАТОВ (вшито навсегда)
+
+**Порядок работы команды при каждом рилсе:**
+1. Rico → WebSearch: что вирально у конкурентов прямо сейчас
+2. Команда генерирует хук в каждом из 8 форматов под тему
+3. Red убивает слабые. Mike ставит прогноз на каждый. Выбирают 1 победителя.
+4. Победитель идёт в фокус-группу
+
+| Формат | Шаблон | Hook Rate | Лучшая ниша |
+|--------|---------|-----------|-------------|
+| #0 Feels Illegal | "This [X] feels almost illegal..." | ⭐ 45%+ | Все ниши |
+| #1 Command Interrupt | "Never [действие] / It Can Kill You." | ✅ доказано 471K | Travel/Health |
+| #2 Insider Reveal | "A [авторитет] told me never do this." | ✅ стабильный | Travel/Food |
+| #3 Confession | "I did this wrong for [N] years..." | ✅ высокий DM | Все ниши |
+| #4 Pattern Break | Визуал норм + текст = опасность | ✅ сильный стоп | Health/Travel |
+| #5 POV Реализм | "POV: [авторитет] just told me..." | 42% | Travel/Health |
+| #6 Contrarian | "Stop doing [X]. Here's what works." | 38% | Money/Health |
+| #7 Цифра+Открытие | "[N]% делают это неправильно..." | 35% | Все ниши |
+| #8 Show End First | "This saved me [сумма] — watch how." | растёт | Money/Travel |
 
 ### 🔑 УНИВЕРСАЛЬНОЕ УСЛОВИЕ ДЛЯ ЛЮБОГО ХУКА (сентябрь 2026)
 
