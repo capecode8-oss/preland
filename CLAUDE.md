@@ -453,6 +453,7 @@ Check your DMs immediately after commenting! 📩
 - Библиотека разделена по папкам:
   - `footage/travel/` — 32 клипа для SAFE (travel темы): `1_3, 1_4, 1_5, 1_6, 1_7, 1_10, 1_12, 1_17, 1_20, 1_24, 1_25, 1_27, 1_29, 31_1, 31_3, 32_1, 32_3–32_18`
   - `footage/general/` — 13 клипов для CALM (health/relationships): `1_2, 1_8, 1_11, 1_14–1_16, 1_19, 1_23, 1_26, 1_28, 1_30, 31_2, 32_2`
+  - `footage/general/` — FACE клипы talking head (Sep 8 2026): `face_1, face_2, face_3, face_4, face_5` — для relationships/health/fear/money. Текст при рендере сверху (TOP_ANCHOR ~200px), не снизу.
 - Удалены навсегда: `1_1, 1_9, 1_13, 1_18, 1_21, 1_22` Путь: `/home/user/preland/footage/`
 - Использованные: 1_11, 1_12, 1_14, 1_15 (Aug 13); 1_19, 1_15, 1_23, 1_25, 1_18 (Aug 19).
 

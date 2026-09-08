@@ -22,6 +22,19 @@ description: Select a clip from the footage library for the current reel. Tracks
 
 `1_2, 1_8, 1_11, 1_14, 1_15, 1_16, 1_19, 1_23, 1_26, 1_28, 1_30, 31_2, 32_2`
 
+### 😐 FACE клипы — talking head (5 штук) ← НОВЫЕ Sep 8 2026
+Путь: `/home/user/preland/footage/general/`
+Использовать для **relationships / health / fear / money traps** — темы где лицо усиливает доверие
+Текст при рендере идёт СВЕРХУ (TOP_ANCHOR ~200px), а не снизу
+
+| Клип | Фон | Лучшая тема |
+|------|-----|-------------|
+| `face_1` | Тёмный тёплый интерьер | Health warnings, fear, серьёзные темы |
+| `face_2` | Тёплый интерьер, лампы | Relationships, marriage, sleep/CALM |
+| `face_3` | Outdoor, цветущие кусты | Lifestyle, health, relationships |
+| `face_4` | Тёмно-синий нейтральный | Самый интенсивный — injustice, fear |
+| `face_5` | Кирпичная стена, urban | Универсальный, money traps, travel tips |
+
 ❌ Удалены навсегда: `1_9`, `1_13`, `1_18`, `1_21`, `1_22`, `1_1`
 
 ---
