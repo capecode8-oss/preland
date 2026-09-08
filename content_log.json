@@ -402,6 +402,58 @@
       "format": "number-discovery-health",
       "file": "2026-sep9-aging-habit.mp4",
       "metricool_id": 72
+    },
+    {
+      "id": 74,
+      "date": "2026-09-08",
+      "time_et": "09:00",
+      "topic": "feel_more_yourself_alone_emotional_retreat",
+      "hook": "If you feel more yourself / alone than together — / you already know.",
+      "clip": "face_1",
+      "music": "24.mp3",
+      "product": "CALM",
+      "format": "confession-recognition-shame",
+      "file": "2026-sep8-alone-together.mp4",
+      "metricool_id": 74
+    },
+    {
+      "id": 75,
+      "date": "2026-09-08",
+      "time_et": "10:30",
+      "topic": "asking_for_space_therapist_already_decided",
+      "hook": "By the time they ask / for space, a therapist says / the answer is already no.",
+      "clip": "face_3",
+      "music": "13.mp3",
+      "product": "CALM",
+      "format": "insider-reveal-fear",
+      "file": "2026-sep8-asking-for-space.mp4",
+      "metricool_id": 75
+    },
+    {
+      "id": 76,
+      "date": "2026-09-08",
+      "time_et": "12:00",
+      "topic": "fine_whatever_gottman_surrender_sentence",
+      "hook": "One sentence ends more / marriages than cheating. / Most people said it today.",
+      "clip": "face_4",
+      "music": "11.mp3",
+      "product": "CALM",
+      "format": "curiosity-gap-forbidden-truth",
+      "file": "2026-sep8-one-sentence-marriage.mp4",
+      "metricool_id": 76
+    },
+    {
+      "id": 77,
+      "date": "2026-09-08",
+      "time_et": "13:30",
+      "topic": "ordinary_tuesday_invisible_shift_marriage",
+      "hook": "The night I realized / my marriage was in trouble / wasn't an argument.",
+      "clip": "face_5",
+      "music": "9.mp3",
+      "product": "CALM",
+      "format": "confession-pattern-break",
+      "file": "2026-sep8-night-realized.mp4",
+      "metricool_id": 77
     }
   ],
   "_blocked_topics": [
