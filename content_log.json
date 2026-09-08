@@ -303,6 +303,28 @@
       "format": "halyard-native-competitor-style",
       "metricool_id": 64,
       "hook": "This flight trick feels almost illegal..."
+    },
+    {
+      "date": "2026-09-08",
+      "time_et": "11:00",
+      "metricool_id": 65,
+      "hook_topic": "cruise_norovirus_surface_door_handle",
+      "hook_text": "230 passengers got sick / on one cruise ship. / Never touch this surface / onboard. A ship's doctor / told me why.",
+      "clip": "32_17",
+      "music": "23.mp3",
+      "product": "SAFE",
+      "format": "insider-reveal-#2"
+    },
+    {
+      "date": "2026-09-08",
+      "time_et": "17:00",
+      "metricool_id": 66,
+      "hook_topic": "3am_wakeup_cortisol_spike_sleep",
+      "hook_text": "I woke up at 3AM every night / for 2 years. A doctor told me / what my body was warning me. / One change. I sleep through / the night now.",
+      "clip": "1_30",
+      "music": "25.mp3",
+      "product": "CALM",
+      "format": "confession-#3"
     }
   ],
   "_blocked_topics": [
@@ -331,6 +353,8 @@
     "cyclospora_bagged_salad_cdc",
     "legionnaires_cruise_tap_water",
     "frontier_cockpit_assault_emergency_door",
-    "carnival_buffet_fork_viral"
+    "carnival_buffet_fork_viral",
+    "cruise_norovirus_surface_door_handle",
+    "3am_wakeup_cortisol_spike_sleep"
   ]
 }
