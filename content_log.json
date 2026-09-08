@@ -337,6 +337,71 @@
       "product": "CALM",
       "format": "number-discovery-#7",
       "text_placement": "TOP"
+    },
+    {
+      "id": 68,
+      "date": "2026-09-09",
+      "time_et": "09:00",
+      "topic": "coffee_cortisol_morning_timing",
+      "hook": "Never drink coffee / first thing. / A doctor told me.",
+      "clip": "face_1",
+      "music": "27.mp3",
+      "product": "CALM",
+      "format": "command-interrupt-health",
+      "file": "2026-sep9-coffee-morning.mp4",
+      "metricool_id": 68
+    },
+    {
+      "id": 69,
+      "date": "2026-09-09",
+      "time_et": "11:00",
+      "topic": "contempt_gottman_divorce_predictor",
+      "hook": "This one look / predicts divorce. / A therapist showed me.",
+      "clip": "face_2",
+      "music": "28.mp3",
+      "product": "CALM",
+      "format": "insider-reveal-relationships",
+      "file": "2026-sep9-divorce-look.mp4",
+      "metricool_id": 69
+    },
+    {
+      "id": 70,
+      "date": "2026-09-09",
+      "time_et": "13:00",
+      "topic": "dry_mouth_3am_sleep_apnea_warning",
+      "hook": "Dry mouth at 3AM? / Your body is warning. / A doctor told me.",
+      "clip": "face_3",
+      "music": "29.mp3",
+      "product": "CALM",
+      "format": "confession-health-warning",
+      "file": "2026-sep9-dry-mouth-3am.mp4",
+      "metricool_id": 70
+    },
+    {
+      "id": 71,
+      "date": "2026-09-09",
+      "time_et": "17:00",
+      "topic": "sitting_90min_lymphatic_circulation_shutdown",
+      "hook": "Never sit still / past 90 minutes. / A doctor said why.",
+      "clip": "face_4",
+      "music": "30.mp3",
+      "product": "CALM",
+      "format": "command-interrupt-health",
+      "file": "2026-sep9-sitting-90min.mp4",
+      "metricool_id": 71
+    },
+    {
+      "id": 72,
+      "date": "2026-09-09",
+      "time_et": "19:00",
+      "topic": "phone_before_bed_melatonin_aging_brain",
+      "hook": "The one habit / that ages you fastest. / Most do it nightly.",
+      "clip": "face_5",
+      "music": "1.mp3",
+      "product": "CALM",
+      "format": "number-discovery-health",
+      "file": "2026-sep9-aging-habit.mp4",
+      "metricool_id": 72
     }
   ],
   "_blocked_topics": [
