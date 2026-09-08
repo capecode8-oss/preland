@@ -325,6 +325,18 @@
       "music": "25.mp3",
       "product": "CALM",
       "format": "confession-#3"
+    },
+    {
+      "date": "2026-09-08",
+      "time_et": "19:00",
+      "metricool_id": 67,
+      "hook_topic": "marriage_signs_slowly_breaking_down",
+      "hook_text": "5 signs your marriage / is slowly breaking down. / Most couples miss #3.",
+      "clip": "face_2",
+      "music": "26.mp3",
+      "product": "CALM",
+      "format": "number-discovery-#7",
+      "text_placement": "TOP"
     }
   ],
   "_blocked_topics": [
@@ -355,6 +367,7 @@
     "frontier_cockpit_assault_emergency_door",
     "carnival_buffet_fork_viral",
     "cruise_norovirus_surface_door_handle",
-    "3am_wakeup_cortisol_spike_sleep"
+    "3am_wakeup_cortisol_spike_sleep",
+    "marriage_signs_slowly_breaking_down"
   ]
 }
