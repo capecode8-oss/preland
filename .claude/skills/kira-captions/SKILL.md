@@ -146,6 +146,70 @@ SAVE LINE          — always last
 
 Length: **~1900 characters total** (including title, subtitle, CTA and save line). Target 1850–1950. Under 1800 = not enough value. Over 2000 = scroll fatigue. Always hit the range — a short caption loses the algorithm.
 
+### ⭐ EARNED CTA BRIDGE — НОВОЕ ЖЕЛЕЗНОЕ ПРАВИЛО (сентябрь 2026, вшито навсегда)
+
+**Проблема старых капшенов:** история обрывается → сразу "I put together a card". Читатель чувствует разрыв — это реклама, не продолжение.
+
+**Решение — одна строка-мост ПЕРЕД 🎁 которая объясняет ОТКУДА взялся продукт:**
+
+```
+After that [trip/flight/conversation] I started keeping a list of every surface
+doctors and crew told me never to touch. It turned into a card I now carry every time I travel.
+
+🎁 I put it together as a Safety Card — [конкретная польза]. Yours to keep.
+```
+
+**Формулы моста (по теме):**
+- ✈️ Самолёт: `After that flight I started writing down everything she told me. Every surface. Every habit. It turned into a card I now bring on every trip.`
+- 🏨 Отель: `After that stay I started keeping a list of every surface a doctor told me to always sanitize. It turned into a card I now pack every time.`
+- 🚢 Круиз: `After that trip I started keeping a list of every surface doctors and crew told me never to touch. It turned into a card I now carry every time I travel.`
+- 🛬 Аэропорт: `After that conversation I started writing down every surface travel doctors told me to avoid. It turned into a card I now carry every time I fly.`
+
+**Логическая цепочка (железная):**
+```
+ИСТОРИЯ (случилось со мной)
+↓
+ОБЪЯСНЕНИЕ (инсайдер/доктор говорит почему)
+↓
+МОСТ — "After that I started keeping a list... It turned into a card"
+↓
+🎁 Safety Card — [конкретная польза] — yours to keep
+↓
+Comment SAFETY below → DMs instantly
+P.S. Follow first (объяснение, не приказ)
+↓
+📌 Save this before your next [trip]
+```
+
+**Тест моста:** убери CTA-блок, прочитай только историю → добавь мост → переход должен ощущаться как ВЫВОД из истории, не как реклама.
+
+---
+
+### ⭐ НОВЫЙ CTA FORMAT — SAFETY (сентябрь 2026, вшито навсегда)
+
+**Кодовое слово изменено: SAFE → SAFETY** (в тексте капшена). В логике журналов — прежнее SAFE.
+
+**Новый CTA блок — три части:**
+```
+🎁 I put it together as a Safety Card — [конкретная польза одной строкой]. Yours to keep.
+
+Comment SAFETY below and I'll send it to your DMs instantly.
+
+*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+```
+
+**Почему P.S. вместо "шага 1":**
+- "FOLLOW first, then COMMENT" = два приказа = трение = меньше комментов
+- P.S. = объяснение как забота = меньше трения = больше действий
+- Тест сентябрь 2026: формат P.S. даёт на 23% больше комментов (данные creatorflow.so)
+
+**⛔ ЗАПРЕЩЕНО:**
+- Старый формат "1️⃣ FOLLOW my page... 2. COMMENT the word SAFETY" — слишком муторный
+- Слово FREE в любой форме
+- Более одного призыва к действию
+
+---
+
 ### CTA BRIDGE RULE — вшито навсегда
 
 **CTA должен ЛОГИЧЕСКИ ВЫТЕКАТЬ из темы рилса. Никакого резкого переключения.**
@@ -491,22 +555,48 @@ I put together a 🎁 one-page card — 4 steps for when your brain won't stop a
 Comment CALM and I'll send it to you directly.
 ```
 
-### ✈️ TRAVEL / SAFETY (SAFE — Solo Traveler's Safety Card)
+### ✈️ TRAVEL / SAFETY (SAFETY — Solo Traveler's Safety Card)
 ```
-I put together a 🎁 one-page safety card — yours to keep. It covers the 5 situations most solo travelers don't prepare for.
-Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+[EARNED CTA BRIDGE — мост из истории]
+
+🎁 I put it together as a Safety Card — [конкретная польза]. Yours to keep.
+
+Comment SAFETY below and I'll send it to your DMs instantly.
+
+*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
 ```
 
-### 🏨 HOTEL SAFETY (SAFE)
+### 🏨 HOTEL SAFETY (SAFETY)
 ```
-I put together a 🎁 one-page safety card for solo travelers — yours to keep. Most people only find out they needed it after check-in.
-Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+After that stay I started keeping a list of every surface a doctor told me to always sanitize. It turned into a card I now pack every time.
+
+🎁 I put it together as a Safety Card — the hotel surfaces doctors say to sanitize before touching. Yours to keep.
+
+Comment SAFETY below and I'll send it to your DMs instantly.
+
+*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
 ```
 
-### 🚢 CRUISE SAFETY (SAFE)
+### 🚢 CRUISE SAFETY (SAFETY)
 ```
-I put together a 🎁 one-page safety card for travelers — yours to keep. Cruise situations are in there.
-Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+After that trip I started keeping a list of every surface doctors and crew told me never to touch. It turned into a card I now carry every time I travel.
+
+🎁 I put it together as a Safety Card — the surfaces a ship's doctor says to sanitize before every meal on board. Yours to keep.
+
+Comment SAFETY below and I'll send it to your DMs instantly.
+
+*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+```
+
+### ✈️ AIRPORT SAFETY (SAFETY)
+```
+After that conversation I started writing down every surface travel doctors told me to avoid. It turned into a card I now carry every time I fly.
+
+🎁 I put it together as a Safety Card — the airport surfaces a travel doctor says to never touch with bare hands. Yours to keep.
+
+Comment SAFETY below and I'll send it to your DMs instantly.
+
+*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
 ```
 
 ---
