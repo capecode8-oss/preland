@@ -454,6 +454,71 @@
       "format": "confession-pattern-break",
       "file": "2026-sep8-night-realized.mp4",
       "metricool_id": 77
+    },
+    {
+      "id": 78,
+      "date": "2026-09-10",
+      "time_et": "09:00",
+      "topic": "ac_vent_plane_bacteria",
+      "hook": "Never Touch The AC Vent / On Any Plane. / It Can Make You Sick For Weeks.",
+      "clip": "32_5",
+      "music": "2.mp3",
+      "product": "SAFE",
+      "format": "command-interrupt-physical-threat",
+      "file": "2026-sep10-ac-vent-plane.mp4",
+      "metricool_id": 79
+    },
+    {
+      "id": 79,
+      "date": "2026-09-10",
+      "time_et": "11:00",
+      "topic": "hotel_tv_remote_contamination",
+      "hook": "Never Touch The TV Remote / In A Hotel Room. / A Doctor Showed Me What's On It.",
+      "clip": "32_7",
+      "music": "3.mp3",
+      "product": "SAFE",
+      "format": "command-interrupt-authority",
+      "file": "2026-sep10-tv-remote-hotel.mp4",
+      "metricool_id": 80
+    },
+    {
+      "id": 80,
+      "date": "2026-09-10",
+      "time_et": "13:00",
+      "topic": "cruise_railing_norovirus_confession",
+      "hook": "I Touched The Cruise Railing. / Got Sick For 5 Days. / A Doctor Showed Me Why.",
+      "clip": "32_16",
+      "music": "4.mp3",
+      "product": "SAFE",
+      "format": "confession-#3",
+      "file": "2026-sep10-cruise-railing-sick.mp4",
+      "metricool_id": 81
+    },
+    {
+      "id": 81,
+      "date": "2026-09-10",
+      "time_et": "17:00",
+      "topic": "airplane_tray_table_flight_attendant",
+      "hook": "Never Put Food Directly / On An Airplane Tray. / A Flight Attendant Told Me Why.",
+      "clip": "32_1",
+      "music": "5.mp3",
+      "product": "SAFE",
+      "format": "command-interrupt-authority",
+      "file": "2026-sep10-tray-table-flight.mp4",
+      "metricool_id": 82
+    },
+    {
+      "id": 82,
+      "date": "2026-09-10",
+      "time_et": "19:00",
+      "topic": "airport_escalator_handrail_contamination",
+      "hook": "This Airport Handrail Fact / Feels Almost Illegal... / A Doctor Showed Me Why.",
+      "clip": "32_11",
+      "music": "6.mp3",
+      "product": "SAFE",
+      "format": "feels-illegal-#0",
+      "file": "2026-sep10-airport-handrail.mp4",
+      "metricool_id": 83
     }
   ],
   "_blocked_topics": [
@@ -485,6 +550,11 @@
     "carnival_buffet_fork_viral",
     "cruise_norovirus_surface_door_handle",
     "3am_wakeup_cortisol_spike_sleep",
-    "marriage_signs_slowly_breaking_down"
+    "marriage_signs_slowly_breaking_down",
+    "ac_vent_plane_bacteria",
+    "hotel_tv_remote_contamination",
+    "cruise_railing_norovirus_confession",
+    "airplane_tray_table_flight_attendant",
+    "airport_escalator_handrail_contamination"
   ]
 }
