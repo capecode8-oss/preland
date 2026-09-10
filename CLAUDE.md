@@ -1,5 +1,29 @@
 # ⛔ СТОП — ЧИТАЙ ПЕРВЫМ
 
+## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ВАРИАТИВНОСТЬ ХУКА (вшито навсегда, Sep 10 2026)
+
+Структура confession (#3) — **неизменна**. Слова — **ротируются каждый рилс**.
+
+**НИКОГДА не повторять подряд:**
+- Одного и того же авторитета: не "flight attendant" 3 раза подряд, не "doctor" в каждом рилсе
+- Один и тот же глагол: не "told me" в каждом хуке
+
+**Банк авторитетов (ротировать):**
+- flight attendant / crew member / pilot / gate agent / airline employee
+- doctor / cardiologist / infectious disease nurse / ship's nurse / paramedic
+- TSA agent / security officer / customs agent / border officer
+- chef / head chef / line cook / food inspector / restaurant manager
+- hotel staff / housekeeper / front desk agent / concierge / hotel manager
+
+**Банк глаголов (ротировать):**
+- told me / showed me / warned me / explained / revealed
+- pulled me aside / stopped me / pointed out / said something that stuck
+- walked me through / demonstrated / flagged it immediately
+
+**Правило batch:** если делаем 5 рилсов — все 5 должны иметь РАЗНЫЕ авторитеты И РАЗНЫЕ глаголы. Jordan проверяет перед финализацией batch.
+
+---
+
 ## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ХУК НА ВИДЕО ≠ НАЧАЛО КАПШЕНА (вшито навсегда)
 
 Хук на футаже (текст поверх видео) и первая строка капшена **НИКОГДА не дублируются**.
