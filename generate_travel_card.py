@@ -14,7 +14,7 @@ pt = 1.0
 
 # ── Fonts ──────────────────────────────────────────────────────────────────
 FONT_DIR = "/usr/share/fonts/truetype/montserrat"
-pdfmetrics.registerFont(TTFont("Druk",         "/tmp/DrukWideBold.ttf"))
+pdfmetrics.registerFont(TTFont("Druk",         f"{FONT_DIR}/Montserrat-ExtraBold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-Bold",    f"{FONT_DIR}/Montserrat-Bold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-SemiBold",f"{FONT_DIR}/Montserrat-SemiBold.ttf"))
 pdfmetrics.registerFont(TTFont("Mont-Regular", f"{FONT_DIR}/Montserrat-Regular.ttf"))
@@ -210,8 +210,15 @@ def draw_card(c):
 
     c.setFont("Mont-SemiBold", 7 * pt)
     c.setFillColor(C_NAVY)
-    url = "thekiramethod.com/guide"
-    c.drawCentredString(W / 2, y, url)
+    url = "app.lava.top/products/586f3c31-38c0-43e4-8f4e-c95659f1f627"
+    display_url = "thekiramethod.com  →  Get The Full Guide"
+    link_x = W / 2 - c.stringWidth(display_url, "Mont-SemiBold", 7 * pt) / 2
+    c.linkURL(
+        "https://app.lava.top/products/586f3c31-38c0-43e4-8f4e-c95659f1f627",
+        (link_x, y - 2 * pt, link_x + c.stringWidth(display_url, "Mont-SemiBold", 7 * pt), y + 8 * pt),
+        relative=0
+    )
+    c.drawCentredString(W / 2, y, display_url)
 
 
 def main():
