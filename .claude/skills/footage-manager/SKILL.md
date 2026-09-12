@@ -57,6 +57,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 1 | 1_17, 32_4, 32_7, 1_20, 32_12 |
 | Sep 2 | 32_9, 32_6 |
 | Sep 3 | 32_8, 32_16 |
+| Sep 12 | AI-gen: cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges |
 
 ---
 
@@ -75,6 +76,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 1 | safari-lodge-overcharge, flight-upgrade-secret, hotel-minibar-trap, helicopter-hidden-fee, airport-currency-exchange-trap |
 | Sep 2 | fake-police-airport-passport, hotel-room-robbery-sleeping |
 | Sep 3 | amsterdam-pancake-3000-scam, cruise-overboard-ship-kept-moving |
+| Sep 12 | cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges |
 
 ---
 
