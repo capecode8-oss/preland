@@ -82,7 +82,8 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 2 | 32_9, 32_6 |
 | Sep 3 | 32_8, 32_16 |
 | Sep 12 | AI-gen: cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges |
-| Sep 12 | kira_4_tray_table, kira_2_tv_remote, kira_5_airport_handrail |
+| Sep 12 | kira_4_tray_table, kira_2_tv_remote, kira_5_airport_handrail, kira_3_cruise_railing |
+| Sep 13 | 32_5, 32_7, 32_6, 32_1 |
 
 ---
 
@@ -101,7 +102,8 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 1 | safari-lodge-overcharge, flight-upgrade-secret, hotel-minibar-trap, helicopter-hidden-fee, airport-currency-exchange-trap |
 | Sep 2 | fake-police-airport-passport, hotel-room-robbery-sleeping |
 | Sep 3 | amsterdam-pancake-3000-scam, cruise-overboard-ship-kept-moving |
-| Sep 12 | cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges, airplane-tray-table-bacteria, hotel-tv-remote-bacteria, airport-escalator-handrail-bacteria |
+| Sep 12 | cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges, airplane-tray-table-bacteria, hotel-tv-remote-bacteria, airport-escalator-handrail-bacteria, cruise-towel-chair-policy |
+| Sep 13 | airplane-blanket-bacteria, hotel-shower-legionella, hotel-ice-machine-bacteria, airplane-toilet-flush-aerosol |
 
 ---
 
