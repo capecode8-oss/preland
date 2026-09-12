@@ -558,12 +558,16 @@ Canvas: **1080 × 1920px**
 FFMPEG=/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2
 MUSIC=$(ls /home/user/preland/music/*.mp3 | shuf -n 1)
 
+DUR=$($FFMPEG -i [VIDEO] 2>&1 | grep Duration | awk '{print $2}' | tr -d ,)
+# Или через ffprobe: ffprobe -v error -show_entries format=duration -of csv=p=0 [VIDEO]
+# DUR = длительность источника — НЕ обрезать, использовать как есть
+
 $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
   -map 1:v -map 0:a \
   -af "volume=0.8" \
   -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" \
   -c:v libx264 -c:a aac -b:a 128k \
-  -t 5.0 -r 30 -crf 18 -preset fast \
+  -t $DUR -r 30 -crf 18 -preset fast \
   -pix_fmt yuv420p \
   output.mp4
 ```
@@ -573,7 +577,7 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 ## Рендер-спецификации (единый источник правды)
 
 - Размер: 1080×1920
-- Длительность: ровно 5.000s = 150 frames @ 30fps `-frames:v 150` (loop если источник короче)
+- Длительность: **динамическая** = длительность исходного видео (ffprobe). НЕ обрезать. Если источник 5с → 5с. Если 6с → 6с. Если 8с → 8с. `-t {dur} -frames:v {round(dur*30)}`
 - Кодек: H.264, yuv420p, **с аудио (музыка из библиотеки)**, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
   → установить через `pip install imageio imageio-ffmpeg` если не найден
