@@ -22,6 +22,30 @@ description: Select a clip from the footage library for the current reel. Tracks
 
 `1_2, 1_8, 1_11, 1_14, 1_15, 1_16, 1_19, 1_23, 1_26, 1_28, 1_30, 31_2, 32_2`
 
+### 🤖 AI-GEN клипы — Cancun (3 штуки) ← Sep 12 2026
+Путь: `/home/user/preland/footage/viral_travel/`
+Использовать для **Cancun / Mexico travel** тем, продукт **SAFE**
+
+| Клип | Визуал | Тема |
+|------|--------|------|
+| `cancun_1_airport_taxi` | Hotel reception / bill scene | Airport taxi scam, hidden charges |
+| `cancun_2_fake_alcohol` | Cancun airport arrivals hall, couple with luggage | Fake alcohol / resort safety |
+| `cancun_3_allinclusive` | Outdoor bar / beach bar at night | All-inclusive hidden charges |
+
+⚠️ Эти клипы уже использованы Sep 12 (темы: cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges). Следующий раз — не раньше чем через 14 дней и с новым углом.
+
+### 🤖 AI-GEN клипы — kira series (5 штук) ← Sep 9 2026
+Путь: `/home/user/preland/footage/viral_travel/`
+Использовать для **health / travel safety** тем, продукт **SAFE** или **CALM**
+
+| Клип | Визуал | Тема |
+|------|--------|------|
+| `kira_1_ac_vent` | Plane AC vent close-up | Air circulation, germs on planes |
+| `kira_2_tv_remote` | Hotel TV remote | Hotel hygiene, most-touched surfaces |
+| `kira_3_cruise_railing` | Cruise ship railing | Cruise safety, germs |
+| `kira_4_tray_table` | Airplane tray table | Plane hygiene |
+| `kira_5_airport_handrail` | Airport handrail / escalator | Airport germs, "feels illegal" |
+
 ### 😐 FACE клипы — talking head (5 штук) ← НОВЫЕ Sep 8 2026
 Путь: `/home/user/preland/footage/general/`
 Использовать для **relationships / health / fear / money traps** — темы где лицо усиливает доверие
