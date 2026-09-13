@@ -46,6 +46,21 @@ description: Select a clip from the footage library for the current reel. Tracks
 | `kira_4_tray_table` | Airplane tray table | Plane hygiene |
 | `kira_5_airport_handrail` | Airport handrail / escalator | Airport germs, "feels illegal" |
 
+### 🎬 CUSTOM клипы — реальная съёмка (7 штук) ← НОВЫЕ Sep 13 2026
+Путь: `/home/user/preland/footage/travel/`
+Использовать для **money traps / travel safety** тем, продукт **SAFE**
+Сняты на телефон, натуральный look, не AI-generated.
+
+| Клип | Визуал | Лучшая тема |
+|------|--------|-------------|
+| `custom_rental` | Стойка проката авто, агент за плексигласом, бумаги на стойке | Rental car contract trap, hidden fees, damage scam |
+| `custom_atm_1` | Руки у банкомата, экран с кнопками выбора, серебряные часы | DCC trap, foreign ATM fees, card skimmer |
+| `custom_atm_2` | Тот же ATM, другой момент действия (вариант) | DCC trap, ATM fees (второй угол) |
+| `custom_restaurant` | Женщина за столиком с проверенной скатертью, держит банкноты, свеча в бутылке | Tourist menu trap, wrong bill, tipping scam |
+| `custom_insurance` | Женщина в сером кардигане в гостиничном номере, смотрит в телефон, лампа слева | Travel insurance fine print, hotel booking scam, cancellation policy |
+| `custom_customs` | POV — руки держат ремни, будка пограничника за плексигласом | Passport check, customs trap, money confiscation, border officer |
+| `custom_pharmacy` | Женщина в аптеке читает упаковку лекарства, клинический белый свет | Medication abroad, wrong drug, travel health warning |
+
 ### 😐 FACE клипы — talking head (5 штук) ← НОВЫЕ Sep 8 2026
 Путь: `/home/user/preland/footage/general/`
 Использовать для **relationships / health / fear / money traps** — темы где лицо усиливает доверие
