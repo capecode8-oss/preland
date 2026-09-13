@@ -401,12 +401,11 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 ### Когда пользователь говорит **"под travel"** / **"travel"** / **"safe"**:
 - **Продукт:** Travel Safety Guide "47 Countries. One Safety Guide."
-- **Бесплатный лид-магнит:** Solo Traveler's Safety Card
-- **Кодовое слово в капшене:** `SAFE` (все регистры: safe / Safe / SAFE)
-- **Что получает:** бот отправляет в DM ссылку на прилэнд → человек скачивает карточку → видит платный гайд
-- **Платный продукт:** $14.90 на Lava.top
-- **Логика подводки:** travel tips → "I put together a 🎁 safety card — yours to keep" → Comment **SAFE**
-- ⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО — Instagram банит. Заменить на "yours to keep" / "I'll send it to you directly"
+- **Кодовое слово в капшене:** `SAFE` / `SAFETY` (оба работают)
+- **Воронка (обновлено Sep 13 2026):** комментарий SAFETY → бот отправляет ссылку прямо на Lava.top preland → покупка $14.90. Бесплатная карточка БОЛЬШЕ НЕ ОТПРАВЛЯЕТСЯ.
+- **Логика подводки в капшене:** рассказываем историю → "Comment SAFETY and I'll send you the full guide directly." (без упоминания бесплатного)
+- ⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО — Instagram банит
+- ⛔ НЕ упоминать "safety card" как отдельный лид-магнит — его больше нет в воронке
 
 ### Когда пользователь говорит **"под сон"** / **"сон"** / **"calm"**:
 - **Продукт:** Sleep guide (мини-продукт про сон)
@@ -431,17 +430,19 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 **Кодовое слово изменено:** `SAFE` → `SAFETY` (только в CTA блоке, везде в логике — прежнее SAFE)
 
-**CTA для SAFE рилсов — единственный утверждённый формат:**
+**CTA для SAFE рилсов — единственный утверждённый формат (обновлено Sep 13 2026):**
 
 ```
-👇 HOW TO GET YOUR SAFETY GUIDE: 👇
+👇 HOW TO GET IT: 👇
 • FOLLOW this account 🔒
 • COMMENT SAFETY below 💬
-I will send the guide straight to your Direct Messages so you don't miss it. Safe travels! ✈️
+I'll send the guide straight to your DMs. Safe travels! ✈️
 ```
 
-⛔ НЕ использовать "Join our safe travel community" — запутывает, удалён навсегда.
-⛔ НЕ использовать старый формат `Comment SAFE and I'll send it` — только формат выше.
+**Что происходит после комментария:** бот отправляет ссылку на Lava.top preland → покупка. Никакой бесплатной карточки, никакого промежуточного шага.
+
+⛔ НЕ использовать "I put together a 🎁 safety card" — карточки больше нет в воронке.
+⛔ НЕ использовать "yours to keep" / "free" / "gift" — всё удалено.
 ⛔ CALM рилсы — правило прежнее: `Comment CALM and I'll send it to you directly.` (бот CALM пока без изменений)
 
 ---
@@ -632,7 +633,8 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 - Публиковать как Instagram Reel + TikTok (PUBLIC_TO_EVERYONE, нужен tiktokData.title)
 - Музыку и геотег (New York) добавляет владелец вручную
 - Caption: 1700–1900 символов, структура: second hook → context → detail → payoff → CTA → save line
-- **🎁 ОБЯЗАТЕЛЬНО** перед CTA с лид-магнитом: `I put together a 🎁 safety card...` (или `🎁 calm card`)
+- **CTA для SAFE:** `Comment SAFETY and I'll send you the guide directly.` (без лид-магнита, напрямую на Lava.top)
+- **CTA для CALM:** `I put together a 🎁 calm card — Comment CALM and I'll send it to you directly.`
 - **📌 ОБЯЗАТЕЛЬНО** перед save line: `📌 Save this before your next...`
 - Все правила капшена и CTA банк — в скилле `kira-captions`
 
