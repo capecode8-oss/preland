@@ -100,6 +100,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 12 | kira_4_tray_table, kira_2_tv_remote, kira_5_airport_handrail, kira_3_cruise_railing |
 | Sep 13 | 32_5, 32_7, 32_6, 32_1 |
 | Sep 13 | custom_atm_1, custom_restaurant, custom_rental, custom_customs, custom_insurance, custom_pharmacy |
+| Sep 13 | 32_18, 32_13, 32_14, 32_15, 32_16, 32_17, 32_9, 32_11, 32_12, 32_4 |
 
 ---
 
@@ -121,6 +122,7 @@ description: Select a clip from the footage library for the current reel. Tracks
 | Sep 12 | cancun-airport-taxi, cancun-fake-alcohol, cancun-allinclusive-charges, airplane-tray-table-bacteria, hotel-tv-remote-bacteria, airport-escalator-handrail-bacteria, cruise-towel-chair-policy |
 | Sep 13 | airplane-blanket-bacteria, hotel-shower-legionella, hotel-ice-machine-bacteria, airplane-toilet-flush-aerosol |
 | Sep 13 | atm-dcc-trap, rome-restaurant-double-bill, rental-contract-gap-clause, customs-cash-declaration, travel-insurance-operational-exclusion, pharmacy-wrong-formulation |
+| Sep 13 | baggage-damage-pir-filing, cruise-top-deck-noise, cruise-drink-package-math, cruise-specialty-dinner-same-kitchen, cruise-excursions-3x-markup, duty-free-port-overpriced, gate-check-bag-targeting, tsa-precheck-global-entry-overlap, airport-taxi-first-curb-scam, flight-canceled-hotel-voucher |
 
 ---
 
