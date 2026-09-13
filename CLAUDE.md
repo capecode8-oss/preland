@@ -105,8 +105,8 @@
 ```
 
 **ШАГ 4 — ПОЛЬЗОВАТЕЛЬ ОДОБРЯЕТ → РЕНДЕР + РАСПИСАНИЕ**
-- После одобрения: footage-manager → render → quality-check → push GitHub → Metricool
-- Капшен финализируется и идёт в Metricool автоматически
+- После одобрения: footage-manager → render → quality-check → push GitHub → Videotool
+- Капшен финализируется и идёт в Videotool автоматически
 - Журнал клипов обновляется
 
 ---
@@ -138,7 +138,7 @@
 | 2 | `kira-hooks` | Пишем хук → аудит команды (11 чел) → body clearance → рендер |
 | 3 | `kira-captions` | Пишем капшен → аудит команды → выбираем CTA по теме |
 | 4 | `quality-check` | 7-пунктовый QA gate → только после ✅ идём дальше |
-| 5 | `metricool-ready` | Push MP4 → raw URL → запланировать в Metricool |
+| 5 | `metricool-ready` | Push MP4 → raw URL → запланировать в Videotool |
 | 6 | `performance-tracker` | Записать рилс → через 24-72ч обновить метрики |
 
 **Для batch (4-6 рилсов):** использовать `batch-processor` — трекает весь batch, один пайплайн для всех.
@@ -171,7 +171,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - Токсичный контент, скандалы, разводы как развлечение
 
 **Продукт для этой ниши:** CALM (стресс в отношениях → не спишь в 3AM → Comment CALM)
-Ежедневно публикуем 4–5 рилсов через Metricool.
+Ежедневно публикуем 4–5 рилсов через Videotool.
 
 **Формат хуков — конкурент (maks.motivator) — ДВА ФОРМАТА:**
 
@@ -623,9 +623,9 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 ---
 
 ## ⛔ ХЕШТЕГИ — ЗАПРЕЩЕНЫ НАВСЕГДА
-Никаких #hashtag ни в капшене, ни в хуке, ни в Metricool. Никогда. Без исключений.
+Никаких #hashtag ни в капшене, ни в хуке, ни в Videotool. Никогда. Без исключений.
 
-## Metricool
+## Videotool
 
 - brand_id: 6476294
 - Timezone: America/New_York
@@ -641,7 +641,7 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 ## GitHub / публикация
 
 - Репо: `capecode8-oss/preland`, ветка: `claude/schedule-5-reels-metricool-ip1tp7`
-- MP4 пушить в репо → raw.githubusercontent.com URL → Metricool
+- MP4 пушить в репо → raw.githubusercontent.com URL → Videotool
 - После изменений: commit + push обязательно
 
 ---
