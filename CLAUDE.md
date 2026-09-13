@@ -441,6 +441,19 @@ I'll send the guide straight to your DMs. Safe travels! ✈️
 
 **Что происходит после комментария:** бот отправляет ссылку на Lava.top preland → покупка. Никакой бесплатной карточки, никакого промежуточного шага.
 
+**МОСТ К ПРОДУКТУ — утверждённый шаблон (проверен фокус-группой 24/100 DM sends):**
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports, 
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+⛔ НЕ писать "send the link" — звучит как спам. Только "send you the guide directly."
+⛔ НЕ писать "I put all of this into a guide" — generic. Начинать с "Situations like this one."
+⛔ НЕ указывать цену в капшене.
 ⛔ НЕ использовать "I put together a 🎁 safety card" — карточки больше нет в воронке.
 ⛔ НЕ использовать "yours to keep" / "free" / "gift" — всё удалено.
 ⛔ CALM рилсы — правило прежнее: `Comment CALM and I'll send it to you directly.` (бот CALM пока без изменений)
