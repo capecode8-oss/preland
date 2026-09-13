@@ -34,18 +34,17 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 **⛔ СЛОВО "FREE" — ПОЛНОСТЬЮ ЗАПРЕЩЕНО. Instagram банит аккаунты за него.**
 Нельзя использовать ни в каком регистре: free / Free / FREE — всё запрещено. Навсегда.
 
-**Вместо FREE — новая формула (одобрена командой + 100 зрителей: 81/100 стоп, 26 DM sends):**
-- ✅ `🎁 one-page safety card — yours to keep`
-- ✅ `I put together a 🎁 one-page card — yours to keep`
-- ✅ `it's yours to keep 🎁`
-- ✅ `I'll send it to you directly` (без слова free)
-- ❌ `FREE card` / `free guide` / `get it free` / `FREE 🎁` — всё запрещено
+**⛔ ЗАПРЕЩЕНО навсегда:**
+- ❌ `FREE card` / `free guide` / `get it free` / `FREE 🎁`
+- ❌ `yours to keep` / `🎁 one-page card` / `safety card` — старая воронка, карточки больше нет
+- ❌ `I put together a 🎁 safety card` — удалено навсегда
 
 **Кодовые слова** — всегда CAPS:
-   - ✅ `Comment SAFE` / `Comment CALM`
-   - ❌ `comment safe` / `Comment Safe` — запрещено
+   - ✅ `Comment SAFETY` (для SAFE рилсов)
+   - ✅ `Comment CALM` (для CALM рилсов)
+   - ❌ `comment safety` / `Comment Safety` — запрещено
 
-**Sam проверяет** перед финализацией: найди каждое вхождение слова "free" в капшене — УДАЛИТЬ и заменить на "yours to keep" / "on me" / "I'll send it". Найди каждое кодовое слово — убедиться что CAPS.
+**Sam проверяет** перед финализацией: найди "free", "yours to keep", "safety card", "one-page card" — всё удалить. Найди кодовое слово — убедиться что CAPS.
 
 ---
 
@@ -106,18 +105,25 @@ description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the 
 
 Перед написанием капшена — определить продукт по контексту запроса:
 
-### 🌍 TRAVEL продукт → кодовое слово **SAFE**
+### 🌍 TRAVEL продукт → кодовое слово **SAFETY**
 - Тема: travel hacks / airport / hotel / cruise / ATM / restaurant scam
-- Бесплатный лид-магнит: Solo Traveler's Safety Card (5 советов, 1 страница)
-- CTA в капшене: `Comment SAFE and I'll send it to your DMs`
-- Ссылка: прилэнд с карточкой и платным гайдом
-- Платный продукт: $14.90 Travel Safety Guide на Lava.top
-- Мост к CTA: тревога после travel-ситуации → "I put together a 🎁 safety card — yours to keep"
+- Продукт: Travel Safety Guide — 47 стран, 45+ ситуаций, $14.90, instant download (Lava.top)
+- Воронка: Comment SAFETY → бот отправляет ссылку на Lava.top preland → покупка. Никакой бесплатной карточки.
+- CTA в капшене: `Comment SAFETY below and I'll send you the guide directly.`
+- Мост к CTA (утверждён фокус-группой 24/100 DM sends):
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
 
 ### 😴 СОН продукт → кодовое слово **CALM**
 - Тема: сон / 3AM wakeup / insomnia / sleep hacks / health
-- Бесплатный лид-магнит: The 3AM Calm Card (4 steps)
-- CTA в капшене: `Comment CALM and I'll send it to your DMs`
+- Лид-магнит: The 3AM Calm Card (4 steps, бесплатно)
+- CTA в капшене: `Comment CALM and I'll send it to you directly.`
 - Мост к CTA: тревога / стресс → "can't fall back asleep at 3AM"
 - ⛔ НЕ ПИСАТЬ "link in bio" — bio ссылка ведёт ТОЛЬКО на Travel (SAFE). В CALM капшене — только Comment CALM, никакой ссылки.
 
@@ -250,24 +256,19 @@ Instagram обрезает капшен после ~125 символов в ле
 
 **Тест длины:** прочитай вслух. Если читается меньше 60 секунд = идеально. Больше 90 секунд = сократить.
 
-### ⭐ EARNED CTA BRIDGE — НОВОЕ ЖЕЛЕЗНОЕ ПРАВИЛО (сентябрь 2026, вшито навсегда)
+### ⭐ CTA BRIDGE — ЖЕЛЕЗНОЕ ПРАВИЛО (сентябрь 2026, утверждён фокус-группой 24/100 DM sends)
 
-**Проблема старых капшенов:** история обрывается → сразу "I put together a card". Читатель чувствует разрыв — это реклама, не продолжение.
+**Воронка SAFE изменена:** карточки больше нет. Comment SAFETY → Lava.top preland → покупка $14.90.
 
-**Решение — одна строка-мост ПЕРЕД 🎁 которая объясняет ОТКУДА взялся продукт:**
-
+**Утверждённый мост (единственный формат для SAFE):**
 ```
-After that [trip/flight/conversation] I started keeping a list of every surface
-doctors and crew told me never to touch. It turned into a card I now carry every time I travel.
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
 
-🎁 I put it together as a Safety Card — [конкретная польза]. Yours to keep.
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
 ```
-
-**Формулы моста (по теме):**
-- ✈️ Самолёт: `After that flight I started writing down everything she told me. Every surface. Every habit. It turned into a card I now bring on every trip.`
-- 🏨 Отель: `After that stay I started keeping a list of every surface a doctor told me to always sanitize. It turned into a card I now pack every time.`
-- 🚢 Круиз: `After that trip I started keeping a list of every surface doctors and crew told me never to touch. It turned into a card I now carry every time I travel.`
-- 🛬 Аэропорт: `After that conversation I started writing down every surface travel doctors told me to avoid. It turned into a card I now carry every time I fly.`
 
 **Логическая цепочка (железная):**
 ```
@@ -275,37 +276,35 @@ doctors and crew told me never to touch. It turned into a card I now carry every
 ↓
 ОБЪЯСНЕНИЕ (инсайдер/доктор говорит почему)
 ↓
-МОСТ — "After that I started keeping a list... It turned into a card"
+МОСТ — "Situations like this happen on every trip. I collected 45..."
 ↓
-🎁 Safety Card — [конкретная польза] — yours to keep
+Comment SAFETY → бот → Lava.top → покупка
 ↓
-Comment SAFETY below → DMs instantly
-P.S. Follow first (объяснение, не приказ)
-↓
-📌 Save this before your next [trip]
+📌 Save this before your next trip.
 ```
 
 **Тест моста:** убери CTA-блок, прочитай только историю → добавь мост → переход должен ощущаться как ВЫВОД из истории, не как реклама.
 
+⛔ НЕ писать "I put together a card / safety card / yours to keep" — карточки нет.
+⛔ НЕ писать "send the link" — только "send you the guide directly."
+
 ---
 
-### ⭐ НОВЫЙ CTA FORMAT — SAFETY (сентябрь 2026, вшито навсегда)
+### ⭐ CTA FORMAT — SAFETY (финальный, Sep 13 2026)
 
-**Кодовое слово изменено: SAFE → SAFETY** (в тексте капшена). В логике журналов — прежнее SAFE.
-
-**Новый CTA блок — три части:**
+**Единственный утверждённый CTA блок для SAFE рилсов:**
 ```
-🎁 I put it together as a Safety Card — [конкретная польза одной строкой]. Yours to keep.
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
 
-Comment SAFETY below and I'll send it to your DMs instantly.
-
-*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
 ```
 
-**Почему P.S. вместо "шага 1":**
-- "FOLLOW first, then COMMENT" = два приказа = трение = меньше комментов
-- P.S. = объяснение как забота = меньше трения = больше действий
-- Тест сентябрь 2026: формат P.S. даёт на 23% больше комментов (данные creatorflow.so)
+**Почему "Follow first so it reaches your inbox" а не приказ:**
+- "FOLLOW first, then COMMENT" = два приказа = трение
+- "Follow first so it reaches you" = объяснение = меньше трения = больше действий
 
 **⛔ ЗАПРЕЩЕНО:**
 - Старый формат "1️⃣ FOLLOW my page... 2. COMMENT the word SAFETY" — слишком муторный
@@ -558,20 +557,20 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 ## ДВА МИНИ-ПРОДУКТА — знать наизусть, упоминать в каждом капшене
 
 ### 😴 CALM продукт (сон):
-**Карточка:** "The 3AM Calm Card" — 🎁 одна страница, 4 шага, yours to keep.
-**Как получить:** Comment CALM ИЛИ ссылка в bio (thekiramethod.com)
-**Платный апселл внутри карточки:** "21-Page 7-Night Guide" — $9.90 (не упоминать в капшене)
+**Лид-магнит:** The 3AM Calm Card — 4 шага, бесплатно, отправляется в DM.
+**Как получить:** только Comment CALM (⛔ НЕ писать link in bio — bio ведёт на SAFE, не CALM)
+**CTA:** `I put together a 🎁 one-page calm card — Comment CALM and I'll send it to you directly.`
 
-### ✈️ SAFE продукт (travel):
-**Карточка:** Solo Traveler's Safety Card — 🎁 одна страница, 5 ситуаций, yours to keep.
-**Как получить:** Comment SAFE ИЛИ ссылка в bio (thekiramethod.com)
-**Платный апселл внутри карточки:** Travel Safety Guide 47 стран — $14.90 (не упоминать в капшене)
+### ✈️ SAFE продукт (travel) — ОБНОВЛЕНО Sep 13 2026:
+**Продукт:** Travel Safety Guide — 47 стран, 45+ ситуаций, $14.90, instant download.
+**Воронка:** Comment SAFETY → бот → ссылка на Lava.top preland → покупка. Карточки больше нет.
+**Как получить:** Comment SAFETY + link in bio (bio ведёт на Travel Safety Guide ✅)
 
 **ПРАВИЛО CTA — ОБЯЗАТЕЛЬНО:**
-**SAFE** — два варианта: Comment SAFE + link in bio (bio ведёт на Travel продукт ✅)
-**CALM** — только один вариант: Comment CALM (⛔ НЕ писать link in bio — bio ведёт на Travel, не CALM)
-⛔ Никогда не использовать слово FREE в любой форме. Никогда.
-✅ Всегда: "yours to keep" + 🎁 + "I'll send it to you directly"
+**SAFETY** — Comment SAFETY + link in bio ✅
+**CALM** — только Comment CALM (⛔ НЕ link in bio)
+⛔ Никогда не использовать слово FREE.
+⛔ SAFE/SAFETY: никогда не писать "yours to keep", "safety card", "one-page card" — карточки нет.
 
 ---
 
@@ -593,8 +592,10 @@ Under 10 send → caption is dead weight → rewrite the weakest section and re-
 
 ## CTA BANK — pick by reel topic, never repeat same one twice in a row
 
-⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО во всех CTA ниже и в любом тексте капшена.
-✅ Всегда: "yours to keep" / "I'll send it to you directly" / "🎁 one-page card"
+⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО.
+⛔ Для SAFE: "yours to keep" / "safety card" / "one-page card" / "I put together a card" — всё запрещено. Карточки нет.
+✅ SAFE: утверждённый мост → Comment SAFETY → guide directly.
+✅ CALM: "🎁 one-page calm card" / "I'll send it to you directly" — карточка CALM сохраняется.
 
 ### 🏨 HOTEL / CHECK-IN (CALM)
 ```
@@ -659,48 +660,41 @@ I put together a 🎁 one-page card — 4 steps for when your brain won't stop a
 Comment CALM and I'll send it to you directly.
 ```
 
-### ✈️ TRAVEL / SAFETY (SAFETY — Solo Traveler's Safety Card)
+### ✈️ TRAVEL / SAFETY — УТВЕРЖДЁННЫЙ МОСТ (Sep 13 2026, 24/100 DM sends)
 ```
-[EARNED CTA BRIDGE — мост из истории]
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
 
-🎁 I put it together as a Safety Card — [конкретная польза]. Yours to keep.
-
-Comment SAFETY below and I'll send it to your DMs instantly.
-
-*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
-```
-
-### 🏨 HOTEL SAFETY (SAFETY)
-```
-After that stay I started keeping a list of every surface a doctor told me to always sanitize. It turned into a card I now pack every time.
-
-🎁 I put it together as a Safety Card — the hotel surfaces doctors say to sanitize before touching. Yours to keep.
-
-Comment SAFETY below and I'll send it to your DMs instantly.
-
-*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
 ```
 
-### 🚢 CRUISE SAFETY (SAFETY)
+### 🏨 HOTEL SAFETY (вариация)
 ```
-After that trip I started keeping a list of every surface doctors and crew told me never to touch. It turned into a card I now carry every time I travel.
+Situations like this happen in hotels all over the world.
+I collected 45 of them across 47 countries — exactly what to do before it happens to you.
 
-🎁 I put it together as a Safety Card — the surfaces a ship's doctor says to sanitize before every meal on board. Yours to keep.
-
-Comment SAFETY below and I'll send it to your DMs instantly.
-
-*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
 ```
 
-### ✈️ AIRPORT SAFETY (SAFETY)
+### 🚢 CRUISE SAFETY (вариация)
 ```
-After that conversation I started writing down every surface travel doctors told me to avoid. It turned into a card I now carry every time I fly.
+Situations like this happen on cruise ships more than people think.
+I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.
 
-🎁 I put it together as a Safety Card — the airport surfaces a travel doctor says to never touch with bare hands. Yours to keep.
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
 
-Comment SAFETY below and I'll send it to your DMs instantly.
+### ✈️ AIRPORT SAFETY (вариация)
+```
+Situations like this happen at every airport in the world.
+I collected 45 of them across 47 countries — and exactly what to do before it happens to you.
 
-*P.S. Follow my page first — Instagram hides messages from non-followers in a secret requests folder. Don't miss it.*
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
 ```
 
 ---
