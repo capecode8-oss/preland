@@ -50,7 +50,7 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 **ALGORITHM FACTS (2025-2026 research — вшито навсегда):**
 - DM sends (пересылки) = самый важный сигнал. Вес 3-5× больше чем лайки.
 - Sends/reach benchmark: <0.5% = мёртвый контент. 1-2% = здоровый. >3% = вирусный.
-- **РЕАЛЬНОЕ окно решения — 1.7 СЕКУНДЫ, не 3.** Зритель решает scroll/stay за 1.7 сек. До 50% уходят в первые 3 секунды — если хук слабый, теряем половину аудитории мгновенно.
+- **РЕАЛЬНОЕ окно АМИГДАЛЫ — 0.3 СЕКУНДЫ (пре-сознательное).** Рептильный мозг принимает решение РАНЬШЕ, чем зритель осознаёт что видит. Первые 3 СЛОВА (не строки, не секунды — СЛОВА) должны активировать угрозу до включения логики. Сознательное решение "остаться" принимается за ~1.7 сек — но к тому моменту амигдала уже решила.
 - **Skip rate — ключевая метрика.** <30-40% = здоровый хук. >50% = хук не работает, переписать формулу целиком.
 - **Hold rate на 3-й секунде >60% = 5-10× больше охвата** чем у hold rate <40%. Разница не линейная — экспоненциальная.
 - Saves = сигнал #3. Означает "хочу вернуться".
@@ -75,6 +75,50 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 - "Это отражает меня" — каждый репост = заявление "я такой". Контент должен давать чувство "я умнее других".
 - Практическая польза — "мой друг ДОЛЖЕН это знать, это спасёт ему деньги/здоровье".
 - Инсайдерское знание — "все уже знают это, а ты нет" = сильнейший триггер пересылки.
+
+---
+
+## ⚡ NEURO UPGRADE — 6 ПРАВИЛ (Sep 2026, research-backed — вшито навсегда)
+
+**Исследования нейронауки 2025-2026. Применять к КАЖДОМУ хуку. Без исключений.**
+
+### ПРАВИЛО 1 — AMYGDALA HIJACK (0.3 секунды, не 1.7)
+Амигдала обрабатывает угрозу за **0.3 секунды** — ДО того как кора мозга включилась. Зритель не "решает" остановиться. Его тело останавливается рефлекторно. Первые 3 СЛОВА хука должны содержать сигнал угрозы: физической опасности, потери, или нарушения пространства. Если слова 1-3 не бьют — всё остальное не имеет значения.
+- ✅ "He grabbed my wrist." → амигдала активирована на слове "grabbed"
+- ✅ "Your bag. 9 Seconds." → потеря + время = двойной удар
+- ❌ "I was traveling last year..." → никакой угрозы, амигдала спит
+- **Sam проверяет: первые 3 слова = noun/verb/number of THREAT. Если нет — переписать с нуля.**
+
+### ПРАВИЛО 2 — LOSS FRAMING (потеря в 2× сильнее выигрыша)
+Нейробиологически: потеря $100 активирует амигдалу в 2.5× сильнее, чем выигрыш $100 (Kahneman/Tversky, подтверждено в 2026 fMRI). Хук ВСЕГДА фреймируется как уже происходящая потеря — не как потенциальный выигрыш.
+- ✅ "Your card details left with it." (уже ушли — потеря совершена)
+- ✅ "Something was in my bag. I did not pack it." (уже случилось, не предупреждение)
+- ❌ "Here's how to protect your card details." (будущий выигрыш = слабо)
+- **Обязательный фрейм: "уже случилось / уже теряешь / уже слишком поздно" — не "предотврати".**
+
+### ПРАВИЛО 3 — INFORMATION GAP = ФИЗИЧЕСКАЯ БОЛЬ (Loewenstein 1994, подтверждено 2026 fMRI)
+Незакрытый когнитивный луп создаёт физически ощутимый дискомфорт в области ACC (anterior cingulate cortex). Мозг буквально не может свайпнуть — ему физически больно не знать ответ. Ключ: хук должен ОТКРЫТЬ луп и НИКОГДА не закрывать его внутри хука. Триггер-слова для разрыва: "without knowing" / "what's inside" / "they never told us" / "I saw it on camera."
+- ✅ "They chose me before I boarded the metro. I saw it on camera." (как? почему меня? — луп открыт)
+- ✅ "Something was in my bag. I did not pack it." (что? кто? — луп невыносим)
+- ❌ "Thieves target tourists — here's what they do." (объяснение убивает луп)
+
+### ПРАВИЛО 4 — PREDICTION VIOLATION (сильнейший pattern break)
+Мозг — это машина предсказаний (Friston 2010, подтверждено 2025). Когда реальность нарушает ожидаемую модель — нейрологический сигнал удивления перебивает ВСЁ. Самая мощная комбинация: НОРМАЛЬНЫЙ визуал + УГРОЖАЮЩИЙ текст = разрыв предсказания. Визуал говорит "всё в порядке", текст говорит "ты в опасности" — мозг не может игнорировать противоречие.
+- ✅ Клип: аэропорт, все идут как обычно. Текст: "Seat 14B photographed my passport while I slept."
+- ✅ Клип: красивый закат на круизе. Текст: "They timed themselves. Your bag. 9 seconds."
+- **VIC проверяет: визуал должен выглядеть 100% нормально. Угроза — только в тексте. Разрыв = стоп.**
+
+### ПРАВИЛО 5 — IDENTITY THREAT = PHYSICAL THREAT (социальная нейронаука 2025)
+Амигдала активируется ИДЕНТИЧНО для угроз физическим телу и для угроз идентичности/статусу (Eisenberger 2003, 2025 replication). "Люди которые делают ЭТО выглядят как лёгкая цель" активирует тот же нейронный путь что "тебя ударят". Применять: статусная угроза ("ты выглядишь как жертва") = физическая угроза в хуке.
+- ✅ "They chose me before I boarded the metro." (почему выбрали МЕНЯ? → статусная угроза + любопытство)
+- ✅ "Gate agent denied me. I had paid €80 online." (меня обманули → identity + injustice)
+- Формула: "Что случилось СО МНОЙ" > "что случается с людьми" → личная identity threat всегда сильнее
+
+### ПРАВИЛО 6 — STAKES COMPRESSION (MrBeast метод 2026)
+Сжать ВСЮ сцену опасности в 1.7 секунды так, чтобы зритель был ЭМОЦИОНАЛЬНО ВЛОЖЕН до того как осознал что смотрит. Один законченный кино-момент в 3 строках: экспозиция → событие → необратимое последствие. Зритель должен "пережить" ситуацию за 3 строки, а не "узнать" о ней.
+- ✅ "He grabbed my wrist. / I could not pull away. / This is how it starts." = зритель проживает момент
+- ✅ "They timed themselves. / Your bag. 9 seconds. / They do this every day." = сцена сжата, ужас передан
+- ❌ "Pickpockets in airports operate in teams and target distracted travelers." = лекция, не переживание
 
 ---
 
@@ -165,9 +209,9 @@ Before writing final hooks, simulate this internal brainstorm. Each team member 
 ### 🎬 JORDAN — Senior Content Editor
 *Has read 10,000+ viral hooks. Scrolls Reels 3 hours/day. Thinks like a 15-year-old American.*
 
-Jordan's job: **Does this hook stop the scroll in 1.7 SECONDS — for ANYONE?**
+Jordan's job: **Do the first 3 WORDS fire the amygdala in 0.3 seconds — BEFORE logic wakes up?**
 
-⏱️ **1.7 секунды = реальное окно.** Не 3 секунды. Зритель решает scroll/stay почти мгновенно — это значит первые 3 СЛОВА и первый визуальный кадр должны сработать вместе, без разгона.
+⏱️ **0.3 секунды = окно амигдалы (пре-сознательное).** Рептильный мозг решает ДО того как зритель осознал что видит. Первые 3 слова должны содержать угрозу, потерю, или нарушение пространства. Сознательное "остаться" наступает через ~1.7 сек — но если амигдала не сработала в 0.3 — зритель уже ушёл.
 
 Jordan asks:
 - "Would a 15-year-old American get this immediately — zero explanation needed?"
@@ -184,6 +228,7 @@ Jordan's red flags: passive voice, abstract nouns, starting with "The", slow war
 - Identify which Archetype this hook uses (COMMAND INTERRUPT / INSIDER LEAK / NEAR MISS etc.) — if no clear archetype → rewrite
 - T5 First 3 Words score: 8+/10 required. If Tyler doesn't stop on words 1-3 alone → rewrite the opener
 - Social Proof archetype → immediately flag and replace with Pattern Interrupt or Curiosity Gap archetype
+- **NEURO UPGRADE CHECK:** (1) First 3 words = threat? (2) Loss-framed, not gain-framed? (3) Information gap OPEN, not explained? (4) Prediction Violation present (normal + threatening)? (5) Stakes compressed into 3 lines? If any NO → rewrite.
 
 ---
 
@@ -263,8 +308,9 @@ Sam's rules (non-negotiable):
 
 **Sam's Neuro Protocol:**
 - T2 Universal Clarity (8+/10): Dorothy (74, no travel experience) must understand every single word on first read — no re-reading, no context needed. If Dorothy is confused → simplify, not explain.
-- T5 First 3 Words: are they punchy enough? Replace any weak first word with a verb, number, or name. "Never / I / $14,000 / A hotel / My cruise" = strong starts. "The / There / Some / It" = kill on sight.
+- T5 First 3 Words: are they punchy enough? Replace any weak first word with a verb, number, or name. "Never / I / $14,000 / A hotel / My cruise / He grabbed / They chose / Your bag" = strong starts. "The / There / Some / It" = kill on sight.
 - L4 SUNK COST phrasing: does the line feel like the reader has already made the mistake? "You've been doing X wrong" activates regret immediately — use it when the archetype fits.
+- **AMYGDALA TEST:** read only words 1-3 aloud. Do they contain a physical threat, act of violation, or loss noun? If not → Sam rewrites the first line before anything else.
 
 ---
 
@@ -329,8 +375,8 @@ Red's вердикт:
 > He will NOT re-read anything. If he has to think — he's gone.
 > He shares things that make him feel like he just learned something his friends don't know yet.
 
-**Tyler's live verdict (листает ленту прямо сейчас — 1.7 сек на решение):**
-Read only the first 3 words of Line 1. Tyler stops or swipes — no middle ground.
+**Tyler's live verdict (листает ленту прямо сейчас — 0.3 сек на амигдалу, 1.7 сек на сознательное решение):**
+Read only the first 3 words of Line 1. Amygdala fires or it doesn't — no middle ground.
 
 - "Never Do This" → 🛑 STOP (command + forbidden action)
 - "My friend lost" → 🛑 STOP (story starting, personal, loss)
