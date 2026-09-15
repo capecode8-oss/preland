@@ -617,7 +617,6 @@ footer p { font-size: 12px; color: var(--muted); }
     body.append('locale', 'en');
     fetch(BREVO_URL, { method: 'POST', body, mode: 'no-cors' }).catch(() => {});
 
-    form.style.display = 'none';
-    success.style.display = 'block';
+    setTimeout(() => { window.location.href = '/calm/card.html'; }, 300);
   });
 </script>
