@@ -611,6 +611,12 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 - CENTER_X: 540, **MAX_TEXT_W: 760px** (абсолют), **BOX_W: адаптивная** = min(860, max_lw + 2*PAD_X)
 - BOTTOM_ANCHOR: 1550px (выше Instagram UI chrome)
 - Проверка перед рендером: `all(textlength(l) <= 760 for l in lines)` — если False, переписать хук
+- **ОБЯЗАТЕЛЬНЫЙ ПРЕ-РЕНДЕР ПРЕВЬЮ (вшито навсегда):** До рендера финального MP4 — показать хук на реальном кадре из выбранного клипа. Порядок:
+  1. Извлечь кадр из реального footage клипа: `$FFMPEG -y -ss 2 -i /home/user/preland/footage/[CLIP].mp4 -vframes 1 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" /tmp/preview_bg.jpg`
+  2. PIL overlay: белая плашка + хук-текст с auto-sizing (72→36px, до max_width=760px), CAPS на ключевых словах, BOTTOM_ANCHOR=1520px, CENTER_X=540
+  3. Сохранить в `/tmp/hook_preview.jpg` → `SendUserFile` для одобрения
+  4. ❌ ЗАПРЕЩЕНО: чёрный фон, placeholder, лицо-заглушка — только реальный кадр из выбранного footage
+  5. После одобрения → рендер финального MP4
 - Всегда рендерить JPG-превью из финального MP4 и показывать перед публикацией
 
 ---

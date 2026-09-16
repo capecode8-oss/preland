@@ -118,10 +118,48 @@ ffprobe -v quiet -print_format json -show_streams /path/to/reel.mp4
 
 ---
 
-### ✅ 7. ФАЙЛ — готов к пушу
+### ✅ 7. ПРЕ-РЕНДЕР ПРЕВЬЮ — обязательно ДО рендера MP4
+
+**Железное правило: хук показывается на РЕАЛЬНОМ кадре footage. Никогда на чёрном фоне или заглушке.**
+
+```bash
+# Шаг 1 — извлечь кадр из выбранного клипа
+FFMPEG="/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2"
+$FFMPEG -y -ss 2 -i /home/user/preland/footage/[CLIP].mp4 \
+  -vframes 1 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" \
+  /tmp/preview_bg.jpg
+```
+
+```python
+# Шаг 2 — PIL overlay
+from PIL import Image, ImageDraw, ImageFont
+bg = Image.open("/tmp/preview_bg.jpg").resize((1080, 1920))
+draw = ImageDraw.Draw(bg, "RGBA")
+FONT_PATH = "/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf"
+lines = [hook_line_1, hook_line_2, hook_line_3]  # CAPS на ключевых словах
+MAX_TEXT_W = 760; PAD_X = 40; PAD_Y = 32; LINE_GAP = 10; BOTTOM_ANCHOR = 1520
+font_size = 72
+while font_size > 36:
+    font = ImageFont.truetype(FONT_PATH, font_size)
+    widths = [font.getbbox(l)[2]-font.getbbox(l)[0] for l in lines]
+    if max(widths) <= MAX_TEXT_W: break
+    font_size -= 2
+# Нарисовать белую плашку + текст → сохранить /tmp/hook_preview.jpg
+bg.save("/tmp/hook_preview.jpg", quality=92)
+```
+
+Шаг 3 — `SendUserFile(["/tmp/hook_preview.jpg"])` → ждать одобрения пользователя.
+
+❌ Чёрный фон / заглушка / placeholder = СТОП, перегенерировать с реальным footage
+❌ Текст за пределами MAX_TEXT_W=760px = СТОП, уменьшить font_size или переписать хук
+✅ Только после одобрения превью → рендер финального MP4
+
+---
+
+### ✅ 8. ФАЙЛ — готов к пушу
 
 - MP4 файл существует по пути `/home/user/preland/footage/rendered/` ✅
-- JPG-превью создан и проверен визуально ✅
+- JPG-превью из реального footage одобрен пользователем ✅
 - Имя файла: `YYYY-MM-DD_[topic-slug].mp4` (без пробелов) ✅
 - Нет watermarks, нет AI-артефактов в превью ✅
 
@@ -131,16 +169,17 @@ ffprobe -v quiet -print_format json -show_streams /path/to/reel.mp4
 
 ```
 QA GATE — [дата] | [topic]
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-1. Видео-параметры    ✅ / ❌
-2. Музыка присутствует ✅ / ❌  ← НОВЫЙ ОБЯЗАТЕЛЬНЫЙ ПУНКТ
-3. Шрифт ≥60px        ✅ / ❌
-4. Текст-позиция      ✅ / ❌
-5. Хук-правила        ✅ / ❌
-6. Нет дубликата      ✅ / ❌
-7. Капшен 1700-1900с  ✅ / ❌
-8. Файл готов         ✅ / ❌
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-РЕЗУЛЬТАТ: ✅ PASS — идти в metricool-ready (все 8 пунктов ✅)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Пре-рендер превью на реальном footage ✅ / ❌  ← ПЕРВЫЙ ШАГ
+2. Видео-параметры           ✅ / ❌
+3. Музыка присутствует       ✅ / ❌
+4. Шрифт ≥60px               ✅ / ❌
+5. Текст-позиция (safe zone) ✅ / ❌
+6. Хук-правила               ✅ / ❌
+7. Нет дубликата             ✅ / ❌
+8. Капшен 1700-1900с         ✅ / ❌
+9. Файл готов к пушу         ✅ / ❌
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+РЕЗУЛЬТАТ: ✅ PASS — идти в metricool-ready (все 9 пунктов ✅)
            ❌ FAIL — исправить пункт [N], повторить QA
 ```
