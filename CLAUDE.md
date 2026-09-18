@@ -1,5 +1,68 @@
 # ⛔ СТОП — ЧИТАЙ ПЕРВЫМ
 
+## 🏆 HOOK MATRIX SEP 2026 — ЕДИНСТВЕННЫЕ ФОРМУЛЫ КОТОРЫЕ РАБОТАЮТ (вшито Sep 18 2026)
+
+Источник: анализ конкурентов (383K / 166K / 126K verified) + research Sep 2026.
+**Все хуки пишутся ТОЛЬКО по одной из этих 5 формул. Никаких авторитетных фактов в вакууме.**
+
+### ФОРМУЛА 1 — CONTRADICTION LIST ⭐ ПРИОРИТЕТ #1
+```
+[Субъект / аудитория]:
+don't [ожидаемое действие 1].
+Don't [ожидаемое действие 2].
+Don't [ожидаемое действие 3].
+What they [DO / actually do] is stranger.
+(in the caption)
+```
+Примеры по нишам:
+- Health: "The longest-living people: / don't count calories. / Don't hit the gym. / Don't take supplements."
+- Money: "People who never go broke: / don't budget. / Don't clip coupons. / Don't save 10%."
+- Relationships: "Couples married 40+ years: / don't say 'I love you' every day. / Don't share everything."
+
+### ФОРМУЛА 2 — SPECIFIC AUDIENCE + DANGEROUS TRUTH ⭐
+```
+[Аудитория с возрастом / ролью / ситуацией]:
+your [вещь] will NOT [общепринятое ожидание].
+No [ожидаемый симптом 1].
+No [ожидаемый симптом 2].
+Here's what it actually [looks/feels] like —
+(in the caption)
+```
+Примеры:
+- "Women over 55: your heart attack / will NOT feel like his. / No arm pain. No chest pain."
+- "People over 50: your retirement / will NOT look like your parents'. / No pension. No company plan."
+
+### ФОРМУЛА 3 — LIVE SCENE + REVELATION ⭐
+```
+[Персонаж] says: "[обычная фраза]"
+[N] minutes/days later — [шокирующий исход].
+Here's the [число]-second test / sign / thing
+that tells the difference.
+(in the caption)
+```
+Примеры:
+- "Your husband says: 'my arm just fell asleep.' / 20 minutes later — it's a stroke."
+- "She said: 'he's just tired lately.' / 3 months later he told her he'd been checked out for a year."
+
+### ФОРМУЛА 4 — ANTI-HOOK (undersell → overdeliver)
+```
+I'm not going to tell you to [очевидный совет].
+I'm going to show you what [инсайдер] actually does.
+It's not what you think.
+(caption ↓)
+```
+
+### ФОРМУЛА 5 — HYPER-SPECIFIC CONFESSION
+```
+I [сделал X] for [N лет / раз].
+[Инсайдер] showed me I was [doing it wrong / missing something].
+I [изменил поведение] the same day.
+```
+
+**ПРАВИЛО ВЫБОРА:** при брейнсторме команда генерирует хук в КАЖДОЙ из 5 формул → Red убивает слабые → выбирают 1 победителя. Формулы 1-3 = приоритет.
+
+---
+
 ## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ДВА ТИПА РИЛСОВ (вшито навсегда, Sep 13 2026)
 
 ### 🎬 B-ROLL рилс (footage из библиотеки)
