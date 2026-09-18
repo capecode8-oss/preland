@@ -677,7 +677,13 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 - Музыку и геотег (New York) добавляет владелец вручную
 - Caption: 1700–1900 символов, структура: second hook → context → detail → payoff → CTA → save line
 - **CTA для SAFE:** `Comment SAFETY and I'll send you the guide directly.` (без лид-магнита, напрямую на Lava.top)
-- **CTA для CALM:** `I put together a 🎁 calm card — Comment CALM and I'll send it to you directly.`
+- **CTA для CALM:**
+```
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT CALM below 💬
+I'll send it straight to your DMs.
+```
 - **📌 ОБЯЗАТЕЛЬНО** перед save line: `📌 Save this before your next...`
 - Все правила капшена и CTA банк — в скилле `kira-captions`
 
