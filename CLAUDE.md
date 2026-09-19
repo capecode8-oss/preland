@@ -128,7 +128,7 @@ I [изменил поведение] the same day.
 ### Пользователь говорит: "планируем N рилсов"
 
 **АВТОМАТИЧЕСКОЕ ПРАВИЛО ПО ТЕМЕ:**
-- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 47 стран, $14.90). CTA: `Comment SAFE`
+- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 45+ ситуаций, $14.90). CTA: `Comment SAFE`
 - Тема **сон / 3AM / insomnia / sleep / health** → продукт **CALM** (3AM Calm Card). CTA: `Comment CALM`
 - Рилс может быть про ЧТО УГОДНО — но в конце капшена логически связывается с мини-продуктом через мост.
 
@@ -463,7 +463,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 ## 🔑 ДВА ПРОДУКТА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда)
 
 ### Когда пользователь говорит **"под travel"** / **"travel"** / **"safe"**:
-- **Продукт:** Travel Safety Guide "47 Countries. One Safety Guide."
+- **Продукт:** Travel Safety Guide "What Happens On Every Trip That Nobody Warns You About." (45+ situations — airports, hotels, cruise ships, all-inclusive resorts)
 - **Кодовое слово в капшене:** `SAFE` / `SAFETY` (оба работают)
 - **Воронка (обновлено Sep 13 2026):** комментарий SAFETY → бот отправляет ссылку прямо на Lava.top preland → покупка $14.90. Бесплатная карточка БОЛЬШЕ НЕ ОТПРАВЛЯЕТСЯ.
 - **Логика подводки в капшене:** рассказываем историю → "Comment SAFETY and I'll send you the full guide directly." (без упоминания бесплатного)
