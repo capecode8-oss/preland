@@ -65,7 +65,7 @@ BATCH ПЛАН:
 → kira-captions: капшен 1700-1900с + CTA
 → [рендер]     : python render script → MP4 + JPG превью
 → quality-check: 7 пунктов QA ✅
-→ metricool-ready: push → raw URL → schedule
+→ videotool-ready: push → raw URL → schedule
 → performance-tracker: добавить в журнал
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ✅ Рилс [N] готов → переходим к [N+1]

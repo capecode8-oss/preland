@@ -1,6 +1,6 @@
 ---
 name: quality-check
-description: 7-point QA gate for every reel before scheduling in Metricool. Run after render, before push. Nothing publishes without passing all 7.
+description: 7-point QA gate for every reel before scheduling in Videotool. Run after render, before push. Nothing publishes without passing all 7.
 ---
 
 # Quality Check — 7-Point QA Gate
@@ -10,7 +10,7 @@ description: 7-point QA gate for every reel before scheduling in Metricool. Run 
 
 ## ПРАВИЛО
 
-**Ни один рилс не идёт в Metricool без прохождения всех 7 пунктов.**
+**Ни один рилс не идёт в Videotool без прохождения всех 7 пунктов.**
 Если хоть один ❌ — исправить и прогнать снова. Публиковать только когда все ✅.
 
 ---
@@ -28,7 +28,7 @@ description: 7-point QA gate for every reel before scheduling in Metricool. Run 
 | FPS | 30 fps | в выводе ffprobe |
 | Кодек | H.264, yuv420p | в выводе ffprobe |
 | Аудио | ПРИСУТСТВУЕТ (музыка из библиотеки) | есть audio stream aac в ffprobe |
-| Размер файла | < 50MB (Metricool лимит) | `ls -lh [file]` |
+| Размер файла | < 50MB (Videotool лимит) | `ls -lh [file]` |
 
 ```bash
 ffprobe -v quiet -print_format json -show_streams /path/to/reel.mp4
@@ -180,6 +180,6 @@ QA GATE — [дата] | [topic]
 8. Капшен 1700-1900с         ✅ / ❌
 9. Файл готов к пушу         ✅ / ❌
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-РЕЗУЛЬТАТ: ✅ PASS — идти в metricool-ready (все 9 пунктов ✅)
+РЕЗУЛЬТАТ: ✅ PASS — идти в videotool-ready (все 9 пунктов ✅)
            ❌ FAIL — исправить пункт [N], повторить QA
 ```

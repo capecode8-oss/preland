@@ -201,7 +201,7 @@ I [изменил поведение] the same day.
 | 2 | `kira-hooks` | Пишем хук → аудит команды (11 чел) → body clearance → рендер |
 | 3 | `kira-captions` | Пишем капшен → аудит команды → выбираем CTA по теме |
 | 4 | `quality-check` | 7-пунктовый QA gate → только после ✅ идём дальше |
-| 5 | `metricool-ready` | Push MP4 → raw URL → запланировать в Videotool |
+| 5 | `videotool-ready` | Push MP4 → raw URL → запланировать в Videotool |
 | 6 | `performance-tracker` | Записать рилс → через 24-72ч обновить метрики |
 
 **Для batch (4-6 рилсов):** использовать `batch-processor` — трекает весь batch, один пайплайн для всех.
@@ -754,7 +754,7 @@ I'll send it straight to your DMs.
 
 ## GitHub / публикация
 
-- Репо: `capecode8-oss/preland`, ветка: `claude/schedule-5-reels-metricool-ip1tp7`
+- Репо: `capecode8-oss/preland`, ветка: `claude/schedule-5-reels-videotool-ip1tp7`
 - MP4 пушить в репо → raw.githubusercontent.com URL → Videotool
 - После изменений: commit + push обязательно
 

@@ -1,9 +1,9 @@
 ---
-name: metricool-ready
-description: Push rendered MP4 to GitHub repo, get raw URL, schedule in Metricool as Instagram Reel + TikTok. Run after quality-check passes.
+name: videotool-ready
+description: Push rendered MP4 to GitHub repo, get raw URL, schedule in Videotool as Instagram Reel + TikTok. Run after quality-check passes.
 ---
 
-# Metricool Ready
+# Videotool Ready
 ## Push → Raw URL → Schedule · @thekiramethod
 
 ---
@@ -51,7 +51,7 @@ curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat
 
 ## ШАГ 3 — ЗАПЛАНИРОВАТЬ В METRICOOL
 
-Использовать инструмент `mcp__Metricool__createScheduledPost`.
+Использовать инструмент `mcp__Videotool__createScheduledPost`.
 
 **Лучшее время для публикации (America/New_York):**
 - 7:00 AM — утро (завтрак, телефон в руках)
@@ -94,7 +94,7 @@ curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat
 Тема: [topic]
 Время: [дата время ET]
 Платформы: Instagram Reel + TikTok
-Post ID: [id из ответа Metricool]
+Post ID: [id из ответа Videotool]
 Raw URL: [url]
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Владелец добавляет: геотег New York вручную (музыка уже в видео)

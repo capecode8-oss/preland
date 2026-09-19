@@ -37,10 +37,10 @@ description: Log every published reel and track metrics at 24h, 48h, 72h. Identi
 
 ## КАК ОБНОВЛЯТЬ МЕТРИКИ
 
-Через 24h, 48h, 72h — запросить данные через Metricool:
+Через 24h, 48h, 72h — запросить данные через Videotool:
 
 ```
-mcp__Metricool__getAnalyticsDataByMetrics
+mcp__Videotool__getAnalyticsDataByMetrics
 brandId: 6476294
 network: instagram
 metrics: ["impressions", "reach", "shares", "saves"]
