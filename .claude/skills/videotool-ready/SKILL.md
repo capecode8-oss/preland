@@ -12,10 +12,10 @@ description: Push rendered MP4 to GitHub repo, get raw URL, schedule in Videotoo
 
 - **brand_id**: `6476294`
 - **Timezone**: `America/New_York`
-- **Платформы**: Instagram Reel + TikTok (PUBLIC_TO_EVERYONE)
+- **Платформы**: Instagram Reel + YouTube
 - **Музыка**: вшита в MP4 при рендере (библиотека music/1–30.mp3) — владелец может заменить вручную в Instagram если нужно
 - **Геотег (New York)**: добавляет владелец вручную после публикации
-- **Репо**: `capecode8-oss/preland`, ветка: `claude/new-chat-fjz36a`
+- **Репо**: `capecode8-oss/preland`, ветка: `claude/schedule-5-reels-metricool-ip1tp7`
 
 ---
 
@@ -28,7 +28,7 @@ ls -lh /home/user/preland/footage/rendered/[filename].mp4
 # Добавить в git и запушить
 git add footage/rendered/[filename].mp4
 git commit -m "reel: [topic-slug] [date]"
-git push -u origin claude/new-chat-fjz36a
+git push -u origin claude/schedule-5-reels-metricool-ip1tp7
 ```
 
 ---
@@ -38,12 +38,12 @@ git push -u origin claude/new-chat-fjz36a
 После успешного пуша — raw URL формируется автоматически:
 
 ```
-https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat-fjz36a/footage/rendered/[filename].mp4
+https://raw.githubusercontent.com/capecode8-oss/preland/claude/schedule-5-reels-metricool-ip1tp7/footage/rendered/[filename].mp4
 ```
 
 Проверить доступность:
 ```bash
-curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat-fjz36a/footage/rendered/[filename].mp4"
+curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/schedule-5-reels-metricool-ip1tp7/footage/rendered/[filename].mp4"
 # Ожидаем: HTTP/2 200
 ```
 
@@ -71,14 +71,14 @@ curl -I "https://raw.githubusercontent.com/capecode8-oss/preland/claude/new-chat
   "instagramData": {
     "type": "REEL"
   },
-  "tiktokData": {
-    "title": "[TikTok title ≤150 символов — первая строка хука]",
-    "privacyLevel": "PUBLIC_TO_EVERYONE"
+  "youtubeData": {
+    "title": "[YouTube title ≤100 символов — первая строка хука]",
+    "privacyLevel": "PUBLIC"
   }
 }
 ```
 
-❌ Без `tiktokData.title` — TikTok не запланируется
+❌ Без `youtubeData.title` — YouTube не запланируется
 ❌ `publishAt` должен быть в будущем
 ❌ URL должен быть прямой ссылкой на MP4, не на страницу GitHub
 
