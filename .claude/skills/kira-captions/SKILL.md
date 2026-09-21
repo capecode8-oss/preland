@@ -207,19 +207,71 @@ Follow first so it reaches your inbox. 🔒
 
 ---
 
-## CAPTION STRUCTURE — always follow this order
+## CAPTION STRUCTURE — ДВА ФОРМАТА (Sep 21 2026)
+
+### ⭐ ФОРМАТ A — NUMBERED LIST (когда хук обещает число)
+
+Если хук содержит цифру ("5 things", "7 signs", "4 tricks", "3 mistakes") — капшен ОБЯЗАН выдать список с эмодзи-нумерацией.
 
 ```
-TITLE              — one bold line. Repeats or deepens the hook tension. NOT a repeat of the reel hook — a stronger restatement.
-(SUBTITLE)         — one line in parentheses. Teases what they're about to learn. Doubles as a CTA bridge.
+SECOND HOOK        — 1-2 строки, новый угол (не повтор хука)
 
+1️⃣ [Пункт 1 — одна строка, короткая]
+[1-2 строки объяснения — конкретный факт, короткие предложения]
+
+2️⃣ [Пункт 2]
+[объяснение]
+
+3️⃣ [Пункт 3]
+[объяснение]
+
+...и так до N
+
+CTA BRIDGE         — мост к продукту
+SAVE LINE          — последней
+```
+
+**Правила numbered list формата:**
+- Каждый пункт = 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ (не цифры, не буллеты — эмодзи)
+- После номера — короткая bold-строка (название пункта)
+- Под ней — 1-3 коротких предложения, каждое на отдельной строке
+- Пустая строка между пунктами — обязательно
+- Все N пунктов должны быть выданы — не "и ещё 3 в гайде"
+
+**Пример (5 things):**
+```
+I watched it happen at JFK, Rome, and Bangkok.
+The moment the belt starts — a second set of hands appears.
+
+1️⃣ The luggage tag on the outside
+It tells them exactly where you're flying from. First trip abroad = easy target.
+
+2️⃣ The open zipper gap
+Two seconds in a crowd. You won't feel it.
+
+3️⃣ The bright ribbon on the handle
+Signals: just landed, distracted, don't know the area.
+
+4️⃣ The phone charging port sticker
+Some bags have them. It means you stop moving. That's the window.
+
+5️⃣ The checked-bag receipt still attached
+Shows you just got here. Shows you haven't counted anything yet.
+
+Situations like this one happen on every trip...
+```
+
+---
+
+### ФОРМАТ B — NARRATIVE (хук без числа — история)
+
+```
 SECOND HOOK        — 1-2 lines that open a NEW loop beyond the reel
 CONTEXT            — brief setup: why this matters, what most people don't know
 DETAIL             — the specific fact, number, or story that makes it real
 PAYOFF             — the reveal: what they should do / what actually happens
 
 CTA                — choose from topic-matched list below (never repeat same CTA twice in a row)
-                     ⚠️ CTA MUST BE UNDERSTOOD IN 3 SECONDS — see 3-SECOND CTA RULE below
 SAVE LINE          — always last
 ```
 
