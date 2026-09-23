@@ -11,6 +11,42 @@ description: Generate AI video prompts for KIRA talking head reels (Veo 3 / Klin
 
 ---
 
+## ⚡ КРИТИЧЕСКОЕ — VEO 3 ЛИМИТ = 8 СЕКУНД
+
+**Каждая генерация = максимум 8 секунд.**
+
+Рилс 30 сек = **4 клипа × 8 сек** (последний можно обрезать до 6 сек при монтаже).
+
+| Клип | Хронометраж | Задача |
+|------|-------------|--------|
+| Clip 1 | 0–8 сек | HOOK + VISUAL SHOCK — стоп-скролл за 0.3 сек |
+| Clip 2 | 8–16 сек | REVEAL — объясняет, жестикулирует, показывает |
+| Clip 3 | 16–24 сек | DETAIL + TENSION — конкретика, цифра, доказательство |
+| Clip 4 | 24–30 сек | SOLUTION + CTA — "Comment SAFETY..." |
+
+**Каждый промт = один клип = одна генерация = 8 сек.**
+Генерируем по одному промту за раз, не весь рилс сразу.
+
+---
+
+## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — КЛИП 1 = VISUAL + AUDIO ШОК ОДНОВРЕМЕННО
+
+❌ ЗАПРЕЩЕНО: Кира стоит лицом к камере и говорит — статичная поза от пояса до головы
+❌ ЗАПРЕЩЕНО: она начинает говорить через паузу или вступление
+❌ ЗАПРЕЩЕНО: локация — нейтральный фон или не видна за первые 0.3 секунды
+
+✅ ОБЯЗАТЕЛЬНО в Clip 1:
+- **Визуальный шок** — Кира уже делает что-то в первом кадре (тянет руку, берёт предмет, смотрит куда-то с реакцией)
+- **Локация видна** — аэропорт, самолёт, отель, ресторан — узнаётся мгновенно
+- **Предмет в кадре** — то о чём она говорит уже в руках или прямо перед ней
+- **Слова начинаются с кадра 1** — не через 2 секунды, а сразу
+- **Провокация** — первое слово должно активировать амигдалу ("Never", "Stop", "I caught", "They took")
+
+**Формула первого кадра:**
+Кира (40% кадра) делает действие + локация (60%) видна + предмет разговора в руках → слова начинаются в первую секунду
+
+---
+
 ## ЧЕМ ОТЛИЧАЕТСЯ ОТ B-ROLL РИЛСА
 
 | B-Roll рилс | Talking Head рилс |
@@ -58,23 +94,65 @@ description: Generate AI video prompts for KIRA talking head reels (Veo 3 / Klin
 
 ---
 
-## СТРУКТУРА 30 СЕК = 3 КЛИПА ПО 10 СЕК
+## СТРУКТУРА РИЛСА = 4 КЛИПА × 8 СЕК = 32 СЕК (обрезать до 30 при монтаже)
 
-**Клип 1 — HOOK + ШОК (0-10 сек)**
-- Кира делает обычное действие → резко останавливается → смотрит в камеру
-- Предмет в кадре: то о чём говорит (телефон, лоток, дверь, карман кресла)
-- Первые слова = хук, начинается СРАЗУ, без паузы, без вступления
-- Пример: тянет руку к security tray → стоп → "A TSA agent grabbed my arm before I put my phone in."
+### CLIP 1 — VISUAL + AUDIO HOOK (0–8 сек) ← САМЫЙ ВАЖНЫЙ
+**Задача: остановить скролл за 0.3 секунды визуально И аудиально одновременно**
 
-**Клип 2 — REVEAL (10-20 сек)**
-- Другая локация или другой ракурс
-- Объясняет, жестикулирует, указывает на предмет
-- Говорит быстро — как рассказывает подруге, не как читает текст
+- Кира уже в действии с первого кадра — тянет руку, берёт предмет, реагирует
+- Локация: узнаётся мгновенно (аэропорт, самолёт, отель)
+- Предмет разговора: физически в кадре или в руках
+- Слова начинаются немедленно — первые 3 слова = хук
+- Взгляд: в камеру на 1-2 секунды, потом на предмет — как будто показывает другу
+- Энергия: не лекция, а "ты не поверишь что я только что увидела/узнала"
 
-**Клип 3 — SOLUTION + CTA (20-30 сек)**
-- Ближе к камере, уверенный тон
+**Промт-ключи для Clip 1:**
+```
+"She is already mid-action as the clip begins — not posed, already doing it"
+"Her first word lands before the viewer has time to process the frame"
+"The object she's discussing is physically in frame, in her hands or directly in front of her"
+"Slightly breathless urgency — like telling someone something important, not performing"
+```
+
+### CLIP 2 — INSIDER REVEAL (8–16 сек)
+- Другой ракурс или шаг ближе к камере
+- Жестикулирует, указывает на предмет, показывает конкретно
+- Говорит быстрее — как рассказывает подруге, не читает текст
+- Цифра или конкретный факт ("90,000 items a year", "$340 they charged me")
+
+### CLIP 3 — DETAIL + PROOF (16–24 сек)
+- Демонстрирует что именно происходит
+- Руки в кадре — показывает действие правильно vs неправильно
+- Максимум конкретики — место, предмет, механика
+
+### CLIP 4 — SOLUTION + CTA (24–30 сек)
+- Чуть ближе к камере, уверенный тон
 - Показывает руками как делать правильно
 - Последние слова: `"Comment SAFETY and I'll send you 44 more situations like this."`
+- Смотрит прямо в камеру на финальной фразе
+
+---
+
+## ПРАВИЛА ПРОМТИНГА ПОД 8-СЕКУНДНЫЕ КЛИПЫ
+
+**Каждый промт пишется под ОДИН клип = одно непрерывное действие за 8 секунд.**
+
+❌ Не пиши "she then does X" — одно действие, не последовательность сцен
+✅ Пиши как кино-момент: что происходит прямо сейчас, в движении
+
+**Для Clip 1 — обязательная фраза в промте:**
+```
+"The clip begins mid-action — she is already [действие], not posed or waiting."
+"Her first words begin within the first second of the clip."
+```
+
+**Динамика вместо статики — замены:**
+| ❌ Статично | ✅ Динамично |
+|-------------|--------------|
+| "she holds a tray" | "she tilts the tray toward camera as she speaks, the phone sliding slightly inside it" |
+| "she looks at camera" | "she glances up from the tray directly into the lens for exactly one beat, then back down" |
+| "she explains" | "she taps the edge of the seat pocket with two fingers as she speaks — fast, matter-of-fact" |
+| "she stands at the desk" | "she leans forward on both hands on the counter, voice dropped, like sharing a secret"
 
 ---
 
@@ -322,43 +400,65 @@ Instagram смотрит на 1.0-секундный сигнал удержан
 
 ---
 
-## OUTPUT FORMAT
+## OUTPUT FORMAT — 4 КЛИПА × 8 СЕК
 
 ```
-TALKING HEAD BRIEF — [тема хука]
+TALKING HEAD REEL — [тема хука]
 Hook emotion: [Fear / Awe / Injustice / Curiosity]
-Character role: [стюардесса / отельный сотрудник / TSA / туристка]
-Location: [конкретная локация]
-Opening line: "[первые слова Киры]"
+Character role: [роль]  |  Location: [локация]
+Opening line: "[первые слова — первая секунда клипа 1]"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLIP 1 — VISUAL + AUDIO HOOK (0–8 сек)
+⚡ Задача: стоп-скролл за 0.3 сек — визуально И аудиально
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ VEO 3:
+[Промт Clip 1 — 7 layers — действие с первого кадра]
+↳ Duration: 8s | The clip begins mid-action
+↳ Her first words land within second 1
+
+🎯 KLING (fallback): [comma-separated]
+🎬 RUNWAY: [Camera motion] + промт
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLIP 2 — INSIDER REVEAL (8–16 сек)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ VEO 3:
+[Промт Clip 2 — другой ракурс, жестикуляция, цифра]
+↳ Duration: 8s
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLIP 3 — DETAIL + PROOF (16–24 сек)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ VEO 3:
+[Промт Clip 3 — демонстрация правильно vs неправильно]
+↳ Duration: 8s
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CLIP 4 — SOLUTION + CTA (24–30 сек)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ VEO 3:
+[Промт Clip 4 — ближе к камере, уверенный тон, CTA]
+↳ Duration: 8s (обрезать до 6s при монтаже)
+↳ Final words: "Comment SAFETY and I'll send you 44 more."
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-⭐ VEO 3 (главный — labs.google.com/fx/tools/video-fx):
-[Готовый промт — 7 layers, предложениями]
-↳ Duration: 10s per clip (3 clips = 30s full reel)
-↳ Audio: original speech only — no music overlay
-↳ No separate negative prompt — ограничения уже в тексте
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🎯 KLING 2.1 (fallback):
-[Готовый промт — comma-separated]
-
-🎬 RUNWAY GEN-4 (лучшее движение камеры):
-[Camera: тип движения] + промт
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-🚫 NEGATIVE PROMPT (только для Kling / Runway / Pika):
+🚫 NEGATIVE PROMPT (только для Kling / Runway / Pika — НЕ для Veo 3):
 text, watermark, logo, CGI, studio lighting, ring light, AI artifacts,
-distorted hands, extra fingers, advertisement look, static pose,
-direct unbroken eye contact with camera
+distorted hands, extra fingers, advertisement look, static waist-up pose,
+direct unbroken eye contact throughout, neutral background, green screen
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-SUBTITLES: Montserrat Black Italic · 56px · white+black outline · y≈700px
-AUDIO: Original voice only — NO music
-TEAM: NOVA ✅ | VIC 🎬 [VIRAL/STRONG] | Mike 🟢 | Red ✅ SURVIVED
+SUBTITLES: Montserrat Black Italic · 56px · white + black outline 3px · y≈700px
+AUDIO: Оригинальный голос только — NO music
+EDIT: 4 клипа склеить → обрезать до 30 сек → добавить субтитры
+TEAM: NOVA ✅ | VIC 🔥 VIRAL / 🎬 STRONG | Mike 🟢 | Red ✅ SURVIVED
 ```
 
 ---
