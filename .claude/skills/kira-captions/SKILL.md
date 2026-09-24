@@ -837,9 +837,9 @@ Only publish if all 7 green + Focus Group 15+ sends. If any red — find the wea
 ## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО
 
 **СПЛОШНАЯ ПЛАШКА внизу кадра. Лицо свободно сверху. Никаких измерений.**
-- `BOTTOM_ANCHOR = 1550px` | `hook_y0 = 1550 - box_height`
+- `BOTTOM_ANCHOR = 1520px` | `hook_y0 = 1520 - box_height` | `TOP_SAFE = 270px`
 - Один прямоугольник на весь текст (не отдельные плашки на строку)
-- `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` — авто-перенос если строка длиннее
+- `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` — word wrap внутри плашки, хук не укорачивать
 - ❌ hook_y0 = 80 ЗАПРЕЩЕНО | ❌ отдельные плашки на строки ЗАПРЕЩЕНО
 - Render script: `/home/user/preland/render.py` — использовать всегда
 QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1550

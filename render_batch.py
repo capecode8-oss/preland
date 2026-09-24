@@ -76,33 +76,77 @@ REELS = [
 ]
 
 
-def pick_font(lines, max_size=70, min_size=18):
-    """Pick largest font where every line fits on ONE line within MAX_TEXT_W. No word wrap."""
+TOP_SAFE = 270  # Instagram header safe zone
+
+
+def wrap_line(text, font, max_width):
+    """Word-wrap one logical line into visual lines, each ≤ max_width."""
+    dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    words = text.split()
+    visual_lines, current = [], ""
+    for word in words:
+        candidate = (current + " " + word).strip()
+        if dummy.textlength(candidate, font=font) <= max_width:
+            current = candidate
+        else:
+            if current:
+                visual_lines.append(current)
+            current = word
+    if current:
+        visual_lines.append(current)
+    return visual_lines or [text]
+
+
+def pick_font(lines, max_size=70, min_size=24):
+    """Pick largest font where:
+    - every visual line (after word wrap) fits within MAX_TEXT_W
+    - the resulting box top stays above TOP_SAFE (270px)
+    """
     dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
     for size in range(max_size, min_size - 1, -1):
         font = ImageFont.truetype(FONT_PATH, size)
-        if all(dummy.textlength(l, font=font) <= MAX_TEXT_W for l in lines):
-            return font, size, list(lines)
-    # Absolute fallback — min_size, lines may still overflow but we report it
+        # Build visual lines with word wrap
+        visual_lines = []
+        for l in lines:
+            visual_lines.extend(wrap_line(l, font, MAX_TEXT_W))
+        # Check all lines fit horizontally
+        if not all(dummy.textlength(l, font=font) <= MAX_TEXT_W for l in visual_lines):
+            continue
+        # Check box fits vertically (top stays in safe zone)
+        line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in visual_lines]
+        total_text_h = sum(line_heights) + LINE_GAP * (len(visual_lines) - 1)
+        box_h = PAD_TOP + total_text_h + PAD_BOT
+        hook_y0 = BOTTOM_ANCHOR - box_h
+        if hook_y0 >= TOP_SAFE:
+            return font, size, visual_lines
+    # Fallback to min_size
     font = ImageFont.truetype(FONT_PATH, min_size)
-    return font, min_size, list(lines)
+    visual_lines = []
+    for l in lines:
+        visual_lines.extend(wrap_line(l, font, MAX_TEXT_W))
+    return font, min_size, visual_lines
 
 
 def preflight_check(lines):
-    """Verify every line fits within MAX_TEXT_W at chosen font size. Block render if any overflow."""
+    """Pre-flight: verify no horizontal overflow and box is within vertical safe zone."""
     font, size, visual_lines = pick_font(lines)
     dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in visual_lines]
+    total_text_h = sum(line_heights) + LINE_GAP * (len(visual_lines) - 1)
+    box_h = PAD_TOP + total_text_h + PAD_BOT
+    hook_y0 = BOTTOM_ANCHOR - box_h
     ok = True
-    print(f"  [preflight] font={size}px, lines={len(visual_lines)}")
+    print(f"  [preflight] font={size}px | visual_lines={len(visual_lines)} | hook_y0={hook_y0}px")
     for l in visual_lines:
         w = dummy.textlength(l, font=font)
         fits = w <= MAX_TEXT_W
-        if not fits:
-            ok = False
-        flag = "✅" if fits else "❌ OVERFLOW"
-        print(f"    {flag} {int(w)}px — {l}")
-    if not ok:
-        print(f"  ❌ OVERFLOW DETECTED — hook must be shortened")
+        if not fits: ok = False
+        print(f"    {'✅' if fits else '❌ OVERFLOW'} {int(w)}px — {l}")
+    if hook_y0 < TOP_SAFE:
+        ok = False
+        print(f"  ❌ BOX TOO TALL: hook_y0={hook_y0} < TOP_SAFE={TOP_SAFE}")
+    else:
+        print(f"  ✅ Vertical fit: box top at {hook_y0}px")
     return ok
 
 
@@ -112,9 +156,6 @@ def draw_overlay(bg_path, lines, out_path):
 
     font, size, visual_lines = pick_font(lines)
     dummy_draw = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
-    # Safety: clip any line that still overflows (should not happen after pick_font)
-    assert all(dummy_draw.textlength(l, font=font) <= MAX_TEXT_W + 2 for l in visual_lines), \
-        f"Line overflow at font {size}px — shorten the hook"
 
     line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in visual_lines]
     total_text_h = sum(line_heights) + LINE_GAP * (len(visual_lines) - 1)

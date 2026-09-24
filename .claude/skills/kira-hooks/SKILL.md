@@ -1142,7 +1142,7 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 
 - Font: Montserrat-BlackItalic
   Path: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Font size: auto_font(max_size=70, min_size=50), авто-перенос строк если > MAX_TEXT_W
+- Font size: pick_font(max_size=70, min_size=24) — word wrap внутри плашки, хук не укорачивать
 - СТИЛЬ: **СПЛОШНАЯ ПЛАШКА** — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
 - FILL: (255,255,255,248) | RADIUS: 18 | PAD_X: 32 | PAD_TOP/BOTTOM: 28 | LINE_GAP: 8
 - Canvas: 1080×1920 | CENTER_X=540 | **MAX_BOX_W=860px** (НИКОГДА не менять) | **MAX_TEXT_W=760px**

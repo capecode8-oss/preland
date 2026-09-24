@@ -611,14 +611,17 @@ Canvas: **1080 × 1920px**
 - `MAX_TEXT_W = 760px` — лимит текста внутри плашки (с учётом PAD_X)
 - **BOX WIDTH = адаптивная**: `min(860, max_line_width + 2*PAD_X)` — плашка по ширине контента
 - **ПЛАШКА = непрозрачная белая**: `fill=(255,255,255,255)` — НЕ 248, не полупрозрачная
-- font: max_size=70, **min_size=40**, перебирать от 70 вниз пока строка ≤ MAX_TEXT_W
-- ⛔ ПЕРЕНОС СЛОВ ЗАПРЕЩЁН — если строка не влезает при min_size=40, переписать хук короче
-- Перед рендером: проверить `dummy.textlength(line) <= MAX_TEXT_W` для каждой строки
+- font: max_size=70, **min_size=24**, перебирать от 70 вниз
+- **WORD WRAP = ОБЯЗАТЕЛЬНО**: длинные строки переносятся словами на новую визуальную строку внутри плашки. Хук не укорачивать.
+- pick_font() подбирает шрифт так чтобы: (1) каждая визуальная строка ≤ MAX_TEXT_W, (2) плашка влезает между TOP_SAFE=270px и BOTTOM_ANCHOR=1520px
+- Preflight check запускается ПЕРЕД каждым рендером — блокирует если что-то не влезает
+- **TOP_SAFE = 270px** — верхняя граница плашки (ниже Instagram header)
 
-❌ ЗАПРЕЩЕНО: ставить текст сверху, BOTTOM_ANCHOR > 1520, текст > 864px ширины
-❌ ЗАПРЕЩЕНО: авто-перенос внутри строки — только сокращать хук
+❌ ЗАПРЕЩЕНО: ставить текст сверху, BOTTOM_ANCHOR > 1520, текст > 760px ширины
+❌ ЗАПРЕЩЕНО: плашка вылезает за BOTTOM_ANCHOR или выше TOP_SAFE
 ❌ ЗАПРЕЩЕНО: полупрозрачная плашка — только fill=(255,255,255,255)
-✅ ВСЕГДА: плашка адаптируется под контент, текст 100% внутри плашки, превью перед пушем
+✅ ОБЯЗАТЕЛЬНО: word wrap внутри плашки, плашка расширяется по высоте под контент
+✅ ОБЯЗАТЕЛЬНО: превью перед пушем, preflight check перед каждым рендером
 
 ---
 
@@ -664,12 +667,12 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
   → системный путь: `/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
   → установить: `apt-get install -y fonts-montserrat` (одна команда, работает всегда)
   → кешировать в: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Шрифт: auto_font(max_size=70, **min_size=40**), перебирать пока строка ≤ MAX_TEXT_W=760px
+- Шрифт: pick_font(max_size=70, **min_size=24**), word wrap, перебирать пока все визуальные строки ≤ 760px И плашка между TOP_SAFE=270 и BOTTOM_ANCHOR=1520
 - СТИЛЬ: СПЛОШНАЯ ПЛАШКА — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
-- FILL: (255, 255, 255, 248), RADIUS: 18, PAD_X: 32, PAD_TOP/BOTTOM: 28
+- FILL: (255, 255, 255, 255), RADIUS: 18, PAD_X: 32, PAD_TOP/BOTTOM: 28
 - CENTER_X: 540, **MAX_TEXT_W: 760px** (абсолют), **BOX_W: адаптивная** = min(860, max_lw + 2*PAD_X)
-- BOTTOM_ANCHOR: 1550px (выше Instagram UI chrome)
-- Проверка перед рендером: `all(textlength(l) <= 760 for l in lines)` — если False, переписать хук
+- BOTTOM_ANCHOR: 1520px (жёсткий лимит), TOP_SAFE: 270px (верхний лимит)
+- **Preflight check перед каждым рендером** — автоматически, блокирует при overflow
 - **ОБЯЗАТЕЛЬНЫЙ ПРЕ-РЕНДЕР ПРЕВЬЮ (вшито навсегда):** До рендера финального MP4 — показать хук на реальном кадре из выбранного клипа. Порядок:
   1. Извлечь кадр из реального footage клипа: `$FFMPEG -y -ss 2 -i /home/user/preland/footage/[CLIP].mp4 -vframes 1 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" /tmp/preview_bg.jpg`
   2. PIL overlay: белая плашка + хук-текст с auto-sizing (72→36px, до max_width=760px), CAPS на ключевых словах, BOTTOM_ANCHOR=1520px, CENTER_X=540
