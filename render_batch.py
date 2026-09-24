@@ -76,27 +76,51 @@ REELS = [
 ]
 
 
-def auto_font(lines, max_size=70, min_size=36):
+def pick_font(lines, max_size=70, min_size=18):
+    """Pick largest font where every line fits on ONE line within MAX_TEXT_W. No word wrap."""
+    dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
     for size in range(max_size, min_size - 1, -1):
         font = ImageFont.truetype(FONT_PATH, size)
-        dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
         if all(dummy.textlength(l, font=font) <= MAX_TEXT_W for l in lines):
-            return font, size
-    return ImageFont.truetype(FONT_PATH, min_size), min_size
+            return font, size, list(lines)
+    # Absolute fallback — min_size, lines may still overflow but we report it
+    font = ImageFont.truetype(FONT_PATH, min_size)
+    return font, min_size, list(lines)
+
+
+def preflight_check(lines):
+    """Verify every line fits within MAX_TEXT_W at chosen font size. Block render if any overflow."""
+    font, size, visual_lines = pick_font(lines)
+    dummy = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    ok = True
+    print(f"  [preflight] font={size}px, lines={len(visual_lines)}")
+    for l in visual_lines:
+        w = dummy.textlength(l, font=font)
+        fits = w <= MAX_TEXT_W
+        if not fits:
+            ok = False
+        flag = "✅" if fits else "❌ OVERFLOW"
+        print(f"    {flag} {int(w)}px — {l}")
+    if not ok:
+        print(f"  ❌ OVERFLOW DETECTED — hook must be shortened")
+    return ok
 
 
 def draw_overlay(bg_path, lines, out_path):
     img = Image.open(bg_path).convert("RGBA")
     img = img.resize((1080, 1920), Image.LANCZOS)
 
-    font, size = auto_font(lines)
+    font, size, visual_lines = pick_font(lines)
     dummy_draw = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    # Safety: clip any line that still overflows (should not happen after pick_font)
+    assert all(dummy_draw.textlength(l, font=font) <= MAX_TEXT_W + 2 for l in visual_lines), \
+        f"Line overflow at font {size}px — shorten the hook"
 
-    line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in lines]
-    total_text_h = sum(line_heights) + LINE_GAP * (len(lines) - 1)
+    line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in visual_lines]
+    total_text_h = sum(line_heights) + LINE_GAP * (len(visual_lines) - 1)
     box_h = PAD_TOP + total_text_h + PAD_BOT
 
-    max_lw = max(dummy_draw.textlength(l, font=font) for l in lines)
+    max_lw = max(dummy_draw.textlength(l, font=font) for l in visual_lines)
     box_w = min(MAX_BOX_W, int(max_lw) + 2 * PAD_X)
 
     hook_y0 = BOTTOM_ANCHOR - box_h
@@ -113,11 +137,11 @@ def draw_overlay(bg_path, lines, out_path):
     )
 
     y = hook_y0 + PAD_TOP
-    for i, line in enumerate(lines):
+    for i, line in enumerate(visual_lines):
         lw = dummy_draw.textlength(line, font=font)
         x = CENTER_X - lw / 2
         draw.text((x, y), line, font=font, fill=(0, 0, 0, 255))
-        y += line_heights[i] + (LINE_GAP if i < len(lines) - 1 else 0)
+        y += line_heights[i] + (LINE_GAP if i < len(visual_lines) - 1 else 0)
 
     img = Image.alpha_composite(img, overlay).convert("RGB")
     img.save(out_path, quality=95)
@@ -132,6 +156,11 @@ def render_reel(reel):
 
     print(f"\n{'='*50}")
     print(f"Rendering {rid} | {reel['clip']} | {reel['music']}")
+
+    # Pre-flight check — always run before render
+    if not preflight_check(lines):
+        print(f"  ❌ PREFLIGHT FAILED — aborting {rid}")
+        return False
 
     # Extract frame for preview
     bg_path = f"/tmp/bg_{rid}.jpg"
@@ -179,7 +208,6 @@ def render_reel(reel):
     return True
 
 
-# Update music log
 def update_music_log(reels):
     log_path = os.path.join(MUSIC_DIR, "music_log.json")
     log = json.load(open(log_path)) if os.path.exists(log_path) else {}
