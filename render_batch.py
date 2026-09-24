@@ -150,6 +150,30 @@ def preflight_check(lines):
     return ok
 
 
+def create_overlay_png(lines, out_path, width=1080, height=1920):
+    """Transparent PNG with the white text box — for baking into MP4."""
+    font, size, visual_lines = pick_font(lines)
+    dummy_draw = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    line_heights = [int(font.getbbox(l)[3] - font.getbbox(l)[1]) for l in visual_lines]
+    total_text_h = sum(line_heights) + LINE_GAP * (len(visual_lines) - 1)
+    box_h = PAD_TOP + total_text_h + PAD_BOT
+    max_lw = max(dummy_draw.textlength(l, font=font) for l in visual_lines)
+    box_w = min(MAX_BOX_W, int(max_lw) + 2 * PAD_X)
+    hook_y0 = BOTTOM_ANCHOR - box_h
+    box_x0 = CENTER_X - box_w // 2
+    box_x1 = CENTER_X + box_w // 2
+    overlay = Image.new("RGBA", (width, height), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(overlay)
+    draw.rounded_rectangle([box_x0, hook_y0, box_x1, hook_y0 + box_h], radius=RADIUS, fill=(255, 255, 255, 255))
+    y = hook_y0 + PAD_TOP
+    for i, line in enumerate(visual_lines):
+        lw = dummy_draw.textlength(line, font=font)
+        x = CENTER_X - lw / 2
+        draw.text((x, y), line, font=font, fill=(0, 0, 0, 255))
+        y += line_heights[i] + (LINE_GAP if i < len(visual_lines) - 1 else 0)
+    overlay.save(out_path)
+
+
 def draw_overlay(bg_path, lines, out_path):
     img = Image.open(bg_path).convert("RGBA")
     img = img.resize((1080, 1920), Image.LANCZOS)
@@ -216,15 +240,20 @@ def render_reel(reel):
     preview_path = os.path.join(OUT_DIR, f"{rid}_preview.jpg")
     draw_overlay(bg_path, lines, preview_path)
 
-    # Render final MP4
+    # Bake overlay into MP4
+    overlay_png = f"/tmp/overlay_{rid}.png"
+    create_overlay_png(lines, overlay_png)
+
     mp4_path = os.path.join(OUT_DIR, f"{rid}.mp4")
     cmd = [
         FFMPEG, "-y",
         "-stream_loop", "-1", "-i", music,
         "-stream_loop", "-1", "-i", clip,
-        "-map", "1:v", "-map", "0:a",
+        "-i", overlay_png,
+        "-filter_complex",
+        "[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920[scaled];[scaled][2:v]overlay=0:0[out]",
+        "-map", "[out]", "-map", "0:a",
         "-af", "volume=0.8",
-        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
         "-t", "5.0", "-frames:v", "150", "-r", "30",
         "-c:v", "libx264", "-c:a", "aac", "-b:a", "128k",
         "-crf", "18", "-preset", "fast", "-pix_fmt", "yuv420p",
