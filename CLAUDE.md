@@ -238,7 +238,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 **Формат хуков — конкурент (maks.motivator) — ДВА ФОРМАТА:**
 
-**Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, шрифт 60px+
+**Format A — Short Punch:** 2-3 строки, ≤6 слов/строку, шрифт **48px**
 → Для команд, предупреждений, фактов с цифрой. Пример: "Never Book This Cabin On A Cruise Ship"
 
 **Format B — Story Hook (ОСНОВНОЙ):** 3 строки полными предложениями
@@ -611,9 +611,9 @@ Canvas: **1080 × 1920px**
 - `MAX_TEXT_W = 760px` — лимит текста внутри плашки (с учётом PAD_X)
 - **BOX WIDTH = адаптивная**: `min(860, max_line_width + 2*PAD_X)` — плашка по ширине контента
 - **ПЛАШКА = непрозрачная белая**: `fill=(255,255,255,255)` — НЕ 248, не полупрозрачная
-- font: max_size=70, **min_size=24**, перебирать от 70 вниз
+- font: **ФИКСИРОВАННЫЙ 48px** — не перебирать, не авто-сайзить. Всегда 48px.
+- **БЕЗ ТЕНИ** — только чистый чёрный текст: `draw.text((x, y), line, font=font, fill=(0,0,0,255))`. Никакого `(x+2, y+2)` shadow слоя.
 - **WORD WRAP = ОБЯЗАТЕЛЬНО**: длинные строки переносятся словами на новую визуальную строку внутри плашки. Хук не укорачивать.
-- pick_font() подбирает шрифт так чтобы: (1) каждая визуальная строка ≤ MAX_TEXT_W, (2) плашка влезает между TOP_SAFE=270px и BOTTOM_ANCHOR=1520px
 - Preflight check запускается ПЕРЕД каждым рендером — блокирует если что-то не влезает
 - **TOP_SAFE = 270px** — верхняя граница плашки (ниже Instagram header)
 
@@ -667,15 +667,15 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
   → системный путь: `/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
   → установить: `apt-get install -y fonts-montserrat` (одна команда, работает всегда)
   → кешировать в: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Шрифт: pick_font(max_size=70, **min_size=24**), word wrap, перебирать пока все визуальные строки ≤ 760px И плашка между TOP_SAFE=270 и BOTTOM_ANCHOR=1520
-- СТИЛЬ: СПЛОШНАЯ ПЛАШКА — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
-- FILL: (255, 255, 255, 255), RADIUS: 18, PAD_X: 32, PAD_TOP/BOTTOM: 28
-- CENTER_X: 540, **MAX_TEXT_W: 760px** (абсолют), **BOX_W: адаптивная** = min(860, max_lw + 2*PAD_X)
+- Шрифт: **ФИКСИРОВАННЫЙ 48px** (Montserrat-BlackItalic). Никакого авто-сайзинга. Никакой тени.
+- СТИЛЬ: СПЛОШНАЯ ПЛАШКА — один прямоугольник на весь текст, строки внутри с LINE_GAP=10px
+- FILL: (255, 255, 255, 255), RADIUS: 18, PAD_X: 36, PAD_TOP/BOTTOM: 32
+- CENTER_X: 540, **MAX_TEXT_W: 780px** (абсолют), **BOX_W: адаптивная** = min(1040, max_lw + 2*PAD_X)
 - BOTTOM_ANCHOR: 1520px (жёсткий лимит), TOP_SAFE: 270px (верхний лимит)
 - **Preflight check перед каждым рендером** — автоматически, блокирует при overflow
 - **ОБЯЗАТЕЛЬНЫЙ ПРЕ-РЕНДЕР ПРЕВЬЮ (вшито навсегда):** До рендера финального MP4 — показать хук на реальном кадре из выбранного клипа. Порядок:
   1. Извлечь кадр из реального footage клипа: `$FFMPEG -y -ss 2 -i /home/user/preland/footage/[CLIP].mp4 -vframes 1 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920" /tmp/preview_bg.jpg`
-  2. PIL overlay: белая плашка + хук-текст с auto-sizing (72→36px, до max_width=760px), CAPS на ключевых словах, BOTTOM_ANCHOR=1520px, CENTER_X=540
+  2. PIL overlay: белая плашка + хук-текст **48px фиксированный**, без тени, MAX_TEXT_W=780px, BOTTOM_ANCHOR=1520px, CENTER_X=540
   3. Сохранить в `/tmp/hook_preview.jpg` → `SendUserFile` для одобрения
   4. ❌ ЗАПРЕЩЕНО: чёрный фон, placeholder, лицо-заглушка — только реальный кадр из выбранного footage
   5. После одобрения → рендер финального MP4

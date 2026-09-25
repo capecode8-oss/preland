@@ -1142,11 +1142,12 @@ Always show JPG preview frame from final MP4 before scheduling. No exceptions.
 
 - Font: Montserrat-BlackItalic
   Path: `/tmp/montserrat_extract/usr/share/fonts/truetype/montserrat/Montserrat-BlackItalic.ttf`
-- Font size: pick_font(max_size=70, min_size=24) — word wrap внутри плашки, хук не укорачивать
-- СТИЛЬ: **СПЛОШНАЯ ПЛАШКА** — один прямоугольник на весь текст, строки внутри с LINE_GAP=8px
-- FILL: (255,255,255,248) | RADIUS: 18 | PAD_X: 32 | PAD_TOP/BOTTOM: 28 | LINE_GAP: 8
-- Canvas: 1080×1920 | CENTER_X=540 | **MAX_BOX_W=860px** (НИКОГДА не менять) | **MAX_TEXT_W=760px**
-- **BOTTOM_ANCHOR=1550px** — hook_y0 = 1550 - box_height (выше Instagram UI chrome)
+- Font size: **ФИКСИРОВАННЫЙ 48px** — не авто-сайзить, не перебирать. Всегда 48.
+- **БЕЗ ТЕНИ** — только `draw.text((x, y), line, font=font, fill=(0,0,0,255))`. Никакого shadow offset.
+- СТИЛЬ: **СПЛОШНАЯ ПЛАШКА** — один прямоугольник на весь текст, строки внутри с LINE_GAP=10px
+- FILL: (255,255,255,255) | RADIUS: 18 | PAD_X: 36 | PAD_TOP/BOTTOM: 32 | LINE_GAP: 10
+- Canvas: 1080×1920 | CENTER_X=540 | **MAX_TEXT_W=780px** | **BOX_W адаптивная** = min(1040, max_lw + 2*PAD_X)
+- **BOTTOM_ANCHOR=1520px** — hook_y0 = 1520 - box_height
 - Duration: 150 frames = 5.0s at 30fps (loop shorter clips with -stream_loop -1)
 - Codec: H.264, yuv420p, **aac audio (музыка обязательна)**, -crf 18, -preset fast
 - FFMPEG: `/usr/local/lib/python3.11/dist-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v7.0.2`
