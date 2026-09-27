@@ -500,15 +500,51 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 I'll send it straight to your DMs.
 ```
 
-**МОСТ К ПРОДУКТУ для GLOW — утверждённый шаблон:**
-```
-I pulled everything together — the belly fat research, the aging triggers,
-the caffeine truth, and the 3AM signals your body sends before something breaks.
-All in one place. Four books. Four tools.
+**МОСТЫ К ПРОДУКТУ для GLOW — 3 утверждённых варианта (ротировать, не повторять подряд):**
 
-Comment GLOW below and I'll send it straight to your DMs.
-Follow first so it reaches your inbox. 🔒
+**МОСТ 1 — ЖИВОТ (тема рилса про вес / метаболизм):**
 ```
+I spent years doing everything right. Less food. More walking. Nothing moved.
+
+Then I found out what actually happens inside a woman's body after 40. It's not about calories. It's not about willpower. My body was fighting against me — and I had no idea why.
+
+I put together everything I found — the research nobody explains at the doctor's office, what's actually causing the belly that won't move, and what changed when I finally understood it.
+
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
+I'll send it straight to your DMs.
+```
+
+**МОСТ 2 — КОЖА / МОЛОДОСТЬ (тема рилса про кожу / старение):**
+```
+I looked in the mirror one morning and didn't recognize myself. Not old. Just... less. Less bright. Less firm. Less me.
+
+I started researching what actually happens to a woman's skin after 40 — not the creams, not the treatments. What's happening on the inside. What you're eating that's speeding it up. What your body is missing that nobody mentions.
+
+I pulled it all together. What I found changed how I eat, how I sleep, how I think about my body.
+
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
+I'll send it straight to your DMs.
+```
+
+**МОСТ 3 — УНИВЕРСАЛЬНЫЙ (любая тема GLOW: живот + кожа + усталость):**
+```
+I kept thinking it was just aging. The belly. The skin. Waking up at 3AM. Not feeling like myself anymore.
+
+It wasn't aging. My body had been sending signals for years. I just didn't know how to read them.
+
+I collected everything — the belly fat research, what's aging your skin faster than years, the 3AM signals, the caffeine truth. Four books. Everything in one place.
+
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
+I'll send it straight to your DMs.
+```
+
+**Правило ротации:** Мост 1 → Мост 2 → Мост 3 → Мост 1... Никогда один и тот же мост два рилса подряд.
 
 **Ниши для GLOW рилсов (все бьют боли женщин 35+):**
 - Живот: "почему я не худею", кортизол, менопауза, инсулин
