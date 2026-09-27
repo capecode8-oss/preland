@@ -1,0 +1,846 @@
+<title>Your Body Has Been Trying to Tell You</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap">
+
+<style>
+:root {
+  --bg:        #F0EBE3;
+  --bg-mint:   #E4EEE9;
+  --bg-salmon: #F5E5E0;
+  --bg-card:   #FFFFFF;
+  --teal:      #1E6B65;
+  --teal-mid:  #2A8A82;
+  --coral:     #C13428;
+  --amber:     #B8820F;
+  --navy:      #1C3D6E;
+  --text:      #1A1713;
+  --muted:     #6B6057;
+  --border:    rgba(0,0,0,0.07);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding-inline: 16px;
+  padding-block: 0;
+}
+
+.wrap {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* ── HERO ── */
+.hero {
+  padding-block: 56px 48px;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.08;
+  text-wrap: balance;
+  margin: 0 0 16px;
+}
+
+.hero-title .dim {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 480px;
+  margin-inline: auto;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.cover-wrap {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(0,0,0,0.14);
+  margin-bottom: 40px;
+}
+
+.cover-wrap img {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 100px;
+  letter-spacing: 0.01em;
+  transition: background 0.15s;
+}
+
+.btn-primary:hover { background: var(--teal-mid); }
+
+.price-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ── BEFORE / AFTER ── */
+.ba-section {
+  padding-block: 48px;
+}
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 520px) {
+  .ba-grid { grid-template-columns: 1fr; }
+}
+
+.ba-card {
+  border-radius: 20px;
+  padding: 28px 24px;
+}
+
+.ba-card.before { background: var(--bg-salmon); }
+.ba-card.after  { background: var(--bg-mint); }
+
+.ba-label {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+.ba-card.before .ba-label { color: var(--coral); }
+.ba-card.after  .ba-label { color: var(--teal); }
+
+.ba-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ba-list li {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ba-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 1px;
+}
+
+.before .ba-icon { background: var(--coral); color: #fff; }
+.after  .ba-icon { background: var(--teal);  color: #fff; }
+
+/* ── SECTION LABEL ── */
+.sec-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(24px, 4vw, 34px);
+  text-align: center;
+  text-wrap: balance;
+  margin: 0 0 40px;
+}
+
+/* ── BOOKS ── */
+.books-section {
+  padding-block: 56px;
+  background: var(--bg);
+}
+
+.book-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  align-items: start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 500px) {
+  .book-card { grid-template-columns: 1fr; }
+  .book-cover { width: 100px; }
+}
+
+/* Book cover CSS illustration */
+.book-cover {
+  width: 140px;
+  height: 196px;
+  border-radius: 6px 10px 10px 6px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 4px 6px 18px rgba(0,0,0,0.22), inset -3px 0 8px rgba(0,0,0,0.12);
+}
+
+.book-cover::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 10px;
+  background: rgba(0,0,0,0.18);
+  border-radius: 4px 0 0 4px;
+}
+
+.book-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+}
+
+.book-cover .bc-num {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  z-index: 1;
+}
+
+.book-cover .bc-title {
+  position: absolute;
+  bottom: 22px;
+  left: 18px;
+  right: 14px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #fff;
+  z-index: 1;
+}
+
+.book-cover .bc-deco {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* book colors */
+.bc-red  { background: linear-gradient(160deg, #C73328 0%, #9E2119 100%); }
+.bc-teal { background: linear-gradient(160deg, #1A7874 0%, #0D5250 100%); }
+.bc-amber{ background: linear-gradient(160deg, #C48A15 0%, #9A6A0C 100%); }
+.bc-navy { background: linear-gradient(160deg, #1E3D6E 0%, #122340 100%); }
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-num-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.book-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 0 0 2px;
+}
+
+.book-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.book-stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-stats li {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 20px;
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+/* book accent colors for numbers */
+.b1 .stat-num { color: var(--coral); }
+.b2 .stat-num { color: var(--teal); }
+.b3 .stat-num { color: var(--amber); }
+.b4 .stat-num { color: var(--navy); }
+
+.b1 .book-title { color: var(--coral); }
+.b2 .book-title { color: var(--teal); }
+.b3 .book-title { color: var(--amber); }
+.b4 .book-title { color: var(--navy); }
+
+/* ── TOOLS ── */
+.tools-section {
+  background: var(--bg-mint);
+  padding-block: 56px;
+  margin-inline: -16px;
+  padding-inline: 16px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 500px) {
+  .tools-grid { grid-template-columns: 1fr; }
+}
+
+.tool-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.tool-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tool-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+.tool-meta {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+.tool-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-items li {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tool 1 — routing items with Book badges */
+.route-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.route-badge {
+  background: var(--teal);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Tool 2 — calendar */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  border-radius: 7px;
+  background: var(--teal);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-cell.empty {
+  background: #E0E7E6;
+  color: var(--muted);
+}
+
+.day-cell.today {
+  background: var(--coral);
+}
+
+.day-note {
+  background: rgba(193,52,40,0.08);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--coral);
+}
+
+/* Tool 3 — numbered list */
+.doc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.doc-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doc-list li:last-child { border-bottom: none; }
+
+.doc-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Tool 4 — 3 questions */
+.q-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.q-card {
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.q-card.q1 { background: rgba(193,52,40,0.08); }
+.q-card.q2 { background: rgba(184,130,15,0.1); }
+.q-card.q3 { background: rgba(30,107,101,0.08); }
+
+.q-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.q-card.q1 .q-label { color: var(--coral); }
+.q-card.q2 .q-label { color: var(--amber); }
+.q-card.q3 .q-label { color: var(--teal); }
+
+.q-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ── FINAL CTA ── */
+.cta-section {
+  padding-block: 64px 72px;
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: clamp(26px, 5vw, 40px);
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0 0 14px;
+}
+
+.cta-sub {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+.cta-sub + * { margin-top: 36px; }
+
+.price-block {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.price-main {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.price-desc {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.guarantee {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.guarantee svg {
+  flex-shrink: 0;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-block: 0;
+}
+</style>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Complete Health Bundle · 4 Guides + 4 Tools</p>
+    <h1 class="hero-title">Your Body Has Been<br><span class="dim">Trying to Tell You.</span></h1>
+    <p class="hero-sub">Four research-backed guides on the silent signals most doctors never explain — plus the tools to finally act on them.</p>
+    <div class="cover-wrap">
+      <img src="bundle_cover.png" alt="Your Body Has Been Trying to Tell You — 4-guide health bundle" width="1160" height="464">
+    </div>
+    <a href="https://lava.top" class="btn-primary" target="_blank" rel="noopener">Get the Bundle — $29.90</a>
+    <p class="price-note">Instant digital delivery · Read on any device</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BEFORE / AFTER -->
+<section class="ba-section">
+  <div class="wrap">
+    <div class="ba-grid">
+      <div class="ba-card before">
+        <p class="ba-label">Before</p>
+        <ul class="ba-list">
+          <li><span class="ba-icon">✕</span>Feel off — doctors say labs are normal</li>
+          <li><span class="ba-icon">✕</span>React only when something scares you</li>
+          <li><span class="ba-icon">✕</span>Take supplements from a video you saw</li>
+          <li><span class="ba-icon">✕</span>Read a lot, change nothing</li>
+          <li><span class="ba-icon">✕</span>Leave the appointment with no answers</li>
+        </ul>
+      </div>
+      <div class="ba-card after">
+        <p class="ba-label">After</p>
+        <ul class="ba-list">
+          <li><span class="ba-icon">✓</span>Know exactly what each signal means</li>
+          <li><span class="ba-icon">✓</span>Catch changes early, before they escalate</li>
+          <li><span class="ba-icon">✓</span>Know what you take and why</li>
+          <li><span class="ba-icon">✓</span>14 days of your own data in hand</li>
+          <li><span class="ba-icon">✓</span>Walk in with 3 questions that get answers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- BOOKS -->
+<section class="books-section">
+  <div class="wrap">
+    <p class="sec-label">4 Guides</p>
+    <h2 class="sec-title">One question per guide.<br>One answer your body already knew.</h2>
+
+    <!-- Book 1 -->
+    <div class="book-card b1">
+      <div class="book-cover bc-red">
+        <span class="bc-num">Book 1 of 4</span>
+        <div class="bc-deco" style="width:90px;height:90px;right:-20px;top:-20px;background:rgba(255,255,255,0.1)"></div>
+        <span class="bc-title">The Belly<br>Fat Lie</span>
+      </div>
+      <div class="book-info">
+        <span class="book-num-badge">Book 1 of 4</span>
+        <h3 class="book-title">The Belly Fat Lie</h3>
+        <p class="book-subtitle">Why is this still here?</p>
+        <ul class="book-stats">
+          <li><span class="stat-num">3</span> hidden causes most diets completely ignore</li>
+          <li><span class="stat-num">1</span> hormonal shift after 35 that changes everything</li>
+          <li><span class="stat-num">7</span> foods marketed as "healthy" that make it worse</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book-card b2">
+      <div class="book-cover bc-teal">
+        <span class="bc-num">Book 2 of 4</span>
+        <div class="bc-deco" style="width:70px;height:70px;left:-20px;top:-20px;background:rgba(255,255,255,0.1)"></div>
+        <span class="bc-title">Aging<br>Faster Than<br>You Should</span>
+      </div>
+      <div class="book-info">
+        <span class="book-num-badge">Book 2 of 4</span>
+        <h3 class="book-title">Aging Faster Than You Should</h3>
+        <p class="book-subtitle">Something changed. What?</p>
+        <ul class="book-stats">
+          <li><span class="stat-num">5</span> silent accelerators of biological aging</li>
+          <li><span class="stat-num">2</span> lab markers your doctor rarely orders</li>
+          <li><span class="stat-num">14</span> days to see a measurable difference</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book-card b3">
+      <div class="book-cover bc-amber">
+        <span class="bc-num">Book 3 of 4</span>
+        <div class="bc-deco" style="width:0;height:0;right:0;top:0;border-style:solid;border-width:0 80px 80px 0;border-color:transparent rgba(255,255,255,0.12) transparent transparent;border-radius:0;background:transparent"></div>
+        <span class="bc-title">The<br>Caffeine<br>Trap</span>
+      </div>
+      <div class="book-info">
+        <span class="book-num-badge">Book 3 of 4</span>
+        <h3 class="book-title">The Caffeine Trap</h3>
+        <p class="book-subtitle">Why am I still tired?</p>
+        <ul class="book-stats">
+          <li><span class="stat-num">3</span> types of fatigue caffeine cannot fix</li>
+          <li><span class="stat-num">1</span> test to identify your real energy leak</li>
+          <li><span class="stat-num">30</span> day protocol, one change per week</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Book 4 -->
+    <div class="book-card b4">
+      <div class="book-cover bc-navy">
+        <span class="bc-num">Book 4 of 4</span>
+        <div class="bc-deco" style="width:100%;height:44px;top:0;left:0;border-radius:0;background:rgba(255,255,255,0.07)"></div>
+        <span class="bc-title">The<br>3AM<br>Signal</span>
+      </div>
+      <div class="book-info">
+        <span class="book-num-badge">Book 4 of 4</span>
+        <h3 class="book-title">The 3AM Signal</h3>
+        <p class="book-subtitle">Why does my body wake me up?</p>
+        <ul class="book-stats">
+          <li><span class="stat-num">6</span> body signals that only surface at night</li>
+          <li><span class="stat-num">4</span> organs that send 3AM wake-up calls</li>
+          <li><span class="stat-num">12</span> minute protocol to return to sleep</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-section">
+  <div class="wrap">
+    <p class="sec-label">4 Tools Included</p>
+    <h2 class="sec-title">Reading is the start.<br>These make it stick.</h2>
+
+    <div class="tools-grid">
+
+      <!-- Tool 1: Start Here -->
+      <div class="tool-card">
+        <span class="tool-icon">🧭</span>
+        <h3 class="tool-name">Start Here</h3>
+        <p class="tool-meta">1 question · 4 routes</p>
+        <ul class="tool-items">
+          <li class="route-item"><span>"Labs normal, I feel awful"</span><span class="route-badge">Book 1</span></li>
+          <li class="route-item"><span>"Tired all the time"</span><span class="route-badge">Book 2</span></li>
+          <li class="route-item"><span>"Coffee stopped working"</span><span class="route-badge">Book 3</span></li>
+          <li class="route-item"><span>"Waking up at 3AM"</span><span class="route-badge">Book 4</span></li>
+        </ul>
+      </div>
+
+      <!-- Tool 2: 14-Day Body Log -->
+      <div class="tool-card">
+        <span class="tool-icon">📅</span>
+        <h3 class="tool-name">14-Day Body Log</h3>
+        <p class="tool-meta">5 minutes a day</p>
+        <div class="day-grid">
+          <div class="day-cell">1</div>
+          <div class="day-cell">2</div>
+          <div class="day-cell today">3</div>
+          <div class="day-cell">4</div>
+          <div class="day-cell">5</div>
+          <div class="day-cell">6</div>
+          <div class="day-cell">7</div>
+          <div class="day-cell empty">8</div>
+          <div class="day-cell empty">9</div>
+          <div class="day-cell empty">10</div>
+          <div class="day-cell empty">11</div>
+          <div class="day-cell empty">12</div>
+          <div class="day-cell empty">13</div>
+          <div class="day-cell empty">14</div>
+        </div>
+        <div class="day-note">🚩 Day 3: the easiest day to stop. It's marked.</div>
+      </div>
+
+      <!-- Tool 3: Doctor's Brief -->
+      <div class="tool-card">
+        <span class="tool-icon">📄</span>
+        <h3 class="tool-name">Doctor's Brief</h3>
+        <p class="tool-meta">1 page for your appointment</p>
+        <ol class="doc-list">
+          <li><span class="doc-num">1</span>What I noticed</li>
+          <li><span class="doc-num">2</span>My 14 days of data</li>
+          <li><span class="doc-num">3</span>What I tried</li>
+          <li><span class="doc-num">4</span>What I currently take</li>
+          <li><span class="doc-num">5</span>My 3 questions</li>
+          <li><span class="doc-num">6</span>What I'm asking for</li>
+        </ol>
+      </div>
+
+      <!-- Tool 4: 3 Questions -->
+      <div class="tool-card">
+        <span class="tool-icon">❓</span>
+        <h3 class="tool-name">3 Questions</h3>
+        <p class="tool-meta">three, not ten</p>
+        <div class="q-cards">
+          <div class="q-card q1">
+            <div class="q-label">Marker</div>
+            <div class="q-text">Is there a test beyond the standard panel?</div>
+          </div>
+          <div class="q-card q2">
+            <div class="q-label">Timeline</div>
+            <div class="q-text">Is this change expected for my age?</div>
+          </div>
+          <div class="q-card q3">
+            <div class="q-label">Threshold</div>
+            <div class="q-text">What would need to show up for you to act?</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="wrap">
+    <h2 class="cta-title">Your body has been sending signals.<br>Now you'll know what they mean.</h2>
+    <p class="cta-sub">4 guides + 4 tools. Everything you need to understand what's happening and walk into your next appointment ready.</p>
+    <div class="price-block">
+      <span class="price-main">$29.90</span>
+      <span class="price-desc">One-time · Instant delivery</span>
+    </div>
+    <a href="https://lava.top" class="btn-primary" target="_blank" rel="noopener">Get the Bundle Now</a>
+    <p class="guarantee">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5L2 4v4c0 3.3 2.5 6.1 6 7 3.5-.9 6-3.7 6-7V4L8 1.5z" stroke="var(--teal)" stroke-width="1.4" stroke-linejoin="round" fill="none"/><path d="M5.5 8l1.8 1.8 3.2-3.6" stroke="var(--teal)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Instant access after purchase · Works on phone, tablet, and computer
+    </p>
+  </div>
+</section>
