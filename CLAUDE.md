@@ -476,9 +476,55 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - **Кодовое слово в капшене:** `CALM` (все регистры)
 - **Логика подводки:** тема рилса → 3AM bridge → Comment **CALM**
 
+### Когда пользователь говорит **"под glow"** / **"glow"** / **"health bundle"** / **"belly"** / **"женское здоровье"**:
+- **Продукт:** Health Bundle "Your Body Has Been Trying to Tell You" (4 books + 4 tools)
+  - Book 1: The Belly Fat Lie
+  - Book 2: Aging Faster Than You Should
+  - Book 3: The Caffeine Trap
+  - Book 4: The 3AM Signal
+  - + 4 free tools (Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor)
+- **Preland URL:** `/preland.html` (на домене проекта)
+- **Цена:** от $19.90 (тикер), продаётся через Lava.top
+- **Кодовое слово в капшене:** `GLOW` (все регистры)
+- **Аудитория:** женщины 35–65, США, боли: живот, кожа, усталость, плохо выглядит, не высыпается
+- **Воронка:** комментарий GLOW → бот отправляет ссылку на preland → покупка
+- **Логика подводки в капшене:** история о боли (живот / кожа / усталость / старение) → мост к продукту → Comment GLOW
+- ⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО
+- ⛔ НЕ писать "link in bio" — bio ведёт на Travel, не на GLOW
+
+**CTA блок для GLOW рилсов — единственный утверждённый формат:**
+```
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
+I'll send it straight to your DMs.
+```
+
+**МОСТ К ПРОДУКТУ для GLOW — утверждённый шаблон:**
+```
+I pulled everything together — the belly fat research, the aging triggers,
+the caffeine truth, and the 3AM signals your body sends before something breaks.
+All in one place. Four books. Four tools.
+
+Comment GLOW below and I'll send it straight to your DMs.
+Follow first so it reaches your inbox. 🔒
+```
+
+**Ниши для GLOW рилсов (все бьют боли женщин 35+):**
+- Живот: "почему я не худею", кортизол, менопауза, инсулин
+- Кожа: коллаген после 40, питание которое старит, дегидрация изнутри
+- Усталость: надпочечники, кофеин, плохой сон
+- Старение: что ускоряет возраст, что тело пытается сказать
+- Сон: 3AM wakeups, что это значит
+
+**Клипы для GLOW рилсов (women's health — general):**
+- `1_2, 1_8, 1_11, 1_14, 1_15, 1_16, 1_19, 1_23, 1_26, 1_28, 1_30, 31_2, 32_2`
+- `face_1, face_2, face_3, face_4, face_5` — talking head для relationships/health
+
 ### ⛔ АВТОМАТИЧЕСКОЕ ПРАВИЛО:
 - Пользователь сказал "под travel" / назвал тему travel/airport/hotel/cruise → **SAFE**
 - Пользователь сказал "под сон" / назвал тему сон/3AM/sleep → **CALM**
+- Пользователь сказал "под glow" / назвал тему belly/skin/fatigue/aging/женское здоровье → **GLOW**
 - Никогда не путать кодовые слова между продуктами
 - Никогда не писать CALM в travel-рилсе и SAFE в sleep-рилсе
 
