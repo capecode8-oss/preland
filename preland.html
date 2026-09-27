@@ -3,17 +3,17 @@
 
 <style>
 :root {
-  --bg:        #F0EBE3;
-  --bg-mint:   #E4EEE9;
-  --bg-salmon: #F5E5E0;
+  --bg:        #F2EDE5;
+  --bg-mint:   #E3EDE8;
+  --bg-salmon: #F4E3DE;
   --bg-card:   #FFFFFF;
   --teal:      #1E6B65;
   --teal-mid:  #2A8A82;
   --coral:     #C13428;
   --amber:     #B8820F;
   --navy:      #1C3D6E;
-  --text:      #1A1713;
-  --muted:     #6B6057;
+  --text:      #18140F;
+  --muted:     #6A5E52;
   --border:    rgba(0,0,0,0.07);
 }
 
@@ -73,16 +73,88 @@ body {
   line-height: 1.7;
 }
 
-.cover-wrap {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 12px 48px rgba(0,0,0,0.14);
-  margin-bottom: 40px;
+/* ── HERO BOOK FAN ── */
+.book-fan {
+  position: relative;
+  height: 300px;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.cover-wrap img {
-  display: block;
-  width: 100%;
+.fan-book {
+  position: absolute;
+  width: 130px;
+  height: 188px;
+  border-radius: 5px 10px 10px 5px;
+  overflow: hidden;
+  transform-origin: 50% 96%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28), 0 2px 6px rgba(0,0,0,0.18);
+}
+
+.fan-book::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0; width: 9px;
+  background: rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.fan-book::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16) 0%, transparent 55%);
+  z-index: 2;
+}
+
+.fan-book .fb-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 12px 16px;
+  z-index: 1;
+}
+
+.fan-book .fb-num {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 5px;
+}
+
+.fan-book .fb-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.18;
+  color: #fff;
+}
+
+.fan-book .fb-deco {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.fb1 { background: linear-gradient(160deg,#C73328 0%,#9E2119 100%); transform: rotate(-14deg) translateX(-168px); z-index: 1; }
+.fb2 { background: linear-gradient(160deg,#1A7874 0%,#0D5250 100%); transform: rotate(-5deg)  translateX(-56px);  z-index: 2; }
+.fb3 { background: linear-gradient(160deg,#C48A15 0%,#9A6A0C 100%); transform: rotate(5deg)   translateX(56px);   z-index: 3; }
+.fb4 { background: linear-gradient(160deg,#1E3D6E 0%,#122340 100%); transform: rotate(14deg)  translateX(168px);  z-index: 4; }
+
+@media (max-width: 500px) {
+  .fan-book { width: 100px; height: 146px; }
+  .fan-book .fb-title { font-size: 11px; }
+  .fb1 { transform: rotate(-14deg) translateX(-128px); }
+  .fb2 { transform: rotate(-5deg)  translateX(-42px); }
+  .fb3 { transform: rotate(5deg)   translateX(42px); }
+  .fb4 { transform: rotate(14deg)  translateX(128px); }
+  .book-fan { height: 240px; }
 }
 
 .btn-primary {
@@ -604,6 +676,145 @@ body {
   flex-shrink: 0;
 }
 
+/* ── PRICE DISPLAY ── */
+.price-crossed {
+  font-size: 17px;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+/* ── VALUE TABLE ── */
+.value-section {
+  background: var(--navy);
+  color: #fff;
+  padding-block: 56px;
+  margin-inline: -16px;
+  padding-inline: 16px;
+}
+
+.value-section .sec-label { color: rgba(140,175,255,0.75); }
+.value-section .sec-title { color: #fff; }
+
+.value-table {
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.vt-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--coral);
+  padding: 16px 20px 8px;
+}
+
+.vt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+
+.vt-row strong { color: #fff; font-weight: 700; }
+
+.vt-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  white-space: nowrap;
+}
+
+.vt-row.total {
+  background: rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-block: 18px;
+}
+
+.vt-row.total .vt-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--coral);
+}
+
+.vt-row.total strong { font-size: 15px; }
+
+.vt-row.crossed .vt-price {
+  text-decoration: line-through;
+  color: rgba(255,255,255,0.35);
+  font-size: 13px;
+}
+
+.value-tagline {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 28px;
+}
+
+.value-tagline span {
+  color: rgba(140,175,255,0.9);
+  font-style: italic;
+}
+
+/* ── STICKY BAR ── */
+.sticky-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.10);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 100;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+}
+
+.sticky-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.sticky-old {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.sticky-new {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.sticky-bar .btn-primary {
+  font-size: 14px;
+  padding: 13px 28px;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .sticky-bar .btn-primary { padding: 13px 18px; font-size: 13px; }
+}
+
+/* bottom padding so sticky bar doesn't cover content */
+body { padding-bottom: 80px; }
+
 /* ── DIVIDER ── */
 .divider {
   border: none;
@@ -618,11 +829,64 @@ body {
     <p class="eyebrow">Complete Health Bundle · 4 Guides + 4 Tools</p>
     <h1 class="hero-title">Your Body Has Been<br><span class="dim">Trying to Tell You.</span></h1>
     <p class="hero-sub">Four research-backed guides on the silent signals most doctors never explain — plus the tools to finally act on them.</p>
-    <div class="cover-wrap">
-      <img src="bundle_cover.png" alt="Your Body Has Been Trying to Tell You — 4-guide health bundle" width="1160" height="464">
+    <!-- CSS book fan — 4 books fanned out -->
+    <div class="book-fan">
+
+      <!-- Book 1 — red -->
+      <div class="fan-book fb1">
+        <div class="fb-deco" style="width:80px;height:80px;right:-20px;top:-20px;background:rgba(255,255,255,0.09)"></div>
+        <div class="fb-face">
+          <span class="fb-num">Guide 01</span>
+          <span class="fb-title">The Belly<br>Fat Lie</span>
+        </div>
+      </div>
+
+      <!-- Book 2 — teal -->
+      <div class="fan-book fb2">
+        <div class="fb-deco" style="width:28px;height:28px;right:14px;top:28px;background:rgba(255,255,255,0.1)"></div>
+        <div class="fb-deco" style="width:16px;height:16px;right:22px;top:62px;background:rgba(255,255,255,0.08)"></div>
+        <div class="fb-face">
+          <span class="fb-num">Guide 02</span>
+          <span class="fb-title">Aging<br>Faster Than<br>You Should</span>
+        </div>
+      </div>
+
+      <!-- Book 3 — amber -->
+      <div class="fan-book fb3">
+        <div class="fb-deco" style="width:0;height:0;right:0;top:0;border-style:solid;border-width:0 70px 70px 0;border-color:transparent rgba(255,255,255,0.1) transparent transparent;border-radius:0;background:transparent"></div>
+        <div class="fb-face">
+          <span class="fb-num">Guide 03</span>
+          <span class="fb-title">The<br>Caffeine<br>Trap</span>
+        </div>
+      </div>
+
+      <!-- Book 4 — navy -->
+      <div class="fan-book fb4">
+        <div class="fb-deco" style="width:100%;height:40px;top:0;left:0;border-radius:0;background:rgba(255,255,255,0.06)"></div>
+        <div class="fb-face">
+          <span class="fb-num">Guide 04</span>
+          <span class="fb-title">The<br>3AM<br>Signal</span>
+        </div>
+      </div>
+
     </div>
-    <a href="https://lava.top" class="btn-primary" target="_blank" rel="noopener">Get the Bundle — $29.90</a>
-    <p class="price-note">Instant digital delivery · Read on any device</p>
+    <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:8px;">
+      <span class="price-crossed">$199.90</span>
+      <span id="hero-price" style="font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:32px;color:var(--text);">$19.90</span>
+    </div>
+    <p style="font-size:12px;color:var(--coral);font-weight:700;letter-spacing:0.03em;margin:0 0 20px;">Price goes up 1¢ every 3 seconds</p>
+    <a href="#" class="btn-primary" id="hero-btn" onclick="openModal();return false;">GET THE BUNDLE — $19.90 →</a>
+    <p class="price-note">All 8 PDFs in your inbox right after payment</p>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center;margin-top:14px;">
+      <p style="margin:0;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="var(--teal)" opacity=".9"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        14-day money-back guarantee
+      </p>
+      <p style="margin:0;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px;">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" fill="var(--teal)" opacity=".9"/><path d="M5 8l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Read on any device · No app needed
+      </p>
+    </div>
   </div>
 </section>
 
@@ -828,19 +1092,214 @@ body {
   </div>
 </section>
 
+<!-- VALUE TABLE -->
+<section class="value-section">
+  <div class="wrap">
+    <p class="sec-label">What's included</p>
+    <h2 class="sec-title" style="color:#fff;">Everything in the bundle.</h2>
+
+    <div class="value-table">
+      <div class="vt-label">4 GUIDES</div>
+      <div class="vt-row"><span>Book 1 · <strong>The Belly Fat Lie</strong></span><span class="vt-price">$50</span></div>
+      <div class="vt-row"><span>Book 2 · <strong>Aging Faster Than You Should</strong></span><span class="vt-price">$50</span></div>
+      <div class="vt-row"><span>Book 3 · <strong>The Caffeine Trap</strong></span><span class="vt-price">$50</span></div>
+      <div class="vt-row"><span>Book 4 · <strong>The 3AM Signal</strong></span><span class="vt-price">$50</span></div>
+      <div class="vt-row crossed"><span>All four books, regular price</span><span class="vt-price">$200</span></div>
+
+      <div class="vt-label" style="padding-top:12px;">4 TOOLS, INCLUDED FREE</div>
+      <div class="vt-row"><span>Tool · <strong>Start Here</strong>, the navigator</span><span class="vt-price" style="color:rgba(140,175,255,0.7)">$19 value</span></div>
+      <div class="vt-row"><span>Tool · <strong>The 14-Day Body Log</strong></span><span class="vt-price" style="color:rgba(140,175,255,0.7)">$29 value</span></div>
+      <div class="vt-row"><span>Tool · <strong>Doctor's Brief</strong>, one page</span><span class="vt-price" style="color:rgba(140,175,255,0.7)">$29 value</span></div>
+      <div class="vt-row"><span>Tool · <strong>3 Questions For Your Doctor</strong></span><span class="vt-price" style="color:rgba(140,175,255,0.7)">$19 value</span></div>
+      <div class="vt-row"><span>Tools</span><span class="vt-price" style="color:rgba(140,175,255,0.85);font-weight:700;">free</span></div>
+
+      <div class="vt-row total"><strong>Your price for the whole set</strong><span class="vt-price">$29.90</span></div>
+    </div>
+
+    <p class="value-tagline">Nearly <span>38,000 words</span>. Eight files. <span>Yours to keep for good.</span></p>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:8px;">
+      <span style="font-size:18px;color:rgba(255,255,255,0.4);text-decoration:line-through;">$199.90</span>
+      <span id="value-price" style="font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:36px;color:#fff;line-height:1;">$19.90</span>
+    </div>
+    <p style="text-align:center;font-size:12px;color:rgba(255,160,130,0.9);font-weight:700;letter-spacing:0.03em;margin:0 0 24px;">Price goes up 1¢ every 3 seconds</p>
+    <div style="text-align:center;">
+      <a href="#" class="btn-primary" style="background:var(--coral);" id="value-btn" onclick="openModal();return false;">GET THE SET — $19.90 →</a>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center;margin-top:20px;">
+      <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:6px;">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" fill="rgba(255,255,255,0.2)"/><path d="M4.5 7l1.8 1.8 3-3.3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        All 8 PDFs in your inbox right after payment
+      </p>
+      <p style="margin:0;font-size:13px;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:6px;">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" fill="rgba(255,255,255,0.2)"/><path d="M4.5 7l1.8 1.8 3-3.3" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        14-day money-back guarantee
+      </p>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section class="cta-section">
   <div class="wrap">
     <h2 class="cta-title">Your body has been sending signals.<br>Now you'll know what they mean.</h2>
     <p class="cta-sub">4 guides + 4 tools. Everything you need to understand what's happening and walk into your next appointment ready.</p>
     <div class="price-block">
-      <span class="price-main">$29.90</span>
-      <span class="price-desc">One-time · Instant delivery</span>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span style="font-size:17px;color:var(--muted);text-decoration:line-through;">$199.90</span>
+        <span id="cta-price" class="price-main">$19.90</span>
+      </div>
+      <span class="price-desc" style="color:var(--coral);font-weight:700;">Price goes up 1¢ every 3 seconds</span>
     </div>
-    <a href="https://lava.top" class="btn-primary" target="_blank" rel="noopener">Get the Bundle Now</a>
+    <a href="#" class="btn-primary" id="cta-btn" onclick="openModal();return false;">GET THE BUNDLE — $19.90 →</a>
     <p class="guarantee">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1.5L2 4v4c0 3.3 2.5 6.1 6 7 3.5-.9 6-3.7 6-7V4L8 1.5z" stroke="var(--teal)" stroke-width="1.4" stroke-linejoin="round" fill="none"/><path d="M5.5 8l1.8 1.8 3.2-3.6" stroke="var(--teal)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Instant access after purchase · Works on phone, tablet, and computer
     </p>
   </div>
 </section>
+
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+  <div class="sticky-price">
+    <span class="sticky-old">$199.90</span>
+    <span class="sticky-new" id="sticky-price-val">$19.90</span>
+    <span style="font-size:10px;color:var(--coral);font-weight:700;letter-spacing:0.02em;">Price goes up 1¢ every 3 sec</span>
+  </div>
+  <a href="#" class="btn-primary" id="sticky-btn" onclick="openModal();return false;">GET THE BUNDLE →</a>
+</div>
+
+<script>
+(function() {
+  const START = 19.90;
+  const STEP  = 0.01;
+  const INTERVAL_MS = 3000;
+  const LOCK_SECONDS = 600; // 10 minutes
+
+  let cents = Math.round(START * 100);
+  let locked = false;
+  let lockedCents = 0;
+  let lockRemaining = LOCK_SECONDS;
+  let lockTimer = null;
+
+  function fmt(c) { return '$' + (c / 100).toFixed(2); }
+
+  const priceIds = ['hero-price', 'value-price', 'cta-price', 'sticky-price-val', 'modal-price'];
+  const btnIds   = ['hero-btn', 'value-btn', 'cta-btn'];
+
+  function updatePrices() {
+    var label = fmt(locked ? lockedCents : cents);
+    priceIds.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = label;
+    });
+    btnIds.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = 'GET THE BUNDLE — ' + label + ' →';
+    });
+    var sb = document.getElementById('sticky-btn');
+    if (sb) sb.textContent = 'GET THE BUNDLE →';
+  }
+
+  updatePrices();
+
+  // Tick price up
+  var ticker = setInterval(function() {
+    if (!locked) {
+      cents += Math.round(STEP * 100);
+      updatePrices();
+    }
+  }, INTERVAL_MS);
+
+  // Lock countdown display
+  function fmtTime(s) {
+    var m = Math.floor(s / 60);
+    var sec = s % 60;
+    return m + ':' + (sec < 10 ? '0' : '') + sec;
+  }
+
+  function startLockCountdown() {
+    lockRemaining = LOCK_SECONDS;
+    var cd = document.getElementById('modal-countdown');
+    if (cd) cd.textContent = fmtTime(lockRemaining);
+    if (lockTimer) clearInterval(lockTimer);
+    lockTimer = setInterval(function() {
+      lockRemaining--;
+      if (lockRemaining <= 0) {
+        clearInterval(lockTimer);
+        locked = false;
+        closeModal();
+        return;
+      }
+      var el = document.getElementById('modal-countdown');
+      if (el) el.textContent = fmtTime(lockRemaining);
+    }, 1000);
+  }
+
+  // Expose globally
+  window.openModal = function() {
+    locked = true;
+    lockedCents = cents;
+    updatePrices();
+    var modal = document.getElementById('checkout-modal');
+    if (modal) modal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    startLockCountdown();
+    // pre-fill modal locked price
+    var mp = document.getElementById('modal-price');
+    if (mp) mp.textContent = fmt(lockedCents);
+  };
+
+  window.closeModal = function() {
+    locked = false;
+    var modal = document.getElementById('checkout-modal');
+    if (modal) modal.hidden = true;
+    document.body.style.overflow = '';
+    if (lockTimer) clearInterval(lockTimer);
+  };
+})();
+</script>
+
+<!-- CHECKOUT MODAL -->
+<div id="checkout-modal" hidden style="position:fixed;inset:0;z-index:200;display:flex;align-items:flex-end;justify-content:center;background:rgba(0,0,0,0.55);padding:0;" onclick="if(event.target===this)closeModal()">
+  <div style="background:#fff;border-radius:24px 24px 0 0;width:100%;max-width:520px;padding:28px 24px 36px;max-height:92vh;overflow-y:auto;">
+
+    <!-- Close -->
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px;">
+      <div>
+        <h2 style="font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;margin:0 0 4px;color:#1A1713;">Get the Health Bundle</h2>
+        <p style="margin:0;font-size:13px;color:#6B6057;">4 guides + 4 tools, sent to your email right after payment</p>
+      </div>
+      <button onclick="closeModal()" style="border:none;background:none;font-size:22px;cursor:pointer;color:#6B6057;padding:0;line-height:1;margin-left:12px;">✕</button>
+    </div>
+
+    <!-- Price row -->
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap;">
+      <span style="font-size:15px;color:#6B6057;text-decoration:line-through;">$199.90</span>
+      <span id="modal-price" style="font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:32px;color:#C13428;line-height:1;">$19.90</span>
+    </div>
+
+    <!-- Lock notice -->
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:20px;background:#F5E5E0;border-radius:10px;padding:10px 14px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="3" y="7" width="10" height="8" rx="2" fill="#C13428" opacity=".15" stroke="#C13428" stroke-width="1.2"/><path d="M5 7V5a3 3 0 016 0v2" stroke="#C13428" stroke-width="1.4" stroke-linecap="round"/></svg>
+      <span style="font-size:13px;font-weight:700;color:#C13428;">Your price is locked for <span id="modal-countdown">10:00</span></span>
+    </div>
+
+    <!-- Email -->
+    <label style="display:block;font-size:13px;font-weight:700;color:#1A1713;margin-bottom:6px;">Your email</label>
+    <input type="email" placeholder="you@example.com" style="width:100%;border:1.5px solid #D0C8C0;border-radius:10px;padding:14px 16px;font-size:15px;outline:none;margin-bottom:20px;font-family:'Inter',sans-serif;color:#1A1713;" onfocus="this.style.borderColor='#1E6B65'" onblur="this.style.borderColor='#D0C8C0'">
+
+    <!-- Payment methods -->
+    <p style="font-size:13px;font-weight:700;color:#1A1713;margin:0 0 10px;">Choose how to pay</p>
+    <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;">
+      <a href="https://lava.top" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;border:1.5px solid #D0C8C0;border-radius:12px;padding:14px 18px;text-decoration:none;color:#1A1713;font-size:15px;font-weight:600;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#1E6B65'" onmouseout="this.style.borderColor='#D0C8C0'">
+        <span>Credit / debit card</span><span style="color:#C13428;">→</span>
+      </a>
+      <a href="https://lava.top" target="_blank" rel="noopener" style="display:flex;justify-content:space-between;align-items:center;border:1.5px solid #D0C8C0;border-radius:12px;padding:14px 18px;text-decoration:none;color:#1A1713;font-size:15px;font-weight:600;transition:border-color 0.15s;" onmouseover="this.style.borderColor='#1E6B65'" onmouseout="this.style.borderColor='#D0C8C0'">
+        <span>PayPal</span><span style="color:#C13428;">→</span>
+      </a>
+    </div>
+
+    <p style="font-size:12px;color:#6B6057;text-align:center;margin:0;">You'll be redirected to Lava's secure payment page.<br>We never see your card details.</p>
+  </div>
+</div>
