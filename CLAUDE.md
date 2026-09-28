@@ -128,9 +128,10 @@ I [изменил поведение] the same day.
 ### Пользователь говорит: "планируем N рилсов"
 
 **АВТОМАТИЧЕСКОЕ ПРАВИЛО ПО ТЕМЕ:**
-- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 45+ ситуаций, $14.90). CTA: `Comment SAFE`
-- Тема **сон / 3AM / insomnia / sleep / health** → продукт **CALM** (3AM Calm Card). CTA: `Comment CALM`
-- Рилс может быть про ЧТО УГОДНО — но в конце капшена логически связывается с мини-продуктом через мост.
+- Тема **travel / airport / hotel / cruise / ATM / money trap** → продукт **SAFE** (Travel Safety Guide, 45+ ситуаций, $14.90). CTA: `Comment SAFETY`
+- Тема **сон / 3AM / insomnia / sleep** → продукт **CALM** (3AM Calm Card). CTA: `Comment CALM`
+- Тема **живот / кожа / усталость / старение / здоровье женщин / кофеин / кортизол / коллаген** → продукт **GLOW** (Health Bundle, от $19.90). CTA: `Comment GLOW`
+- Рилс может быть про ЧТО УГОДНО — но в конце капшена логически связывается с продуктом через мост.
 
 ---
 
@@ -460,7 +461,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 
 **Контент должен ЗАСТАВЛЯТЬ переслать другу — не просто информировать.**
 
-## 🔑 ДВА ПРОДУКТА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда)
+## 🔑 ТРИ ПРОДУКТА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, GLOW добавлен Sep 28 2026)
 
 ### Когда пользователь говорит **"под travel"** / **"travel"** / **"safe"**:
 - **Продукт:** Travel Safety Guide "What Happens On Every Trip That Nobody Warns You About." (45+ situations — airports, hotels, cruise ships, all-inclusive resorts)
@@ -562,12 +563,13 @@ I'll send it straight to your DMs.
 - Пользователь сказал "под сон" / назвал тему сон/3AM/sleep → **CALM**
 - Пользователь сказал "под glow" / назвал тему belly/skin/fatigue/aging/женское здоровье → **GLOW**
 - Никогда не путать кодовые слова между продуктами
-- Никогда не писать CALM в travel-рилсе и SAFE в sleep-рилсе
 
 ### ⛔ ССЫЛКА В BIO — ЖЕЛЕЗНОЕ ПРАВИЛО:
 - **SAFE** капшен → писать "link in bio" ✅ (bio ведёт на Travel Safety Guide)
-- **CALM** капшен → ⛔ НЕ писать "link in bio" никогда — bio ведёт только на Travel, не на CALM
-- В CALM только: `Comment CALM and I'll send it to you directly.` — и всё
+- **CALM** капшен → ⛔ НЕ писать "link in bio" — bio ведёт на Travel, не на CALM
+- **GLOW** капшен → ⛔ НЕ писать "link in bio" — bio ведёт на Travel, не на GLOW
+- В CALM только: `Comment CALM and I'll send it to you directly.`
+- В GLOW только: CTA блок с FOLLOW + COMMENT GLOW
 
 ### 🚨 НОВЫЙ CTA БЛОК ДЛЯ SAFE — ОБЯЗАТЕЛЬНО (обновлено Sep 7 2026)
 
@@ -826,6 +828,13 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 👇 HOW TO GET IT: 👇
 • FOLLOW this account 🔒
 • COMMENT CALM below 💬
+I'll send it straight to your DMs.
+```
+- **CTA для GLOW:**
+```
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
 I'll send it straight to your DMs.
 ```
 - **📌 ОБЯЗАТЕЛЬНО** перед save line: `📌 Save this before your next...`
