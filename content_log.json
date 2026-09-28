@@ -556,5 +556,17 @@
     "cruise_railing_norovirus_confession",
     "airplane_tray_table_flight_attendant",
     "airport_escalator_handrail_contamination"
+  ],
+  "footage_library": [
+    {
+      "clip_id": "glow_yoga_ref",
+      "path": "footage/general/glow_yoga_ref.mp4",
+      "type": "reference",
+      "source": "fit_grandma_rose_ (competitor)",
+      "added": "2026-09-28",
+      "description": "Woman 67, malasana squat on yoga mat, outdoor patio, lake background, American flag, morning light",
+      "use_for": "GLOW - yoga/fitness/aging niche",
+      "notes": "Benchmark: 4606 likes + 2500 GLOW keywords in 1 week. Remake as Kira version."
+    }
   ]
 }
