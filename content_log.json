@@ -1,5 +1,5 @@
 {
-  "_comment": "\u0416\u0443\u0440\u043d\u0430\u043b \u043e\u043f\u0443\u0431\u043b\u0438\u043a\u043e\u0432\u0430\u043d\u043d\u044b\u0445 \u0442\u0435\u043c. \u041f\u0435\u0440\u0435\u0434 \u043d\u043e\u0432\u044b\u043c \u0440\u0438\u043b\u0441\u043e\u043c \u2014 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0447\u0442\u043e \u0442\u0435\u043c\u0430 \u043d\u0435 \u043f\u043e\u0432\u0442\u043e\u0440\u044f\u0435\u0442\u0441\u044f.",
+  "_comment": "Журнал опубликованных тем. Перед новым рилсом — проверить что тема не повторяется.",
   "published": [
     {
       "date": "2026-09-04",
@@ -97,7 +97,7 @@
       "hook_text": "Never Book A Hotel / Through The First Google Result. / A Cybercop Explained Why.",
       "clip": "32_7",
       "product": "SAFE",
-      "note": "scheduled Sep 5 \u2014 NOTE: 32_7 also used Sep 4 batch 2, check!"
+      "note": "scheduled Sep 5 — NOTE: 32_7 also used Sep 4 batch 2, check!"
     },
     {
       "date": "2026-09-05",
@@ -115,7 +115,7 @@
       "hook_text": "Never Buy A Flight Ticket / From A Third-Party App. / I Almost Missed My Flight.",
       "clip": "32_5",
       "product": "SAFE",
-      "note": "scheduled Sep 5 \u2014 NOTE: 32_5 also used Sep 4 batch 2, check!"
+      "note": "scheduled Sep 5 — NOTE: 32_5 also used Sep 4 batch 2, check!"
     },
     {
       "date": "2026-09-05",
@@ -408,7 +408,7 @@
       "date": "2026-09-08",
       "time_et": "09:00",
       "topic": "feel_more_yourself_alone_emotional_retreat",
-      "hook": "If you feel more yourself / alone than together \u2014 / you already know.",
+      "hook": "If you feel more yourself / alone than together — / you already know.",
       "clip": "face_1",
       "music": "24.mp3",
       "product": "CALM",
@@ -523,7 +523,7 @@
     {
       "date": "2026-09-28",
       "videotool_id": 340,
-      "hook_topic": "90-day 1-minute squat challenge \u2014 womens health aging",
+      "hook_topic": "90-day 1-minute squat challenge — womens health aging",
       "hook_text": "I'm 58. A mom. For 90 days, I did THIS for 1 minute every single day.",
       "clip": "glow_yoga_kira_v1",
       "product": "GLOW",
@@ -589,6 +589,36 @@
       "videotool_id": 346,
       "scheduled": "2026-09-29T21:00ET",
       "date": "2026-09-29"
+    },
+    {
+      "date": "2026-09-29",
+      "videotool_id": 349,
+      "hook_topic": "Emotionally hollow marriage - performing okay",
+      "hook_text": "I thought I had a great marriage. / I had a man who was very good / at performing one.",
+      "clip": "face_2",
+      "music": "9.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/glow3_1.mp4"
+    },
+    {
+      "date": "2026-09-29",
+      "videotool_id": 347,
+      "hook_topic": "Emotionally absent husband - cheating question",
+      "hook_text": "Is it cheating / if he been emotionally gone / for 10 years but never left?",
+      "clip": "face_3",
+      "music": "13.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/glow3_2.mp4"
+    },
+    {
+      "date": "2026-09-29",
+      "videotool_id": 348,
+      "hook_topic": "He never arrived - emotional absence",
+      "hook_text": "He never lied. / He never cheated. / He just never arrived.",
+      "clip": "face_5",
+      "music": "20.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/glow3_3.mp4"
     }
   ],
   "_blocked_topics": [
