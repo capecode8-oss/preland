@@ -559,6 +559,36 @@
       "music": "17.mp3",
       "scheduled": "21:00 ET",
       "status": "scheduled"
+    },
+    {
+      "id": "fb_glow_1",
+      "clip": "face_4",
+      "music": "18.mp3",
+      "hook": "Women over 40: you didn't stop wanting him.",
+      "product": "GLOW",
+      "videotool_id": 344,
+      "scheduled": "2026-09-29T22:00ET",
+      "date": "2026-09-29"
+    },
+    {
+      "id": "fb_glow_2",
+      "clip": "face_5",
+      "music": "22.mp3",
+      "hook": "After 6 years of marriage, most women feel invisible.",
+      "product": "GLOW",
+      "videotool_id": 345,
+      "scheduled": "2026-09-29T23:30ET",
+      "date": "2026-09-29"
+    },
+    {
+      "id": "fb_glow_3",
+      "clip": "face_1",
+      "music": "27.mp3",
+      "hook": "The person who pulls away is the one your brain obsesses over at 3AM.",
+      "product": "GLOW",
+      "videotool_id": 346,
+      "scheduled": "2026-09-29T21:00ET",
+      "date": "2026-09-29"
     }
   ],
   "_blocked_topics": [
