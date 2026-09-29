@@ -657,6 +657,56 @@
     "airplane_tray_table_flight_attendant",
     "airport_escalator_handrail_contamination"
   ],
+  "glow4_batch": [
+    {
+      "videotool_id": 353,
+      "date": "2026-10-01",
+      "time_et": "11:00",
+      "topic": "belly_cortisol_stress_fat_storage",
+      "hook": "I lost 4 inches off my waist. / No diet. No gym change. / My body was storing stress, not fat.",
+      "clip": "face_1",
+      "music": "23.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow4_1.mp4"
+    },
+    {
+      "videotool_id": 356,
+      "date": "2026-10-01",
+      "time_et": "12:00",
+      "topic": "sex_drive_cortisol_hormone_suppression",
+      "hook": "S*x drive after 40 doesn't just go. / Cortisol kills it — completely. / Here's what restores it in weeks, not years.",
+      "clip": "face_2",
+      "music": "29.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow4_2.mp4"
+    },
+    {
+      "videotool_id": 354,
+      "date": "2026-10-01",
+      "time_et": "13:00",
+      "topic": "dopamine_new_love_18_months_couples",
+      "hook": "New love dopamine lasts 18 months. Exactly. / Most couples don't know what replaces it. / Italians solved this 300 years ago.",
+      "clip": "face_4",
+      "music": "21.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow4_3.mp4"
+    },
+    {
+      "videotool_id": 355,
+      "date": "2026-10-01",
+      "time_et": "14:00",
+      "topic": "skincare_600_dermatologist_wrong_problem",
+      "hook": "I spent $600 on skincare last year. / A dermatologist said: wrong problem. / My skin changed in 21 days after I stopped.",
+      "clip": "face_5",
+      "music": "16.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow4_4.mp4"
+    }
+  ],
   "footage_library": [
     {
       "clip_id": "glow_yoga_ref",
