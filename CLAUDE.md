@@ -897,7 +897,113 @@ I'll send it straight to your DMs.
 
 ---
 
-## Карусели (будущее — после 500 подписчиков)
+## 🖼️ КАРУСЕЛИ — ПРАВИЛА (вшито навсегда, Sep 29 2026)
 
-Когда аккаунт достигнет 500 подписчиков — добавим карусели в формат публикаций.
-Пока не делаем. Правила рендера карусели будут добавлены в отдельный скилл.
+### ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ПРОДУКТЫ ДЛЯ КАРУСЕЛЕЙ:
+- Карусели делаем ТОЛЬКО под **GLOW** и **SAFETY**
+- Карусели под **CALM** — НЕ ДЕЛАЕМ. Никогда.
+- Если пользователь говорит "карусель" → спросить: под GLOW или SAFETY?
+
+### 📐 ФОРМАТ КАРУСЕЛИ — 2026 MICRO-LEARNING (единственный правильный формат)
+
+**Почему micro-learning:** Instagram 2026 — карусели с 1 фактом на слайд получают в 3x больше saves чем карусели с длинным текстом. Каждый слайд = 1 инсайт, max 15-20 слов.
+
+**Спецификации:**
+- Canvas: **1080×1350px** (4:5 Portrait — стандарт Instagram карусели)
+- Кол-во слайдов: **7** (slide 1 = cover, slides 2-6 = факты, slide 7 = CTA)
+- Шрифт: Montserrat-Black (не italic, не bold — только Black)
+- Текст на слайде: **1 факт, max 4 строки, крупный шрифт (72-80px)**
+
+**Slide 1 — COVER:**
+- Фото Киры (face_1.mp4) — COLOR, не ч/б
+- Белая сплошная плашка снизу (наш стандарт рилсов)
+- Хук по формуле (FORMULA 1 — Contradiction List приоритет)
+- BOTTOM_ANCHOR = 1290px
+
+**Slides 2-6 — INNER (факты):**
+- Фон: кремовый BG=(252,249,245)
+- Верхний акцент: терракотовая полоса 6px (ACCENT=#B46E3C)
+- Метка-тег сверху: ACCENT прямоугольник + белый текст (ALL CAPS)
+- Разделитель: терракотовая линия 3px
+- Факт: Montserrat-Black, авто-размер 80→38px, по центру вертикально
+- Снизу: точки прогресса (7 штук, активная = терракот) + @thekiramethod
+
+**Slide 7 — CTA:**
+- Такой же фон как inner
+- Короткий факт/крючок сверху
+- Терракотовый CTA-блок снизу с FOLLOW + COMMENT [GLOW/SAFETY]
+
+### 🎯 КАРУСЕЛИ ПОД GLOW (тема женское здоровье 40+)
+
+**Темы:**
+- Живот: кортизол, почему диеты не работают после 40
+- Кожа: коллаген, что старит изнутри
+- Усталость: надпочечники, 3AM wakeups
+- Любая боль женщин 35-65
+
+**Хук Slide 1 — формула CONTRADICTION LIST (Формула 1):**
+```
+"Women who lost belly fat after 40:
+didn't eat less.
+Didn't exercise more.
+Here's what changed:"
+```
+
+**CTA Slide 7:**
+```
+👇 HOW TO GET IT:
+• FOLLOW this account 🔒
+• COMMENT GLOW below 💬
+I'll send it straight to your DMs.
+```
+
+**Клипы для cover:** face_1 — face_5 (ротировать, не повторять)
+
+### 🎯 КАРУСЕЛИ ПОД SAFETY (тема travel)
+
+**Темы:**
+- Аэропорт: скрытые ловушки, что персонал не говорит
+- Отель: что скрывают, скрытые сборы
+- Круиз: опасности на борту
+- Любая travel-ниша
+
+**Хук Slide 1 — формула COMMAND INTERRUPT или CONFESSION:**
+```
+"I traveled to 47 countries.
+These 6 airport mistakes
+cost me every time.
+Here's what I stopped doing:"
+```
+
+**CTA Slide 7:**
+```
+👇 HOW TO GET IT:
+• FOLLOW this account 🔒
+• COMMENT SAFETY below 💬
+I'll send the guide straight to your DMs. Safe travels! ✈️
+```
+
+**Клипы для cover:** 32_5 (самолёт), 32_6 (отель), 32_13 (круиз) — по теме
+
+### 🖥️ РЕНДЕР — ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ
+
+```python
+W, H = 1080, 1350
+BG     = (252, 249, 245)  # кремовый
+DARK   = (22, 18, 14)     # почти чёрный
+ACCENT = (180, 110, 60)   # терракота
+MARGIN = 72
+FONT_BLACK = "/usr/share/fonts/truetype/montserrat/Montserrat-Black.ttf"
+FONT_BOLD  = "/usr/share/fonts/truetype/montserrat/Montserrat-Bold.ttf"
+# Cover BOTTOM_ANCHOR = 1290 (не 1520 — карусель, не рилс)
+# Inner font: авто 80→38px, MAX_W = W - 2*MARGIN = 936px
+```
+
+**Файлы карусели:** JPEG, quality=95, именовать slide_01.jpg — slide_07.jpg
+**Публикация:** загружать все 7 файлов вручную в Instagram как карусель (нет автоматической публикации через Videotool пока)
+
+### ⛔ ЗАПРЕЩЕНО В КАРУСЕЛИ:
+- Длинные абзацы текста на слайде (>20 слов)
+- Ч/б фильтр на cover (только COLOR)
+- CALM продукт в карусели
+- Карусель без явного CTA на последнем слайде
