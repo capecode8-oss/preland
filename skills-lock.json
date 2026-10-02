@@ -7,6 +7,12 @@
       "skillPath": "skills/find-skills/SKILL.md",
       "computedHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396"
     },
+    "instagram-carousel": {
+      "source": "jeevanbavandla/instagram-carousel-skill",
+      "sourceType": "github",
+      "skillPath": "instagram-carousel/SKILL.md",
+      "computedHash": "f96a7aac3d3c2672849ea79d0f31186a8f6414598239c87c4c4527481ea2bfcf"
+    },
     "social-reddit-card": {
       "source": "nexu-io/open-design",
       "sourceType": "github",
