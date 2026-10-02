@@ -657,6 +657,68 @@
     "airplane_tray_table_flight_attendant",
     "airport_escalator_handrail_contamination"
   ],
+  "glow5_batch": [
+    {
+      "videotool_id": 357,
+      "date": "2026-10-02",
+      "time_et": "17:00",
+      "topic": "collagen_1200_gut_absorption",
+      "hook": "I spent $1,200 on collagen last year. / A nutritionist told me my gut couldn't absorb it. / My skin changed in 30 days after I stopped.",
+      "clip": "face_3",
+      "music": "10.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow5_1.mp4"
+    },
+    {
+      "videotool_id": 361,
+      "date": "2026-10-02",
+      "time_et": "18:00",
+      "topic": "hormones_belly_45plus_cortisol",
+      "hook": "Women over 45: / that belly isn't from food. / It's your hormones switching teams.",
+      "clip": "face_1",
+      "music": "11.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow5_2.mp4"
+    },
+    {
+      "videotool_id": 358,
+      "date": "2026-10-02",
+      "time_et": "19:00",
+      "topic": "sleep_8hrs_weight_gain_deep_sleep",
+      "hook": "I slept 8 hours every night. / Still gained 11 pounds in 4 months. / A sleep doctor found what my GP missed.",
+      "clip": "face_2",
+      "music": "12.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow5_3.mp4"
+    },
+    {
+      "videotool_id": 359,
+      "date": "2026-10-02",
+      "time_et": "20:00",
+      "topic": "aging_faster_sister_CRP_inflammation",
+      "hook": "I looked older than my sister. / Same genes. Same age. / A doctor found the difference in one blood test.",
+      "clip": "face_4",
+      "music": "14.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow5_4.mp4"
+    },
+    {
+      "videotool_id": 360,
+      "date": "2026-10-02",
+      "time_et": "21:00",
+      "topic": "exhausted_3years_normal_labs_thyroid_T3",
+      "hook": "I was exhausted for 3 years. / My labs were \"normal.\" / A specialist found what my doctor missed.",
+      "clip": "face_5",
+      "music": "19.mp3",
+      "product": "GLOW",
+      "format": "b-roll-hormozi",
+      "file": "glow5_5.mp4"
+    }
+  ],
   "glow4_batch": [
     {
       "videotool_id": 353,
