@@ -3,6 +3,63 @@ name: instagram-carousel
 description: "Design Instagram carousel posts as self-contained HTML files in the user's own brand. Runs a one-time brand setup on first use (name, handle, subtitle, photo, accent color, style preference). 4 design styles: Bold Impact (dark premium), Tweet Post (minimal text), Clean Editorial (light/white), Product Showcase (soft gradient). Fixed 420x525px slides, Poppins font, progress bar, arrow indicators, white CTA slide, PNG + PDF export. Triggers: instagram carousel, carousel design, ig carousel, create carousel, design carousel, carousel post, make a carousel, instagram post design, carousel html, slide deck for instagram, visual carousel"
 ---
 
+# ⛔ KIRA CAROUSEL STANDARD — ВШИТО НАВСЕГДА (Oct 2026)
+
+## ЖЕЛЕЗНОЕ ПРАВИЛО — СТРУКТУРА КАЖДОЙ КАРУСЕЛИ
+
+### SLIDE 1 — COVER (визуальный хук + текстовый хук)
+- **Изображение:** AI-генерация через DeepInfra FLUX-1-schnell (base64, не URL)
+  - Промпт: провокационный, шокирующий, эмоциональный визуал — НЕ нейтральный
+  - Визуал должен ОСТАНОВИТЬ скролл сам по себе, без текста (dramatic lighting, strong emotion, unexpected scene)
+  - Размер: 1080×1350px
+- **Текст:** Bebas Neue Bold, 140px, ALL CAPS
+  - Белые слова + ключевые слова ОРАНЖЕВЫЕ (#FF8C00)
+  - Без плашки — текст прямо поверх изображения
+  - Тёмный gradient overlay снизу (высота ~650px, alpha до 220)
+  - Чёрный outline 2px на все буквы
+  - BOTTOM_ANCHOR = 1300px
+- **Шрифт файл:** `/root/.claude/uploads/060f7d12-589c-5001-aaab-eefd926c8c4c/431d7b77-Bebas_Neue_Bold_700.otf`
+
+### SLIDES 2–6 — INNER FACTS (кремово-бежевый стиль)
+- Фон: BG=(252,249,245) кремовый
+- Акцент: ACCENT=(180,110,60) терракота
+- Шрифт: Montserrat-Black (авто-размер 80→36px)
+- Тег-лейбл сверху: терракотовый прямоугольник + белый текст
+- Терракотовая линия-разделитель
+- Точки прогресса снизу + @thekiramethod
+
+### SLIDE 7 — CTA (кремовый + терракотовый CTA-блок)
+- Финальная мысль сверху (Montserrat-Black 58px)
+- Терракотовый блок: FOLLOW + COMMENT [GLOW/SAFETY/CALM]
+
+## DeepInfra FLUX — КАК ГЕНЕРИТЬ COVER
+
+```python
+import requests, base64
+key = "sk-di-DVLW59vQ8LqVuYsmzJkA21GynYV4qZ6T"
+r = requests.post(
+    "https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX-1-schnell",
+    headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},
+    json={"prompt": prompt, "width": 1080, "height": 1350, "num_inference_steps": 4},
+    timeout=90
+)
+img_b64 = r.json()["images"][0]  # возвращает data:image/jpeg;base64,...
+# decode: base64.b64decode(img_b64.split(",")[1])
+```
+
+⚠️ FLUX-1-schnell = base64 напрямую (работает в контейнере)
+⚠️ FLUX-1.1-pro = URL на внешний CDN (заблокирован прокси — НЕ использовать)
+
+## ПРОМПТ ДЛЯ COVER — ПРАВИЛА
+
+Промпт должен описывать ВИЗУАЛЬНЫЙ ХУК — образ который шокирует/интригует:
+- Тема GLOW (живот/кожа): женщина смотрит в зеркало с шоком, силуэт в ярком свете, крупный план лица с эмоцией
+- Тема SAFE (travel): опасная ситуация в аэропорту/отеле, момент открытия
+- Тема CALM (сон/стресс): 3AM сцена, тревога, момент облегчения
+- Всегда: dramatic lighting, high contrast, cinematic, photorealistic, no text
+
+---
+
 # Instagram Carousel Designer
 
 Generate Instagram carousel posts as self-contained HTML files in **your brand**. Each carousel is a single HTML file with fixed-dimension slides (420x525px) that export as pixel-perfect 1080x1350px PNGs via Playwright.
