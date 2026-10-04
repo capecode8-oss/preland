@@ -28,6 +28,25 @@ description: "Design Instagram carousel posts as self-contained HTML files in th
 - Терракотовая линия-разделитель
 - Точки прогресса снизу + @thekiramethod
 
+## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ЯЗЫК СЛАЙДОВ (вшито навсегда Oct 2026)
+
+**Текст внутренних слайдов пишется КАК РАЗГОВОР, НЕ КАК СТАТЬЯ.**
+
+✅ ПРАВИЛЬНО:
+- "Your body stops making it after 40. Not slowly — it just stops."
+- "Every time you eat sugar, it breaks down what's already there."
+- "The window between 10pm and 2am is when your body repairs itself."
+
+❌ ЗАПРЕЩЕНО — научный/медицинский язык:
+- "Cortisol" → пиши "stress hormone" или "your body goes into panic mode"
+- "Dopamine depletion" → пиши "that flat, nothing-sounds-good feeling"
+- "Collagen synthesis declines" → пиши "your skin starts losing its bounce"
+- "Glycation process" → пиши "sugar attacks your skin from the inside"
+- "Inflammation markers" → пиши "your body stays in fight mode all day"
+- "Adenosine receptors" → пиши "the natural sleep switch in your brain"
+
+**ТЕСТ ПЕРЕД ФИНАЛИЗАЦИЕЙ:** Если 15-летний школьник не понял слово → заменить. Каждое предложение должно читаться как текст другу, не как статья в журнале. Факт должен шокировать или удивить — не образовывать.
+
 ### SLIDE 7 — CTA (кремовый + терракотовый CTA-блок)
 - Финальная мысль сверху (Montserrat-Black 58px)
 - Терракотовый блок: FOLLOW + COMMENT [GLOW/SAFETY/CALM]

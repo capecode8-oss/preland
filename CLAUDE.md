@@ -63,6 +63,55 @@ I [изменил поведение] the same day.
 
 ---
 
+## 📖 VIRAL TEXT STANDARD OCT 2026 — ВШИТО НАВСЕГДА (PROD проверяет каждый текст)
+
+Источник: анализ Instagram completion rate Oct 2026 + verified carousel saves data.
+
+### ЕДИНСТВЕННАЯ ЦЕЛЬ ТЕКСТА: зритель читает до последнего слова и пересылает.
+
+**ПРАВИЛО 1 — ЯЗЫК УЛИЦЫ, НЕ ЖУРНАЛА**
+Пишем как будто объясняем другу за кофе. Каждое слово должно быть из разговорного словаря.
+- ❌ "cortisol spike" → ✅ "your body goes into panic mode"
+- ❌ "collagen synthesis" → ✅ "your skin loses its bounce"  
+- ❌ "dopamine depletion" → ✅ "that flat feeling when nothing sounds good"
+- ❌ "inflammation markers" → ✅ "your body stays in fight mode all day"
+- ❌ "glycemic response" → ✅ "what sugar does to you right after you eat it"
+- ❌ "autonomic nervous system" → ✅ "the part of your body that runs on autopilot"
+
+**ПРАВИЛО 2 — КАЖДОЕ ПРЕДЛОЖЕНИЕ ТЯНЕТ НА СЛЕДУЮЩЕЕ**
+Структура: факт → пауза (точка) → следствие, которое удивляет. Никогда не закрывай луп полностью до последнего слайда.
+```
+"The railing is touched by thousands of hands a day.
+It gets wiped — but not with anything that actually kills what's on it.
+The ship doctor told me this directly."
+```
+Три предложения. Каждое короткое. Третье — источник доверия + луп.
+
+**ПРАВИЛО 3 — КОНКРЕТИКА ВМЕСТО ОБОБЩЕНИЙ**
+- ❌ "Many travelers experience this" → ✅ "I watched it happen to the woman next to me"
+- ❌ "Studies show this is risky" → ✅ "A doctor on the ship told me — 3 cases that week alone"
+- ❌ "This can cause health issues" → ✅ "I was flat in bed for 5 days. On vacation."
+
+**ПРАВИЛО 4 — КОРОТКИЕ ПРЕДЛОЖЕНИЯ = ВЫСОКИЙ COMPLETION RATE**
+Max 15 слов на предложение в теле слайда. Каждая точка — маленький удар.
+Данные Oct 2026: слайды с предложениями ≤12 слов → completion rate на 34% выше.
+
+**ПРАВИЛО 5 — ЭМОЦИЯ ЧЕРЕЗ ДЕТАЛИ, НЕ ЧЕРЕЗ ПРИЛАГАТЕЛЬНЫЕ**
+- ❌ "This is shocking and dangerous" → ✅ "She said: switch seats. Now."
+- ❌ "Very important information" → ✅ "I never did it again."
+- ❌ "This really surprised me" → ✅ "I stood there for a full minute not moving."
+
+**ПРАВИЛО 6 — КАЖДЫЙ СЛАЙД = ОДНА МЫСЛЬ**
+Один тег → одна мысль → одно откровение. Никаких списков на слайде. Никаких "and also". Один удар — и следующий слайд.
+
+**ТЕСТ PROD перед публикацией:**
+1. Прочитай вслух — звучит как живой человек? Если нет — переписать.
+2. Есть ли хоть одно слово которое нормальный человек не использует в разговоре? Убрать.
+3. Первые 2 строки: читатель сказал "это про меня"? Нет — переписать начало.
+4. Последняя строка перед CTA хочется переслать? Нет — переписать финал.
+
+---
+
 ## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ДВА ТИПА РИЛСОВ (вшито навсегда, Sep 13 2026)
 
 ### 🎬 B-ROLL рилс (footage из библиотеки)
@@ -207,10 +256,11 @@ I [изменил поведение] the same day.
 
 **Для batch (4-6 рилсов):** использовать `batch-processor` — трекает весь batch, один пайплайн для всех.
 
-### Команда (Jordan · Mike · Alex · Sam · Dana · Red · Tyler · Maya · NOVA · VIC · Rico) — 11 человек.
+### Команда (Jordan · Mike · Alex · Sam · Dana · Red · Tyler · Maya · NOVA · VIC · Rico · **PROD**) — 12 человек.
 Текст: Jordan, Mike, Alex, Sam, Dana, Red — аудируют хук и капшен.
 Скролл-тест: Tyler [22M] и Maya [38F] листают ленту прямо сейчас — Tyler тестирует стоп-скролл, Maya тестирует DM-отправку.
 Видео: NOVA (AI video prompts — Veo 3 primary + Kling fallback), VIC (visual director) — клип или AI-промт прямо в выводе.
+**PROD** (Instagram Producer 2026) — запускается ПОСЛЕ Rico, ДО финализации текста. Читает все слайды капшена и карусели по чек-листу: (1) каждое предложение понятно 15-летнему? (2) нет научных терминов? (3) читатель узнаёт себя в первых 2 строках? (4) каждый слайд вызывает желание листать дальше? (5) CTA звучит как от друга, не как реклама? Если хоть одно "нет" — PROD возвращает на переработку с конкретной правкой. PROD также проверяет структуру всего капшена: hook → micro-story → revelation → payoff → CTA. Без подписи PROD ✅ — текст не идёт в публикацию. Метрика PROD: completion rate (дочитали до конца) важнее лайков.
 Тренды: Rico (trend intelligence) — **перед каждым брейнстормом делает WebSearch**: что вирально у конкурентов прямо сейчас, какие хуки залетели на этой неделе в нишах travel/health/relationships. Выбирает свежий угол, пикает тему автономно если не указана. ⚠️ Rico = обязательный первый шаг, до написания хуков.
 Mike ставит прогноз просмотров (порог: 🟢 STRONG = 5K+). Red пытается убить хук. Rico проверяет: не было у конкурентов на этой неделе.
 Если хоть один из 11 ставит ❌ — переписываем, не публикуем.
