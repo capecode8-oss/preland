@@ -842,5 +842,85 @@
       "product": "GLOW",
       "file": "glow6_5.mp4"
     }
+  ],
+  "glow7_batch": [
+    {
+      "videotool_id": 367,
+      "date": "2026-10-06",
+      "time_et": "11:00",
+      "format": "#0 feels-illegal",
+      "topic": "sleep_3am",
+      "hook": "This feels almost illegal to know. / Your 3AM wake-up isn't random. / Your body is flagging something.",
+      "clip": "31_2",
+      "music": "2.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_1.mp4"
+    },
+    {
+      "videotool_id": 368,
+      "date": "2026-10-06",
+      "time_et": "12:00",
+      "format": "contradiction-list",
+      "topic": "aging",
+      "hook": "Women who look great at 60: / don't use retinol. / Don't get fillers.",
+      "clip": "1_26",
+      "music": "4.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_2.mp4"
+    },
+    {
+      "videotool_id": 369,
+      "date": "2026-10-06",
+      "time_et": "13:00",
+      "format": "anti-hook",
+      "topic": "sleep",
+      "hook": "I'm not going to tell you / to sleep 8 hours. / I'll show what actually breaks your sleep.",
+      "clip": "face_2",
+      "music": "7.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_3.mp4"
+    },
+    {
+      "videotool_id": 370,
+      "date": "2026-10-06",
+      "time_et": "14:00",
+      "format": "command-interrupt",
+      "topic": "kitchen_safety",
+      "hook": "Never rinse raw chicken. / It sprays germs across your kitchen. / Food-safety experts say stop.",
+      "clip": "1_8",
+      "music": "9.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_4.mp4"
+    },
+    {
+      "videotool_id": 371,
+      "date": "2026-10-06",
+      "time_et": "15:00",
+      "format": "contradiction-list",
+      "topic": "money",
+      "hook": "People who never feel broke: / don't budget. / Don't clip coupons.",
+      "clip": "1_28",
+      "music": "13.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_5.mp4"
+    },
+    {
+      "videotool_id": 372,
+      "date": "2026-10-06",
+      "time_et": "16:00",
+      "format": "contrarian",
+      "topic": "body_signals",
+      "hook": "Stop blaming your age. / Your body has been warning you. / You just can't read it.",
+      "clip": "face_5",
+      "music": "15.mp3",
+      "product": "GLOW",
+      "purpose": "broad-niche traffic test",
+      "file": "glow7_6.mp4"
+    }
   ]
 }
