@@ -780,5 +780,67 @@
       "use_for": "GLOW - yoga/fitness/aging niche",
       "notes": "Benchmark: 4606 likes + 2500 GLOW keywords in 1 week. Remake as Kira version."
     }
+  ],
+  "glow6_batch": [
+    {
+      "videotool_id": 362,
+      "date": "2026-10-06",
+      "time_et": "11:00",
+      "format": "#0 feels-illegal",
+      "hook": "This feels almost illegal to know. / Your belly isn't a calorie problem. / It's a stress-chemistry problem.",
+      "clip": "face_3",
+      "music": "1.mp3",
+      "caption_len": "short",
+      "product": "GLOW",
+      "file": "glow6_1.mp4"
+    },
+    {
+      "videotool_id": 363,
+      "date": "2026-10-06",
+      "time_et": "12:00",
+      "format": "contradiction-list",
+      "hook": "Women with great skin at 55: / don't buy more serums. / Don't take more collagen.",
+      "clip": "face_1",
+      "music": "3.mp3",
+      "caption_len": "long",
+      "product": "GLOW",
+      "file": "glow6_2.mp4"
+    },
+    {
+      "videotool_id": 364,
+      "date": "2026-10-06",
+      "time_et": "13:00",
+      "format": "direct-address",
+      "hook": "If you wake up at 3AM: / it's not random. / Your body is sending a signal.",
+      "clip": "face_5",
+      "music": "5.mp3",
+      "caption_len": "short",
+      "product": "GLOW",
+      "file": "glow6_3.mp4"
+    },
+    {
+      "videotool_id": 366,
+      "date": "2026-10-06",
+      "time_et": "14:00",
+      "format": "audience+dangerous-truth",
+      "hook": "Women over 45: / \"your labs look normal\" / doesn't mean you feel normal.",
+      "clip": "face_2",
+      "music": "6.mp3",
+      "caption_len": "long",
+      "product": "GLOW",
+      "file": "glow6_4.mp4"
+    },
+    {
+      "videotool_id": 365,
+      "date": "2026-10-06",
+      "time_et": "15:00",
+      "format": "contrarian",
+      "hook": "Stop blaming your age for tiredness. / Check your 3PM coffee first.",
+      "clip": "face_4",
+      "music": "8.mp3",
+      "caption_len": "short",
+      "product": "GLOW",
+      "file": "glow6_5.mp4"
+    }
   ]
 }
