@@ -3,30 +3,32 @@ name: instagram-carousel
 description: "Design Instagram carousel posts as self-contained HTML files in the user's own brand. Runs a one-time brand setup on first use (name, handle, subtitle, photo, accent color, style preference). 4 design styles: Bold Impact (dark premium), Tweet Post (minimal text), Clean Editorial (light/white), Product Showcase (soft gradient). Fixed 420x525px slides, Poppins font, progress bar, arrow indicators, white CTA slide, PNG + PDF export. Triggers: instagram carousel, carousel design, ig carousel, create carousel, design carousel, carousel post, make a carousel, instagram post design, carousel html, slide deck for instagram, visual carousel"
 ---
 
-# ⛔ KIRA CAROUSEL STANDARD — ВШИТО НАВСЕГДА (Oct 2026)
+# ⛔ KIRA CAROUSEL STANDARD — HOOK ATLAS (вшито навсегда, Oct 6 2026)
 
-## ЖЕЛЕЗНОЕ ПРАВИЛО — СТРУКТУРА КАЖДОЙ КАРУСЕЛИ
+**Полные правила (6 форматов, структура слайдов, CTA, капшен, публикация) — в `CLAUDE.md`, раздел «КАРУСЕЛИ — СТАНДАРТ HOOK ATLAS». При расхождении выигрывает CLAUDE.md.**
+Рендер: `tools/carousel/gen_atlas_five.py` (kind `fact` / `split`, данные как `tools/carousel/atlas_five.example.json`).
+Тест-формат «Score Yourself» и старый «micro-learning» удалены. Формат выбирается из 6 (Stop X, миф/реальность, история, открытая петля, потеря уже случилась, ошибки опытных); в одном дне формат не повторять.
 
-### SLIDE 1 — COVER (визуальный хук + текстовый хук)
-- **Изображение:** AI-генерация через DeepInfra FLUX-1-schnell (base64, не URL)
-  - Промпт: провокационный, шокирующий, эмоциональный визуал — НЕ нейтральный
-  - Визуал должен ОСТАНОВИТЬ скролл сам по себе, без текста (dramatic lighting, strong emotion, unexpected scene)
-  - Размер: 1080×1350px
-- **Текст:** Bebas Neue Bold, 140px, ALL CAPS
-  - Белые слова + ключевые слова ОРАНЖЕВЫЕ (#FF8C00)
-  - Без плашки — текст прямо поверх изображения
-  - Тёмный gradient overlay снизу (высота ~650px, alpha до 220)
-  - Чёрный outline 2px на все буквы
-  - BOTTOM_ANCHOR = 1300px
-- **Шрифт файл:** `/root/.claude/uploads/060f7d12-589c-5001-aaab-eefd926c8c4c/431d7b77-Bebas_Neue_Bold_700.otf`
+## СТРУКТУРА КАЖДОЙ КАРУСЕЛИ (7 слайдов)
 
-### SLIDES 2–6 — INNER FACTS (кремово-бежевый стиль)
-- Фон: BG=(252,249,245) кремовый
-- Акцент: ACCENT=(180,110,60) терракота
-- Шрифт: Montserrat-Black (авто-размер 80→36px)
-- Тег-лейбл сверху: терракотовый прямоугольник + белый текст
-- Терракотовая линия-разделитель
-- Точки прогресса снизу + @thekiramethod
+### SLIDE 1 — COVER
+- Картинка: DeepInfra FLUX-1-schnell (base64), 1080×1350, цветная, яркий свет. Шок через ситуацию или лицо с прямым взглядом, не через темноту.
+- Текст: Bebas Neue Bold, автоподбор до 160px, ALL CAPS, 3 строки по ≤4 слова, всего ≤10 слов. Последняя строка оранжевая (#FF8C00), остальные белые. Без плашки, чёрный outline 2px, gradient overlay снизу 750px. BOTTOM_ANCHOR=1290. Без @тега.
+- Шрифт: `tools/carousel/fonts/BebasNeue-Bold.otf`
+
+### SLIDE 2 — ВТОРОЙ ХУК
+Instagram повторно показывает пролистанную карусель со слайда 2. Он читается без слайда 1 и держит сам.
+
+### SLIDE 3 — САМОЕ СИЛЬНОЕ
+Главный инсайт не позже слайда 3.
+
+### SLIDE 4 — ЗОНА ОТВАЛА
+Мини-петля внизу + мягкий CTA-контур `SAVE THIS BEFORE YOUR NEXT [TRIP]`.
+
+### SLIDES 5–6 — ПРАКТИКА (кремовый стиль)
+- Фон BG=(252,249,245), акцент ACCENT=(180,110,60), Montserrat-Black авто-размер 84→36px
+- Тег-лейбл сверху + терракотовая линия + точки прогресса + @thekiramethod внизу
+- Формат миф/реальность: слайд пополам, TOURISTS THINK (розовый) / CREW KNOW (зелёный)
 
 ## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ЯЗЫК СЛАЙДОВ (вшито навсегда Oct 2026)
 
@@ -47,15 +49,17 @@ description: "Design Instagram carousel posts as self-contained HTML files in th
 
 **ТЕСТ ПЕРЕД ФИНАЛИЗАЦИЕЙ:** Если 15-летний школьник не понял слово → заменить. Каждое предложение должно читаться как текст другу, не как статья в журнале. Факт должен шокировать или удивить — не образовывать.
 
-### SLIDE 7 — CTA (кремовый + терракотовый CTA-блок)
-- Финальная мысль сверху (Montserrat-Black 58px)
-- Терракотовый блок: FOLLOW + COMMENT [GLOW/SAFETY/CALM]
+### SLIDE 7 — CTA: «назови продукт, назови слово, пообещай DM»
+- Закрывающая мысль сверху → мост «That was 1 of 45 situations I wrote down across 47 countries.» → терракотовый блок с названием продукта и содержимым → белая пилюля `COMMENT SAFETY` / `COMMENT GLOW` → «Follow first so it lands in your inbox. I'll DM you the guide.»
+- Одно главное действие. Старый блок «HOW TO GET IT» без названия продукта запрещён. Без «free», без цены, без эмоджи на картинке.
+- Рендерит `cta2()` в `tools/carousel/gen_atlas_five.py`.
 
 ## DeepInfra FLUX — КАК ГЕНЕРИТЬ COVER
 
 ```python
 import requests, base64
-key = "sk-di-DVLW59vQ8LqVuYsmzJkA21GynYV4qZ6T"
+import os
+key = os.environ["DEEPINFRA_KEY"]  # или файл /tmp/.dik
 r = requests.post(
     "https://api.deepinfra.com/v1/inference/black-forest-labs/FLUX-1-schnell",
     headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"},

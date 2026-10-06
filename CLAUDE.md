@@ -947,113 +947,95 @@ I'll send it straight to your DMs.
 
 ---
 
-## 🖼️ КАРУСЕЛИ — ПРАВИЛА (вшито навсегда, Sep 29 2026)
+## 🖼️ КАРУСЕЛИ — СТАНДАРТ HOOK ATLAS (вшито навсегда, Oct 6 2026)
 
-### ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ПРОДУКТЫ ДЛЯ КАРУСЕЛЕЙ:
-- Карусели делаем ТОЛЬКО под **GLOW** и **SAFETY**
-- Карусели под **CALM** — НЕ ДЕЛАЕМ. Никогда.
-- Если пользователь говорит "карусель" → спросить: под GLOW или SAFETY?
+Заменяет старый «micro-learning» формат и тест-формат «Score Yourself». Старые правила удалены, не использовать.
 
-### 📐 ФОРМАТ КАРУСЕЛИ — 2026 MICRO-LEARNING (единственный правильный формат)
+**Источник:** research Oct 2026 (поисковая выдача + блоги, не метрики нашего аккаунта; цифры не верифицированы). Таблица хуков: https://claude.ai/artifact/NDHvG9sV29tJnnczwCG4XH
+**Главная метрика сравнения форматов:** sends (DM-пересылки) на охват, не лайки. Через 7 дней сравнить форматы по своим цифрам и обновить этот раздел.
 
-**Почему micro-learning:** Instagram 2026 — карусели с 1 фактом на слайд получают в 3x больше saves чем карусели с длинным текстом. Каждый слайд = 1 инсайт, max 15-20 слов.
+### ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО — ПРОДУКТЫ:
+- Карусели ТОЛЬКО под **GLOW** и **SAFETY**. Под CALM — никогда.
+- Пользователь сказал «карусель» без продукта → спросить: GLOW или SAFETY?
+- ⛔ «Score Yourself» / тест да-нет на каждом слайде — НЕ делаем: прямых данных, что он лучше, нет. Вернуть можно только как отдельный A/B-тест по просьбе пользователя.
 
-**Спецификации:**
-- Canvas: **1080×1350px** (4:5 Portrait — стандарт Instagram карусели)
-- Кол-во слайдов: **7** (slide 1 = cover, slides 2-6 = факты, slide 7 = CTA)
-- Шрифт: Montserrat-Black (не italic, не bold — только Black)
-- Текст на слайде: **1 факт, max 4 строки, крупный шрифт (72-80px)**
+### 📐 6 ФОРМАТОВ (выбор по теме; в одном дне/batch формат НЕ повторять)
 
-**Slide 1 — COVER:**
-- Фото Киры (face_1.mp4) — COLOR, не ч/б
-- Белая сплошная плашка снизу (наш стандарт рилсов)
-- Хук по формуле (FORMULA 1 — Contradiction List приоритет)
-- BOTTOM_ANCHOR = 1290px
+| # | Формат | Хук слайда 1 | Слайды 2–6 |
+|---|--------|--------------|------------|
+| 1 | **Stop X** (контрарный) | «Stop trusting the hotel safe. Staff know why.» | S2: почему все верят в обратное. S3: что знает персонал. S4–6: что делать |
+| 2 | **Миф / реальность** | «5 cruise myths that feel safe. Crew disagree.» | Каждый слайд пополам: TOURISTS THINK (розовый) / CREW KNOW (зелёный). 1 миф на слайд |
+| 3 | **История** | «The ATM asked me one question. I said yes.» | Сцена → решение → подвох → цифра → что делаю теперь |
+| 4 | **Открытая петля** | «Wait for slide 4. The rental desk won't tell you.» | Слайд, который обещан на обложке, ДЕЙСТВИТЕЛЬНО самый сильный и стоит на 4 |
+| 5 | **Потеря уже случилась** | «I got in the car that came to me. I should not.» | Что случилось → чем кончилось → 3 правила «до того как» |
+| 6 | **Ошибки опытных** | «3 mistakes experienced travelers make at hotels.» | Ошибка → почему опытные её делают → фикс |
 
-**Slides 2-6 — INNER (факты):**
-- Фон: кремовый BG=(252,249,245)
-- Верхний акцент: терракотовая полоса 6px (ACCENT=#B46E3C)
-- Метка-тег сверху: ACCENT прямоугольник + белый текст (ALL CAPS)
-- Разделитель: терракотовая линия 3px
-- Факт: Montserrat-Black, авто-размер 80→38px, по центру вертикально
-- Снизу: точки прогресса (7 штук, активная = терракот) + @thekiramethod
+**Темы SAFETY (ротировать, не повторять в течение недели):** отельный сейф, круиз-мифы, ATM и конвертация валюты, прокат авто, такси из аэропорта, потеря паспорта, Wi-Fi/кража в аэропорту, скрытые сборы отеля.
+**Темы GLOW (женщины 35–65):** живот и кортизол, кожа и коллаген, усталость и надпочечники, 3AM-пробуждения, кофеин, что тело пытается сказать.
 
-**Slide 7 — CTA:**
-- Такой же фон как inner
-- Короткий факт/крючок сверху
-- Терракотовый CTA-блок снизу с FOLLOW + COMMENT [GLOW/SAFETY]
+Для GLOW формат #1 = CONTRADICTION LIST (см. Hook Matrix выше): «Women who lost belly fat after 40: didn't eat less. Didn't exercise more. Here's what changed:»
 
-### 🎯 КАРУСЕЛИ ПОД GLOW (тема женское здоровье 40+)
+### 🧱 СТРУКТУРА 7 СЛАЙДОВ (одинакова для всех форматов)
 
-**Темы:**
-- Живот: кортизол, почему диеты не работают после 40
-- Кожа: коллаген, что старит изнутри
-- Усталость: надпочечники, 3AM wakeups
-- Любая боль женщин 35-65
+- **S1 — ОБЛОЖКА.** Хук ≤10 слов, 3 строки, ≤4 слова на строку, Bebas Neue автоподбор шрифта до 160px, последняя строка оранжевая. Лицо с прямым взглядом ИЛИ шокирующая ситуация. Яркий свет (правило cover ниже). Без @тега. BOTTOM_ANCHOR=1290.
+- **S2 — ВТОРОЙ ХУК.** Instagram повторно показывает пролистанную карусель, начиная со слайда 2. Слайд 2 обязан работать БЕЗ слайда 1: не «вопрос №1», а самостоятельный сильный факт или сцена.
+- **S3 — САМОЕ СИЛЬНОЕ.** Главный инсайт не позже слайда 3. На слайдах 4–6 люди уходят чаще всего.
+- **S4 — ЗОНА ОТВАЛА.** Мини-петля внизу текста («But that's not the real problem.») + мягкий CTA: плашка-контур `SAVE THIS BEFORE YOUR NEXT [TRIP/CRUISE/…]`.
+- **S5–S6 — ПРАКТИКА.** Конкретное «что делать», с цифрой или предметом (cable lock $12, 90 секунд, 20 секунд с мылом).
+- **S7 — CTA** (формула ниже).
+- **Текст:** 1 мысль на слайд, ≤20 слов, предложения ≤15 слов, язык улицы (Viral Text Standard выше). Мини-петля в 1 строке под текстом на S2–S3.
+- **Ориентиры метрик:** переход S1→S2 60–75% (ниже 50% = хук провален); дочитали до конца 25–40% норма, 45%+ отлично.
 
-**Хук Slide 1 — формула CONTRADICTION LIST (Формула 1):**
+### 🎯 CTA СЛАЙД 7 — ФОРМУЛА «НАЗОВИ ПРОДУКТ, НАЗОВИ СЛОВО, ПООБЕЩАЙ DM»
+
+Старый блок «HOW TO GET IT: FOLLOW / COMMENT» без названия продукта — ЗАПРЕЩЁН: читатель не понимает, что получит.
+Одно главное действие на слайде (комментарий). FOLLOW — как причина («so it lands in your inbox»), не второй призыв.
+
+Раскладка (рендерит `cta2()` в `tools/carousel/gen_atlas_five.py`):
+1. Закрывающая мысль карусели, 40–60px (напр. «The safe is a speed bump. Not a vault.»).
+2. Мост серым 34px: «That was 1 of 45 situations I wrote down across 47 countries.»
+3. Терракотовый блок: название продукта + что внутри.
+4. Белая пилюля: `COMMENT  [WORD]` (слово терракотой, 66px).
+5. Под пилюлей: «Follow first so it lands in your inbox. / I'll DM you the guide.»
+
+**SAFETY:** блок = `THE TRAVEL SAFETY GUIDE` / «45 real situations: airports, hotels, cruise ships. Exactly what to do in each.» / пилюля `COMMENT SAFETY`.
+**GLOW:** блок = `THE GLOW HEALTH BUNDLE` / «4 short books + 4 tools. What your body has been trying to tell you.» / пилюля `COMMENT GLOW`. Мост: «This is what I found after years of thinking it was just aging.»
+⛔ Слова «free» и цена на слайде и в капшене — нет. Эмоджи на картинках слайдов — нет (Montserrat их не рисует), эмоджи только в капшене.
+
+### ✍️ КАПШЕН КАРУСЕЛИ
+1. Первая строка = второй хук (НЕ повтор текста с обложки), открывает новую петлю.
+2. История от первого лица → «here's what I do now» (3–5 конкретных правил) → философская/итоговая строка.
+3. Мост с названием продукта: «Situations like this one happen on every trip. I wrote down 45 of them across 47 countries… That's the Travel Safety Guide.»
+4. `📌 Save this before your next [trip/cruise/flight/…].`
+5. CTA-блок (SAFETY):
 ```
-"Women who lost belly fat after 40:
-didn't eat less.
-Didn't exercise more.
-Here's what changed:"
-```
-
-**CTA Slide 7:**
-```
-👇 HOW TO GET IT:
-• FOLLOW this account 🔒
-• COMMENT GLOW below 💬
-I'll send it straight to your DMs.
-```
-
-**Клипы для cover:** face_1 — face_5 (ротировать, не повторять)
-
-### 🎯 КАРУСЕЛИ ПОД SAFETY (тема travel)
-
-**Темы:**
-- Аэропорт: скрытые ловушки, что персонал не говорит
-- Отель: что скрывают, скрытые сборы
-- Круиз: опасности на борту
-- Любая travel-ниша
-
-**Хук Slide 1 — формула COMMAND INTERRUPT или CONFESSION:**
-```
-"I traveled to 47 countries.
-These 6 airport mistakes
-cost me every time.
-Here's what I stopped doing:"
-```
-
-**CTA Slide 7:**
-```
-👇 HOW TO GET IT:
-• FOLLOW this account 🔒
+👇 HOW TO GET IT: 👇
+• FOLLOW this account 🔒 (so it lands in your inbox)
 • COMMENT SAFETY below 💬
-I'll send the guide straight to your DMs. Safe travels! ✈️
+I'll DM you the Travel Safety Guide: 45 situations, what to do in each. Safe travels! ✈️
 ```
+(GLOW-блок: `COMMENT GLOW` + «I'll DM you the Health Bundle: 4 short books + 4 tools.»)
+6. Длина 1700–1900 символов, без хэштегов, без «link in bio» для GLOW.
 
-**Клипы для cover:** 32_5 (самолёт), 32_6 (отель), 32_13 (круиз) — по теме
+### 🖼️ ОБЛОЖКА — ВИЗУАЛ
+- AI-картинка DeepInfra FLUX-1-schnell (base64), 1080×1350, ЦВЕТНАЯ. Шок через СИТУАЦИЮ, не через темноту.
+- Промпт ВСЕГДА кончается `bright natural light, vibrant colors, cinematic, photorealistic, 4k`. НИКОГДА: dark, moody, low key, night. Ночную сцену (напр. ATM в 11pm) снимать днём.
+- GLOW: face_1–face_5 (ротировать). SAFETY: 32_5 (самолёт), 32_6 (отель), 32_13 (круиз) или FLUX по теме.
 
-### 🖥️ РЕНДЕР — ТЕХНИЧЕСКИЕ ПАРАМЕТРЫ
-
-```python
-W, H = 1080, 1350
-BG     = (252, 249, 245)  # кремовый
-DARK   = (22, 18, 14)     # почти чёрный
-ACCENT = (180, 110, 60)   # терракота
-MARGIN = 72
-FONT_BLACK = "/usr/share/fonts/truetype/montserrat/Montserrat-Black.ttf"
-FONT_BOLD  = "/usr/share/fonts/truetype/montserrat/Montserrat-Bold.ttf"
-# Cover BOTTOM_ANCHOR = 1290 (не 1520 — карусель, не рилс)
-# Inner font: авто 80→38px, MAX_W = W - 2*MARGIN = 936px
-```
-
-**Файлы карусели:** JPEG, quality=95, именовать slide_01.jpg — slide_07.jpg
-**Публикация:** загружать все 7 файлов вручную в Instagram как карусель (нет автоматической публикации через Videotool пока)
+### 🖥️ РЕНДЕР И ПУБЛИКАЦИЯ
+- Инструмент: `tools/carousel/gen_atlas_five.py` (kind=`fact` для форматов 1,3,4,5,6; kind=`split` для формата 2). Данные карусели — JSON как `tools/carousel/atlas_five.example.json`. Запуск: `CAROUSEL_DATA=data.json python3 tools/carousel/gen_atlas_five.py [slug]`.
+- Параметры: 1080×1350, BG=(252,249,245), DARK=(22,18,14), ACCENT=(180,110,60), MARGIN=72, шрифт слайдов Montserrat-Black, обложка Bebas Neue (`tools/carousel/fonts/`). Cover BOTTOM_ANCHOR=1290.
+- Файлы: `carousels/YYYY/MM/<slug>/slide_01.jpg … slide_07.jpg` + `caption.txt`. JPEG quality 95. Перед пушем смотреть контактный лист глазами.
+- Публикация: push в `claude/schedule-5-reels-metricool-ip1tp7` → raw URL → `createCarouselPost` (caption + 7 url + `scheduled_time_iso` в EDT). Интервал между постами 1 час.
+- ⚠️ `createCarouselPost` часто падает по таймауту 60с. После КАЖДОГО таймаута проверить `getCarouselPosts` (создался ли пост в фоне), и только потом повторять, чтобы не плодить дубли. Вызывать по одному.
+- ⚠️ Опубликованную/запланированную карусель через API нельзя ни править, ни удалять (`Unauthorized`). Любая правка слайда или подписи = пользователь удаляет пост в Videotool вручную, мы создаём заново. Поэтому финальный просмотр слайдов и подписи — ДО создания поста.
 
 ### ⛔ ЗАПРЕЩЕНО В КАРУСЕЛИ:
-- Длинные абзацы текста на слайде (>20 слов)
-- Ч/б фильтр на cover (только COLOR)
-- CALM продукт в карусели
-- Карусель без явного CTA на последнем слайде
+- Тест-формат «Score Yourself» (см. выше) и «5 tips» без истории/контраста
+- Абзацы >20 слов на слайде; научные слова
+- CTA без названия продукта; два равноправных призыва на слайде 7
+- Слайд 2, который не читается без слайда 1
+- Обещание на обложке («slide 4»), которое не выполнено на этом слайде
+- Ч/б или тёмная обложка; @тег на обложке
+- Один и тот же формат дважды в день/batch
+- CALM в карусели; слово «free»; хэштеги
