@@ -107,6 +107,70 @@ def video_frame(path, t=2.0, top=60):
     return im.crop((left, top, left + W, top + H))
 
 
+def cover_long(bg, lines, save):
+    """Reference style 1: long bold condensed text, left aligned, bottom, white with black shadow. '' = paragraph gap."""
+    img = bg.copy()
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(ov)
+    for i in range(800):
+        od.rectangle([(0, H - 800 + i), (W, H - 800 + i + 1)], fill=(0, 0, 0, int(215 * i / 800)))
+    img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    d = ImageDraw.Draw(img)
+    for size in range(104, 51, -2):
+        f = lf(BEBAS, size)
+        hs = lh(d, f)
+        total = sum((hs // 2 if l == "" else hs + 8) for l in lines)
+        if all(tw(d, l, f) <= COVER_W for l in lines if l) and total <= 660:
+            break
+    y = 1290 - total
+    for l in lines:
+        if l == "":
+            y += hs // 2
+            continue
+        arrow = l.endswith("\u2192")
+        txt = l[:-1].rstrip() if arrow else l
+        for dx, dy in [(3, 3), (-2, 2), (2, -2), (-2, -2), (0, 3)]:
+            d.text((108 + dx, y + dy), txt, font=f, fill=(0, 0, 0))
+        d.text((108, y), txt, font=f, fill=WHITE)
+        if arrow:
+            ax = 108 + tw(d, txt, f) + 22
+            ay = y + hs // 2 + 4
+            hh = int(hs * 0.32)
+            for off, col in [(3, (0, 0, 0)), (0, WHITE)]:
+                d.rectangle([ax + off, ay - 4 + off, ax + 62 + off, ay + 4 + off], fill=col)
+                d.polygon([(ax + 48 + off, ay - hh + off), (ax + 84 + off, ay + off), (ax + 48 + off, ay + hh + off)], fill=col)
+        y += hs + 8
+    img.save(save, "JPEG", quality=95)
+
+
+def cover_box(bg, text, save):
+    """Reference style 2: dark rounded box with red left bar, bold left-aligned text."""
+    img = bg.copy().convert("RGBA")
+    d0 = ImageDraw.Draw(img)
+    bx0, bx1, pad = 72, W - 72, 40
+    inner = bx1 - bx0 - 2 * pad - 12
+    for size in range(60, 37, -2):
+        f = lf(MBLACK, size)
+        lines = wrap(d0, text, f, inner)
+        step = lh(d0, f) + 14
+        bh = len(lines) * step + 2 * pad - 14
+        if bh <= 520:
+            break
+    y1 = 1290
+    y0 = y1 - bh
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(ov)
+    od.rounded_rectangle([bx0, y0, bx1, y1], radius=22, fill=(18, 18, 20, 232))
+    od.rectangle([bx0, y0 + 6, bx0 + 8, y1 - 6], fill=(214, 40, 40, 255))
+    img = Image.alpha_composite(img, ov).convert("RGB")
+    d = ImageDraw.Draw(img)
+    y = y0 + pad
+    for l in lines:
+        d.text((bx0 + pad + 12, y), l, font=f, fill=WHITE)
+        y += step
+    img.save(save, "JPEG", quality=95)
+
+
 def cover(bg, lines, save):
     img = bg.copy()
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -284,7 +348,13 @@ def build(c):
     total = 7
     print(f"\n== {slug}")
     bg = video_frame(HERE.parents[1] / c["cover_video"], c.get("cover_t", 2.0), c.get("cover_top", 60)) if c.get("cover_video") else flux(c["flux"])
-    cover(bg, c["cover"], out / "slide_01.jpg")
+    style = c.get("cover_style", "bebas")
+    if style == "long":
+        cover_long(bg, c["cover"], out / "slide_01.jpg")
+    elif style == "box":
+        cover_box(bg, c["cover_text"], out / "slide_01.jpg")
+    else:
+        cover(bg, c["cover"], out / "slide_01.jpg")
     for i, s in enumerate(c["slides"]):
         n = i + 2
         p = out / f"slide_0{n}.jpg"
