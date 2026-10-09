@@ -91,6 +91,22 @@ def flux(prompt):
     return Image.open(BytesIO(base64.b64decode(r.json()["images"][0].split(",")[1]))).convert("RGB").resize((W, H))
 
 
+def video_frame(path, t=2.0, top=60):
+    import subprocess, shutil, tempfile
+    ff = shutil.which("ffmpeg")
+    if not ff:
+        import imageio_ffmpeg
+        ff = imageio_ffmpeg.get_ffmpeg_exe()
+    tmp = tempfile.mktemp(suffix=".jpg")
+    subprocess.run([ff, "-y", "-loglevel", "error", "-ss", str(t), "-i", str(path), "-vframes", "1", tmp], check=True)
+    im = Image.open(tmp).convert("RGB")
+    sc = max(W / im.width, H / im.height)
+    im = im.resize((int(im.width * sc) + 1, int(im.height * sc) + 1))
+    top = max(0, min(top, im.height - H))
+    left = (im.width - W) // 2
+    return im.crop((left, top, left + W, top + H))
+
+
 def cover(bg, lines, save):
     img = bg.copy()
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -140,7 +156,7 @@ def fact(idx, total, tag, text, loop, save, soft=False):
             ly += lh(d, lf2) + 10
     if soft:
         f3 = lf(MBLACK, 30)
-        t = "SAVE THIS BEFORE YOUR NEXT TRIP"
+        t = soft if isinstance(soft, str) else "SAVE THIS BEFORE YOUR NEXT TRIP"
         w = tw(d, t, f3)
         by = 1150
         d.rounded_rectangle([(W - w) // 2 - 28, by, (W + w) // 2 + 28, by + 70], radius=35, outline=ACCENT, width=3)
@@ -180,7 +196,20 @@ def split(idx, total, myth, reality, save, soft=False):
     img.save(save, "JPEG", quality=95)
 
 
-def cta2(closing, save):
+PRODUCTS = {
+    "SAFETY": dict(title=["THE TRAVEL", "SAFETY GUIDE"], word="SAFETY",
+                   sub="45 real situations: airports, hotels, cruise ships. Exactly what to do in each.",
+                   bridge="That was 1 of 45 situations I wrote down across 47 countries.",
+                   dm="I'll DM you the guide."),
+    "GLOW": dict(title=["THE GLOW", "HEALTH BUNDLE"], word="GLOW",
+                 sub="4 short books + 4 tools. What your body has been trying to tell you.",
+                 bridge="This is what I found after years of thinking it was just aging.",
+                 dm="I'll DM you the Health Bundle."),
+}
+
+
+def cta2(closing, save, product="SAFETY"):
+    P = PRODUCTS[product]
     img=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(img)
     d.rectangle([(0,0),(W,8)],fill=ACCENT)
     f,lines=fit(d,closing,MBLACK,W-2*MARGIN,230,start=60,stop=40)
@@ -189,15 +218,15 @@ def cta2(closing, save):
         d.text(((W-tw(d,l,f))//2,y),l,font=f,fill=DARK); y+=lh(d,f)+14
     y+=22
     f2=lf(MBOLD,34)
-    for l in wrap(d,"That was 1 of 45 situations I wrote down across 47 countries.",f2,W-2*MARGIN-40):
+    for l in wrap(d,P["bridge"],f2,W-2*MARGIN-40):
         d.text(((W-tw(d,l,f2))//2,y),l,font=f2,fill=(110,95,80)); y+=lh(d,f2)+10
     cy0=y+50; cy1=1190
     d.rounded_rectangle([MARGIN,cy0,W-MARGIN,cy1],radius=26,fill=ACCENT)
     cx=W//2
     ft=lf(MBLACK,64); fs=lf(MBOLD,36); pf=lf(MBLACK,66); sf=lf(MBOLD,34)
-    sub=wrap(d,"45 real situations: airports, hotels, cruise ships. Exactly what to do in each.",fs,W-2*MARGIN-80)
+    sub=wrap(d,P["sub"],fs,W-2*MARGIN-80)
     def layout(draw,yy):
-        for l in ["THE TRAVEL","SAFETY GUIDE"]:
+        for l in P["title"]:
             if draw: d.text((cx-tw(d,l,ft)//2,yy),l,font=ft,fill=WHITE)
             yy+=lh(d,ft)+14
         yy+=14
@@ -205,13 +234,13 @@ def cta2(closing, save):
             if draw: d.text((cx-tw(d,l,fs)//2,yy),l,font=fs,fill=(255,245,230))
             yy+=lh(d,fs)+12
         yy+=44
-        t1,t2="COMMENT","SAFETY"; w1,w2=tw(d,t1,pf),tw(d,t2,pf); gap=24; tot=w1+gap+w2; ph=lh(d,pf)+60
+        t1,t2="COMMENT",P["word"]; w1,w2=tw(d,t1,pf),tw(d,t2,pf); gap=24; tot=w1+gap+w2; ph=lh(d,pf)+60
         if draw:
             d.rounded_rectangle([cx-tot//2-50,yy,cx+tot//2+50,yy+ph],radius=ph//2,fill=WHITE)
             tx=cx-tot//2; ty=yy+28
             d.text((tx,ty),t1,font=pf,fill=DARK); d.text((tx+w1+gap,ty),t2,font=pf,fill=ACCENT)
         yy+=ph+36
-        for l in ["Follow first so it lands in your inbox.","I'll DM you the guide."]:
+        for l in ["Follow first so it lands in your inbox.",P["dm"]]:
             if draw: d.text((cx-tw(d,l,sf)//2,yy),l,font=sf,fill=WHITE)
             yy+=lh(d,sf)+12
         return yy
@@ -254,7 +283,8 @@ def build(c):
     out.mkdir(parents=True, exist_ok=True)
     total = 7
     print(f"\n== {slug}")
-    cover(flux(c["flux"]), c["cover"], out / "slide_01.jpg")
+    bg = video_frame(HERE.parents[1] / c["cover_video"], c.get("cover_t", 2.0), c.get("cover_top", 60)) if c.get("cover_video") else flux(c["flux"])
+    cover(bg, c["cover"], out / "slide_01.jpg")
     for i, s in enumerate(c["slides"]):
         n = i + 2
         p = out / f"slide_0{n}.jpg"
@@ -262,7 +292,7 @@ def build(c):
             split(n, total, s["myth"], s["real"], p, s.get("soft", False))
         else:
             fact(n, total, s["tag"], s["text"], s.get("loop"), p, s.get("soft", False))
-    cta2(c["cta_hook"], out / "slide_07.jpg")
+    cta2(c["cta_hook"], out / "slide_07.jpg", c.get("product", "SAFETY"))
     (out / "caption.txt").write_text(c["caption"], encoding="utf-8")
     for n in range(2, 8):
         kind = "split" if (c["kind"] == "split" and n < 7) else "fact"
