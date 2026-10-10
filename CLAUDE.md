@@ -972,8 +972,41 @@ I'll send it straight to your DMs.
 | 5 | **Потеря уже случилась** | «I got in the car that came to me. I should not.» | Что случилось → чем кончилось → 3 правила «до того как» |
 | 6 | **Ошибки опытных** | «3 mistakes experienced travelers make at hotels.» | Ошибка → почему опытные её делают → фикс |
 
-**Темы SAFETY (ротировать, не повторять в течение недели):** отельный сейф, круиз-мифы, ATM и конвертация валюты, прокат авто, такси из аэропорта, потеря паспорта, Wi-Fi/кража в аэропорту, скрытые сборы отеля.
-**Темы GLOW (женщины 35–65):** живот и кортизол, кожа и коллаген, усталость и надпочечники, 3AM-пробуждения, кофеин, что тело пытается сказать.
+### 🎯 ТЕМЫ КАРУСЕЛЕЙ = ШИРОКИЕ ВИРУСНЫЕ, А НЕ НАУКА (Oct 10 2026, решение владельца)
+
+Карусель НЕ про «сон», «гормоны», «кортизол» лекцией: это скучно и не читают. Берём широкие эмоциональные темы, которые узнаёт любая женщина 35–65 и перешлёт подруге, а Health Bundle подводим логическим мостом в конце. Подтверждение: у трёх разобранных аккаунтов сетка состоит из семьи, развода, детей, мошенников, «что знает медсестра/врач/детектив», а не из лекций о гормонах. Это наблюдение по 3 аккаунтам, сверяем на своих цифрах.
+
+**Банк виральных тем (ротировать, рядом по дням разные категории):**
+1. Семья и дети: «сильная дочь» в семье, взрослая дочь не звонит, письма, которые не отправили, пустое гнездо
+2. Брак и развод: «он перестал замечать», фамилия после развода, тишина за ужином, «ты изменилась»
+3. Мама и бабушка: что мама никогда не говорила, бабушка и внуки от дочери и сына, уход за родителями
+4. Мошенники и безопасность: SMS про штраф за дорогу, звонок «из банка», «внук в беде», коды-пароли в барах
+5. Инсайдеры («профессия знает»): медсестра, врач, детектив, фрод-следователь, стюардесса, ветеринар, консьерж
+6. Путешествия и поездки: что происходит с нами в дороге, отель, круиз, аэропорт, одна после 50
+7. Деньги и независимость: что не говорят про деньги женщинам, пенсия, «я купила себе»
+8. Возраст и стыд: «в твоём возрасте?», «ты слишком стара для», дружба и сравнение, зеркало
+9. Быт и мелочи, которые всех цепляют: соседи, записка на двери, привычки родителей, этикетки в магазине
+**Тело напрямую (сон, живот, кожа, гормоны, кофе) — не чаще 1 карусели из 5**, и только как история, не как лекция.
+
+### 🌉 МОСТ К GLOW — «АВТОВОРОНКА» (тема → поворот → слайд 7)
+
+Читательница пришла за темой, поэтому к продукту ведёт ПОВОРОТ, а не внезапная реклама:
+- **S6 = ПОВОРОТ.** Одна мысль, которая переводит урок темы на неё саму и её тело/заботу о себе («Я годами читала всё, кроме того, что говорило моё тело»).
+- **S7** = закрывающая мысль + `cta_bridge` из таблицы + блок GLOW. В подписи: абзац моста (1–3 предложения) перед `📌 Save…` и CTA-блоком GLOW.
+
+| Тема | `cta_bridge` (слайд 7) | Мост в подписи |
+|------|------------------------|-----------------|
+| Семья, дочери | «I spent years taking care of everyone. Nobody asked about me.» | «I gave my family everything and kept nothing for my own body. When I finally listened to it, I wrote down what it had been telling me for years.» |
+| Брак, развод | «He stopped noticing. Then I realized I had too.» | «It took me years to see I'd stopped noticing myself first. That's when I started reading my body's signals.» |
+| Мама, бабушка | «I watched my mother ignore her body for 40 years. I won't.» | «My mother never talked about her body. I decided to learn what mine was trying to say before it was too late to listen.» |
+| Мошенники | «I learned to read every warning sign except the ones my body sends.» | «We know how to spot a scam. Almost nobody teaches us how to spot our own body's warning signs. I put them in one place.» |
+| Инсайдеры | «A nurse taught me to read warning signs. I'd never read my own.» | «Professionals notice what the rest of us miss. I started noticing what my body had been telling me, and wrote it all down.» |
+| Путешествия | «Every trip showed me what travel does to a woman's body after 40.» | «On the road I noticed things about my body I used to blame on age. They weren't age.» |
+| Деньги | «I invested in everything except the one thing I can't replace.» | «I planned my money for decades and never planned for my body. This is the plan I wish I'd had at 40.» |
+| Возраст и стыд | «"At your age?" Sometimes it's the first time you put yourself on the list.» | «Taking care of yourself later in life isn't starting too late. It's the first time you finally put yourself on the list.» |
+| Быт и мелочи | «We read every label. Nobody reads what their body is telling them.» | «We check labels, bills and fine print. I started reading what my body had been trying to tell me.» |
+
+⚠️ Чем дальше тема от тела, тем выше охват и подписки, но ниже доля комментариев `GLOW`. Меряем долю по категориям (комментарии GLOW на охват) и убираем категории, которые не конвертят.
 
 Для GLOW формат #1 = CONTRADICTION LIST (см. Hook Matrix выше): «Women who lost belly fat after 40: didn't eat less. Didn't exercise more. Here's what changed:»
 
@@ -1012,7 +1045,8 @@ I'll send it straight to your DMs.
 - **S2 — ВТОРОЙ ХУК.** Instagram повторно показывает пролистанную карусель, начиная со слайда 2. Слайд 2 обязан работать БЕЗ слайда 1: не «вопрос №1», а самостоятельный сильный факт или сцена.
 - **S3 — САМОЕ СИЛЬНОЕ.** Главный инсайт не позже слайда 3. На слайдах 4–6 люди уходят чаще всего.
 - **S4 — ЗОНА ОТВАЛА.** Мини-петля внизу текста («But that's not the real problem.») + мягкий CTA: плашка-контур `SAVE THIS BEFORE YOUR NEXT [TRIP/CRUISE/…]`.
-- **S5–S6 — ПРАКТИКА.** Конкретное «что делать», с цифрой или предметом (cable lock $12, 90 секунд, 20 секунд с мылом).
+- **S5 — ПРАКТИКА / ИТОГ ТЕМЫ.** Конкретное «что делать» или развязка истории, с цифрой или предметом (cable lock $12, 90 секунд, письма, записка на двери).
+- **S6 — ПОВОРОТ К ПРОДУКТУ.** Одна мысль, которая логично переводит тему на самочувствие и заботу о себе (см. мост ниже). Без рекламы и названия продукта, только «у меня то же самое с телом».
 - **S7 — CTA** (формула ниже).
 - **Текст:** 1 мысль на слайд, ≤20 слов, предложения ≤15 слов, язык улицы (Viral Text Standard выше). Мини-петля в 1 строке под текстом на S2–S3.
 - **Ориентиры метрик:** переход S1→S2 60–75% (ниже 50% = хук провален); дочитали до конца 25–40% норма, 45%+ отлично.
