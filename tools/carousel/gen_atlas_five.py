@@ -130,17 +130,20 @@ def _long_layout(d, lines, boost):
     if cur:
         blocks.append((" ".join(cur), False))
     maxw = COVER_W + 40
-    for size in range(size + boost, 51, -2):
+    for size in range(min(size + boost, 96), 51, -2):
         f = lf(BEBAS, size)
         hs = lh(d, f)
-        rows = []
-        for i, (t, a) in enumerate(blocks):
-            if i:
-                rows.append(("", False))
-            w = wrap(d, t, f, maxw - (110 if a else 0))
-            rows += [(x, a and k == len(w) - 1) for k, x in enumerate(w)]
+        for shrink in range(0, 260, 30):
+            rows = []
+            for i, (t, a) in enumerate(blocks):
+                if i:
+                    rows.append(("", False))
+                w = wrap(d, t, f, maxw - shrink - (110 if a else 0))
+                rows += [(x, a and k == len(w) - 1) for k, x in enumerate(w)]
+            widow = any(len(rows[i][0].split()) == 1 and rows[i - 1][0] != "" for i in range(1, len(rows)) if rows[i][0])
+            if not widow:
+                break
         total = sum((hs // 2 if t == "" else hs + 8) for t, _ in rows)
-        widow = any(len(w.split()) == 1 and rows[i - 1][0] for i, (w, _) in enumerate(rows) if i and w and rows[i - 1][0])
         if total <= 800 and not widow:
             break
     print("  cover font size:", size)
