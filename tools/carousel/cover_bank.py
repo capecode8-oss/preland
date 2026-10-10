@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[2]
 FOOTAGE = ROOT / "footage"
 OUT = ROOT / "assets" / "covers"
 MANIFEST = OUT / "manifest.json"
+MANIFEST_GEN = OUT / "manifest_gen.json"
 USAGE = OUT / "usage_log.json"
 W, H = 1080, 1350
 
@@ -123,7 +124,7 @@ def _load(p, default):
 
 def pick(product, tags=None, log=True, avoid_days=14):
     """Least recently used cover for the product; prefers tag matches; never reuses within avoid_days while others exist."""
-    manifest = _load(MANIFEST, [])
+    manifest = _load(MANIFEST, []) + _load(MANIFEST_GEN, [])
     usage = _load(USAGE, {})
     pool = [m for m in manifest if product in m["products"]]
     if tags:
@@ -151,7 +152,7 @@ if __name__ == "__main__":
         build()
     elif cmd == "list":
         usage = _load(USAGE, {})
-        for m in _load(MANIFEST, []):
+        for m in _load(MANIFEST, []) + _load(MANIFEST_GEN, []):
             if len(sys.argv) > 2 and sys.argv[2] not in m["products"]:
                 continue
             print(f"{m['id']:<20} {','.join(m['products']):<12} {','.join(m['tags']):<34} last={usage.get(m['id'], '-')}")
