@@ -351,7 +351,7 @@ def build(c):
     print(f"\n== {slug}")
     if c.get("cover_bank"):
         from cover_bank import pick
-        cpath, cm = pick(c["cover_bank"], c.get("cover_tags"))
+        cpath, cm = pick(c["cover_bank"], c.get("cover_tags"), exclude_tags=c.get("cover_exclude", ["face"]))
         print("  cover from bank:", cm["id"])
         (out / "cover_id.txt").write_text(cm["id"])
         bg = Image.open(cpath).convert("RGB")
