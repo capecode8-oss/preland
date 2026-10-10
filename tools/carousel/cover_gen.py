@@ -189,6 +189,8 @@ def gen_one(spec, uri, retries=2):
 
 
 def main(ids):
+    if not os.environ.get("ALLOW_IMAGE_GEN"):
+        raise SystemExit("Image generation is disabled (saves money). Set ALLOW_IMAGE_GEN=1 only when the owner explicitly asks.")
     ensure_ref()
     uri = _uri()
     done = {m["id"]: m for m in json.loads(MANIFEST_GEN.read_text())} if MANIFEST_GEN.exists() else {}

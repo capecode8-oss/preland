@@ -356,6 +356,8 @@ def build(c):
     elif c.get("cover_video"):
         bg = video_frame(HERE.parents[1] / c["cover_video"], c.get("cover_t", 2.0), c.get("cover_top", 60))
     else:
+        if not os.environ.get("ALLOW_IMAGE_GEN"):
+            raise SystemExit("Image generation is disabled (saves money). Use cover_bank / cover_video, or set ALLOW_IMAGE_GEN=1 only when the owner asks.")
         bg = flux(c["flux"])
     style = c.get("cover_style", "bebas")
     if style == "long":
