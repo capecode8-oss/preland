@@ -272,8 +272,10 @@ PRODUCTS = {
 }
 
 
-def cta2(closing, save, product="SAFETY"):
-    P = PRODUCTS[product]
+def cta2(closing, save, product="SAFETY", bridge=None):
+    P = dict(PRODUCTS[product])
+    if bridge:
+        P["bridge"] = bridge
     img=Image.new("RGB",(W,H),BG); d=ImageDraw.Draw(img)
     d.rectangle([(0,0),(W,8)],fill=ACCENT)
     f,lines=fit(d,closing,MBLACK,W-2*MARGIN,230,start=60,stop=40)
@@ -373,7 +375,7 @@ def build(c):
             split(n, total, s["myth"], s["real"], p, s.get("soft", False))
         else:
             fact(n, total, s["tag"], s["text"], s.get("loop"), p, s.get("soft", False))
-    cta2(c["cta_hook"], out / "slide_07.jpg", c.get("product", "SAFETY"))
+    cta2(c["cta_hook"], out / "slide_07.jpg", c.get("product", "SAFETY"), c.get("cta_bridge"))
     (out / "caption.txt").write_text(c["caption"], encoding="utf-8")
     for n in range(2, 8):
         kind = "split" if (c["kind"] == "split" and n < 7) else "fact"
