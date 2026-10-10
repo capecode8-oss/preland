@@ -13,7 +13,7 @@ description: "Design Instagram carousel posts as self-contained HTML files in th
 
 ### SLIDE 1 — COVER
 - Картинка: DeepInfra FLUX-1-schnell (base64), 1080×1350, цветная, яркий свет. Шок через ситуацию или лицо с прямым взглядом, не через темноту.
-- Текст: Bebas Neue Bold, автоподбор до 160px, ALL CAPS, 3 строки по ≤4 слова, всего ≤10 слов. Последняя строка оранжевая (#FF8C00), остальные белые. Без плашки, чёрный outline 2px, gradient overlay снизу 750px. BOTTOM_ANCHOR=1290. Без @тега.
+- Текст: ДЛИННЫЙ хук 20–40 слов по формуле SETUP + TWIST + ОТКРЫТАЯ ПЕТЛЯ (:) — шаблоны и правила в `CLAUDE.md`, «ХУК ОБЛОЖКИ КАРУСЕЛИ». Стили: `cover_style: box` (тёмная плашка с красной полосой, Montserrat Black, автоподбор 60→38px) или `long` (белый Bebas слева, пустая строка = разрыв блоков, стрелка → рисуется кодом). 2–3 слова ЗАГЛАВНЫМИ. Старое «≤10 слов, 3 строки» отменено для каруселей.
 - Шрифт: `tools/carousel/fonts/BebasNeue-Bold.otf`
 
 ### SLIDE 2 — ВТОРОЙ ХУК
