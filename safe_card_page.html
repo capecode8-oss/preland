@@ -1,0 +1,535 @@
+<title>Traveler's Safety Card</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #111827;
+  --ink-2: #374151;
+  --muted: #6b7280;
+  --ground: #f7f5f0;
+  --surface: #ffffff;
+  --rule: #e0d8cc;
+  --navy: #1a3d6b;
+  --navy-dark: #122a4d;
+  --navy-light: #eef3fb;
+  --amber: #b45309;
+  --amber-hover: #92400e;
+  --amber-light: #fff8ee;
+  --green: #15803d;
+  --green-light: #f0fdf4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #f0ebe3;
+    --ink-2: #c8c0b4;
+    --muted: #9ca3af;
+    --ground: #131110;
+    --surface: #1c1916;
+    --rule: #2c2722;
+    --navy: #7aa8e0;
+    --navy-dark: #0d1a2e;
+    --navy-light: #0e1e35;
+    --amber-light: #1f1208;
+    --green-light: #0c1f12;
+  }
+}
+:root[data-theme="dark"] {
+  --ink: #f0ebe3;
+  --ink-2: #c8c0b4;
+  --muted: #9ca3af;
+  --ground: #131110;
+  --surface: #1c1916;
+  --rule: #2c2722;
+  --navy: #7aa8e0;
+  --navy-dark: #0d1a2e;
+  --navy-light: #0e1e35;
+  --amber-light: #1f1208;
+  --green-light: #0c1f12;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--ground);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.65;
+  padding-inline: 20px;
+  padding-block: 0 80px;
+  min-height: 100vh;
+}
+
+/* ── HEADER BAR ── */
+.header-bar {
+  background: var(--navy-dark);
+  color: rgba(255,255,255,0.55);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-inline: -20px;
+  margin-bottom: 0;
+}
+
+/* ── HERO ── */
+.hero {
+  background: #1a3d6b;
+  margin-inline: -20px;
+  padding: 56px 40px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  bottom: -80px; left: 50%;
+  transform: translateX(-50%);
+  width: 600px; height: 200px;
+  border-radius: 50%;
+  background: rgba(180,83,9,0.12);
+  pointer-events: none;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #f5c97a;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(30px, 7vw, 48px);
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 1.1;
+  text-wrap: balance;
+  margin-bottom: 16px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #f5c97a;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.65);
+  max-width: 38ch;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+/* ── CARD MOCKUP ── */
+.card-wrap {
+  max-width: 400px;
+  margin-inline: auto;
+  margin-top: -28px;
+  padding-inline: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.card-mockup {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(26,61,107,0.18), 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.card-top {
+  background: #1a3d6b;
+  padding: 20px 24px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-top-brand {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+.card-top-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+.card-shield {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.card-body {
+  padding: 20px 24px 24px;
+}
+.card-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.card-tip {
+  display: flex;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+.card-tip:last-child { border-bottom: none; }
+.card-num {
+  flex-shrink: 0;
+  width: 18px; height: 18px;
+  background: #1a3d6b;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  margin-top: 1px;
+}
+.card-tip-text strong { color: var(--ink); font-weight: 600; }
+
+/* ── WRAP ── */
+.wrap { max-width: 560px; margin-inline: auto; }
+
+/* ── WHAT YOU GET ── */
+.what-section {
+  padding-block: 52px;
+  border-bottom: 1px solid var(--rule);
+}
+.section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.what-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(22px, 5vw, 28px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 8px;
+  text-wrap: balance;
+}
+.what-sub {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.tip-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.tip-row {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.tip-row:last-child { border-bottom: none; }
+.tip-icon {
+  flex-shrink: 0;
+  width: 36px; height: 36px;
+  background: var(--navy-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  margin-top: 1px;
+}
+.tip-content {}
+.tip-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.tip-desc {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.55;
+}
+
+/* ── TRUST ROW ── */
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  padding-block: 28px;
+  border-bottom: 1px solid var(--rule);
+}
+.trust-item {
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.trust-check { color: var(--green); font-weight: 700; }
+
+/* ── CTA ── */
+.cta-section {
+  padding-block: 48px;
+  text-align: center;
+}
+.cta-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 5vw, 26px);
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 8px;
+  text-wrap: balance;
+}
+.cta-sub {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+.cta-btn {
+  display: inline-block;
+  background: var(--amber);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 18px 36px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(180,83,9,0.28);
+  transition: background 0.15s;
+  width: 100%;
+  max-width: 380px;
+}
+.cta-btn:hover { background: var(--amber-hover); }
+.cta-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+/* ── UPSELL STRIP ── */
+.upsell {
+  background: var(--navy-light);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  padding: 22px 24px;
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .upsell { background: var(--navy-light); border-color: #1a2e50; }
+}
+:root[data-theme="dark"] .upsell { background: var(--navy-light); border-color: #1a2e50; }
+
+.upsell-icon { font-size: 24px; flex-shrink: 0; }
+.upsell-text {}
+.upsell-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 4px;
+}
+.upsell-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.upsell-desc { font-size: 13.5px; color: var(--ink-2); line-height: 1.5; }
+.upsell-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--navy);
+  padding-bottom: 1px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .upsell-link { color: var(--navy); border-color: var(--navy); }
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  padding-block: 32px;
+  line-height: 1.8;
+  border-top: 1px solid var(--rule);
+  margin-top: 20px;
+}
+footer a { color: var(--muted); }
+
+@media (max-width: 420px) {
+  .hero { padding: 44px 20px 56px; }
+  .card-top { padding: 16px 18px; }
+  .card-body { padding: 16px 18px 20px; }
+  .upsell { flex-direction: column; gap: 10px; }
+}
+</style>
+
+<!-- HEADER -->
+<div class="header-bar">The Kira Method · Travel Safety</div>
+
+<!-- HERO -->
+<div class="hero">
+  <p class="hero-eyebrow">Yours to keep — no purchase needed</p>
+  <h1>The Traveler's<br><em>Safety Card</em></h1>
+  <p class="hero-sub">5 things most travelers only learn after something already went wrong.</p>
+</div>
+
+<!-- CARD MOCKUP -->
+<div class="card-wrap">
+  <div class="card-mockup">
+    <div class="card-top">
+      <div>
+        <div class="card-top-brand">@thekiramethod</div>
+        <div class="card-top-title">Traveler's Safety Card</div>
+      </div>
+      <div class="card-shield">🛡️</div>
+    </div>
+    <div class="card-body">
+      <div class="card-label">5 Rules · Print &amp; Keep</div>
+      <div class="card-tip">
+        <div class="card-num">1</div>
+        <div class="card-tip-text"><strong>Always ask for two key cards</strong> at hotel check-in — the desk assumes a companion is coming.</div>
+      </div>
+      <div class="card-tip">
+        <div class="card-num">2</div>
+        <div class="card-tip-text"><strong>Check the top of the balcony door</strong> for the second flip lock before bed.</div>
+      </div>
+      <div class="card-tip">
+        <div class="card-num">3</div>
+        <div class="card-tip-text"><strong>Screenshot your driver's name and plate</strong> before any taxi or rideshare.</div>
+      </div>
+      <div class="card-tip">
+        <div class="card-num">4</div>
+        <div class="card-tip-text"><strong>Check your onboard account</strong> every morning on a cruise — not just at checkout.</div>
+      </div>
+      <div class="card-tip">
+        <div class="card-num">5</div>
+        <div class="card-tip-text"><strong>Never confirm your room number</strong> if it's said out loud at the front desk.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="wrap">
+
+  <!-- WHAT YOU GET -->
+  <section class="what-section">
+    <p class="section-label">What's inside</p>
+    <h2>Five rules that fit on one card.</h2>
+    <p class="what-sub">Tested across 47 countries. The kind of thing a local or an industry insider tells you — not a travel blog.</p>
+
+    <ul class="tip-list">
+      <li class="tip-row">
+        <div class="tip-icon">🏨</div>
+        <div class="tip-content">
+          <div class="tip-title">The two-key rule at hotel check-in</div>
+          <div class="tip-desc">One small ask changes how the front desk — and everyone nearby — reads your situation.</div>
+        </div>
+      </li>
+      <li class="tip-row">
+        <div class="tip-icon">🚢</div>
+        <div class="tip-content">
+          <div class="tip-title">The balcony door that doesn't fully lock</div>
+          <div class="tip-desc">Every cruise cabin has a second lock most passengers never find. It's not at eye level.</div>
+        </div>
+      </li>
+      <li class="tip-row">
+        <div class="tip-icon">🚖</div>
+        <div class="tip-content">
+          <div class="tip-title">The taxi name-sign that proves nothing</div>
+          <div class="tip-desc">A driver holding your name at arrivals is not verification. Here's what actually is.</div>
+        </div>
+      </li>
+      <li class="tip-row">
+        <div class="tip-icon">💳</div>
+        <div class="tip-content">
+          <div class="tip-title">Cruise charges added while you sleep</div>
+          <div class="tip-desc">Final-night additions hit your account after midnight. One morning check catches them before lines form.</div>
+        </div>
+      </li>
+      <li class="tip-row">
+        <div class="tip-icon">🔑</div>
+        <div class="tip-content">
+          <div class="tip-title">When to ask for a different room</div>
+          <div class="tip-desc">If your room number is spoken out loud at the front desk, you ask to move. Every time. Non-negotiable.</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- TRUST -->
+  <div class="trust-row">
+    <div class="trust-item"><span class="trust-check">✓</span> Instant download · PDF</div>
+    <div class="trust-item"><span class="trust-check">✓</span> Print and keep in your bag</div>
+    <div class="trust-item"><span class="trust-check">✓</span> No purchase · No email required</div>
+  </div>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <h2>Download the card.</h2>
+    <p class="cta-sub">One page. Print it before you leave or keep it on your phone.</p>
+    <a href="https://raw.githubusercontent.com/capecode8-oss/preland/claude/schedule-5-reels-metricool-ip1tp7/traveler-safety-card.pdf" class="cta-btn" download="Kira-Safety-Card.pdf">↓ Get My Safety Card</a>
+    <p class="cta-note">
+      Or comment <strong>SAFETY</strong> under any post on<br>
+      <a href="https://instagram.com/thekiramethod" style="color:var(--amber);font-weight:600;">@thekiramethod</a> and it goes straight to your DMs.
+    </p>
+  </section>
+
+  <!-- UPSELL -->
+  <div class="upsell">
+    <div class="upsell-icon">📖</div>
+    <div class="upsell-text">
+      <div class="upsell-label">Want the full guide?</div>
+      <div class="upsell-title">Travel Safety Guide — 47 Countries</div>
+      <div class="upsell-desc">45+ situations across airports, hotels, cruise ships, restaurants, and all-inclusive resorts. Everything you need before you leave — $14.90.</div>
+      <a href="https://app.lava.top/products/586f3c31-38c0-43e4-8f4e-c95659f1f627" class="upsell-link">See the full guide →</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 The Kira Method · <a href="https://instagram.com/thekiramethod">@thekiramethod</a><br>
+    Questions? DM on Instagram
+  </footer>
+
+</div>

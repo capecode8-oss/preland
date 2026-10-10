@@ -1,0 +1,845 @@
+---
+name: kira-captions
+description: Write Instagram/TikTok captions for @thekiramethod reels. Runs the full production team audit before finalizing. Use after kira-hooks — every reel needs both a hook AND a caption.
+---
+
+# KIRA Caption System
+## Niche: Travel · Life Hacks · Food · Health · Money
+
+---
+
+## ⛔ ЖЕЛЕЗНОЕ ПРАВИЛО #0 — ХУК НА ВИДЕО ≠ НАЧАЛО КАПШЕНА (вшито навсегда)
+
+**Первая строка капшена НИКОГДА не повторяет и не перефразирует хук с видео.**
+
+- Видео хук = стоп-скролл в ленте
+- Первые ~125 символов капшена = второй стоп-скролл после тапа "...ещё"
+- Это РАЗНЫЕ крючки. Один и тот же текст = потеря второго шанса удержать зрителя.
+
+**Как писать:**
+- Видео заканчивается на обещании ("what's in the water", "what's on the handles")
+- Капшен начинается с ОТВЕТА или нового поворота — следующий шаг истории
+- Пример: видео = "A flight attendant told me what's in the water." → капшен = "She said none of the crew drink hot drinks. Not coffee. Not tea. Not the soup."
+
+❌ ЗАПРЕЩЕНО: копировать первую строку хука в капшен
+❌ ЗАПРЕЩЕНО: перефразировать хук ("I ordered coffee" → "On my last flight I got coffee" — то же самое)
+✅ ОБЯЗАТЕЛЬНО: новый угол, новая информация, продолжение истории
+
+**Jordan проверяет** первые 125 символов капшена: нет ли повтора с видео хуком. Если есть — переписать.
+
+---
+
+## 🔴 ЗАПРЕТ FREE + КОДОВЫЕ СЛОВА — ЖЕЛЕЗНОЕ ПРАВИЛО (вшито навсегда, Sam проверяет каждый капшен)
+
+**⛔ СЛОВО "FREE" — ПОЛНОСТЬЮ ЗАПРЕЩЕНО. Instagram банит аккаунты за него.**
+Нельзя использовать ни в каком регистре: free / Free / FREE — всё запрещено. Навсегда.
+
+**⛔ ЗАПРЕЩЕНО навсегда:**
+- ❌ `FREE card` / `free guide` / `get it free` / `FREE 🎁`
+- ❌ `yours to keep` / `🎁 one-page card` / `safety card` — старая воронка, карточки больше нет
+- ❌ `I put together a 🎁 safety card` — удалено навсегда
+
+**Кодовые слова** — всегда CAPS:
+   - ✅ `Comment SAFETY` (для SAFE рилсов)
+   - ✅ `Comment CALM` (для CALM рилсов)
+   - ❌ `comment safety` / `Comment Safety` — запрещено
+
+**Sam проверяет** перед финализацией: найди "free", "yours to keep", "safety card", "one-page card" — всё удалить. Найди кодовое слово — убедиться что CAPS.
+
+---
+
+## ⚡ NEURO BASE — ОБЯЗАТЕЛЬНЫЙ ПРОТОКОЛ ДЛЯ ВСЕЙ КОМАНДЫ
+
+**Каждый специалист команды работает по этому фреймворку при написании капшенов. Зрители (Tyler, Maya, Focus Group) — НЕ используют. Они просто читают и реагируют.**
+
+### 🧠 6 PRIMAL TRIGGERS — БИОЛОГИЧЕСКИЙ УРОВЕНЬ (вшито в каждого навсегда)
+
+| # | Trigger | Биологический механизм | Активирует |
+|---|---------|------------------------|------------|
+| **T1** | **SURVIVAL THREAT** | Амигдала — "я или угроза / ты теряешь что-то прямо сейчас" | Страх, потеря, опасность |
+| **T2** | **SEXUAL SIGNAL** | Дофамин — напряжение, запрет, красота, forbidden | Притяжение, любопытство |
+| **T3** | **STATUS THREAT / GAIN** | Кортизол / дофамин — "они знают то, чего не знаешь ты" | Зависть, страх отстать |
+| **T4** | **PATTERN BREAK** | Ориентировочный рефлекс — в кадре что-то НЕПРАВИЛЬНО | Непроизвольная остановка |
+| **T5** | **CURIOSITY GAP** | Когнитивный зуд — мозг физически не может закрыть открытый луп | Невозможность свайпнуть |
+| **T6** | **SOCIAL PROOF SHOCK** | Социальное сравнение — "все уже знают, только ты нет" | Стыд, срочность |
+
+**Применение в капшене:**
+- SECOND HOOK → T5 CURIOSITY GAP: открыть новый луп сразу после хука видео
+- CONTEXT → T4 PATTERN BREAK: "here's what actually happens that no one tells you"
+- DETAIL → T1 SURVIVAL THREAT или T3 STATUS THREAT: конкретная угроза или потеря
+- PAYOFF → T6 SOCIAL PROOF SHOCK: "insiders know this / locals don't tell tourists"
+- CTA → T5 CURIOSITY GAP: открытый луп закрывается только в DM
+
+**Каждый капшен должен содержать минимум 2 триггера. Команда называет их перед финализацией.**
+
+---
+
+### 5 ПСИХОЛОГИЧЕСКИХ РЫЧАГОВ
+
+| # | Рычаг | Механизм | Применение в капшене |
+|---|-------|----------|----------------------|
+| L1 | **RESOURCE THREAT** | Угроза деньгам/времени/здоровью | Конкретная сумма потери в DETAIL блоке |
+| L2 | **INFORMATION GAP** | Незакрытый когнитивный зуд | Второй хук (SECOND HOOK) открывает новый луп |
+| L3 | **AUTHORITY DISRUPTION** | Институт обманывает | PAYOFF раскрывает кто знал и молчал |
+| L4 | **SUNK COST + REGRET** | Ты делал это неправильно годами | CONTEXT блок — "you've done this every time" |
+| L5 | **SOCIAL PROOF INVERSION** | Все уже знают — только ты нет | DETAIL — инсайдерский факт который "не говорят туристам" |
+
+### ACID TEST ДЛЯ КАПШЕНОВ
+
+| Тест | Что проверяет | Порог |
+|------|---------------|-------|
+| **T2 — Universal Clarity** | Dorothy (74) понимает без переспрашивания? | 8+/10 |
+| **T3 — Curiosity Depth** | После второго хука — невозможно не читать дальше? | 7+/10 |
+| **T4 — Send Trigger** | Назови конкретного человека которому отправят этот капшен | 7+/10 |
+
+**ПОРОГ ПУБЛИКАЦИИ капшена: T2+T3+T4 = 22+/30. Ниже — переписать.**
+
+### CROSS-GENERATIONAL CALIBRATION ДЛЯ КАПШЕНОВ
+- **20–45:** future-facing в SECOND HOOK — "here's what you risk next time"
+- **45–70:** past-facing в CONTEXT — "every time you've done this, it happened"
+- Капшен читает 35-55 лет в большинстве → balance, tip past-facing в CONTEXT
+
+---
+
+## ⛔ ДВА ПРОДУКТА — ЧИТАТЬ ПЕРВЫМ (вшито навсегда)
+
+Перед написанием капшена — определить продукт по контексту запроса:
+
+### 🌍 TRAVEL продукт → кодовое слово **SAFETY**
+- Тема: travel hacks / airport / hotel / cruise / ATM / restaurant scam
+- Продукт: Travel Safety Guide — 47 стран, 45+ ситуаций, $14.90, instant download (Lava.top)
+- Воронка: Comment SAFETY → бот отправляет ссылку на Lava.top preland → покупка. Никакой бесплатной карточки.
+- CTA в капшене: `Comment SAFETY below and I'll send you the guide directly.`
+- Мост к CTA (утверждён фокус-группой 24/100 DM sends):
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+### 😴 СОН продукт → кодовое слово **CALM**
+- Тема: сон / 3AM wakeup / insomnia / sleep hacks / health
+- Лид-магнит: The 3AM Calm Card (4 steps, бесплатно)
+- CTA в капшене: `Comment CALM and I'll send it to you directly.`
+- Мост к CTA: тревога / стресс → "can't fall back asleep at 3AM"
+- ⛔ НЕ ПИСАТЬ "link in bio" — bio ссылка ведёт ТОЛЬКО на Travel (SAFE). В CALM капшене — только Comment CALM, никакой ссылки.
+
+### ❌ ЗАПРЕЩЕНО:
+- Писать CALM в travel-рилсе
+- Писать SAFE в sleep-рилсе
+- Путать продукты местами
+
+---
+
+## ⭐ ЖУРНАЛИСТСКИЕ ТЕХНИКИ УДЕРЖАНИЯ — ВШИТО НАВСЕГДА (сентябрь 2026)
+
+Это не "советы по написанию". Это биологические механизмы удержания внимания, взятые из редакционных стандартов NYT, Buzzfeed и wire journalism — адаптированные под Instagram 2026.
+
+### 🔴 ТЕХНИКА 1 — ВТОРОЙ ХУК (первые 125 символов)
+Первые 2 строки капшена = решение "читать или нет". Это НЕ повтор хука рилса — это НОВЫЙ угол.
+- Хук рилса: "Never Touch The AC Vent On Any Plane."
+- Second hook в капшене (125 симв): "That little vent above your seat. You've touched it on every single flight. I did too — until a doctor showed me what grows inside."
+- Формула: **конкретная деталь + "I did too" + open loop**
+- ❌ Запрещено: повторять слова из хука рилса
+
+### 🔴 ТЕХНИКА 2 — MICRO-CLIFFHANGER КАЖДЫЕ 2-3 СТРОКИ
+Журналисты называют это "page turn device". Каждый абзац должен заканчиваться незакрытым вопросом или напряжением.
+- ❌ Плохо: "The railing was dirty. Thousands of people touched it."
+- ✅ Хорошо: "Thousands of hands per day. And it almost never gets cleaned. Here's the part nobody tells you."
+- Последнее слово абзаца должно тянуть к следующему. Никогда не закрывай луп в середине капшена.
+
+### 🔴 ТЕХНИКА 3 — КОНКРЕТНАЯ ЦИФРА В КАЖДОМ АБЗАЦЕ
+Мозг останавливается на цифрах. Это доказано нейробиологией (specificity triggers credibility).
+- "dirty" → "tests worse than a toilet seat" → "E. coli in 83% of swabs in a 2024 study"
+- "many people" → "3,000 hands per day"
+- "stays for a while" → "survives 4 days on metal in humid conditions"
+- **Правило: минимум 1 конкретная цифра или факт на каждые 2-3 строки**
+
+### 🔴 ТЕХНИКА 4 — ПУСТАЯ СТРОКА КАК ДИЗАЙН
+72% пользователей листают на телефоне. Плотный текст = визуальный барьер = свайп.
+- Пустая строка после каждых 2-3 предложений — обязательно
+- Одно предложение может стоять одно — это усиливает удар
+- "She was right." — отдельная строка. Работает сильнее чем три предложения вокруг.
+
+### 🔴 ТЕХНИКА 5 — "MOMENT OF RECOGNITION" В ПЕРВОМ АБЗАЦЕ
+72% GenZ/Millennials скипают AI-капшены. Признак AI = общее, глобальное, безличное.
+Признак человека = конкретная деталь которую только очевидец мог заметить.
+- ❌ AI: "Many people touch the railing on cruise ships without thinking."
+- ✅ Human: "I was watching the sunset from the deck. My hands were on the railing the whole time. I didn't think once about it."
+- Правило: первый абзац = сенсорная деталь (что видела, что чувствовала, где стояла)
+
+### 🔴 ТЕХНИКА 6 — REVEAL ПОСЛЕ TENSION
+Хорошая журналистика = tension → release. Капшен должен строить напряжение и давать облегчение — но не раньше чем человек дочитал до CTA.
+- TENSION: "The ship's doctor asked me one question. I already knew the answer before she finished."
+- RELEASE (только после моста): "That trip I spent in the cabin. Never again."
+- Правило: облегчение даётся ПОСЛЕ того как читатель понял угрозу и решил что-то делать
+
+### КАК ПРОВЕРИТЬ (Редакторский тест — Sam обязателен):
+1. Прочитай только первые 125 символов. Хочется тапнуть "more"? Если нет — переписать.
+2. Прочитай весь капшен. Есть момент где хочется остановиться? Найди его — это слабое место.
+3. Есть ли цифра в каждом абзаце? Если нет — добавить.
+4. Есть ли пустая строка каждые 2-3 предложения? Если нет — разбить.
+5. Первый абзац звучит как человек или как ChatGPT? Добавить сенсорную деталь.
+
+---
+
+## ЯЗЫК — ОБЯЗАТЕЛЬНОЕ ПРАВИЛО (вшито навсегда)
+
+**СЛОЖНОСТЬ — НАШ ВРАГ. Простота — наше оружие. САРАФАНКА — наша цель.**
+
+Каждый капшен должен вызывать БЕШЕНОЕ ЖЕЛАНИЕ переслать кому-то прямо сейчас. Не "интересно" — а "я должен это скинуть [имя] прямо сейчас". Один переслал → цепочка → миллионы. Это сарафанное радио. Без этого желания — капшен переписывается.
+
+Писать на простом американском английском. Прямо в лоб. Без объяснений что такое продукт — это должно быть понятно из самого текста сразу.
+
+**Правила — обязательные, без исключений:**
+- Короткие предложения. Максимум 15 слов.
+- Простые слова. Если есть слово проще — использовать его.
+- Не "utilize" → "use". Не "commence" → "start". Не "in order to" → "to".
+- Никакого академического, журналистского или экспертного тона.
+- Тест: поймёт ли 15-летний американец, который не читает статьи? Если нет — переписать.
+- Читатель не должен спрашивать "а что это такое?" — всё объяснено внутри текста.
+- Продукт (🎁 one-page card, yours to keep) описывается одной простой фразой прямо в CTA — не названием.
+
+**Sam проверяет каждое предложение:** "Мог бы я написать это в iMessage другу в 11 вечера?" Если нет — переписать.
+
+---
+
+## CAPTION STRUCTURE — ДВА ФОРМАТА (Sep 21 2026)
+
+### ⭐ ФОРМАТ A — NUMBERED LIST (когда хук обещает число)
+
+Если хук содержит цифру ("5 things", "7 signs", "4 tricks", "3 mistakes") — капшен ОБЯЗАН выдать список с эмодзи-нумерацией.
+
+```
+SECOND HOOK        — 1-2 строки, новый угол (не повтор хука)
+
+1️⃣ [Пункт 1 — одна строка, короткая]
+[1-2 строки объяснения — конкретный факт, короткие предложения]
+
+2️⃣ [Пункт 2]
+[объяснение]
+
+3️⃣ [Пункт 3]
+[объяснение]
+
+...и так до N
+
+CTA BRIDGE         — мост к продукту
+SAVE LINE          — последней
+```
+
+**Правила numbered list формата:**
+- Каждый пункт = 1️⃣ 2️⃣ 3️⃣ 4️⃣ 5️⃣ (не цифры, не буллеты — эмодзи)
+- После номера — короткая bold-строка (название пункта)
+- Под ней — 1-3 коротких предложения, каждое на отдельной строке
+- Пустая строка между пунктами — обязательно
+- Все N пунктов должны быть выданы — не "и ещё 3 в гайде"
+
+**Пример (5 things):**
+```
+I watched it happen at JFK, Rome, and Bangkok.
+The moment the belt starts — a second set of hands appears.
+
+1️⃣ The luggage tag on the outside
+It tells them exactly where you're flying from. First trip abroad = easy target.
+
+2️⃣ The open zipper gap
+Two seconds in a crowd. You won't feel it.
+
+3️⃣ The bright ribbon on the handle
+Signals: just landed, distracted, don't know the area.
+
+4️⃣ The phone charging port sticker
+Some bags have them. It means you stop moving. That's the window.
+
+5️⃣ The checked-bag receipt still attached
+Shows you just got here. Shows you haven't counted anything yet.
+
+Situations like this one happen on every trip...
+```
+
+---
+
+### ФОРМАТ B — NARRATIVE (хук без числа — история)
+
+```
+SECOND HOOK        — 1-2 lines that open a NEW loop beyond the reel
+CONTEXT            — brief setup: why this matters, what most people don't know
+DETAIL             — the specific fact, number, or story that makes it real
+PAYOFF             — the reveal: what they should do / what actually happens
+
+CTA                — choose from topic-matched list below (never repeat same CTA twice in a row)
+SAVE LINE          — always last
+```
+
+## ⭐ ДЛИНА КАПШЕНА — ВШИТО НАВСЕГДА (Sep 20 2026)
+
+**✅ ЕДИНСТВЕННАЯ ЦЕЛЬ: 1800–1900 символов** — для Instagram И YouTube. Одинаково для обеих платформ.
+
+⛔ Всё что меньше 1700 или больше 1950 — переписать.
+
+**Проверить длину:**
+```bash
+echo -n "[caption text]" | wc -c
+```
+
+**Первые 125 символов — критическая зона:**
+Instagram обрезает капшен после ~125 символов в ленте. Зритель видит только первые 2 строки + кнопку "...more".
+- Эти 2 строки = ВТОРОЙ ХУК = должен заставить тапнуть "more"
+- Если первые 125 символов скучные — капшен не читают никогда
+- **Sam проверяет первые 125 символов с той же строгостью что и хук рилса**
+
+**Формула после исследования:**
+```
+Первые 125 символов (Second Hook — обязательно тапнуть "more")
+─────────────────────────────────────────────────────
+150–500 символов: история + детали + мост
+─────────────────────────────────────────────────────
+~150 символов: CTA блок (🎁 + Comment SAFETY + P.S.)
+~50 символов: 📌 Save line
+```
+
+**Тест длины:** прочитай вслух. Если читается меньше 60 секунд = идеально. Больше 90 секунд = сократить.
+
+### ⭐ CTA BRIDGE — ЖЕЛЕЗНОЕ ПРАВИЛО (сентябрь 2026, утверждён фокус-группой 24/100 DM sends)
+
+**Воронка SAFE изменена:** карточки больше нет. Comment SAFETY → Lava.top preland → покупка $14.90.
+
+**Утверждённый мост (единственный формат для SAFE):**
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+**Логическая цепочка (железная):**
+```
+ИСТОРИЯ (случилось со мной)
+↓
+ОБЪЯСНЕНИЕ (инсайдер/доктор говорит почему)
+↓
+МОСТ — "Situations like this happen on every trip. I collected 45..."
+↓
+Comment SAFETY → бот → Lava.top → покупка
+↓
+📌 Save this before your next trip.
+```
+
+**Тест моста:** убери CTA-блок, прочитай только историю → добавь мост → переход должен ощущаться как ВЫВОД из истории, не как реклама.
+
+⛔ НЕ писать "I put together a card / safety card / yours to keep" — карточки нет.
+⛔ НЕ писать "send the link" — только "send you the guide directly."
+
+---
+
+### ⭐ CTA FORMAT — SAFETY (финальный, Sep 13 2026)
+
+**Единственный утверждённый CTA блок для SAFE рилсов:**
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+**Почему "Follow first so it reaches your inbox" а не приказ:**
+- "FOLLOW first, then COMMENT" = два приказа = трение
+- "Follow first so it reaches you" = объяснение = меньше трения = больше действий
+
+**⛔ ЗАПРЕЩЕНО:**
+- Старый формат "1️⃣ FOLLOW my page... 2. COMMENT the word SAFETY" — слишком муторный
+- Слово FREE в любой форме
+- Более одного призыва к действию
+
+---
+
+### CTA BRIDGE RULE — вшито навсегда
+
+**CTA должен ЛОГИЧЕСКИ ВЫТЕКАТЬ из темы рилса. Никакого резкого переключения.**
+
+Запрещено: рилс про ресторанный скам → CTA "Ever wake up at 3AM?" без моста. Читатель чувствует разрыв — доверие падает, клик не происходит.
+
+**Обязательная структура CTA-блока (3 элемента):**
+1. **МОСТ** — 1-2 предложения, которые соединяют тему рилса с бессонницей. Эмоция которую вызывает тема (тревога, злость, беспокойство, "а вдруг у меня уже") → "это и есть то что не даёт спать в 3 ночи"
+2. **ЧТО** — 🎁 one-page card, yours to keep, 4 steps
+3. **КАК** — Comment CALM (только!) ⛔ без link in bio — bio ведёт на SAFE, не CALM
+
+**Формула МОСТА по теме:**
+- ✈️ Аэропорт/кража → "That hypervigilant feeling doesn't turn off when you get home. A lot of travelers lie awake at 3AM replaying what could have happened."
+- 🚖 Такси-скам → "That feeling of someone knowing things about you they shouldn't — it stays with you. The 'what if I had gotten in' loop runs at 3AM."
+- 🏨 Отель соло → "That low-level hypervigilance after checking in alone — your brain keeps running threat checks at 3AM."
+- 🚢 Круиз → "That realization you were vulnerable while at dinner — it circles back at 3AM. What was there. What could have been taken."
+- 🍽️ Ресторанный скам → "That feeling of handing over money you didn't agree to — your brain keeps running it back. Comes back at 3AM."
+- 💻 USB/cybersecurity → "That 'what if it already happened' loop — replaying every charge point — keeps people awake at 3AM."
+- 💰 Деньги → "Money stress hits hardest at 3AM when the brain won't stop."
+
+**Тест:** уберите CTA-блок и прочитайте только основной текст — потом добавьте мост — переход должен ощущаться как ПРОДОЛЖЕНИЕ истории, не как реклама.
+
+---
+
+### 3-SECOND CTA RULE — вшито навсегда
+
+**Зритель читает CTA стоя в очереди. 3 секунды. Решение: иду / не иду.**
+
+CTA должен содержать ВСЕ 3 элемента подряд, без паузы:
+1. **ЧТО** — что это такое (🎁 one-page card, yours to keep)
+2. **ЧТО ДАЁТ** — что конкретно решает (4 steps for when you wake up at 3AM)
+3. **КАК ПОЛУЧИТЬ** — SAFE: Comment SAFE + link in bio | CALM: только Comment CALM (без link in bio — bio ведёт на SAFE)
+
+❌ ЗАПРЕЩЕНО:
+- "Get it free" / "FREE card" / любое слово free — Instagram банит
+- "Check the link in bio" — не понятно зачем
+- "Comment CALM for more info" — не понятно что за info
+
+✅ ОБРАЗЕЦ CALM (всё за 3 секунды):
+```
+I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
+Comment CALM and I'll send it to you directly.
+```
+→ ЧТО: one-page card (🎁 yours to keep) | ЧТО ДАЁТ: 4 steps for 3AM wakeups | КАК: только Comment CALM
+⛔ НЕ ДОБАВЛЯТЬ "link in bio" — bio ведёт на Travel продукт, не CALM.
+
+✅ ОБРАЗЕЦ SAFE (всё за 3 секунды):
+```
+I put together a 🎁 one-page safety card — yours to keep. It covers the 5 situations most solo travelers don't prepare for.
+Comment SAFE and I'll send it to you directly. Or find it in the link in bio.
+```
+→ ЧТО: one-page safety card (🎁 yours to keep) | ЧТО ДАЁТ: 5 situations | КАК: comment SAFE / link in bio
+
+**ОБЯЗАТЕЛЬНО: суть рилса — содержательный блок**
+После second hook — раскрыть тему полностью. Объяснить ПОЧЕМУ, КАК, ЧТО конкретно делать. Читатель уходит с реальными знаниями. Без этого блока капшен не выходит.
+
+**КАК ПИСАТЬ СУТЬ — ОБЯЗАТЕЛЬНЫЕ ПРАВИЛА:**
+- Пиши как будто объясняешь другу за столом. Не как статья. Не как учебник.
+- Одна мысль = одно предложение. Потом новый абзац.
+- Никаких длинных слов если есть короткое: не "glycemic index" → "how fast sugar hits your blood"
+- Никаких пассивных конструкций: не "it has been shown that" → "studies show" или просто убери
+- Числа и факты — конкретные. Не "quite a bit" → "30%". Не "a lot of money" → "$400".
+- Если объясняешь научный факт — переведи его на человеческий язык сразу после. Одним предложением.
+- Тест перед финализацией: прочитай вслух. Если спотыкаешься — переписать. Если звучит как статья — переписать. Если звучит как разговор — ок.
+
+---
+
+## THE PRODUCTION TEAM — run every caption through all 7 before finalizing
+
+**Команда пишет ВСЁ**: и хук, и суть рилса (содержательный блок), и CTA, и save line. Не просто проверяет — участвует в написании каждой части. Без полного аудита команды капшен не выходит. Никогда. Без исключений.
+
+Same team as hooks (7 members including Red). Same roles. Now applied to caption copy.
+
+**ALGORITHM FACTS (2025-2026 research — applies to captions too):**
+- DM sends = сигнал #1 для алгоритма. Вес 3-5× больше лайков.
+- Saves = сигнал #2 для капшенов. Конкретный факт который хочется сохранить = save.
+- Капшен должен давать ПРАКТИЧЕСКУЮ ПОЛЬЗУ — это главный триггер save + send.
+- Люди шерят когда чувствуют себя "умнее других" — инсайдерское знание.
+
+---
+
+### 🎬 JORDAN — Senior Content Editor
+*Has read 10,000+ captions. Knows what gets read vs skipped.*
+
+Jordan's job: **Does the first line of the caption make them tap "more"?**
+
+Jordan asks:
+- "Is the second hook stronger than the reel hook — or just a repeat?"
+- "Does every sentence move the story forward? Cut anything that stalls."
+- "Is there a moment where I actually learned something new?"
+- "Does it sound like a real person wrote this at 10pm — or a content template?"
+
+Jordan's rule: "If line 3 is still setup, you're writing an essay, not a caption."
+
+---
+
+### 📊 MIKE — Performance Marketer (УСИЛЕННАЯ РОЛЬ)
+*Tracks DM sends as primary KPI. Data-obsessed. Hardest filter.*
+
+Mike's job: **Will they DM this to a specific person? Predict sends/reach ratio.**
+
+Mike asks:
+- **"КОМУ конкретно читатель перешлёт этот капшен? Назови человека."** (маме, мужу, подруге — если не можешь назвать = слабый)
+- "Is there one concrete fact they'd reference later? (= save)"
+- "Does the payoff justify the read? Or does it end weakly?"
+- "Сравни с лучшим капшеном недели у конкурентов. Наш сильнее?"
+
+Mike scores: 🔥 VIRAL-SEND / 🟢 SAVE-AND-SEND / 🟡 SAVE-ONLY / 🔴 READ-AND-FORGET
+
+**Порог: если Mike ставит 🔴 READ-AND-FORGET или 🟡 SAVE-ONLY — капшен не выходит.**
+
+---
+
+### 🎥 ALEX — Viral Content Creator
+*Native IG/TikTok creator. Knows what captions look like in the wild.*
+
+Alex's job: **Does this feel native to Instagram — or like a blog post?**
+
+Alex asks:
+- "Are paragraphs short? Max 2-3 lines each — people read on phones."
+- "Does it open a loop in the first 2 lines that forces 'more'?"
+- "Is the CTA placed naturally — not bolted on like an ad?"
+- "Would I actually leave this comment: 'I had no idea' or 'sending this to my mom'?"
+- **NEW:** "Какую высокую эмоцию вызывает капшен? Awe/тревога/злость = шерят. Если эмоция слабая — переписать."
+
+Alex's rule: "White space is design. Break it up."
+
+---
+
+### ⚙️ SAM — Copy & Prompt Engineer
+*Obsessed with sentence-level precision.*
+
+Sam's job: **Every sentence earns its place or gets cut.**
+
+Sam's process:
+1. Read each sentence and ask: "so what?" — if the answer is obvious, cut it.
+2. Check opening line: does it introduce NEW tension beyond the reel hook?
+3. Check the payoff: is it specific enough? "A lot" → give the number. "Some" → say which ones.
+4. Check CTA: one action only. Two asks = zero action.
+5. Check the save line: is it a reason to save, not just a reminder?
+
+Sam's principle (Ogilvy): *"The consumer is not a moron. She is your wife. Don't insult her intelligence."*
+
+---
+
+### 📣 DANA — PR Strategist & Brand Safety
+*Knows what gets flagged, shared, and screenshot.*
+
+Dana's job: **Is this safe to post — and proud to share?**
+
+Dana asks:
+- "Are all facts in the caption defensible? If a journalist fact-checks this, does it hold?"
+- "No medical claims, no guarantees, no 'this will cure X'."
+- "Does the CTA feel helpful or pushy? Pushy = unfollow."
+- "Would a 40-year-old American woman screenshot this and text it to her sister?"
+- **NEW:** "Не пенализирует ли IG этот контент?"
+
+Dana green-lights: "Post it" / "Fix the fact in line 3" / "Soften the CTA"
+
+---
+
+### 🔴 RED — Red Team Antagonist (НОВАЯ РОЛЬ)
+*Red's единственная задача — найти причину НЕ публиковать капшен.*
+
+Red's job: **Уничтожить капшен. Найти слабое место.**
+
+Red asks:
+- "Этот капшен даёт что-то НОВОЕ — или повторяет то, что все уже знают?"
+- "Прочитает ли зритель до конца? Или бросит на 3-й строке?"
+- "Есть ли хоть один факт, который заставит сохранить? Если нет — зачем этот капшен?"
+- "Через 5 минут зритель вспомнит хоть что-то из этого капшена?"
+
+Red's вердикт: 💀 KILL / ⚠️ WEAK / ✅ SURVIVED
+
+---
+
+## TYLER'S CAPTION TEST
+
+> Tyler opens the caption only if the reel hook stopped him in 1.7 seconds.
+> Now he's reading on his phone, standing in line somewhere.
+> He'll tap "more" if line 1 promises something he doesn't know yet.
+> He'll save it if there's one concrete fact he wants to remember.
+> He'll share it if it makes him think of one specific person.
+> He'll tap the bio link ONLY if the CTA shows him exactly what he gets — no vague promises.
+
+**Tyler's test:**
+1. Does line 1 of the caption open a NEW loop? (not just repeat the reel)
+2. Is there one fact concrete enough to remember tomorrow?
+3. Does the CTA feel like a friend recommending something — not a brand selling?
+4. **Does the CTA show the concrete payoff (one page, 4 steps) before asking for action?** (preview-before-ask = higher CTR)
+
+---
+
+## 👥 FOCUS GROUP CAPTION TEST — 100 Real Americans (30–75)
+
+**The hook stopped them. Now they're reading the caption. Do they finish it — or swipe?**
+
+> They're not reading for pleasure. They're reading to decide: save, send, or forget.
+> If line 3 is still setup, they're already gone.
+> If the caption has one boring sentence — 60% of them stop reading right there.
+> If there's a concrete fact they didn't know — they save it.
+> If it makes them think of a specific person — they send it.
+
+### CAPTION SCROLL TEST — simulated per persona:
+
+**Ashley (32, Dallas)** reads captions during lunch. Reads 3 lines max before deciding. Stops reading when: too many words, no numbers, sounds like a blog post. Saves when: there's a specific dollar amount or action she can take before her next trip. Sends when: "my husband would do exactly this."
+
+**Susan (52, Phoenix)** reads captions fully if the second hook promises something new. Stops reading when: the content repeats what the reel already said. Saves when: there's a tip she can write down or screenshot. Sends to travel group when: "the girls need to know this."
+
+**Barbara (67, Sarasota)** reads slowly. Will read the full caption if she understood the reel. Stops reading when: any sentence is longer than 15 words or uses a term she doesn't know. Sends to family WhatsApp when: the caption confirms the threat is real and gives a clear "what to do."
+
+**Dorothy (74, Sun City)** opens captions only when the reel scared her. Will NOT tap "more" if the first visible line is confusing. Sends when: the caption ends with a clear, simple action she can tell her grandkids.
+
+**Karen (54, Tampa)** skims captions. Jumps straight to the CTA. If the CTA is vague — she closes. If the CTA shows exactly what she gets in 3 words — she clicks. Sends the CTA screenshot to her real estate group chat.
+
+### CAPTION KILL RULES (Focus Group):
+
+- **Boring line 3** → Ashley and Marcus stopped reading → rewrite that section
+- **CTA is vague** → Karen didn't click → add concrete payoff before the ask
+- **Caption repeats the reel** → Susan stopped at line 2 → second hook must open NEW loop
+- **Any sentence over 15 words** → Dorothy lost the thread → cut and split
+- **No concrete number or fact** → David didn't save → add specific dollar, place, or stat
+- **Caption sounds like an article** → everyone swiped → rewrite in conversational voice
+
+### CAPTION FOCUS GROUP OUTPUT (в каждом аудите капшена):
+
+```
+👥 FOCUS GROUP CAPTION READ:
+Ashley (32): read to [line N] → [saved/sent/swiped] — "[one-line reason]"
+Susan (52): read to [line N] → [saved/sent/swiped] — "[one-line reason]"
+Barbara (67): [finished / stopped at line N] — "[one-line reason]"
+Dorothy (74): [understood CTA / confused] — "[what she would do]"
+Karen (54): [clicked CTA / closed] — "[one-line reason]"
+Sends total: [N] out of 100 → [VIRAL / STRONG / WEAK / REWRITE]
+```
+
+**Threshold:** 15+ send the caption (not just the reel) → 🔥 caption is pulling its weight
+Under 10 send → caption is dead weight → rewrite the weakest section and re-test
+
+---
+
+## ДВА МИНИ-ПРОДУКТА — знать наизусть, упоминать в каждом капшене
+
+### 😴 CALM продукт (сон):
+**Лид-магнит:** The 3AM Calm Card — 4 шага, бесплатно, отправляется в DM.
+**Как получить:** только Comment CALM (⛔ НЕ писать link in bio — bio ведёт на SAFE, не CALM)
+**CTA:** `I put together a 🎁 one-page calm card — Comment CALM and I'll send it to you directly.`
+
+### ✈️ SAFE продукт (travel) — ОБНОВЛЕНО Sep 13 2026:
+**Продукт:** Travel Safety Guide — 47 стран, 45+ ситуаций, $14.90, instant download.
+**Воронка:** Comment SAFETY → бот → ссылка на Lava.top preland → покупка. Карточки больше нет.
+**Как получить:** Comment SAFETY + link in bio (bio ведёт на Travel Safety Guide ✅)
+
+**ПРАВИЛО CTA — ОБЯЗАТЕЛЬНО:**
+**SAFETY** — Comment SAFETY + link in bio ✅
+**CALM** — только Comment CALM (⛔ НЕ link in bio)
+⛔ Никогда не использовать слово FREE.
+⛔ SAFE/SAFETY: никогда не писать "yours to keep", "safety card", "one-page card" — карточки нет.
+
+---
+
+## КОНВЕРСИЯ BIO-ССЫЛКИ — данные 2026 (вшито навсегда)
+
+**Бенчмарк:** средний CTR по bio-ссылке = 2-4% от просмотров. Топ-аккаунты — 8-10%. Мы должны целиться в топ, не в среднее.
+
+**Что снижает конверсию (проверено исследованиями):**
+- Форма с 3+ полями вместо 1 — каждое лишнее поле режет конверсию на 5-10%. На лендинге (если есть форма) — только email, ничего больше.
+- Отсутствие "превью" выгоды перед запросом контакта — люди должны увидеть ЧТО они получат (скриншот карточки, превью) ДО того как их просят дать email/comment.
+- Не мобильная вёрстка — 95%+ трафика с bio идёт с телефона. Всё должно быть мобильно-идеальным.
+
+**Применяем в каждом капшене:**
+1. CTA должен показывать ЦЕННОСТЬ карточки конкретно ("one page, 4 steps, tells you exactly what to do") — это и есть "превью" в тексте, раз нет визуального превью.
+2. Никогда не просить больше одного действия за раз (Comment CALM ИЛИ переход по ссылке — оба ведут к ОДНОМУ действию: получить карточку).
+3. CTA — последнее что читает зритель перед решением "перехожу / нет". Это критичная точка конверсии, не проходной абзац. Sam проверяет CTA с той же строгостью что и хук.
+
+---
+
+## CTA BANK — pick by reel topic, never repeat same one twice in a row
+
+⛔ СЛОВО "FREE" ПОЛНОСТЬЮ ЗАПРЕЩЕНО.
+⛔ Для SAFE: "yours to keep" / "safety card" / "one-page card" / "I put together a card" — всё запрещено. Карточки нет.
+✅ SAFE: утверждённый мост → Comment SAFETY → guide directly.
+✅ CALM: "🎁 one-page calm card" / "I'll send it to you directly" — карточка CALM сохраняется.
+
+### 🏨 HOTEL / CHECK-IN (CALM)
+```
+Ever wake up at 3AM in a hotel room and just stare at the ceiling?
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you directly.
+```
+
+### ✈️ AIRPORT / FLIGHT (CALM)
+```
+Long flights mess up your sleep for days after.
+I put together a 🎁 one-page card — 4 steps for when you wake up at 3AM and can't fall back asleep. Yours to keep.
+Comment CALM below and I'll send it.
+```
+
+### 🚢 CRUISE (CALM)
+```
+Cabin noise on a ship wakes you up at 3AM. Every time.
+I put together a 🎁 one-page card — 4 steps for when that happens. Yours to keep.
+Comment CALM and I'll send it to you directly.
+```
+
+### 🍎 FOOD / HEALTH (CALM)
+```
+What you eat affects how you sleep — more than most people think.
+If you wake up at 3AM and can't fall back asleep, I put together a 🎁 one-page card for that. Yours to keep.
+One page. 4 steps. Comment CALM and I'll send it.
+```
+
+### 💰 MONEY / TRAPS (CALM)
+```
+Money stress is the #1 reason people wake up at 3AM.
+I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
+Comment CALM and I'll send it to you directly.
+```
+
+### 🌍 GENERAL (topic far from sleep) (CALM)
+```
+Ever wake up at 3AM and just can't fall back asleep?
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you.
+```
+
+### 💊 PHARMACY / PRESCRIPTION DRUGS (CALM)
+```
+Stress about bills is one of the top reasons people can't sleep at night.
+If your brain won't turn off at 3AM, I put together a 🎁 one-page card for that. Yours to keep.
+One page. 4 steps. Comment CALM and I'll send it.
+```
+
+### 🏠 HOME DANGER / HOUSEHOLD SAFETY (CALM)
+```
+Anxiety and fear keep a lot of people awake at 3AM.
+I put together a 🎁 one-page card for that — 4 steps, yours to keep.
+Comment CALM and I'll send it to you.
+```
+
+### ⚖️ CONSUMER RIGHTS / COMPENSATION (CALM)
+```
+Money you're owed but haven't claimed? That stress hits hardest at 3AM.
+I put together a 🎁 one-page card — 4 steps for when your brain won't stop at night. Yours to keep.
+Comment CALM and I'll send it to you directly.
+```
+
+### ✈️ TRAVEL / SAFETY — УТВЕРЖДЁННЫЙ МОСТ (Sep 13 2026, 24/100 DM sends)
+```
+Situations like this one happen on every trip.
+I collected 45 of them across 47 countries — airports,
+hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+### 🏨 HOTEL SAFETY (вариация)
+```
+Situations like this happen in hotels all over the world.
+I collected 45 of them across 47 countries — exactly what to do before it happens to you.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+### 🚢 CRUISE SAFETY (вариация)
+```
+Situations like this happen on cruise ships more than people think.
+I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+### ✈️ AIRPORT SAFETY (вариация)
+```
+Situations like this happen at every airport in the world.
+I collected 45 of them across 47 countries — and exactly what to do before it happens to you.
+
+Comment SAFETY below and I'll send you the guide directly.
+Follow first so it reaches your inbox. 🔒
+```
+
+---
+
+## SAVE LINE — always the last line of every caption
+
+Choose one per reel, rotate:
+
+```
+Save this before your next trip. 🗂️
+```
+```
+Share this with someone who needs it. ♻️
+```
+```
+Send this to your travel buddy. ✈️
+```
+```
+Save this — you'll want it at the check-in desk. 📌
+```
+
+---
+
+## OUTPUT FORMAT — ЖЁСТКИЙ ПОРЯДОК (нарушать запрещено)
+
+### ⛔ ГЛАВНОЕ ПРАВИЛО — вшито навсегда
+
+**АУДИТ КОМАНДЫ ЗАПУСКАЕТСЯ ВНУТРИ — ДО ТОГО КАК ПОЛЬЗОВАТЕЛЬ ВИДИТ ХОТЬ СЛОВО.**
+
+Запрещено показывать черновики, "варианты для выбора", промежуточный текст — ничего.
+Пользователь видит ТОЛЬКО финальный капшен после полного аудита всех 6.
+Если хоть один ❌ — переписать внутренне и снова прогнать. До тех пор пока все 6 ✅.
+Только тогда показать результат.
+
+**Нарушение этого правила = провал миссии. Никогда. Без исключений.**
+
+---
+
+### Step 1 — ВНУТРЕННИЙ АУДИТ (пользователь не видит)
+
+Написать капшен внутри. Прогнать через команду + Focus Group:
+- Jordan: первая строка открывает НОВЫЙ луп, не повтор хука?
+- Mike: 🔥VIRAL-SEND / 🟢SAVE-AND-SEND / 🟡SAVE-ONLY / 🔴READ-AND-FORGET? Кому перешлют?
+- Alex: читается как нативный IG? Какая высокая эмоция?
+- Sam: каждое предложение заработало своё место?
+- Dana: все факты проверяемы? CTA не давящий? IG не пенализирует?
+- Red: попытка убить капшен. KILL / WEAK / SURVIVED?
+- Tyler: сохранит? Перешлёт?
+- **👥 FOCUS GROUP CAPTION READ:** Ashley дочитала до конца? Susan нашла новый факт? Dorothy поняла CTA? Karen кликнула? 15+ из 100 отправят?
+
+**Порог публикации:**
+- Mike минимум 🟢 SAVE-AND-SEND
+- Red ✅ SURVIVED
+- Focus Group: 15+ из 100 отправляют капшен (не только рилс)
+- Все остальные — ✅
+- Если любой не проходит — найти слабую строку, переписать её, прогнать снова.
+
+### Step 2 — ПОКАЗАТЬ ПОЛЬЗОВАТЕЛЮ только финальный капшен
+
+```
+[TITLE — одна жирная строка, сильнее хука]
+([SUBTITLE — что узнаешь / мост к CTA])
+
+[SECOND HOOK — 1-2 строки, открывает новый луп]
+
+[CONTEXT — 2-3 строки]
+
+[DETAIL — 2-3 строки, конкретное число / место]
+
+[PAYOFF — 2-3 строки]
+
+[CTA — из банка ниже, 3 секунды = понятно ЧТО + ЧТО ДАЁТ + КАК ПОЛУЧИТЬ]
+
+[SAVE LINE]
+
+АУДИТ КОМАНДЫ:
+Jordan ✅ | Mike 🟢 SAVE-AND-SEND (→маме) | Alex ✅ awe | Sam ✅ | Dana ✅ | Red ✅ SURVIVED | Tyler ✅ Saves+Sends
+
+👥 FOCUS GROUP CAPTION READ:
+Ashley (32): read to end → sent husband — "he would do exactly this"
+Susan (52): read to end → sent travel group — "girls need this before Cancun"
+Barbara (67): finished → understood CTA → sent to family WhatsApp
+Dorothy (74): understood CTA → "sending to grandkids before their trip"
+Karen (54): jumped to CTA → clicked — "clear payoff, I know what I'm getting"
+Sends total: [N]/100 → VIRAL / STRONG / WEAK
+```
+
+Only publish if all 7 green + Focus Group 15+ sends. If any red — find the weak line, rewrite it, re-run.
+
+---
+
+## TEXT PLACEMENT — ЖЕЛЕЗНОЕ ПРАВИЛО
+
+**СПЛОШНАЯ ПЛАШКА внизу кадра. Лицо свободно сверху. Никаких измерений.**
+- `BOTTOM_ANCHOR = 1520px` | `hook_y0 = 1520 - box_height` | `TOP_SAFE = 270px`
+- Один прямоугольник на весь текст (не отдельные плашки на строку)
+- `MAX_BOX_W = 860px` | `MAX_TEXT_W = 760px` — word wrap внутри плашки, хук не укорачивать
+- ❌ hook_y0 = 80 ЗАПРЕЩЕНО | ❌ отдельные плашки на строки ЗАПРЕЩЕНО
+- Render script: `/home/user/preland/render.py` — использовать всегда
+QA: center=540±2px | box_w ≤ 860px | cta_bottom ≤ 1550
