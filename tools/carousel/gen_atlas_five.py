@@ -107,7 +107,46 @@ def video_frame(path, t=2.0, top=60):
     return im.crop((left, top, left + W, top + H))
 
 
-def cover_long(bg, lines, save):
+def _long_layout(d, lines, boost):
+    """Return (font, hs, rows) where rows = [(text, arrow)] with '' = paragraph gap.
+    boost=0: lines as written, autosize to fit. boost>0: re-wrap each paragraph at (base size + boost)."""
+    for size in range(104, 51, -2):
+        f = lf(BEBAS, size)
+        hs = lh(d, f)
+        total = sum((hs // 2 if l == "" else hs + 8) for l in lines)
+        if all(tw(d, l, f) <= COVER_W for l in lines if l) and total <= 660:
+            break
+    rows0 = [(l[:-1].rstrip(), True) if l.endswith("\u2192") else (l, False) for l in lines]
+    if not boost:
+        return f, hs, rows0
+    blocks, cur = [], []
+    for t, a in rows0:
+        if t == "":
+            blocks.append((" ".join(cur), False)); cur = []
+        else:
+            cur.append(t)
+            if a:
+                blocks.append((" ".join(cur), True)); cur = []
+    if cur:
+        blocks.append((" ".join(cur), False))
+    maxw = COVER_W + 40
+    for size in range(size + boost, 51, -2):
+        f = lf(BEBAS, size)
+        hs = lh(d, f)
+        rows = []
+        for i, (t, a) in enumerate(blocks):
+            if i:
+                rows.append(("", False))
+            w = wrap(d, t, f, maxw)
+            rows += [(x, a and k == len(w) - 1) for k, x in enumerate(w)]
+        total = sum((hs // 2 if t == "" else hs + 8) for t, _ in rows)
+        if total <= 800:
+            break
+    print("  cover font size:", size)
+    return f, hs, rows
+
+
+def cover_long(bg, lines, save, boost=0):
     """Reference style 1: long bold condensed text, left aligned, bottom, white with black shadow. '' = paragraph gap."""
     img = bg.copy()
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -116,19 +155,13 @@ def cover_long(bg, lines, save):
         od.rectangle([(0, H - 800 + i), (W, H - 800 + i + 1)], fill=(0, 0, 0, int(215 * i / 800)))
     img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
     d = ImageDraw.Draw(img)
-    for size in range(104, 51, -2):
-        f = lf(BEBAS, size)
-        hs = lh(d, f)
-        total = sum((hs // 2 if l == "" else hs + 8) for l in lines)
-        if all(tw(d, l, f) <= COVER_W for l in lines if l) and total <= 660:
-            break
+    f, hs, rows = _long_layout(d, lines, boost)
+    total = sum((hs // 2 if t == "" else hs + 8) for t, _ in rows)
     y = 1290 - total
-    for l in lines:
-        if l == "":
+    for txt, arrow in rows:
+        if txt == "":
             y += hs // 2
             continue
-        arrow = l.endswith("\u2192")
-        txt = l[:-1].rstrip() if arrow else l
         for dx, dy in [(3, 3), (-2, 2), (2, -2), (-2, -2), (0, 3)]:
             d.text((108 + dx, y + dy), txt, font=f, fill=(0, 0, 0))
         d.text((108, y), txt, font=f, fill=WHITE)
@@ -363,7 +396,7 @@ def build(c):
         bg = flux(c["flux"])
     style = c.get("cover_style", "bebas")
     if style == "long":
-        cover_long(bg, c["cover"], out / "slide_01.jpg")
+        cover_long(bg, c["cover"], out / "slide_01.jpg", c.get("cover_boost", 10))
     elif style == "box":
         cover_box(bg, c["cover_text"], out / "slide_01.jpg")
     else:
