@@ -140,7 +140,8 @@ def _long_layout(d, lines, boost):
             w = wrap(d, t, f, maxw)
             rows += [(x, a and k == len(w) - 1) for k, x in enumerate(w)]
         total = sum((hs // 2 if t == "" else hs + 8) for t, _ in rows)
-        if total <= 800:
+        widow = any(len(w.split()) == 1 and rows[i - 1][0] for i, (w, _) in enumerate(rows) if i and w and rows[i - 1][0])
+        if total <= 800 and not widow:
             break
     print("  cover font size:", size)
     return f, hs, rows
@@ -396,7 +397,7 @@ def build(c):
         bg = flux(c["flux"])
     style = c.get("cover_style", "bebas")
     if style == "long":
-        cover_long(bg, c["cover"], out / "slide_01.jpg", c.get("cover_boost", 10))
+        cover_long(bg, c["cover"], out / "slide_01.jpg", c.get("cover_boost", 20))
     elif style == "box":
         cover_box(bg, c["cover_text"], out / "slide_01.jpg")
     else:
