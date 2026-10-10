@@ -126,7 +126,7 @@ def pick(product, tags=None, log=True, avoid_days=14):
     """Least recently used cover for the product; prefers tag matches; never reuses within avoid_days while others exist."""
     manifest = _load(MANIFEST, []) + _load(MANIFEST_GEN, [])
     usage = _load(USAGE, {})
-    pool = [m for m in manifest if product in m["products"]]
+    pool = list(manifest) if product in ("any", "all") else [m for m in manifest if product in m["products"]]
     if tags:
         tagged = [m for m in pool if set(tags) & set(m["tags"])]
         pool = tagged or pool
