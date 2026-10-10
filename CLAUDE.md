@@ -1046,13 +1046,19 @@ I'll DM you the Travel Safety Guide: 45 situations, what to do in each. Safe tra
 (GLOW-блок: `COMMENT GLOW` + «I'll DM you the Health Bundle: 4 short books + 4 tools.»)
 6. Длина 1700–1900 символов, без хэштегов, без «link in bio» для GLOW.
 
-### 🖼️ ОБЛОЖКА — ВИЗУАЛ
-- AI-картинка DeepInfra FLUX-1-schnell (base64), 1080×1350, ЦВЕТНАЯ. Шок через СИТУАЦИЮ, не через темноту.
-- Промпт ВСЕГДА кончается `bright natural light, vibrant colors, cinematic, photorealistic, 4k`. НИКОГДА: dark, moody, low key, night. Ночную сцену (напр. ATM в 11pm) снимать днём.
-- GLOW: face_1–face_5 (ротировать). SAFETY: 32_5 (самолёт), 32_6 (отель), 32_13 (круиз) или FLUX по теме.
+### 🖼️ ОБЛОЖКА — БАНК КАДРОВ (Oct 10 2026, заменяет генерацию картинки под каждую карусель)
+
+Как у конкурентов (neiro_gleb, mikestartegy1, withmilaofficial): заранее готовый банк картинок одного персонажа в одном тоне, на них накладывается хук. Банк = кадры из НАШИХ футажей (`footage/travel`, `footage/general`): одна и та же героиня (Кира) в десятках сцен. Бесплатно, мгновенно, качество проверено заранее, нет дрейфа лица.
+- Банк: `assets/covers/` (46 шт., 1080×1350, один мягкий тёплый грейд) + `manifest.json` (id, источник, `products`: safety/glow, `tags`: airport, cruise, taxi, hotel, face, tired, …).
+- Выбор: в данных карусели `"cover_bank": "safety"|"glow"`, опционально `"cover_tags": ["taxi","airport"]`. `cover_bank.py` берёт наименее давно использованный кадр, не повторяет один и тот же кадр 14 дней, пока есть другие; использование пишется в `assets/covers/usage_log.json` (его коммитить). Id кадра сохраняется в `cover_id.txt` рядом со слайдами.
+- Подбор по теме: SAFETY — по тегу сцены (airport / cruise / taxi / hotel / atm / rental / car / street); GLOW — `face` + эмоция (serious / tired / worried / eyes-closed).
+- Пополнение банка: добавить строку в `SPECS` в `tools/carousel/cover_bank.py` (клип, секунда, продукт, теги, сдвиг кадра) и `python3 tools/carousel/cover_bank.py build`. Нужна сцена, которой нет в футажах (кухня, зеркало, кабинет врача): сгенерировать на DeepInfra `FLUX.1-Kontext-dev` по референс-кадру Киры (проверено: держит лицо, 4:5 через `width:1024,height:1280`, ≈$0.022 за картинку) и положить в банк.
+- Для лиц и длинной плашки: сдвиг кадра подобран так, чтобы голова была выше плашки (face_2=260, face_3=300, face_5=100).
+- Генерация FLUX под конкретный хук допустима, когда нужна сцена, которой нет в банке (напр. «мужчина с браслетом»). Промпт ВСЕГДА кончается `bright natural light, vibrant colors, cinematic, photorealistic, 4k`. НИКОГДА: dark, moody, low key, night.
+- ⚠️ Одна и та же AI-героиня на всех обложках = аккаунт показывает AI-человека. С 31 августа 2026 у Instagram есть ярлык «AI-generated profile», без него возможна потеря охвата (источники расходятся по силе эффекта). Решение по ярлыку за владельцем аккаунта.
 
 ### 🖥️ РЕНДЕР И ПУБЛИКАЦИЯ
-- Инструмент: `tools/carousel/gen_atlas_five.py` (kind=`fact` для форматов 1,3,4,5,6; kind=`split` для формата 2). Данные карусели — JSON как `tools/carousel/atlas_five.example.json`. Запуск: `CAROUSEL_DATA=data.json python3 tools/carousel/gen_atlas_five.py [slug]`.
+- Инструмент: `tools/carousel/gen_atlas_five.py` (kind=`fact` для форматов 1,3,4,5,6; kind=`split` для формата 2). Данные карусели — JSON как `tools/carousel/atlas_five.example.json` (поле `cover_bank` вместо `flux`). Запуск: `CAROUSEL_DATA=data.json python3 tools/carousel/gen_atlas_five.py [slug]`.
 - Параметры: 1080×1350, BG=(252,249,245), DARK=(22,18,14), ACCENT=(180,110,60), MARGIN=72, шрифт слайдов Montserrat-Black, обложка Bebas Neue (`tools/carousel/fonts/`). Cover BOTTOM_ANCHOR=1290.
 - Файлы: `carousels/YYYY/MM/<slug>/slide_01.jpg … slide_07.jpg` + `caption.txt`. JPEG quality 95. Перед пушем смотреть контактный лист глазами.
 - Публикация: push в `claude/schedule-5-reels-metricool-ip1tp7` → raw URL → `createCarouselPost` (caption + 7 url + `scheduled_time_iso` в EDT). Интервал между постами 1 час.

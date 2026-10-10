@@ -347,7 +347,16 @@ def build(c):
     out.mkdir(parents=True, exist_ok=True)
     total = 7
     print(f"\n== {slug}")
-    bg = video_frame(HERE.parents[1] / c["cover_video"], c.get("cover_t", 2.0), c.get("cover_top", 60)) if c.get("cover_video") else flux(c["flux"])
+    if c.get("cover_bank"):
+        from cover_bank import pick
+        cpath, cm = pick(c["cover_bank"], c.get("cover_tags"))
+        print("  cover from bank:", cm["id"])
+        (out / "cover_id.txt").write_text(cm["id"])
+        bg = Image.open(cpath).convert("RGB")
+    elif c.get("cover_video"):
+        bg = video_frame(HERE.parents[1] / c["cover_video"], c.get("cover_t", 2.0), c.get("cover_top", 60))
+    else:
+        bg = flux(c["flux"])
     style = c.get("cover_style", "bebas")
     if style == "long":
         cover_long(bg, c["cover"], out / "slide_01.jpg")

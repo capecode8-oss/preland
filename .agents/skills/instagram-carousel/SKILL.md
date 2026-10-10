@@ -12,7 +12,7 @@ description: "Design Instagram carousel posts as self-contained HTML files in th
 ## СТРУКТУРА КАЖДОЙ КАРУСЕЛИ (7 слайдов)
 
 ### SLIDE 1 — COVER
-- Картинка: DeepInfra FLUX-1-schnell (base64), 1080×1350, цветная, яркий свет. Шок через ситуацию или лицо с прямым взглядом, не через темноту.
+- Картинка: из БАНКА `assets/covers/` (кадры наших футажей, один персонаж, один тон), выбор `cover_bank` + `cover_tags`, ротация без повторов 14 дней (`tools/carousel/cover_bank.py`). Генерация FLUX под хук только если в банке нет нужной сцены; промпт кончается `bright natural light, vibrant colors, cinematic, photorealistic, 4k`.
 - Текст: ДЛИННЫЙ хук 20–40 слов по формуле SETUP + TWIST + ОТКРЫТАЯ ПЕТЛЯ (:) — шаблоны и правила в `CLAUDE.md`, «ХУК ОБЛОЖКИ КАРУСЕЛИ». Стили: `cover_style: box` (тёмная плашка с красной полосой, Montserrat Black, автоподбор 60→38px) или `long` (белый Bebas слева, пустая строка = разрыв блоков, стрелка → рисуется кодом). 2–3 слова ЗАГЛАВНЫМИ. Старое «≤10 слов, 3 строки» отменено для каруселей.
 - Шрифт: `tools/carousel/fonts/BebasNeue-Bold.otf`
 
