@@ -2,14 +2,14 @@
  "hotel_phone_night": "2026-10-10",
  "cafe_tokyo": "2026-10-10",
  "g_notebook_log": "2026-10-10",
- "g_cafe_friends": "2026-10-10",
+ "g_cafe_friends": "2026-10-13",
  "g_tea_window": "2026-10-10",
  "plane_window_2": "2026-10-10",
  "g_morning_robe": "2026-10-10",
  "g_waistband": "2026-10-10",
  "g_doctor_waiting": "2026-10-10",
  "street_tokyo": "2026-10-10",
- "g_fridge_open": "2026-10-10",
+ "g_fridge_open": "2026-10-13",
  "g_lab_report": "2026-10-10",
  "g_couch_laptop": "2026-10-10",
  "g_back_stretch": "2026-10-10",
@@ -24,5 +24,9 @@
  "pharmacy": "2026-10-12",
  "g_car_breath": "2026-10-12",
  "taxi_2": "2026-10-12",
- "market": "2026-10-12"
+ "market": "2026-10-12",
+ "eating_pasta_1": "2026-10-13",
+ "g_desk_clock_coffee": "2026-10-13",
+ "street_night": "2026-10-13",
+ "g_grocery_label": "2026-10-13"
 }
