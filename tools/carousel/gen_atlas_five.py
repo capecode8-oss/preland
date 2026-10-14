@@ -180,6 +180,74 @@ def cover_long(bg, lines, save, boost=0):
     img.save(save, "JPEG", quality=95)
 
 
+
+
+def wrap_arrow(d, text, f, mw_):
+    """Like wrap(), but keeps a trailing arrow glued to the last word."""
+    words = text.split()
+    if len(words) > 1 and words[-1] in ("\u2192", "->"):
+        words = words[:-2] + [words[-2] + " " + words[-1]]
+    out, cur = [], ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if tw(d, t, f) <= mw_:
+            cur = t
+        else:
+            out.append(cur)
+            cur = w
+    if cur:
+        out.append(cur)
+    return out
+
+SANS = HERE / "fonts" / "LiberationSans-Bold.ttf"
+
+
+def cover_sans(bg, blocks, save, size_cap=96):
+    """Competitor-style cover: heavy sans (Arial Bold look), sentence case, big, white with soft shadow, two blocks, arrow at end."""
+    from PIL import ImageFilter
+    img = bg.copy().convert("RGB")
+    ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    od = ImageDraw.Draw(ov)
+    GH = 860
+    for i in range(GH):
+        od.rectangle([(0, H - GH + i), (W, H - GH + i + 1)], fill=(0, 0, 0, int(235 * (i / GH) ** 1.25)))
+    img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
+    d = ImageDraw.Draw(img)
+    maxw = W - 2 * 78
+    for size in range(size_cap, 50, -2):
+        f = ImageFont.truetype(str(SANS), size)
+        rows, total = [], 0
+        lh_ = int(size * 1.13)
+        for bi, b in enumerate(blocks):
+            w = wrap_arrow(d, b, f, maxw)
+            if bi:
+                rows.append(None)
+            rows += w
+        total = sum((int(size * 0.55) if r is None else lh_) for r in rows)
+        last = rows[-1]
+        if total <= 760 and all(r is None or tw(d, r, f) <= maxw for r in rows):
+            break
+    y = 1262 - total
+    sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(sh)
+    pos = []
+    yy = y
+    for r in rows:
+        if r is None:
+            yy += int(size * 0.55); continue
+        pos.append((yy, r)); yy += lh_
+    for yy, r in pos:
+        sd.text((78 + 2, yy + 6), r, font=f, fill=(0, 0, 0, 255))
+    sh = sh.filter(ImageFilter.GaussianBlur(6))
+    sh = Image.alpha_composite(sh, sh)
+    img = Image.alpha_composite(img.convert("RGBA"), sh).convert("RGB")
+    d = ImageDraw.Draw(img)
+    for yy, r in pos:
+        d.text((78, yy), r, font=f, fill=WHITE)
+    img.save(save, "JPEG", quality=95)
+    print("  sans cover size:", size)
+
+
 def cover_box(bg, text, save):
     """Reference style 2: dark rounded box with red left bar, bold left-aligned text."""
     img = bg.copy().convert("RGBA")
@@ -399,7 +467,9 @@ def build(c):
             raise SystemExit("Image generation is disabled (saves money). Use cover_bank / cover_video, or set ALLOW_IMAGE_GEN=1 only when the owner asks.")
         bg = flux(c["flux"])
     style = c.get("cover_style", "bebas")
-    if style == "long":
+    if style == "sans":
+        cover_sans(bg, c["cover_blocks"], out / "slide_01.jpg")
+    elif style == "long":
         cover_long(bg, c["cover"], out / "slide_01.jpg", c.get("cover_boost", 20))
     elif style == "box":
         cover_box(bg, c["cover_text"], out / "slide_01.jpg")
