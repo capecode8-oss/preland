@@ -208,9 +208,9 @@ def cover_sans(bg, blocks, save, size_cap=96):
     img = bg.copy().convert("RGB")
     ov = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     od = ImageDraw.Draw(ov)
-    GH = 860
+    GH = 820
     for i in range(GH):
-        od.rectangle([(0, H - GH + i), (W, H - GH + i + 1)], fill=(0, 0, 0, int(235 * (i / GH) ** 1.25)))
+        od.rectangle([(0, H - GH + i), (W, H - GH + i + 1)], fill=(0, 0, 0, int(225 * (i / GH) ** 1.35)))
     img = Image.alpha_composite(img.convert("RGBA"), ov).convert("RGB")
     d = ImageDraw.Draw(img)
     maxw = W - 2 * 78
@@ -227,7 +227,7 @@ def cover_sans(bg, blocks, save, size_cap=96):
         last = rows[-1]
         if total <= 760 and all(r is None or tw(d, r, f) <= maxw for r in rows):
             break
-    y = 1262 - total
+    y = 1190 - total
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     sd = ImageDraw.Draw(sh)
     pos = []
