@@ -199,7 +199,7 @@ def wrap_arrow(d, text, f, mw_):
         out.append(cur)
     return out
 
-SANS = HERE / "fonts" / "LiberationSans-Bold.ttf"
+SANS = HERE / "fonts" / os.environ.get("COVER_SANS_FONT", "Montserrat-Bold.ttf")
 
 
 def cover_sans(bg, blocks, save, size_cap=96):
