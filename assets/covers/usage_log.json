@@ -19,7 +19,7 @@
  "plane_window_1": "2026-10-11",
  "subway_reading": "2026-10-12",
  "train_eyes_closed": "2026-10-12",
- "g_temples_desk": "2026-10-12",
+ "g_temples_desk": "2026-10-14",
  "g_bed_3am": "2026-10-14",
  "pharmacy": "2026-10-12",
  "g_car_breath": "2026-10-12",
@@ -29,5 +29,6 @@
  "g_desk_clock_coffee": "2026-10-14",
  "street_night": "2026-10-13",
  "g_grocery_label": "2026-10-13",
- "g_mirror_side": "2026-10-14"
+ "g_mirror_side": "2026-10-14",
+ "selfie_canyon": "2026-10-14"
 }
