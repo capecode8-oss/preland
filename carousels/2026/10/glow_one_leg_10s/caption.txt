@@ -1,6 +1,6 @@
 Try it before you read on. Stand barefoot, lift one foot, count to ten.
 
-That's the whole test. Researchers in Brazil used it on 1,702 adults aged 51 to 75 and then followed them for years. The people who couldn't hold it for 10 seconds were 84% more likely to have died by the end of the study, even after adjusting for age, sex and existing conditions.
+That's the whole test. Researchers in Brazil used it on 1,702 adults aged 51 to 75 and then followed them for years. The people who couldn't hold it for 10 seconds had an 84% higher risk of death from any cause, even after adjusting for age, sex and existing conditions.
 
 Three things to know:
 
@@ -8,7 +8,7 @@ Three things to know:
 About 95% of people aged 51 to 55 could do it. By 61 to 65 it was 82%. By 71 to 75 only 46% could.
 
 2. It's a link, not a cause
-The study only watched people. It can't say that failing the test causes anything. Nobody in it was tracked for falls, diet or medication.
+The study only watched people. It can't say that failing the test causes anything. It also had no data on falls, activity, diet or medications.
 
 3. The authors suggest using it at checkups
 They said it's quick, free and could be part of routine health checks for older adults.
