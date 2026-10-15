@@ -22,11 +22,12 @@ OUT = Path(__file__).parent / "out"
 
 # What our reader (women 35-65) is afraid of / curious about. Edit freely.
 NEWS_QUERIES = [
-    "menopause study", "perimenopause symptoms study", "hot flashes research",
-    "women health study new", "sleep study women", "belly fat study",
-    "coffee caffeine study health", "aging body study new research",
-    "women heart attack symptoms study", "doctors dismiss women pain study",
-    "brain fog memory women study", "walking blood sugar study",
+    # broad, emotional, everyday topics first (the product is bridged in later, NOT used to filter topics)
+    "scam warning police", "FBI warning families", "nurse says patients", "doctor warns everyday habit",
+    "household item myth debunked", "food label changed ingredients", "grocery store trick",
+    "safety tip every woman should know", "teens online parents warning", "retirees money mistake",
+    "grandparents grandchildren study", "psychology habit study new", "relationship study new",
+    "travel scam tourists warning", "cleaning myth experts", "sleep habit study new",
 ]
 PUBMED_TERMS = [
     "menopause", "perimenopause", "women sleep", "visceral fat women",
