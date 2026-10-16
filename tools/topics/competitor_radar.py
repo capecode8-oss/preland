@@ -21,7 +21,10 @@ from pathlib import Path
 ACCOUNTS = [
     "elevatemindhq", "mikestartegy1", "withmilaofficial", "seva.gorobets",
     "neiro_gleb", "fit_grandma_rose_", "maks.motivator",
+    "ksu.knyazeva", "olesiazhmur",  # B-roll reels: on-screen text over footage (added Oct 16)
 ]
+if os.environ.get("ACCOUNTS"):  # override: ACCOUNTS=a,b python3 competitor_radar.py
+    ACCOUNTS = os.environ["ACCOUNTS"].split(",")
 MIN_RATIO, MIN_LIKES = 3.0, 1000
 OUT = Path(__file__).parent / "out"
 
@@ -47,7 +50,7 @@ def main():
     posts = run(ACCOUNTS, n)
     OUT.mkdir(exist_ok=True)
     today = dt.date.today().isoformat()
-    slim = [{k: p.get(k) for k in ("ownerUsername", "type", "likesCount", "commentsCount", "timestamp", "url", "caption", "shortCode")}
+    slim = [{k: p.get(k) for k in ("ownerUsername", "type", "likesCount", "commentsCount", "timestamp", "url", "caption", "shortCode", "videoViewCount", "videoPlayCount")}
             for p in posts]
     (OUT / f"competitors_{today}.json").write_text(json.dumps(slim, ensure_ascii=False, indent=1), encoding="utf-8")
     by = {}
@@ -69,7 +72,7 @@ def main():
     lines += ["", f"## Outliers (>= {MIN_RATIO:g}x account median and >= {MIN_LIKES} likes)", ""]
     for ratio, p, med in sorted(scored, key=lambda x: -x[0])[:30]:
         cap = (p["caption"] or "").replace("\n", " ")[:260]
-        lines.append(f"- **{p['ownerUsername']}** | {p['likesCount']} likes ({ratio:.0f}x) | {p['commentsCount']} comments | {(p['timestamp'] or '')[:10]} | {p['type']}  \n  {cap}  \n  {p['url']}")
+        lines.append(f"- **{p['ownerUsername']}** | {p['likesCount']} likes ({ratio:.0f}x) | {p['commentsCount']} comments | views {p.get('videoPlayCount') or p.get('videoViewCount') or '-'} | {(p['timestamp'] or '')[:10]} | {p['type']}  \n  {cap}  \n  {p['url']}")
     path = OUT / f"competitors_{today}.md"
     path.write_text("\n".join(lines), encoding="utf-8")
     print(path)
