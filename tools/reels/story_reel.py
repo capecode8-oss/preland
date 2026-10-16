@@ -29,38 +29,42 @@ SIZE, LINE_H = 44, 62
 CLIPS = ROOT / "footage" / "general"
 
 REELS = [
-    {"id": "story_1", "clip": "31_2.mp4", "lines": [
-        "I told everyone I was fine.",
-        "For two years.",
+    {"id": "fact_lottery", "clip": "1_16.mp4", "lines": [
+        "Sweden studied lottery winners.",
         "",
-        "I held my sister's hand at every appointment.",
-        "I never booked one for myself.",
+        "Men who won got married more often.",
+        "They had more children.",
         "",
-        "Last week a nurse asked me,",
-        "\"When did you last put yourself first?\"",
+        "Women who won were more likely to divorce, at least for a while.",
         "",
-        "I laughed.",
-        "Then I realized I couldn't remember."]},
-    {"id": "story_2", "clip": "face_2.mp4", "lines": [
-        "I wake up at 3 AM and tell myself it's stress.",
-        "It has been \"stress\" for three years.",
+        "Researchers say the money didn't end those marriages.",
+        "It sped up the ones already ending."]},
+    {"id": "fact_liar", "clip": "face_4.mp4", "lines": [
+        "You think you can spot a liar.",
         "",
-        "My mother used to say she \"couldn't sleep.\"",
-        "She never explained why.",
-        "Nobody in my family ever talked about this part.",
+        "Researchers combined 206 studies.",
+        "People caught lies 54% of the time.",
+        "A coin flip is 50%.",
         "",
-        "I don't want my daughter to learn it",
-        "the same way I did."]},
-    {"id": "story_3", "clip": "1_30.mp4", "lines": [
-        "At 45 I started apologizing for taking up space.",
-        "Smaller portions. Quieter opinions. Skipped photos.",
+        "We spot the truth 61% of the time.",
+        "We catch a lie 47% of the time."]},
+    {"id": "fact_widow", "clip": "31_2.mp4", "lines": [
+        "After a spouse dies, the one left behind is more likely to die too.",
         "",
-        "Then my mother told me she'd done the same her whole life.",
+        "In 373,189 older couples,",
+        "the risk was 30% to 90% higher in the first three months.",
         "",
-        "\"I thought that's just what happens to women.\"",
+        "About 15% higher after that.",
         "",
-        "It isn't.",
-        "I'm done pretending it is."]},
+        "Scientists call it the widowhood effect."]},
+    {"id": "fact_graydivorce", "clip": "32_2.mp4", "lines": [
+        "Divorce is falling in America.",
+        "Except after 50.",
+        "",
+        "Between 1990 and 2010,",
+        "divorce among people 50 and older roughly doubled.",
+        "",
+        "From about 5 to 10 per 1,000 married people."]},
 ]
 
 
@@ -120,8 +124,11 @@ def pick_music():
     log = json.loads(log_path.read_text()) if log_path.exists() else {}
     recent = set()
     for d, tracks in log.items():
-        if (date.today() - date.fromisoformat(d)).days <= 1:
-            recent |= set(tracks)
+        try:
+            if (date.today() - date.fromisoformat(d)).days <= 1:
+                recent |= set(tracks)
+        except ValueError:
+            continue  # e.g. "_comment" keys
     pool = [f"{i}.mp3" for i in range(1, 31) if f"{i}.mp3" not in recent] or [f"{i}.mp3" for i in range(1, 31)]
     track = random.choice(pool)
     log.setdefault(date.today().isoformat(), []).append(track)
