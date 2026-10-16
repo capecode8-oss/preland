@@ -22,17 +22,15 @@ OUT = Path(__file__).parent / "out"
 
 # What our reader (women 35-65) is afraid of / curious about. Edit freely.
 NEWS_QUERIES = [
-    # broad, emotional, everyday topics first (the product is bridged in later, NOT used to filter topics)
-    "scam warning police", "FBI warning families", "nurse says patients", "doctor warns everyday habit",
-    "household item myth debunked", "food label changed ingredients", "grocery store trick",
-    "safety tip every woman should know", "teens online parents warning", "retirees money mistake",
-    "grandparents grandchildren study", "psychology habit study new", "relationship study new",
-    "travel scam tourists warning", "cleaning myth experts", "sleep habit study new",
+    # INSTINCT topics (owner decision Oct 16): relationships, betrayal, curiosity, danger. Real sources only.
+    "infidelity study new research", "cheating partner signs study", "divorce study new findings",
+    "marriage research couples study", "betrayal relationship psychology study", "jealousy research study",
+    "narcissist relationship study", "why people stay in bad relationships study",
+    "police warning woman safety", "survival instinct study", "danger warning everyday habit",
+    "strange psychology fact study", "what your body language reveals study", "attraction study new",
+    "dating red flags research", "lying detection research study",
 ]
-PUBMED_TERMS = [
-    "menopause", "perimenopause", "women sleep", "visceral fat women",
-    "caffeine health", "hot flashes", "midlife women cognition",
-]
+PUBMED_TERMS = ["infidelity", "romantic jealousy", "marital satisfaction", "divorce", "deception detection", "attachment style"]
 
 
 def get(url, timeout=20):
@@ -71,7 +69,8 @@ def cluster(items):
     return clusters
 
 
-def pubmed(term, days=14, n=5):
+def pubmed(term, days=60, n=5):
+    import time; time.sleep(0.5)
     q = urllib.parse.urlencode({"db": "pubmed", "term": term, "reldate": days, "datetype": "pdat",
                                 "retmax": n, "sort": "date", "retmode": "json"})
     ids = json.loads(get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?" + q))["esearchresult"]["idlist"]
