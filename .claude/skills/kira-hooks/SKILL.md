@@ -32,8 +32,7 @@ description: Write viral Instagram Reel hooks for @thekiramethod in competitor s
 
 ## ❌ HARD STOP — BANNED TOPICS
 
-- Relationships / cheating / "She found..." / "He asked..." — DELETED FROM NICHE
-- Third person "She/He did X" — FORBIDDEN
+- (Oct 16 2026, решение владельца) Запрет на relationships / cheating / "She found..." / third person снят. Остаётся: не выдумывать проверяемые факты.
 - Generic benefit hooks ("Here's how to improve your X") — WEAK
 
 ---

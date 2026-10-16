@@ -278,11 +278,7 @@ Mike ставит прогноз просмотров (порог: 🟢 STRONG =
 - Любопытные факты ("The first 3 years of marriage change your brain chemistry")
 - От первого лица как наблюдение или факт — "I read this and sent it to my husband immediately"
 
-**Что запрещено навсегда:**
-- Cheating drama / измена ("She found...", "He was texting...")
-- Third person soap opera ("My friend's husband did X")
-- "you won't believe what he/she did"
-- Токсичный контент, скандалы, разводы как развлечение
+**Ограничения на отношения/брак сняты (решение владельца, Oct 16 2026):** истории про измену, развод, тяжёлые отношения и личные признания теперь разрешены, включая третье лицо и confession-формат. Остаётся только общее правило: факты внутри истории не выдумываем (цифры, исследования, цитаты врачей).
 
 **Продукт для этой ниши:** CALM (стресс в отношениях → не спишь в 3AM → Comment CALM)
 Ежедневно публикуем 4–5 рилсов через Videotool.
@@ -904,8 +900,7 @@ $FFMPEG -stream_loop -1 -i "$MUSIC" -stream_loop -1 -i [VIDEO] \
 
 **Темы (ротировать):** airport hacks, hotel tricks, customs traps, food facts, health warnings, cruise secrets, EU flight compensation, gate bump, Blue Zone food.
 
-❌ ЗАПРЕЩЕНО: cheating drama / измена / "she found" / "he asked" / "you won't believe" / soap opera third person
-✅ РАЗРЕШЕНО: marriage facts / relationship psychology / предупреждения от первого лица
+✅ РАЗРЕШЕНО (с Oct 16 2026): marriage facts / relationship psychology / личные признания / третье лицо / истории про измену и развод. Не выдумываем только проверяемые факты.
 
 ---
 
