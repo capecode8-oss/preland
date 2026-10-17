@@ -1,0 +1,145 @@
+{
+ "role": "You are the Reels producer for @thekiramethod (Instagram, US women 35+, product GLOW Health Bundle). Read REELS_HANDOFF.md and CLAUDE.md in repo capecode8-oss/preland, branch claude/schedule-5-reels-metricool-ip1tp7, before doing anything.",
+ "task": "Produce and schedule 'FACT REELS': new B-roll reels with long on-screen text built from verified real facts.",
+ "format": {
+  "name": "FACT REEL (B-roll text loop)",
+  "duration_seconds": 5.0,
+  "loop": "Reel loops; long text is read over 2-3 replays",
+  "canvas": "1080x1920, H.264, yuv420p, 30fps, -t 5.0 -frames:v 150",
+  "background": "darkened frame/clip from footage/general/ (verify the frame visually before assigning)",
+  "text": {
+   "position": "centered, no plate",
+   "font": "Montserrat Medium",
+   "size_px": "52 (currently 44, raise it)",
+   "color": "white with soft shadow",
+   "lines": "5-9 short lines",
+   "safe_zone_y": [
+    270,
+    1520
+   ],
+   "max_width_px": 820
+  },
+  "audio": "music from music/ at volume 0.8; never repeat a track today or yesterday; log in music/music_log.json",
+  "call_to_action": "NOT on the video. COMMENT GLOW block lives in the caption only; optional pinned comment 'Comment GLOW'"
+ },
+ "content_rules": [
+  "Topics only from instincts and curiosity: relationships, betrayal, death, danger, lies, money, status",
+  "NOT about cortisol, stress, menopause (owner says boring)",
+  "Never invent facts; every number comes from a found source; sources and caveats go in the caption",
+  "No invented first-person confessions without a source",
+  "Old bans on relationship/cheating/toxic stories are lifted (owner decision Oct 16 2026)",
+  "Forbidden: the word 'free', hashtags, 'link in bio' for GLOW",
+  "Show the preview on a real footage frame to the owner before rendering; show the MP4 after"
+ ],
+ "tool": {
+  "script": "tools/reels/story_reel.py",
+  "preview": "python3 tools/reels/story_reel.py preview [id...]",
+  "render": "python3 tools/reels/story_reel.py render [id...]",
+  "outputs": "output/<id>_preview.jpg, output/<id>.mp4"
+ },
+ "reels": [
+  {
+   "id": "fact_lottery",
+   "clip": "1_16.mp4 (replace: mood does not fit)",
+   "lines": [
+    "Sweden studied lottery winners.",
+    "",
+    "Men who won got married more often.",
+    "They had more children.",
+    "",
+    "Women who won were more likely to divorce, at least for a while.",
+    "",
+    "Researchers say the money didn't end those marriages.",
+    "It sped up the ones already ending."
+   ],
+   "source": "Cesarini, Lindqvist, Ostling, Terskaya, 'Fortunate Families?', Journal of Human Resources; reported by PsyPost",
+   "caveat": "short-run divorce effect only; Swedish data; strongest in recent weak-match marriages with husband as main earner",
+   "status": "rendered (music 7.mp3), caption in output/fact_lottery_caption.txt"
+  },
+  {
+   "id": "fact_liar",
+   "clip": "face_4.mp4",
+   "lines": [
+    "You think you can spot a liar.",
+    "",
+    "Researchers combined 206 studies.",
+    "People caught lies 54% of the time.",
+    "A coin flip is 50%.",
+    "",
+    "We spot the truth 61% of the time.",
+    "We catch a lie 47% of the time."
+   ],
+   "source": "Bond and DePaulo 2006 meta-analysis",
+   "caveat": "study counts differ between secondary sources",
+   "status": "preview only"
+  },
+  {
+   "id": "fact_widow",
+   "clip": "31_2.mp4",
+   "lines": [
+    "After a spouse dies, the one left behind is more likely to die too.",
+    "",
+    "In 373,189 older couples,",
+    "the risk was 30% to 90% higher in the first three months.",
+    "",
+    "About 15% higher after that.",
+    "",
+    "Scientists call it the widowhood effect."
+   ],
+   "source": "Elwert and Christakis, American Journal of Public Health 2008",
+   "caveat": "range depends on method",
+   "status": "preview only"
+  },
+  {
+   "id": "fact_graydivorce",
+   "clip": "32_2.mp4",
+   "lines": [
+    "Divorce is falling in America.",
+    "Except after 50.",
+    "",
+    "Between 1990 and 2010,",
+    "divorce among people 50 and older roughly doubled.",
+    "",
+    "From about 5 to 10 per 1,000 married people."
+   ],
+   "source": "Brown and Lin, BGSU (Journals of Gerontology 2012); NPR coverage",
+   "caveat": "after 2010 the rate fell for ages 50-64 and kept rising for 65+",
+   "status": "preview only"
+  }
+ ],
+ "caption_template": {
+  "length_chars": "1700-1900",
+  "structure": [
+   "second hook (must NOT repeat the on-video text)",
+   "context",
+   "3 numbered findings",
+   "honest limits",
+   "(Source: ...)",
+   "bridge to GLOW",
+   "📌 Save this before ...",
+   "CTA block"
+  ],
+  "cta_block": "👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT GLOW below 💬\nI'll send it straight to your DMs.",
+  "relationship_bridge": "It took me years to see I'd stopped noticing myself first. That's when I started reading my body's signals, and I wrote down what I found in one place: four short books (The Belly Fat Lie, Aging Faster Than You Should, The Caffeine Trap, The 3AM Signal) and four tools. That's the Health Bundle."
+ },
+ "open_tasks": [
+  "Raise font to 52 px and fix ragged line wraps (no orphan words)",
+  "Replace the lottery clip",
+  "Render all 4 reels, write captions for reels 2-4 from the template",
+  "Schedule via Videotool (brand_id 6476294, America/New_York), 2 hours apart, one reel at a time; verify status before retrying",
+  "Do not publish in bulk: a 14-day test is running (one variable at a time, metrics at 72 hours)"
+ ],
+ "next_topics_verified": [
+  "Takotsubo: >90% of patients are postmenopausal women; emotional triggers not always present (International Takotsubo Registry, 1,750 patients)",
+  "Infidelity genetics: heritability 40-60% (popular summary), no single gene found",
+  "Personality traits and infidelity: review of 51 studies (low agreeableness, low conscientiousness); narcissism strongest in a 107-couple study"
+ ],
+ "context": {
+  "account_problem": "Carousels get ~0 likes (median 0 over 45 posts), views 100-350; cause not diagnosed. Reels earlier reached 471K, so reels are priority.",
+  "competitor_refs": [
+   "olesiazhmur",
+   "ksu.knyazeva"
+  ],
+  "tokens": "Never put tokens in the repo; APIFY_TOKEN comes from the environment"
+ }
+}

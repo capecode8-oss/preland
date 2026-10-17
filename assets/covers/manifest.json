@@ -1,0 +1,584 @@
+[
+ {
+  "id": "airport_wait_1",
+  "file": "airport_wait_1.jpg",
+  "source": "footage/travel/32_1.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "waiting"
+  ]
+ },
+ {
+  "id": "airport_wait_2",
+  "file": "airport_wait_2.jpg",
+  "source": "footage/travel/32_4.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "waiting"
+  ]
+ },
+ {
+  "id": "airport_walk_1",
+  "file": "airport_walk_1.jpg",
+  "source": "footage/travel/32_9.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "walking"
+  ]
+ },
+ {
+  "id": "airport_walk_2",
+  "file": "airport_walk_2.jpg",
+  "source": "footage/travel/32_11.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "walking"
+  ]
+ },
+ {
+  "id": "airport_exit",
+  "file": "airport_exit.jpg",
+  "source": "footage/travel/32_12.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "exit",
+   "taxi"
+  ]
+ },
+ {
+  "id": "baggage_1",
+  "file": "baggage_1.jpg",
+  "source": "footage/travel/32_18.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "baggage"
+  ]
+ },
+ {
+  "id": "baggage_2",
+  "file": "baggage_2.jpg",
+  "source": "footage/travel/1_5.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "baggage"
+  ]
+ },
+ {
+  "id": "airport_escalator",
+  "file": "airport_escalator.jpg",
+  "source": "footage/travel/1_29.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "happy"
+  ]
+ },
+ {
+  "id": "plane_window_1",
+  "file": "plane_window_1.jpg",
+  "source": "footage/travel/32_5.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "plane",
+   "window"
+  ]
+ },
+ {
+  "id": "plane_sleeping",
+  "file": "plane_sleeping.jpg",
+  "source": "footage/travel/1_10.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "plane",
+   "sleep",
+   "tired"
+  ]
+ },
+ {
+  "id": "plane_window_2",
+  "file": "plane_window_2.jpg",
+  "source": "footage/travel/1_27.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "plane",
+   "tired"
+  ]
+ },
+ {
+  "id": "hotel_reception",
+  "file": "hotel_reception.jpg",
+  "source": "footage/travel/32_6.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "reception"
+  ]
+ },
+ {
+  "id": "hotel_room",
+  "file": "hotel_room.jpg",
+  "source": "footage/travel/32_7.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "hotel",
+   "bedroom",
+   "sleep"
+  ]
+ },
+ {
+  "id": "hotel_phone_night",
+  "file": "hotel_phone_night.jpg",
+  "source": "footage/travel/custom_insurance.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "hotel",
+   "phone",
+   "worried"
+  ]
+ },
+ {
+  "id": "cruise_cabin",
+  "file": "cruise_cabin.jpg",
+  "source": "footage/travel/32_13.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "cabin"
+  ]
+ },
+ {
+  "id": "cruise_evening",
+  "file": "cruise_evening.jpg",
+  "source": "footage/travel/32_14.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "deck"
+  ]
+ },
+ {
+  "id": "cruise_terrace",
+  "file": "cruise_terrace.jpg",
+  "source": "footage/travel/32_15.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "cafe"
+  ]
+ },
+ {
+  "id": "cruise_rail",
+  "file": "cruise_rail.jpg",
+  "source": "footage/travel/32_16.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "railing"
+  ]
+ },
+ {
+  "id": "cruise_port",
+  "file": "cruise_port.jpg",
+  "source": "footage/travel/32_17.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "port"
+  ]
+ },
+ {
+  "id": "taxi_1",
+  "file": "taxi_1.jpg",
+  "source": "footage/travel/31_1.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "taxi",
+   "car"
+  ]
+ },
+ {
+  "id": "taxi_2",
+  "file": "taxi_2.jpg",
+  "source": "footage/travel/31_3.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "taxi",
+   "tired",
+   "worried"
+  ]
+ },
+ {
+  "id": "car_coast",
+  "file": "car_coast.jpg",
+  "source": "footage/general/1_14.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "car",
+   "driving"
+  ]
+ },
+ {
+  "id": "car_smile",
+  "file": "car_smile.jpg",
+  "source": "footage/general/1_16.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "car",
+   "driving"
+  ]
+ },
+ {
+  "id": "car_night",
+  "file": "car_night.jpg",
+  "source": "footage/general/1_15.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "car",
+   "driving",
+   "night"
+  ]
+ },
+ {
+  "id": "rental_counter",
+  "file": "rental_counter.jpg",
+  "source": "footage/travel/custom_rental.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "rental",
+   "paperwork"
+  ]
+ },
+ {
+  "id": "street_tokyo",
+  "file": "street_tokyo.jpg",
+  "source": "footage/travel/1_4.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "crowd"
+  ]
+ },
+ {
+  "id": "street_night",
+  "file": "street_night.jpg",
+  "source": "footage/travel/1_24.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "night"
+  ]
+ },
+ {
+  "id": "market",
+  "file": "market.jpg",
+  "source": "footage/general/1_28.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "market",
+   "crowd"
+  ]
+ },
+ {
+  "id": "cafe_tokyo",
+  "file": "cafe_tokyo.jpg",
+  "source": "footage/travel/32_8.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "cafe",
+   "thinking"
+  ]
+ },
+ {
+  "id": "moto_ride",
+  "file": "moto_ride.jpg",
+  "source": "footage/travel/1_6.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "happy"
+  ]
+ },
+ {
+  "id": "restaurant_bill",
+  "file": "restaurant_bill.jpg",
+  "source": "footage/travel/custom_restaurant.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "restaurant",
+   "money",
+   "bill"
+  ]
+ },
+ {
+  "id": "pharmacy",
+  "file": "pharmacy.jpg",
+  "source": "footage/travel/custom_pharmacy.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "pharmacy",
+   "reading",
+   "worried"
+  ]
+ },
+ {
+  "id": "atm_hands_1",
+  "file": "atm_hands_1.jpg",
+  "source": "footage/travel/custom_atm_1.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "atm",
+   "money",
+   "hands"
+  ]
+ },
+ {
+  "id": "atm_hands_2",
+  "file": "atm_hands_2.jpg",
+  "source": "footage/travel/custom_atm_2.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "atm",
+   "money",
+   "hands"
+  ]
+ },
+ {
+  "id": "customs_pov",
+  "file": "customs_pov.jpg",
+  "source": "footage/travel/custom_customs.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "customs",
+   "passport",
+   "pov"
+  ]
+ },
+ {
+  "id": "selfie_rio",
+  "file": "selfie_rio.jpg",
+  "source": "footage/travel/32_3.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "selfie",
+   "happy",
+   "view"
+  ]
+ },
+ {
+  "id": "selfie_canyon",
+  "file": "selfie_canyon.jpg",
+  "source": "footage/general/1_23.mp4@2s",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "selfie",
+   "happy",
+   "view"
+  ]
+ },
+ {
+  "id": "vacation_beach",
+  "file": "vacation_beach.jpg",
+  "source": "footage/general/1_30.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "beach",
+   "happy"
+  ]
+ },
+ {
+  "id": "vacation_sunset",
+  "file": "vacation_sunset.jpg",
+  "source": "footage/general/1_26.mp4@2s",
+  "products": [
+   "safety",
+   "glow"
+  ],
+  "tags": [
+   "sunset",
+   "calm"
+  ]
+ },
+ {
+  "id": "face_2",
+  "file": "face_2.jpg",
+  "source": "footage/general/face_2.mp4@1s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "face",
+   "serious",
+   "indoor"
+  ]
+ },
+ {
+  "id": "face_3",
+  "file": "face_3.jpg",
+  "source": "footage/general/face_3.mp4@1s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "face",
+   "serious",
+   "garden"
+  ]
+ },
+ {
+  "id": "face_5",
+  "file": "face_5.jpg",
+  "source": "footage/general/face_5.mp4@1s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "face",
+   "serious",
+   "brick"
+  ]
+ },
+ {
+  "id": "train_eyes_closed",
+  "file": "train_eyes_closed.jpg",
+  "source": "footage/general/31_2.mp4@2s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "train",
+   "tired",
+   "eyes-closed"
+  ]
+ },
+ {
+  "id": "subway_reading",
+  "file": "subway_reading.jpg",
+  "source": "footage/general/32_2.mp4@2s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "subway",
+   "calm",
+   "reading"
+  ]
+ },
+ {
+  "id": "eating_pasta_1",
+  "file": "eating_pasta_1.jpg",
+  "source": "footage/general/1_2.mp4@2s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "food",
+   "eating",
+   "happy"
+  ]
+ },
+ {
+  "id": "eating_pasta_2",
+  "file": "eating_pasta_2.jpg",
+  "source": "footage/general/1_8.mp4@2s",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "food",
+   "eating",
+   "happy"
+  ]
+ }
+]
