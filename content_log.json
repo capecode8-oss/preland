@@ -947,6 +947,14 @@
       "music": "27.mp3",
       "product": "GLOW",
       "file": "footage/rendered/fact_card_beans.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel (Kira fisheye)",
+      "topic": "copper water",
+      "music": "20.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_v2_copper.mp4"
     }
   ]
 }
