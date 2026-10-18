@@ -922,5 +922,31 @@
       "purpose": "broad-niche traffic test",
       "file": "glow7_6.mp4"
     }
+  ],
+  "fact_cards_oct18": [
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "new-love dopamine",
+      "music": "17.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_dopamine.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "semen composition",
+      "music": "24.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_semen.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "raw kidney beans",
+      "music": "27.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_beans.mp4"
+    }
   ]
 }
