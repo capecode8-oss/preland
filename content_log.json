@@ -955,6 +955,14 @@
       "music": "20.mp3",
       "product": "GLOW",
       "file": "footage/rendered/fact_card_v2_copper.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "AI b-roll reel (Veo, Kira) + text box",
+      "topic": "pickpocket Italy reenactment",
+      "music": "18.mp3",
+      "product": "SAFETY",
+      "file": "footage/rendered/reel_pickpocket_kira.mp4"
     }
   ]
 }
