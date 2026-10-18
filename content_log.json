@@ -922,5 +922,55 @@
       "purpose": "broad-niche traffic test",
       "file": "glow7_6.mp4"
     }
+  ],
+  "fact_cards_oct18": [
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "new-love dopamine",
+      "music": "17.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_dopamine.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "semen composition",
+      "music": "24.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_semen.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel",
+      "topic": "raw kidney beans",
+      "music": "27.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_beans.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "static fact card reel (Kira fisheye)",
+      "topic": "copper water",
+      "music": "20.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/fact_card_v2_copper.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "AI b-roll reel (Veo, Kira) + text box",
+      "topic": "pickpocket Italy reenactment",
+      "music": "18.mp3",
+      "product": "SAFETY",
+      "file": "footage/rendered/reel_pickpocket_kira.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "photo reel (licensed, Valerio Minato)",
+      "topic": "moon-monviso-superga",
+      "music": "22.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/reel_moon_superga.mp4"
+    }
   ]
 }
