@@ -1,0 +1,112 @@
+{
+  "name": "kira-carousel-playbook",
+  "version": "2026-10-18",
+  "purpose": "Rules for building Instagram carousels for @thekiramethod (US audience, mostly women 35-65, product GLOW). Optimize for DM sends and saves per reach, not looks. Use together with the existing carousel standard (Hook Atlas) in CLAUDE.md. If a rule here conflicts with a hard rule in CLAUDE.md (no 'free', no hashtags, no price, no fake facts), CLAUDE.md wins.",
+  "evidence_labels": {
+    "FACT": "seen directly on a real post or in a cited source",
+    "HYPOTHESIS": "reasoned from the algorithm or from a few examples; must be tested on our own numbers",
+    "UNKNOWN": "no reliable data found; never state as fact"
+  },
+  "north_star_metric": {
+    "primary": "DM sends per reach",
+    "secondary": ["saves per reach", "completion (reached last slide)", "profile visits and follows per reach", "GLOW comments per reach"],
+    "note": "Likes are the weakest signal. Judge a carousel by sends and follows, not likes."
+  },
+  "observed_benchmark": {
+    "label": "FACT (one post, outside account, numbers from user's screenshot)",
+    "account": "maks.motivator",
+    "post": "8-slide carousel, hook 'A Japanese billionaire let slip over dinner: ... these 7 morning rituals'",
+    "metrics": {"likes": 10800, "comments": 101, "reposts": 295, "sends": 6648},
+    "followers_before_after": "102000 -> 109000 per the user (not independently verified; may include other posts)",
+    "derived_hypothesis": "HYPOTHESIS: new followers ~ number of sends (about 1 follow per send). Test on our own account before relying on it.",
+    "warning": "The hook uses an invented 'Japanese billionaire' quote. Do NOT copy fabricated attribution. Copy only the skeleton: insider/credential + quote + number + promise of the payoff."
+  },
+  "can_small_accounts_go_viral": {
+    "answer": "Yes. Carousels and reels are shown to non-followers via Explore, Reels and suggested feeds. The system tests a post on a small group and widens reach if sends, saves and completion are strong.",
+    "label": "HYPOTHESIS, consistent with the user's own reels getting 96.7K and 55.4K views on about 3K followers",
+    "reality_check": "Most posts stay small. Treat each carousel as one throw of the dice; raise the number of throws and the send rate, do not rely on one post. Do not promise followers or sales."
+  },
+  "visual_strategy": {
+    "what_we_know": [
+      "FACT (vendor benchmarks, weak sources, originals not seen): carousels have the highest engagement rate of Instagram formats (Socialinsider reports ~0.55% vs ~0.35% for static images) and earn more saves than single photos (Buffer reportedly +22-23%).",
+      "UNKNOWN: no found benchmark compares 'every slide beautifully designed' with 'strong cover + simple text slides'.",
+      "UNKNOWN: slide-count advice (8-12, some say 10) is practitioner guidance without methodology."
+    ],
+    "working_hypothesis": {
+      "label": "HYPOTHESIS",
+      "points": [
+        "The cover decides whether anyone stops. Put most of the visual and hook effort there.",
+        "Slides 2-N decide completion, saves and sends. These are won by copy rhythm (one idea per slide, a loop into the next slide), not by expensive art.",
+        "A single consistent template across slides builds recognition of the series.",
+        "Plain slides lose only when text is long, small or low-contrast. Big text, high contrast, one idea per slide is enough."
+      ]
+    },
+    "default_build": {
+      "cover": "Strong scene or photo plus long hook per cover rules in CLAUDE.md (20-40 words, setup + twist + open loop ending with ':' or arrow).",
+      "slides_2_to_6": "One consistent simple template (dark or beige background, large text, max 20 words, short sentences). One accent color. Optional single small visual anchor (icon or object) per slide only when it adds meaning.",
+      "slide_7": "CTA per CLAUDE.md: name the product, name the code word, promise the DM. One main action.",
+      "slide_count": "7 by default (house standard). 8-10 only when the story genuinely needs it. Do not pad."
+    },
+    "ab_test": {
+      "design": "Run for 2 weeks. 5 carousels with fully illustrated slides vs 5 carousels with strong cover and simple template slides. Same hook quality, same topic mix, same posting times.",
+      "compare": ["sends per reach", "saves per reach", "completion rate", "follows per reach", "GLOW comments per reach"],
+      "decision_rule": "Keep the cheaper format unless the expensive one wins sends per reach by at least 30%. Log results in performance-tracker and update this file."
+    }
+  },
+  "hook_rules": {
+    "goal": "Make people want to send it to a specific person, not just like it.",
+    "formulas": [
+      "Credentialed source + quote + number + promise ('Here's what ...:')",
+      "Scene + number of years + open loop",
+      "Fact-hook: object + number + gap (cheap/simple but nobody talks about it) + colon"
+    ],
+    "send_test": "Name the exact person who would receive it ('Jennifer DMs it to her sister'). If you cannot, rewrite.",
+    "fact_rule": "Every number, study, quote and credential must be verified by search before building. Prefer wording the source supports ('a 2012 lab study found...'), add an honest caveat slide or caption line when the evidence is limited.",
+    "never": [
+      "invented quotes or invented insiders",
+      "AI persona presented as a real professional (flight attendant, nurse, etc.) to sell a product",
+      "AI scenes presented as real incidents; label reenactments in the caption",
+      "using someone else's photo or story without a license; if licensed, credit the creator on the image and in the caption"
+    ]
+  },
+  "topic_rules": {
+    "source": "Broad emotional topics beat lectures: family, marriage, mothers and grandmothers, scams, insiders, travel, money, age and shame, everyday objects.",
+    "body_topics_cap": "Body or science topics directly: at most 1 in 5 carousels, and only as a story or a verified fact-hook.",
+    "link_to_product": "Topic -> turn on slide 6 -> bridge to GLOW on slide 7 and in caption. The farther the topic from the body, the more reach but the fewer GLOW comments. Track GLOW comments per reach by topic category and drop categories that do not convert.",
+    "formats_per_day": "Do not repeat the same format twice in one day or batch."
+  },
+  "slide_copy_rules": {
+    "one_idea_per_slide": true,
+    "max_words_per_slide": 20,
+    "max_words_per_sentence": 15,
+    "language": "plain American English, 8th grade, no jargon, no clinical phrasing",
+    "slide_2": "Must work without slide 1 (Instagram may re-show a carousel starting at slide 2; HYPOTHESIS, treat as a precaution).",
+    "slide_3": "Strongest insight no later than slide 3.",
+    "slide_4": "Drop-off zone: mini-loop line plus a soft 'SAVE THIS' prompt.",
+    "promise_rule": "Whatever the cover promises must be delivered. An open loop without payoff burns trust."
+  },
+  "caption_rules": {
+    "length": "1700-1900 characters, measure with len()",
+    "structure": "second hook (different from the cover, under ~125 chars before the fold) -> context -> sourced facts -> honest note with caveats -> bridge to the product -> save line -> CTA block",
+    "first_line": "Never repeat or paraphrase the cover text.",
+    "honest_note": "Include one line that states limits of the evidence (lab study, small study, sources differ on details, reenactment, shared with permission).",
+    "product": "Carousels sell GLOW only. CTA block exactly: '👇 HOW TO GET IT: 👇 / • FOLLOW this account 🔒 / • COMMENT GLOW below 💬 / I'll send it straight to your DMs.'",
+    "forbidden": ["the word 'free'", "hashtags", "price", "'link in bio' for GLOW", "emoji on slide images (emoji only in the caption)"]
+  },
+  "production_rules": {
+    "slide_size": "1080x1350",
+    "image_generation": "Disabled unless the owner asks (cost). Use cover bank assets/covers or frames from footage first. Never use a real person's likeness or celebrity references.",
+    "schedule": "Create one post at a time; after any timeout check getCarouselPosts before retrying to avoid duplicates. Scheduled or published carousels cannot be edited or deleted through the API; the owner deletes manually, so review slides and caption BEFORE creating the post.",
+    "gaps": "One hour between posts unless the owner says otherwise."
+  },
+  "weekly_review": {
+    "table_columns": ["post", "format", "topic category", "reach", "sends", "saves", "follows", "GLOW comments", "completion"],
+    "actions": [
+      "Rank posts by sends per reach",
+      "Repeat the top format and topic category the next week",
+      "Drop topic categories with high reach but near-zero GLOW comments",
+      "Update the HYPOTHESIS items above with our own data"
+    ]
+  },
+  "honesty_contract": "Separate facts, hypotheses and unknowns in every recommendation. If data is missing, say so. Do not guess follower or sales outcomes. Challenge weak assumptions instead of agreeing."
+}
