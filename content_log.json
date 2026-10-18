@@ -963,6 +963,14 @@
       "music": "18.mp3",
       "product": "SAFETY",
       "file": "footage/rendered/reel_pickpocket_kira.mp4"
+    },
+    {
+      "date": "2026-10-18",
+      "format": "photo reel (licensed, Valerio Minato)",
+      "topic": "moon-monviso-superga",
+      "music": "22.mp3",
+      "product": "GLOW",
+      "file": "footage/rendered/reel_moon_superga.mp4"
     }
   ]
 }
