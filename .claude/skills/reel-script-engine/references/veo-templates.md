@@ -5,7 +5,18 @@
 - Клип 1 стартует с картинки Kira в этой же сцене и одежде (сгенерировать по LOOK + PLACE). Клипы 2–4 стартуют с последнего кадра предыдущего. Один голос, одинаковые блоки LOOK/PLACE/CAMERA в каждом промпте (не «замени блок»).
 - Запрет субтитров ВНАЧАЛЕ и В КОНЦЕ промпта (титры ставит Remotion). Если Veo всё равно рисует или мямлит: 3–4 дубля, меньше слов, медленнее.
 - Одежда эксперта: чёрный пиджак, белая рубашка, без стетоскопа, бейджей, логотипов.
-- Сцены: тёмные, неон-фиолетовый, живые детали, реквизит в руках. Не пастель и не стерильно.
+- СЦЕНА ПОДБИРАЕТСЯ ПОД ТЕМУ и каждый раз разная (кухня и машина ниже это только примеры, не обязательные). Условия: место сразу узнаётся по теме, 3–4 живые детали, понятный источник света, реквизит темы в руках или рядом, не пастельно и не стерильно. Неон-фиолет можно как акцент, если подходит, но не обязателен.
+
+## Как выбрать сцену (идеи, не список)
+- Отель, дверь, номер: коридор или вход в номер, тёплая лампа, окно с городом.
+- Такси, поездка: ночная улица у обочины или салон машины.
+- Аэропорт, самолёт: зона вылета или кресло у иллюминатора, дневной свет из окна.
+- Еда, вес, питание: кухня любого стиля (утренняя настоящая, кладовая, проход супермаркета), еда в руках.
+- Кожа, старение: ванная с зеркалом и настоящими баночками, свет из окна.
+- Мышцы, движение: угол дома с гантелями, рассветный свет или спортзал.
+- Сон, усталость: спальня на рассвете, тумбочка.
+- Деньги, быт: кухонный стол с бумагами и чашкой.
+Описывать PLACE так: место + 3–4 конкретные детали + источник света + реквизит + одна цветовая нота.
 - Жесты простые и привязаны к фразам. Пальцы: «exactly five fingers on each hand».
 
 ## Общие блоки
@@ -23,13 +34,13 @@ Same low, calm, warm female voice as the previous clips. Audio is only her voice
 
 No subtitles. No captions. No on-screen text.
 
-## СЦЕНА A: ТЁМНАЯ НЕОН-КУХНЯ (подходит GLOW: еда, вес, кожа)
+## ПРИМЕР СЦЕНЫ A: тёмная неон-кухня (для еды, веса; использовать только если подходит теме)
 CAMERA: Vertical 9:16 cinematic video, medium shot at the counter, slow gentle push-in, shallow depth of field.
 PLACE: A dark, moody, high-end home kitchen at night. Polished black granite counter with glossy reflections, a dark marble backsplash lit by a violet-purple LED strip casting a soft neon purple glow with out-of-focus purple bokeh, {PROPS_ON_COUNTER}. Low-key lighting, deep violet shadows, warm soft glow on her face, natural skin tones (her skin is never purple). The background is out of focus and completely still.
 AMBIENCE: a quiet kitchen room tone. PLACE_NAME: kitchen.
 Порядок блоков: HEAD, SPEECH, CAMERA + LOOK, PLACE, GESTURES, TAIL.
 
-## СЦЕНА B: НОЧНАЯ МАШИНА, НЬЮ-ЙОРК, СЕЛФИ (подходит SAFETY: поездки, такси, отель, безопасность)
+## ПРИМЕР СЦЕНЫ B: ночная машина, Нью-Йорк, селфи (для такси и поездок; использовать только если подходит теме)
 CAMERA: Vertical 9:16 selfie video, filmed as if she holds her phone at arm's length with her right arm extended toward the lens (the arm at the edge of the frame, no phone visible), wide front-camera look, slight natural handheld shake, mild phone-camera grain, her face upper center.
 PLACE: She sits in a modern dark sedan at night, parked at a curb in Manhattan, a seat belt across her chest. Black leather seats, a soft violet-and-pink ambient glow along the dashboard and door panel warming her face, a glass sunroof above showing the glowing night sky between tall buildings. Outside the windows a rain-slick street with violet, magenta and cyan neon reflections, out-of-focus yellow taxi lights and city bokeh. Natural skin tones, soft rim light, cozy gentle glow.
 AMBIENCE: a quiet car cabin with faint city traffic outside. PLACE_NAME: car.
