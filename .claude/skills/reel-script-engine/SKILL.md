@@ -1,6 +1,6 @@
 ---
 name: reel-script-engine
-description: Write the spoken script and the closing call-to-action for every @thekiramethod reel (talking head, voiceover, caption opening). Use BEFORE any Veo prompt or caption. Enforces a hook that stops the scroll, open loops that keep people to the end, plain language, fact-checked claims, and a value-based keyword CTA (SAFETY / GLOW / CALM). Applies automatically, the owner should not have to re-explain it.
+description: Write the spoken script and the closing call-to-action for every @thekiramethod reel (talking head, voiceover, caption opening). Use BEFORE any Veo prompt or caption. Enforces a hook that stops the scroll, open loops that keep people to the end, plain language, fact-checked claims, and a value-based keyword CTA (SAFETY / GLOW / CALM). AUTO-TRIGGER: apply to ANY message where the owner sends a topic, idea, screenshot, link, competitor reel or any content request, even without naming skills; deliver the full package (essence, per-clip script with exact speech, four complete Veo prompts, facts) without asking about format.
 ---
 
 # REEL SCRIPT ENGINE — сценарий, удержание, призыв
@@ -8,6 +8,15 @@ description: Write the spoken script and the closing call-to-action for every @t
 Читать ПЕРЕД любым диалогом, Veo-промптом и капшеном. Не спрашивать владельца про формат: применять по умолчанию.
 Всегда читать вместе со скиллом `reel-growth-playbook` (алгоритм Instagram с уровнем доказательности, рост подписчиков, протокол команды, журнал замечаний владельца) и его `references/fact-bank.md` (проверенные факты).
 Источники по CTA: вендорские блоги про comment-to-DM (Manychat и др.), цифры конверсии там не независимые, поэтому правила ниже это тактики для теста, не доказанные факты.
+
+## 0. ПАКЕТ ПО УМОЛЧАНИЮ (OUTPUT CONTRACT): срабатывает на ЛЮБУЮ тему, идею, скриншот, ссылку, рилс конкурента или просьбу про контент, без напоминаний от владельца
+Не переспрашивать про формат и скиллы. Спросить только если непонятно, это SAFETY или GLOW (иначе по теме: путешествия/безопасность = SAFETY, тело/вес/кожа/усталость = GLOW). Выдавать в таком порядке:
+1. **Суть (5 строк):** проблема, решение, совет, хук, зачем писать слово (ценность). Если суть не складывается в 5 строк, переписать идею.
+2. **Сценарий:** таблица 4 клипов с дословной речью (16–20 слов на клип) и жестами. Хук первыми словами, одна конкретная петля, призыв по формуле.
+3. **Четыре полных Veo-промпта** (каждый в своём блоке кода, все блоки повторены целиком) по шаблонам из `references/veo-templates.md`. Речь внутри промпта дословно.
+4. **Факты и оговорки:** 2–4 строки со ссылками из банка фактов или свежего поиска; что не подтверждено, не говорим.
+5. **Дальше:** «скинь готовое видео, залью и запланирую с подписью» (подпись и расписание делаются после видео).
+Показ «только хуков на одобрение» из общего пайплайна для talking-head рилсов НЕ применяется: владелец хочет сразу готовый пакет. Команда и фокус-группа одной строкой, как симуляция.
 
 ## 1. Роль
 Пиши как сильный редактор, контент-мейкер и маркетолог одновременно. Цель текста: человек не может оторваться, досматривает до конца, понимает суть за 5 секунд даже в 15 лет, получает конкретную пользу и сам хочет написать кодовое слово.

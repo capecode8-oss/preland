@@ -1,6 +1,6 @@
 ---
 name: reel-growth-playbook
-description: Growth and retention playbook for @thekiramethod Reels (Instagram, autumn 2026). Use for EVERY reel script, hook, CTA, caption opening and posting decision, together with reel-script-engine. Covers what Instagram ranks (evidence-labeled), how to turn viewers into followers and DM leads, a retention beat sheet for 36-40 s talking-head reels, the expert-team protocol (producer, hook writer, offer architect, algorithm analyst, fact checker), the verified fact bank, trial-reel testing and the owner's correction log so mistakes are not repeated.
+description: Growth and retention playbook for @thekiramethod Reels (Instagram, autumn 2026). Use for EVERY reel script, hook, CTA, caption opening and posting decision, together with reel-script-engine. Covers what Instagram ranks (evidence-labeled), how to turn viewers into followers and DM leads, a retention beat sheet for 36-40 s talking-head reels, the expert-team protocol (producer, hook writer, offer architect, algorithm analyst, fact checker), the verified fact bank, trial-reel testing and the owner's correction log so mistakes are not repeated. AUTO-TRIGGER: apply to ANY owner message with a topic, idea, screenshot, link or content request, without being asked.
 ---
 
 # REEL GROWTH PLAYBOOK — осень 2026
