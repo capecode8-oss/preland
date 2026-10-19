@@ -5,6 +5,8 @@ description: Generate AI video prompts for KIRA talking head reels (Veo 3 / Klin
 
 # KIRA TALKING HEAD — AI VIDEO PROMPT SYSTEM
 
+⚠️ Перед написанием ЛЮБОГО диалога и CTA прочитай скилл `reel-script-engine` (каркас 4 клипов, проверки логики и фактов, формула CTA, правила Veo против субтитров). Если он конфликтует с текстом ниже, он главнее.
+
 ## Формат: говорящая голова с локацией и субтитрами
 ## Tools: Veo 3 ⭐ · Kling 2.1 · Runway Gen-4 · Pika 2.2
 ## Niche: Travel · Health · Food · Money (USA, 35+)
