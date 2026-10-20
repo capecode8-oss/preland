@@ -138,6 +138,51 @@ h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; 
   </div>
 </section>
 
+<!-- PRACTICAL PLANS -->
+<section class="sec">
+  <h2>Practical plans for what you are facing right now</h2>
+  <p class="sub">Short, step-by-step guides with trackers and scripts. Pick the problem you have today.</p>
+  <div class="grid">
+    <article class="guide">
+      <h3><span class="dot" style="background:#1E6B65"></span>GLP-1 Muscle Guard</h3>
+      <p class="q">Losing weight but worried about losing muscle?</p>
+      <ul><li>Your daily protein number</li><li>25-minute strength routine at home</li><li>Side effects and when to call your doctor</li></ul>
+      <div class="price" data-price="glp1"></div>
+      <a class="btn alt" data-buy="glp1" href="#">Get this plan</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:#1C3D6E"></span>The Doctor Visit Kit</h3>
+      <p class="q">Labs are normal, but you still feel off?</p>
+      <ul><li>14-day symptom log</li><li>One-page Doctor Brief</li><li>Word-for-word scripts and questions</li></ul>
+      <div class="price" data-price="doctor"></div>
+      <a class="btn alt" data-buy="doctor" href="#">Get this kit</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:#9C4A2F"></span>The Bloat Reset</h3>
+      <p class="q">Flat in the morning, tight by noon?</p>
+      <ul><li>7-day plan, one small change a day</li><li>Fiber guide and trigger test</li><li>Red flags: when it is not just bloating</li></ul>
+      <div class="price" data-price="bloat"></div>
+      <a class="btn alt" data-buy="bloat" href="#">Get this plan</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:#2F6B3A"></span>Small-Appetite Protein Plan</h3>
+      <p class="q">Barely hungry, but need the protein?</p>
+      <ul><li>7 daily menus with grams added up</li><li>Swaps, shopping list, tracker</li><li>No cooking required</li></ul>
+      <div class="price" data-price="protein"></div>
+      <a class="btn alt" data-buy="protein" href="#">Get this plan</a>
+    </article>
+  </div>
+  <div class="plus" style="margin-top:12px">
+    <h3>All 4 practical plans</h3>
+    <div class="price-row">
+      <span class="price" data-price="plans4"></span>
+      <span class="was" data-was="plans4"></span>
+      <span class="save" data-save="plans4"></span>
+    </div>
+    <a class="btn alt" data-buy="plans4" href="#">Get all 4 plans</a>
+  </div>
+</section>
+
 <!-- BUNDLE + TRAVEL -->
 <section class="sec">
   <h2>Add the Travel Safety Guide</h2>
@@ -182,6 +227,11 @@ var OFFERS = {
   caffeine: { price: 9.90,  url: '' },
   am3:      { price: 9.90,  url: '' },
   bundle:   { price: 19.90, url: '', was: ['belly','aging','caffeine','am3'] },
+  glp1:     { price: 12.90, url: '' },
+  doctor:   { price: 9.90,  url: '' },
+  bloat:    { price: 9.90,  url: '' },
+  protein:  { price: 9.90,  url: '' },
+  plans4:   { price: 29.90, url: '', was: ['glp1','doctor','bloat','protein'] },
   travel:   { price: 14.90, url: '' },
   combo:    { price: 27.90, url: '', was: ['bundle','travel'] }
 };

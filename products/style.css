@@ -38,3 +38,5 @@ ul.checks li::before { content: "\2610  "; }
 .nobreak { break-inside: avoid; }
 
 h1, h2, h3 { break-after: avoid; }
+
+table.two { break-inside: auto; }
