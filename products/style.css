@@ -1,6 +1,6 @@
 @font-face { font-family: "MontBold"; src: url("Montserrat-Bold.ttf"); }
 @page { size: 8.5in 11in; margin: 0.8in 0.85in 0.9in;
-  @bottom-center { content: "GLP-1 Muscle Guard · The Kira Method · Educational information only, not medical advice."; font-family: "Liberation Sans", sans-serif; font-size: 7.5pt; color: #6a5e52; } }
+  @bottom-center { content: "The Muscle Tax · The Kira Method · Educational information only, not medical advice."; font-family: "Liberation Sans", sans-serif; font-size: 7.5pt; color: #6a5e52; } }
 @page :first { margin: 0; @bottom-center { content: ""; } }
 :root { --accent: #1E6B65; --ink: #1d1a16; --muted: #6a5e52; --soft: #eef4f2; --warm: #f7efe6; --warn: #fbe9e5; --warnline: #c13428; }
 * { box-sizing: border-box; }
