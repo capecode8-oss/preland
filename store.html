@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Body Has Been Trying to Tell You: Choose Your Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root {
+  --bg: #F2EDE5; --card: #FFFFFF; --teal: #1E6B65; --coral: #C13428; --amber: #B8820F;
+  --navy: #1C3D6E; --text: #18140F; --muted: #6A5E52; --border: rgba(0,0,0,0.08);
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font: 16px/1.6 'Inter', system-ui, sans-serif; margin: 0; padding: 0 16px 48px; }
+.wrap { max-width: 720px; margin: 0 auto; }
+h1, h2, h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; line-height: 1.15; margin: 0; }
+.hero { padding: 48px 0 28px; text-align: center; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--teal); margin-bottom: 12px; }
+.hero h1 { font-size: clamp(30px, 7vw, 44px); margin-bottom: 14px; }
+.hero p { color: var(--muted); margin: 0 auto; max-width: 520px; }
+.sec { margin-top: 36px; }
+.sec h2 { font-size: 24px; margin-bottom: 6px; }
+.sec .sub { color: var(--muted); font-size: 14px; margin: 0 0 16px; }
+
+.bundle { background: var(--card); border: 2px solid var(--teal); border-radius: 20px; padding: 24px 20px; position: relative; }
+.badge { position: absolute; top: -12px; left: 20px; background: var(--teal); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px; letter-spacing: .04em; }
+.bundle h3 { font-size: 24px; margin-bottom: 6px; }
+.bundle p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+.ticks { list-style: none; padding: 0; margin: 0 0 16px; font-size: 15px; }
+.ticks li { padding-left: 24px; position: relative; margin-bottom: 6px; }
+.ticks li::before { content: "✓"; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+.price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+.price { font: 900 34px 'Playfair Display', Georgia, serif; color: var(--coral); }
+.was { color: var(--muted); text-decoration: line-through; font-size: 16px; }
+.save { font-size: 13px; font-weight: 700; color: var(--teal); background: #E3EDE8; padding: 3px 10px; border-radius: 999px; }
+.btn { display: block; width: 100%; text-align: center; text-decoration: none; background: var(--teal); color: #fff; font-weight: 700; font-size: 16px; padding: 16px; border-radius: 14px; border: 0; cursor: pointer; }
+.btn.alt { background: #fff; color: var(--teal); border: 2px solid var(--teal); }
+.btn[aria-disabled="true"] { opacity: .45; pointer-events: none; }
+
+.grid { display: grid; gap: 12px; grid-template-columns: 1fr 1fr; }
+@media (max-width: 520px) { .grid { grid-template-columns: 1fr; } }
+.guide { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+.guide h3 { font-size: 18px; margin-bottom: 4px; }
+.guide .q { color: var(--muted); font-size: 14px; margin: 0 0 10px; }
+.guide ul { margin: 0 0 14px; padding-left: 18px; font-size: 14px; color: var(--text); flex: 1; }
+.guide .price { font-size: 24px; margin-bottom: 10px; }
+
+.plus { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 18px; }
+.plus h3 { font-size: 20px; margin-bottom: 6px; }
+.tools { font-size: 14px; color: var(--muted); margin: 0 0 14px; }
+
+.faq details { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; margin-bottom: 8px; }
+.faq summary { font-weight: 600; cursor: pointer; }
+.faq p { margin: 8px 0 0; color: var(--muted); font-size: 15px; }
+.fine { margin-top: 36px; font-size: 12px; color: var(--muted); line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">For women 30+</div>
+  <h1>Your Body Has Been Trying to Tell You</h1>
+  <p>Four short, research-based guides on the signals most women are told to ignore. Start with one, or take the whole set.</p>
+</header>
+
+<!-- BEST VALUE: BUNDLE -->
+<section class="sec" style="margin-top:12px">
+  <div class="bundle">
+    <span class="badge">BEST VALUE</span>
+    <h3>The Health Bundle</h3>
+    <p>All 4 guides plus 4 fillable tools. Everything in one place.</p>
+    <ul class="ticks">
+      <li>The Belly Fat Lie, Aging Faster Than You Should, The Caffeine Trap, The 3AM Signal</li>
+      <li>4 tools: Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor</li>
+      <li>8 PDF files, instant download after payment</li>
+      <li>14-day money-back guarantee</li>
+    </ul>
+    <div class="price-row">
+      <span class="price" data-price="bundle"></span>
+      <span class="was" data-was="bundle"></span>
+      <span class="save" data-save="bundle"></span>
+    </div>
+    <a class="btn" data-buy="bundle" href="#">Get the bundle</a>
+  </div>
+</section>
+
+<!-- SINGLE GUIDES -->
+<section class="sec">
+  <h2>Or start with one guide</h2>
+  <p class="sub">Pick the question you're asking right now.</p>
+  <div class="grid">
+    <article class="guide">
+      <h3><span class="dot" style="background:var(--coral)"></span>The Belly Fat Lie</h3>
+      <p class="q">Why is this still here?</p>
+      <ul>
+        <li>3 hidden causes most diets ignore</li>
+        <li>1 hormonal shift after 35</li>
+        <li>7 "healthy" foods that can make it worse</li>
+      </ul>
+      <div class="price" data-price="belly"></div>
+      <a class="btn alt" data-buy="belly" href="#">Get this guide</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:#2A8A82"></span>Aging Faster Than You Should</h3>
+      <p class="q">Something changed. What?</p>
+      <ul>
+        <li>5 silent accelerators of aging</li>
+        <li>2 lab markers worth asking about</li>
+        <li>A 14-day starting plan</li>
+      </ul>
+      <div class="price" data-price="aging"></div>
+      <a class="btn alt" data-buy="aging" href="#">Get this guide</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:var(--amber)"></span>The Caffeine Trap</h3>
+      <p class="q">Why am I still tired?</p>
+      <ul>
+        <li>3 types of fatigue caffeine can't fix</li>
+        <li>1 test to find your energy leak</li>
+        <li>30-day protocol, one change a week</li>
+      </ul>
+      <div class="price" data-price="caffeine"></div>
+      <a class="btn alt" data-buy="caffeine" href="#">Get this guide</a>
+    </article>
+    <article class="guide">
+      <h3><span class="dot" style="background:var(--navy)"></span>The 3AM Signal</h3>
+      <p class="q">Why does my body wake me up?</p>
+      <ul>
+        <li>6 body signals that only surface at night</li>
+        <li>4 organs that send 3AM wake-up calls</li>
+        <li>12-minute protocol to get back to sleep</li>
+      </ul>
+      <div class="price" data-price="am3"></div>
+      <a class="btn alt" data-buy="am3" href="#">Get this guide</a>
+    </article>
+  </div>
+</section>
+
+<!-- BUNDLE + TRAVEL -->
+<section class="sec">
+  <h2>Add the Travel Safety Guide</h2>
+  <p class="sub">For women who travel: airports, hotels, cruise ships, rideshares.</p>
+  <div class="plus">
+    <h3>Health Bundle + Travel Safety Guide</h3>
+    <p class="tools">Everything above, plus 45+ real situations and exactly what to do in each.</p>
+    <div class="price-row">
+      <span class="price" data-price="combo"></span>
+      <span class="was" data-was="combo"></span>
+      <span class="save" data-save="combo"></span>
+    </div>
+    <a class="btn alt" data-buy="combo" href="#">Get both</a>
+  </div>
+  <div class="plus" style="margin-top:12px">
+    <h3>Travel Safety Guide only</h3>
+    <div class="price-row"><span class="price" data-price="travel"></span></div>
+    <a class="btn alt" data-buy="travel" href="#">Get the travel guide</a>
+  </div>
+</section>
+
+<section class="sec faq">
+  <h2 style="margin-bottom:12px">Questions</h2>
+  <details><summary>What do I get after paying?</summary><p>A download link by email within about a minute. PDFs open on any phone, tablet, Kindle or computer.</p></details>
+  <details><summary>Is it a subscription?</summary><p>No. One payment, and the files are yours to keep.</p></details>
+  <details><summary>What if it isn't for me?</summary><p>You have 14 days to ask for your money back.</p></details>
+  <details><summary>Is this medical advice?</summary><p>No. These guides are educational. They help you notice patterns and prepare better questions for your doctor. They do not diagnose or treat anything.</p></details>
+</section>
+
+<p class="fine">Educational information only. Not medical advice, diagnosis or treatment, and not a substitute for a visit to a licensed doctor. Talk to your doctor before you change medication, supplements or treatment, especially if you are pregnant, breastfeeding or have a medical condition. If you have sudden, severe or worsening symptoms, contact a doctor or emergency services right away. Individual results vary and no specific health outcome is promised. Digital product: PDF files are delivered by email after payment, nothing is shipped.</p>
+
+</div>
+
+<script>
+/* ============ CONFIG: put the real Lava.top product URLs here ============
+   Price = what the person really pays. "was" is computed from the prices of the
+   separate products that are really sold, so every saving shown is real.
+   An empty url keeps that button disabled until the product exists. */
+var OFFERS = {
+  belly:    { price: 9.90,  url: '' },
+  aging:    { price: 9.90,  url: '' },
+  caffeine: { price: 9.90,  url: '' },
+  am3:      { price: 9.90,  url: '' },
+  bundle:   { price: 19.90, url: '', was: ['belly','aging','caffeine','am3'] },
+  travel:   { price: 14.90, url: '' },
+  combo:    { price: 27.90, url: '', was: ['bundle','travel'] }
+};
+
+function money(n) { return '$' + n.toFixed(2); }
+
+Object.keys(OFFERS).forEach(function (key) {
+  var o = OFFERS[key];
+  document.querySelectorAll('[data-price="' + key + '"]').forEach(function (el) { el.textContent = money(o.price); });
+  if (o.was) {
+    var total = o.was.reduce(function (s, k) { return s + OFFERS[k].price; }, 0);
+    if (total > o.price) {
+      var pct = Math.round((1 - o.price / total) * 100);
+      document.querySelectorAll('[data-was="' + key + '"]').forEach(function (el) { el.textContent = money(total); });
+      document.querySelectorAll('[data-save="' + key + '"]').forEach(function (el) { el.textContent = 'Save ' + pct + '%'; });
+    }
+  }
+  document.querySelectorAll('[data-buy="' + key + '"]').forEach(function (a) {
+    if (o.url) { a.href = o.url; a.target = '_blank'; a.rel = 'noopener'; }
+    else { a.setAttribute('aria-disabled', 'true'); a.removeAttribute('href'); }
+  });
+});
+</script>
+</body>
+</html>
