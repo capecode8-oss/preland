@@ -1,0 +1,40 @@
+@font-face { font-family: "MontBold"; src: url("Montserrat-Bold.ttf"); }
+@page { size: 8.5in 11in; margin: 0.8in 0.85in 0.9in;
+  @bottom-center { content: "GLP-1 Muscle Guard · The Kira Method · Educational information only, not medical advice."; font-family: "Liberation Sans", sans-serif; font-size: 7.5pt; color: #6a5e52; } }
+@page :first { margin: 0; @bottom-center { content: ""; } }
+:root { --accent: #1E6B65; --ink: #1d1a16; --muted: #6a5e52; --soft: #eef4f2; --warm: #f7efe6; --warn: #fbe9e5; --warnline: #c13428; }
+* { box-sizing: border-box; }
+html { font-size: 11pt; }
+body { font-family: "Liberation Sans", Helvetica, Arial, sans-serif; color: var(--ink); line-height: 1.5; margin: 0; }
+h1, h2, h3, .kicker { font-family: "MontBold", "Liberation Sans", sans-serif; }
+h1 { font-size: 24pt; line-height: 1.15; margin: 0 0 12pt; color: var(--accent); }
+h2 { font-size: 15pt; margin: 18pt 0 6pt; color: var(--ink); }
+h3 { font-size: 12pt; margin: 12pt 0 4pt; color: var(--accent); }
+p { margin: 0 0 8pt; }
+ul, ol { margin: 0 0 8pt; padding-left: 18pt; }
+li { margin-bottom: 3pt; }
+.pb { break-before: page; }
+.kicker { font-size: 9pt; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 6pt; }
+.cover { display: flex; flex-direction: column; justify-content: center; background: linear-gradient(160deg, #1E6B65 0%, #174f4b 100%); color: #fff; padding: 0.9in; margin: 0; height: 11in; width: 8.5in; break-after: page; }
+.cover .kicker { color: #bfe3dd; }
+.cover h1 { color: #fff; font-size: 38pt; margin-bottom: 14pt; }
+.cover .sub { font-size: 14pt; line-height: 1.4; max-width: 5.6in; color: #e8f5f2; }
+.cover .by { margin-top: 36pt; font-size: 10pt; color: #bfe3dd; }
+.callout { background: var(--soft); border-left: 4px solid var(--accent); padding: 10pt 12pt; margin: 10pt 0; border-radius: 4px; break-inside: avoid; }
+.warn { background: var(--warn); border-left: 4px solid var(--warnline); padding: 10pt 12pt; margin: 10pt 0; border-radius: 4px; break-inside: avoid; }
+.warm { background: var(--warm); padding: 10pt 12pt; margin: 10pt 0; border-radius: 4px; break-inside: avoid; }
+.callout p:last-child, .warn p:last-child, .warm p:last-child { margin-bottom: 0; }
+.big { font-size: 13pt; font-weight: bold; }
+table { width: 100%; border-collapse: collapse; margin: 8pt 0 12pt; font-size: 10pt; break-inside: avoid; }
+th { background: var(--accent); color: #fff; text-align: left; padding: 6pt 8pt; font-family: "MontBold", sans-serif; font-size: 9pt; }
+td { padding: 6pt 8pt; border-bottom: 1px solid #ddd5ca; vertical-align: top; }
+tr:nth-child(even) td { background: #faf7f2; }
+.box::before { content: "\2610  "; }
+ul.checks { list-style: none; padding-left: 0; }
+ul.checks li::before { content: "\2610  "; }
+.small { font-size: 9pt; color: var(--muted); }
+.lines div { border-bottom: 1px solid #bbb; height: 20pt; }
+.two { columns: 2; column-gap: 24pt; }
+.nobreak { break-inside: avoid; }
+
+h1, h2, h3 { break-after: avoid; }
