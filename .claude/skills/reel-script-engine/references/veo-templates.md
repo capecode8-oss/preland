@@ -58,3 +58,11 @@ AMBIENCE: a very quiet studio room tone. PLACE_NAME: studio.
 Стартовый кадр (картинка с лицом Киры): та же студия, Кира за микрофоном, чёрный пиджак и белая рубашка, без текста и логотипов.
 Если Veo тянет руки к микрофону: «her hands stay well to the left of the microphone».
 Перед выдачей к каждому сценарию добавлять РАСКАДКУ ГРАФИКИ для Remotion (что показывать сверху в каждом клипе).
+
+### АНТИ-СУБТИТРЫ ДЛЯ СЦЕНЫ C (Oct 23 2026: «подкаст» и «говорящая голова» провоцируют Veo рисовать титры)
+- НЕ писать слово «podcast» ни в тексте, ни в голосе (писать «cozy home studio», «close-miked clean voice»): подкаст-ролики в обучающих данных обычно с титрами.
+- В начале: «raw, unedited camera footage with nothing added on top of it; the frame shows only the real studio, the woman and the microphone; no subtitles, no captions, no text, no letters, no words, no lower thirds, no watermark, no graphics of any kind; the speech is audio only».
+- В конце: «Nothing is overlaid on the picture. No subtitles. No captions. No text. The lower part of the frame is just the desk and the microphone.»
+- В сцене нет ничего похожего на текст: без экранов, книг с надписями, логотипов на микрофоне.
+- Если интерфейс Flow даёт поле Negative prompt: `subtitles, captions, text, letters, words, lower third, watermark, logo, graphics`.
+- Если титры всё равно появились: 2–3 дубля, укоротить реплику, не отходить от шаблона.
