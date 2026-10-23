@@ -47,3 +47,14 @@ AMBIENCE: a quiet car cabin with faint city traffic outside. PLACE_NAME: car.
 
 ## ПРИМЕР ЖЕСТОВ
 «She jabs one finger toward the lens on the first sentence, shakes her head slowly on the second, and on the last sentence points one index finger downward toward the area below the frame and holds that pose until the end.»
+
+## СЦЕНА C: ПОДКАСТ-СТУДИЯ — ФОРМАТ ПО УМОЛЧАНИЮ С Oct 23 2026 (решение владельца)
+Кира сидит как эксперт в уютной подкаст-студии и живо говорит. Владелец монтирует в Remotion: Кира внизу, моушн-графика сверху. Поэтому КАМЕРА СТАТИЧНАЯ, кадр идентичен во всех клипах, голова в верхней половине кадра, микрофон снизу не закрывает рот.
+CAMERA: Vertical 9:16, locked-off static tripod shot, no zoom, no push-in, no handheld shake, medium shot, her head and shoulders in the upper half of the frame, shallow depth of field.
+PLACE: A cozy podcast studio. A teal-cyan blue wall with built-in shelves holding a snake plant, a trailing green pothos plant and a small ceramic vase, a tan velvet armchair back behind her, the edge of a large octagonal softbox glowing warm in the top-right corner. A large plain black broadcast microphone on a boom arm in the lower center foreground, below her chin, never covering her mouth, no logos. Warm soft key light on her face, cool cyan fill from the wall, natural skin tones. The background is completely still.
+PERFORMANCE: She talks like a real person telling a friend something interesting: steady eye contact with the lens, natural blinking, small head nods and tilts, eyebrows that move with the words, smile on good news, serious look on warnings. She gestures with her right hand in the open space left of the microphone (open palms, counting on fingers, small pointing moves) in time with the words; left hand mostly out of frame; never touches the microphone; hands never cross in front of her face. Привязывать жесты к конкретным словам реплики.
+SPEECH-добавка для этой сцены: «starting within a third of a second of the first frame and finishing right at the end of the clip» (без хвостов тишины, удобно резать).
+AMBIENCE: a very quiet studio room tone. PLACE_NAME: studio.
+Стартовый кадр (картинка с лицом Киры): та же студия, Кира за микрофоном, чёрный пиджак и белая рубашка, без текста и логотипов.
+Если Veo тянет руки к микрофону: «her hands stay well to the left of the microphone».
+Перед выдачей к каждому сценарию добавлять РАСКАДКУ ГРАФИКИ для Remotion (что показывать сверху в каждом клипе).
