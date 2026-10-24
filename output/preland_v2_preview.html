@@ -1221,7 +1221,7 @@ body{padding-inline:16px!important}
 .hero-title{font-size:clamp(30px,5vw,48px);line-height:1.12}
 @media(min-width:900px){.hero-title{font-size:46px}}
 
-h1,h2,h3,.hero-title,.sec-title,.fb-title,.bc-title{font-family:'Inter','Segoe UI',system-ui,sans-serif;letter-spacing:-.015em}
+@media(max-width:640px){.tools-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.tool-icon{display:none}.tool-card{padding:14px!important}.tool-name{font-size:15px!important;margin:0 0 4px!important}.tool-meta{font-size:13px!important;margin:0!important}.wait{padding:20px!important}.vcard{padding:16px 18px!important}.vcard .big{display:none}.vcard h3{font-size:18px!important;margin:0 0 4px!important}.vcard p{font-size:15px!important;margin:0!important}}h1,h2,h3,.hero-title,.sec-title,.fb-title,.bc-title{font-family:'Inter','Segoe UI',system-ui,sans-serif;letter-spacing:-.015em}
 .hero-title,.sec-title{font-weight:800}
 .fb-title{font-weight:800;line-height:1.08;font-size:17px!important;letter-spacing:-.01em;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 .fb-num{font-size:10px!important;font-weight:700;opacity:.95}
@@ -1470,7 +1470,7 @@ var CONFIG = {
     o=o||{};var sep=sum(b.books),ok=bundleReady(b),save=sep-b.price;
     var list=b.books.map(function(n){return '<li>'+esc(B[n].t)+(ready(n)?'':' <span class="tag-soon">soon</span>')+'</li>'}).join('');
     var left='<div><h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p style="margin-top:8px">'+esc(C.tools)+'</p>':'')+'</div>';
-    var right='<div class="buycol"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
+    var right='<div class="buycol"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0&&b.books.every(ready)?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
       btn(b.url,ok,'GET THE '+b.name.toUpperCase()+' →','Link coming soon')+(ok?'<p class="micro">🔒 Secure checkout · Instant PDF · 14-day refund</p>':'')+(C.sampleUrl?'<p class="micro"><a href="'+C.sampleUrl+'" rel="noopener">Read a sample page</a></p>':'')+'</div>';
     return '<div class="card'+(o.best?' best':'')+'">'+(o.badge?'<span class="badge">'+o.badge+'</span>':'')+(o.wide?'<div class="featured-in">'+left+right+'</div>':left+right)+'</div>';
   }
