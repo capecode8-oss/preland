@@ -1,0 +1,645 @@
+[
+ {
+  "id": "g_mirror_side",
+  "file": "gen/g_mirror_side.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "mirror",
+   "face",
+   "morning",
+   "worried"
+  ],
+  "prompt": "Side-on shot of her leaning on both hands at a bathroom sink, studying her own face in the mirror, one eyebrow slightly raised, towel on her shoulder, soft morning window light on the tiles."
+ },
+ {
+  "id": "g_bed_3am",
+  "file": "gen/g_bed_3am.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "bedroom",
+   "3am",
+   "sleep",
+   "tired"
+  ],
+  "prompt": "She sits on the edge of a rumpled bed with her feet on the rug, phone in her hand showing 3:07 in large digits, warm bedside lamp lighting the room clearly, blanket pushed aside, looking at the phone not the camera."
+ },
+ {
+  "id": "g_pill_label",
+  "file": "gen/g_pill_label.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "supplements",
+   "label",
+   "reading",
+   "hands"
+  ],
+  "prompt": "Close shot of her hands holding a supplement bottle at the kitchen counter, reading glasses pushed up into her hair, squinting at the small print on the label, bright daylight from the window."
+ },
+ {
+  "id": "g_doctor_waiting",
+  "file": "gen/g_doctor_waiting.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "doctor",
+   "waiting",
+   "clipboard"
+  ],
+  "prompt": "In a clinic waiting room she fills in a form on a clipboard, pen paused mid-line, glancing sideways toward a door out of frame, pale walls, daylight through a big window, chairs blurred behind her."
+ },
+ {
+  "id": "g_waistband",
+  "file": "gen/g_waistband.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "belly",
+   "waist",
+   "jeans"
+  ],
+  "prompt": "Shot from chin down, she stands in a bright bedroom pulling at the waistband of her denim jeans with a thumb, loose cotton shirt, morning light, her face is partly cropped by the top of the frame."
+ },
+ {
+  "id": "g_park_walk",
+  "file": "gen/g_park_walk.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "walking",
+   "park",
+   "autumn"
+  ],
+  "prompt": "Caught mid-stride on a leafy park path in autumn, glancing down at her smartwatch, leaves blurred in motion at the edges, cardigan open, soft overcast daylight."
+ },
+ {
+  "id": "g_grocery_label",
+  "file": "gen/g_grocery_label.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "grocery",
+   "label",
+   "food"
+  ],
+  "prompt": "In a supermarket aisle she holds a cereal box at arm's length reading the nutrition label with narrowed eyes, shopping basket on her elbow, bright store lighting, colorful shelves softly blurred."
+ },
+ {
+  "id": "g_couch_laptop",
+  "file": "gen/g_couch_laptop.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "tired",
+   "laptop",
+   "couch",
+   "afternoon"
+  ],
+  "prompt": "Afternoon on the couch under a knitted blanket with a laptop on her knees, pinching the bridge of her nose with eyes closed, half-drunk cup of tea on the arm of the sofa, sunlight across the room."
+ },
+ {
+  "id": "g_tea_window",
+  "file": "gen/g_tea_window.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "tea",
+   "window",
+   "calm",
+   "morning"
+  ],
+  "prompt": "Over-the-shoulder view of her pouring tea into a mug at a window, steam rising, looking out at a garden, face in soft profile, sleepy hair, bright cool morning light."
+ },
+ {
+  "id": "g_car_breath",
+  "file": "gen/g_car_breath.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "car",
+   "stress",
+   "breathing",
+   "eyes-closed"
+  ],
+  "prompt": "Parked in her car in the afternoon sun, both hands on the steering wheel, eyes closed, taking a slow deep breath, shopping bags on the passenger seat, light flaring through the windshield."
+ },
+ {
+  "id": "g_cafe_friends",
+  "file": "gen/g_cafe_friends.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "cafe",
+   "friends",
+   "window",
+   "comparison"
+  ],
+  "prompt": "Photographed through a cafe window from the street: she sits alone at a small table with a half-smile watching a group of laughing friends at the next table, reflection of the street on the glass, daylight."
+ },
+ {
+  "id": "g_desk_clock_coffee",
+  "file": "gen/g_desk_clock_coffee.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "coffee",
+   "caffeine",
+   "clock",
+   "desk"
+  ],
+  "prompt": "Close detail at a home desk: her hand wrapped around a coffee mug beside a small analog clock reading two o'clock, laptop and a notepad blurred behind, her face just visible at the edge of the frame looking at the screen."
+ },
+ {
+  "id": "g_temples_desk",
+  "file": "gen/g_temples_desk.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "headache",
+   "desk",
+   "stress",
+   "tired"
+  ],
+  "prompt": "Messy bun, fingertips pressed to both temples at a cluttered home office desk, sticky notes and a mug in front of her, eyes shut, afternoon window light from the left."
+ },
+ {
+  "id": "g_fridge_open",
+  "file": "gen/g_fridge_open.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "fridge",
+   "kitchen",
+   "snack",
+   "hesitation"
+  ],
+  "prompt": "She stands at an open refrigerator in a bright kitchen, one hand on the door, the other hovering undecided over a shelf, cool fridge light on her face, glancing at the camera with a guilty half-smile."
+ },
+ {
+  "id": "g_tub_phone",
+  "file": "gen/g_tub_phone.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "bathroom",
+   "phone",
+   "steps",
+   "tired"
+  ],
+  "prompt": "Sitting on the edge of a bathtub in a white bathroom, scrolling a health app on her phone with a tired small smile, bathrobe, daylight from a frosted window."
+ },
+ {
+  "id": "g_back_stretch",
+  "file": "gen/g_back_stretch.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "yoga",
+   "stretch",
+   "back",
+   "living-room"
+  ],
+  "prompt": "Mid-stretch on a yoga mat in a sunlit living room, one hand pressed to her lower back, wincing slightly, leggings and a loose tee, plants and a window behind her."
+ },
+ {
+  "id": "g_notebook_log",
+  "file": "gen/g_notebook_log.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "notebook",
+   "writing",
+   "log",
+   "desk"
+  ],
+  "prompt": "Over-the-shoulder shot of her writing in a notebook, pen mid-sentence, looking up at a window with a thoughtful expression, handwritten dated list on the page, morning light, coffee untouched."
+ },
+ {
+  "id": "g_face_honest",
+  "file": "gen/g_face_honest.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "face",
+   "serious",
+   "close"
+  ],
+  "prompt": "Close portrait with strong morning sun hitting one side of her face, hair messy, no makeup, an honest tired look straight into the camera, shallow depth of field, plain wall behind her."
+ },
+ {
+  "id": "g_lab_report",
+  "file": "gen/g_lab_report.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "lab",
+   "report",
+   "reading",
+   "kitchen"
+  ],
+  "prompt": "At a kitchen counter she follows one line of a printed lab report with her finger, reading glasses on, brows drawn together, folder and pen beside her, bright daylight."
+ },
+ {
+  "id": "g_morning_robe",
+  "file": "gen/g_morning_robe.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "glow"
+  ],
+  "tags": [
+   "morning",
+   "robe",
+   "stairs",
+   "sleepy"
+  ],
+  "prompt": "Coming down a staircase in a robe, one hand on the banister, looking down at her feet, squinting in the morning sun from a hallway window, hair unbrushed."
+ },
+ {
+  "id": "s_rental_walkaround",
+  "file": "gen/s_rental_walkaround.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "rental",
+   "car",
+   "phone",
+   "filming"
+  ],
+  "prompt": "Crouching beside the front bumper of a white rental car in a sunny parking lot, filming a small scratch with her phone, keys in her other hand, sunglasses pushed up, midday light."
+ },
+ {
+  "id": "s_hotel_safe",
+  "file": "gen/s_hotel_safe.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "safe",
+   "closet",
+   "passport"
+  ],
+  "prompt": "In a hotel room closet she taps a code into a small in-room safe, passport in her other hand, glancing back over her shoulder toward the door, daylight through sheer curtains."
+ },
+ {
+  "id": "s_hotel_corridor",
+  "file": "gen/s_hotel_corridor.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "corridor",
+   "keycard",
+   "luggage"
+  ],
+  "prompt": "Wide shot in a hotel corridor, she pulls a carry-on and checks a key card against the room numbers on the doors, mid-step, carpet runner leading away, warm light from wall sconces."
+ },
+ {
+  "id": "s_desk_passport",
+  "file": "gen/s_desk_passport.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "reception",
+   "passport",
+   "counter"
+  ],
+  "prompt": "Her face in sharp profile as she slides a passport across a marble front-desk counter, the clerk's hand just entering the frame, brass bell and flowers blurred, bright lobby light."
+ },
+ {
+  "id": "s_vendor_bracelet",
+  "file": "gen/s_vendor_bracelet.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "vendor",
+   "bracelet",
+   "offer",
+   "scam"
+  ],
+  "prompt": "POV from the vendor's side: a stranger's hand holds out a colorful woven bracelet toward her in a sunny Mediterranean old-town street, she steps back with a raised palm and a polite uncomfortable smile."
+ },
+ {
+  "id": "s_photo_offer",
+  "file": "gen/s_photo_offer.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "street",
+   "photo",
+   "phone",
+   "offer",
+   "scam"
+  ],
+  "prompt": "Over her shoulder: a friendly stranger's hands reach for her phone offering to take her picture in front of a famous fountain, she holds the phone against her chest hesitating, tourists blurred around, bright sun."
+ },
+ {
+  "id": "s_cruise_sanitizer",
+  "file": "gen/s_cruise_sanitizer.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "buffet",
+   "sanitizer",
+   "doubt"
+  ],
+  "prompt": "At a cruise ship buffet entrance she stands by a wall hand-sanitizer dispenser with an empty plate in one hand, eyeing the dispenser doubtfully, white and blue ship interior, bright light."
+ },
+ {
+  "id": "s_port_hurry",
+  "file": "gen/s_port_hurry.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "cruise",
+   "port",
+   "watch",
+   "hurry"
+  ],
+  "prompt": "On a sunny pier, she hurries toward a huge cruise ship while checking her wristwatch, tote bag swinging, shore-excursion crowd blurred behind, a little out of breath."
+ },
+ {
+  "id": "s_arrivals_tout",
+  "file": "gen/s_arrivals_tout.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "arrivals",
+   "taxi",
+   "tout"
+  ],
+  "prompt": "In an airport arrivals hall she walks past while looking at her phone, sharp in the foreground; behind her a man in a jacket gestures toward her bag offering a taxi, travelers blurred, bright terminal light."
+ },
+ {
+  "id": "s_rideshare_plate",
+  "file": "gen/s_rideshare_plate.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "rideshare",
+   "plate",
+   "curb",
+   "phone"
+  ],
+  "prompt": "On a city curb she leans slightly to read a license plate and compares it to her phone screen before opening the car door, a silver sedan idling beside her, street trees, daylight."
+ },
+ {
+  "id": "s_security_tray",
+  "file": "gen/s_security_tray.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "security",
+   "tray",
+   "laptop"
+  ],
+  "prompt": "At airport security she places a laptop into a gray tray while looking back at her bag behind her, conveyor belt and other travelers blurred, cool bright terminal light."
+ },
+ {
+  "id": "s_atm_cover",
+  "file": "gen/s_atm_cover.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "atm",
+   "pin",
+   "street",
+   "money"
+  ],
+  "prompt": "Behind and beside her at a street ATM in a European old town, she shields the keypad with her left hand while typing with the right, coat collar up, a passer-by blurred behind, overcast daylight."
+ },
+ {
+  "id": "s_exchange_board",
+  "file": "gen/s_exchange_board.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "exchange",
+   "rates",
+   "money",
+   "receipt"
+  ],
+  "prompt": "At a currency exchange booth she squints at a glowing rate board above the counter with a printed receipt in her hand, comparing numbers, slightly worried look, bright fluorescent light."
+ },
+ {
+  "id": "s_lobby_wifi",
+  "file": "gen/s_lobby_wifi.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "wifi",
+   "lobby",
+   "laptop",
+   "hesitation"
+  ],
+  "prompt": "Seated in a hotel lobby armchair with a laptop, a framed free-WiFi sign blurred behind her, one finger hovering over the trackpad, wary sideways glance, soft window light."
+ },
+ {
+  "id": "s_metro_bag",
+  "file": "gen/s_metro_bag.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "metro",
+   "crowd",
+   "bag",
+   "pickpocket"
+  ],
+  "prompt": "In a crowded metro car she hugs her crossbody bag in front of her with both arms, eyes scanning the faces around her, commuters blurred, wide angle, cool fluorescent light with a warm window glow."
+ },
+ {
+  "id": "s_bill_pen",
+  "file": "gen/s_bill_pen.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "restaurant",
+   "bill",
+   "pen",
+   "money"
+  ],
+  "prompt": "At a restaurant table she taps a pen on one line of the printed bill, brows lowered, a waiter blurred in the background, plates and glasses on a checkered cloth, warm afternoon light."
+ },
+ {
+  "id": "s_passport_zip",
+  "file": "gen/s_passport_zip.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "passport",
+   "pocket",
+   "hands",
+   "jacket"
+  ],
+  "prompt": "Close on her hands sliding a passport into an inner zip pocket of a travel jacket, face cropped at the lips, bright airport windows behind, quick motion slightly soft."
+ },
+ {
+  "id": "s_gate_delay",
+  "file": "gen/s_gate_delay.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "gate",
+   "delay",
+   "boarding-pass"
+  ],
+  "prompt": "Seated at a boarding gate holding a boarding pass, looking up at a departures screen with a delayed flight, tired expression, suitcase beside her, big terminal windows with daylight."
+ },
+ {
+  "id": "s_bed_contents",
+  "file": "gen/s_bed_contents.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "bed",
+   "documents",
+   "phone",
+   "photo"
+  ],
+  "prompt": "Top-down angle on a hotel bed: passport, cash and a necklace laid out on the white duvet, her hands photographing them with a phone, shadow of her head in the corner, bright daylight."
+ },
+ {
+  "id": "s_balcony_morning",
+  "file": "gen/s_balcony_morning.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "balcony",
+   "morning",
+   "calm"
+  ],
+  "prompt": "Leaning on a hotel balcony railing in the morning with a coffee cup, looking out over rooftops of an old town, relaxed, bathrobe, bright soft light, back and side of her face visible."
+ },
+ {
+  "id": "s_market_crowd",
+  "file": "gen/s_market_crowd.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "market",
+   "crowd",
+   "push",
+   "street"
+  ],
+  "prompt": "Low angle in a packed tourist market, she pushes forward through the crowd holding her bag tight, vendors' hands waving goods around the frame edges, strong sun and awning shadows."
+ },
+ {
+  "id": "s_elevator_mirror",
+  "file": "gen/s_elevator_mirror.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "hotel",
+   "elevator",
+   "mirror",
+   "tired"
+  ],
+  "prompt": "Reflection in a hotel elevator mirror: she leans against the wall, tired after travel, room key card between her fingers, brass doors and floor numbers, warm light."
+ },
+ {
+  "id": "s_curb_luggage",
+  "file": "gen/s_curb_luggage.jpg",
+  "source": "generated:nano-banana-2-lite",
+  "products": [
+   "safety"
+  ],
+  "tags": [
+   "airport",
+   "curb",
+   "luggage",
+   "taxi"
+  ],
+  "prompt": "At the airport curb a driver's hands lift her suitcase toward a taxi trunk while she looks at him suspiciously and keeps one hand on her bag strap, bright midday sun, cars blurred."
+ }
+]

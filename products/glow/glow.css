@@ -1,0 +1,64 @@
+/* Shared style for the GLOW books. Each book sets --accent and --soft. */
+@page { size: 8.5in 11in; margin: 0.85in 0.9in 0.95in; }
+@page :first { margin: 0; }
+:root { --accent: #1E6B65; --soft: #eef4f2; --ink: #1d1a16; --muted: #62574b; --warn: #fbe9e5; --warnline: #b8322a; }
+* { box-sizing: border-box; }
+html { font-size: 10.5pt; }
+body { font-family: "Inter", "Liberation Sans", Arial, sans-serif; color: var(--ink); line-height: 1.55; margin: 0; hyphens: none; -webkit-hyphens: none; text-align: left; orphans: 3; widows: 3; }
+h1, h2, h3, .kicker { font-family: "Inter", "Liberation Sans", Arial, sans-serif; hyphens: none; }
+h1 { font-size: 25pt; font-weight: 800; line-height: 1.12; letter-spacing: -.01em; margin: 0 0 14pt; color: var(--accent); break-after: avoid; }
+h2 { font-size: 15pt; font-weight: 800; line-height: 1.25; margin: 20pt 0 6pt; color: var(--ink); break-after: avoid; }
+h3 { font-size: 11.5pt; font-weight: 800; margin: 14pt 0 3pt; color: var(--accent); break-after: avoid; }
+p { margin: 0 0 8pt; }
+ul, ol { margin: 0 0 9pt; padding-left: 18pt; }
+li { margin-bottom: 4pt; }
+b, strong { font-weight: 700; }
+.kicker { font-size: 8.5pt; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 8pt; }
+section.ch { break-before: page; }
+section.first { break-before: auto; }
+.lead { font-size: 12pt; line-height: 1.5; color: #3a342d; }
+
+/* cover */
+.cover { height: 11in; width: 8.5in; padding: 1in 0.95in; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(160deg, var(--accent) 0%, var(--accent2) 100%); color: #fff; break-after: page; }
+.cover .kicker { color: rgba(255,255,255,.78); }
+.cover .num { font-size: 11pt; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.75); margin-bottom: 22pt; }
+.cover h1 { color: #fff; font-size: 44pt; line-height: 1.04; margin-bottom: 18pt; }
+.cover .sub { font-size: 15pt; line-height: 1.4; max-width: 5.4in; color: rgba(255,255,255,.92); }
+.cover .by { margin-top: 42pt; font-size: 10pt; color: rgba(255,255,255,.75); line-height: 1.5; }
+
+/* boxes */
+.callout, .warn, .warm, .try { padding: 10pt 13pt; margin: 11pt 0; border-radius: 6px; break-inside: avoid; }
+.callout { background: var(--soft); border-left: 4px solid var(--accent); }
+.warn { background: var(--warn); border-left: 4px solid var(--warnline); }
+.warm { background: #f7f1e8; border-left: 4px solid #b9a98f; }
+.try { background: #fff; border: 1.5px solid var(--accent); }
+.callout p:last-child, .warn p:last-child, .warm p:last-child, .try p:last-child, .callout ul:last-child, .warn ul:last-child { margin-bottom: 0; }
+.box-title { font-weight: 800; font-size: 10.5pt; margin-bottom: 4pt; }
+.warn .box-title { color: var(--warnline); }
+.callout .box-title, .try .box-title { color: var(--accent); }
+.small { font-size: 8.5pt; color: var(--muted); line-height: 1.5; }
+.tag { display: inline-block; font-size: 7.5pt; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 2pt 6pt; border-radius: 4px; background: var(--soft); color: var(--accent); margin-right: 4pt; }
+.big { font-size: 13pt; font-weight: 800; }
+.num-badge { display: inline-block; width: 22pt; height: 22pt; line-height: 22pt; border-radius: 50%; background: var(--accent); color: #fff; text-align: center; font-weight: 800; font-size: 11pt; margin-right: 6pt; vertical-align: middle; }
+
+/* tables */
+table { width: 100%; border-collapse: collapse; margin: 8pt 0 12pt; font-size: 9.5pt; }
+tr { break-inside: avoid; }
+th { background: var(--accent); color: #fff; text-align: left; padding: 6pt 8pt; font-weight: 800; font-size: 8.5pt; letter-spacing: .03em; }
+td { padding: 6pt 8pt; border-bottom: 1px solid #ddd5ca; vertical-align: top; }
+tr:nth-child(even) td { background: #faf7f2; }
+td.n { width: 20pt; font-weight: 800; color: var(--accent); }
+
+/* fill-in */
+.lines div { border-bottom: 1px solid #b9b0a4; height: 22pt; }
+.form td { height: 26pt; }
+.form td.lbl { width: 32%; font-weight: 700; background: #faf7f2; }
+.sq::before { content: "\2610\00a0\00a0"; }
+ul.checks { list-style: none; padding-left: 0; }
+ul.checks li::before { content: "\2610\00a0\00a0"; color: var(--accent); font-weight: 800; }
+.src li { font-size: 8.5pt; line-height: 1.45; margin-bottom: 5pt; word-break: break-word; }
+.src a { color: var(--accent); text-decoration: none; }
+.nobreak { break-inside: avoid; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+.two > div { break-inside: avoid; }
+.foot { margin-top: 14pt; font-size: 8pt; color: var(--muted); border-top: 1px solid #ddd5ca; padding-top: 6pt; }

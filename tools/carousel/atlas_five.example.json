@@ -1,0 +1,197 @@
+[
+ {
+  "slug": "safe_hotel_safe",
+  "kind": "fact",
+  "flux": "woman looking directly at camera standing next to an open hotel room safe in a bright modern hotel room, passport in hand, sunny window",
+  "cover": [
+   "STOP TRUSTING",
+   "THE HOTEL SAFE.",
+   "STAFF KNOW WHY."
+  ],
+  "slides": [
+   {
+    "tag": "WHY EVERYONE TRUSTS IT",
+    "text": "You pick the code. It beeps. The door clicks shut. It feels like a bank vault.",
+    "loop": "But it isn't one."
+   },
+   {
+    "tag": "WHAT STAFF KNOW",
+    "text": "Almost every hotel safe has a master override. Staff can open it without your code.",
+    "loop": "That's not even the real problem."
+   },
+   {
+    "tag": "THE REAL PROBLEM",
+    "text": "Some safes keep an audit log. Many cheap ones don't. You can't tell which one you got.",
+    "soft": true
+   },
+   {
+    "tag": "DO THIS FIRST",
+    "text": "Photograph everything before you close the door. Passport, cash, jewelry. Date visible.",
+    "loop": "A photo turns an argument into a claim."
+   },
+   {
+    "tag": "KEEP ON YOU",
+    "text": "Keep the one thing you can't replace on you. For me, that's the passport."
+   },
+   {
+    "tag": "THE $12 FIX",
+    "text": "Pack a small cable lock. Lock your bag to something fixed. It's cheap and it works."
+   }
+  ],
+  "cta_hook": "The safe is a speed bump. Not a vault.",
+  "caption": "The manager laughed when I asked who else could open my room safe.\n\nNot in a mean way. In a \"you really haven't thought about this\" way.\n\nI'd been putting my passport in hotel safes for years. Pick a code, hear the click, feel protected. I never once asked what happens when a guest forgets the code, or when something stays locked inside after checkout.\n\nSo I asked. He told me nearly every hotel safe has a master override. A manager code, or a key. The hotel needs a way in. That's a good reason for it to exist. It also means the safe is only as secure as the process and the people around it.\n\nHere's what he said he would do in my place.\n\nPhotograph everything before you close the door. Passport, cash, jewelry, with the date visible. If something goes missing, a photo is the difference between a claim and an argument.\n\nAsk the front desk if your safe keeps an audit log. Some models do. Many cheaper ones don't. You can't tell by looking at it.\n\nKeep the one thing you can't replace on you. For me, that's the passport. A stolen passport abroad can turn into days of paperwork. A stolen watch is just a watch.\n\nAnd carry a small cable lock. Ten or fifteen dollars. It turns a bag into something that doesn't walk out the door.\n\nI stopped treating the safe like a vault. Now it's a speed bump. Useful. Not magic.\n\nSituations like this one happen on every trip. I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.\n\n📌 Save this before your next hotel stay.\n\n👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT SAFETY below 💬\nI'll send the guide straight to your DMs. Safe travels! ✈️"
+ },
+ {
+  "slug": "safe_cruise_myths",
+  "kind": "split",
+  "flux": "large white cruise ship deck on a sunny day with turquoise sea, woman at the railing looking at camera, bright blue sky",
+  "cover": [
+   "5 CRUISE MYTHS",
+   "THAT FEEL SAFE.",
+   "CREW DISAGREE."
+  ],
+  "slides": [
+   {
+    "myth": "Hand sanitizer at the buffet door is enough.",
+    "real": "Sanitizer is weak against norovirus. Soap and water for 20 seconds works."
+   },
+   {
+    "myth": "The ship's doctor is part of your cruise fare.",
+    "real": "Medical visits are billed to your cabin. Often hundreds of dollars."
+   },
+   {
+    "myth": "If you miss the ship, they wait or rebook you.",
+    "real": "The ship leaves on schedule. You pay to catch it at the next port.",
+    "soft": true
+   },
+   {
+    "myth": "Ice is safe because it's frozen.",
+    "real": "Freezing doesn't kill germs. On shore, skip ice if you can't see the water source."
+   },
+   {
+    "myth": "Handrails get wiped, so they're clean.",
+    "real": "Thousands of hands a day. Wiping moves germs around. Wash before you eat."
+   }
+  ],
+  "cta_hook": "Cruises feel controlled. So nobody questions the small stuff.",
+  "caption": "Third night of the cruise, the ship's nurse told me she sees the same thing every sailing.\n\nPeople use the sanitizer at the buffet door, feel safe, and eat.\n\nHere's what she said. Norovirus is the one that ruins a cruise, and alcohol sanitizer doesn't handle it well. Soap, water, and about twenty seconds does. The dispensers at the door look reassuring and they help with other germs. But for the one that sinks vacations, it's the sink that matters.\n\nThat was myth number one. She gave me four more.\n\nThe ship's medical center isn't included in your fare. Visits are billed to your cabin account, often at hundreds of dollars, and a lot of regular health plans don't cover care at sea.\n\nIf you miss the ship in port, it leaves anyway. All-aboard times are real. You pay to catch up at the next stop. The tours booked through the ship are the ones that wait for you.\n\nIce isn't safe just because it's frozen. Freezing doesn't kill germs. On shore, if you can't tell where the water came from, skip the ice.\n\nAnd the handrails. Thousands of hands touch them every day. A quick wipe moves germs around more than it removes them. Wash your hands before you eat, not after.\n\nNone of this is dramatic. That's the point. A cruise feels like the most controlled kind of travel there is, so nobody questions the small stuff.\n\nI wrote every one of these down after that trip.\n\nSituations like this one happen on every trip. I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.\n\n📌 Save this before your next cruise.\n\n👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT SAFETY below 💬\nI'll send the guide straight to your DMs. Safe travels! ✈️"
+ },
+ {
+  "slug": "safe_atm_story",
+  "kind": "fact",
+  "flux": "woman at a European street ATM at night looking at the screen, warm streetlights and old stone buildings, bright colors",
+  "cover": [
+   "THE ATM ASKED",
+   "ME ONE QUESTION.",
+   "I SAID YES."
+  ],
+  "slides": [
+   {
+    "tag": "ROME. 11 PM.",
+    "text": "One button at a Rome ATM cost me $61. I had pressed it a hundred times before.",
+    "loop": "Nothing looked wrong."
+   },
+   {
+    "tag": "THE QUESTION",
+    "text": "The screen asked: pay in dollars or euros? Dollars felt easier. I pressed it."
+   },
+   {
+    "tag": "THE CATCH",
+    "text": "Pick your home currency and the machine sets the exchange rate. Not your bank.",
+    "loop": "The rate is usually worse.",
+    "soft": true
+   },
+   {
+    "tag": "THE MATH",
+    "text": "I took out about $600. That one tap cost me roughly 10%. $61 gone."
+   },
+   {
+    "tag": "DO THIS INSTEAD",
+    "text": "Always pick the local currency. Say no to anything that says convert for you."
+   }
+  ],
+  "cta_hook": "A two-second decision at night. That's exactly why it works.",
+  "caption": "The ATM in Rome didn't look suspicious. It looked like every ATM I'd ever used.\n\nThat's the part that still bothers me.\n\nIt was 11pm and I needed cash for a taxi. My card went in, the PIN worked, and the machine asked a friendly question: pay in dollars or euros?\n\nDollars. Obviously. I'm American. I know what a dollar is worth.\n\nI pressed it without reading anything else on the screen.\n\nWhat I didn't know is that when you choose your home currency at a foreign ATM, the machine decides the exchange rate. Not your bank. It's called dynamic currency conversion, and the rate is usually worse. On my $600 withdrawal, I lost about $61 for pressing the button that looked easier.\n\nI found out two days later, reading my statement at breakfast next to a hotel employee who didn't look surprised at all. She said it's one of the first things she warns guests about.\n\nHere's what I do now.\n\nAlways choose the local currency. Euros in Europe, pesos in Mexico, yen in Japan. Say no to anything that says \"convert for you\" or \"guaranteed rate.\"\n\nDecline it even when the screen makes it sound like a favor. It's the same screen in almost every country.\n\nTake out larger amounts less often. A flat bank fee hurts less when you pay it once.\n\nCheck the receipt before you leave the machine. If it shows an exchange rate, your bank didn't set it.\n\nA tiny decision, made in two seconds, at night. That's exactly why it works on people.\n\nSituations like this one happen on every trip. I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.\n\n📌 Save this before your next trip abroad.\n\n👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT SAFETY below 💬\nI'll send the guide straight to your DMs. Safe travels! ✈️"
+ },
+ {
+  "slug": "safe_rental_slide4",
+  "kind": "fact",
+  "flux": "woman at a car rental desk signing papers while an agent in uniform smiles, bright airport rental office, keys on counter",
+  "cover": [
+   "WAIT FOR SLIDE 4.",
+   "THE RENTAL DESK",
+   "WON'T TELL YOU."
+  ],
+  "slides": [
+   {
+    "tag": "AT THE COUNTER",
+    "text": "The agent slid the paper over. Initial here, here, and here. I did. I always do.",
+    "loop": "That was my mistake."
+   },
+   {
+    "tag": "BEFORE YOU DRIVE OFF",
+    "text": "Film the whole car. Slowly. Every side, the roof, the wheels. Say the date out loud.",
+    "loop": "That's step one. Step two is the one nobody does."
+   },
+   {
+    "tag": "SLIDE 4",
+    "text": "Damage charges can show up weeks after you return the car. Your only proof is what you filmed.",
+    "soft": true
+   },
+   {
+    "tag": "ALSO FILM",
+    "text": "Film the fuel gauge and the mileage. Disputes on both are common."
+   },
+   {
+    "tag": "CHECK YOUR CARD",
+    "text": "Many cards cover collision damage. Usually only if you decline the desk's insurance."
+   },
+   {
+    "tag": "AT RETURN",
+    "text": "Ask an employee to walk the car with you and sign off. Empty lot? Film it again."
+   }
+  ],
+  "cta_hook": "Ninety seconds at the counter. Weeks of problems saved.",
+  "caption": "Slide 4 is the one that made a friend of mine stop mid-scroll and text me.\n\nBut let me start at the counter.\n\nThe agent smiled, slid the paper across, and said, \"Initial here, here, and here.\" I was tired, the line behind me was long, and I initialed three times without reading a word. I've done this at least a hundred times.\n\nA few weeks later, a charge showed up on my card. A scratch on a bumper I swear I never touched.\n\nI called. The company had a photo of the car after I returned it. I had nothing from before.\n\nHere's the routine I use now. It takes about ninety seconds.\n\nBefore you drive off, film the whole car. Slowly. Every side, the roof, the wheels, the inside. Say the date out loud.\n\nFilm the fuel gauge and the mileage. Disputes on those are common too.\n\nSlide 4 is the part most people never learn. Damage charges can show up weeks after you return the car, and the only evidence that matters is what you have from the moment you left.\n\nCheck your credit card before you fly. Many cards cover collision damage, but usually only if you decline the desk's insurance. Read the terms at home, not at the counter.\n\nWhen you return the car, ask an employee to walk around it with you and sign off that there's no new damage. If the lot is empty, film everything again with the date.\n\nSituations like this one happen on every trip. I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.\n\n📌 Save this before your next rental car.\n\n👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT SAFETY below 💬\nI'll send the guide straight to your DMs. Safe travels! ✈️"
+ },
+ {
+  "slug": "safe_airport_taxi",
+  "kind": "fact",
+  "flux": "woman with suitcase in a busy airport arrivals hall, a man in a jacket reaching toward her bag offering a taxi, bright daylight, travelers behind",
+  "cover": [
+   "I GOT IN THE CAR",
+   "THAT CAME TO ME.",
+   "I SHOULD NOT."
+  ],
+  "slides": [
+   {
+    "tag": "ARRIVALS HALL",
+    "text": "He had my bag before I said yes. Taxi, ma'am? Good price.",
+    "loop": "I was awake for 20 hours."
+   },
+   {
+    "tag": "THE CAR",
+    "text": "No marking on the roof. No meter. A back seat that smelled like someone else's cigarettes."
+   },
+   {
+    "tag": "WHAT HE TOLD ME",
+    "text": "A doorman told me: official taxis don't approach you inside the terminal. The ones who do work for themselves.",
+    "soft": true
+   },
+   {
+    "tag": "BEFORE YOU LAND",
+    "text": "Screenshot the official taxi stand or ride-app pickup spot for that airport."
+   },
+   {
+    "tag": "BEFORE YOU OPEN THE DOOR",
+    "text": "Match the plate and driver photo in the app. Text the plate to someone."
+   },
+   {
+    "tag": "THE ONLY RULE",
+    "text": "Anyone who offers before you ask gets a polite no. Keep walking."
+   }
+  ],
+  "cta_hook": "Most of these rides end fine. The other ones have one thing in common.",
+  "caption": "He had my bag before I'd said yes.\n\nThat's how fast it happens. Arrivals hall, jet lag, and a friendly man in a clean jacket saying, \"Taxi, ma'am? Good price.\"\n\nI'd been awake for twenty hours. I followed him to a car with nothing on the roof, no meter, and a back seat that smelled like someone else's cigarettes.\n\nNothing happened. Not the way you imagine. I paid three times the normal fare and he dropped me at the right hotel. A story for dinner.\n\nBut on that ride I realized something. If he had taken a different turn, nobody on earth knew where I was. No receipt. No driver ID. No record that I'd gotten into that car at all.\n\nA hotel doorman told me the next morning that official taxis don't approach you inside the terminal. The ones who do are working for themselves.\n\nHere's what I do before every flight now.\n\nI screenshot the official taxi stand or ride-app pickup spot for that airport, because I'll be too tired to think when I land.\n\nI use the app, and I match the plate and the driver's photo to the car before I open the door.\n\nI text the plate and the route to someone. It takes five seconds and changes the whole ride.\n\nI say no to anyone who offers before I ask. A polite no thank you, and I keep walking. They stop following.\n\nMost of these rides end fine. I'm not telling you they don't. I'm telling you what the other ones have in common: nobody knew.\n\nSituations like this one happen on every trip. I collected 45 of them across 47 countries — airports, hotels, cruise ships — and exactly what to do in each one.\n\n📌 Save this before your next flight.\n\n👇 HOW TO GET IT: 👇\n• FOLLOW this account 🔒\n• COMMENT SAFETY below 💬\nI'll send the guide straight to your DMs. Safe travels! ✈️"
+ }
+]

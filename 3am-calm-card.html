@@ -1,0 +1,284 @@
+<title>3AM Calm Card</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0c1520;
+  --bg2: #13202e;
+  --card: #162030;
+  --border: #243347;
+  --text: #f0e8dc;
+  --text-soft: #7d8fa3;
+  --accent: #b87d4a;
+  --accent-warm: #d4a06a;
+  --white: #fdfaf5;
+}
+
+@media print {
+  @page { size: A5 portrait; margin: 0; }
+  html, body { width: 148mm; height: 210mm; }
+  .no-print { display: none !important; }
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 16px;
+  gap: 32px;
+}
+
+.no-print {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.no-print:hover { background: var(--accent-warm); }
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  display: block;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm), var(--accent));
+}
+
+.card-header {
+  padding: 28px 32px 22px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.card-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-family: 'Oswald', system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.card-sub {
+  font-size: 13px;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+.card-sub strong {
+  color: var(--text);
+}
+
+.steps {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg2);
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--white);
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+.step-desc {
+  font-size: 12.5px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+.step-desc em {
+  font-style: normal;
+  color: var(--accent-warm);
+  font-weight: 700;
+}
+.step-why {
+  display: block;
+  margin-top: 5px;
+  font-size: 11.5px;
+  color: var(--border);
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 0 32px;
+}
+
+.bridge {
+  padding: 22px 32px 28px;
+  text-align: center;
+  background: var(--bg2);
+}
+.bridge-label {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.bridge-line {
+  font-size: 13px;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+  line-height: 1.55;
+}
+.bridge-line strong {
+  color: var(--text);
+  font-weight: 700;
+}
+.bridge-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  font-family: 'Nunito', sans-serif;
+  padding: 11px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 14px;
+  transition: background 0.15s;
+}
+.bridge-cta:hover { background: var(--accent-warm); }
+.bridge-guarantee {
+  font-size: 11px;
+  color: var(--border);
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+.card-footer {
+  padding: 12px 32px 18px;
+  text-align: center;
+}
+.card-footer p {
+  font-size: 10.5px;
+  color: var(--border);
+  letter-spacing: 0.05em;
+}
+</style>
+
+<button class="no-print" onclick="window.print()">⬇ Save as PDF — File → Print → Save as PDF</button>
+
+<div class="card">
+  <div class="card-header">
+    <p class="card-eyebrow">@thekiramethod</p>
+    <h1 class="card-title">The 3AM Calm Card</h1>
+    <p class="card-sub">Your brain woke you up. <strong>Here's how to turn it off.</strong><br>4 steps. In bed. Under 3 minutes.</p>
+  </div>
+
+  <div class="steps">
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-body">
+        <p class="step-title">Stop trying to fall asleep — right now</p>
+        <p class="step-desc">Trying to sleep is the trap. Your brain reads effort as danger and <em>releases more cortisol.</em> Say to yourself: <em>"I don't need to sleep. I'm just resting."</em> That single shift drops your cortisol within 60 seconds.
+          <span class="step-why">Why it works: your nervous system can't stay in alert mode when the threat signal is removed.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-body">
+        <p class="step-title">4-7-8 breathing — twice only</p>
+        <p class="step-desc">Inhale through your nose for <em>4 counts.</em> Hold for <em>7.</em> Exhale slowly through your mouth for <em>8.</em> Repeat exactly twice. This signals safety to your nervous system — not relaxation, <em>safety.</em> Your body physically cannot stay in cortisol-spike mode while doing this correctly.
+          <span class="step-why">Why it works: the extended exhale activates your parasympathetic system — the biological off switch for the spiral.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-body">
+        <p class="step-title">Give your brain a quiet job</p>
+        <p class="step-desc">Pick a familiar place — a grocery store, your childhood home, an old street. Walk through it slowly in your mind. <em>Name every object you see.</em> Your brain cannot spiral and map at the same time.
+          <span class="step-why">Why it works: cognitive mapping occupies the exact part of the brain that generates anxious thought loops. You crowd them out.</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-body">
+        <p class="step-title">Still awake after 20 minutes? Get up.</p>
+        <p class="step-desc">Every minute you lie in bed anxious, your brain strengthens the association: <em>bed = wakefulness.</em> Get up. Sit in dim light. Do something quiet for 10–15 minutes. Return only when you feel sleepy. <em>This resets the association — sometimes in a single night.</em>
+          <span class="step-why">Most people skip this step. It's the one that fixes the long-term pattern.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="bridge">
+    <p class="bridge-label">This card stops tonight. This fixes the pattern.</p>
+    <p class="bridge-line">Every night you wake at 3AM and can't get back, <strong>your brain reinforces the cycle.</strong> The 7-Night Guide gives you an evening routine that prevents the wake-up, a protocol for every scenario, and a daily log that shows you the pattern — so you can break it permanently.</p>
+    <a class="bridge-cta" href="https://app.lava.top/products/1d9e8a48-8593-40c0-aa6b-8878d8474643">Yes — I want the 7-Night Guide → $14.90</a>
+    <p class="bridge-guarantee">7-night money-back guarantee. Didn't sleep better? Email me and I'll refund you in full.</p>
+  </div>
+
+  <div class="card-footer">
+    <p>thekiramethod.com · Not medical advice · © 2026</p>
+  </div>
+</div>
