@@ -1339,15 +1339,15 @@ body{padding-inline:16px!important}
 
 <section class="tools-section">
   <div class="wrap">
-    <p class="sec-label">Bonus tools</p>
-    <h2 class="sec-title">4 bonus tools that put the guides to work.</h2>
+    <p class="sec-label">🎁 Your bonus</p>
+    <h2 class="sec-title">Bonus: 4 tools that put the guides to work.</h2>
     <div class="tools-grid">
       <div class="tool-card"><span class="tool-icon">🧭</span><h3 class="tool-name">Start Here</h3><p class="tool-meta">A one-page map. Tells you which guide to read first.</p></div>
       <div class="tool-card"><span class="tool-icon">📅</span><h3 class="tool-name">14-Day Body Log</h3><p class="tool-meta">30 seconds a day. Track sleep, energy, digestion and mood.</p></div>
       <div class="tool-card"><span class="tool-icon">📝</span><h3 class="tool-name">Doctor's Brief</h3><p class="tool-meta">One page that sums up what you've noticed. Print it and bring it.</p></div>
       <div class="tool-card"><span class="tool-icon">❓</span><h3 class="tool-name">3 Questions For Your Doctor</h3><p class="tool-meta">So you walk out with answers, not a pat on the shoulder.</p></div>
     </div>
-    <p class="note">Bonus with the Core Bundle.</p>
+    <p class="note"><b>🎁 The bonus pack is included when you get the Core Bundle.</b> It comes as a 4-page PDF next to your 4 guides.</p>
   </div>
 </section>
 
@@ -1401,7 +1401,7 @@ body{padding-inline:16px!important}
   <div class="foot"><a href="#" data-f="terms">Terms</a><a href="#" data-f="privacy">Privacy</a><a href="#" data-f="refund">Refund policy</a><a href="#" data-f="mail">Contact us</a></div>
 </div>
 
-<div class="sticky-bar" id="sticky"><span class="sp">4 short guides · from <span data-min-price>$9.90</span></span><a href="#offer" class="btn-primary btn-sm" style="margin:0">FIND MY GUIDE →</a></div>
+<div class="sticky-bar" id="sticky"><span class="sp">4 guides + 🎁 bonus</span><a href="#offer" class="btn-primary btn-sm" style="margin:0">FIND MY GUIDE →</a></div>
 
 <script>
 /* ===== EDIT HERE ===== */
@@ -1417,7 +1417,7 @@ var CONFIG = {
   sampleUrl:"",
   /* true = hide single-guide cards that have no payment link yet. Add ?preview=1 to the page address to see everything. */
   hideUnlinked:true,
-  tools:"Plus 4 bonus tools: Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor.",
+  tools:"🎁 BONUS INCLUDED: 4 tools that help you use the guides (Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor).",
   books:{
     1:{show:true,t:"The Belly Fat Lie",q:"Why is this belly still here, no matter what I do?",c:"bc-red",ready:true,price:9.90,url:"",pts:["3 hidden reasons most diets miss","1 big body change after 35","7 \"healthy\" foods that may work against you"]},
     2:{show:true,t:"Aging Faster Than You Should",q:"Why do I look older than I feel?",c:"bc-teal",ready:true,price:9.90,url:"",pts:["5 sneaky things that can make you look older","2 blood tests worth asking your doctor about","A simple routine to start with"]},
@@ -1429,7 +1429,7 @@ var CONFIG = {
     8:{show:false,t:"The Midday Crash",q:"Why do I run out of steam around 2 PM?",c:"bc-slate",ready:false,price:9.90,url:"",pts:["Common reasons for the afternoon slump","What to check first: meals, sleep, stress","A simple 7-day experiment"]}
   },
   bundles:[
-    {id:"core",name:"Core Bundle",who:"All 4 guides plus 4 bonus tools. Everything in one place.",books:[1,2,3,4],tools:true,price:19.90,url:"https://app.lava.top/products/d846d4d9-1625-4817-89ee-d124f01a0a01/3225220b-b982-40ae-97bf-f834eb207806?currency=USD&domainId=c801983a-49c9-483d-94d9-1949ccfedeb9&domainName=thekiramethod.com",best:true},
+    {id:"core",name:"Core Bundle",who:"All 4 guides plus a 🎁 BONUS pack of 4 tools. Everything in one place.",books:[1,2,3,4],tools:true,price:19.90,url:"https://app.lava.top/products/d846d4d9-1625-4817-89ee-d124f01a0a01/3225220b-b982-40ae-97bf-f834eb207806?currency=USD&domainId=c801983a-49c9-483d-94d9-1949ccfedeb9&domainName=thekiramethod.com",best:true},
     {id:"belly",name:"Belly & Gut Bundle",who:"For the belly that won't move and the stomach that reacts to stress.",books:[1,5,6],tools:false,price:17.90,url:""},
     {id:"sleep",name:"Sleep & Energy Bundle",who:"For 3AM wake-ups, coffee habits and afternoon crashes.",books:[3,4,8],tools:false,price:17.90,url:""},
     {id:"complete",name:"Complete Collection",who:"All 8 guides plus 4 bonus tools.",books:[1,2,3,4,5,6,7,8],tools:true,price:29.90,url:""}
@@ -1458,7 +1458,7 @@ var CONFIG = {
   function sum(ids){return ids.reduce(function(a,n){return a+B[n].price},0)}
   function ready(n){return B[n].ready}
   function bundleVisible(b){return b.books.every(vis)}
-  function bundleReady(b){return !!b.url&&b.books.every(ready)}
+  function bundleReady(b){return !!b.url&&b.books.every(function(n){return B[n].ready&&B[n].url})}
   function buy(u){
     try{var x=new URL(u);Q.forEach(function(v,k){if(/^(utm_|ref$|src$|fbclid$)/.test(k)&&!x.searchParams.has(k))x.searchParams.set(k,v)});return x.toString()}catch(e){return u}
   }
@@ -1471,7 +1471,7 @@ var CONFIG = {
     o=o||{};var sep=sum(b.books),ok=bundleReady(b),save=sep-b.price;
     var list=b.books.map(function(n){return '<li>'+esc(B[n].t)+(ready(n)?'':' <span class="tag-soon">soon</span>')+'</li>'}).join('');
     var left='<div><h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p style="margin-top:8px">'+esc(C.tools)+'</p>':'')+'</div>';
-    var right='<div class="buycol"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0&&b.books.every(ready)?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
+    var right='<div class="buycol"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0&&b.books.every(function(n){return B[n].ready&&B[n].url})?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
       btn(b.url,ok,'GET THE '+b.name.toUpperCase()+' →','Link coming soon')+(ok?'<p class="micro">🔒 Secure checkout · Instant PDF · 14-day refund</p>':'')+(C.sampleUrl?'<p class="micro"><a href="'+C.sampleUrl+'" rel="noopener">Read a sample page</a></p>':'')+'</div>';
     return '<div class="card'+(o.best?' best':'')+'">'+(o.badge?'<span class="badge">'+o.badge+'</span>':'')+(o.wide?'<div class="featured-in">'+left+right+'</div>':left+right)+'</div>';
   }
