@@ -1221,7 +1221,7 @@ body{padding-inline:16px!important}
 .hero-title{font-size:clamp(30px,5vw,48px);line-height:1.12}
 @media(min-width:900px){.hero-title{font-size:46px}}
 
-@media(max-width:640px){.tools-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.tool-icon{display:none}.tool-card{padding:14px!important}.tool-name{font-size:15px!important;margin:0 0 4px!important}.tool-meta{font-size:13px!important;margin:0!important}.wait{padding:20px!important}.vcard{padding:16px 18px!important}.vcard .big{display:none}.vcard h3{font-size:18px!important;margin:0 0 4px!important}.vcard p{font-size:15px!important;margin:0!important}}h1,h2,h3,.hero-title,.sec-title,.fb-title,.bc-title{font-family:'Inter','Segoe UI',system-ui,sans-serif;letter-spacing:-.015em}
+.rv{gap:14px}.rv-text{color:var(--text);font-size:16px;line-height:1.55;margin:0}.rv-who{display:flex;align-items:center;gap:12px}.rv-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:2px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.18)}.rv-ini{display:inline-flex;align-items:center;justify-content:center;background:var(--accent,#1E6B65);color:#fff;font-weight:800;font-size:22px}.rv-who b{display:block;font-size:15px}.rv-sub{display:block;font-size:13px;color:#6a5e52}@media(max-width:640px){.tools-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.tool-icon{display:none}.tool-card{padding:14px!important}.tool-name{font-size:15px!important;margin:0 0 4px!important}.tool-meta{font-size:13px!important;margin:0!important}.wait{padding:20px!important}.vcard{padding:16px 18px!important}.vcard .big{display:none}.vcard h3{font-size:18px!important;margin:0 0 4px!important}.vcard p{font-size:15px!important;margin:0!important}}h1,h2,h3,.hero-title,.sec-title,.fb-title,.bc-title{font-family:'Inter','Segoe UI',system-ui,sans-serif;letter-spacing:-.015em}
 .hero-title,.sec-title{font-weight:800}
 .fb-title{font-weight:800;line-height:1.08;font-size:17px!important;letter-spacing:-.01em;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 .fb-num{font-size:10px!important;font-weight:700;opacity:.95}
@@ -1410,7 +1410,8 @@ var CONFIG = {
   about:"Made by The Kira Method: short guides in plain English for women who want to understand their bodies.",
   /* Only fill if the price REALLY goes up on that date. Example: "Launch price until Nov 15" */
   launchNote:"",
-  /* Real reviews only, with permission. Example: [{name:"Susan, 52",text:"..."}] */
+  /* Real reviews only, with written permission, about the product named in "product". Fields: name, place, text, photo, product */
+  reviewsTitle:"What readers say.",
   reviews:[],
   /* A real sample page URL (PDF). Leave empty to hide the link. */
   sampleUrl:"",
@@ -1507,7 +1508,7 @@ var CONFIG = {
   if(singles.length){document.getElementById("singlegrid").innerHTML=singles.map(function(n){return singleRow(n,n===matchBook)}).join('')}
   else{document.getElementById("singleswrap").style.display="none"}
   if(C.reviews&&C.reviews.length){
-    document.getElementById("reviewswrap").innerHTML='<h2 class="h-sec">What readers say.</h2><div class="grid2">'+C.reviews.map(function(r){return '<div class="card"><p style="color:var(--text)">"'+esc(r.text)+'"</p><p><b>'+esc(r.name)+'</b></p></div>'}).join('')+'</div>';
+    document.getElementById("reviewswrap").innerHTML='<h2 class="h-sec">'+esc(C.reviewsTitle||"What readers say.")+'</h2><div class="grid2">'+C.reviews.map(function(r){var ph=r.photo?'<img class="rv-photo" src="'+esc(r.photo)+'" alt="'+esc(r.name)+'" loading="lazy" width="56" height="56">':'<span class="rv-photo rv-ini">'+esc((r.name||"?").charAt(0))+'</span>';return '<div class="card rv"><p class="rv-text">"'+esc(r.text)+'"</p><div class="rv-who">'+ph+'<div><b>'+esc(r.name)+'</b>'+(r.place?'<span class="rv-sub">'+esc(r.place)+'</span>':'')+(r.product?'<span class="rv-sub">About: '+esc(r.product)+'</span>':'')+'</div></div></div>'}).join('')+'</div>';
   }
 
   var quiz=document.getElementById("quiz"),res=document.getElementById("result");
