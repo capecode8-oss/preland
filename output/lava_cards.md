@@ -1,6 +1,6 @@
 # Lava.top: карточки товаров (копировать в поля)
 
-Правила: без слова "free", без цены в тексте, без обещаний результата, без медицинских обещаний. Гарантия 14 дней совпадает с прелендом. Подставь свой email вместо [EMAIL].
+Правила: без слова "free", без цены в тексте, без обещаний результата, без медицинских обещаний. Гарантия 14 дней совпадает с прелендом. Подставь свой email вместо thekiramethod@outlook.com.
 
 ---
 
@@ -31,7 +31,7 @@ Thank you! Your guide is attached below as a PDF.
 
 Tip: don't try everything at once. Pick 2 changes from the 14-day plan, do them for two weeks, and measure your waist at the start and the end.
 
-Can't open the file or have a question? Write to [EMAIL] and we'll help.
+Can't open the file or have a question? Write to thekiramethod@outlook.com and we'll help.
 
 ---
 
@@ -61,7 +61,7 @@ Thank you! Your guide is attached below as a PDF.
 
 Start with Chapter 3 (the simple routine) and the 14-day start. Take a photo of your face on day 1 and day 14 so you can see what changed.
 
-Can't open the file or have a question? Write to [EMAIL].
+Can't open the file or have a question? Write to thekiramethod@outlook.com.
 
 ---
 
@@ -91,7 +91,7 @@ Thank you! Your guide is attached below as a PDF.
 
 Start with the 3-minute test in Chapter 2, then do Week 1 of the plan. Don't quit coffee in one day.
 
-Can't open the file or have a question? Write to [EMAIL].
+Can't open the file or have a question? Write to thekiramethod@outlook.com.
 
 ---
 
@@ -122,7 +122,7 @@ Thank you! Your guide is attached below as a PDF.
 
 Tonight: read Chapter 4 ("Awake at 3AM? Do this."), then try the 12-minute wind-down in Chapter 3. Fill in the sleep diary for 14 nights.
 
-Can't open the file or have a question? Write to [EMAIL].
+Can't open the file or have a question? Write to thekiramethod@outlook.com.
 
 ---
 
@@ -159,4 +159,4 @@ Thank you! Your 4 guides and your bonus tools are attached below as PDFs.
 
 Where to start: open "Bonus Tools" and read the Start Here page. It tells you which guide to read first. Pick one guide, do two changes for two weeks, and fill in the 14-Day Body Log.
 
-Can't open a file or have a question? Write to [EMAIL].
+Can't open a file or have a question? Write to thekiramethod@outlook.com.
