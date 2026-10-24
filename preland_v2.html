@@ -1146,6 +1146,23 @@ body{padding-top:40px;padding-bottom:96px}
 .sticky-bar .sp{font-size:14px;font-weight:600}
 .alltools{margin-top:16px}
 .hero{overflow:hidden}
+@media(min-width:900px){
+ .shop .wrap{max-width:1080px}
+ .modes{grid-template-columns:repeat(4,1fr)}
+ #singles{grid-template-columns:repeat(2,1fr)}
+ #all-card{max-width:720px;margin-inline:auto}
+}
+@media(min-width:1100px){
+ #bundles{grid-template-columns:repeat(4,1fr)}
+ #singles{grid-template-columns:repeat(4,1fr)}
+ #bundles .card{padding:18px}
+}
+html{-webkit-text-size-adjust:100%}
+.card .btn-primary,.card .btn-off{margin-top:auto}
+.btn-sm{padding:14px 12px}
+body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
+.btn-primary:focus-visible,.mode:focus-visible,.qopt:focus-visible{outline:3px solid #1E6B65;outline-offset:2px}
+
 
 </style></head>
 <body>
@@ -1346,7 +1363,7 @@ var CONFIG = {
       '<h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p>'+C.tools+'</p>':'')+
       '<div class="pricebox"><span class="now">'+money(b.price)+'</span>'+
       (save>0?'<span class="was">Separately: '+money(sep)+'</span><span class="save">Save '+money(save)+'</span>':'')+'</div>'+
-      btn(b.url,!anySoon,'GET THE '+b.name.toUpperCase()+' →')+'</div>';
+      btn(b.url,!anySoon,'GET '+b.name.toUpperCase()+' →')+'</div>';
   }
   document.getElementById("bundles").innerHTML=C.bundles.map(bundleCard).join('');
 
