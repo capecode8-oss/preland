@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Body Has Been Trying to Tell You</title>
-<meta name="description" content="Eight plain-language guides and four tools for women 30+ who know something feels off. One-time payment, instant PDFs, 14-day money-back guarantee.">
+<meta name="description" content="Short, plain-English guides for women 30+ who feel something is off. Instant PDFs, one-time payment, 14-day money-back guarantee.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
@@ -1099,44 +1099,63 @@ body { padding-bottom: 80px; padding-top: 38px; }
   .value-table { max-width: 700px; margin-inline: auto; }
 }
 
-
 body{padding-top:40px;padding-bottom:96px}
 .top-bar{background:var(--teal);box-shadow:0 2px 18px rgba(30,107,101,.35)}
+.bc-plum,.bc-green,.bc-sky,.bc-slate{}
+
+
 .hero-from{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:30px;margin:0 0 14px;color:var(--text)}
 .hero-from small{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:var(--muted);margin-left:8px}
-.shop{padding-block:48px 24px}
-.modes{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 24px}
-.mode{appearance:none;border:2px solid rgba(0,0,0,.09);background:#fff;border-radius:16px;padding:14px 12px;text-align:left;cursor:pointer;font:inherit;color:var(--text);display:flex;flex-direction:column;gap:2px;transition:border-color .15s,box-shadow .15s}
-.mode b{font-size:15px}.mode span{font-size:12px;color:var(--muted)}
-.mode .ico{font-size:20px;line-height:1;margin-bottom:4px}
-.mode[aria-selected="true"]{border-color:var(--teal);box-shadow:0 0 0 3px rgba(30,107,101,.15)}
-.panel[hidden]{display:none}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:560px){.grid2{grid-template-columns:1fr}.modes{grid-template-columns:1fr 1fr}}
-.card{background:var(--bg-card);border-radius:20px;padding:20px;box-shadow:0 2px 12px rgba(0,0,0,.06);position:relative;display:flex;flex-direction:column;gap:10px}
-.card.best{border:2px solid var(--teal)}
-.badge{position:absolute;top:-11px;left:16px;background:var(--teal);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:100px}
-.card h3{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:900;margin:0}
-.card p{margin:0;font-size:14px;color:var(--muted)}
-.card ul{margin:0;padding-left:18px;font-size:14px}
+.jump{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 28px}
+.jump a{font-size:13px;font-weight:600;color:var(--teal);text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,.09);padding:8px 14px;border-radius:100px}
+.offer{padding-block:44px 24px}
+.offer .wrap{max-width:1080px}
+.panelbox{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-bottom:28px}
+.panelbox h3{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:900;margin:0 0 6px}
+.panelbox p.sub{margin:0 0 14px;color:var(--muted);font-size:15px}
+.quiz-opts{display:grid;grid-template-columns:1fr;gap:8px}
+.qopt{appearance:none;text-align:left;font:inherit;font-size:15px;background:#fff;border:2px solid rgba(0,0,0,.09);border-radius:14px;padding:13px 16px;cursor:pointer;color:var(--text)}
+.qopt:hover{border-color:var(--teal)}
+.qopt[aria-pressed="true"]{border-color:var(--teal);background:#EAF3F1}
+.result{margin-top:18px}
+.result:empty{display:none}
+.grid3{display:grid;grid-template-columns:1fr;gap:16px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06);position:relative;display:flex;flex-direction:column;gap:10px}
+.card.best{border:2px solid var(--teal);padding-top:28px}
+.badge{position:absolute;top:-12px;left:18px;background:var(--teal);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:100px}
+.badge.alt{background:var(--coral)}
+.card h3{font-family:'Playfair Display',Georgia,serif;font-size:22px;font-weight:900;margin:0}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+.card ul{margin:0;padding-left:20px;font-size:15px}
+.card li{margin-bottom:3px}
 .pricebox{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.pricebox .now{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:28px}
+.pricebox .now{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:32px;line-height:1}
 .pricebox .was{font-size:13px;color:var(--muted)}
-.pricebox .save{font-size:12px;font-weight:700;color:var(--teal)}
-.btn-sm{padding:14px 20px;font-size:15px;text-align:center}
-.btn-off{background:#cfc8bd;color:#5b5247;box-shadow:none;pointer-events:none}
-.tag-soon{display:inline-block;background:#F4E3DE;color:var(--coral);font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase}
+.pricebox .save{font-size:12px;font-weight:700;color:#14524C}
+.btn-sm{padding:15px 18px;font-size:15px;text-align:center;display:block}
+.btn-off{background:#D9D2C7;color:#4F463C;box-shadow:none;pointer-events:none}
+.card .btn-primary,.card .btn-off{margin-top:auto}
+.tag-soon{display:inline-block;background:#F4E3DE;color:#A02A20;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.tag-now{display:inline-block;background:#DDEFE9;color:#14524C;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase}
 .minicover{width:44px;height:60px;border-radius:3px 6px 6px 3px;flex:none}
 .bc-plum{background:linear-gradient(160deg,#7A3C73,#552653)}
 .bc-green{background:linear-gradient(160deg,#3F7D3A,#2B5A27)}
 .bc-sky{background:linear-gradient(160deg,#2B7FB8,#1C5A86)}
 .bc-slate{background:linear-gradient(160deg,#5B6670,#3E474F)}
 .row{display:flex;gap:12px;align-items:center}
-.row h3{font-size:16px}
-.quiz-opts{display:grid;gap:8px}
-.qopt{appearance:none;text-align:left;font:inherit;background:#fff;border:2px solid rgba(0,0,0,.09);border-radius:14px;padding:14px 16px;cursor:pointer;color:var(--text)}
-.qopt:hover,.qopt:focus-visible{border-color:var(--teal)}
-.result{margin-top:16px}
+.row h4{font-size:16px;margin:0;font-weight:700}
+.row p{font-size:14px}
+.srow{background:var(--bg-card);border-radius:16px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.05);display:grid;grid-template-columns:auto 1fr;gap:12px 14px;align-items:center}
+.srow .meta{display:flex;flex-direction:column;gap:2px}
+.srow .meta h4{margin:0;font-size:16px}
+.srow .meta p{margin:0;font-size:14px;color:var(--muted)}
+.srow ul{grid-column:1/-1;margin:0;padding-left:20px;font-size:14px;color:var(--text)}
+.srow .act{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.srow .act .now{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:22px}
+.srow .act .btn-primary,.srow .act .btn-off{padding:12px 18px;font-size:14px}
+.h-sec{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:clamp(22px,3.4vw,28px);margin:34px 0 6px;text-wrap:balance}
+.h-sub{margin:0 0 16px;color:var(--muted);font-size:15px}
 .note{font-size:12px;color:var(--muted);text-align:center;margin:14px 0 0}
 .disc{font-size:12px;color:var(--muted);max-width:640px;margin:0 auto;text-align:center;padding:24px 0 8px}
 .foot{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;padding-bottom:28px}
@@ -1144,45 +1163,67 @@ body{padding-top:40px;padding-bottom:96px}
 .sticky-bar{transform:translateY(120%);transition:transform .2s}
 .sticky-bar.on{transform:none}
 .sticky-bar .sp{font-size:14px;font-weight:600}
-.alltools{margin-top:16px}
+.btn-primary:focus-visible,.qopt:focus-visible,.jump a:focus-visible{outline:3px solid #1E6B65;outline-offset:2px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;overflow-x:hidden}
 .hero{overflow:hidden}
-@media(min-width:900px){
- .shop .wrap{max-width:1080px}
- .modes{grid-template-columns:repeat(4,1fr)}
- #singles{grid-template-columns:repeat(2,1fr)}
- #all-card{max-width:720px;margin-inline:auto}
+@media(min-width:700px){
+ .quiz-opts{grid-template-columns:1fr 1fr}
+ .grid2{grid-template-columns:1fr 1fr}
+ .featured-in{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
 }
-@media(min-width:1100px){
- #bundles{grid-template-columns:repeat(4,1fr)}
- #singles{grid-template-columns:repeat(4,1fr)}
- #bundles .card{padding:18px}
-}
-html{-webkit-text-size-adjust:100%}
-.card .btn-primary,.card .btn-off{margin-top:auto}
-.btn-sm{padding:14px 12px}
-body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
-.btn-primary:focus-visible,.mode:focus-visible,.qopt:focus-visible{outline:3px solid #1E6B65;outline-offset:2px}
+@media(min-width:960px){ .grid3{grid-template-columns:repeat(3,1fr)} }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky-bar{transition:none}}
 
+html{overflow-x:clip}
+body{overflow-x:clip}
+.btn-sm{min-height:46px;display:flex;align-items:center;justify-content:center}
+.qopt{min-height:46px}
+.jump a{min-height:40px;display:inline-flex;align-items:center}
+@media(min-width:641px) and (max-width:900px){.hero-right .book-fan{transform:scale(.55)}}
+@media(max-width:380px){.pricebox .now{font-size:28px}.hero-from{font-size:26px}}
+
+body{padding-inline:16px!important}
+.buy3{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.buy3 li{background:#fff;border-radius:14px;padding:12px 8px;text-align:center;font-size:13px;font-weight:600;line-height:1.3;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.buy3 b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:20px;color:var(--teal)}
+.micro{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}
+.value3{display:grid;grid-template-columns:1fr;gap:14px}
+.vcard{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.vcard .big{font-size:28px}
+.vcard h3{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:900;margin:6px 0 6px}
+.vcard p{margin:0;color:var(--muted);font-size:15px}
+.wait{background:#1C3D6E;color:#fff;border-radius:22px;padding:28px 24px;margin-top:28px}
+.wait h3{font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,3.4vw,28px);font-weight:900;margin:0 0 12px;text-wrap:balance}
+.wait ul{margin:0 0 14px;padding-left:20px}
+.wait li{margin-bottom:6px}
+.wait p{margin:0;font-weight:600}
+.launch{background:#FFF4D6;border:1px solid #E7C96A;color:#5B4300;border-radius:14px;padding:12px 16px;font-size:14px;font-weight:600;text-align:center;margin-bottom:18px}
+.launch:empty{display:none}
+@media(min-width:760px){.value3{grid-template-columns:repeat(3,1fr)}}
+
+@media(min-width:900px){.hero .wrap,.how-section .wrap,.for-section .wrap{max-width:900px}.hero-title{font-size:52px}}
 
 </style></head>
 <body>
 
-<div class="top-bar"><span>Instant PDF download · One-time payment · 14-day money-back guarantee</span></div>
+<div class="top-bar"><span>Instant PDF download · Pay once · 14-day money-back guarantee</span></div>
 
 <section class="hero">
   <div class="wrap">
     <div class="hero-split">
       <div class="hero-left">
-        <p class="eyebrow">For Women 30+ · 8 Guides · 4 Tools</p>
+        <p class="eyebrow">For women 30 and over</p>
         <h1 class="hero-title">Your Body Has Been<br><span class="dim">Trying to Tell You.</span></h1>
-        <p class="hero-sub">The belly that won't budge. The face that changed. The tiredness nobody explains. Plain-language guides for women who know something feels off, and want to understand it before the next appointment.</p>
-        <p class="hero-from">From <span data-min-price>$9.90</span><small>one-time, yours to keep</small></p>
-        <a href="#shop" class="btn-primary btn-full" id="hero-btn">CHOOSE YOUR GUIDE ↓</a>
+        <p class="hero-sub">The belly that won't budge. The tired that sleep doesn't fix. The 3AM wake-ups. Short, simple guides that explain what's going on, in plain English. No jargon. No lectures.</p>
+        <p class="hero-from">From <span data-min-price>$9.90</span><small>pay once, keep forever</small></p>
+        <a href="#offer" class="btn-primary btn-full" id="hero-btn">SEE THE GUIDES ↓</a>
         <div class="hero-bullets">
-          <p>✓ PDFs land in your inbox right after payment</p>
-          <p>✓ 14-day money-back guarantee</p>
-          <p>✓ No subscription, no account</p>
+          <p>✓ Your PDFs arrive by email right after you pay</p>
+          <p>✓ Not happy? Get a full refund within 14 days</p>
+          <p>✓ No subscription. No account. No tricks.</p>
         </div>
+        <ol class="buy3" aria-label="How buying works"><li><b>1</b>Tap a button</li><li><b>2</b>Pay securely</li><li><b>3</b>PDFs land in your inbox</li></ol>
       </div>
       <div class="hero-right">
         <div class="book-fan">
@@ -1200,76 +1241,98 @@ body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
 
 <section class="for-section">
   <div class="wrap">
-    <p class="sec-label">Is this for you?</p>
-    <h2 class="sec-title">Does any of this sound familiar?</h2>
+    <p class="sec-label">Sound like you?</p>
+    <h2 class="sec-title">You're not imagining it.</h2>
     <ul class="for-list">
-      <li><span class="for-dot">•</span><span>Your belly has been changing since your 30s and no longer responds the way it used to</span></li>
-      <li><span class="for-dot">•</span><span>You look in the mirror and see changes you can't explain</span></li>
-      <li><span class="for-dot">•</span><span>You're tired by noon, even though your labs came back "normal"</span></li>
-      <li><span class="for-dot">•</span><span>You wake up at 3AM and can't fall back asleep</span></li>
-      <li><span class="for-dot">•</span><span>You leave appointments feeling you didn't ask the right questions</span></li>
+      <li><span class="for-dot">•</span><span>Your belly changed in your 30s, and nothing you try moves it.</span></li>
+      <li><span class="for-dot">•</span><span>You look in the mirror and think: "When did that happen?"</span></li>
+      <li><span class="for-dot">•</span><span>You're tired by noon, even though your tests came back "normal."</span></li>
+      <li><span class="for-dot">•</span><span>You wake up at 3AM for no reason, and can't get back to sleep.</span></li>
+      <li><span class="for-dot">•</span><span>You leave the doctor's office feeling brushed off.</span></li>
     </ul>
-    <p style="margin:24px 0 0;font-size:14px;color:var(--muted);text-align:center;font-style:italic;">If you nodded at even one, start with the question below.</p>
+    <p style="margin:24px 0 0;font-size:15px;color:var(--text);text-align:center;font-weight:600;">Nodded at even one? These guides were written for you.</p>
   </div>
 </section>
 
-<section class="shop" id="shop">
+<section class="how-section" style="padding-bottom:8px">
   <div class="wrap">
-    <p class="sec-label">Pick your starting point</p>
-    <h2 class="sec-title" style="margin-bottom:24px;">How do you want to start?</h2>
-
-    <div class="modes" role="tablist" aria-label="Choose how to browse">
-      <button class="mode" role="tab" id="t-find" aria-controls="p-find" aria-selected="false"><span class="ico">🧭</span><b>Find my book</b><span>1 question, 10 seconds</span></button>
-      <button class="mode" role="tab" id="t-bundles" aria-controls="p-bundles" aria-selected="true"><span class="ico">📦</span><b>Bundles</b><span>Best for most women</span></button>
-      <button class="mode" role="tab" id="t-all" aria-controls="p-all" aria-selected="false"><span class="ico">📚</span><b>All 8 books</b><span>Everything + 4 tools</span></button>
-      <button class="mode" role="tab" id="t-single" aria-controls="p-single" aria-selected="false"><span class="ico">📖</span><b>Single books</b><span>Start with one</span></button>
+    <p class="sec-label">What you walk away with</p>
+    <h2 class="sec-title">Three things you don't have right now.</h2>
+    <div class="value3">
+      <div class="vcard"><span class="big">💡</span><h3>Answers in plain English</h3><p>Why your belly, your sleep, your energy and your face are changing, explained like a smart friend would explain it.</p></div>
+      <div class="vcard"><span class="big">🧭</span><h3>A clear next step</h3><p>No 50-step plans. One small change at a time, plus a 14-day log so you can see your own patterns.</p></div>
+      <div class="vcard"><span class="big">🩺</span><h3>A better doctor visit</h3><p>A one-page brief and 3 smart questions, so you leave with answers instead of a shrug.</p></div>
     </div>
-
-    <div class="panel" id="p-find" role="tabpanel" aria-labelledby="t-find" hidden>
-      <h3 style="font-family:'Playfair Display',Georgia,serif;margin:0 0 12px;font-size:20px;">What bothers you most right now?</h3>
-      <div class="quiz-opts" id="quiz"></div>
-      <div class="result" id="result"></div>
+    <div class="wait">
+      <h3>What waiting really costs</h3>
+      <ul>
+        <li>Another month of guessing and trying random supplements.</li>
+        <li>Another night staring at the ceiling at 3AM.</li>
+        <li>Another appointment where you freeze and forget what to ask.</li>
+      </ul>
+      <p>These guides start at <span data-min-price>$9.90</span>. Start tonight, and in 14 days you can have real notes about your own body, not just a feeling.</p>
     </div>
+  </div>
+</section>
 
-    <div class="panel" id="p-bundles" role="tabpanel" aria-labelledby="t-bundles">
-      <div class="grid2" id="bundles"></div>
-      <p class="note">Bundle price is lower than buying the same guides one by one.</p>
-    </div>
-
-    <div class="panel" id="p-all" role="tabpanel" aria-labelledby="t-all" hidden>
-      <div class="card best" id="all-card"></div>
-    </div>
-
-    <div class="panel" id="p-single" role="tabpanel" aria-labelledby="t-single" hidden>
-      <div class="grid2" id="singles"></div>
+<section class="how-section">
+  <div class="wrap">
+    <p class="sec-label">Why these guides</p>
+    <h2 class="sec-title">Most health advice is written for doctors or for people selling pills. This isn't.</h2>
+    <div class="how-steps">
+      <div class="how-step"><div class="how-num">1</div><div class="how-body"><h3>One question per guide</h3><p>Each guide answers one thing you've probably asked yourself, like "Why is my belly still here?" or "Why am I awake at 3AM?"</p></div></div>
+      <div class="how-step"><div class="how-num">2</div><div class="how-body"><h3>Plain English</h3><p>Short sentences. Real-life examples. No medical jargon you have to look up.</p></div></div>
+      <div class="how-step"><div class="how-num">3</div><div class="how-body"><h3>Made to use, not just read</h3><p>Print the one-page Doctor's Brief. Track your own signs for 14 days. Bring 3 questions to your next appointment.</p></div></div>
     </div>
   </div>
 </section>
 
 <hr class="divider">
 
-<section class="how-section">
+<section class="offer" id="offer">
   <div class="wrap">
-    <p class="sec-label">How it works</p>
-    <h2 class="sec-title">Three simple steps.</h2>
-    <div class="how-steps">
-      <div class="how-step"><div class="how-num">1</div><div class="how-body"><h3>Pick the question that matches you</h3><p>Use "Find my book" or start with the bundle that fits. You don't have to read everything at once.</p></div></div>
-      <div class="how-step"><div class="how-num">2</div><div class="how-body"><h3>Read, then track for 14 days</h3><p>The guides are written in plain language. The 14-Day Body Log takes about 30 seconds a day.</p></div></div>
-      <div class="how-step"><div class="how-num">3</div><div class="how-body"><h3>Bring it to your next appointment</h3><p>Print the one-page Doctor's Brief and the 3 questions. Your doctor interprets the signals; these help you describe them clearly.</p></div></div>
+    <p class="sec-label">Choose your guides</p>
+    <h2 class="sec-title" style="margin-bottom:18px;">Start with what bugs you most.</h2>
+    <div class="launch" id="launch" role="note"></div>
+    <nav class="jump" aria-label="Jump to a section">
+      <a href="#find">Not sure? Take the quick quiz</a>
+      <a href="#featured">Best deal</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#singles">Single guides</a>
+    </nav>
+
+    <div class="panelbox" id="find">
+      <h3>Not sure where to start?</h3>
+      <p class="sub">Tap what bugs you most. We'll point you to the right guide.</p>
+      <div class="quiz-opts" id="quiz"></div>
+      <div class="result" id="result" aria-live="polite"></div>
     </div>
+
+    <div id="featured"></div>
+
+    <h2 class="h-sec" id="bundles">Want one topic? Pick a bundle.</h2>
+    <p class="h-sub">A bundle costs less than buying the same guides one by one.</p>
+    <div class="grid3" id="bundlegrid"></div>
+
+    <h2 class="h-sec" id="singles">Or start with just one guide.</h2>
+    <p class="h-sub">Only need one answer? Start here.</p>
+    <div class="grid2" id="singlegrid"></div>
   </div>
 </section>
 
+<hr class="divider">
+
 <section class="tools-section">
   <div class="wrap">
-    <p class="sec-label">4 tools included with the full collection and the Core bundle</p>
+    <p class="sec-label">4 helper tools</p>
     <h2 class="sec-title">The guides explain it. The tools help you use it.</h2>
     <div class="tools-grid">
-      <div class="tool-card"><span class="tool-icon">🧭</span><h3 class="tool-name">Start Here</h3><p class="tool-meta">A one-page navigator: tells you which guide to read first.</p></div>
-      <div class="tool-card"><span class="tool-icon">📅</span><h3 class="tool-name">14-Day Body Log</h3><p class="tool-meta">A simple daily log for sleep, energy, digestion and mood.</p></div>
-      <div class="tool-card"><span class="tool-icon">📝</span><h3 class="tool-name">Doctor's Brief</h3><p class="tool-meta">One page that summarizes what you've noticed, ready to print.</p></div>
-      <div class="tool-card"><span class="tool-icon">❓</span><h3 class="tool-name">3 Questions For Your Doctor</h3><p class="tool-meta">Questions to ask so appointments feel less rushed.</p></div>
+      <div class="tool-card"><span class="tool-icon">🧭</span><h3 class="tool-name">Start Here</h3><p class="tool-meta">A one-page map. Tells you which guide to read first.</p></div>
+      <div class="tool-card"><span class="tool-icon">📅</span><h3 class="tool-name">14-Day Body Log</h3><p class="tool-meta">Takes 30 seconds a day. Track sleep, energy, digestion and mood.</p></div>
+      <div class="tool-card"><span class="tool-icon">📝</span><h3 class="tool-name">Doctor's Brief</h3><p class="tool-meta">One page that sums up what you've noticed. Print it and bring it.</p></div>
+      <div class="tool-card"><span class="tool-icon">❓</span><h3 class="tool-name">3 Questions For Your Doctor</h3><p class="tool-meta">So you walk out with answers, not a pat on the shoulder.</p></div>
     </div>
+    <p class="note">Included with the Core Bundle and the Complete Collection.</p>
   </div>
 </section>
 
@@ -1278,14 +1341,14 @@ body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
 <section class="faq-section">
   <div class="wrap">
     <p class="sec-label">Questions</p>
-    <h2 class="sec-title">What people ask before buying.</h2>
+    <h2 class="sec-title">Before you buy, you might wonder...</h2>
     <div class="faq-list">
-      <div class="faq-item"><p class="faq-q">Is this a subscription?</p><p class="faq-a">No. You pay once and keep the files. No recurring charges, no account.</p></div>
-      <div class="faq-item"><p class="faq-q">What format are the files?</p><p class="faq-a">PDFs. They open on iPhone, Android, Mac and Windows. Print them if you prefer paper.</p></div>
-      <div class="faq-item"><p class="faq-q">How fast do I get them?</p><p class="faq-a">The download link is sent to your email right after payment. If you don't see it, check spam, then email us and we'll resend.</p></div>
-      <div class="faq-item"><p class="faq-q">What does "coming soon" mean?</p><p class="faq-a">Some guides are still being finished. They are marked clearly and can't be bought until they are ready.</p></div>
-      <div class="faq-item"><p class="faq-q">Is this a replacement for a doctor?</p><p class="faq-a">No. This is educational information, not medical advice. Talk to your doctor about symptoms or before changing your diet, medication or supplements.</p></div>
-      <div class="faq-item"><p class="faq-q">What if it's not for me?</p><p class="faq-a">Email us within 14 days for a full refund.</p></div>
+      <div class="faq-item"><p class="faq-q">Is this a subscription?</p><p class="faq-a">No. You pay once and the files are yours. No monthly charges. No account.</p></div>
+      <div class="faq-item"><p class="faq-q">How do I read them?</p><p class="faq-a">They're PDFs. They open on iPhone, Android, Mac and Windows. You can print them too.</p></div>
+      <div class="faq-item"><p class="faq-q">How fast do I get them?</p><p class="faq-a">Right after you pay, a download link goes to your email. Don't see it? Check your spam folder, then email us and we'll send it again.</p></div>
+      <div class="faq-item"><p class="faq-q">What does "coming soon" mean?</p><p class="faq-a">That guide is still being finished. You can't buy it yet. We mark it so there are no surprises.</p></div>
+      <div class="faq-item"><p class="faq-q">Will this replace my doctor?</p><p class="faq-a">No. This is education, not medical advice. Talk to your doctor about any symptoms, and before you change your diet, medicine or supplements.</p></div>
+      <div class="faq-item"><p class="faq-q">What if it's not for me?</p><p class="faq-a">Email us within 14 days and we'll refund you in full.</p></div>
     </div>
   </div>
 </section>
@@ -1295,115 +1358,107 @@ body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif}
     <div class="guarantee-card">
       <div class="guarantee-icon">🛡️</div>
       <h2 class="guarantee-title">14-Day Money-Back Guarantee</h2>
-      <p class="guarantee-text">Read the guides and try the tools. If they aren't for you, email us within 14 days and we'll refund you in full.</p>
+      <p class="guarantee-text">Read the guides. Try the tools. If they're not for you, email us within 14 days and you get all your money back. Simple as that.</p>
     </div>
   </div>
 </section>
 
 <div class="wrap">
-  <p class="disc">Educational information only, not medical advice, and not a substitute for care from your doctor. Individual results vary. Always consult a healthcare professional before making health decisions.</p>
-  <div class="foot"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Refund policy</a><a href="mailto:hello@example.com">hello@example.com</a></div>
+  <p class="disc">For education only. This is not medical advice and does not replace care from your doctor. Results vary from person to person. Always check with a healthcare professional before making health decisions.</p>
+  <div class="foot"><a href="#" data-f="terms">Terms</a><a href="#" data-f="privacy">Privacy</a><a href="#" data-f="refund">Refund policy</a><a href="#" data-f="mail">Contact us</a></div>
 </div>
 
-<div class="sticky-bar" id="sticky"><span class="sp">8 guides · 4 tools · from <span data-min-price>$9.90</span></span><a href="#shop" class="btn-primary btn-sm">CHOOSE →</a></div>
+<div class="sticky-bar" id="sticky"><span class="sp">Short, plain-English guides · from <span data-min-price>$9.90</span></span><a href="#offer" class="btn-primary btn-sm" style="margin:0">SEE GUIDES →</a></div>
 
 <script>
 /* ===== EDIT HERE ===== */
 var CONFIG = {
   terms:"#", privacy:"#", refund:"#", email:"hello@example.com",
+  /* Only fill this if the price REALLY goes up after this date. Example: "Launch price until Nov 15" */
+  launchNote:"",
+  tools:"Includes the 4 helper tools.",
   books:{
-    1:{t:"The Belly Fat Lie",q:"Why is this still here no matter what I do?",c:"bc-red",ready:true,price:9.90,url:"",pts:["3 hidden causes most diets ignore","1 hormonal shift after 35 that changes the picture","7 foods marketed as healthy that can work against you"]},
-    2:{t:"Aging Faster Than You Should",q:"Why does my face look older than I feel?",c:"bc-teal",ready:true,price:9.90,url:"",pts:["5 hidden things that can speed up visible aging","2 blood tests worth asking your doctor about","A simple routine to start from"]},
-    3:{t:"The Caffeine Trap",q:"Why am I still exhausted after a full night's sleep?",c:"bc-amber",ready:true,price:9.90,url:"",pts:["3 kinds of tiredness coffee can make worse","1 simple test to see what's draining your energy","A 30-day plan: one small change per week"]},
-    4:{t:"The 3AM Signal",q:"Why do I wake up at 3AM when I should be fine?",c:"bc-navy",ready:true,price:9.90,url:"",pts:["6 things your body does at night, explained","4 body systems that can wake you up (it's not always stress)","A 12-minute wind-back-down routine to try tonight"]},
-    5:{t:"The Fiber Gap",q:"Am I eating enough of the one thing most women miss?",c:"bc-green",ready:false,price:9.90,url:"",pts:["What daily fiber targets actually are","Where most women fall short","Easy ways to close the gap"]},
-    6:{t:"Gut, Stress & Your Stomach",q:"Why does stress land in my stomach?",c:"bc-plum",ready:false,price:9.90,url:"",pts:["How your gut and stress are connected","What's established and what's still unclear","Small daily habits to try"]},
-    7:{t:"What's In Your Cup",q:"Is what I drink helping or hurting?",c:"bc-sky",ready:false,price:9.90,url:"",pts:["Coffee timing and sleep","Water myths and what research actually says","What to skip and what to keep"]},
-    8:{t:"The Midday Crash",q:"Why do I run out of steam by 2 PM?",c:"bc-slate",ready:false,price:9.90,url:"",pts:["Common causes of the afternoon slump","Meals, sleep and stress: what to check first","A simple 7-day experiment"]}
+    1:{t:"The Belly Fat Lie",q:"Why is this belly still here, no matter what I do?",c:"bc-red",ready:true,price:9.90,url:"",pts:["3 hidden reasons most diets miss","1 big body change after 35","7 \"healthy\" foods that may work against you"]},
+    2:{t:"Aging Faster Than You Should",q:"Why do I look older than I feel?",c:"bc-teal",ready:true,price:9.90,url:"",pts:["5 sneaky things that can make you look older","2 blood tests worth asking your doctor about","A simple routine to start with"]},
+    3:{t:"The Caffeine Trap",q:"Why am I still tired after a full night's sleep?",c:"bc-amber",ready:true,price:9.90,url:"",pts:["3 kinds of tired that coffee can make worse","A quick test to see what's draining you","A 30-day plan: one small change a week"]},
+    4:{t:"The 3AM Signal",q:"Why am I wide awake at 3AM?",c:"bc-navy",ready:true,price:9.90,url:"",pts:["6 things your body does at night","4 things besides stress that can wake you up","A 12-minute wind-down to try tonight"]},
+    5:{t:"The Fiber Gap",q:"Am I missing the one thing most women don't get enough of?",c:"bc-green",ready:false,price:9.90,url:"",pts:["How much fiber you need each day","Where most women come up short","Easy ways to close the gap"]},
+    6:{t:"Gut, Stress & Your Stomach",q:"Why does stress hit my stomach first?",c:"bc-plum",ready:false,price:9.90,url:"",pts:["How your gut and stress are linked","What we know, and what we don't","Small daily habits to try"]},
+    7:{t:"What's In Your Cup",q:"Is what I drink helping me or hurting me?",c:"bc-sky",ready:false,price:9.90,url:"",pts:["When to have coffee (and when not to)","Water myths, sorted out","What to skip and what to keep"]},
+    8:{t:"The Midday Crash",q:"Why do I run out of steam around 2 PM?",c:"bc-slate",ready:false,price:9.90,url:"",pts:["Common reasons for the afternoon slump","What to check first: meals, sleep, stress","A simple 7-day experiment"]}
   },
-  tools:"Includes the 4 tools: Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor.",
   bundles:[
-    {id:"core",name:"Core Bundle",who:"The original set: the four guides plus all four tools.",books:[1,2,3,4],tools:true,price:19.90,url:"https://app.lava.top/products/d846d4d9-1625-4817-89ee-d124f01a0a01/3225220b-b982-40ae-97bf-f834eb207806?currency=USD&domainId=c801983a-49c9-483d-94d9-1949ccfedeb9&domainName=thekiramethod.com"},
-    {id:"belly",name:"Belly & Gut Bundle",who:"For the belly that won't change and the stomach that reacts to stress.",books:[1,5,6],tools:false,price:17.90,url:""},
-    {id:"sleep",name:"Sleep & Energy Bundle",who:"For 3AM wake-ups, caffeine dependence and afternoon crashes.",books:[3,4,8],tools:false,price:17.90,url:""},
-    {id:"complete",name:"Complete Collection",who:"All 8 guides plus all 4 tools.",books:[1,2,3,4,5,6,7,8],tools:true,price:29.90,url:"",best:true}
+    {id:"core",name:"Core Bundle",who:"Our original set: 4 guides plus all 4 helper tools.",books:[1,2,3,4],tools:true,price:19.90,url:"https://app.lava.top/products/d846d4d9-1625-4817-89ee-d124f01a0a01/3225220b-b982-40ae-97bf-f834eb207806?currency=USD&domainId=c801983a-49c9-483d-94d9-1949ccfedeb9&domainName=thekiramethod.com"},
+    {id:"belly",name:"Belly & Gut Bundle",who:"For the belly that won't move and the stomach that reacts to stress.",books:[1,5,6],tools:false,price:17.90,url:""},
+    {id:"sleep",name:"Sleep & Energy Bundle",who:"For 3AM wake-ups, coffee habits and afternoon crashes.",books:[3,4,8],tools:false,price:17.90,url:""},
+    {id:"complete",name:"Complete Collection",who:"All 8 guides plus all 4 helper tools. Everything in one place.",books:[1,2,3,4,5,6,7,8],tools:true,price:29.90,url:"",best:true}
   ],
   quiz:[
     {q:"My belly won't budge",book:1,bundle:"belly"},
-    {q:"My face looks older than I feel",book:2,bundle:"complete"},
-    {q:"I'm tired even after sleeping",book:3,bundle:"sleep"},
+    {q:"I look older than I feel",book:2,bundle:"complete"},
+    {q:"I'm tired even after I sleep",book:3,bundle:"sleep"},
     {q:"I wake up at 3AM",book:4,bundle:"sleep"},
     {q:"Stress goes straight to my stomach",book:6,bundle:"belly"},
     {q:"I crash in the afternoon",book:8,bundle:"sleep"},
-    {q:"I'm not sure, show me everything",book:null,bundle:"complete"}
+    {q:"I'm not sure. Show me everything.",book:null,bundle:"complete"}
   ]
 };
 /* ===================== */
 (function(){
-  var C=CONFIG, B=C.books;
+  var C=CONFIG,B=C.books;
   function money(n){return "$"+n.toFixed(2)}
-  function el(h){var d=document.createElement("div");d.innerHTML=h.trim();return d.firstChild}
+  function esc(x){return String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function sum(ids){return ids.reduce(function(a,n){return a+B[n].price},0)}
   function bookReady(n){return B[n].ready}
-  function single(n){return B[n].price}
-  function sumSingles(ids){return ids.reduce(function(a,n){return a+single(n)},0)}
-  function bundleReady(b){return b.url && b.books.every(bookReady)}
-  function btn(url,ok,label){
+  function bundleReady(b){return !!b.url && b.books.every(bookReady)}
+  function btn(url,ok,label,soonLabel){
     if(ok&&url) return '<a class="btn-primary btn-sm" href="'+url+'" rel="noopener">'+label+'</a>';
-    return '<span class="btn-primary btn-sm btn-off">'+(ok?'Link coming soon':'Coming soon')+'</span>';
+    return '<span class="btn-primary btn-sm btn-off" role="text">'+(soonLabel||'Coming soon')+'</span>';
   }
-  function minprice(){var m=Infinity;Object.keys(B).forEach(function(k){if(B[k].price<m)m=B[k].price});return m}
-  document.querySelectorAll("[data-min-price]").forEach(function(e){e.textContent=money(minprice())});
-  document.querySelectorAll(".foot a").forEach(function(a,i){a.href=[C.terms,C.privacy,C.refund][i]||a.href});
-
-  function bundleCard(b){
-    var sep=sumSingles(b.books), ok=bundleReady(b), anySoon=!b.books.every(bookReady);
-    var list=b.books.map(function(n){return '<li>'+B[n].t+(bookReady(n)?'':' <span class="tag-soon">soon</span>')+'</li>'}).join('');
-    var save=sep-b.price;
-    return '<div class="card'+(b.best?' best':'')+'">'+(b.best?'<span class="badge">Best value</span>':'')+
-      '<h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p>'+C.tools+'</p>':'')+
-      '<div class="pricebox"><span class="now">'+money(b.price)+'</span>'+
-      (save>0?'<span class="was">Separately: '+money(sep)+'</span><span class="save">Save '+money(save)+'</span>':'')+'</div>'+
-      btn(b.url,!anySoon,'GET '+b.name.toUpperCase()+' →')+'</div>';
+  function bundleById(id){return C.bundles.filter(function(b){return b.id===id})[0]}
+  function bundleCard(b,opts){
+    opts=opts||{};
+    var sep=sum(b.books),ok=bundleReady(b),save=sep-b.price;
+    var list=b.books.map(function(n){return '<li>'+esc(B[n].t)+(bookReady(n)?'':' <span class="tag-soon">soon</span>')+'</li>'}).join('');
+    var badge=opts.badge?'<span class="badge'+(opts.alt?' alt':'')+'">'+opts.badge+'</span>':'';
+    var left='<div><h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p style="margin-top:8px">'+C.tools+'</p>':'')+'</div>';
+    var right='<div style="display:flex;flex-direction:column;gap:12px"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
+      btn(b.url,ok,'GET THE '+b.name.toUpperCase()+' →',b.books.every(bookReady)?'Link coming soon':'Coming soon')+(ok?'<p class="micro">🔒 Secure checkout · Instant PDF · 14-day refund</p>':'')+'</div>';
+    return '<div class="card'+(opts.best?' best':'')+'">'+badge+(opts.wide?'<div class="featured-in">'+left+right+'</div>':left+right)+'</div>';
   }
-  document.getElementById("bundles").innerHTML=C.bundles.map(bundleCard).join('');
-
-  var comp=C.bundles.filter(function(b){return b.id==="complete"})[0];
-  document.getElementById("all-card").innerHTML='<span class="badge">All 8 + 4 tools</span><h3>'+comp.name+'</h3><p>'+comp.who+'</p>'+
-    Object.keys(B).map(function(k){var b=B[k];return '<div class="row"><div class="minicover '+b.c+'"></div><div><h3>'+b.t+(b.ready?'':' <span class="tag-soon">soon</span>')+'</h3><p>'+b.q+'</p></div></div>'}).join('')+
-    '<p class="alltools">'+C.tools+'</p><div class="pricebox"><span class="now">'+money(comp.price)+'</span><span class="was">Separately: '+money(sumSingles(comp.books))+'</span><span class="save">Save '+money(sumSingles(comp.books)-comp.price)+'</span></div>'+
-    btn(comp.url,comp.books.every(bookReady),'GET THE COMPLETE COLLECTION →');
-
-  function singleCard(n){
+  function singleRow(n){
     var b=B[n];
-    return '<div class="card"><div class="row"><div class="minicover '+b.c+'"></div><div><h3>'+b.t+(b.ready?'':' <span class="tag-soon">soon</span>')+'</h3><p>'+b.q+'</p></div></div><ul>'+b.pts.map(function(p){return '<li>'+p+'</li>'}).join('')+'</ul>'+
-      '<div class="pricebox"><span class="now">'+money(b.price)+'</span></div>'+btn(b.url,b.ready,'GET THIS GUIDE →')+'</div>';
+    return '<div class="srow"><div class="minicover '+b.c+'" aria-hidden="true"></div><div class="meta"><h4>'+esc(b.t)+(b.ready?'':' <span class="tag-soon">soon</span>')+'</h4><p>'+esc(b.q)+'</p></div>'+
+      '<ul>'+b.pts.map(function(p){return '<li>'+p+'</li>'}).join('')+'</ul>'+
+      '<div class="act"><span class="now">'+money(b.price)+'</span>'+btn(b.url,b.ready&&!!b.url,'GET THIS GUIDE →',b.ready?'Link coming soon':'Coming soon')+'</div></div>';
   }
-  document.getElementById("singles").innerHTML=Object.keys(B).map(function(k){return singleCard(+k)}).join('');
-
-  var quiz=document.getElementById("quiz"), res=document.getElementById("result");
-  quiz.innerHTML=C.quiz.map(function(o,i){return '<button class="qopt" data-i="'+i+'">'+o.q+'</button>'}).join('');
-  quiz.addEventListener("click",function(e){
-    var t=e.target.closest(".qopt"); if(!t) return;
-    var o=C.quiz[+t.getAttribute("data-i")], html='';
-    if(o.book){html+='<h3 style="font-family:\'Playfair Display\',Georgia,serif;margin:0 0 10px;">Start with this guide</h3><div class="grid2">'+singleCard(o.book)+'</div>';}
-    var b=C.bundles.filter(function(x){return x.id===o.bundle})[0];
-    html+='<h3 style="font-family:\'Playfair Display\',Georgia,serif;margin:18px 0 10px;">Or save with a bundle</h3><div class="grid2">'+bundleCard(b)+'</div>';
-    res.innerHTML=html; res.scrollIntoView({behavior:"smooth",block:"start"});
+  function minPrice(){return Math.min.apply(null,Object.keys(B).map(function(k){return B[k].price}))}
+  document.querySelectorAll("[data-min-price]").forEach(function(e){e.textContent=money(minPrice())});
+  document.querySelectorAll(".foot a").forEach(function(a){
+    var k=a.getAttribute("data-f");a.href=k==="mail"?"mailto:"+C.email:C[k]||"#";
   });
 
-  var modes=["find","bundles","all","single"];
-  function show(m){
-    modes.forEach(function(x){
-      var on=x===m; document.getElementById("t-"+x).setAttribute("aria-selected",on);
-      document.getElementById("p-"+x).hidden=!on;
-    });
-  }
-  modes.forEach(function(m){document.getElementById("t-"+m).addEventListener("click",function(){show(m)})});
-  var h=(location.hash||"").replace("#","");
-  if(modes.indexOf(h)>-1) show(h);
+  var ln=document.getElementById("launch"); if(C.launchNote) ln.textContent=C.launchNote;
+  var complete=bundleById("complete");
+  var featured=bundleReady(complete)?complete:(C.bundles.filter(function(b){return bundleReady(b)})[0]||complete);
+  document.getElementById("featured").innerHTML=bundleCard(featured,{best:true,wide:true,badge:bundleReady(featured)?(featured.id==="complete"?"Best deal":"Available now"):"Best deal"});
+  document.getElementById("bundlegrid").innerHTML=C.bundles.filter(function(b){return b!==featured}).map(function(b){return bundleCard(b)}).join('');
+  document.getElementById("singlegrid").innerHTML=Object.keys(B).map(function(k){return singleRow(+k)}).join('');
 
-  var sticky=document.getElementById("sticky"), shop=document.getElementById("shop");
-  function onScroll(){var r=shop.getBoundingClientRect();sticky.classList.toggle("on",window.scrollY>500 && (r.top>window.innerHeight||r.bottom<0))}
+  var quiz=document.getElementById("quiz"),res=document.getElementById("result");
+  quiz.innerHTML=C.quiz.map(function(o,i){return '<button type="button" class="qopt" aria-pressed="false" data-i="'+i+'">'+esc(o.q)+'</button>'}).join('');
+  quiz.addEventListener("click",function(e){
+    var t=e.target.closest(".qopt");if(!t)return;
+    quiz.querySelectorAll(".qopt").forEach(function(x){x.setAttribute("aria-pressed",x===t)});
+    var o=C.quiz[+t.getAttribute("data-i")],html='';
+    if(o.book){html+='<h3 class="h-sec" style="margin-top:6px;font-size:20px">Start with this guide</h3><div style="display:grid;gap:12px">'+singleRow(o.book)+'</div>';}
+    var b=bundleById(o.bundle);
+    html+='<h3 class="h-sec" style="font-size:20px">Or save with a bundle</h3>'+bundleCard(b,{wide:false});
+    res.innerHTML=html;
+  });
+
+  var sticky=document.getElementById("sticky"),offer=document.getElementById("offer");
+  function onScroll(){var r=offer.getBoundingClientRect();sticky.classList.toggle("on",window.scrollY>500&&(r.top>window.innerHeight||r.bottom<0))}
   window.addEventListener("scroll",onScroll,{passive:true});onScroll();
 })();
 </script>
