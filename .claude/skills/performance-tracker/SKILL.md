@@ -37,15 +37,7 @@ description: Log every published reel and track metrics at 24h, 48h, 72h. Identi
 
 ## КАК ОБНОВЛЯТЬ МЕТРИКИ
 
-Через 24h, 48h, 72h — запросить данные через Videotool:
-
-```
-mcp__Videotool__getAnalyticsDataByMetrics
-brandId: 6476294
-network: instagram
-metrics: ["impressions", "reach", "shares", "saves"]
-postId: [id поста]
-```
+Через 24h, 48h, 72h владелец присылает цифры (охват, пересылки, сохранения, комментарии с кодовым словом). Инструмента аналитики в Videotool у нас нет (доступны только создание, чтение, обновление и удаление постов), поэтому метрики вносятся вручную со слов владельца.
 
 Заполнить строку в журнале. Обновить статус.
 
