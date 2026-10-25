@@ -1,0 +1,95 @@
+<!doctype html><html><head><style>
+@font-face{font-family:M;src:url(Montserrat-Bold.ttf)}
+body{margin:0;background:#000;width:1080px;height:1920px;position:relative;overflow:hidden;font-family:M,sans-serif}
+#t{position:absolute;left:60px;right:60px;top:130px;text-align:center;color:#fff;font-size:88px;line-height:1.08;text-shadow:0 6px 24px rgba(0,0,0,.5)}
+#t b{color:#ffd24a}
+</style></head><body>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js"}}</script>
+<div id="t"></div>
+<script type="module">
+import * as THREE from 'three';
+const shot=+new URLSearchParams(location.search).get('shot')||1;
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});r.setSize(1080,1920);r.shadowMap.enabled=true;r.shadowMap.type=THREE.PCFSoftShadowMap;document.body.prepend(r.domElement);
+const s=new THREE.Scene();
+const eve=shot<3;
+const skyC=eve?0xff9a6b:0x8fd3f5;
+s.background=new THREE.Color(eve?0x3a2a3f:0xdff1fb);
+const cam=new THREE.PerspectiveCamera(36,1080/1920,0.1,100);
+const M=(c,o={})=>new THREE.MeshStandardMaterial({color:c,flatShading:true,roughness:.9,...o});
+const add=(g,m,x,y,z,rx=0,ry=0,rz=0,par=s)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.rotation.set(rx,ry,rz);o.castShadow=o.receiveShadow=true;par.add(o);return o};
+const B=(w,h,d)=>new THREE.BoxGeometry(w,h,d);
+// lights
+const key=new THREE.DirectionalLight(eve?0xffb98a:0xffffff,eve?1.6:2.4);key.position.set(-6,7,8);key.castShadow=true;key.shadow.mapSize.set(2048,2048);key.shadow.radius=4;Object.assign(key.shadow.camera,{left:-10,right:10,top:10,bottom:-10});s.add(key);
+s.add(new THREE.HemisphereLight(eve?0xffd9c0:0xffffff,eve?0x6a4a6a:0xaabbcc,eve?0.9:1.1));
+if(eve){const lamp=new THREE.PointLight(0xffc46b,60,16,1.6);lamp.position.set(-4.4,4.6,-1.6);s.add(lamp)}
+// room: floor, back wall with window, side wall
+add(B(26,0.2,22),M(eve?0xb98a62:0xd9b48a),0,-0.1,0);
+const wallC=eve?0xe9c9b5:0xf6e6d6;
+add(B(8,14,0.4),M(wallC),-7.5,7,-6);add(B(8,14,0.4),M(wallC),7.5,7,-6);
+add(B(7,6,0.4),M(wallC),0,11,-6);add(B(7,3.4,0.4),M(wallC),0,1.7,-6);
+// window glass = sky
+add(B(7,4.6,0.1),new THREE.MeshBasicMaterial({color:skyC}),0,5.7,-6.15);
+// city outside
+const bc=eve?[0x5a3d5e,0x6c4a63,0x7a5568]:[0xa9c7dd,0xbcd6e6,0x93b4cc];
+for(let i=0;i<9;i++){const h=1.2+((i*37)%5)*0.6;add(B(0.9,h,0.6),M(bc[i%3]),-3.2+i*0.8,3.4+h/2-0.1,-6.5)}
+if(eve){for(let i=0;i<14;i++)add(B(0.12,0.12,0.05),new THREE.MeshBasicMaterial({color:0xffe08a}),-3.2+((i*53)%64)/10,3.9+((i*29)%25)/10,-6.16)}
+// window frame
+const fr=M(0xf4efe9);add(B(7.4,0.25,0.5),fr,0,3.3,-5.9);add(B(7.4,0.25,0.5),fr,0,8.0,-5.9);add(B(0.25,4.9,0.5),fr,-3.6,5.65,-5.9);add(B(0.25,4.9,0.5),fr,3.6,5.65,-5.9);add(B(0.2,4.6,0.4),fr,0,5.65,-5.9);
+// rug, sofa, plant, lamp
+add(B(9,0.06,5),M(eve?0x6fa8a0:0x8fd0c4),0,0.03,0.5);
+add(B(5.2,1.1,2.1),M(0xd9604a),-4.3,0.55,-3.6);add(B(5.2,1.5,0.6),M(0xc9503b),-4.3,1.4,-4.55);add(B(0.6,1.0,2.1),M(0xc9503b),-6.7,0.8,-3.6);add(B(1.0,0.7,0.5),M(0xffd24a),-3.0,1.5,-3.9,0,0.3,0.2);
+add(new THREE.CylinderGeometry(0.55,0.4,0.9,7),M(0xc67b4f),4.4,0.45,-4.2);add(new THREE.IcosahedronGeometry(0.9,0),M(0x3fae6a),4.4,1.7,-4.2);add(new THREE.IcosahedronGeometry(0.6,0),M(0x58c47e),5.0,2.3,-4.0);add(new THREE.IcosahedronGeometry(0.55,0),M(0x2f9a58),3.8,2.4,-4.4);
+add(new THREE.CylinderGeometry(0.08,0.08,3.6,6),M(0x333333),-4.9,1.8,-2.4);add(new THREE.ConeGeometry(0.8,0.9,7,1,true),M(0xffe3a0,{side:2,emissive:eve?0xffb347:0x000000,emissiveIntensity:.8}),-4.9,3.9,-2.4);
+// counter (island)
+add(B(10.5,2.3,2.4),M(0x7d5c8a),0,1.15,-0.6);add(B(10.9,0.28,2.8),M(0xf4efe9),0,2.44,-0.6);
+// character
+const sk=0xf1b88d,shirt=shot===3?0x37b37e:0x5b7fd6;
+const ch=new THREE.Group();s.add(ch);
+const cm=(g,m,x,y,z,par=ch)=>{const o=new THREE.Mesh(g,m);o.position.set(x,y,z);o.castShadow=true;par.add(o);return o};
+cm(B(2.0,2.4,1.2),M(shirt),0,1.2,0);
+const head=new THREE.Group();head.position.set(0,3.2,0);ch.add(head);
+cm(B(1.7,1.7,1.5),M(sk),0,0,0,head);cm(B(1.85,0.7,1.65),M(0x4a2f23),0,0.95,-0.05,head);cm(B(1.85,1.0,0.5),M(0x4a2f23),0,0.45,-0.55,head);
+const eye=x=>{cm(B(0.34,0.38,0.08),M(0xffffff),x,0.1,0.76,head);cm(B(0.16,0.2,0.1),M(0x1a1a1a),x+(shot===2?0.04:0),0.08,0.8,head)};eye(-0.4);eye(0.4);
+const brow=(x,ang,y)=>{const b=cm(B(0.5,0.1,0.08),M(0x3a2418),x,y,0.78,head);b.rotation.z=ang};
+if(shot===1){brow(-0.4,0.25,0.52);brow(0.4,-0.25,0.52)}
+if(shot===2){brow(-0.4,-0.35,0.42);brow(0.4,0.35,0.42)}
+if(shot===3){brow(-0.4,0.12,0.5);brow(0.4,-0.12,0.5)}
+// mouth
+if(shot===1){cm(B(0.8,0.34,0.08),M(0x8c2f3a),0,-0.5,0.77,head);cm(B(0.6,0.12,0.09),M(0xffffff),0,-0.4,0.8,head)}
+if(shot===2){cm(B(0.55,0.1,0.08),M(0x8c2f3a),0,-0.5,0.77,head);cm(B(0.14,0.3,0.06),M(0x7ad7f0),0.9,0.35,0.6,head)} // sweat drop
+if(shot===3){cm(B(0.9,0.12,0.08),M(0x8c2f3a),0,-0.5,0.77,head);const a=cm(B(0.22,0.12,0.08),M(0x8c2f3a),-0.5,-0.42,0.77,head);a.rotation.z=-0.6;const b=cm(B(0.22,0.12,0.08),M(0x8c2f3a),0.5,-0.42,0.77,head);b.rotation.z=0.6;cm(B(0.3,0.12,0.06),M(0xff9aa8),-0.8,-0.2,0.77,head);cm(B(0.3,0.12,0.06),M(0xff9aa8),0.8,-0.2,0.77,head)}
+const armL=new THREE.Group(),armR=new THREE.Group();armL.position.set(-1.25,2.2,0);armR.position.set(1.25,2.2,0);ch.add(armL,armR);
+cm(B(0.55,1.9,0.55),M(shirt),0,-0.9,0,armL);cm(B(0.55,1.9,0.55),M(shirt),0,-0.9,0,armR);cm(B(0.6,0.6,0.6),M(sk),0,-2.0,0,armL);cm(B(0.6,0.6,0.6),M(sk),0,-2.0,0,armR);
+ch.position.set(0.6,2.4,-1.2);ch.rotation.y=-0.12;
+// props
+const donut=(x,y,z,c)=>{add(new THREE.TorusGeometry(0.5,0.24,6,9),M(0xd9a05b),x,y,z,Math.PI/2.3);add(new THREE.TorusGeometry(0.5,0.14,5,9),M(c),x,y+0.14,z+0.03,Math.PI/2.3)};
+const can=(x,y,z,c)=>{add(new THREE.CylinderGeometry(0.34,0.34,1.05,8),M(c),x,y,z);add(new THREE.CylinderGeometry(0.35,0.35,0.09,8),M(0xdddddd),x,y+0.56,z)};
+const cake=(x,y,z)=>{add(new THREE.CylinderGeometry(0.55,0.46,0.6,8),M(0xf6e3c9),x,y,z);add(new THREE.IcosahedronGeometry(0.5,0),M(0xff7aa8),x,y+0.55,z);add(new THREE.IcosahedronGeometry(0.12,0),M(0xd0213f),x,y+1.1,z)};
+const candy=(x,y,z,c)=>add(B(0.32,0.32,0.32),M(c),x,y,z,0.4,0.6,0.2);
+const top=2.58;
+if(shot===1){
+  donut(-2.2,top+0.25,0.2,0xff6fa8);donut(-3.0,top+0.25,0.6,0x7ad7f0);donut(2.9,top+0.25,0.3,0xffd24a);
+  can(-3.7,top+0.55,-0.3,0xe63946);can(3.7,top+0.55,-0.1,0x2a9d8f);
+  cake(1.9,top+0.3,0.4);cake(-1.2,top+0.3,0.7);
+  for(let i=0;i<12;i++)candy(-3.2+i*0.55,top+0.16,1.0+((i*13)%5)*0.1,[0xff6fa8,0xffd24a,0x7ad7f0,0xb48cff][i%4]);
+  armR.rotation.z=-0.55;armL.rotation.z=0.25;
+}
+if(shot===2){
+  add(new THREE.CylinderGeometry(1.0,0.8,1.8,8,1,true),M(0x6b7a8f,{side:2}),3.4,0.9,1.8);add(new THREE.CylinderGeometry(1.0,1.0,0.1,8),M(0x2a3340),3.4,0.15,1.8);
+  donut(2.0,5.0,1.2,0xff6fa8);donut(2.6,4.1,1.4,0x7ad7f0);can(3.0,3.3,1.5,0xe63946);candy(3.3,2.5,1.6,0xffd24a);candy(3.6,2.0,1.7,0xb48cff);candy(3.7,2.6,1.5,0xff6fa8);
+  armR.rotation.z=-2.0;armR.position.y=2.4;
+  donut(-2.2,top+0.25,0.2,0xff6fa8);can(-3.5,top+0.55,-0.2,0xe63946);cake(1.9,top+0.3,0.3);
+}
+if(shot===3){
+  add(new THREE.CylinderGeometry(0.45,0.38,1.2,8),M(0xcfefff,{transparent:true,opacity:.8}),-3.0,top+0.6,0.3);
+  const apple=(x,z)=>{add(new THREE.IcosahedronGeometry(0.5,0),M(0xe24a3a),x,top+0.5,z);add(B(0.07,0.25,0.07),M(0x5a3b22),x,top+1.05,z)};
+  apple(2.0,0.3);apple(2.8,0.6);apple(-1.6,0.5);
+  add(new THREE.IcosahedronGeometry(0.5,0),M(0xffb02e),3.6,top+0.5,0.2);
+  add(B(1.1,0.6,1.1),M(0x7bc47f),-2.2,top+0.3,0.8);
+  armR.rotation.z=-2.5;armR.position.y=2.4;armL.rotation.z=0.25;
+  for(let i=0;i<14;i++){const a=i/14*Math.PI*2;const p=new THREE.Mesh(new THREE.OctahedronGeometry(0.16),new THREE.MeshBasicMaterial({color:0xffe27a}));p.position.set(0.6+Math.cos(a)*3.0,6.2+Math.sin(a)*2.5,-1.8);s.add(p)}
+}
+cam.position.set(shot===2?1.4:0.6,6.4,19.5);cam.lookAt(shot===2?1.4:0.6,4.5,-1.2);
+document.getElementById('t').innerHTML={1:'What if you <b>quit sugar</b><br>for 30 days?',2:'<b>Day 1.</b><br>The hard part.',3:'<b>Day 30.</b><br>What changed?'}[shot];
+r.render(s,cam);document.title='done';
+</script></body></html>
