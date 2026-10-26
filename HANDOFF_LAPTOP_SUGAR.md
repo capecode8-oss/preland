@@ -2,18 +2,18 @@
 
 Репозиторий `capecode8-oss/preland`, ветка `claude/schedule-5-reels-metricool-ip1tp7`. Скиллы лежат в `.claude/skills/` (читать `motion-director`, `explainer-reel-builder`, `threejs-*`, `remotion-*`, `reel-script-engine`). Прототип сцены: `tools/reels/lowpoly_demo/apartment_sugar.html` (Three.js, квартира, 3 кадра). Правила проекта: `CLAUDE.md` (блок «ПРИОРИТЕТ ПРАВИЛ»).
 
-## Текст озвучки (English, 117 слов, ≈44 с; хук произносится голосом И дублируется титрами; не менять слова)
-Структура Triple Loop: хук открывает петлю «что НЕ изменилось», блок 2 даёт первую выдачу и «It isn't», блок 3 закрывает петлю и открывает вывод, блок 4 польза, блок 5 CTA.
+## Текст озвучки (English, 109 слов, ≈41 с; хук произносится голосом И дублируется титрами; не менять слова)
+Петли: хук (йогурт врёт) → «not even the crazy part» → «Sounds amazing? Wait.» → «Zero change» → «how do you know you're winning?» → «Go check your yogurt. I'll wait.» → CTA. Каждые 6–9 с новая петля.
 
-One fruit yogurt can use up half of a woman's sugar for the whole day. So researchers cut people's sugar way down for three months. Then one thing about them didn't change at all.
+Your "healthy" yogurt can eat half your sugar for the whole day. And that's not even the crazy part.
 
-First, their food started tasting sweeter. Same pudding, sweeter, compared to people who ate normally. Sounds like a win. It isn't.
+In one small study, people cut sugar way down for three months. Their food started tasting sweeter. Sounds amazing, right? Wait.
 
-Because how sweet they wanted their food? Exactly the same. Three months, no change. So the wanting is not how you measure this.
+They still wanted the exact same amount of sweet. Three months. Zero change. Your tongue changed. Your wanting didn't.
 
-Measure the label instead. Four grams of sugar is one teaspoon. Six teaspoons is the daily limit for women. Count to six.
+So how do you know you're winning? Grab anything in your kitchen. Take the sugar grams and divide by four. That's teaspoons. Heart doctors say women should stop at six. Go check your yogurt. I'll wait.
 
-Comment GLOW and I'll DM you the guide to what your body's been trying to tell you.
+Comment GLOW and I'll DM you what your body's been trying to tell you.
 
 Источники: фруктовый йогурт 12–13 г добавленного сахара (≈ половина лимита 25 г), данные поиска уровня B, говорить «can»; AHA для женщин 25 г (6 ч. л.) добавленного сахара в день; 4 г сахара = 1 ч. л.; Wise et al. (Monell, AJCN 2015: 13 человек против 16; после 3 месяцев сниженного сахара еда казалась слаще, предпочитаемая сладость не изменилась). Выборка малая: на экране мелко «small study, 3 months».
 
