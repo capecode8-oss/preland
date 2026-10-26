@@ -2,31 +2,36 @@
 
 Репозиторий `capecode8-oss/preland`, ветка `claude/schedule-5-reels-metricool-ip1tp7`. Скиллы лежат в `.claude/skills/` (читать `motion-director`, `explainer-reel-builder`, `threejs-*`, `remotion-*`, `reel-script-engine`). Прототип сцены: `tools/reels/lowpoly_demo/apartment_sugar.html` (Three.js, квартира, 3 кадра). Правила проекта: `CLAUDE.md` (блок «ПРИОРИТЕТ ПРАВИЛ»).
 
-## Текст для ElevenLabs (VOICE: простой язык для 15-летнего, цифры прописью; генерировать КАЖДЫЙ блок отдельно, склеить в редакторе)
-What happens if you quit sugar for thirty days? People promise three things. You get thin. You stop wanting sweets. Your skin glows. Scientists tested all three. None worked the way people say.
+## Текст для ElevenLabs (VOICE: простой язык, цифры прописью; каждый блок генерировать отдельно)
+You can't really quit sugar for thirty days. It's hiding in four foods you'd never suspect. And number four is in your fridge right now.
 
-First, getting thin. People ate less sugar for eight weeks. Their weight didn't move.
+Number four. Ketchup. Every squirt has about one spoon of sugar. One spoon. In ketchup.
 
-Next, wanting sweets. People ate way less sugar for three months. Food tasted sweeter to them. But they still wanted sweets just as much. Your mouth changes. Your wanting doesn't.
+Number three. A granola bar. Some have up to three spoons. Number two. Pasta sauce. One small bowl can have three.
 
-Last, glowing skin. We looked. We found no test that shows it. Not one. So what really helps? Know your sugar. The average woman eats about fifteen spoons a day. Doctors say six. Look at any food label. Take the sugar number and divide it by four. That's your spoons.
+And number one. Fruit yogurt. Some cups have four spoons or more. That's most of your day in one little cup. Doctors say women should stop at six.
+
+Now add it up. A squirt of ketchup, a granola bar, and one yogurt. You passed six before lunch. So how do you really quit? Look at the label. Find the line that says added sugars. Take that number and divide it by four. That's your spoons.
 
 Comment the word glow, and I'll message you what your body is trying to tell you.
 
-## Текст для титров (SCREEN: цифры и GLOW как в дизайне; тайминг слов из готового аудио (Whisper), текст из этой версии, сопоставление по порядку слов: «thirty»=«30», «the word glow»=«GLOW», «message you»=«DM you»)
-What happens if you quit sugar for 30 days? People promise three things. You get thin. You stop wanting sweets. Your skin glows. Scientists tested all three. None worked the way people say.
+## Текст для титров (SCREEN)
+You can't really quit sugar for 30 days. It's hiding in four foods you'd never suspect. And #4 is in your fridge right now.
 
-First, getting thin. People ate less sugar for 8 weeks. Their weight didn't move.
+#4. Ketchup. Every squirt has about one spoon of sugar. One spoon. In ketchup.
 
-Next, wanting sweets. People ate way less sugar for 3 months. Food tasted sweeter to them. But they still wanted sweets just as much. Your mouth changes. Your wanting doesn't.
+#3. A granola bar. Some have up to three spoons. #2. Pasta sauce. One small bowl can have three.
 
-Last, glowing skin. We looked. We found no test that shows it. Not one. So what really helps? Know your sugar. The average woman eats about 15 spoons a day. Doctors say 6. Look at any food label. Take the sugar number and divide it by 4. That's your spoons.
+And #1. Fruit yogurt. Some cups have four spoons or more. That's most of your day in one little cup. Doctors say women should stop at 6.
+
+Now add it up. A squirt of ketchup, a granola bar, and one yogurt. You passed six before lunch. So how do you really quit? Look at the label. Find the line that says added sugars. Take that number and divide it by 4. That's your spoons.
 
 Comment GLOW, and I'll DM you what your body is trying to tell you.
 
-Структура: хук с темой и петлёй (три обещания, «none worked») → проверка по очереди (weight, wanting sweets, glowing skin) → «what really helps» → CTA.
+Структура: хук с темой («can't really quit… hiding in four foods») → обратный отсчёт 4–3–2–1, каждый номер открывает следующий → сложение «past six before lunch» → как реально считать по этикетке → CTA.
+Графика: 3D-кухня, на каждом номере предмет выезжает на стойку и рядом растёт стопка ложек сахара (кетчуп 1, батончик до 3, соус до 3, йогурт 4+); справа счётчик «6 = limit», на сложении стопки превышают отметку 6.
 
-Источники: CDC 2017–2018: взрослые женщины в среднем 15 ч. л. добавленного сахара в день; лимит AHA 6 ч. л. для женщин; фруктовый йогурт 12–13 г добавленного сахара (≈ половина лимита 25 г), данные поиска уровня B, говорить «can»; AHA для женщин 25 г (6 ч. л.) добавленного сахара в день; 4 г сахара = 1 ч. л.; Wise et al. (Monell, AJCN 2015: 13 человек против 16; после 3 месяцев сниженного сахара еда казалась слаще, предпочитаемая сладость не изменилась). Выборка малая: на экране мелко «small study, 3 months».
+Источники (вторичные, цифры зависят от бренда, поэтому в тексте «about / some / up to / can»): кетчуп около 4 г на столовую ложку, соус 8–12 г на полчашки, батончик 7–14 г, ароматизированный йогурт 17–33 г на порцию (блоги и новости, USDA FoodData Central не открывали); этикетка «Added Sugars» есть на американских упаковках; CDC 2017–2018: взрослые женщины в среднем 15 ч. л. добавленного сахара в день; лимит AHA 6 ч. л. для женщин; фруктовый йогурт 12–13 г добавленного сахара (≈ половина лимита 25 г), данные поиска уровня B, говорить «can»; AHA для женщин 25 г (6 ч. л.) добавленного сахара в день; 4 г сахара = 1 ч. л.; Wise et al. (Monell, AJCN 2015: 13 человек против 16; после 3 месяцев сниженного сахара еда казалась слаще, предпочитаемая сладость не изменилась). Выборка малая: на экране мелко «small study, 3 months».
 
 ## Раскадровка (на экране крупно тот же текст, что в озвучке: титры по словам)
 | Время | Сцена | Движение и графика |
