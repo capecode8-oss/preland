@@ -1,0 +1,415 @@
+{
+ "spec_version": "1.0",
+ "project": {
+  "name": "What if you quit sugar for 30 days (hidden sugar countdown)",
+  "slug": "sugar_hidden_countdown",
+  "account": "@thekiramethod",
+  "audience": "US women 35+, broad mass audience, 15-year-old must understand every word",
+  "goal": "stop the scroll in 2 seconds, keep viewers to the end (chain of open loops), drive comments with the word GLOW",
+  "format": "Instagram Reel, vertical 9:16",
+  "canvas": {
+   "width": 1080,
+   "height": 1920,
+   "fps": 30
+  },
+  "duration": "match the final voice audio (about 55-60 s), add 0.6 s tail",
+  "safe_zones_px": {
+   "top": 270,
+   "bottom": 1520,
+   "left": 108,
+   "right": 972,
+   "note": "Instagram UI covers top and bottom; keep ALL text and key action inside"
+  }
+ },
+ "read_first": [
+  "CLAUDE.md (block 'PRIORITY OF RULES' and 'PROTOCOL 100%')",
+  "HANDOFF_LAPTOP_SUGAR.md",
+  "tools/reels/lowpoly_demo/apartment_sugar.html (working Three.js prototype: apartment, blocky hero, flat-shaded props, lighting)",
+  ".claude/skills/motion-director/SKILL.md",
+  ".claude/skills/explainer-reel-builder/SKILL.md",
+  ".claude/skills/threejs-fundamentals/SKILL.md",
+  ".claude/skills/threejs-geometry/SKILL.md",
+  ".claude/skills/threejs-lighting/SKILL.md",
+  ".claude/skills/threejs-materials/SKILL.md",
+  ".claude/skills/threejs-animation/SKILL.md",
+  ".claude/skills/remotion-best-practices/SKILL.md",
+  ".claude/skills/remotion-markup/SKILL.md",
+  ".claude/skills/remotion-captions/SKILL.md",
+  "tools/reels/sfx_synth.py"
+ ],
+ "inputs": {
+  "voice_audio": {
+   "folder": "C:\\Users\\<USER>\\Videos\\sugar\\voice\\",
+   "note": "6 files, one per block, named block1.mp3 ... block6.mp3 (ask the owner for the actual path if different). Do not change the words. If the owner gave ONE merged file, split by silence with ffmpeg silencedetect or use the word timestamps.",
+   "blocks": [
+    {
+     "id": 1,
+     "voice_text": "You can't really quit sugar for thirty days. It's hiding in four foods you'd never suspect. And number four is in your fridge right now.",
+     "screen_text": "You can't really quit sugar for 30 days. It's hiding in four foods you'd never suspect. And #4 is in your fridge right now."
+    },
+    {
+     "id": 2,
+     "voice_text": "Number four. Ketchup. Every squirt has about one spoon of sugar. One spoon. In ketchup.",
+     "screen_text": "#4. Ketchup. Every squirt has about one spoon of sugar. One spoon. In ketchup."
+    },
+    {
+     "id": 3,
+     "voice_text": "Number three. A granola bar. Some have up to three spoons. Number two. Pasta sauce. One small bowl can have three.",
+     "screen_text": "#3. A granola bar. Some have up to three spoons. #2. Pasta sauce. One small bowl can have three."
+    },
+    {
+     "id": 4,
+     "voice_text": "And number one. Fruit yogurt. Some cups have four spoons or more. That's most of your day in one little cup. Doctors say women should stop at six.",
+     "screen_text": "And #1. Fruit yogurt. Some cups have four spoons or more. That's most of your day in one little cup. Doctors say women should stop at 6."
+    },
+    {
+     "id": 5,
+     "voice_text": "Now add it up. A squirt of ketchup, a granola bar, and one yogurt. You passed six before lunch. So how do you really quit? Look at the label. Find the line that says added sugars. Take that number and divide it by four. That's your spoons.",
+     "screen_text": "Now add it up. A squirt of ketchup, a granola bar, and one yogurt. You passed 6 before lunch. So how do you really quit? Look at the label. Find the line that says added sugars. Take that number and divide it by 4. That's your spoons."
+    },
+    {
+     "id": 6,
+     "voice_text": "Comment the word glow, and I'll message you what your body is trying to tell you.",
+     "screen_text": "Comment GLOW and I'll DM you what your body is trying to tell you."
+    }
+   ]
+  },
+  "fonts": "products/Montserrat-Bold.ttf (copy into the project public folder)"
+ },
+ "windows_setup": {
+  "check_first": [
+   "node -v (need 20+)",
+   "ffmpeg -version",
+   "py --version",
+   "git --version"
+  ],
+  "install_if_missing": [
+   "winget install OpenJS.NodeJS.LTS",
+   "winget install Gyan.FFmpeg",
+   "winget install Python.Python.3.12",
+   "winget install Git.Git"
+  ],
+  "project": "git clone https://github.com/capecode8-oss/preland.git, then git checkout claude/schedule-5-reels-metricool-ip1tp7, then create folder reels_3d/sugar inside it",
+  "word_timing": "py -m pip install faster-whisper ; transcribe each block with word_timestamps=True, language en, model small (CPU is fine). Save to reels_3d/sugar/words.json. Fallback if install fails: measure block durations with ffprobe and spread words by character count.",
+  "rendering_preferred": "Remotion + @remotion/three (npm create video@latest, then npm i three @remotion/three @react-three/fiber). Render with: npx remotion render --gl=angle --concurrency=50% --codec=h264 --crf=18. The owner knows Remotion Studio, so open it (npx remotion studio) for live preview.",
+  "rendering_fallback": "Playwright + Chromium, flags: --use-angle=d3d11 --ignore-gpu-blocklist --enable-gpu-rasterization, capture frames at deterministic time t, then ffmpeg. Only if Remotion fails. Never use software rendering (SwiftShader) unless there is no GPU.",
+  "paths": "use Windows paths with double backslashes in JSON/JS strings, never hardcode /home/user"
+ },
+ "creative_concept": {
+  "title": "The Sugar Scanner",
+  "idea": "A low-poly apartment kitchen. The blocky hero (same as the prototype) becomes a detective. A green 'sugar scanner' beam sweeps each food and a glass SPOON COUNTER on the right edge fills with real sugar spoons. A tall glass jar labeled DAILY LIMIT 6 sits on the counter; at the end the foods overflow it. Everything is a visual argument: you SEE the spoons, you do not need numbers to understand.",
+  "tone": "funny-shocked, fast, a little cheeky. The hero's face does the acting: eyebrows up, jaw drop, sweat drop, side-eye. No realism, toy-like and tactile.",
+  "loop": "last 0.5 s is a match cut back to the fridge door closing, so replays feel seamless"
+ },
+ "art_direction": {
+  "style": "low-poly, flat shading (flatShading true), 6-10 segments on round shapes, no textures, tiny bevel feel via color steps, soft shadows",
+  "palette": {
+   "evening_bg": "#FF9A6B",
+   "wall": "#E9C9B5",
+   "counter_top": "#F4EFE9",
+   "counter_body": "#7D5C8A",
+   "hero_shirt": "#5B7FD6",
+   "skin": "#F1B88D",
+   "hair": "#4A2F23",
+   "sugar_white": "#FFFFFF",
+   "spoon_silver": "#C9D1D9",
+   "limit_red": "#E63946",
+   "scanner_green": "#3DDC84",
+   "accent_yellow": "#FFD24A",
+   "morning_sky": "#8FD3F5",
+   "ketchup": "#D62828",
+   "yogurt_pink": "#FF8FB1",
+   "pasta_sauce": "#E4572E",
+   "granola_brown": "#C68B59"
+  },
+  "lighting": "evening: warm key from the window (DirectionalLight #FFB98A 1.6), warm lamp PointLight, cool hemisphere fill, PCFSoft shadows 2048. Morning for the final shot: bright #FFFFFF key, blue hemisphere.",
+  "camera": "FOV 36, slow dolly-ins of 5-8% on key words, hard cuts on new items, one fast whip-pan between #2 and #1. Hero stays in vertical band y 600-1350 px, props big, no tiny objects",
+  "composition": "one hero object per shot, big and centered, top 270 px and bottom 400 px kept clean except subtitles",
+  "depth": "foreground counter, mid hero and props, background window with low-poly city"
+ },
+ "assets_to_build": [
+  {
+   "id": "hero",
+   "spec": "blocky character from the prototype: head 1.7 cube with hair block, white eyes + black pupils, eyebrows as thin boxes, 4 mouth states (neutral, smirk, open, flat), sweat drop, two blocky arms with hands. Animate with ease-in/out, anticipation 4-6 frames, blink every 2-3 s"
+  },
+  {
+   "id": "kitchen",
+   "spec": "apartment kitchen: window with low-poly city at dusk, counter island, fridge (white box with handle, door opens with warm light), cabinets, lamp, plant, rug. Same room for all shots, camera moves around it"
+  },
+  {
+   "id": "spoon",
+   "spec": "silver teaspoon: capsule handle + flattened sphere bowl. Heaped with white sugar made of 12-20 tiny white cubes. Spoons snap into the spoon counter slots with a pop"
+  },
+  {
+   "id": "ketchup",
+   "spec": "red squeeze bottle (cylinder + cone nozzle + white cap), a red low-poly squirt arc and blob on a plate"
+  },
+  {
+   "id": "granola_bar",
+   "spec": "flat brown bar in a half-peeled foil wrapper, oat chunks as small boxes"
+  },
+  {
+   "id": "pasta_bowl",
+   "spec": "white bowl with tomato-red sauce, noodle strands as bent boxes, steam as 3 translucent rising cubes"
+  },
+  {
+   "id": "yogurt_cup",
+   "spec": "big pink cup with peeled foil lid, strawberry on the label, spoon sticking out. Make it the biggest hero prop of the video"
+  },
+  {
+   "id": "limit_jar",
+   "spec": "tall glass jar (transparent, opacity 0.35) with a red line at 6 spoons labeled DAILY LIMIT 6 (text plane). Spoons stack inside as small sugar piles"
+  },
+  {
+   "id": "label",
+   "spec": "flat Nutrition Facts panel (white plane, black frame) with rows. Row 'Added Sugars 12 g' is highlighted with a moving yellow marker. Use real readable text, not squiggles"
+  },
+  {
+   "id": "phone",
+   "spec": "floating phone with chat bubble, then a pill button 'GLOW'"
+  }
+ ],
+ "timeline": [
+  {
+   "shot": 1,
+   "block": 1,
+   "start": "start of block1 audio",
+   "beats": [
+    {
+     "on_word": "quit",
+     "action": "calendar page DAY 1 flips fast to DAY 30 (whoosh); hero's hand pushes a sugar cube away, red X over it",
+     "sfx": "whoosh"
+    },
+    {
+     "on_word": "hiding",
+     "action": "all four cabinet doors burst open, four dark silhouettes with '?' glow inside, hero jaw drop",
+     "sfx": "pop x4"
+    },
+    {
+     "on_word": "suspect",
+     "action": "hero squints, scanner beam appears (green)",
+     "sfx": "riser"
+    },
+    {
+     "on_word": "fridge",
+     "action": "fast dolly to the fridge, door opens with warm light, ketchup bottle sparkles",
+     "sfx": "ding"
+    }
+   ],
+   "on_screen_extra": "small chip bottom-left: 'Amounts vary by brand. Check your label.' (visible shots 1-5, 34 px, 70% opacity)"
+  },
+  {
+   "shot": 2,
+   "block": 2,
+   "beats": [
+    {
+     "on_word": "Number",
+     "action": "badge #4 slams in (scale overshoot), counter HUD appears at right",
+     "sfx": "impact"
+    },
+    {
+     "on_word": "squirt",
+     "action": "ketchup squirts onto the plate, scanner sweeps the blob",
+     "sfx": "squirt"
+    },
+    {
+     "on_word": "one spoon",
+     "action": "1 spoon of sugar pops onto the spoon counter, hero eyebrows up",
+     "sfx": "pop"
+    },
+    {
+     "on_word": "ketchup (last)",
+     "action": "hero stares at camera deadpan, 0.4 s hold"
+    }
+   ]
+  },
+  {
+   "shot": 3,
+   "block": 3,
+   "beats": [
+    {
+     "on_word": "three (first)",
+     "action": "badge #3, granola bar unwraps, scanner sweep, 3 spoons pop in one after another (up to three)",
+     "sfx": "pop x3"
+    },
+    {
+     "on_word": "two",
+     "action": "fast whip-pan to pasta bowl, badge #2, steam rises",
+     "sfx": "whoosh"
+    },
+    {
+     "on_word": "small bowl",
+     "action": "hero holds the bowl, 3 spoons pop in",
+     "sfx": "pop x3"
+    }
+   ]
+  },
+  {
+   "shot": 4,
+   "block": 4,
+   "beats": [
+    {
+     "on_word": "one",
+     "action": "BIG hero shot: yogurt cup rotates into frame, badge #1 slams in",
+     "sfx": "impact"
+    },
+    {
+     "on_word": "four",
+     "action": "4 spoons pop in and keep stacking into a small tower, tower wobbles",
+     "sfx": "pop x4 + wobble"
+    },
+    {
+     "on_word": "most of your day",
+     "action": "spoon counter fills toward the DAILY LIMIT jar, hero sweat drop",
+     "sfx": "tick"
+    },
+    {
+     "on_word": "six",
+     "action": "red line pulses at 6 on the jar, text 6 = LIMIT"
+    }
+   ]
+  },
+  {
+   "shot": 5,
+   "block": 5,
+   "beats": [
+    {
+     "on_word": "add it up",
+     "action": "ketchup, granola bar and yogurt jump into the jar one by one (1+3+4)",
+     "sfx": "pop x3"
+    },
+    {
+     "on_word": "passed six",
+     "action": "jar fills past the red line and overflows, spoons spill, clock shows 12:00 LUNCH, hero facepalm",
+     "sfx": "rattle + buzzer"
+    },
+    {
+     "on_word": "label",
+     "action": "cut to the Nutrition Facts panel, camera pushes in",
+     "sfx": "whoosh"
+    },
+    {
+     "on_word": "added sugars",
+     "action": "yellow marker lands on 'Added Sugars 12 g'",
+     "sfx": "ding"
+    },
+    {
+     "on_word": "divide",
+     "action": "equation 12 ÷ 4 = 3 animates, numbers slide in",
+     "sfx": "tick x3"
+    },
+    {
+     "on_word": "spoons (last)",
+     "action": "3 spoons drop in the counter, hero thumbs up"
+    }
+   ],
+   "note": "12 g is an EXAMPLE label value, mark it 'example' in small text"
+  },
+  {
+   "shot": 6,
+   "block": 6,
+   "beats": [
+    {
+     "on_word": "Comment",
+     "action": "switch to bright MORNING kitchen, hero smiling with a coffee, phone floats up",
+     "sfx": "whoosh"
+    },
+    {
+     "on_word": "glow",
+     "action": "pill button GLOW pops with sparkle ring, arrow points down",
+     "sfx": "ding"
+    },
+    {
+     "on_word": "tell you",
+     "action": "chat bubble with typing dots appears in the phone"
+    },
+    {
+     "on_word": "end",
+     "action": "0.5 s match cut to the fridge door closing (loops to shot 1)"
+    }
+   ]
+  }
+ ],
+ "subtitles": {
+  "source_text": "screen_text of each block (digits and GLOW), words timed by words.json",
+  "style": {
+   "font": "Montserrat Bold",
+   "size_px": 78,
+   "color": "#FFFFFF",
+   "stroke": "#000000 8px",
+   "active_word_color": "#FFD24A",
+   "active_word_scale": 1.12,
+   "uppercase_key_words": [
+    "SUGAR",
+    "FOUR",
+    "THREE",
+    "TWO",
+    "ONE",
+    "SIX",
+    "30",
+    "GLOW"
+   ],
+   "max_lines": 2,
+   "chunk": "3 to 4 words per phrase",
+   "position": "center, baseline y 1230 px, inside safe zones",
+   "animation": "pop-in 4 frames, no long fades"
+  },
+  "big_title": {
+   "text": "What happens if you quit SUGAR for 30 days?",
+   "note": "NOT needed: the hook sentence is the on-screen headline for the first 3 s at top, y 300-520, 88 px, yellow keyword SUGAR"
+  }
+ },
+ "audio": {
+  "mix": "voice 0 dB (normalized -16 LUFS), SFX -14 dB under voice, NO music (the owner adds music in Instagram)",
+  "sfx_source": "tools/reels/sfx_synth.py (whoosh, tick, pop, ding, riser, impact); write missing ones (squirt, rattle, buzzer) with numpy the same way",
+  "sync": "all SFX on the exact frame of the trigger word"
+ },
+ "render": {
+  "codec": "h264",
+  "pix_fmt": "yuv420p",
+  "crf": 18,
+  "fps": 30,
+  "resolution": "1080x1920",
+  "audio": "aac 192k",
+  "output": "reels/sugar_hidden_countdown.mp4",
+  "also": [
+   "stills/s1.jpg...s6.jpg (one per shot)",
+   "contact_sheet.jpg"
+  ]
+ },
+ "workflow": [
+  "1. Read the files listed in read_first. Confirm the voice files exist, ask the owner only if the folder is missing.",
+  "2. Transcribe words.json, validate that every block's text matches screen_text word for word (numbers aside).",
+  "3. Build all assets in one shared Three.js scene file. Render ONE still per shot, assemble a contact sheet, show it to the owner and WAIT for approval.",
+  "4. Animate shot by shot with deterministic time t, preview the shot in Remotion Studio or as a 3 s clip.",
+  "5. Add subtitles and SFX, mix audio.",
+  "6. Full render. Check the final video: frames at 2 s, 12 s, 25 s, 40 s, 55 s, audio sync at each beat word, no text outside safe zones.",
+  "7. Commit and push to the same branch, report file path and any deviations."
+ ],
+ "qa_checklist": [
+  "the topic is clear in the first 2 seconds (headline + hook words)",
+  "a new visual event every 2-3 seconds",
+  "every numbered item shows its spoons visually",
+  "no text or action in the top 270 px or bottom 400 px except subtitles",
+  "subtitles match the audio words and the numbers in screen_text",
+  "the 'Amounts vary by brand' chip is visible in shots 1-5",
+  "12 g label value is marked 'example'",
+  "hero face is readable on a phone screen",
+  "loop frame matches shot 1",
+  "no claim about health results, weight, skin, energy; no prices; the word free does not appear"
+ ],
+ "do_not": [
+  "do not change a single word of the voice text",
+  "do not invent numbers or facts",
+  "do not put hashtags or prices on screen",
+  "do not add music",
+  "do not render the full video before the owner approves the contact sheet",
+  "do not use software rendering if a GPU exists"
+ ],
+ "deliverables": [
+  "reels/sugar_hidden_countdown.mp4",
+  "reels_3d/sugar/ source project",
+  "stills and contact sheet",
+  "short report: what is done, render time, anything that differs from this spec"
+ ]
+}
