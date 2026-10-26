@@ -2,16 +2,16 @@
 
 Репозиторий `capecode8-oss/preland`, ветка `claude/schedule-5-reels-metricool-ip1tp7`. Скиллы лежат в `.claude/skills/` (читать `motion-director`, `explainer-reel-builder`, `threejs-*`, `remotion-*`, `reel-script-engine`). Прототип сцены: `tools/reels/lowpoly_demo/apartment_sugar.html` (Three.js, квартира, 3 кадра). Правила проекта: `CLAUDE.md` (блок «ПРИОРИТЕТ ПРАВИЛ»).
 
-## Текст озвучки (English, 111 слов, ≈42 с; хук произносится голосом И дублируется титрами; не менять слова)
-Петли: «15 vs 6» → «most of it you never poured» → «Finally a win? Wait.» → «the wanting didn't budge» → «test your kitchen… I'll wait» → CTA.
+## Текст озвучки (English, 107 слов, ≈40 с; уровень чтения около 2 класса; хук произносится голосом И дублируется титрами; не менять слова)
+Петли: «15 spoons vs 6» → «hiding in your food» → «Sounds good? Wait.» → «Their wanting didn't» → «Test your kitchen. I'll wait.» → CTA.
 
-Fifteen teaspoons of sugar. Every single day. That's what the average American woman eats. The limit is six. And most of it, you never poured yourself.
+The average woman eats 15 spoons of sugar every day. Doctors say 6. And most of it is hiding in your food.
 
-In one small study, people cut sugar way down for three months. Everything started tasting sweeter. Finally, a win, right? Wait.
+So scientists tried something. People ate way less sugar for three months. And everything tasted sweeter. Sounds good, right? Wait.
 
-They still wanted the exact same amount of sweet. Three months of nothing, and the wanting didn't budge. Your tongue changed. Your wanting didn't.
+They still wanted the same sweet stuff. Three months, and nothing changed. Their mouth changed. Their wanting didn't.
 
-So stop testing your willpower. Test your kitchen. Grab anything. Take the sugar grams and divide by four. That's teaspoons. Start with the yogurt. I'll wait.
+So don't test your willpower. Test your kitchen. Pick up anything with a label. Take the sugar number and divide by four. That's your spoons. Start with the yogurt. Go ahead. I'll wait.
 
 Comment GLOW and I'll DM you what your body's been trying to tell you.
 
