@@ -2,29 +2,29 @@
 
 Репозиторий `capecode8-oss/preland`, ветка `claude/schedule-5-reels-metricool-ip1tp7`. Скиллы лежат в `.claude/skills/` (читать `motion-director`, `explainer-reel-builder`, `threejs-*`, `remotion-*`, `reel-script-engine`). Прототип сцены: `tools/reels/lowpoly_demo/apartment_sugar.html` (Three.js, квартира, 3 кадра). Правила проекта: `CLAUDE.md` (блок «ПРИОРИТЕТ ПРАВИЛ»).
 
-## Текст для ElevenLabs (VOICE: цифры прописью, без аббревиатур; генерировать КАЖДЫЙ блок отдельно, склеить в редакторе)
-What happens if you quit sugar for thirty days? Everyone says you'll lose weight, stop craving it, and glow. Scientists checked. Only one of those came close.
+## Текст для ElevenLabs (VOICE: простой язык для 15-летнего, цифры прописью; генерировать КАЖДЫЙ блок отдельно, склеить в редакторе)
+What happens if you quit sugar for thirty days? People promise three things. You get thin. You stop wanting sweets. Your skin glows. Scientists tested all three. None worked the way people say.
 
-Let's start with weight. In one eight week test, people ate food with less sugar. Their weight didn't change.
+First, getting thin. People ate less sugar for eight weeks. Their weight didn't move.
 
-Now, cravings. In another test, people ate way less sugar for three months. Everything tasted sweeter. But they wanted the same sweet stuff. Their mouth changed. Their wanting didn't.
+Next, wanting sweets. People ate way less sugar for three months. Food tasted sweeter to them. But they still wanted sweets just as much. Your mouth changes. Your wanting doesn't.
 
-And the glow? We couldn't find one test that proves it in thirty days. Not one. So what actually works? Know your number. The average woman eats fifteen spoons of sugar a day. Doctors say six. Check any label, divide the sugar by four, and see where you land.
+Last, glowing skin. We looked. We found no test that shows it. Not one. So what really helps? Know your sugar. The average woman eats about fifteen spoons a day. Doctors say six. Look at any food label. Take the sugar number and divide it by four. That's your spoons.
 
-Comment the word glow, and I'll D M you what your body's been trying to tell you.
+Comment the word glow, and I'll message you what your body is trying to tell you.
 
-## Текст для титров на экране (SCREEN: цифры и GLOW как в дизайне; тайминг слов брать из готового аудио через Whisper или forced alignment, текст титров брать отсюда и сопоставлять по порядку слов: «thirty»=«30», «fifteen»=«15», «six»=«6», «D M»=«DM», «the word glow»=«GLOW»)
-What happens if you quit sugar for 30 days? Everyone says you'll lose weight, stop craving it, and glow. Scientists checked. Only one of those came close.
+## Текст для титров (SCREEN: цифры и GLOW как в дизайне; тайминг слов из готового аудио (Whisper), текст из этой версии, сопоставление по порядку слов: «thirty»=«30», «the word glow»=«GLOW», «message you»=«DM you»)
+What happens if you quit sugar for 30 days? People promise three things. You get thin. You stop wanting sweets. Your skin glows. Scientists tested all three. None worked the way people say.
 
-Let's start with weight. In one eight-week test, people ate food with less sugar. Their weight didn't change.
+First, getting thin. People ate less sugar for 8 weeks. Their weight didn't move.
 
-Now, cravings. In another test, people ate way less sugar for three months. Everything tasted sweeter. But they wanted the same sweet stuff. Their mouth changed. Their wanting didn't.
+Next, wanting sweets. People ate way less sugar for 3 months. Food tasted sweeter to them. But they still wanted sweets just as much. Your mouth changes. Your wanting doesn't.
 
-And the glow? We couldn't find one test that proves it in 30 days. Not one. So what actually works? Know your number. The average woman eats 15 spoons of sugar a day. Doctors say 6. Check any label, divide the sugar by 4, and see where you land.
+Last, glowing skin. We looked. We found no test that shows it. Not one. So what really helps? Know your sugar. The average woman eats about 15 spoons a day. Doctors say 6. Look at any food label. Take the sugar number and divide it by 4. That's your spoons.
 
-Comment GLOW and I'll DM you what your body's been trying to tell you.
+Comment GLOW, and I'll DM you what your body is trying to tell you.
 
-Структура: хук с темой и петлёй → проверка трёх обещаний (weight, craving, glow) → «what actually works» → CTA.
+Структура: хук с темой и петлёй (три обещания, «none worked») → проверка по очереди (weight, wanting sweets, glowing skin) → «what really helps» → CTA.
 
 Источники: CDC 2017–2018: взрослые женщины в среднем 15 ч. л. добавленного сахара в день; лимит AHA 6 ч. л. для женщин; фруктовый йогурт 12–13 г добавленного сахара (≈ половина лимита 25 г), данные поиска уровня B, говорить «can»; AHA для женщин 25 г (6 ч. л.) добавленного сахара в день; 4 г сахара = 1 ч. л.; Wise et al. (Monell, AJCN 2015: 13 человек против 16; после 3 месяцев сниженного сахара еда казалась слаще, предпочитаемая сладость не изменилась). Выборка малая: на экране мелко «small study, 3 months».
 
