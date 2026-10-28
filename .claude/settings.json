@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Metricoll__createScheduledPost",
+      "mcp__Metricoll__getScheduledPosts",
+      "mcp__Metricoll__updateScheduledPost",
+      "mcp__Metricoll__getBrandSettings",
+      "mcp__Metricoll__getAnalyticsDataByMetrics",
+      "mcp__Metricoll__getBestTimeToPostByNetwork"
+    ]
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c \"\nimport sys, json\ntry:\n    obj = json.loads(sys.stdin.read())\n    prompt = obj.get('prompt', '')\nexcept:\n    prompt = ''\n\nkeywords = ['hook', 'хук', 'рилс', 'reel', 'aug', 'авг', 'контент', 'content', 'publish', 'публик', 'schedule', 'расписан', 'preview', 'превью', 'render', 'рендер', 'caption', 'капшен', 'clip', 'клип', 'footage', 'футаж', 'batch', 'батч', 'тема', 'topic', 'нища', 'niche', 'заголовок', 'title']\nif True:\n    msg = '🤖 АВТОПИЛОТ: ЛЮБАЯ тема, идея, скриншот, ссылка или рилс конкурента от владельца = сразу полный пакет по скиллам reel-script-engine и reel-growth-playbook (суть, сценарий по клипам с дословной речью, 4 полных Veo-промпта по references/veo-templates.md, сцена ПОД ТЕМУ и каждый раз разная, факты с оговорками). Владельца не переспрашивать про формат и скиллы. Если сообщение не про контент, игнорируй этот блок.\\n⛔ KIRA PIPELINE — ОБЯЗАТЕЛЬНО:\\n0. footage-manager → выбери клип (не повтор!)\\n1. /kira-hooks → аудит 12 голосов: Jordan · Mike · Alex · Sam · Dana · Red · Tyler · Maya · NOVA · VIC · Rico + 👥 FOCUS GROUP\\n1.5 /reel-script-engine → ВЕСЬ диалог и CTA рилса: хук + открытые петли + простые слова + факты проверены поиском + призыв с кодовым словом по формуле. Читать ДО Veo-промптов и капшена.\\n1.6 /reel-growth-playbook → рост подписчиков и DM, серия как причина подписаться, протокол команды экспертов, банк проверенных фактов, журнал замечаний владельца. Читать вместе с 1.5.\\n2. 👥 FOCUS GROUP (100 Americans 30-75): Round 1 — 70+/100 остановились → продолжаем. <70 → переписываем. Round 2 — 20+ отправили в DM → вирусный потенциал.\\n3. Mike 🟢 STRONG min. Red ✅ SURVIVED. Focus Group 🛑 PROCEED. Все 12 ✅ → рендер\\n4. /quality-check → 7-пунктовый QA gate\\n5. /videotool-ready → push + запланировать\\n6. performance-tracker → записать рилс\\n\\nБез Focus Group scroll test — хуки не выходят. Никогда.'\n    print(json.dumps({'hookSpecificOutput': {'hookEventName': 'UserPromptSubmit', 'additionalContext': msg}}))\nelse:\n    print(json.dumps({}))\n\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

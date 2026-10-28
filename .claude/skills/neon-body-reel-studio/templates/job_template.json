@@ -1,0 +1,130 @@
+{
+ "spec_version": "1.0",
+ "style": "neon_body_silhouette",
+ "slug": "TOPIC_SLUG",
+ "topic": "one line topic",
+ "canvas": {
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "safe_zones_px": {
+   "top": 270,
+   "bottom": 1520,
+   "left": 108,
+   "right": 972
+  }
+ },
+ "voice": {
+  "folder": "voice/",
+  "files": [
+   "block1.mp3"
+  ],
+  "note": "one file per block or one merged file; never change the words"
+ },
+ "blocks": [
+  {
+   "id": 1,
+   "voice_text": "spoken text exactly as recorded",
+   "screen_text": "same text with digits and key words"
+  }
+ ],
+ "visual_style": {
+  "mood": "calm night, premium, curious. Never scary. No saturated red anywhere.",
+  "palette": {
+   "bg_top": "#0B1020",
+   "bg_bottom": "#16203F",
+   "women_rose": "#FF8FB1",
+   "men_cyan": "#7DD3FC",
+   "teal": "#5EE6D3",
+   "violet": "#A78BFA",
+   "amber_numbers_active_word": "#FFD27A",
+   "good_mint": "#8BF0C1",
+   "warning_coral": "#FF9E7A",
+   "text_white": "#FFFFFF",
+   "text_dim": "#7C86A8"
+  },
+  "background": "vertical navy gradient + 10-14 soft bokeh circles (violet/teal/rose, opacity 0.05-0.08, blur 22px) drifting slowly",
+  "silhouettes": "flat dark-filled body shapes with a soft neon glow outline, women rose, men cyan, soft aura behind breathing on a 2.5 s sine; figures stay in y 520-1180",
+  "organs": "glowing soft circles inside the body, pulse with the topic (heartbeat 1.1 s); zoom-in = scale 1 to 2.2 in 0.8 s ease in-out",
+  "data_visuals": "vertical amber rulers with ticks and a glowing marker, count-up numbers (ease out 1.2 s), side-by-side comparisons, one big number per shot (140+ px)",
+  "typography": {
+   "font": "Montserrat Bold (products/Montserrat-Bold.ttf)",
+   "title": "96 px, white with one amber keyword, y 300-450, only the first 3 s",
+   "karaoke": "76 px, spoken words white, current word amber, upcoming words dim gray, 3 words per line, 2 lines, baseline y 1330, centered",
+   "rule": "never show a title and subtitles with the same words at the same time"
+  },
+  "motion": "draw-on and fade-in 0.25-0.4 s ease out, tiny overshoot, hard cut on a new idea, slow push-in 4-6 percent on the key word, a new visual event every 2-3 s",
+  "sound": "soft whoosh on cuts, glass ting on number reveals, low thump on heartbeat, riser before the key reveal, 0.3 s silence before a reveal, SFX 10-14 dB under voice, NO music"
+ },
+ "shot_patterns": [
+  "question: title + two silhouettes + aura pulse",
+  "compare: two rulers rise to different heights, numbers count up",
+  "organ zoom: figure scales up, organ glows, label chip",
+  "timeline: bar with 3-5 dots, active dot amber (real values from the script only)",
+  "myth vs fact: myth fades gray, fact glows mint",
+  "counter: one huge amber number",
+  "closing: silhouettes dim, rose GLOW pill with a down arrow"
+ ],
+ "shots": [
+  {
+   "shot": 1,
+   "block": 1,
+   "pattern": "question",
+   "beats": [
+    {
+     "on_word": "WORD",
+     "action": "what appears or moves",
+     "sfx": "whoosh"
+    }
+   ]
+  }
+ ],
+ "implementation": {
+  "kit": ".claude/skills/neon-body-reel-studio/templates/neon_kit.js (frame, bokeh, body, organ, ruler, karaoke, prog, ease)",
+  "method": "scene.html exposes window.update(t) as a pure function of t and draws one SVG per frame; Playwright screenshots each frame; ffmpeg assembles with voice and SFX",
+  "word_timing": "faster-whisper word_timestamps -> words.json; fallback ffprobe durations + character spread",
+  "render": {
+   "codec": "h264",
+   "crf": 18,
+   "fps": 30,
+   "pix_fmt": "yuv420p",
+   "audio": "aac 192k, voice -16 LUFS",
+   "output": "reels/TOPIC_SLUG.mp4",
+   "also": [
+    "stills per shot",
+    "contact_sheet.jpg"
+   ]
+  },
+  "gpu": "not required (SVG + CSS); on Windows use normal Chromium, SOFTWARE_GL only if a GPU error appears"
+ },
+ "workflow": [
+  "read skills neon-body-reel-studio and motion-director",
+  "fill beats from the voiceover words",
+  "one still per shot + contact sheet, show the owner and WAIT",
+  "animate, add karaoke subtitles and SFX",
+  "full render",
+  "QA, report differences"
+ ],
+ "qa_checklist": [
+  "topic and question visible in the first 2 s",
+  "no red as a main color, nothing scary",
+  "a visual event every 2-3 s, every claim has a visual proof",
+  "only one text system at a time (title OR karaoke)",
+  "text inside safe zones, figures not hidden by subtitles",
+  "numbers on screen match the script, honesty chips where needed (e.g. small study, 2024 US data)",
+  "no health-result promises, prices, free, hashtags, music",
+  "audio sync checked on 3 trigger words"
+ ],
+ "do_not": [
+  "do not change voiceover words",
+  "do not invent facts or numbers",
+  "do not use red as the main color",
+  "do not render the full video before the owner approves the contact sheet"
+ ],
+ "deliverables": [
+  "reels/TOPIC_SLUG.mp4",
+  "scene source folder",
+  "stills and contact sheet",
+  "short report"
+ ]
+}

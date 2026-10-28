@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Body Has Been Trying to Tell You</title>
+<meta name="description" content="Four short guides in plain English for women 30+ who are tired, awake at 3AM, or fighting a belly that won't budge. Instant PDFs. 14-day money-back guarantee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+
+:root {
+  --bg:        #F2EDE5;
+  --bg-mint:   #E3EDE8;
+  --bg-salmon: #F4E3DE;
+  --bg-card:   #FFFFFF;
+  --teal:      #1E6B65;
+  --teal-mid:  #2A8A82;
+  --coral:     #C13428;
+  --amber:     #B8820F;
+  --navy:      #1C3D6E;
+  --text:      #18140F;
+  --muted:     #6A5E52;
+  --border:    rgba(0,0,0,0.07);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding-inline: 16px;
+  padding-block: 0;
+}
+
+.wrap {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+/* ── HERO ── */
+.hero {
+  padding-block: 40px 32px;
+  text-align: left;
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.08;
+  text-wrap: balance;
+  margin: 0 0 16px;
+}
+
+.hero-title .dim {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 420px;
+  margin-inline: 0;
+  margin-bottom: 24px;
+  line-height: 1.7;
+}
+
+/* ── HERO BOOK FAN ── */
+.book-fan {
+  position: relative;
+  height: 300px;
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fan-book {
+  position: absolute;
+  width: 130px;
+  height: 188px;
+  border-radius: 5px 10px 10px 5px;
+  overflow: hidden;
+  transform-origin: 50% 96%;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.28), 0 2px 6px rgba(0,0,0,0.18);
+}
+
+.fan-book::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0; width: 9px;
+  background: rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.fan-book::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.16) 0%, transparent 55%);
+  z-index: 2;
+}
+
+.fan-book .fb-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 14px 12px 16px;
+  z-index: 1;
+}
+
+.fan-book .fb-num {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 5px;
+}
+
+.fan-book .fb-title {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.18;
+  color: #fff;
+}
+
+.fan-book .fb-deco {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.fb1 { background: linear-gradient(160deg,#C73328 0%,#9E2119 100%); transform: rotate(-14deg) translateX(-168px); z-index: 1; }
+.fb2 { background: linear-gradient(160deg,#1A7874 0%,#0D5250 100%); transform: rotate(-5deg)  translateX(-56px);  z-index: 2; }
+.fb3 { background: linear-gradient(160deg,#C48A15 0%,#9A6A0C 100%); transform: rotate(5deg)   translateX(56px);   z-index: 3; }
+.fb4 { background: linear-gradient(160deg,#1E3D6E 0%,#122340 100%); transform: rotate(14deg)  translateX(168px);  z-index: 4; }
+
+@media (max-width: 500px) {
+  .fan-book { width: 100px; height: 146px; }
+  .fan-book .fb-title { font-size: 11px; }
+  .fb1 { transform: rotate(-14deg) translateX(-128px); }
+  .fb2 { transform: rotate(-5deg)  translateX(-42px); }
+  .fb3 { transform: rotate(5deg)   translateX(42px); }
+  .fb4 { transform: rotate(14deg)  translateX(128px); }
+  .book-fan { height: 240px; }
+}
+
+.btn-primary {
+  display: inline-block;
+  background: var(--teal);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 18px 40px;
+  border-radius: 100px;
+  letter-spacing: 0.01em;
+  transition: background 0.15s, box-shadow 0.15s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 22px rgba(30,107,101,0.40), 0 4px 14px rgba(30,107,101,0.25);
+}
+
+.btn-primary:hover {
+  background: var(--teal-mid);
+  box-shadow: 0 0 32px rgba(30,107,101,0.55), 0 4px 18px rgba(30,107,101,0.35);
+}
+
+/* shimmer sweep */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -110%;
+  width: 65%; height: 100%;
+  background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,0.38) 50%, transparent 80%);
+  transform: skewX(-18deg);
+  animation: btn-shimmer 3.6s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes btn-shimmer {
+  0%   { left: -110%; }
+  28%  { left: 120%; }
+  100% { left: 120%; }
+}
+
+/* coral variant — for "GET THE SET" button */
+.btn-primary.btn-coral {
+  background: var(--coral);
+  box-shadow: 0 0 22px rgba(193,52,40,0.40), 0 4px 14px rgba(193,52,40,0.25);
+}
+.btn-primary.btn-coral:hover {
+  background: #a82d22;
+  box-shadow: 0 0 32px rgba(193,52,40,0.55), 0 4px 18px rgba(193,52,40,0.35);
+}
+
+.price-note {
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ── BEFORE / AFTER ── */
+.ba-section {
+  padding-block: 48px;
+}
+
+.ba-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 520px) {
+  .ba-grid { grid-template-columns: 1fr; }
+}
+
+.ba-card {
+  border-radius: 20px;
+  padding: 28px 24px;
+}
+
+.ba-card.before { background: var(--bg-salmon); }
+.ba-card.after  { background: var(--bg-mint); }
+
+.ba-label {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 0 0 20px;
+}
+
+.ba-card.before .ba-label { color: var(--coral); }
+.ba-card.after  .ba-label { color: var(--teal); }
+
+.ba-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ba-list li {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ba-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 1px;
+}
+
+.before .ba-icon { background: var(--coral); color: #fff; }
+.after  .ba-icon { background: var(--teal);  color: #fff; }
+
+/* ── SECTION LABEL ── */
+.sec-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--teal);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sec-title {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: clamp(24px, 4vw, 34px);
+  text-align: center;
+  text-wrap: balance;
+  margin: 0 0 40px;
+}
+
+/* ── BOOKS ── */
+.books-section {
+  padding-block: 56px;
+  background: var(--bg);
+}
+
+.book-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 28px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  align-items: start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 500px) {
+  .book-card { grid-template-columns: 1fr; }
+  .book-cover { width: 100px; }
+}
+
+/* Book cover CSS illustration */
+.book-cover {
+  width: 140px;
+  height: 196px;
+  border-radius: 6px 10px 10px 6px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 4px 6px 18px rgba(0,0,0,0.22), inset -3px 0 8px rgba(0,0,0,0.12);
+}
+
+.book-cover::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 10px;
+  background: rgba(0,0,0,0.18);
+  border-radius: 4px 0 0 4px;
+}
+
+.book-cover::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 50%);
+}
+
+.book-cover .bc-num {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  z-index: 1;
+}
+
+.book-cover .bc-title {
+  position: absolute;
+  bottom: 22px;
+  left: 18px;
+  right: 14px;
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 17px;
+  line-height: 1.2;
+  color: #fff;
+  z-index: 1;
+}
+
+.book-cover .bc-deco {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* book colors */
+.bc-red  { background: linear-gradient(160deg, #C73328 0%, #9E2119 100%); }
+.bc-teal { background: linear-gradient(160deg, #1A7874 0%, #0D5250 100%); }
+.bc-amber{ background: linear-gradient(160deg, #C48A15 0%, #9A6A0C 100%); }
+.bc-navy { background: linear-gradient(160deg, #1E3D6E 0%, #122340 100%); }
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-num-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.book-title {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 1.15;
+  margin: 0 0 2px;
+}
+
+.book-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.book-stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-stats li {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-num {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+/* book accent colors for numbers */
+.b1 .stat-num { color: var(--coral); }
+.b2 .stat-num { color: var(--teal); }
+.b3 .stat-num { color: var(--amber); }
+.b4 .stat-num { color: var(--navy); }
+
+.b1 .book-title { color: var(--coral); }
+.b2 .book-title { color: var(--teal); }
+.b3 .book-title { color: var(--amber); }
+.b4 .book-title { color: var(--navy); }
+
+/* ── TOOLS ── */
+.tools-section {
+  background: var(--bg-mint);
+  padding-block: 56px;
+  margin-inline: -16px;
+  padding-inline: 16px;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 500px) {
+  .tools-grid { grid-template-columns: 1fr; }
+}
+
+.tool-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.tool-icon {
+  font-size: 28px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tool-name {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 4px;
+}
+
+.tool-meta {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 16px;
+  letter-spacing: 0.01em;
+}
+
+.tool-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tool-items li {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tool 1 — routing items with Book badges */
+.route-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.route-badge {
+  background: var(--teal);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Tool 2 — calendar */
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.day-cell {
+  aspect-ratio: 1;
+  border-radius: 7px;
+  background: var(--teal);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-cell.empty {
+  background: #E0E7E6;
+  color: var(--muted);
+}
+
+.day-cell.today {
+  background: var(--coral);
+}
+
+.day-note {
+  background: rgba(193,52,40,0.08);
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--coral);
+}
+
+/* Tool 3 — numbered list */
+.doc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.doc-list li {
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.doc-list li:last-child { border-bottom: none; }
+
+.doc-num {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--teal);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Tool 4 — 3 questions */
+.q-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.q-card {
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.q-card.q1 { background: rgba(193,52,40,0.08); }
+.q-card.q2 { background: rgba(184,130,15,0.1); }
+.q-card.q3 { background: rgba(30,107,101,0.08); }
+
+.q-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.q-card.q1 .q-label { color: var(--coral); }
+.q-card.q2 .q-label { color: var(--amber); }
+.q-card.q3 .q-label { color: var(--teal); }
+
+.q-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* ── FINAL CTA ── */
+.cta-section {
+  padding-block: 64px 72px;
+  text-align: center;
+}
+
+.cta-title {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: clamp(26px, 5vw, 40px);
+  line-height: 1.1;
+  text-wrap: balance;
+  margin: 0 0 14px;
+}
+
+.cta-sub {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+.cta-sub + * { margin-top: 36px; }
+
+.price-block {
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.price-main {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.price-desc {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.guarantee {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.guarantee svg {
+  flex-shrink: 0;
+}
+
+/* ── PRICE DISPLAY ── */
+.price-crossed {
+  font-size: 17px;
+  color: var(--muted);
+  text-decoration: line-through;
+  margin-right: 4px;
+}
+
+/* ── VALUE TABLE ── */
+.value-section {
+  background: var(--navy);
+  color: #fff;
+  padding-block: 56px;
+  margin-inline: -16px;
+  padding-inline: 16px;
+}
+
+.value-section .sec-label { color: rgba(140,175,255,0.75); }
+.value-section .sec-title { color: #fff; }
+
+.value-table {
+  background: rgba(255,255,255,0.07);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 28px;
+}
+
+.vt-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--coral);
+  padding: 16px 20px 8px;
+}
+
+.vt-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+
+.vt-row strong { color: #fff; font-weight: 700; }
+
+.vt-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  white-space: nowrap;
+}
+
+.vt-row.total {
+  background: rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-block: 18px;
+}
+
+.vt-row.total .vt-price {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  color: var(--coral);
+}
+
+.vt-row.total strong { font-size: 15px; }
+
+.vt-row.crossed .vt-price {
+  text-decoration: line-through;
+  color: rgba(255,255,255,0.35);
+  font-size: 13px;
+}
+
+.value-tagline {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 28px;
+}
+
+.value-tagline span {
+  color: rgba(140,175,255,0.9);
+  font-style: italic;
+}
+
+/* ── STICKY BAR ── */
+.sticky-bar {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: #fff;
+  border-top: 1px solid rgba(0,0,0,0.10);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: 100;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.08);
+}
+
+.sticky-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.sticky-old {
+  font-size: 12px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.sticky-new {
+  font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.sticky-bar .btn-primary {
+  font-size: 14px;
+  padding: 13px 28px;
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .sticky-bar .btn-primary { padding: 13px 18px; font-size: 13px; }
+}
+
+/* padding so top/bottom fixed bars don't cover content */
+body { padding-bottom: 80px; padding-top: 38px; }
+
+/* ── DIVIDER ── */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-block: 0;
+}
+
+/* ── HERO SPLIT ── */
+.hero-split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; }
+.hero-left { display: flex; flex-direction: column; }
+.hero-right { display: flex; align-items: center; justify-content: center; }
+.hero-right .book-fan { margin-bottom: 0; transform: scale(0.72); transform-origin: center center; }
+.hero-price-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 18px; }
+.hero-price-live { font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif; font-weight: 900; font-size: 38px; color: var(--text); line-height: 1; }
+.price-urgency-badge { font-size: 11px; font-weight: 700; color: var(--coral); background: rgba(193,52,40,0.08); padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.btn-full { display: block; width: 100%; text-align: center; box-sizing: border-box; }
+.hero-bullets { display: flex; flex-direction: column; gap: 7px; margin-top: 14px; }
+.hero-bullets p { margin: 0; font-size: 13px; color: var(--muted); display: flex; align-items: center; gap: 7px; }
+@media (max-width: 640px) {
+  .hero-split { grid-template-columns: 1fr; }
+  .hero-right { order: 1; }
+  .hero-right .book-fan { transform: scale(0.88); }
+  .hero { padding-block: 28px 20px; }
+}
+
+/* ── PROOF STRIP ── */
+.proof-strip { background: var(--bg-mint); padding: 12px 20px; text-align: center; font-size: 13px; font-weight: 600; color: var(--teal); display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+/* ── STORY BRIDGE ── */
+.story-section { padding-block: 44px; }
+.story-card { max-width: 600px; margin-inline: auto; background: var(--bg-card); border-radius: 20px; padding: 28px 32px; border-left: 4px solid var(--teal); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.story-quote { font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif; font-size: 17px; line-height: 1.65; color: var(--text); margin: 0 0 16px; font-style: italic; }
+.story-attr { font-size: 13px; color: var(--muted); font-weight: 600; }
+@media (max-width: 520px) { .story-card { padding: 20px 18px; } .story-quote { font-size: 15px; } }
+
+/* ── HOW IT WORKS ── */
+.how-section { padding-block: 48px; background: var(--bg-salmon); margin-inline: -16px; padding-inline: 16px; }
+.how-steps { display: flex; flex-direction: column; gap: 0; max-width: 540px; margin-inline: auto; }
+.how-step { display: flex; gap: 18px; align-items: flex-start; padding: 20px 0; border-bottom: 1px dashed var(--border); }
+.how-step:last-child { border-bottom: none; }
+.how-num { width: 38px; height: 38px; border-radius: 50%; background: var(--teal); color: #fff; font-weight: 900; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.how-body h3 { font-size: 15px; font-weight: 700; margin: 0 0 5px; }
+.how-body p { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.5; }
+
+/* ── TESTIMONIALS ── */
+.testi-section { padding-block: 52px; }
+.testi-grid { display: flex; flex-direction: column; gap: 16px; max-width: 600px; margin-inline: auto; }
+.testi-card { background: var(--bg-card); border-radius: 16px; padding: 22px 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+.testi-stars { color: #E8A838; font-size: 15px; margin-bottom: 10px; letter-spacing: 2px; }
+.testi-text { font-size: 14px; line-height: 1.65; color: var(--text); margin: 0 0 14px; }
+.testi-author { display: flex; align-items: center; gap: 10px; }
+.testi-avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--teal); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; color: #fff; flex-shrink: 0; overflow: hidden; }
+.testi-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.testi-name { font-size: 13px; font-weight: 700; margin: 0; }
+.testi-loc { font-size: 12px; color: var(--muted); margin: 0; }
+
+/* ── GUARANTEE BLOCK ── */
+.guarantee-section { padding-block: 44px; }
+.guarantee-card { max-width: 520px; margin-inline: auto; background: var(--bg-card); border-radius: 20px; padding: 28px 32px; text-align: center; border: 2px solid rgba(55,132,108,0.18); box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+.guarantee-icon { font-size: 44px; margin-bottom: 12px; }
+.guarantee-title { font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif; font-weight: 900; font-size: 20px; margin: 0 0 10px; }
+.guarantee-text { font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0; }
+@media (max-width: 520px) { .guarantee-card { padding: 20px 18px; } }
+
+/* ── WHO THIS IS FOR ── */
+.for-section { padding-block: 48px; }
+.for-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+.for-list li { font-size: 15px; font-weight: 600; display: flex; align-items: flex-start; gap: 12px; padding: 14px 18px; background: var(--bg-card); border-radius: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); line-height: 1.45; }
+.for-dot { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+/* ── PEEK INSIDE ── */
+.peek-section { padding-block: 48px; background: var(--bg-salmon); margin-inline: -16px; padding-inline: 16px; }
+.peek-card { background: var(--bg-card); border-radius: 20px; padding: 24px 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); max-width: 560px; margin-inline: auto; }
+.peek-label { font-size: 9px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+.peek-title { font-family: 'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif; font-weight: 900; font-size: 18px; margin: 0 0 16px; }
+.peek-step { padding: 12px 0; border-top: 1px dashed var(--border); }
+.peek-step:first-of-type { border-top: none; padding-top: 0; }
+.peek-q { font-size: 14px; font-weight: 700; margin: 0 0 5px; }
+.peek-a { font-size: 13px; color: var(--muted); margin: 0; line-height: 1.55; }
+
+/* ── CLARITY STRIP ── */
+.clarity-strip { background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 20px 16px; }
+.clarity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 700px; margin-inline: auto; }
+.clarity-item { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+.clarity-icon { font-size: 22px; line-height: 1; }
+.clarity-item strong { font-size: 13px; font-weight: 700; color: var(--text); }
+.clarity-item span { font-size: 12px; color: var(--muted); line-height: 1.45; }
+@media (max-width: 520px) { .clarity-grid { grid-template-columns: 1fr; gap: 14px; } .clarity-item { flex-direction: row; text-align: left; align-items: flex-start; } .clarity-item strong { font-size: 13px; } }
+
+/* ── FAQ ── */
+.faq-section { padding-block: 48px; }
+.faq-list { display: flex; flex-direction: column; gap: 0; max-width: 620px; margin-inline: auto; }
+.faq-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+.faq-item:first-child { border-top: 1px solid var(--border); }
+.faq-q { font-size: 15px; font-weight: 700; margin: 0 0 8px; color: var(--text); }
+.faq-a { font-size: 14px; color: var(--muted); margin: 0; line-height: 1.6; }
+
+/* ── MOBILE COMPRESS ── */
+@media (max-width: 520px) {
+  .ba-section { padding-block: 32px; }
+  .books-section { padding-block: 36px; }
+  .tools-section { padding-block: 36px; }
+  .value-section { padding-block: 36px; }
+  .cta-section { padding-block: 40px 48px; }
+  .book-card { padding: 18px; gap: 16px; }
+  .for-section { padding-block: 32px; }
+  .peek-section { padding-block: 36px; }
+  .sec-title { margin-bottom: 28px; }
+  .peek-card { padding: 20px; }
+}
+
+/* ── MOBILE TYPOGRAPHY & LAYOUT ── */
+@media (max-width: 480px) {
+  body { padding-inline: 14px; font-size: 15px; }
+
+  /* Hero */
+  .hero { padding-block: 28px 16px; }
+  .hero-split { gap: 16px; }
+  .hero-right { order: -1; margin-bottom: 0; }
+  .hero-right .book-fan { transform: scale(0.65); }
+  .book-fan { height: 220px; margin-bottom: 10px; }
+  .hero-title { font-size: 34px !important; line-height: 1.1; margin-bottom: 12px; }
+  .hero-sub { font-size: 15px; margin-bottom: 20px; }
+  .hero-price-live { font-size: 36px; }
+  .hero-price-row { gap: 8px; margin-bottom: 14px; }
+  .hero-bullets p { font-size: 13px; }
+
+  /* Sections */
+  .sec-title { font-size: 26px !important; line-height: 1.2; }
+  .sec-label { font-size: 10px; }
+
+  /* Proof strip */
+  .proof-strip { font-size: 13px; padding: 11px 14px; }
+
+  /* Clarity strip */
+  .clarity-strip { padding: 18px 14px; }
+  .clarity-item strong { font-size: 14px; }
+  .clarity-item span { font-size: 13px; }
+
+  /* Story */
+  .story-section { padding-block: 32px; }
+  .story-card { padding: 20px 18px; }
+  .story-quote { font-size: 15px; }
+
+  /* For list */
+  .for-list li { font-size: 15px; padding: 13px 16px; }
+
+  /* Before/After */
+  .ba-label { font-size: 24px; }
+  .ba-list li { font-size: 14px; }
+
+  /* How it works */
+  .how-section { padding-inline: 14px; margin-inline: -14px; }
+  .how-body h3 { font-size: 15px; }
+  .how-body p { font-size: 14px; }
+
+  /* Books */
+  .book-title { font-size: 18px; }
+  .book-subtitle { font-size: 14px; }
+  .book-stats li { font-size: 14px; }
+
+  /* Tools */
+  .tool-name { font-size: 17px; }
+  .tool-meta { font-size: 13px; }
+
+  /* Testimonials */
+  .testi-section { padding-block: 40px; }
+  .testi-text { font-size: 14px; }
+  .testi-name { font-size: 14px; }
+
+  /* FAQ */
+  .faq-section { padding-block: 36px; }
+  .faq-q { font-size: 15px; }
+  .faq-a { font-size: 14px; }
+
+  /* Guarantee */
+  .guarantee-section { padding-block: 32px; }
+  .guarantee-title { font-size: 20px; }
+  .guarantee-text { font-size: 14px; }
+
+  /* Value table */
+  .vt-row { font-size: 14px; }
+  .vt-row.total strong { font-size: 14px; }
+  .value-tagline { font-size: 14px; }
+
+  /* CTA */
+  .cta-title { font-size: 26px !important; }
+  .cta-sub { font-size: 15px; }
+  .price-main { font-size: 40px; }
+  .btn-primary { font-size: 16px; padding: 17px 28px; }
+  .btn-full { font-size: 16px; }
+
+  /* Sticky */
+  .sticky-bar { padding: 10px 14px; }
+  .sticky-new { font-size: 20px; }
+}
+
+/* ── TOP BAR ── */
+.top-bar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background: var(--coral);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 9px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 101;
+  box-shadow: 0 2px 18px rgba(193,52,40,0.45);
+}
+.top-bar-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  animation: blink 1.4s infinite;
+  flex-shrink: 0;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.25} }
+@media (max-width: 480px) { .top-bar { font-size: 11px; padding: 8px 12px; } }
+
+/* ── DESKTOP ── */
+@media (min-width: 860px) {
+  .wrap { max-width: 860px; }
+  body { font-size: 17px; padding-inline: 24px; }
+  .hero { padding-block: 56px 40px; }
+  .hero-title { font-size: clamp(42px, 4vw, 62px); }
+  .hero-sub { font-size: 18px; max-width: 560px; }
+  .hero-col { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+  .proof-strip { gap: 32px; }
+  .proof-item { flex: 1; }
+  .guides-grid { grid-template-columns: repeat(4, 1fr); }
+  .tools-grid { grid-template-columns: repeat(4, 1fr); }
+  .testi-grid { grid-template-columns: repeat(3, 1fr); }
+  .faq-item { font-size: 16px; }
+  .cta-box { padding: 48px 40px; }
+  .modal-box { max-width: 540px; padding: 40px 48px; }
+  .btn-primary { font-size: 18px; padding: 18px 28px; }
+  .value-table { max-width: 700px; margin-inline: auto; }
+}
+
+body{padding-top:40px;padding-bottom:96px}
+.top-bar{background:var(--teal);box-shadow:0 2px 18px rgba(30,107,101,.35)}
+.bc-plum,.bc-green,.bc-sky,.bc-slate{}
+
+
+.hero-from{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:900;font-size:30px;margin:0 0 14px;color:var(--text)}
+.hero-from small{font-family:'Inter',sans-serif;font-size:13px;font-weight:600;color:var(--muted);margin-left:8px}
+.jump{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 28px}
+.jump a{font-size:13px;font-weight:600;color:var(--teal);text-decoration:none;background:#fff;border:1px solid rgba(0,0,0,.09);padding:8px 14px;border-radius:100px}
+.offer{padding-block:44px 24px}
+.offer .wrap{max-width:1080px}
+.panelbox{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-bottom:28px}
+.panelbox h3{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:22px;font-weight:900;margin:0 0 6px}
+.panelbox p.sub{margin:0 0 14px;color:var(--muted);font-size:15px}
+.quiz-opts{display:grid;grid-template-columns:1fr;gap:8px}
+.qopt{appearance:none;text-align:left;font:inherit;font-size:15px;background:#fff;border:2px solid rgba(0,0,0,.09);border-radius:14px;padding:13px 16px;cursor:pointer;color:var(--text)}
+.qopt:hover{border-color:var(--teal)}
+.qopt[aria-pressed="true"]{border-color:var(--teal);background:#EAF3F1}
+.result{margin-top:18px}
+.result:empty{display:none}
+.grid3{display:grid;grid-template-columns:1fr;gap:16px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06);position:relative;display:flex;flex-direction:column;gap:10px}
+.card.best{border:2px solid var(--teal);padding-top:28px}
+.badge{position:absolute;top:-12px;left:18px;background:var(--teal);color:#fff;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:100px}
+.badge.alt{background:var(--coral)}
+.card h3{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:22px;font-weight:900;margin:0}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+.card ul{margin:0;padding-left:20px;font-size:15px}
+.card li{margin-bottom:3px}
+.pricebox{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.pricebox .now{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:900;font-size:32px;line-height:1}
+.pricebox .was{font-size:13px;color:var(--muted)}
+.pricebox .save{font-size:12px;font-weight:700;color:#14524C}
+.btn-sm{padding:15px 18px;font-size:15px;text-align:center;display:block}
+.btn-off{background:#D9D2C7;color:#4F463C;box-shadow:none;pointer-events:none}
+.card .btn-primary,.card .btn-off{margin-top:auto}
+.tag-soon{display:inline-block;background:#F4E3DE;color:#A02A20;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.tag-now{display:inline-block;background:#DDEFE9;color:#14524C;font-size:11px;font-weight:700;padding:3px 9px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase}
+.minicover{width:44px;height:60px;border-radius:3px 6px 6px 3px;flex:none}
+.bc-plum{background:linear-gradient(160deg,#7A3C73,#552653)}
+.bc-green{background:linear-gradient(160deg,#3F7D3A,#2B5A27)}
+.bc-sky{background:linear-gradient(160deg,#2B7FB8,#1C5A86)}
+.bc-slate{background:linear-gradient(160deg,#5B6670,#3E474F)}
+.row{display:flex;gap:12px;align-items:center}
+.row h4{font-size:16px;margin:0;font-weight:700}
+.row p{font-size:14px}
+.srow{background:var(--bg-card);border-radius:16px;padding:16px;box-shadow:0 2px 10px rgba(0,0,0,.05);display:grid;grid-template-columns:auto 1fr;gap:12px 14px;align-items:center}
+.srow .meta{display:flex;flex-direction:column;gap:2px}
+.srow .meta h4{margin:0;font-size:16px}
+.srow .meta p{margin:0;font-size:14px;color:var(--muted)}
+.srow ul{grid-column:1/-1;margin:0;padding-left:20px;font-size:14px;color:var(--text)}
+.srow .act{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.srow .act .now{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:900;font-size:22px}
+.srow .act .btn-primary,.srow .act .btn-off{padding:12px 18px;font-size:14px}
+.h-sec{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-weight:900;font-size:clamp(22px,3.4vw,28px);margin:34px 0 6px;text-wrap:balance}
+.h-sub{margin:0 0 16px;color:var(--muted);font-size:15px}
+.note{font-size:12px;color:var(--muted);text-align:center;margin:14px 0 0}
+.disc{font-size:12px;color:var(--muted);max-width:640px;margin:0 auto;text-align:center;padding:24px 0 8px}
+.foot{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:12px;padding-bottom:28px}
+.foot a{color:var(--muted)}
+.sticky-bar{transform:translateY(120%);transition:transform .2s}
+.sticky-bar.on{transform:none}
+.sticky-bar .sp{font-size:14px;font-weight:600}
+.btn-primary:focus-visible,.qopt:focus-visible,.jump a:focus-visible{outline:3px solid #1E6B65;outline-offset:2px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;overflow-x:hidden}
+.hero{overflow:hidden}
+@media(min-width:700px){
+ .quiz-opts{grid-template-columns:1fr 1fr}
+ .grid2{grid-template-columns:1fr 1fr}
+ .featured-in{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
+}
+@media(min-width:960px){ .grid3{grid-template-columns:repeat(3,1fr)} }
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sticky-bar{transition:none}}
+
+html{overflow-x:clip}
+body{overflow-x:clip}
+.btn-sm{min-height:46px;display:flex;align-items:center;justify-content:center}
+.qopt{min-height:46px}
+.jump a{min-height:40px;display:inline-flex;align-items:center}
+@media(min-width:641px) and (max-width:900px){.hero-right .book-fan{transform:scale(.55)}}
+@media(max-width:380px){.pricebox .now{font-size:28px}.hero-from{font-size:26px}}
+
+body{padding-inline:16px!important}
+.buy3{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.buy3 li{background:#fff;border-radius:14px;padding:12px 8px;text-align:center;font-size:13px;font-weight:600;line-height:1.3;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+.buy3 b{display:block;font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:20px;color:var(--teal)}
+.micro{font-size:12px;color:var(--muted);text-align:center;margin:8px 0 0}
+.value3{display:grid;grid-template-columns:1fr;gap:14px}
+.vcard{background:var(--bg-card);border-radius:20px;padding:22px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.vcard .big{font-size:28px}
+.vcard h3{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:20px;font-weight:900;margin:6px 0 6px}
+.vcard p{margin:0;color:var(--muted);font-size:15px}
+.wait{background:#1C3D6E;color:#fff;border-radius:22px;padding:28px 24px;margin-top:28px}
+.wait h3{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:clamp(22px,3.4vw,28px);font-weight:900;margin:0 0 12px;text-wrap:balance}
+.wait ul{margin:0 0 14px;padding-left:20px}
+.wait li{margin-bottom:6px}
+.wait p{margin:0;font-weight:600}
+.launch{background:#FFF4D6;border:1px solid #E7C96A;color:#5B4300;border-radius:14px;padding:12px 16px;font-size:14px;font-weight:600;text-align:center;margin-bottom:18px}
+.launch:empty{display:none}
+@media(min-width:760px){.value3{grid-template-columns:repeat(3,1fr)}}
+
+@media(min-width:900px){.hero .wrap,.how-section .wrap,.for-section .wrap{max-width:900px}.hero-title{font-size:52px}}
+
+
+.matchnote{background:#EAF3F1;border-radius:14px;padding:12px 16px;margin:0 0 16px;font-size:15px}
+.nod{margin:24px 0 0;font-size:15px;color:var(--text);text-align:center;font-weight:600}
+.buycol{display:flex;flex-direction:column;gap:12px}
+.plain{margin:8px 0 0;padding-left:20px;font-size:15px;color:var(--text)}
+.plain li{margin-bottom:8px}
+.finalcta{background:var(--teal);color:#fff;padding-block:48px;margin:28px -16px 0;padding-inline:16px}
+.finalcta h2{font-family:'Inter','Segoe UI',system-ui,-apple-system,Roboto,sans-serif;font-size:clamp(26px,4vw,34px);margin:0 0 8px;text-wrap:balance}
+.finalcta p{margin:0 0 20px;font-size:16px}
+.finalcta .btn-primary{background:#fff;color:var(--teal);box-shadow:0 4px 18px rgba(0,0,0,.2)}
+.srow{position:relative}
+.srow.match{border:2px solid var(--teal);padding-top:26px}
+.srow .badge{position:absolute;top:-12px;left:16px}
+.about{font-size:13px;color:var(--muted);text-align:center;max-width:560px;margin:28px auto 0}
+.hero-title{font-size:clamp(30px,5vw,48px);line-height:1.12}
+@media(min-width:900px){.hero-title{font-size:46px}}
+
+.rv{gap:14px}.rv-text{color:var(--text);font-size:16px;line-height:1.55;margin:0}.rv-who{display:flex;align-items:center;gap:12px}.rv-photo{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:2px solid #fff;box-shadow:0 1px 6px rgba(0,0,0,.18)}.rv-ini{display:inline-flex;align-items:center;justify-content:center;background:var(--accent,#1E6B65);color:#fff;font-weight:800;font-size:22px}.rv-who b{display:block;font-size:15px}.rv-sub{display:block;font-size:13px;color:#6a5e52}@media(max-width:640px){.tools-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.tool-icon{display:none}.tool-card{padding:14px!important}.tool-name{font-size:15px!important;margin:0 0 4px!important}.tool-meta{font-size:13px!important;margin:0!important}.wait{padding:20px!important}.vcard{padding:16px 18px!important}.vcard .big{display:none}.vcard h3{font-size:18px!important;margin:0 0 4px!important}.vcard p{font-size:15px!important;margin:0!important}}h1,h2,h3,.hero-title,.sec-title,.fb-title,.bc-title{font-family:'Inter','Segoe UI',system-ui,sans-serif;letter-spacing:-.015em}
+.hero-title,.sec-title{font-weight:800}
+.fb-title{font-weight:800;line-height:1.08;font-size:17px!important;letter-spacing:-.01em;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.fb-num{font-size:10px!important;font-weight:700;opacity:.95}
+.hero-right .book-fan{transform:scale(.8)!important}
+@media(min-width:901px){.hero-right .book-fan{margin-left:24px}}
+@media(max-width:640px){.hero-right .book-fan{transform:scale(.8)!important}@media(max-width:360px){.hero-right .book-fan{transform:scale(.7)!important}}.fb-title{font-size:17px!important}}
+@media(min-width:641px) and (max-width:900px){.hero-right .book-fan{transform:scale(.6)!important}}
+.card h3,.panelbox h3,.vcard h3,.finalcta h2,.wait h3,.guarantee-title,.tool-name,.how-body h3{font-weight:800}
+.dim{font-weight:800}
+</style></head>
+<body>
+
+<div class="top-bar"><span>Instant PDFs · Pay once · 14-day money-back guarantee</span></div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-split">
+      <div class="hero-left">
+        <p class="eyebrow">Your Body Has Been Trying to Tell You</p>
+        <h1 class="hero-title" id="h1">Still tired, still awake at 3AM, and told you're fine?</h1>
+        <p class="hero-sub" id="hsub">Four short guides, written in plain English, for women 30 and over who know something feels off. Find the one that fits you in 10 seconds.</p>
+        <a href="#offer" class="btn-primary btn-full" id="hero-btn">FIND MY GUIDE ↓</a>
+        <p class="micro" style="text-align:left;margin-top:10px">From <span data-min-price>$9.90</span> · Instant PDF · 14-day money-back guarantee</p>
+        <ol class="buy3" aria-label="How buying works"><li><b>1</b>Pick your guide</li><li><b>2</b>Pay once, securely</li><li><b>3</b>PDFs arrive in your inbox</li></ol>
+      </div>
+      <div class="hero-right">
+        <div class="book-fan">
+          <div class="fan-book fb1"><div class="fb-face"><span class="fb-num">Guide 01</span><span class="fb-title">The Belly<br>Fat Lie</span></div></div>
+          <div class="fan-book fb2"><div class="fb-face"><span class="fb-num">Guide 02</span><span class="fb-title">Aging<br>Faster Than<br>You Should</span></div></div>
+          <div class="fan-book fb3"><div class="fb-face"><span class="fb-num">Guide 03</span><span class="fb-title">The<br>Caffeine<br>Trap</span></div></div>
+          <div class="fan-book fb4"><div class="fb-face"><span class="fb-num">Guide 04</span><span class="fb-title">The<br>3AM<br>Signal</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="for-section">
+  <div class="wrap">
+    <p class="sec-label">Sound like you?</p>
+    <h2 class="sec-title">You're not imagining it.</h2>
+    <ul class="for-list">
+      <li><span class="for-dot">•</span><span>Your belly changed in your 30s, and nothing you try moves it.</span></li>
+      <li><span class="for-dot">•</span><span>You look in the mirror and think, "When did that happen?"</span></li>
+      <li><span class="for-dot">•</span><span>You're tired by noon, even though your tests came back "normal."</span></li>
+      <li><span class="for-dot">•</span><span>You wake up at 3AM for no reason and can't fall back asleep.</span></li>
+      <li><span class="for-dot">•</span><span>You leave the doctor's office feeling brushed off.</span></li>
+    </ul>
+    <p class="nod">Nodded at even one? These guides were written for you.</p>
+  </div>
+</section>
+
+<section class="how-section" style="padding-bottom:8px">
+  <div class="wrap">
+    <p class="sec-label">What you get</p>
+    <h2 class="sec-title">Three things you don't have right now.</h2>
+    <div class="value3">
+      <div class="vcard"><span class="big">💡</span><h3>Answers in plain English</h3><p>Why your belly, sleep, energy and face may be changing. Explained the way a smart friend would explain it.</p></div>
+      <div class="vcard"><span class="big">🧭</span><h3>One clear next step</h3><p>One small change at a time. Plus a 14-day log, so you can see your own patterns.</p></div>
+      <div class="vcard"><span class="big">🩺</span><h3>A better doctor visit</h3><p>A one-page brief and 3 smart questions, so you leave with answers instead of a shrug.</p></div>
+    </div>
+    <div class="wait">
+      <h3>What waiting costs you</h3>
+      <ul>
+        <li>Another month of guessing and trying random supplements.</li>
+        <li>Another night staring at the ceiling at 3AM.</li>
+        <li>Another appointment where you freeze and forget what to ask.</li>
+      </ul>
+      <p>The guides start at <span data-min-price>$9.90</span>. Start tonight, and in 14 days you can hold real notes about your own body, not just a feeling.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="offer" id="offer">
+  <div class="wrap">
+    <p class="sec-label">Choose your guide</p>
+    <h2 class="sec-title" style="margin-bottom:18px;">Get your answers tonight.</h2>
+    <div class="launch" id="launch" role="note"></div>
+
+    <div id="featured"></div>
+
+    <div class="panelbox" id="find" style="margin-top:28px">
+      <h3>Not sure which one you need?</h3>
+      <p class="sub">Tap what bugs you most. We'll show you the right guide.</p>
+      <div class="quiz-opts" id="quiz"></div>
+      <div class="result" id="result" aria-live="polite"></div>
+    </div>
+
+    <div id="singleswrap">
+      <h2 class="h-sec" id="singles">Or start with just one guide.</h2>
+      <p class="h-sub">Only need one answer? Start here.</p>
+      <div class="grid2" id="singlegrid"></div>
+    </div>
+    <div id="reviewswrap"></div>
+  </div>
+</section>
+
+<section class="how-section">
+  <div class="wrap">
+    <p class="sec-label">What happens when you click</p>
+    <h2 class="sec-title">Buying takes about a minute.</h2>
+    <div class="how-steps">
+      <div class="how-step"><div class="how-num">1</div><div class="how-body"><h3>Tap the button</h3><p>You go to a secure payment page run by Lava. We never see your card details.</p></div></div>
+      <div class="how-step"><div class="how-num">2</div><div class="how-body"><h3>Pay once</h3><p>One payment. No subscription and no monthly charges.</p></div></div>
+      <div class="how-step"><div class="how-num">3</div><div class="how-body"><h3>Check your email</h3><p>Your PDFs arrive right after you pay. Don't see them? Check spam, or write to us and we'll resend.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="tools-section">
+  <div class="wrap">
+    <p class="sec-label">🎁 Your bonus</p>
+    <h2 class="sec-title">Bonus: 4 tools that put the guides to work.</h2>
+    <div class="tools-grid">
+      <div class="tool-card"><span class="tool-icon">🧭</span><h3 class="tool-name">Start Here</h3><p class="tool-meta">A one-page map. Tells you which guide to read first.</p></div>
+      <div class="tool-card"><span class="tool-icon">📅</span><h3 class="tool-name">14-Day Body Log</h3><p class="tool-meta">30 seconds a day. Track sleep, energy, digestion and mood.</p></div>
+      <div class="tool-card"><span class="tool-icon">📝</span><h3 class="tool-name">Doctor's Brief</h3><p class="tool-meta">One page that sums up what you've noticed. Print it and bring it.</p></div>
+      <div class="tool-card"><span class="tool-icon">❓</span><h3 class="tool-name">3 Questions For Your Doctor</h3><p class="tool-meta">So you walk out with answers, not a pat on the shoulder.</p></div>
+    </div>
+    <p class="note"><b>🎁 The bonus pack is included when you get the Core Bundle.</b> It comes as a 4-page PDF next to your 4 guides.</p>
+  </div>
+</section>
+
+<section class="for-section">
+  <div class="wrap">
+    <div class="grid2">
+      <div class="panelbox" style="margin:0"><h3>This is for you if</h3><ul class="plain"><li>You're a woman 30 or older and something feels off.</li><li>You want plain answers, not medical jargon.</li><li>You want to walk into your next appointment ready.</li></ul></div>
+      <div class="panelbox" style="margin:0"><h3>This is not for you if</h3><ul class="plain"><li>You have urgent symptoms like chest pain or trouble breathing. Call 911 or your doctor now.</li><li>You want a diagnosis. Only a doctor can give one.</li><li>You're looking for a miracle pill or a quick fix.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="faq-section">
+  <div class="wrap">
+    <p class="sec-label">Questions</p>
+    <h2 class="sec-title">Before you buy, you might wonder...</h2>
+    <div class="faq-list">
+      <div class="faq-item"><p class="faq-q">Is this a subscription?</p><p class="faq-a">No. You pay once and the files are yours. There are no monthly charges.</p></div>
+      <div class="faq-item"><p class="faq-q">How do I read them?</p><p class="faq-a">They're PDFs. They open on iPhone, Android, Mac and Windows. You can print them too.</p></div>
+      <div class="faq-item"><p class="faq-q">How fast do I get them?</p><p class="faq-a">Right after you pay, a download link goes to your email. Don't see it? Check your spam folder, then email us and we'll send it again.</p></div>
+      <div class="faq-item"><p class="faq-q">Which guide should I start with?</p><p class="faq-a">Take the 10-second quiz above. Or pick the one that matches what bugs you most. Most people start with just one question.</p></div>
+      <div class="faq-item"><p class="faq-q">Will this replace my doctor?</p><p class="faq-a">No. This is education, not medical advice. Talk to your doctor about any symptoms, and before you change your diet, medicine or supplements.</p></div>
+      <div class="faq-item"><p class="faq-q">What if it's not for me?</p><p class="faq-a">Email us within 14 days and we'll refund you in full.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="guarantee-section">
+  <div class="wrap">
+    <div class="guarantee-card">
+      <div class="guarantee-icon">🛡️</div>
+      <h2 class="guarantee-title">14-Day Money-Back Guarantee</h2>
+      <p class="guarantee-text">Read the guides and try the tools. If they're not for you, email us within 14 days and we'll refund all your money.</p>
+    </div>
+  </div>
+</section>
+
+<section class="finalcta">
+  <div class="wrap" style="text-align:center">
+    <h2>Ready to stop guessing?</h2>
+    <p>Start tonight. In 14 days you could have real notes about your own body.</p>
+    <a href="#offer" class="btn-primary btn-full" style="max-width:420px;margin-inline:auto" id="final-btn">FIND MY GUIDE ↑</a>
+  </div>
+</section>
+
+<div class="wrap">
+  <p class="about" id="about"></p>
+  <p class="disc">For education only. This is not medical advice and does not replace care from your doctor. Results vary from person to person. Always check with a healthcare professional before making health decisions.</p>
+  <div class="foot"><a href="#" data-f="terms">Terms</a><a href="#" data-f="privacy">Privacy</a><a href="#" data-f="refund">Refund policy</a><a href="#" data-f="mail">Contact us</a></div>
+</div>
+
+<div class="sticky-bar" id="sticky"><span class="sp">4 guides + 🎁 bonus</span><a href="#offer" class="btn-primary btn-sm" style="margin:0">FIND MY GUIDE →</a></div>
+
+<script>
+/* ===== EDIT HERE ===== */
+var CONFIG = {
+  terms:"#", privacy:"#", refund:"#", email:"thekiramethod@outlook.com",
+  about:"Made by The Kira Method: short guides in plain English for women who want to understand their bodies.",
+  /* Only fill if the price REALLY goes up on that date. Example: "Launch price until Nov 15" */
+  launchNote:"",
+  /* Real reviews only, with written permission, about the product named in "product". Fields: name, place, text, photo, product */
+  reviewsTitle:"What readers say.",
+  reviews:[],
+  /* A real sample page URL (PDF). Leave empty to hide the link. */
+  sampleUrl:"",
+  /* true = hide single-guide cards that have no payment link yet. Add ?preview=1 to the page address to see everything. */
+  hideUnlinked:true,
+  tools:"🎁 BONUS INCLUDED: 4 tools that help you use the guides (Start Here, 14-Day Body Log, Doctor's Brief, 3 Questions For Your Doctor).",
+  books:{
+    1:{show:true,t:"The Belly Fat Lie",q:"Why is this belly still here, no matter what I do?",c:"bc-red",ready:true,price:9.90,url:"",pts:["3 hidden reasons most diets miss","1 big body change after 35","7 \"healthy\" foods that may work against you"]},
+    2:{show:true,t:"Aging Faster Than You Should",q:"Why do I look older than I feel?",c:"bc-teal",ready:true,price:9.90,url:"",pts:["5 sneaky things that can make you look older","2 blood tests worth asking your doctor about","A simple routine to start with"]},
+    3:{show:true,t:"The Caffeine Trap",q:"Why am I still tired after a full night's sleep?",c:"bc-amber",ready:true,price:9.90,url:"",pts:["3 kinds of tired that coffee can make worse","A quick test to see what's draining you","A 30-day plan: one small change a week"]},
+    4:{show:true,t:"The 3AM Signal",q:"Why am I wide awake at 3AM?",c:"bc-navy",ready:true,price:9.90,url:"",pts:["6 things your body does at night","4 things besides stress that can wake you up","A 12-minute wind-down to try tonight"]},
+    5:{show:false,t:"The Fiber Gap",q:"Am I missing the one thing most women don't get enough of?",c:"bc-green",ready:false,price:9.90,url:"",pts:["How much fiber you need each day","Where most women come up short","Easy ways to close the gap"]},
+    6:{show:false,t:"Gut, Stress & Your Stomach",q:"Why does stress hit my stomach first?",c:"bc-plum",ready:false,price:9.90,url:"",pts:["How your gut and stress are linked","What we know, and what we don't","Small daily habits to try"]},
+    7:{show:false,t:"What's In Your Cup",q:"Is what I drink helping me or hurting me?",c:"bc-sky",ready:false,price:9.90,url:"",pts:["When to have coffee (and when not to)","Water myths, sorted out","What to skip and what to keep"]},
+    8:{show:false,t:"The Midday Crash",q:"Why do I run out of steam around 2 PM?",c:"bc-slate",ready:false,price:9.90,url:"",pts:["Common reasons for the afternoon slump","What to check first: meals, sleep, stress","A simple 7-day experiment"]}
+  },
+  bundles:[
+    {id:"core",name:"Core Bundle",who:"All 4 guides plus a 🎁 BONUS pack of 4 tools. Everything in one place.",books:[1,2,3,4],tools:true,price:19.90,url:"https://app.lava.top/products/d846d4d9-1625-4817-89ee-d124f01a0a01/3225220b-b982-40ae-97bf-f834eb207806?currency=USD&domainId=c801983a-49c9-483d-94d9-1949ccfedeb9&domainName=thekiramethod.com",best:true},
+    {id:"belly",name:"Belly & Gut Bundle",who:"For the belly that won't move and the stomach that reacts to stress.",books:[1,5,6],tools:false,price:17.90,url:""},
+    {id:"sleep",name:"Sleep & Energy Bundle",who:"For 3AM wake-ups, coffee habits and afternoon crashes.",books:[3,4,8],tools:false,price:17.90,url:""},
+    {id:"complete",name:"Complete Collection",who:"All 8 guides plus 4 bonus tools.",books:[1,2,3,4,5,6,7,8],tools:true,price:29.90,url:""}
+  ],
+  quiz:[
+    {q:"My belly won't budge",book:1,bundle:"core"},
+    {q:"I look older than I feel",book:2,bundle:"core"},
+    {q:"I'm tired even after I sleep",book:3,bundle:"core"},
+    {q:"I wake up at 3AM",book:4,bundle:"core"},
+    {q:"I'm not sure. Show me everything.",book:null,bundle:"core"}
+  ],
+  /* message match: page address ?topic=sleep|belly|coffee|aging */
+  topics:{
+    sleep:{h:"Wide awake at 3AM again? Here's what your body may be trying to tell you.",s:"A short guide in plain English on why you wake up at night, and a 12-minute wind-down to try tonight.",book:4},
+    belly:{h:"Belly won't budge, no matter what you try?",s:"A short guide in plain English on the hidden reasons diets miss, and the foods that may be working against you.",book:1},
+    coffee:{h:"Tired even after a full night's sleep? Your coffee may be part of it.",s:"A short guide in plain English on the kinds of tired that coffee can make worse, and a simple test to find yours.",book:3},
+    aging:{h:"Look older than you feel? Check these 5 sneaky things.",s:"A short guide in plain English on what can speed up visible aging, and a simple routine to start with.",book:2}
+  }
+};
+/* ===================== */
+(function(){
+  var C=CONFIG,B=C.books,Q=new URLSearchParams(location.search),preview=Q.get("preview")==="1";
+  function money(n){return "$"+n.toFixed(2)}
+  function esc(x){return String(x).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+  function vis(n){return preview||B[n].show!==false}
+  function sum(ids){return ids.reduce(function(a,n){return a+B[n].price},0)}
+  function ready(n){return B[n].ready}
+  function bundleVisible(b){return b.books.every(vis)}
+  function bundleReady(b){return !!b.url&&b.books.every(function(n){return B[n].ready&&B[n].url})}
+  function buy(u){
+    try{var x=new URL(u);Q.forEach(function(v,k){if(/^(utm_|ref$|src$|fbclid$)/.test(k)&&!x.searchParams.has(k))x.searchParams.set(k,v)});return x.toString()}catch(e){return u}
+  }
+  function btn(url,ok,label,soon){
+    if(ok&&url)return '<a class="btn-primary btn-sm" href="'+buy(url)+'" rel="noopener" data-buy="1">'+label+'</a>';
+    return '<span class="btn-primary btn-sm btn-off" role="text">'+(soon||'Coming soon')+'</span>';
+  }
+  function bundleById(id){return C.bundles.filter(function(b){return b.id===id})[0]}
+  function bundleCard(b,o){
+    o=o||{};var sep=sum(b.books),ok=bundleReady(b),save=sep-b.price;
+    var list=b.books.map(function(n){return '<li>'+esc(B[n].t)+(ready(n)?'':' <span class="tag-soon">soon</span>')+'</li>'}).join('');
+    var left='<div><h3>'+b.name+'</h3><p>'+b.who+'</p><ul>'+list+'</ul>'+(b.tools?'<p style="margin-top:8px">'+esc(C.tools)+'</p>':'')+'</div>';
+    var right='<div class="buycol"><div class="pricebox"><span class="now">'+money(b.price)+'</span>'+(save>0&&b.books.every(function(n){return B[n].ready&&B[n].url})?'<span class="was">Bought one by one: '+money(sep)+'</span><span class="save">You save '+money(save)+'</span>':'')+'</div>'+
+      btn(b.url,ok,'GET THE '+b.name.toUpperCase()+' →','Link coming soon')+(ok?'<p class="micro">🔒 Secure checkout · Instant PDF · 14-day refund</p>':'')+(C.sampleUrl?'<p class="micro"><a href="'+C.sampleUrl+'" rel="noopener">Read a sample page</a></p>':'')+'</div>';
+    return '<div class="card'+(o.best?' best':'')+'">'+(o.badge?'<span class="badge">'+o.badge+'</span>':'')+(o.wide?'<div class="featured-in">'+left+right+'</div>':left+right)+'</div>';
+  }
+  function singleRow(n,match){
+    var b=B[n];
+    return '<div class="srow'+(match?' match':'')+'" id="b'+n+'">'+(match?'<span class="badge">Matches what you came for</span>':'')+'<div class="minicover '+b.c+'" aria-hidden="true"></div><div class="meta"><h4>'+esc(b.t)+'</h4><p>'+esc(b.q)+'</p></div>'+
+      '<ul>'+b.pts.map(function(p){return '<li>'+p+'</li>'}).join('')+'</ul>'+
+      '<div class="act"><span class="now">'+money(b.price)+'</span>'+btn(b.url,ready(n)&&!!b.url,'GET THIS GUIDE →','Link coming soon')+'</div></div>';
+  }
+  var shown=Object.keys(B).map(Number).filter(vis);
+  var buyable=[];
+  shown.forEach(function(n){if(B[n].url&&ready(n))buyable.push(B[n].price)});
+  C.bundles.forEach(function(x){if(bundleVisible(x)&&bundleReady(x))buyable.push(x.price)});
+  var minP=Math.min.apply(null,buyable.length?buyable:shown.map(function(n){return B[n].price}));
+  document.querySelectorAll("[data-min-price]").forEach(function(e){e.textContent=money(minP)});
+  document.querySelectorAll(".foot a").forEach(function(a){var k=a.getAttribute("data-f");a.href=k==="mail"?"mailto:"+C.email:C[k]||"#"});
+  document.getElementById("about").textContent=C.about;
+  var ln=document.getElementById("launch");if(C.launchNote)ln.textContent=C.launchNote;
+
+  var topic=C.topics[Q.get("topic")]||null;
+  if(topic){document.getElementById("h1").textContent=topic.h;document.getElementById("hsub").textContent=topic.s;}
+  var matchBook=topic?topic.book:null;
+
+  var vb=C.bundles.filter(bundleVisible);
+  var featured=vb.filter(function(b){return b.best&&bundleReady(b)})[0]||vb.filter(bundleReady)[0]||vb[0];
+  if(featured){
+    var note='';
+    if(matchBook&&featured.books.indexOf(matchBook)>-1&&!(B[matchBook].url))note='<p class="matchnote">You came for <b>'+esc(B[matchBook].t)+'</b>. It\'s inside this bundle, with '+(featured.books.length-1)+' more guides'+(featured.tools?' and 4 bonus tools':'')+'.</p>';
+    document.getElementById("featured").innerHTML=note+bundleCard(featured,{best:true,wide:true,badge:"Best deal"});
+  }
+  var others=vb.filter(function(b){return b!==featured});
+  if(others.length){document.getElementById("featured").insertAdjacentHTML("afterend",'<h2 class="h-sec" id="bundles">More bundles.</h2><div class="grid3" id="bundlegrid">'+others.map(function(b){return bundleCard(b)}).join('')+'</div>')}
+  var singles=shown.filter(function(n){return preview||!C.hideUnlinked||!!B[n].url});
+  if(singles.length){document.getElementById("singlegrid").innerHTML=singles.map(function(n){return singleRow(n,n===matchBook)}).join('')}
+  else{document.getElementById("singleswrap").style.display="none"}
+  if(C.reviews&&C.reviews.length){
+    document.getElementById("reviewswrap").innerHTML='<h2 class="h-sec">'+esc(C.reviewsTitle||"What readers say.")+'</h2><div class="grid2">'+C.reviews.map(function(r){var ph=r.photo?'<img class="rv-photo" src="'+esc(r.photo)+'" alt="'+esc(r.name)+'" loading="lazy" width="56" height="56">':'<span class="rv-photo rv-ini">'+esc((r.name||"?").charAt(0))+'</span>';return '<div class="card rv"><p class="rv-text">"'+esc(r.text)+'"</p><div class="rv-who">'+ph+'<div><b>'+esc(r.name)+'</b>'+(r.place?'<span class="rv-sub">'+esc(r.place)+'</span>':'')+(r.product?'<span class="rv-sub">About: '+esc(r.product)+'</span>':'')+'</div></div></div>'}).join('')+'</div>';
+  }
+
+  var quiz=document.getElementById("quiz"),res=document.getElementById("result");
+  var qs=C.quiz.filter(function(o){return o.book===null||vis(o.book)});
+  quiz.innerHTML=qs.map(function(o,i){return '<button type="button" class="qopt" aria-pressed="false" data-i="'+i+'">'+esc(o.q)+'</button>'}).join('');
+  quiz.addEventListener("click",function(e){
+    var t=e.target.closest(".qopt");if(!t)return;
+    quiz.querySelectorAll(".qopt").forEach(function(x){x.setAttribute("aria-pressed",x===t)});
+    var o=qs[+t.getAttribute("data-i")],html='';
+    if(o.book){html+='<h3 class="h-sec" style="margin-top:6px;font-size:20px">Start with this guide</h3>'+singleRow(o.book,false)}
+    var b=bundleById(o.bundle);
+    if(b)html+='<h3 class="h-sec" style="font-size:20px">Or get all 4 and save</h3>'+bundleCard(b,{});
+    res.innerHTML=html;
+  });
+
+  var sticky=document.getElementById("sticky"),offer=document.getElementById("offer"),hero=document.getElementById("hero-btn");
+  function onScroll(){var r=offer.getBoundingClientRect(),h=hero.getBoundingClientRect();sticky.classList.toggle("on",h.bottom<0&&(r.top>window.innerHeight||r.bottom<0))}
+  window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+})();
+</script>
+</body></html>

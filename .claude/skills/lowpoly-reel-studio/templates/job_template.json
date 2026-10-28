@@ -1,0 +1,16 @@
+{
+  "slug": "TOPIC_SLUG",
+  "topic": "one line",
+  "canvas": { "width": 1080, "height": 1920, "fps": 30 },
+  "voice": { "folder": "voice/", "files": ["block1.mp3", "block2.mp3"], "note": "one file per block or one merged file" },
+  "blocks": [
+    { "id": 1, "voice_text": "spoken text exactly as recorded", "screen_text": "same text with digits and keywords" }
+  ],
+  "world": { "room": "apartment kitchen (makeRoom)", "mood_by_shot": { "1": "evening", "last": "morning" }, "props_to_build": ["prop name: shape recipe"] },
+  "shots": [
+    { "shot": 1, "block": 1, "beats": [ { "on_word": "word", "action": "what happens", "sfx": "whoosh" } ] }
+  ],
+  "subtitles": { "font": "Montserrat Bold", "size_px": 78, "active_color": "#FFD24A", "baseline_y": 1230 },
+  "chips": ["optional honesty chip text"],
+  "render": { "output": "reels/TOPIC_SLUG.mp4", "stills": "stills/", "contact_sheet": "contact_sheet.jpg" }
+}
